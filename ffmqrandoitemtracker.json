@@ -1,0 +1,20 @@
+{
+  "name": "FFMQRandomizer Item Tracker",
+  "packages": [
+    {
+      "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
+      "author": "x10power",
+      "game_name": "Final Fantasy Mystic Quest",
+      "version": "1.0.0.0",
+      "flags": [ "" ],
+      "required_app_version": "2.3.6.6",
+      "uid": "ffmq_x10power",
+      "link": "https://github.com/x10power/ffmqitemtracker.git/ffmq-rando.zip",
+      "variants": [
+        {
+          "name": "Item Tracker",
+        },
+      ]
+    }
+  ]
+}

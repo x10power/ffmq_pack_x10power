@@ -1,0 +1,333 @@
+﻿[
+  // Swords
+  {
+    "name": "Swords",
+    "type": "progressive",
+    "loop": "true",
+    "allow_disabled": "false",
+    "stages":	[
+	{
+	"img": "images/sword1.png",
+	"img_mods": "@disabled",
+	"codes": "Swords",   
+	},
+	{
+	"img": "images/sword1.png",  
+	},
+	{
+	"img": "images/sword2.png",  
+	},
+	{
+	"img": "images/sword3.png",  
+	},
+       		]
+  },
+ // Axes
+  {
+    "name": "Axes",
+    "type": "progressive",
+    "loop": "true",
+    "allow_disabled": "false",
+    "stages":	[
+	{
+	"img": "images/axe1.png",
+	"img_mods": "@disabled",
+	"codes": "Axes",   
+	},
+	{
+	"img": "images/axe1.png",  
+	},
+	{
+	"img": "images/axe2.png",  
+	},
+	{
+	"img": "images/axe3.png",  
+	},
+
+       		]
+  },
+ // Bombs
+  {
+    "name": "Bombs",
+    "type": "progressive",
+    "loop": "true",
+    "allow_disabled": "false",
+    "stages":	[
+	{
+	"img": "images/bomb1.png",
+	"img_mods": "@disabled",
+	"codes": "Bombs",   
+	},
+	{
+	"img": "images/bomb1.png",  
+	},
+	{
+	"img": "images/bomb2.png",  
+	},
+	{
+	"img": "images/bomb3.png",  
+	},
+       		]
+  },
+ // Claws
+  {
+    "name": "Claws",
+    "type": "progressive",
+    "loop": "true",
+    "allow_disabled": "false",
+    "stages":	[
+	{
+	"img": "images/claw1.png",
+	"img_mods": "@disabled",
+	"codes": "Claws",   
+	},
+	{
+	"img": "images/claw1.png",  
+	},
+	{
+	"img": "images/claw2.png",  
+	},
+	{
+	"img": "images/claw3.png",  
+	},
+       		]
+  },
+ // White Magics
+  {
+    	"name": "White Magic",
+    	"type": "progressive",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	  
+	"stages": [
+	{
+	"img": "images/whitemagic.png",
+	"img_mods": "@disabled",
+	"codes": "WhiteMagic", 
+	},
+	{
+	"img": "images/whitemagic.png", 
+	"img_mods": "overlay|images/1.png",
+	},
+	{
+	"img": "images/whitemagic.png", 
+	"img_mods": "overlay|images/2.png",
+	},
+	{
+	"img": "images/whitemagic.png", 
+	"img_mods": "overlay|images/3.png",
+	},
+	{
+	"img": "images/whitemagic.png", 
+	"img_mods": "overlay|images/4.png",
+	},
+                  ]		
+  },
+ // Black Magics
+  {
+    	"name": "Black Magic",
+    	"type": "progressive",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	  
+	"stages": [
+	{
+	"img": "images/blackmagic.png",
+	"img_mods": "@disabled",
+	"codes": "BlackMagic", 
+	},
+	{
+	"img": "images/blackmagic.png", 
+	"img_mods": "overlay|images/1.png",
+	},
+	{
+	"img": "images/blackmagic.png", 
+	"img_mods": "overlay|images/2.png",
+	},
+	{
+	"img": "images/blackmagic.png", 
+	"img_mods": "overlay|images/3.png",
+	},
+	{
+	"img": "images/blackmagic.png", 
+	"img_mods": "overlay|images/4.png",
+	},
+                  ]		
+  },
+ // Wizard Magics
+  {
+    	"name": "Wizard Magic",
+    	"type": "progressive",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	  
+	"stages": [
+	{
+	"img": "images/wizardmagic.png",
+	"img_mods": "@disabled",
+	"codes": "WizardMagic", 
+	},
+	{
+	"img": "images/wizardmagic.png", 
+	"img_mods": "overlay|images/1.png",
+	},
+	{
+	"img": "images/wizardmagic.png", 
+	"img_mods": "overlay|images/2.png",
+	},
+	{
+	"img": "images/wizardmagic.png", 
+	"img_mods": "overlay|images/3.png",
+	},
+	{
+	"img": "images/wizardmagic.png", 
+	"img_mods": "overlay|images/4.png",
+	},
+                  ]		
+  },
+// Sand Coin
+	{
+	"name": "Sand Coin",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/medal1.png",
+	"codes": "Medal1"
+	},
+// River Coin
+	{
+	"name": "River Coin",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/medal2.png",
+	"codes": "Medal2"
+	},
+// Sun Coin
+	{
+	"name": "Sun Coin",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/medal3.png",
+	"codes": "Medal3"
+	},
+// Sky Coin
+	{
+	"name": "Sky Coin",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/medal4.png",
+	"codes": "Medal4"
+	},
+// Libra Crest
+	{
+	"name": "Libra Crest",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/crest1.png",
+	"codes": "Crest1"
+	},
+// Gemini Crest
+	{
+	"name": "Gemini Crest",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/crest2.png",
+	"codes": "Crest2"
+	},
+// Mobious Crest
+	{
+	"name": "Mobious Crest",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/crest3.png",
+	"codes": "Crest3"
+	},
+// Elixir
+	{
+	"name": "Elixir",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/elixir.png",
+	"codes": "Elixir"
+	},
+//Tree Wither
+	{
+	"name": "Tree Wither",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/treewither.png",
+	"codes": "TreeWither"
+	},
+//Wake Water
+	{
+	"name": "Wake Water",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/wakewater.png",
+	"codes": "WakeWater"
+	},
+//Venus Key
+	{
+	"name": "Venus Key",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/venuskey.png",
+	"codes": "VenusKey"
+	},
+//Multi Key
+	{
+	"name": "Multi Key",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/multikey.png",
+	"codes": "MultiKey"
+	},
+//Gas Mask
+	{
+	"name": "Gas Mask",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/gasmask.png",
+	"codes": "GasMask"
+	},
+//Magic Mirror
+	{
+	"name": "Magic Mirror",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/magicMirror.png",
+	"codes": "MagicMirror"
+	},
+//Thunder Rock
+	{
+	"name": "Thunder Rock",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/thunderrock.png",
+	"codes": "ThunderRock"
+	},
+//Captain Cap
+	{
+	"name": "Captain Cap",
+    	"type": "toggle",
+    	"loop": "true",
+    	"allow_disabled": "false",
+	"img": "images/captaincap.png",	
+	"codes": "CaptainCap"
+	},
+]
+
