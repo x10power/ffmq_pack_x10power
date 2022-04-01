@@ -7,7 +7,7 @@
 		"version": "1.0.0.0",
 		"flags": [""],
 		"required_app_version": "2.3.8.6",
-		"uid": "ffmq_x10power",
+		"uid": "ffmq_items",
 		"link": "https://github.com/x10power/ffmq-rando-tracker/blob/main/ffmq-rando.zip?raw=true"
 	}]
 }
