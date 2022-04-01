@@ -308,7 +308,7 @@
     	"type": "toggle",
     	"loop": "true",
     	"allow_disabled": "false",
-	"img": "images/magicMirror.png",
+	"img": "images/magicmirror.png",
 	"codes": "MagicMirror"
 	},
 //Thunder Rock
