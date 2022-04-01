@@ -6,7 +6,7 @@
 		"game_name": "Final Fantasy Mystic Quest",
 		"version": "1.0.0.0",
 		"flags": [""],
-		"required_app_version": "2.3.8.6",
+		"required_app_version": "2.3.8.16",
 		"uid": "ffmq-items",
 		"link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/rando/ffmq-rando.zip"
 	}]
