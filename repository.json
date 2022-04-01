@@ -8,6 +8,6 @@
 		"flags": [""],
 		"required_app_version": "2.3.8.6",
 		"uid": "ffmq-items",
-		"link": "https://github.com/x10power/ffmq-rando-tracker/blob/main/ffmq-rando.zip?raw=true"
+		"link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/rando/ffmq-rando.zip"
 	}]
 }
