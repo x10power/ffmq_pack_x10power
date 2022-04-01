@@ -4,7 +4,7 @@
 		"name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
 		"author": "x10power",
 		"game_name": "Final Fantasy Mystic Quest",
-		"version": "1.0.0.0",
+		"version": "1.0.000",
 		"flags": [""],
 		"required_app_version": "2.3.8.16",
 		"uid": "ffmq-items",
