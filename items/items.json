@@ -3,22 +3,29 @@
   {
     "name": "Swords",
     "type": "progressive",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
       {
-        "img": "images/sword1.png",
+        "name": "No Sword",
+        "img": "images/weapons/sword1.png",
         "img_mods": "@disabled",
-        "codes": "Swords"
+        "codes": "swords, sword0"
       },
       {
-        "img": "images/sword1.png"
+        "name": "Steel Sword",
+        "img": "images/weapons/sword1.png",
+        "codes": "sword1"
       },
       {
-        "img": "images/sword2.png"
+        "name": "Knight Sword",
+        "img": "images/weapons/sword2.png",
+        "codes": "sword2"
       },
       {
-        "img": "images/sword3.png"
+        "name": "Excalibur",
+        "img": "images/weapons/sword3.png",
+        "codes": "sword3"
       }
     ]
   },
@@ -26,22 +33,29 @@
   {
     "name": "Axes",
     "type": "progressive",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
       {
-        "img": "images/axe1.png",
+        "name": "No Axe",
+        "img": "images/weapons/axe1.png",
         "img_mods": "@disabled",
-        "codes": "Axes"
+        "codes": "axes, axe0"
       },
       {
-        "img": "images/axe1.png"
+        "name": "Axe",
+        "img": "images/weapons/axe1.png",
+        "codes": "axe1"
       },
       {
-        "img": "images/axe2.png"
+        "name": "Battle Axe",
+        "img": "images/weapons/axe2.png",
+        "codes": "axe2"
       },
       {
-        "img": "images/axe3.png"
+        "name": "Giant's Axe",
+        "img": "images/weapons/axe3.png",
+        "codes": "axe3"
       }
     ]
   },
@@ -49,22 +63,29 @@
   {
     "name": "Bombs",
     "type": "progressive",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
       {
-        "img": "images/bomb1.png",
+        "name": "No Bombs",
+        "img": "images/weapons/bomb1.png",
         "img_mods": "@disabled",
-        "codes": "Bombs"
+        "codes": "bombs, bomb0"
       },
       {
-        "img": "images/bomb1.png"
+        "name": "Bomb",
+        "img": "images/weapons/bomb1.png",
+        "codes": "bomb1"
       },
       {
-        "img": "images/bomb2.png"
+        "name": "Jumbo Bomb",
+        "img": "images/weapons/bomb2.png",
+        "codes": "bomb2"
       },
       {
-        "img": "images/bomb3.png"
+        "name": "Mega Grenade",
+        "img": "images/weapons/bomb3.png",
+        "codes": "bomb3"
       }
     ]
   },
@@ -72,22 +93,29 @@
   {
     "name": "Claws",
     "type": "progressive",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
       {
-        "img": "images/claw1.png",
+        "name": "No Claws",
+        "img": "images/weapons/claw1.png",
         "img_mods": "@disabled",
-        "codes": "Claws"
+        "codes": "claws"
       },
       {
-        "img": "images/claw1.png"
+        "name": "Cat Claws",
+        "img": "images/weapons/claw1.png",
+        "codes": "claw1"
       },
       {
-        "img": "images/claw2.png"
+        "name": "Charm Claw",
+        "img": "images/weapons/claw2.png",
+        "codes": "claw2"
       },
       {
-        "img": "images/claw3.png"
+        "name": "Dragon Claw",
+        "img": "images/weapons/claw3.png",
+        "codes": "claw3"
       }
     ]
   },
@@ -95,30 +123,38 @@
   {
     "name": "White Magic",
     "type": "progressive",
-    "loop": "true",
-    "allow_disabled": "false",
-
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
       {
+        "name": "No White Magic",
         "img": "images/whitemagic.png",
         "img_mods": "@disabled",
-        "codes": "WhiteMagic"
+        "codes": "whitemagic, whitemagic0"
       },
       {
+        "name": "Exit",
         "img": "images/whitemagic.png",
-        "img_mods": "overlay|images/1.png"
+        "img_mods": "overlay|images/numbers/1.png",
+        "codes": "whitemagic1"
       },
       {
+        "name": "Cure",
         "img": "images/whitemagic.png",
-        "img_mods": "overlay|images/2.png"
+        "img_mods": "overlay|images/numbers/2.png",
+        "codes": "whitemagic2"
       },
       {
+        "name": "Heal",
         "img": "images/whitemagic.png",
-        "img_mods": "overlay|images/3.png"
+        "img_mods": "overlay|images/numbers/3.png",
+        "codes": "whitemagic3"
       },
       {
+        "name": "Life",
         "img": "images/whitemagic.png",
-        "img_mods": "overlay|images/4.png"
+        "img_mods": "overlay|images/numbers/4.png",
+        "codes": "whitemagic4"
       }
     ]
   },
@@ -126,30 +162,33 @@
   {
     "name": "Black Magic",
     "type": "progressive",
-    "loop": "true",
-    "allow_disabled": "false",
-
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/blackmagic.png",
         "img_mods": "@disabled",
-        "codes": "BlackMagic"
+        "codes": "blackmagic, blackmagic0"
       },
       {
         "img": "images/blackmagic.png",
-        "img_mods": "overlay|images/1.png"
+        "img_mods": "overlay|images/numbers/1.png",
+        "codes": "blackmagic1"
       },
       {
         "img": "images/blackmagic.png",
-        "img_mods": "overlay|images/2.png"
+        "img_mods": "overlay|images/numbers/2.png",
+        "codes": "blackmagic2"
       },
       {
         "img": "images/blackmagic.png",
-        "img_mods": "overlay|images/3.png"
+        "img_mods": "overlay|images/numbers/3.png",
+        "codes": "blackmagic3"
       },
       {
         "img": "images/blackmagic.png",
-        "img_mods": "overlay|images/4.png"
+        "img_mods": "overlay|images/numbers/4.png",
+        "codes": "blackmagic4"
       }
     ]
   },
@@ -157,30 +196,34 @@
   {
     "name": "Wizard Magic",
     "type": "progressive",
-    "loop": "true",
-    "allow_disabled": "false",
-
+    "loop": true,
+    "allow_disabled": false,
+    "codes": "wizardmagic",
     "stages": [
       {
         "img": "images/wizardmagic.png",
         "img_mods": "@disabled",
-        "codes": "WizardMagic"
+        "codes": "wizardmagic, wizardmagic0"
       },
       {
         "img": "images/wizardmagic.png",
-        "img_mods": "overlay|images/1.png"
+        "img_mods": "overlay|images/numbers/1.png",
+        "codes": "wizardmagic1"
       },
       {
         "img": "images/wizardmagic.png",
-        "img_mods": "overlay|images/2.png"
+        "img_mods": "overlay|images/numbers/2.png",
+        "codes": "wizardmagic2"
       },
       {
         "img": "images/wizardmagic.png",
-        "img_mods": "overlay|images/3.png"
+        "img_mods": "overlay|images/numbers/3.png",
+        "codes": "wizardmagic3"
       },
       {
         "img": "images/wizardmagic.png",
-        "img_mods": "overlay|images/4.png"
+        "img_mods": "overlay|images/numbers/4.png",
+        "codes": "wizardmagic4"
       }
     ]
   },
@@ -188,144 +231,128 @@
   {
     "name": "Sand Coin",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/medal1.png",
-    "codes": "Medal1"
+    "codes": "medal1"
   },
   // River Coin
   {
     "name": "River Coin",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/medal2.png",
-    "codes": "Medal2"
+    "codes": "medal2"
   },
   // Sun Coin
   {
     "name": "Sun Coin",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/medal3.png",
-    "codes": "Medal3"
+    "codes": "medal3"
   },
   // Sky Coin
   {
     "name": "Sky Coin",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/medal4.png",
-    "codes": "Medal4"
+    "codes": "medal4"
   },
   // Libra Crest
   {
     "name": "Libra Crest",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/crest1.png",
-    "codes": "Crest1"
+    "codes": "crest1"
   },
   // Gemini Crest
   {
     "name": "Gemini Crest",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/crest2.png",
-    "codes": "Crest2"
+    "codes": "crest2"
   },
   // Mobious Crest
   {
     "name": "Mobious Crest",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/crest3.png",
-    "codes": "Crest3"
+    "codes": "crest3"
   },
   // Elixir
   {
     "name": "Elixir",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/elixir.png",
-    "codes": "Elixir"
+    "codes": "elixir"
   },
-  //Tree Wither
+  // Tree Wither
   {
     "name": "Tree Wither",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/treewither.png",
-    "codes": "TreeWither"
+    "codes": "treewither"
   },
-  //Wake Water
+  // Wake Water
   {
     "name": "Wake Water",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/wakewater.png",
-    "codes": "WakeWater"
+    "codes": "wakewater"
   },
-  //Venus Key
+  // Venus Key
   {
     "name": "Venus Key",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/venuskey.png",
-    "codes": "VenusKey"
+    "codes": "venuskey"
   },
-  //Multi Key
+  // Multi Key
   {
     "name": "Multi Key",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/multikey.png",
-    "codes": "MultiKey"
+    "codes": "multikey"
   },
-  //Gas Mask
+  // Gas Mask
   {
     "name": "Gas Mask",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/gasmask.png",
-    "codes": "GasMask"
+    "codes": "gasmask"
   },
-  //Magic Mirror
+  // Magic Mirror
   {
     "name": "Magic Mirror",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/magicmirror.png",
-    "codes": "MagicMirror"
+    "codes": "magicmirror"
   },
-  //Thunder Rock
+  // Thunder Rock
   {
     "name": "Thunder Rock",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/thunderrock.png",
-    "codes": "ThunderRock"
+    "codes": "thunderrock"
   },
-  //Captain Cap
+  // Captain Cap
   {
     "name": "Captain Cap",
     "type": "toggle",
-    "loop": "true",
-    "allow_disabled": "false",
+    "loop": true,
     "img": "images/captaincap.png",
-    "codes": "CaptainCap"
+    "codes": "captaincap"
   }
 ]

@@ -7,12 +7,12 @@
     "item_height": 64,
     "item_width": 64,
     "rows": [
-      ["Swords", "Axes", "Bombs", "Claws"],
-      ["WhiteMagic", "BlackMagic", "WizardMagic"],
-      ["Medal1", "Medal2", "Medal3", "Medal4"],
-      ["Crest1", "Crest2", "Crest3"],
-      ["Elixir", "TreeWither", "WakeWater", "VenusKey"],
-      ["MultiKey", "GasMask", "MagicMirror", "ThunderRock", "CaptainCap"]
+      ["swords", "axes", "bombs", "claws"],
+      ["whitemagic", "blackmagic", "wizardmagic"],
+      ["medal1", "medal2", "medal3", "medal4"],
+      ["crest1", "crest2", "crest3"],
+      ["elixir", "treewither", "wakewater", "venuskey"],
+      ["multikey", "gasmask", "magicmirror", "thunderrock", "captaincap"]
     ]
   }
 }
