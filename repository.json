@@ -1,13 +1,20 @@
 {
-	"name": "FFMQRandomizer Item Tracker",
-	"packages": [{
-		"name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
-		"author": "x10power",
-		"game_name": "Final Fantasy Mystic Quest",
-		"version": "1.0.000",
-		"flags": [""],
-		"required_app_version": "2.3.8.16",
-		"uid": "ffmq-items",
-		"link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/rando/ffmq-rando.zip"
-	}]
+  "name": "x10power's EmoTracker Packs",
+  "packages": [
+    {
+      "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
+      "author": "x10power",
+      "game_name": "Final Fantasy Mystic Quest",
+      "version": "1.0.000",
+      "flags": [""],
+      "required_app_version": "2.3.8.16",
+      "uid": "ffmq-items",
+      "link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/rando/ffmq-rando.zip",
+      "variants": {
+        "items_only": {
+          "display_name": "Items-Only"
+        }
+      }
+    }
+  ]
 }

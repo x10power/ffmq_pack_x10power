@@ -1,0 +1,26 @@
+﻿{
+  "shared_item_grid": {
+    "type": "itemgrid",
+    "item_margin": "1,1",
+    "item_height": 64,
+    "item_width": 64,
+    "rows": [
+      ["swords", "axes", "bombs", "claws"],
+      ["whitemagic", "blackmagic", "wizardmagic"],
+      ["medal1", "medal2", "medal3", "medal4"],
+      ["crest1", "crest2", "crest3"],
+      ["elixir", "treewither", "wakewater", "venuskey"],
+      ["multikey", "gasmask", "magicmirror", "thunderrock", "captaincap"]
+    ]
+  },
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "width": 340,
+    "content": {
+      "type": "layout",
+      "dropshadow": false,
+      "key": "shared_item_grid"
+    }
+  }
+}
