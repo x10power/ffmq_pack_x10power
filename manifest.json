@@ -6,8 +6,8 @@
   "package_uid": "ffmq-items",
   "author": "x10power",
   "variants": {
-      "items_only": {
-        "display_name": "Items-Only"
-      }
+    "items_only": {
+      "display_name": "Items-Only"
     }
+  }
 }
