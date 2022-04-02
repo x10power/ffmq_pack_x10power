@@ -166,26 +166,31 @@
     "allow_disabled": false,
     "stages": [
       {
+        "name": "No Black Magic",
         "img": "images/blackmagic.png",
         "img_mods": "@disabled",
         "codes": "blackmagic, blackmagic0"
       },
       {
+        "name": "Quake",
         "img": "images/blackmagic.png",
         "img_mods": "overlay|images/numbers/1.png",
         "codes": "blackmagic1"
       },
       {
+        "name": "Blizzard",
         "img": "images/blackmagic.png",
         "img_mods": "overlay|images/numbers/2.png",
         "codes": "blackmagic2"
       },
       {
+        "name": "Fire",
         "img": "images/blackmagic.png",
         "img_mods": "overlay|images/numbers/3.png",
         "codes": "blackmagic3"
       },
       {
+        "name": "Aero",
         "img": "images/blackmagic.png",
         "img_mods": "overlay|images/numbers/4.png",
         "codes": "blackmagic4"
@@ -201,26 +206,31 @@
     "codes": "wizardmagic",
     "stages": [
       {
+        "name": "No Wizard Magic",
         "img": "images/wizardmagic.png",
         "img_mods": "@disabled",
         "codes": "wizardmagic, wizardmagic0"
       },
       {
+        "name": "Thunder",
         "img": "images/wizardmagic.png",
         "img_mods": "overlay|images/numbers/1.png",
         "codes": "wizardmagic1"
       },
       {
+        "name": "White",
         "img": "images/wizardmagic.png",
         "img_mods": "overlay|images/numbers/2.png",
         "codes": "wizardmagic2"
       },
       {
+        "name": "Meteor",
         "img": "images/wizardmagic.png",
         "img_mods": "overlay|images/numbers/3.png",
         "codes": "wizardmagic3"
       },
       {
+        "name": "Flare",
         "img": "images/wizardmagic.png",
         "img_mods": "overlay|images/numbers/4.png",
         "codes": "wizardmagic4"
