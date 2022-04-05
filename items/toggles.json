@@ -1,0 +1,130 @@
+[
+  // Sand Coin
+  {
+    "name": "Sand Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_sand.png",
+    "codes": "sand, sandcoin"
+  },
+  // River Coin
+  {
+    "name": "River Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_river.png",
+    "codes": "river, rivercoin"
+  },
+  // Sun Coin
+  {
+    "name": "Sun Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_sun.png",
+    "codes": "sun, suncoin"
+  },
+  // Sky Coin
+  {
+    "name": "Sky Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_sky.png",
+    "codes": "sky, skycoin"
+  },
+  // Libra Crest
+  {
+    "name": "Libra Crest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crests/crest_libra.png",
+    "codes": "libra, libracrest"
+  },
+  // Gemini Crest
+  {
+    "name": "Gemini Crest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crests/crest_gemini.png",
+    "codes": "gemini, geminicrest"
+  },
+  // Mobious Crest
+  {
+    "name": "Mobious Crest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crests/crest_mobious.png",
+    "codes": "mobious, mobiouscrest"
+  },
+  // Elixir
+  {
+    "name": "Elixir",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/elixir.png",
+    "codes": "elixir"
+  },
+  // Tree Wither
+  {
+    "name": "Tree Wither",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/treewither.png",
+    "codes": "treewither"
+  },
+  // Wake Water
+  {
+    "name": "Wake Water",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/wakewater.png",
+    "codes": "wakewater"
+  },
+  // Venus Key
+  {
+    "name": "Venus Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/venuskey.png",
+    "codes": "venuskey"
+  },
+  // Multi Key
+  {
+    "name": "Multi Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/multikey.png",
+    "codes": "multikey"
+  },
+  // Gas Mask
+  {
+    "name": "Gas Mask",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/gasmask.png",
+    "codes": "gasmask"
+  },
+  // Magic Mirror
+  {
+    "name": "Magic Mirror",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/magicmirror.png",
+    "codes": "magicmirror"
+  },
+  // Thunder Rock
+  {
+    "name": "Thunder Rock",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/thunderrock.png",
+    "codes": "thunderrock"
+  },
+  // Captain Cap
+  {
+    "name": "Captain Cap",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/captaincap.png",
+    "codes": "captaincap"
+  }
+]

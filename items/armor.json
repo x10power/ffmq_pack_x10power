@@ -1,0 +1,122 @@
+[
+  // Helmets
+  {
+    "name": "Helmets",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "No Helm",
+        "img": "images/armor/hat/helmet1.png",
+        "img_mods": "@disabled",
+        "codes": "hats, hat, helm, helmet, hat0, helm0, helmet0"
+      },
+      {
+        "name": "Steel Helm",
+        "img": "images/armor/hat/helmet1.png",
+        "codes": "hat1, helm1, helmet1"
+      },
+      {
+        "name": "Moon Helm",
+        "img": "images/armor/hat/helmet2.png",
+        "codes": "hat2, helm2, helmet2"
+      },
+      {
+        "name": "Apollo Helm",
+        "img": "images/armor/hat/helmet3.png",
+        "codes": "hat3, helm3, helmet3"
+      }
+    ]
+  },
+  // Mails
+  {
+    "name": "Mails",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "No Mail",
+        "img": "images/armor/mail/mail1.png",
+        "img_mods": "@disabled",
+        "codes": "mails, mail, mail0"
+      },
+      {
+        "name": "Steel Armor",
+        "img": "images/armor/mail/mail1.png",
+        "codes": "mail1"
+      },
+      {
+        "name": "Noble Armor",
+        "img": "images/armor/mail/mail2.png",
+        "codes": "mail2"
+      },
+      {
+        "name": "Gaia's Armor",
+        "img": "images/armor/mail/mail3.png",
+        "codes": "mail3"
+      }
+    ]
+  },
+  // Shields
+  {
+    "name": "Shields",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "No Shield",
+        "img": "images/armor/shield/shield1.png",
+        "img_mods": "@disabled",
+        "codes": "shields, shield, shield0"
+      },
+      {
+        "name": "Steel Shield",
+        "img": "images/armor/shield/shield1.png",
+        "codes": "shield1"
+      },
+      {
+        "name": "Venus Shield",
+        "img": "images/armor/shield/shield2.png",
+        "codes": "shield2"
+      },
+      {
+        "name": "Aegis Shield",
+        "img": "images/armor/shield/shield3.png",
+        "codes": "shield3"
+      }
+    ]
+  },
+  // Jewelry
+  {
+    "name": "Jewelry",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "No Jewelry",
+        "img": "images/armor/jewelry/charm.png",
+        "img_mods": "@disabled",
+        "codes": "jewelry, jewelry0"
+      },
+      {
+        "name": "Charm",
+        "img": "images/armor/jewelry/charm.png",
+        "codes": "jewelry1"
+      },
+      {
+        "name": "Magic Ring",
+        "img": "images/armor/jewelry/magicring.png",
+        "codes": "jewelry2"
+      },
+      {
+        "name": "Cupid Locket",
+        "img": "images/armor/jewelry/cupidlocket.png",
+        "codes": "jewelry3"
+      }
+    ]
+  }
+]
