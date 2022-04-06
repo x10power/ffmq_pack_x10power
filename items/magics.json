@@ -1,0 +1,231 @@
+[
+  // White Magics
+  {
+    "name": "White Magic",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "No White Magic",
+        "img": "images/magic/white/whitemagic.png",
+        "img_mods": "@disabled",
+        "codes": "whitemagic, whitemagic0"
+      },
+      {
+        "name": "Exit",
+        "img": "images/magic/white/whitemagic.png",
+        "img_mods": "overlay|images/magic/white/overlay/exit.png",
+        "codes": "whitemagic1"
+      },
+      {
+        "name": "Cure",
+        "img": "images/magic/white/whitemagic.png",
+        "img_mods": "overlay|images/magic/white/overlay/cure.png",
+        "codes": "whitemagic2"
+      },
+      {
+        "name": "Heal",
+        "img": "images/magic/white/whitemagic.png",
+        "img_mods": "overlay|images/magic/white/overlay/heal.png",
+        "codes": "whitemagic3"
+      },
+      {
+        "name": "Life",
+        "img": "images/magic/white/whitemagic.png",
+        "img_mods": "overlay|images/magic/white/overlay/life.png",
+        "codes": "whitemagic4"
+      }
+    ]
+  },
+  // Black Magics
+  {
+    "name": "Black Magic",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "No Black Magic",
+        "img": "images/magic/black/blackmagic.png",
+        "img_mods": "@disabled",
+        "codes": "blackmagic, blackmagic0"
+      },
+      {
+        "name": "Quake",
+        "img": "images/magic/black/blackmagic.png",
+        "img_mods": "overlay|images/magic/black/overlay/quake.png",
+        "codes": "blackmagic1"
+      },
+      {
+        "name": "Blizzard",
+        "img": "images/magic/black/blackmagic.png",
+        "img_mods": "overlay|images/magic/black/overlay/blizzard.png",
+        "codes": "blackmagic2"
+      },
+      {
+        "name": "Fire",
+        "img": "images/magic/black/blackmagic.png",
+        "img_mods": "overlay|images/magic/black/overlay/fire.png",
+        "codes": "blackmagic3"
+      },
+      {
+        "name": "Aero",
+        "img": "images/magic/black/blackmagic.png",
+        "img_mods": "overlay|images/magic/black/overlay/aero.png",
+        "codes": "blackmagic4"
+      }
+    ]
+  },
+  // Wizard Magics
+  {
+    "name": "Wizard Magic",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "codes": "wizardmagic",
+    "stages": [
+      {
+        "name": "No Wizard Magic",
+        "img": "images/magic/wizard/wizardmagic.png",
+        "img_mods": "@disabled",
+        "codes": "wizardmagic, wizardmagic0"
+      },
+      {
+        "name": "Thunder",
+        "img": "images/magic/wizard/wizardmagic.png",
+        //"img_mods": "overlay|images/magic/wizard/overlay/thunder.png",
+        "codes": "wizardmagic1"
+      },
+      {
+        "name": "White",
+        "img": "images/magic/wizard/wizardmagic.png",
+        "img_mods": "overlay|images/magic/wizard/overlay/white.png",
+        "codes": "wizardmagic2"
+      },
+      {
+        "name": "Meteor",
+        "img": "images/magic/wizard/wizardmagic.png",
+        "img_mods": "overlay|images/magic/wizard/overlay/meteor.png",
+        "codes": "wizardmagic3"
+      },
+      {
+        "name": "Flare",
+        "img": "images/magic/wizard/wizardmagic.png",
+        "img_mods": "overlay|images/magic/wizard/overlay/flare.png",
+        "codes": "wizardmagic4"
+      }
+    ]
+  },
+  // White Magics
+  // Exit
+  {
+    "name": "Exit",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/whitemagic.png",
+    "img_mods": "overlay|images/magic/white/overlay/exit.png",
+    "codes": "exit"
+  },
+  // Cure
+  {
+    "name": "Cure",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/whitemagic.png",
+    "img_mods": "overlay|images/magic/white/overlay/cure.png",
+    "codes": "cure"
+  },
+  // Heal
+  {
+    "name": "Heal",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/whitemagic.png",
+    "img_mods": "overlay|images/magic/white/overlay/heal.png",
+    "codes": "heal"
+  },
+  // Life
+  {
+    "name": "Life",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/whitemagic.png",
+    "img_mods": "overlay|images/magic/white/overlay/life.png",
+    "codes": "life"
+  },
+  // Black Magics
+  // Quake
+  {
+    "name": "Quake",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/blackmagic.png",
+    "img_mods": "overlay|images/magic/black/overlay/quake.png",
+    "codes": "quake"
+  },
+  // Blizzard
+  {
+    "name": "Blizzard",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/blackmagic.png",
+    "img_mods": "overlay|images/magic/black/overlay/blizzard.png",
+    "codes": "blizzard"
+  },
+  // Fire
+  {
+    "name": "Fire",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/blackmagic.png",
+    "img_mods": "overlay|images/magic/black/overlay/fire.png",
+    "codes": "fire"
+  },
+  // Aero
+  {
+    "name": "Aero",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/blackmagic.png",
+    "img_mods": "overlay|images/magic/black/overlay/aero.png",
+    "codes": "aero"
+  },
+  // Wizard Magics
+  // Thunder
+  {
+    "name": "Thunder",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/wizardmagic.png",
+    "img_mods": "overlay|images/magic/wizard/overlay/thunder.png",
+    "codes": "thunder"
+  },
+  // White
+  {
+    "name": "White",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/wizardmagic.png",
+    "img_mods": "overlay|images/magic/wizard/overlay/white.png",
+    "codes": "white"
+  },
+  // Meteor
+  {
+    "name": "Meteor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/wizardmagic.png",
+    "img_mods": "overlay|images/magic/wizard/overlay/meteor.png",
+    "codes": "meteor"
+  },
+  // Flare
+  {
+    "name": "Flare",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/wizardmagic.png",
+    "img_mods": "overlay|images/magic/wizard/overlay/flare.png",
+    "codes": "flare"
+  }
+]

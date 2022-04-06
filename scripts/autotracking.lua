@@ -5,10 +5,10 @@ AUTOTRACKER_ENABLE_DEBUG_LOGGING = false
 print("")
 print("Active Auto-Tracker Configuration")
 print("---------------------------------------------------------------------")
-print("Enable Item Tracking:        ", AUTOTRACKER_ENABLE_ITEM_TRACKING)
-print("Enable Location Tracking:    ", AUTOTRACKER_ENABLE_LOCATION_TRACKING)
+print("Enable Item Tracking:      ", AUTOTRACKER_ENABLE_ITEM_TRACKING)
+print("Enable Location Tracking:  ", AUTOTRACKER_ENABLE_LOCATION_TRACKING)
 if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-    print("Enable Debug Logging:        ", "true")
+    print("Enable Debug Logging:    ", "true")
 end
 print("---------------------------------------------------------------------")
 print("")
@@ -34,7 +34,7 @@ end
 function ReadU8(segment, address)
     if U8_READ_CACHE_ADDRESS ~= address then
         U8_READ_CACHE = segment:ReadUInt8(address)
-        U8_READ_CACHE_ADDRESS = address        
+        U8_READ_CACHE_ADDRESS = address
     end
 
     return U8_READ_CACHE
@@ -43,7 +43,7 @@ end
 function ReadU16(segment, address)
     if U16_READ_CACHE_ADDRESS ~= address then
         U16_READ_CACHE = segment:ReadUInt16(address)
-        U16_READ_CACHE_ADDRESS = address        
+        U16_READ_CACHE_ADDRESS = address
     end
 
     return U16_READ_CACHE
@@ -54,7 +54,6 @@ function isInGame()
 end
 
 function updateInGameStatusFromMemorySegment(segment)
-
     local mainModuleIdx = segment:ReadUInt8(0x7e0010)
 
     local wasInTriforceRoom = AUTOTRACKER_IS_IN_TRIFORCE_ROOM
@@ -101,7 +100,7 @@ function updateAga1(segment)
 end
 
 function updateBottles(segment)
-    local item = Tracker:FindObjectForCode("bottle")    
+    local item = Tracker:FindObjectForCode("bottle")
     local count = 0
     for i = 0, 3, 1 do
         if ReadU8(segment, 0x7ef35c + i) > 0 then
@@ -143,7 +142,7 @@ function updateToggleItemFromByteAndFlag(segment, code, address, flag)
             print(item.Name, code, flag)
         end
 
-        local flagTest = value & flag
+        local flagTest = bit.band(value, flag)
 
         if flagTest ~= 0 then
             item.Active = true
@@ -157,12 +156,12 @@ function updateToggleFromRoomSlot(segment, code, slot)
     local item = Tracker:FindObjectForCode(code)
     if item then
         local roomData = ReadU16(segment, 0x7ef000 + (slot[1] * 2))
-        
+
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(roomData)
         end
 
-        item.Active = (roomData & (1 << slot[2])) ~= 0
+        item.Active = (bit.band(roomdata, bit.lshift(1, slot[2]))) ~= 0
     end
 end
 
@@ -170,8 +169,8 @@ function updateFlute(segment)
     local item = Tracker:FindObjectForCode("flute")
     local value = ReadU8(segment, 0x7ef38c)
 
-    local fakeFlute = value & 0x02
-    local realFlute = value & 0x01
+    local fakeFlute = bit.band(value, 0x02)
+    local realFlute = bit.band(value, 0x01)
 
     if realFlute ~= 0 then
         item.Active = true
@@ -196,13 +195,13 @@ function updatePseudoProgressiveItemFromByteAndFlag(segment, code, address, flag
     local item = Tracker:FindObjectForCode(code)
     if item then
         local value = ReadU8(segment, address)
-        local flagTest = value & flag
+        local flagTest = bit.band(value, flag)
 
         if flagTest ~= 0 then
             item.CurrentStage = math.max(1, item.CurrentStage)
         else
             item.CurrentStage = 0
-        end    
+        end
     end
 end
 
@@ -215,12 +214,12 @@ function updateSectionChestCountFromByteAndFlag(segment, locationRef, address, f
         end
 
         local value = ReadU8(segment, address)
-        
+
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(locationRef, value)
         end
 
-        if (value & flag) ~= 0 then
+        if (bit.band(value, flag)) ~= 0 then
             location.AvailableChestCount = 0
             if callback then
                 callback(true)
@@ -249,14 +248,14 @@ function updateSectionChestCountFromRoomSlotList(segment, locationRef, roomSlots
         end
 
         local clearedCount = 0
-        for i,slot in ipairs(roomSlots) do
+        for i, slot in ipairs(roomSlots) do
             local roomData = ReadU16(segment, 0x7ef000 + (slot[1] * 2))
 
             if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-                print(locationRef, roomData, 1 << slot[2])
+                print(locationRef, roomData, bit.lshift(1, slot[2]))
             end
-                
-            if (roomData & (1 << slot[2])) ~= 0 then
+
+            if (bit.band(roomData, bit.lshift(1, slot[2]))) ~= 0 then
                 clearedCount = clearedCount + 1
             end
         end
@@ -278,7 +277,6 @@ function updateOverworldEventsFromMemorySegment(segment)
 end
 
 function updateRoomsFromMemorySegment(segment)
-
     if not isInGame() then
         return false
     end
@@ -286,22 +284,21 @@ function updateRoomsFromMemorySegment(segment)
     InvalidateReadCaches()
 
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
-        updateToggleFromRoomSlot(segment, "ep", { 200, 11 })
-        updateToggleFromRoomSlot(segment, "dp", { 51, 11 })
-        updateToggleFromRoomSlot(segment, "toh", { 7, 11 })
-        updateToggleFromRoomSlot(segment, "pod", { 90, 11 })
-        updateToggleFromRoomSlot(segment, "sp", { 6, 11 })
-        updateToggleFromRoomSlot(segment, "sw", { 41, 11 })
-        updateToggleFromRoomSlot(segment, "tt", { 172, 11 })
-        updateToggleFromRoomSlot(segment, "ip", { 222, 11 })
-        updateToggleFromRoomSlot(segment, "mm", { 144, 11 })
-        updateToggleFromRoomSlot(segment, "tr", { 164, 11 })
+        updateToggleFromRoomSlot(segment, "ep", {200, 11})
+        updateToggleFromRoomSlot(segment, "dp", {51, 11})
+        updateToggleFromRoomSlot(segment, "toh", {7, 11})
+        updateToggleFromRoomSlot(segment, "pod", {90, 11})
+        updateToggleFromRoomSlot(segment, "sp", {6, 11})
+        updateToggleFromRoomSlot(segment, "sw", {41, 11})
+        updateToggleFromRoomSlot(segment, "tt", {172, 11})
+        updateToggleFromRoomSlot(segment, "ip", {222, 11})
+        updateToggleFromRoomSlot(segment, "mm", {144, 11})
+        updateToggleFromRoomSlot(segment, "tr", {164, 11})
         return true
     end
 end
 
 function updateItemsFromMemorySegment(segment)
-
     if not isInGame() then
         return false
     end
@@ -309,34 +306,33 @@ function updateItemsFromMemorySegment(segment)
     InvalidateReadCaches()
 
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
-
-        updateProgressiveItemFromByte(segment, "sword",  0x7ef359, 0)
+        updateProgressiveItemFromByte(segment, "sword", 0x7ef359, 0)
         updateProgressiveItemFromByte(segment, "shield", 0x7ef35a, 0)
-        updateProgressiveItemFromByte(segment, "armor",  0x7ef35b, 0)
+        updateProgressiveItemFromByte(segment, "armor", 0x7ef35b, 0)
         updateProgressiveItemFromByte(segment, "gloves", 0x7ef354, 0)
-        
-        updateToggleItemFromByte(segment, "hookshot",  0x7ef342)
-        updateToggleItemFromByte(segment, "bombs",     0x7ef343)
-        updateToggleItemFromByte(segment, "firerod",   0x7ef345)
-        updateToggleItemFromByte(segment, "icerod",    0x7ef346)
-        updateToggleItemFromByte(segment, "bombos",    0x7ef347)
-        updateToggleItemFromByte(segment, "ether",     0x7ef348)
-        updateToggleItemFromByte(segment, "quake",     0x7ef349)
-        updateToggleItemFromByte(segment, "lamp",      0x7ef34a)
-        updateToggleItemFromByte(segment, "hammer",    0x7ef34b)
-        updateToggleItemFromByte(segment, "net",       0x7ef34d)
-        updateToggleItemFromByte(segment, "book",      0x7ef34e)
-        updateToggleItemFromByte(segment, "somaria",   0x7ef350)
-        updateToggleItemFromByte(segment, "byrna",     0x7ef351)
-        updateToggleItemFromByte(segment, "cape",      0x7ef352)
-        updateMirrorFromByte(segment, "mirror",    0x7ef353)
-        updateToggleItemFromByte(segment, "boots",     0x7ef355)
-        updateToggleItemFromByte(segment, "flippers",  0x7ef356)
-        updateToggleItemFromByte(segment, "pearl",     0x7ef357)
+
+        updateToggleItemFromByte(segment, "hookshot", 0x7ef342)
+        updateToggleItemFromByte(segment, "bombs", 0x7ef343)
+        updateToggleItemFromByte(segment, "firerod", 0x7ef345)
+        updateToggleItemFromByte(segment, "icerod", 0x7ef346)
+        updateToggleItemFromByte(segment, "bombos", 0x7ef347)
+        updateToggleItemFromByte(segment, "ether", 0x7ef348)
+        updateToggleItemFromByte(segment, "quake", 0x7ef349)
+        updateToggleItemFromByte(segment, "lamp", 0x7ef34a)
+        updateToggleItemFromByte(segment, "hammer", 0x7ef34b)
+        updateToggleItemFromByte(segment, "net", 0x7ef34d)
+        updateToggleItemFromByte(segment, "book", 0x7ef34e)
+        updateToggleItemFromByte(segment, "somaria", 0x7ef350)
+        updateToggleItemFromByte(segment, "byrna", 0x7ef351)
+        updateToggleItemFromByte(segment, "cape", 0x7ef352)
+        updateMirrorFromByte(segment, "mirror", 0x7ef353)
+        updateToggleItemFromByte(segment, "boots", 0x7ef355)
+        updateToggleItemFromByte(segment, "flippers", 0x7ef356)
+        updateToggleItemFromByte(segment, "pearl", 0x7ef357)
         updateToggleItemFromByte(segment, "halfmagic", 0x7ef37b)
 
         updateToggleItemFromByteAndFlag(segment, "blueboom", 0x7ef38c, 0x80)
-        updateToggleItemFromByteAndFlag(segment, "redboom",  0x7ef38c, 0x40)
+        updateToggleItemFromByteAndFlag(segment, "redboom", 0x7ef38c, 0x40)
         updateToggleItemFromByteAndFlag(segment, "powder", 0x7ef38c, 0x10)
         updateToggleItemFromByteAndFlag(segment, "bow", 0x7ef38e, 0x80)
         updateToggleItemFromByteAndFlag(segment, "silvers", 0x7ef38e, 0x40)
@@ -348,30 +344,29 @@ function updateItemsFromMemorySegment(segment)
         updateFlute(segment)
         updateAga1(segment)
 
-        updateToggleItemFromByteAndFlag(segment, "gtbk",  0x7ef366, 0x04)
-        updateToggleItemFromByteAndFlag(segment, "trbk",  0x7ef366, 0x08)
-        updateToggleItemFromByteAndFlag(segment, "ttbk",  0x7ef366, 0x10)
+        updateToggleItemFromByteAndFlag(segment, "gtbk", 0x7ef366, 0x04)
+        updateToggleItemFromByteAndFlag(segment, "trbk", 0x7ef366, 0x08)
+        updateToggleItemFromByteAndFlag(segment, "ttbk", 0x7ef366, 0x10)
         updateToggleItemFromByteAndFlag(segment, "tohbk", 0x7ef366, 0x20)
-        updateToggleItemFromByteAndFlag(segment, "ipbk",  0x7ef366, 0x40)    
-        updateToggleItemFromByteAndFlag(segment, "swbk",  0x7ef366, 0x80)
-        updateToggleItemFromByteAndFlag(segment, "mmbk",  0x7ef367, 0x01)
+        updateToggleItemFromByteAndFlag(segment, "ipbk", 0x7ef366, 0x40)
+        updateToggleItemFromByteAndFlag(segment, "swbk", 0x7ef366, 0x80)
+        updateToggleItemFromByteAndFlag(segment, "mmbk", 0x7ef367, 0x01)
         updateToggleItemFromByteAndFlag(segment, "podbk", 0x7ef367, 0x02)
-        updateToggleItemFromByteAndFlag(segment, "spbk",  0x7ef367, 0x04)
-        updateToggleItemFromByteAndFlag(segment, "dpbk",  0x7ef367, 0x10)
-        updateToggleItemFromByteAndFlag(segment, "epbk",  0x7ef367, 0x20)
+        updateToggleItemFromByteAndFlag(segment, "spbk", 0x7ef367, 0x04)
+        updateToggleItemFromByteAndFlag(segment, "dpbk", 0x7ef367, 0x10)
+        updateToggleItemFromByteAndFlag(segment, "epbk", 0x7ef367, 0x20)
         local item = Tracker:FindObjectForCode("hcdoor")
         if item then
-            updateToggleItemFromByteAndFlag(segment, "hcdoor",  0x7ef367, 0x40) 
+            updateToggleItemFromByteAndFlag(segment, "hcdoor", 0x7ef367, 0x40)
         end
         item = Tracker:FindObjectForCode("atdoor")
         if item then
-            updateToggleItemFromByteAndFlag(segment, "atdoor",  0x7ef367, 0x08)
+            updateToggleItemFromByteAndFlag(segment, "atdoor", 0x7ef367, 0x08)
         end
     end
 end
 
 function updateChestKeysFromMemorySegment(segment)
-
     if not isInGame() then
         return false
     end
@@ -379,24 +374,22 @@ function updateChestKeysFromMemorySegment(segment)
     InvalidateReadCaches()
 
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
-
         -- Pending small key from chests tracking update
         -- Sewers is unused by the game - this is here for reference sake
-        -- updateConsumableItemFromByte(segment, "sewers_smallkey",  0x7ef4e0)
+        -- updateConsumableItemFromByte(segment, "sewers_smallkey",    0x7ef4e0)
         updateConsumableItemFromTwoByteSum(segment, "hcsk", 0x7ef4e0, 0x7ef4e1)
-        updateConsumableItemFromByte(segment, "epsk",  0x7ef4e2)
-        updateConsumableItemFromByte(segment, "dpsk",  0x7ef4e3)
-        updateConsumableItemFromByte(segment, "atsk",  0x7ef4e4)
-        updateConsumableItemFromByte(segment, "spsk",  0x7ef4e5)
+        updateConsumableItemFromByte(segment, "epsk", 0x7ef4e2)
+        updateConsumableItemFromByte(segment, "dpsk", 0x7ef4e3)
+        updateConsumableItemFromByte(segment, "atsk", 0x7ef4e4)
+        updateConsumableItemFromByte(segment, "spsk", 0x7ef4e5)
         updateConsumableItemFromByte(segment, "podsk", 0x7ef4e6)
-        updateConsumableItemFromByte(segment, "mmsk",  0x7ef4e7)
-        updateConsumableItemFromByte(segment, "swsk",  0x7ef4e8)
-        updateConsumableItemFromByte(segment, "ipsk",  0x7ef4e9)
+        updateConsumableItemFromByte(segment, "mmsk", 0x7ef4e7)
+        updateConsumableItemFromByte(segment, "swsk", 0x7ef4e8)
+        updateConsumableItemFromByte(segment, "ipsk", 0x7ef4e9)
         updateConsumableItemFromByte(segment, "tohsk", 0x7ef4ea)
-        updateConsumableItemFromByte(segment, "ttsk",  0x7ef4eb)
-        updateConsumableItemFromByte(segment, "trsk",  0x7ef4ec)
-        updateConsumableItemFromByte(segment, "gtsk",  0x7ef4ed)
-       
+        updateConsumableItemFromByte(segment, "ttsk", 0x7ef4eb)
+        updateConsumableItemFromByte(segment, "trsk", 0x7ef4ec)
+        updateConsumableItemFromByte(segment, "gtsk", 0x7ef4ed)
     end
 end
 
