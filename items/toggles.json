@@ -36,7 +36,8 @@
     "name": "Libra Crest",
     "type": "toggle",
     "loop": true,
-    "img": "images/crests/crest_libra.png",
+    "img": "images/crests/crest.png",
+    "img_mods": "overlay|images/crests/overlay/libra.png",
     "codes": "libra, libracrest"
   },
   // Gemini Crest
@@ -44,7 +45,8 @@
     "name": "Gemini Crest",
     "type": "toggle",
     "loop": true,
-    "img": "images/crests/crest_gemini.png",
+    "img": "images/crests/crest.png",
+    "img_mods": "overlay|images/crests/overlay/gemini.png",
     "codes": "gemini, geminicrest"
   },
   // Mobious Crest
@@ -52,7 +54,8 @@
     "name": "Mobious Crest",
     "type": "toggle",
     "loop": true,
-    "img": "images/crests/crest_mobious.png",
+    "img": "images/crests/crest.png",
+    "img_mods": "overlay|images/crests/overlay/mobious.png",
     "codes": "mobious, mobiouscrest"
   },
   // Elixir
