@@ -3,6 +3,6 @@
   "auto_pin_capturing_locations": false,
   "auto_unpin_on_clear": false,
   "layout_swap_left_right": false,
-  "allow_resize": false,
+  "allow_resize": true,
   "disabled_image_filter": "grayscale, dim"
 }

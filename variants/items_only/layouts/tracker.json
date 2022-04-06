@@ -6,7 +6,7 @@
     "item_width": 36,
     "rows": [
       ["swords", "axes", "bombs", "claws"],
-      ["hats", "mails", "shields", "jewelry"],
+      ["hats", "armors", "shields", "accessories"],
       ["exit", "cure", "heal", "life"],
       ["quake", "blizzard", "fire", "aero"],
       ["flare", "white", "meteor", "thunder"],
