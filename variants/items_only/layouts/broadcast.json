@@ -1,0 +1,20 @@
+﻿{
+  "tracker_broadcast": {
+    "background": "#000000",
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_margin": "1,1",
+    "item_height": 64,
+    "item_width": 64,
+    "rows": [
+      ["swords", "axes", "bombs", "claws"],
+      ["exit", "cure", "heal", "life"],
+	  ["quake","blizzard","fire","aero"],
+	  ["thunder", "white", "meteor", "flare"],
+      ["elixir", "treewither", "wakewater", "venuskey"],
+      ["multikey", "gasmask", "magicmirror", "thunderrock", "captaincap"],
+	  ["libra", "gemini", "mobious"],
+	  ["sandcoin", "rivercoin", "suncoin", "skycoin"]
+    ]
+  }
+}
