@@ -10,52 +10,60 @@
         "name": "No Helm",
         "img": "images/armor/hat/helmet1.png",
         "img_mods": "@disabled",
-        "codes": "hats, hat, helm, helmet, hat0, helm0, helmet0"
+        "codes": "hats, hat, helm, helmet, hat0, helm0, helmet0",
+        "secondary_codes": "none"
       },
       {
         "name": "Steel Helm",
         "img": "images/armor/hat/helmet1.png",
-        "codes": "hat1, helm1, helmet1"
+        "codes": "hat1, helm1, helmet1, steelhelm",
+        "secondary_codes": "steel"
       },
       {
         "name": "Moon Helm",
         "img": "images/armor/hat/helmet2.png",
-        "codes": "hat2, helm2, helmet2"
+        "codes": "hat2, helm2, helmet2, moonhelm",
+        "secondary_codes": "moon"
       },
       {
         "name": "Apollo Helm",
         "img": "images/armor/hat/helmet3.png",
-        "codes": "hat3, helm3, helmet3"
+        "codes": "hat3, helm3, helmet3, apollohelm",
+        "secondary_codes": "apollo"
       }
     ]
   },
-  // Mails
+  // Body Armor
   {
-    "name": "Mails",
+    "name": "Body Armor",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
         "name": "No Mail",
-        "img": "images/armor/mail/mail1.png",
+        "img": "images/armor/armor/armor1.png",
         "img_mods": "@disabled",
-        "codes": "mails, mail, mail0"
+        "codes": "armors, armor, armor0",
+        "secondary_codes": "none"
       },
       {
         "name": "Steel Armor",
-        "img": "images/armor/mail/mail1.png",
-        "codes": "mail1"
+        "img": "images/armor/armor/armor1.png",
+        "codes": "armor1, steelarmor",
+        "secondary_codes": "steel"
       },
       {
         "name": "Noble Armor",
-        "img": "images/armor/mail/mail2.png",
-        "codes": "mail2"
+        "img": "images/armor/armor/armor2.png",
+        "codes": "armor2, noblearmor",
+        "secondary_codes": "noble"
       },
       {
         "name": "Gaia's Armor",
-        "img": "images/armor/mail/mail3.png",
-        "codes": "mail3"
+        "img": "images/armor/armor/armor3.png",
+        "codes": "armor3, gaiaarmor, gaiasarmor",
+        "secondary_codes": "gaia, gaias"
       }
     ]
   },
@@ -70,52 +78,60 @@
         "name": "No Shield",
         "img": "images/armor/shield/shield1.png",
         "img_mods": "@disabled",
-        "codes": "shields, shield, shield0"
+        "codes": "shields, shield, shield0",
+        "secondary_codes": "none"
       },
       {
         "name": "Steel Shield",
         "img": "images/armor/shield/shield1.png",
-        "codes": "shield1"
+        "codes": "shield1, steelshield",
+        "secondary_codes": "steel"
       },
       {
         "name": "Venus Shield",
         "img": "images/armor/shield/shield2.png",
-        "codes": "shield2"
+        "codes": "shield2, venusshield",
+        "secondary_codes": "venus"
       },
       {
         "name": "Aegis Shield",
         "img": "images/armor/shield/shield3.png",
-        "codes": "shield3"
+        "codes": "shield3, aegisshield",
+        "secondary_codes": "aegis"
       }
     ]
   },
-  // Jewelry
+  // Accessories
   {
-    "name": "Jewelry",
+    "name": "Accessories",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "name": "No Jewelry",
-        "img": "images/armor/jewelry/charm.png",
+        "name": "No Accessory",
+        "img": "images/armor/accessories/charm.png",
         "img_mods": "@disabled",
-        "codes": "jewelry, jewelry0"
+        "codes": "accessories, accessories0",
+        "secondary_codes": "none"
       },
       {
         "name": "Charm",
-        "img": "images/armor/jewelry/charm.png",
-        "codes": "jewelry1"
+        "img": "images/armor/accessories/charm.png",
+        "codes": "accessories1, charm",
+        "secondary_codes": "charm"
       },
       {
         "name": "Magic Ring",
-        "img": "images/armor/jewelry/magicring.png",
-        "codes": "jewelry2"
+        "img": "images/armor/accessories/magicring.png",
+        "codes": "accessories2, magicring",
+        "secondary_codes": "magicring"
       },
       {
         "name": "Cupid Locket",
-        "img": "images/armor/jewelry/cupidlocket.png",
-        "codes": "jewelry3"
+        "img": "images/armor/accessories/cupidlocket.png",
+        "codes": "accessories3, cupidlocket",
+        "secondary_codes": "cupidlocket"
       }
     ]
   }
