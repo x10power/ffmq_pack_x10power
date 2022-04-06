@@ -1,0 +1,51 @@
+[
+  // Focus Tower
+  {
+    "name": "Focus Tower",
+    "parent": "World",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Doors
+      {
+        "name": "Doors",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 382,
+            "y": 384
+          },
+          {
+            "map": "restored-world",
+            "x": 382,
+            "y": 384
+          }
+        ],
+        "sections": [
+          {
+            "name": "Earth Door",
+            "access_rules": ["sandcoin"],
+            "item_count": 1
+          },
+          {
+            "name": "Water Door",
+            "access_rules": ["rivercoin"],
+            "item_count": 1
+          },
+          {
+            "name": "Fire Door",
+            "access_rules": ["suncoin"],
+            "item_count": 1
+          },
+          {
+            "name": "Wind Door",
+            "access_rules": ["skycoin"],
+            "item_count": 1
+          },
+        ]
+      }
+    ]
+  }
+]

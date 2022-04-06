@@ -1,0 +1,30 @@
+[
+  // Hill of Destiny
+  {
+    "name": "Hill of Destiny",
+    "parent": "World",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Behemoth
+      {
+        "name": "Behemoth",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 320,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 0
+          }
+        ]
+      }
+    ]
+  }
+]

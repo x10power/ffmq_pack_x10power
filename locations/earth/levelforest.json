@@ -1,0 +1,39 @@
+[
+  // Level Forest
+  {
+    "name": "Level Forest",
+    "parent": "World",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Locations
+      {
+        "name": "Locations",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 180,
+            "y": 520
+          },
+          {
+            "map": "restored-world",
+            "x": 180,
+            "y": 520
+          }
+        ],
+        "sections": [
+          {
+            "name": "Tree Wither",
+            "item_count": 1
+          },
+          {
+            "name": "Cure Potions",
+            "item_count": 3
+          }
+        ]
+      }
+    ]
+  }
+]

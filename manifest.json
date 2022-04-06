@@ -8,6 +8,10 @@
   "variants": {
     "items_only": {
       "display_name": "Items-Only"
+    },
+    "standard_map": {
+      "display_name": "Standard Map",
+      "flags": ["map"]
     }
   }
 }

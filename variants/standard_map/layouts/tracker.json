@@ -1,0 +1,53 @@
+﻿{
+  "shared_item_grid": {
+    "type": "itemgrid",
+    "item_margin": "1,1",
+    "item_height": 36,
+    "item_width": 36,
+    "rows": [
+      ["swords", "axes", "bombs", "claws"],
+      ["hats", "mails", "shields", "jewelry"],
+      ["exit", "cure", "heal", "life"],
+      ["quake", "blizzard", "fire", "aero"],
+      ["flare", "white", "meteor", "thunder"],
+      ["elixir", "treewither", "wakewater", "venuskey"],
+      ["multikey", "gasmask", "magicmirror", "thunderrock"],
+      ["captaincap", "libracrest", "geminicrest", "mobiouscrest"],
+      ["sandcoin", "rivercoin", "suncoin", "skycoin"]
+    ]
+  },
+  "tracker_default": {
+    "type": "container",
+    "content": {
+      "type": "dock",
+      "content": [
+        {
+          "type": "dock",
+          "dock": "left",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins"
+              }
+            }
+          ]
+        },
+        {
+          "type": "layout",
+          "key": "game_map"
+        }
+      ]
+    }
+  }
+}

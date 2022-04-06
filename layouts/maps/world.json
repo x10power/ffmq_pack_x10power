@@ -1,0 +1,23 @@
+{
+  "game_map": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Drained World",
+        "content": {
+          "type": "map",
+          "maps": [ "drained-world" ],
+          "width": 880
+        }
+      },
+      {
+        "title": "Restored World",
+        "content": {
+          "type": "map",
+          "maps": [ "restored-world" ],
+          "width": 880
+        }
+      }
+    ]
+  }
+}
