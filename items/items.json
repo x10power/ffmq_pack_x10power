@@ -89,385 +89,379 @@
       }
     ]
   },
-    // Claws
-	{
+  // Claws
+  {
     "name": "Claws",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "stages": 
-		[
-		{
+    "stages": [
+      {
         "name": "No Claws",
         "img": "images/weapons/claw1.png",
         "img_mods": "@disabled",
         "codes": "claws"
-		},
-		{
+      },
+      {
         "name": "Cat Claws",
         "img": "images/weapons/claw1.png",
         "codes": "claw1"
-		},
-		{
+      },
+      {
         "name": "Charm Claw",
         "img": "images/weapons/claw2.png",
         "codes": "claw2"
-		},
-		{
+      },
+      {
         "name": "Dragon Claw",
         "img": "images/weapons/claw3.png",
         "codes": "claw3"
-		}
-		]
-	},
-	// Helmets
-	{
+      }
+    ]
+  },
+  // Helmets
+  {
     "name": "Helmets",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "stages": 
-		[
-		{
+    "stages": [
+      {
         "name": "No Helemts",
         "img": "images/armor/hat/helm_steel.png",
         "img_mods": "@disabled",
         "codes": "helmets"
-		},
-		{
+      },
+      {
         "name": "Steel Helm",
         "img": "images/armor/hat/helm_steel.png",
         "codes": "helmets1"
-		},
-		{
+      },
+      {
         "name": "Moon Helm",
         "img": "images/armor/hat/helm_moon.png",
         "codes": "helmets2"
-		},
-		{
+      },
+      {
         "name": "Apollo Helm",
         "img": "images/armor/hat/helm_apollo.png",
         "codes": "helmets3"
-		}
-		]
-	},
-	// Accessories
-	{
+      }
+    ]
+  },
+  // Accessories
+  {
     "name": "Accessories",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "stages": 
-		[
-		{
+    "stages": [
+      {
         "name": "No Accessories",
         "img": "images/armor/accessories/charm.png",
         "img_mods": "@disabled",
         "codes": "accessories"
-		},
-		{
+      },
+      {
         "name": "Charm",
         "img": "images/armor/accessories/charm.png",
         "codes": "accessories1"
-		},
-		{
+      },
+      {
         "name": "Magic Ring",
         "img": "images/armor/accessories/magicring.png",
         "codes": "accessories2"
-		},
-		{
+      },
+      {
         "name": "Cupid Locket",
         "img": "images/armor/accessories/cupidlocket.png",
         "codes": "accessories3"
-		}
-		]
-	},
-	// Body Armor
-	{
+      }
+    ]
+  },
+  // Body Armor
+  {
     "name": "BodyArmor",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "stages": 
-		[
-		{
+    "stages": [
+      {
         "name": "No Body Armor",
         "img": "images/armor/mail/armor_steel.png",
         "img_mods": "@disabled",
         "codes": "bodyarmors"
-		},
-		{
+      },
+      {
         "name": "Steel Armor",
         "img": "images/armor/mail/armor_steel.png",
         "codes": "bodyarmors1"
-		},
-		{
+      },
+      {
         "name": "Noble Armor",
         "img": "images/armor/mail/armor_noble.png",
         "codes": "bodyarmors2"
-		},
-		{
+      },
+      {
         "name": "Gala Armor",
         "img": "images/armor/mail/armor_gala.png",
         "codes": "bodyarmors3"
-		}
-		]
-	},
-	// Shields
-	{
+      }
+    ]
+  },
+  // Shields
+  {
     "name": "Shields",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "stages": 
-		[
-		{
+    "stages": [
+      {
         "name": "No Sheilds",
         "img": "images/armor/shield/shield_steel.png",
         "img_mods": "@disabled",
         "codes": "shields"
-		},
-		{
+      },
+      {
         "name": "Steel Shield",
         "img": "images/armor/shield/shield_steel.png",
         "codes": "shields1"
-		},
-		{
+      },
+      {
         "name": "Venus Shield",
         "img": "images/armor/shield/shield_venus.png",
         "codes": "shields2"
-		},
-		{
+      },
+      {
         "name": "Aegis Shield",
         "img": "images/armor/shield/shield_aegis.png",
         "codes": "shields3"
-		}
-		]
-	},
-    //Exit
-      {
-		"name": "Exit",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/magic/white/exit.png",
-		"codes": "exit"
-      },
-	//Cure
-      {
-        "name": "Cure",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/white/cure.png",
-        "codes": "cure"
-      },
-	//Heal
-      {
-        "name": "Heal",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/white/heal.png",        
-        "codes": "heal"
-      },
-	//Life
-      {
-        "name": "Life",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/white/life.png",
-        "codes": "life"
-      },
-    //Quake
-      {
-        "name": "Quake",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/black/quake.png",
-        "codes": "quake"
-      },
-	//Blizzard
-      {
-        "name": "Blizzard",
-		"type": "toggle",
-        "loop": true,
-        "img": "images/magic/black/blizzard.png",
-        "codes": "blizzard"
-      },
-	//Fire
-      {
-        "name": "Fire",
-        "type": "toggle",
-		"loop": true,
-        "img": "images/magic/black/fire.png",
-        "codes": "fire"
-      },
-	//Aero
-      {
-        "name": "Aero",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/black/aero.png",       
-        "codes": "aero"
-      },
-	//Thunder
-      {
-        "name": "Thunder",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/wizard/thunder.png",
-        "codes": "thunder"
-      },
-	//White
-      {
-        "name": "White",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/wizard/white.png",
-        "codes": "white"
-      },
-	//Meteor
-      {
-        "name": "Meteor",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/wizard/meteor.png",
-        "codes": "meteor"
-      },
-	//Flare
-      {
-        "name": "Flare",
-		"type": "toggle",
-		"loop": true,
-        "img": "images/magic/wizard/flare.png",
-        "codes": "flare"
-      },  
-    
-    
-    // Elixir
-	{
-		"name": "Elixir",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/elixir.png",
-		"codes": "elixir"
-	},
-    // Tree Wither
-	{
-		"name": "Tree Wither",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/treewither.png",
-		"codes": "treewither"
-	},
-    // Wake Water
-	{
-		"name": "Wake Water",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/wakewater.png",
-		"codes": "wakewater"
-	},
-    // Venus Key
-	{
-		"name": "Venus Key",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/venuskey.png",
-		"codes": "venuskey"
-	},
-    // Multi Key
-	{
-		"name": "Multi Key",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/multikey.png",
-		"codes": "multikey"
-	},
-    // Gas Mask
-	{
-		"name": "Gas Mask",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/gasmask.png",
-		"codes": "gasmask"
-	},
-    // Magic Mirror
-	{
-		"name": "Magic Mirror",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/magicmirror.png",
-		"codes": "magicmirror"
-	},
-    // Thunder Rock
-	{
-		"name": "Thunder Rock",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/thunderrock.png",
-		"codes": "thunderrock"
-	},
-    // Captain Cap
-	{
-		"name": "Captain Cap",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/inventory/captaincap.png",
-		"codes": "captaincap"
-	},
-	// Libra Crest
-	{
-		"name": "Libra Crest",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/crests/crest_libra.png",
-		"codes": "libra"
-	},
-    // Gemini Crest
-	{
-		"name": "Gemini Crest",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/crests/crest_gemini.png",
-		"codes": "gemini"
-	},
-    // Mobious Crest
-	{
-		"name": "Mobious Crest",
-		"type": "toggle",
-		"loop": true,
-		"img": "images/crests/crest_mobious.png",
-		"codes": "mobious"
-	},
-	// Sand Coin
-		{
-			"name": "Sand Coin",
-			"type": "toggle",
-			"loop": true,
-			"img": "images/coins/coin_sand.png",
-			"codes": "sandcoin"
-		},
-    // River Coin
-		{
-			"name": "River Coin",
-			"type": "toggle",
-			"loop": true,
-			"img": "images/coins/coin_river.png",
-			"codes": "rivercoin"
-		},
-    // Sun Coin
-		{
-			"name": "Sun Coin",
-			"type": "toggle",
-			"loop": true,
-			"img": "images/coins/coin_sun.png",
-			"codes": "suncoin"
-		},
-    // Sky Coin
-		{
-			"name": "Sky Coin",
-			"type": "toggle",
-			"loop": true,
-			"img": "images/coins/coin_sky.png",
-			"codes": "skycoin"
-		},
+      }
+    ]
+  },
+  //Exit
+  {
+    "name": "Exit",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/exit.png",
+    "codes": "exit"
+  },
+  //Cure
+  {
+    "name": "Cure",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/cure.png",
+    "codes": "cure"
+  },
+  //Heal
+  {
+    "name": "Heal",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/heal.png",
+    "codes": "heal"
+  },
+  //Life
+  {
+    "name": "Life",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/white/life.png",
+    "codes": "life"
+  },
+  //Quake
+  {
+    "name": "Quake",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/quake.png",
+    "codes": "quake"
+  },
+  //Blizzard
+  {
+    "name": "Blizzard",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/blizzard.png",
+    "codes": "blizzard"
+  },
+  //Fire
+  {
+    "name": "Fire",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/fire.png",
+    "codes": "fire"
+  },
+  //Aero
+  {
+    "name": "Aero",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/black/aero.png",
+    "codes": "aero"
+  },
+  //Thunder
+  {
+    "name": "Thunder",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/thunder.png",
+    "codes": "thunder"
+  },
+  //White
+  {
+    "name": "White",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/white.png",
+    "codes": "white"
+  },
+  //Meteor
+  {
+    "name": "Meteor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/meteor.png",
+    "codes": "meteor"
+  },
+  //Flare
+  {
+    "name": "Flare",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/magic/wizard/flare.png",
+    "codes": "flare"
+  },
+
+  // Elixir
+  {
+    "name": "Elixir",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/elixir.png",
+    "codes": "elixir"
+  },
+  // Tree Wither
+  {
+    "name": "Tree Wither",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/treewither.png",
+    "codes": "treewither"
+  },
+  // Wake Water
+  {
+    "name": "Wake Water",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/wakewater.png",
+    "codes": "wakewater"
+  },
+  // Venus Key
+  {
+    "name": "Venus Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/venuskey.png",
+    "codes": "venuskey"
+  },
+  // Multi Key
+  {
+    "name": "Multi Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/multikey.png",
+    "codes": "multikey"
+  },
+  // Gas Mask
+  {
+    "name": "Gas Mask",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/gasmask.png",
+    "codes": "gasmask"
+  },
+  // Magic Mirror
+  {
+    "name": "Magic Mirror",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/magicmirror.png",
+    "codes": "magicmirror"
+  },
+  // Thunder Rock
+  {
+    "name": "Thunder Rock",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/thunderrock.png",
+    "codes": "thunderrock"
+  },
+  // Captain Cap
+  {
+    "name": "Captain Cap",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/captaincap.png",
+    "codes": "captaincap"
+  },
+  // Libra Crest
+  {
+    "name": "Libra Crest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crests/crest_libra.png",
+    "codes": "libra"
+  },
+  // Gemini Crest
+  {
+    "name": "Gemini Crest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crests/crest_gemini.png",
+    "codes": "gemini"
+  },
+  // Mobious Crest
+  {
+    "name": "Mobious Crest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crests/crest_mobious.png",
+    "codes": "mobious"
+  },
+  // Sand Coin
+  {
+    "name": "Sand Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_sand.png",
+    "codes": "sandcoin"
+  },
+  // River Coin
+  {
+    "name": "River Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_river.png",
+    "codes": "rivercoin"
+  },
+  // Sun Coin
+  {
+    "name": "Sun Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_sun.png",
+    "codes": "suncoin"
+  },
+  // Sky Coin
+  {
+    "name": "Sky Coin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_sky.png",
+    "codes": "skycoin"
+  }
 ]
