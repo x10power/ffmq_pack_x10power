@@ -12,4 +12,5 @@ for nuke in CI_SETTINGS["common"]["cleanup"]["nuke"]:
   toNuke.append(os.path.join(".",nuke))
 
 for nuke in toNuke:
-  rmtree(nuke)
+  if os.path.exists(nuke):
+    rmtree(nuke)
