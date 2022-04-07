@@ -13,11 +13,12 @@ with open(os.path.join(".", "resources", "tests", "output", "itemCodes.json"), "
 with open(os.path.join(".", "resources", "tests", "output", "funcNames.json"), "r") as funcsFile:
     funcs = commentjson.load(funcsFile)
 
+print("Reading Locations")
 dirname = os.path.join(".", "locations")
 for r,d,f in os.walk(dirname):
     for filename in f:
         if os.path.isfile(os.path.join(r, filename)):
-            print(f"Reading: {filename}")
+            print(f"Reading: {dirname}{os.sep}{filename}")
             with open(os.path.join(r, filename), "r") as locsFile:
                 locsManifest = commentjson.load(locsFile)
                 for loc in locsManifest:
