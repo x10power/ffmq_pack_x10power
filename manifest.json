@@ -1,9 +1,9 @@
 ﻿{
-  "name": "Final Fantasy Mystic Quest Item Tracker",
+  "name": "Final Fantasy Mystic Quest Tracker",
   "game_name": "Final Fantasy Mystic Quest",
   "platform": "snes",
   "package_version": "1.0.000",
-  "package_uid": "ffmq-items",
+  "package_uid": "ffmq-rando-tracker",
   "author": "x10power",
   "variants": {
     "items_only": {
