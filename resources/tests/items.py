@@ -9,7 +9,7 @@ for filename in os.listdir(dirname):
     if os.path.isfile(os.path.join(dirname, filename)):
         print(f"Reading: {dirname}{os.sep}{filename}")
         with open(os.path.join(dirname, filename), "r") as itemsFile:
-            if os.splitext(itemsFile) == ".json":
+            if os.path.splitext(itemsFile) == ".json":
                 itemsManifest = commentjson.load(itemsFile)
                 for item in itemsManifest:
                     if "codes" in item:
