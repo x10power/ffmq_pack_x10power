@@ -13,7 +13,7 @@ print("Reading Scripts")
 dirname = os.path.join(".", "scripts")
 for filename in os.listdir(dirname):
     if os.path.isfile(os.path.join(dirname, filename)):
-        if os.path.splitext(filename) == ".lua":
+        if os.path.splitext(filename)[1].lower() == ".lua":
             print(f"Reading: {dirname}{os.sep}{filename}")
             with open(os.path.join(dirname, filename), "r") as funcsFile:
                 lines = funcsFile.read().split("\n")

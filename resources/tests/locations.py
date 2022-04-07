@@ -18,7 +18,7 @@ dirname = os.path.join(".", "locations")
 for r, d, f in os.walk(dirname):
     for filename in f:
         if os.path.isfile(os.path.join(r, filename)):
-            if os.path.splitext(filename) == ".json":
+            if os.path.splitext(filename)[1].lower() == ".json":
                 print(f"Reading: {dirname}{os.sep}{filename}")
                 with open(os.path.join(r, filename), "r") as locsFile:
                     locsManifest = commentjson.load(locsFile)

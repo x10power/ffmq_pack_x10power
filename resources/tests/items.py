@@ -7,7 +7,7 @@ print("Reading Items")
 dirname = os.path.join(".", "items")
 for filename in os.listdir(dirname):
     if os.path.isfile(os.path.join(dirname, filename)):
-        if os.path.splitext(filename) == ".json":
+        if os.path.splitext(filename)[1].lower() == ".json":
             print(f"Reading: {dirname}{os.sep}{filename}")
             with open(os.path.join(dirname, filename), "r") as itemsFile:
                 itemsManifest = commentjson.load(itemsFile)
