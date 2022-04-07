@@ -337,7 +337,10 @@ def install_modules():
     if ret.stdout.strip():
         process_module_output(ret.stdout.strip().split("\n"))
 
-        with open(os.path.join(".", "resources", "user", "meta", "manifests", "settings.json"), "w") as settings:
+        settingsPath = os.path.join(".", "resources", "user", "meta", "manifests")
+        if not os.path.isdir(settingsPath):
+            os.makedirs(settingsPath)
+        with open(os.path.join(settingsPath, "settings.json"), "w") as settings:
             settings.write(
                 json.dumps(
                     {
