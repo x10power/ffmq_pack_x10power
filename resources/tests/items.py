@@ -28,5 +28,5 @@ codes.sort()
 outputdir = os.path.join(".","resources","tests","output")
 if not os.path.exists(outputdir):
     os.makedirs(outputdir)
-with open(os.path.join(outputdir, "itemCodes.json"), "w+") as itemsJSON:
+with open(os.path.join(outputdir, "itemCodes.json"), mode="w+", encoding="utf-8") as itemsJSON:
     itemsJSON.write(commentjson.dumps(codes, indent=2))

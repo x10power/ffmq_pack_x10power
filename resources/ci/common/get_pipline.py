@@ -340,7 +340,7 @@ def install_modules():
         settingsPath = os.path.join(".", "resources", "user", "meta", "manifests")
         if not os.path.isdir(settingsPath):
             os.makedirs(settingsPath)
-        with open(os.path.join(settingsPath, "settings.json"), "w") as settings:
+        with open(os.path.join(settingsPath, "settings.json"), mode="w", encoding="utf-8") as settings:
             settings.write(
                 json.dumps(
                     {
@@ -352,7 +352,7 @@ def install_modules():
                     indent=2
                 )
             )
-        with open(os.path.join(".", "resources", "user", "meta", "manifests", "pipline.txt"), "w") as settings:
+        with open(os.path.join(".", "resources", "user", "meta", "manifests", "pipline.txt"), mode="w", encoding="utf-8") as settings:
             settings.write(" ".join(args) + " -m " + PIPEXE)
         SUCCESS = True
 

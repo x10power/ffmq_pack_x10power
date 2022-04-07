@@ -13,7 +13,7 @@ def prepare_manifest():
       APPVERSION = f.readlines()[0]
 
   if APPVERSION != "":
-      with open(os.path.join("manifest.json"), "r+") as manifestFile:
+      with open(os.path.join("manifest.json"), mode="r+", encoding="utf-8") as manifestFile:
           manifestJSON = json.load(manifestFile)
           manifestJSON["package_version"] = APPVERSION
           manifestFile.seek(0)

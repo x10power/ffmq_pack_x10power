@@ -38,7 +38,7 @@ funcs = set(funcs)
 funcs = list(funcs)
 funcs.sort()
 
-with open(os.path.join(".", "resources", "tests", "output", "funcNames.json"), "w+") as funcsJSON:
+with open(os.path.join(".", "resources", "tests", "output", "funcNames.json"), mode="w+", encoding="utf-8") as funcsJSON:
     funcsJSON.write(commentjson.dumps(funcs, indent=2))
-with open(os.path.join(".", "resources", "tests", "output", "itemToFunc.json"), "w+") as iFuncJSON:
+with open(os.path.join(".", "resources", "tests", "output", "itemToFunc.json"), mode="w+", encoding="utf-8") as iFuncJSON:
     iFuncJSON.write(commentjson.dumps(itemToFunc, indent=2))

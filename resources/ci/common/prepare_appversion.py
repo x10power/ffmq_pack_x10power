@@ -15,12 +15,12 @@ def prepare_appversion():
 
   # set tag to app_version.txt
   if not env["GITHUB_TAG"] == "":
-      with open(os.path.join(".",*CI_SETTINGS["common"]["prepare_appversion"]["app_version"]), "w+") as f:
+      with open(os.path.join(".",*CI_SETTINGS["common"]["prepare_appversion"]["app_version"]), mode="w+", encoding="utf-8") as f:
           _ = f.read()
           f.seek(0)
           f.write(env["GITHUB_TAG"])
           f.truncate()
-      with open(os.path.join("scripts","ver.lua"), "w+") as ver:
+      with open(os.path.join("scripts","ver.lua"), mode="w+", encoding="utf-8") as ver:
           _ = ver.read()
           ver.seek(0)
           ver.write("print(\"Package Version: " + env["GITHUB_TAG"] + "\")")
