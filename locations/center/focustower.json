@@ -43,7 +43,7 @@
             "name": "Wind Door",
             "access_rules": ["skycoin"],
             "item_count": 1
-          },
+          }
         ]
       }
     ]

@@ -3,7 +3,7 @@
     "type": "itemgrid",
     "item_margin": "0",
     "rows": [
-      [ "sandcoin", "rivercoin", "suncoin", "skycoin" ]
+      ["sandcoin", "rivercoin", "suncoin", "skycoin"]
     ]
   }
 }

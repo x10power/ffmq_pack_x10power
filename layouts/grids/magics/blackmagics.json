@@ -3,7 +3,7 @@
     "type": "itemgrid",
     "item_margin": "0",
     "rows": [
-      [ "quake", "blizzard", "fire", "aero" ]
+      ["quake", "blizzard", "fire", "aero"]
     ]
   }
 }
