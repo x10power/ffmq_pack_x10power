@@ -1,0 +1,9 @@
+{
+  "armors_grid": {
+    "type": "itemgrid",
+    "item_margin": "0",
+    "rows": [
+      [ "hats", "armors", "shields", "accessories" ]
+    ]
+  }
+}

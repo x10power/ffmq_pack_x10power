@@ -1,5 +1,5 @@
-﻿{
-  "tracker_broadcast": {
+{
+  "tracker_default": {
     "type": "container",
     "h_alignment": "center",
     "width": 150,

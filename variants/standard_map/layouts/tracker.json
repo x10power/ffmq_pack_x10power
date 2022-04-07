@@ -1,21 +1,4 @@
 ﻿{
-  "shared_item_grid": {
-    "type": "itemgrid",
-    "item_margin": "1,1",
-    "item_height": 36,
-    "item_width": 36,
-    "rows": [
-      ["swords", "axes", "bombs", "claws"],
-      ["hats", "armors", "shields", "accessories"],
-      ["exit", "cure", "heal", "life"],
-      ["quake", "blizzard", "fire", "aero"],
-      ["flare", "white", "meteor", "thunder"],
-      ["elixir", "treewither", "wakewater", "venuskey"],
-      ["multikey", "gasmask", "magicmirror", "thunderrock"],
-      ["captaincap", "libracrest", "geminicrest", "mobiouscrest"],
-      ["sandcoin", "rivercoin", "suncoin", "skycoin"]
-    ]
-  },
   "tracker_default": {
     "type": "container",
     "content": {

@@ -1,0 +1,66 @@
+{
+  "shared_item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "weapons_grid"
+      },
+      {
+        "type": "layout",
+        "key": "armors_grid"
+      },
+      {
+        "type": "layout",
+        "key": "magics_grid"
+      },
+      {
+        "type": "layout",
+        "key": "keyitems_grid"
+      },
+      {
+        "type": "layout",
+        "key": "crests_grid"
+      },
+      {
+        "type": "layout",
+        "key": "coins_grid"
+      }
+    ]
+  },
+  "shared_item_grid_horizontal": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "layout",
+        "key": "weapons_grid"
+      },
+      {
+        "type": "layout",
+        "key": "armors_grid"
+      },
+      {
+        "type": "layout",
+        "key": "magics_grid"
+      },
+      {
+        "type": "layout",
+        "key": "keyitems_grid"
+      },
+      {
+        "type": "layout",
+        "key": "crests_grid"
+      },
+      {
+        "type": "layout",
+        "key": "coins_grid"
+      }
+    ]
+  },
+  "shared_item_grid_vertical": {
+    "type": "layout",
+    "key": "shared_item_grid"
+  }
+}
