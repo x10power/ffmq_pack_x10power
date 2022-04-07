@@ -3,7 +3,7 @@
   "game_name": "Final Fantasy Mystic Quest",
   "platform": "snes",
   "package_version": "1.0.000",
-  "package_uid": "ffmq-rando-tracker",
+  "package_uid": "ffmq_pack_x10power",
   "author": "x10power",
   "variants": {
     "items_only": {
