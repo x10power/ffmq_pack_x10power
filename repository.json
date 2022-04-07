@@ -8,8 +8,8 @@
       "version": "1.0.000",
       "flags": [""],
       "required_app_version": "2.3.8.16",
-      "uid": "ffmq-items",
-      "link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/rando/ffmq-rando-tracker-main.zip",
+      "uid": "ffmq-rando-tracker",
+      "link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/First/ffmq-rando-tracker.zip",
       "variants": {
         "items_only": {
           "display_name": "Items-Only"
