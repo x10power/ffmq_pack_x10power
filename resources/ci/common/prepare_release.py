@@ -110,8 +110,8 @@ def prepare_release():
                   print(f"c:      {c}")
                   print(f"cPath:  {cPath}")
                   print(f"mvPath: {mvPath}")
-                  print(f"f:      {f}")
                   for f in os.listdir(cPath):
+                      print(f"f:      {f}")
                       print(f"MVing File: {os.path.join(mvPath, f)} -> {os.path.join(mergeDestPath, f)}")
                       move(
                           os.path.join(mvPath, f),
