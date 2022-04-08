@@ -94,8 +94,9 @@ def prepare_release():
       mergeSrc = os.path.join("..", "merge")
       if os.path.exists(mergeSrc):
           mergeSrc = os.path.join("..", "merge")
-          mergeDst = os.path.join("..")
+          mergeDst = os.path.join(".")
           for fname in os.listdir(mergeSrc):
+              print(f"MVing: {mergeSrc}/{fname} -> {mergeDst}/{fname}")
               move(
                   os.path.join(mergeSrc, fname),
                   os.path.join(mergeDst, fname)
