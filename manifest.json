@@ -1,5 +1,5 @@
 {
-  "name": "Final Fantasy Mystic Quest Tracker",
+  "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
   "game_name": "Final Fantasy Mystic Quest",
   "platform": "snes",
   "package_version": "1.0.000",
@@ -10,8 +10,12 @@
       "display_name": "Items-Only"
     },
     "standard_map": {
-      "display_name": "Standard Map",
-      "flags": ["map"]
+      "display_name": "Standard with Map",
+      "flags": [
+        "chathud",
+        "map",
+        "pins"
+      ]
     }
   }
 }
