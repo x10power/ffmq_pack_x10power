@@ -91,15 +91,22 @@ def prepare_release():
                   dirname,
                   os.path.join("..", "build", dirname)
               )
-      mergeSrc = os.path.join("..", "merge")
-      if os.path.exists(mergeSrc):
-          mergeSrc = os.path.join("..", "merge")
-          mergeDst = os.path.join(".")
-          for fname in os.listdir(mergeSrc):
-              print(f"MVing: {mergeSrc}/{fname} -> {mergeDst}/{fname}")
+      curDir = os.getcwd()
+      mergeDirs = [os.path.join(curDir, "..", "merge")]
+      mergeList = {}
+      for idx, val in enumerate(mergeDirs):
+          p = os.path.join(curDir, val)
+          mergeList[ mergeDirs[idx] ] = os.listdir(p)
+      mergeDest = os.path.join(curDir, ".")
+      mergeDestPath = os.path.join(curDir, mergeDest)
+      for s in mergeList:
+          for c in mergeList[s]:
+              cPath = os.path.join(s, c)
+              mvPath = os.path.join(curDir, cPath)
+              print(f"MVing: {mvPath} -> {mergeDestPath}")
               move(
-                  os.path.join(mergeSrc, fname),
-                  os.path.join(mergeDst)
+                  mvPath,
+                  mergeDestPath
               )
 
       # .zip if windows
