@@ -312,6 +312,22 @@ def install_modules():
     global PIPEXE
     global SUCCESS
 
+    # install wheel
+    ret = subprocess.run(
+        [
+            *args,
+            "-m",
+            PIPEXE,
+            "install",
+            "wheel"
+        ],
+        capture_output=True,
+        text=True
+    )
+    # if there's output
+    if ret.stdout.strip():
+        process_module_output(ret.stdout.strip().split("\n"))
+
     # install modules from list
     ret = subprocess.run(
         [
