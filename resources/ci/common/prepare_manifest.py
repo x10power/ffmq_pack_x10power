@@ -1,5 +1,5 @@
 import common
-import json
+import commentjson
 import os                 # for env vars
 from shutil import copy   # file manipulation
 
@@ -13,7 +13,7 @@ def prepare_manifest():
       APPVERSION = f.readlines()[0]
 
   with open(os.path.join("manifest.json"), mode="r+", encoding="utf-8") as manifestFile:
-      manifestJSON = json.load(manifestFile)
+      manifestJSON = commentjson.load(manifestFile)
       if "variants" in manifestJSON:
           flags = []
           for variant in manifestJSON["variants"]:
@@ -26,7 +26,7 @@ def prepare_manifest():
           manifestJSON["package_version"] = APPVERSION
 
       manifestFile.seek(0)
-      manifestFile.write(json.dumps(manifestJSON, indent=2))
+      manifestFile.write(commentjson.dumps(manifestJSON, indent=2))
       manifestFile.truncate()
 
 def main():
