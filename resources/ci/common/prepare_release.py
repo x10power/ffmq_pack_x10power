@@ -104,10 +104,15 @@ def prepare_release():
               cPath = os.path.join(s, c)
               mvPath = os.path.join(curDir, cPath)
               print(f"MVing: {mvPath} -> {mergeDestPath}")
-              move(
-                  mvPath,
-                  mergeDestPath
-              )
+              if os.path.exists(mvPath):
+                  print(f"Exists! {mvPath}")
+                  for f in os.listdir(cPath):
+                      print(f)
+              else:
+                  move(
+                      mvPath,
+                      mergeDestPath
+                  )
 
       # .zip if windows
       # .tar.gz otherwise
