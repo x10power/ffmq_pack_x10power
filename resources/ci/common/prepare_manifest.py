@@ -9,16 +9,18 @@ def prepare_manifest():
   APPVERSION = ""
 
   # set tag to app_version.txt
-  with open(os.path.join("..", "build", "app_version.txt"), "r") as f:
-      APPVERSION = f.readlines()[0]
+  if os.path.exists(os.path.join("..", "build", "app_version.txt")):
+      with open(os.path.join("..", "build", "app_version.txt"), "r") as f:
+          APPVERSION = f.readlines()[0]
 
   with open(os.path.join("manifest.json"), mode="r+", encoding="utf-8") as manifestFile:
       manifestJSON = commentjson.load(manifestFile)
       if "variants" in manifestJSON:
           flags = []
-          for variant in manifestJSON["variants"]:
+          for [folder, variant] in manifestJSON["variants"].items():
               if "flags" in variant:
-                  flags.append(*variant["flags"])
+                  for flag in variant["flags"]:
+                      flags.append(flag)
           flags = set(flags)
           manifestJSON["flags"] = sorted(list(flags))
 
