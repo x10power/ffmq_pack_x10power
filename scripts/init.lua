@@ -1,5 +1,8 @@
-print("Loading Items")
+-- Version
+ScriptHost:LoadScript("scripts/ver.lua")
+
 -- Items
+print("Loading Items")
 --  Armor
 Tracker:AddItems("items/armor.json")
 --  Magics
@@ -8,9 +11,10 @@ Tracker:AddItems("items/magics.json")
 Tracker:AddItems("items/weapons.json")
 --  Toggles
 Tracker:AddItems("items/toggles.json")
+print("")
 
-print("\n" .. "Loading Layouts")
 -- Layouts
+print("Loading Layouts")
 --  Armor
 Tracker:AddLayouts("layouts/grids/armors.json")
 --  Magics
@@ -26,6 +30,7 @@ Tracker:AddLayouts("layouts/grids/crests.json")
 Tracker:AddLayouts("layouts/grids/keyitems.json")
 --  Grids
 Tracker:AddLayouts("layouts/grids/grids.json")
+print("")
 
 local variant = Tracker.ActiveVariantUID
 if variant == "" then
@@ -33,7 +38,7 @@ if variant == "" then
 end
 
 if string.find(variant, "map") then
-  print("\n" .. "Map Variant; load map stuff")
+  print("Map Variant; load map stuff")
   -- Maps
   Tracker:AddMaps("maps/maps.json")
   -- Map Layouts
@@ -53,11 +58,14 @@ if string.find(variant, "map") then
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
 else
-  print("\n" .. "Not a Map Variant; load default stuff")
+  print("Not a Map Variant; load default stuff")
   -- Layout Defaults
   Tracker:AddLayouts("layouts/broadcast.json")
   Tracker:AddLayouts("layouts/tracker.json")
-  print("\n" .. "Satisfy Legacy Loads")
+  print("")
+
+  -- Legacy
+  print("Satisfy Legacy Loads")
   Tracker:AddMaps("maps/maps.json")
   Tracker:AddLocations("locations/world.json")
 end
