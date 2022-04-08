@@ -36,7 +36,7 @@ def prepare_appversion():
             ver.seek(0)
             ver.write("print(\"Package Version: " + env["GITHUB_TAG"] + "\")")
             ver.truncate()
-            print("Wrote %s as Pack Version lua script" % ent["GITHUB_TAG"])
+            print("Wrote %s as Pack Version lua script" % env["GITHUB_TAG"])
 
     copy(
         os.path.join(".", *CI_SETTINGS["common"]["prepare_appversion"]["app_version"]),
