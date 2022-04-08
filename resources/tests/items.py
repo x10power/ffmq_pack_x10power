@@ -13,12 +13,12 @@ for filename in os.listdir(dirname):
                 itemsManifest = commentjson.load(itemsFile)
                 for item in itemsManifest:
                     if "codes" in item:
-                        item = item["codes"].split(",")
+                        item = list(map(lambda x: x.strip(), item["codes"].split(",")))
                         codes += item
                     if "stages" in item:
                         for stage in item["stages"]:
                             if "codes" in stage:
-                                stage = stage["codes"].split(",")
+                                stage = list(map(lambda x: x.strip(), stage["codes"].split(",")))
                                 codes += stage
 print("")
 

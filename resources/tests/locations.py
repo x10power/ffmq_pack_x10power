@@ -30,7 +30,7 @@ for r, d, f in os.walk(dirname):
                                 locs.append(child["name"])
                                 if "access_rules" in child:
                                     for access_rule in child["access_rules"]:
-                                        access_items = access_rule.split(",")
+                                        access_items = list(map(lambda x: x.strip(), access_rule.split(",")))
                                         for access_item in access_items:
                                             if '[' not in access_item and \
                                                 ']' not in access_item and \

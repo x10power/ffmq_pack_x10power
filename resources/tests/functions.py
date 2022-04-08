@@ -21,11 +21,11 @@ for filename in os.listdir(dirname):
                 for line in lines:
                     func = re.search(r"function ([^\(]*)", line.strip())
                     if func:
-                        funcName = func.group(1)
+                        funcName = func.group(1).strip()
                         funcs.append(funcName)
                     item = re.search(r"has\(\"(.*)\"\)", line.strip())
                     if item:
-                        itemName = item.group(1)
+                        itemName = item.group(1).strip()
                         if itemName not in items:
                             print(f"> {funcName}")
                             print(f">  '{itemName}' not a valid item code")
