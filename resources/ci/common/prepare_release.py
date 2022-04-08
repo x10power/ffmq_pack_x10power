@@ -91,6 +91,16 @@ def prepare_release():
                   dirname,
                   os.path.join("..", "build", dirname)
               )
+      mergeSrc = os.path.join("..", "merge")
+      if os.path.exists(mergeSrc):
+          mergeSrc = os.path.join("..", "merge")
+          mergeDst = os.path.join(".")
+          for fname in os.listdir(mergeSrc):
+              move(
+                  os.path.join(mergeSrc, fname),
+                  os.path.join(mergeDst, fname)
+              )
+              print(f"Moved: {fname}")
 
       # .zip if windows
       # .tar.gz otherwise
