@@ -106,13 +106,12 @@ def prepare_release():
               print(f"MVing Dir: {mvPath} -> {mergeDestPath}")
               if os.path.exists(mvPath):
                   print(f"Exists! {mvPath}")
-                  print(f"MVing File: {os.path.join(mvPath, f)} -> {os.path.join(mergeDestPath, f)}")
                   for f in os.listdir(cPath):
+                      print(f"MVing File: {os.path.join(mvPath, f)} -> {os.path.join(mergeDestPath, f)}")
                       move(
                           os.path.join(mvPath, f),
                           os.path.join(mergeDestPath, f)
                       )
-                      print(f)
               else:
                   move(
                       mvPath,
