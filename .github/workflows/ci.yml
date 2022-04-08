@@ -79,11 +79,6 @@ jobs:
         run: |
           python ./resources/ci/common/prepare_manifest.py
 
-      # Prepare Archive
-      - name: Prepare Archive
-        run: |
-          python ./resources/ci/common/prepare_archive.py
-
       # Prepare Release
       - name: Prepare Release
         run: |

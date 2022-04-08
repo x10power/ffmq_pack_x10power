@@ -12,7 +12,8 @@ def prepare_release():
   dirs = [
       os.path.join("..", "artifact"),   # temp dir for binary
       os.path.join("..", "build"),      # temp dir for other stuff
-      os.path.join("..", "deploy")      # dir for archive
+      os.path.join("..", "deploy"),     # dir for archive
+      os.path.join("..", "merge")       # dir to merge into archive
   ]
   for dirname in dirs:
       if not os.path.isdir(dirname):
