@@ -99,7 +99,7 @@ def prepare_release():
               print(f"MVing: {mergeSrc}/{fname} -> {mergeDst}/{fname}")
               move(
                   os.path.join(mergeSrc, fname),
-                  os.path.join(mergeDst, fname)
+                  os.path.join(mergeDst)
               )
 
       # .zip if windows
