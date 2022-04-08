@@ -34,6 +34,8 @@ for filename in os.listdir(dirname):
                                 if itemName not in itemToFunc:
                                     itemToFunc[itemName] = []
                                 itemToFunc[itemName].append(funcName)
+print("")
+
 funcs = set(funcs)
 funcs = list(funcs)
 funcs.sort()

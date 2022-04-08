@@ -20,6 +20,7 @@ for filename in os.listdir(dirname):
                             if "codes" in stage:
                                 stage = stage["codes"].split(",")
                                 codes += stage
+print("")
 
 codes = set(codes)
 codes = list(codes)

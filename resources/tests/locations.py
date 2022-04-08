@@ -56,3 +56,4 @@ for r, d, f in os.walk(dirname):
                                                     print(f"> {loc['name']}")
                                                     print(f">  {child['name']}")
                                                     print(f">   '{access_item}' {errMsg}")
+print("")
