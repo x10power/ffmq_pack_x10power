@@ -4,18 +4,13 @@
   "platform": "snes",
   "package_version": "1.0.000",
   "package_uid": "ffmq_pack_x10power",
-  "author": "x10power",
+  "author": "x10power, Mike Trethewey",
   "variants": {
     "items_only": {
       "display_name": "Items-Only"
     },
     "standard_map": {
       "display_name": "Standard with Map",
-      "flags": [
-        "chathud",
-        "map",
-        "pins"
-      ]
     }
   }
 }
