@@ -1,16 +1,26 @@
 {
   "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
+  "author": "x10power, Mike Trethewey",
   "game_name": "Final Fantasy Mystic Quest",
-  "platform": "snes",
+  "flags": [], // build from variants
   "package_version": "1.0.000",
   "package_uid": "ffmq_pack_x10power",
-  "author": "x10power, Mike Trethewey",
+  "platform": "snes",
+  "documentation_url": "",
   "variants": {
     "items_only": {
-      "display_name": "Items-Only"
+      "display_name": "Items-Only",
+      "flags": [
+        "chathud"
+      ]
     },
     "standard_map": {
       "display_name": "Standard with Map",
+      "flags": [
+        "chathud",
+        "map",
+        "pins"
+      ]
     }
   }
 }
