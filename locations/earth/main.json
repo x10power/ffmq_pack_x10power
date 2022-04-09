@@ -1,21 +1,21 @@
 [
-  // Hill of Destiny
+  // Earth: Main
   {
-    "name": "Hill of Destiny",
+    "name": "Earth",
     "parent": "World",
     "access_rules": [
       // "@Start/Connection"
     ],
     "children": [
-      // Behemoth
+      // Doom Castle
       {
-        "name": "Behemoth",
+        "name": "Doom Castle",
         "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
-            "x": 320,
-            "y": 540
+            "x": 360,
+            "y": 515
           }
         ],
         "sections": [

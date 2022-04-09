@@ -49,10 +49,18 @@ if string.find(variant, "map") then
   Tracker:AddLocations("locations/world.json")
   --  Center
   Tracker:AddLocations("locations/center/focustower.json")
+  Tracker:AddLocations("locations/center/main.json")
   --  Earth
   Tracker:AddLocations("locations/earth/foresta.json")
   Tracker:AddLocations("locations/earth/hod.json")
   Tracker:AddLocations("locations/earth/levelforest.json")
+  Tracker:AddLocations("locations/earth/main.json")
+  --  Fire
+  Tracker:AddLocations("locations/fire/main.json")
+  --  Water
+  Tracker:AddLocations("locations/water/main.json")
+  --  Wind
+  Tracker:AddLocations("locations/wind/main.json")
 
   -- Layout Overrides
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
