@@ -1,6 +1,12 @@
 -- Version
 ScriptHost:LoadScript("scripts/ver.lua")
 
+-- Settings
+-- ScriptHost:LoadScript("scripts/settings/settings.lua")
+
+-- Auto-Tracking
+-- ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+
 -- Items
 print("Loading Items")
 --  Armor
