@@ -14,13 +14,13 @@
         "map_locations": [
           {
             "map": "drained-world",
-            "x": 400,
-            "y": 280
+            "x": 465,
+            "y": 250
           },
           {
             "map": "restored-world",
-            "x": 400,
-            "y": 280
+            "x": 465,
+            "y": 250
           }
         ],
         "sections": [
@@ -28,6 +28,12 @@
             "name": "Arrows",
             "clear_as_group": false,
             "item_count": 10
+          },
+          {
+            "name": "Squidite",
+            "chest_unopened_img": "images/chests/enemy.png",
+            "#note": "Gives Libra Crest in vanilla",
+            "item_count": 1
           }
         ]
       },
@@ -158,7 +164,7 @@
       // Ice Pyramid
       {
         "name": "Ice Pyramid",
-        "access_rules": [],
+        "access_rules": [ "magicmirror" ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -230,6 +236,12 @@
           },
           {
             "name": "River Coin",
+            "item_count": 1
+          },
+          {
+            "name": "Ice Golem",
+            "chest_unopened_img": "images/chests/enemy.png",
+            "#note": "Restores World",
             "item_count": 1
           }
         ]

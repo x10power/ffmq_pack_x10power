@@ -1,0 +1,42 @@
+[
+  // Benjamin
+  {
+    "name": "Benjamin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/party/benjamin.gif",
+    "codes": "ben, benjamin"
+  },
+  // Kaeli
+  {
+    "name": "Kaeli",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/party/kaeli.gif",
+    "codes": "kaeli"
+  },
+  // Phoebe
+  {
+    "name": "Phoebe",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/party/phoebe.gif",
+    "codes": "phoebe"
+  },
+  // Reuben
+  {
+    "name": "Reuben",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/party/reuben.gif",
+    "codes": "reuben"
+  },
+  // Tristam
+  {
+    "name": "Tristam",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/party/tristam.gif",
+    "codes": "tristam"
+  }
+]

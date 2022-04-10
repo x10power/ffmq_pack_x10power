@@ -5,6 +5,10 @@
     "content": [
       {
         "type": "layout",
+        "key": "party_grid"
+      },
+      {
+        "type": "layout",
         "key": "weapons_grid"
       },
       {
@@ -33,6 +37,10 @@
     "type": "array",
     "orientation": "horizontal",
     "content": [
+      {
+        "type": "layout",
+        "key": "party_grid"
+      },
       {
         "type": "layout",
         "key": "weapons_grid"

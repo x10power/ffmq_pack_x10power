@@ -7,6 +7,8 @@ print("Loading Items")
 Tracker:AddItems("items/armor.json")
 --  Magics
 Tracker:AddItems("items/magics.json")
+--  Party
+Tracker:AddItems("items/party.json")
 --  Weapons
 Tracker:AddItems("items/weapons.json")
 --  Toggles
@@ -22,6 +24,8 @@ Tracker:AddLayouts("layouts/grids/magics/blackmagics.json")
 Tracker:AddLayouts("layouts/grids/magics/whitemagics.json")
 Tracker:AddLayouts("layouts/grids/magics/wizardmagics.json")
 Tracker:AddLayouts("layouts/grids/magics.json")
+--  Party
+Tracker:AddLayouts("layouts/grids/party.json")
 --  Weapons
 Tracker:AddLayouts("layouts/grids/weapons.json")
 --  Toggles
@@ -45,8 +49,8 @@ if string.find(variant, "map") then
   Tracker:AddLayouts("layouts/maps/world.json")
 
   -- Locations
-  --  World
-  Tracker:AddLocations("locations/world.json")
+  --  Battlefields
+  -- Tracker:AddLocations("locations/battlefields/main.json")
   --  Center
   Tracker:AddLocations("locations/center/focustower.json")
   Tracker:AddLocations("locations/center/main.json")
@@ -61,6 +65,8 @@ if string.find(variant, "map") then
   Tracker:AddLocations("locations/water/main.json")
   --  Wind
   Tracker:AddLocations("locations/wind/main.json")
+  --  World
+  Tracker:AddLocations("locations/world.json")
 
   -- Layout Overrides
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker

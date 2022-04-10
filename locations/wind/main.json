@@ -101,7 +101,7 @@
       // Light Temple
       {
         "name": "Light Temple",
-        "access_rules": [],
+        "access_rules": ["phoebe"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -146,44 +146,10 @@
           }
         ]
       },
-      // Windia
-      {
-        "name": "Windia",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 690,
-            "y": 460
-          },
-          {
-            "map": "restored-world",
-            "x": 690,
-            "y": 460
-          }
-        ],
-        "sections": [
-          {
-            "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 9
-          },
-          {
-            "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Arrows",
-            "clear_as_group": false,
-            "item_count": 10
-          }
-        ]
-      },
       // Giant Tree
       {
         "name": "Giant Tree",
-        "access_rules": [],
+        "access_rules": [ "kaeli" ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -225,6 +191,40 @@
           {
             "name": "Meteor Spell",
             "item_count": 1
+          }
+        ]
+      },
+      // Windia
+      {
+        "name": "Windia",
+        "access_rules": ["@Giant Tree/Meteor Spell"],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 690,
+            "y": 460
+          },
+          {
+            "map": "restored-world",
+            "x": 690,
+            "y": 460
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 9
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Arrows",
+            "clear_as_group": false,
+            "item_count": 10
           }
         ]
       },
@@ -365,7 +365,7 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "[Event]",
             "item_count": 1
           }
         ]
