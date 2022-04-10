@@ -9,7 +9,7 @@
     "children": [
       // Doors
       {
-        "name": "Doors",
+        "name": "Focus Tower: Doors",
         "access_rules": [],
         "map_locations": [
           {
@@ -18,9 +18,19 @@
             "y": 384
           },
           {
+            "map": "drained-world",
+            "x": 362,
+            "y": 432
+          },
+          {
             "map": "restored-world",
             "x": 382,
             "y": 384
+          },
+          {
+            "map": "restored-world",
+            "x": 362,
+            "y": 432
           }
         ],
         "sections": [
@@ -43,6 +53,28 @@
             "name": "Wind Door",
             "access_rules": ["skycoin"],
             "item_count": 1
+          },
+          {
+            "name": "Fire Spell",
+            "item_count": 1
+          },
+          {
+            "name": "Blizzard Spell",
+            "item_count": 1
+          },
+          {
+            "name": "Venus Shield",
+            "item_count": 1
+          },
+          {
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Explosives",
+            "clear_as_group": false,
+            "item_count": 10
           }
         ]
       }

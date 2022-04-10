@@ -16,11 +16,40 @@
             "map": "drained-world",
             "x": 360,
             "y": 515
+          },
+          {
+            "map": "restored-world",
+            "x": 360,
+            "y": 515
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Cure Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Heal Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Refreshers",
+            "item_count": 1
+          },
+          {
+            "name": "Seeds",
+            "item_count": 1
+          },
+          {
+            "name": "75x Arrows",
+            "item_count": 1
+          },
+          {
+            "name": "Aegis Shield",
+            "item_count": 1
+          },
+          {
+            "name": "Aero Spell",
             "item_count": 1
           }
         ]

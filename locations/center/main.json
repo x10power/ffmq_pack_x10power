@@ -16,29 +16,46 @@
             "map": "drained-world",
             "x": 600,
             "y": 340
-          }
-        ],
-        "sections": [
+          },
           {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
-      },
-      // Ship Dock
-      {
-        "name": "Ship Dock",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
+            "map": "restored-world",
             "x": 635,
-            "y": 395
+            "y": 370
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Explosives 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 3",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 4",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 9
+          },
+          {
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Gaia's Armor",
             "item_count": 1
           }
         ]

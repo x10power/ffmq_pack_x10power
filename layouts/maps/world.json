@@ -17,6 +17,13 @@
           "maps": ["restored-world"],
           "width": 880
         }
+      },
+      {
+        "title": "Both Worlds",
+        "content": {
+          "type": "map",
+          "maps": ["drained-world","restored-world"]
+        }
       }
     ]
   }

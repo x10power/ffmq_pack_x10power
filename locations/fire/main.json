@@ -16,11 +16,41 @@
             "map": "drained-world",
             "x": 110,
             "y": 100
+          },
+          {
+            "map": "restored-world",
+            "x": 110,
+            "y": 100
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Explosives 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 3",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Charm Claw",
             "item_count": 1
           }
         ]
@@ -34,12 +64,23 @@
             "map": "drained-world",
             "x": 194,
             "y": 214
+          },
+          {
+            "map": "restored-world",
+            "x": 194,
+            "y": 214
           }
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 1
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 3
           }
         ]
       },
@@ -52,11 +93,26 @@
             "map": "drained-world",
             "x": 265,
             "y": 160
+          },
+          {
+            "map": "restored-world",
+            "x": 265,
+            "y": 160
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Multi-Key",
             "item_count": 1
           }
         ]
@@ -70,11 +126,45 @@
             "map": "drained-world",
             "x": 310,
             "y": 110
+          },
+          {
+            "map": "restored-world",
+            "x": 310,
+            "y": 110
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Gasmask",
+            "item_count": 1
+          },
+          {
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 9
+          },
+          {
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 9
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Explosives 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "White Spell",
             "item_count": 1
           }
         ]
@@ -88,11 +178,62 @@
             "map": "drained-world",
             "x": 323,
             "y":  90
+          },
+          {
+            "map": "restored-world",
+            "x": 323,
+            "y":  90
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "39x Cure Potions",
+            "item_count": 1
+          },
+          {
+            "name": "27x Heal Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Explosives 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 3",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 4",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 5",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Moon Helmet",
+            "item_count": 1
+          },
+          {
+            "name": "Life Spell",
+            "item_count": 1
+          },
+          {
+            "name": "Sun Coin",
             "item_count": 1
           }
         ]
@@ -106,11 +247,82 @@
             "map": "drained-world",
             "x": 190,
             "y": 340
+          },
+          {
+            "map": "restored-world",
+            "x": 190,
+            "y": 340
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Ninja Stars 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Ninja Stars 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Ninja Stars 3",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Ninja Stars 4",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Ninja Stars 5",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Ninja Stars 6",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Elixir",
+            "item_count": 1
+          },
+          {
+            "name": "Steel Shield",
+            "item_count": 1
+          },
+          {
+            "name": "Bombs 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Bombs 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Quake Spell",
+            "item_count": 1
+          },
+          {
+            "name": "Seeds",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Sand Coin",
+            "item_count": 1
+          },
+          {
+            "name": "Dragon Claw",
             "item_count": 1
           }
         ]
@@ -122,6 +334,11 @@
         "map_locations": [
           {
             "map": "drained-world",
+            "x": 180,
+            "y": 395
+          },
+          {
+            "map": "restored-world",
             "x": 180,
             "y": 395
           }

@@ -16,12 +16,23 @@
             "map": "drained-world",
             "x": 400,
             "y": 410
+          },
+          {
+            "map": "restored-world",
+            "x": 400,
+            "y": 410
           }
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 1
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Seeds",
+            "clear_as_group": false,
+            "item_count": 3
           }
         ]
       },
@@ -34,12 +45,56 @@
             "map": "drained-world",
             "x": 490,
             "y": 410
+          },
+          {
+            "map": "restored-world",
+            "x": 490,
+            "y": 410
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Giant's Axe",
             "item_count": 1
+          },
+          {
+            "name": "Cure Potions (Mobius Crest)",
+            "access_rules": [ "mobiuscrest" ],
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Heal Potions (Mobius Crest)",
+            "access_rules": [ "mobiuscrest" ],
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Explosives (Gemini Crest)",
+            "access_rules": [ "geminicrest" ],
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Refreshers (Libra Crest)",
+            "access_rules": [ "libracrest" ],
+            "clear_as_group": false,
+            "item_count": 3
           }
         ]
       },
@@ -52,12 +107,18 @@
             "map": "drained-world",
             "x": 430,
             "y": 550
+          },
+          {
+            "map": "restored-world",
+            "x": 430,
+            "y": 550
           }
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 1
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 3
           }
         ]
       },
@@ -70,12 +131,18 @@
             "map": "drained-world",
             "x": 520,
             "y": 535
+          },
+          {
+            "map": "restored-world",
+            "x": 520,
+            "y": 535
           }
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 1
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 3
           }
         ]
       },
@@ -88,12 +155,28 @@
             "map": "drained-world",
             "x": 690,
             "y": 460
+          },
+          {
+            "map": "restored-world",
+            "x": 690,
+            "y": 460
           }
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 1
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 9
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Arrows",
+            "clear_as_group": false,
+            "item_count": 10
           }
         ]
       },
@@ -110,7 +193,37 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Cure Potions 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Cure Potions 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Cure Potions 3",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Explosives 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Meteor Spell",
             "item_count": 1
           }
         ]
@@ -124,12 +237,18 @@
             "map": "drained-world",
             "x": 765,
             "y": 525
+          },
+          {
+            "map": "restored-world",
+            "x": 765,
+            "y": 525
           }
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 1
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 3
           }
         ]
       },
@@ -142,11 +261,26 @@
             "map": "drained-world",
             "x": 775,
             "y": 475
+          },
+          {
+            "map": "restored-world",
+            "x": 775,
+            "y": 475
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Heal Potions",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Apollo Helmet",
             "item_count": 1
           }
         ]
@@ -160,11 +294,55 @@
             "map": "drained-world",
             "x": 685,
             "y": 395
+          },
+          {
+            "map": "restored-world",
+            "x": 685,
+            "y": 395
           }
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Explosives 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Explosives 2",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Cure Potions 1",
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Cure Potions 2",
+            "clear_as_group": false,
+            "item_count": 8
+          },
+          {
+            "name": "Heal Potions 1",
+            "clear_as_group": false,
+            "item_count": 108
+          },
+          {
+            "name": "Heal Potions 2",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Refreshers",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Flare Spell",
+            "item_count": 1
+          },
+          {
+            "name": "Sky Coin",
             "item_count": 1
           }
         ]
@@ -176,6 +354,11 @@
         "map_locations": [
           {
             "map": "drained-world",
+            "x": 635,
+            "y": 395
+          },
+          {
+            "map": "restored-world",
             "x": 635,
             "y": 395
           }

@@ -9,7 +9,7 @@
     "children": [
       // Behemoth
       {
-        "name": "Behemoth",
+        "name": "Hill of Destiny",
         "access_rules": [],
         "map_locations": [
           {
@@ -20,7 +20,8 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Behemoth",
+            "chest_unopened_img": "images/chests/enemy.png",
             "item_count": 1
           }
         ]

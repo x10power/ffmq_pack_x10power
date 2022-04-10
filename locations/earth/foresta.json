@@ -9,7 +9,7 @@
     "children": [
       // Locations
       {
-        "name": "Locations",
+        "name": "Foresta",
         "access_rules": [],
         "map_locations": [
           {
@@ -30,7 +30,8 @@
           },
           {
             "name": "Cure Potions",
-            "item_count": 3
+            "clear_as_group": false,
+            "item_count": 9
           }
         ]
       }
