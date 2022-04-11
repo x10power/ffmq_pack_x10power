@@ -152,7 +152,7 @@
       // Falls Basin
       {
         "name": "Falls Basin",
-        "access_rules": [],
+        "access_rules": ["phoebe"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -167,11 +167,20 @@
         ],
         "sections": [
           {
+            "name": "Explosives",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
             "name": "Heal Spell",
             "item_count": 1
           },
           {
-            "name": "Explosives",
+            "name": "Snow Crab",
+            "chest_unopened_img": "images/chests/enemy.png",
+            "#vanilla": "bomb2",
             "item_count": 1
           }
         ]
@@ -179,7 +188,7 @@
       // Ice Pyramid
       {
         "name": "Ice Pyramid",
-        "access_rules": [ "magicmirror" ],
+        "access_rules": [ "bomb2,sword" ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -194,27 +203,95 @@
         ],
         "sections": [
           {
-            "name": "Arrows",
+            "name": "1F Arrows",
             "item_count": 1
           },
           {
-            "name": "Explosives",
+            "name": "1F Refreshers",
             "item_count": 1
           },
           {
-            "name": "Heal Potions",
+            "name": "1F Explosives",
             "item_count": 1
           },
           {
-            "name": "Refreshers",
-            "item_count": 1
-          },
-          {
-            "name": "Cure Potions",
+            "name": "2F H Pot",
             "item_count": 1
           },
           {
             "name": "Magic Mirror",
+            "item_count": 1
+          },
+          {
+            "name": "2F Arrows (Closet, From B)",
+            "access_rules": ["sword"],
+            "item_count": 1
+          },
+          {
+            "name": "2F Arrows (Gauntlet)",
+            "item_count": 1
+          },
+          {
+            "name": "3F H Pot (From A)",
+            "item_count": 1
+          },
+          {
+            "name": "3F Arrows (From B->F)",
+            "item_count": 1
+          },
+          {
+            "name": "3F Arrows (From G)",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "3F H Pot (From B->F)",
+            "item_count": 1
+          },
+          {
+            "name": "2F Arrows (Hidden Passage)",
+            "item_count": 1
+          },
+          {
+            "name": "2F Arrows (Deep Closet)",
+            "access_rules": ["sword"],
+            "item_count": 1
+          },
+          {
+            "name": "2F Arrows (Closet, From E)",
+            "access_rules": ["sword"],
+            "item_count": 1
+          },
+          {
+            "name": "3F Arrows (Gauntlet, From G)",
+            "item_count": 1
+          },
+          {
+            "name": "3F Booms (Gauntlet, From G)",
+            "item_count": 1
+          },
+          {
+            "name": "H Arrows",
+            "item_count": 4
+          },
+          {
+            "name": "H C Pot",
+            "item_count": 1
+          },
+          {
+            "name": "H Refreshers",
+            "item_count": 1
+          },
+          {
+            "name": "J Arrows",
+            "item_count": 1
+          },
+          {
+            "name": "J C Pot",
+            "item_count": 1
+          },
+          {
+            "name": "J H Pot",
             "item_count": 1
           },
           {
@@ -223,6 +300,7 @@
           },
           {
             "name": "Knight Sword",
+            "access_rules": ["sword"],
             "item_count": 1
           },
           {
@@ -230,7 +308,7 @@
             "item_count": 1
           },
           {
-            "name": "Ice Golem",
+            "name": "Boss",
             "chest_unopened_img": "images/chests/enemy.png",
             "#note": "Restores World",
             "item_count": 1

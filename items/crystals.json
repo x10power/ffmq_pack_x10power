@@ -6,5 +6,13 @@
     "loop": true,
     "img": "images/crystals/crystal_earth.png",
     "codes": "earth, earthcrystal"
+  },
+  // Crystal of Water
+  {
+    "name": "Crystal of Water",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crystals/crystal_water.png",
+    "codes": "water, watercrystal"
   }
 ]
