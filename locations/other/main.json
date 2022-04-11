@@ -1,92 +1,94 @@
-// Other: Main
-{
-  "name": "Other",
-  "parent": "World",
-  "access_rules": [
-    // "@Start/Connection"
-  ],
-  "children": [
-    // Mac's Ship
-    {
-      "name": "Mac's Ship",
-      "access_rules": [],
-      "map_locations": [
-        {
-          "map": "drained-world",
-          "x": 600,
-          "y": 340
-        },
-        {
-          "map": "restored-world",
-          "x": 635,
-          "y": 370
-        }
-      ],
-      "sections": [
-        {
-          "name": "Explosives",
-          "item_count": 1
-        },
-        {
-          "name": "Heal Potions",
-          "item_count": 1
-        },
-        {
-          "name": "Cure Potions",
-          "item_count": 1
-        },
-        {
-          "name": "Gaia's Armor",
-          "item_count": 1
-        }
-      ]
-    },
-    // Doom Castle
-    {
-      "name": "Doom Castle",
-      "access_rules": [],
-      "map_locations": [
-        {
-          "map": "drained-world",
-          "x": 360,
-          "y": 515
-        },
-        {
-          "map": "restored-world",
-          "x": 360,
-          "y": 515
-        }
-      ],
-      "sections": [
-        {
-          "name": "Cure Potions",
-          "item_count": 1
-        },
-        {
-          "name": "Heal Potions",
-          "item_count": 1
-        },
-        {
-          "name": "Refreshers",
-          "item_count": 1
-        },
-        {
-          "name": "Seeds",
-          "item_count": 1
-        },
-        {
-          "name": "Arrows",
-          "item_count": 1
-        },
-        {
-          "name": "Aegis Shield",
-          "item_count": 1
-        },
-        {
-          "name": "Aero Spell",
-          "item_count": 1
-        }
-      ]
-    }
-  ]
-}
+[
+  // Other: Main
+  {
+    "name": "Other",
+    "parent": "World",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Mac's Ship
+      {
+        "name": "Mac's Ship",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 600,
+            "y": 340
+          },
+          {
+            "map": "restored-world",
+            "x": 635,
+            "y": 370
+          }
+        ],
+        "sections": [
+          {
+            "name": "Explosives",
+            "item_count": 1
+          },
+          {
+            "name": "Heal Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Cure Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Gaia's Armor",
+            "item_count": 1
+          }
+        ]
+      },
+      // Doom Castle
+      {
+        "name": "Doom Castle",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 360,
+            "y": 515
+          },
+          {
+            "map": "restored-world",
+            "x": 360,
+            "y": 515
+          }
+        ],
+        "sections": [
+          {
+            "name": "Cure Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Heal Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Refreshers",
+            "item_count": 1
+          },
+          {
+            "name": "Seeds",
+            "item_count": 1
+          },
+          {
+            "name": "Arrows",
+            "item_count": 1
+          },
+          {
+            "name": "Aegis Shield",
+            "item_count": 1
+          },
+          {
+            "name": "Aero Spell",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]
