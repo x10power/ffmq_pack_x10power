@@ -68,13 +68,11 @@
           },
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Explosives",
-            "clear_as_group": false,
-            "item_count": 10
+            "item_count": 1
           }
         ]
       }

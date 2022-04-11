@@ -1,7 +1,7 @@
 [
-  // Earth: Main
+  // Water: Main
   {
-    "name": "Earth",
+    "name": "Water",
     "parent": "World",
     "access_rules": [
       // "@Start/Connection"
@@ -26,8 +26,7 @@
         "sections": [
           {
             "name": "Arrows",
-            "clear_as_group": false,
-            "item_count": 10
+            "item_count": 1
           },
           {
             "name": "Squidite",
@@ -37,42 +36,42 @@
           }
         ]
       },
-      // Wintry Temple
+      // Wintry Cave
       {
-        "name": "Wintry Temple",
+        "name": "Wintry Cave",
         "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
-            "x": 400,
-            "y": 280
+            "x": 705,
+            "y": 140
           },
           {
             "map": "restored-world",
-            "x": 400,
-            "y": 280
+            "x": 705,
+            "y": 140
           }
         ],
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
-            "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
+            "name": "Refereshers",
+            "item_count": 1
           },
           {
-            "name": "Explosives",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Arrows",
+            "item_count": 1
+          },
+          {
+            "name": "Libra Crest",
+            "item_count": 1
           }
         ]
       },
@@ -95,40 +94,6 @@
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
-          }
-        ]
-      },
-      // Aquaria
-      {
-        "name": "Aquaria",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 630,
-            "y": 225
-          },
-          {
-            "map": "restored-world",
-            "x": 630,
-            "y": 225
-          }
-        ],
-        "sections": [
-          {
-            "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Venus Key",
             "item_count": 1
           }
         ]
@@ -156,8 +121,7 @@
           },
           {
             "name": "Explosives",
-            "clear_as_group": false,
-            "item_count": 10
+            "item_count": 1
           }
         ]
       },
@@ -179,48 +143,24 @@
         ],
         "sections": [
           {
-            "name": "170x Arrows",
+            "name": "Arrows",
             "item_count": 1
           },
           {
-            "name": "Explosives 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 3",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 4",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 5",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Explosives",
+            "item_count": 1
           },
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 12
+            "item_count": 1
           },
           {
             "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 6
+            "item_count": 1
           },
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 9
+            "item_count": 1
           },
           {
             "name": "Magic Mirror",
@@ -246,64 +186,6 @@
           }
         ]
       },
-      // Wintry Cave
-      {
-        "name": "Wintry Cave",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 705,
-            "y": 140
-          },
-          {
-            "map": "restored-world",
-            "x": 705,
-            "y": 140
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 9
-          },
-          {
-            "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 6
-          },
-          {
-            "name": "Refereshers",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Arrows 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Arrows 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Arrows 3",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Arrows 4",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Libra Crest",
-            "item_count": 1
-          }
-        ]
-      },
       // Spencer's Place
       {
         "name": "Spencer's Place",
@@ -323,11 +205,45 @@
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Mobius Crest",
+            "item_count": 1
+          }
+        ]
+      },
+      // Wintry Temple
+      {
+        "name": "Wintry Temple",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 400,
+            "y": 280
+          },
+          {
+            "map": "restored-world",
+            "x": 400,
+            "y": 280
+          }
+        ],
+        "sections": [
+          {
+            "name": "Cure Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Heal Potions",
+            "item_count": 1
+          },
+          {
+            "name": "Refreshers",
+            "item_count": 1
+          },
+          {
+            "name": "Explosives",
             "item_count": 1
           }
         ]

@@ -9,37 +9,38 @@ ScriptHost:LoadScript("scripts/ver.lua")
 
 -- Items
 print("Loading Items")
---  Armor
-Tracker:AddItems("items/armor.json")
---  Magics
-Tracker:AddItems("items/magics.json")
---  Party
-Tracker:AddItems("items/party.json")
---  Weapons
-Tracker:AddItems("items/weapons.json")
---  Toggles
-Tracker:AddItems("items/toggles.json")
+dir = "items"
+items = {
+  "armor",
+  "magics",
+  "party",
+  "weapons",
+  "toggles"
+}
+for _, itemCat in ipairs(items) do
+  Tracker:AddItems(dir .. "/" .. itemCat .. ".json")
+end
 print("")
 
--- Layouts
-print("Loading Layouts")
---  Armor
-Tracker:AddLayouts("layouts/grids/armors.json")
---  Magics
-Tracker:AddLayouts("layouts/grids/magics/blackmagics.json")
-Tracker:AddLayouts("layouts/grids/magics/whitemagics.json")
-Tracker:AddLayouts("layouts/grids/magics/wizardmagics.json")
-Tracker:AddLayouts("layouts/grids/magics.json")
---  Party
-Tracker:AddLayouts("layouts/grids/party.json")
---  Weapons
-Tracker:AddLayouts("layouts/grids/weapons.json")
---  Toggles
-Tracker:AddLayouts("layouts/grids/coins.json")
-Tracker:AddLayouts("layouts/grids/crests.json")
-Tracker:AddLayouts("layouts/grids/keyitems.json")
---  Grids
-Tracker:AddLayouts("layouts/grids/grids.json")
+-- Grids
+print("Loading Grids")
+dir = "layouts/grids"
+grids = {
+  "armors",
+  "magics/blackmagics",
+  "magics/whitemagics",
+  "magics/wizardmagics",
+  "magics",
+  "party",
+  "weapons",
+  "coins",
+  "crests",
+  "keyitems",
+  "grids"
+}
+for _, gridCat in ipairs(grids) do
+  Tracker:AddLayouts(dir .. "/" .. gridCat .. ".json")
+end
 print("")
 
 local variant = Tracker.ActiveVariantUID
@@ -55,28 +56,30 @@ if string.find(variant, "map") then
   Tracker:AddLayouts("layouts/maps/world.json")
 
   -- Locations
-  --  Battlefields
-  -- Tracker:AddLocations("locations/battlefields/main.json")
-  --  Center
-  Tracker:AddLocations("locations/center/focustower.json")
-  Tracker:AddLocations("locations/center/main.json")
-  --  Earth
-  Tracker:AddLocations("locations/earth/foresta.json")
-  Tracker:AddLocations("locations/earth/hod.json")
-  Tracker:AddLocations("locations/earth/levelforest.json")
-  Tracker:AddLocations("locations/earth/main.json")
-  --  Fire
-  Tracker:AddLocations("locations/fire/main.json")
-  --  Water
-  Tracker:AddLocations("locations/water/main.json")
-  --  Wind
-  Tracker:AddLocations("locations/wind/main.json")
-  --  World
-  Tracker:AddLocations("locations/world.json")
-
-  -- Layout Overrides
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
+  locations = {
+    -- Battlefields
+    -- "battlefields/main",
+    -- Center
+    "center/focustower",
+    -- Earth
+    "earth/foresta",
+    "earth/main",
+    -- Fire
+    "fire/fireburg",
+    "fire/main",
+    -- Water
+    "water/aquaria",
+    "water/main",
+    -- Wind
+    "wind/windia",
+    "wind/main",
+    -- World
+    "world"
+  }
+  for _, locCat in ipairs(locations) do
+    Tracker:AddLocations("locations/" .. locCat .. ".json")
+  end
+  print("")
 else
   print("Not a Map Variant; load default stuff")
   -- Layout Defaults
@@ -88,4 +91,14 @@ else
   print("Satisfy Legacy Loads")
   Tracker:AddMaps("maps/maps.json")
   Tracker:AddLocations("locations/world.json")
+  print("")
+end
+
+-- Variant Overrides
+if variant ~= "items_only" then
+  print("Loading Variant")
+  -- Layout Overrides
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
+  print("")
 end

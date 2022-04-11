@@ -1,7 +1,7 @@
 [
-  // Earth: Main
+  // Wind: Main
   {
-    "name": "Earth",
+    "name": "Wind",
     "parent": "World",
     "access_rules": [
       // "@Start/Connection"
@@ -26,13 +26,11 @@
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Seeds",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           }
         ]
       },
@@ -55,18 +53,15 @@
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Giant's Axe",
@@ -75,50 +70,52 @@
           {
             "name": "Cure Potions (Mobius Crest)",
             "access_rules": [ "mobiuscrest" ],
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Heal Potions (Mobius Crest)",
             "access_rules": [ "mobiuscrest" ],
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Explosives (Gemini Crest)",
             "access_rules": [ "geminicrest" ],
-            "clear_as_group": false,
-            "item_count": 10
+            "item_count": 1
           },
           {
             "name": "Refreshers (Libra Crest)",
             "access_rules": [ "libracrest" ],
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           }
         ]
       },
-      // Light Temple
+      // Giant Tree
       {
-        "name": "Light Temple",
-        "access_rules": ["phoebe"],
+        "name": "Giant Tree",
+        "access_rules": [ "kaeli" ],
         "map_locations": [
           {
             "map": "drained-world",
-            "x": 430,
-            "y": 550
-          },
-          {
-            "map": "restored-world",
-            "x": 430,
-            "y": 550
+            "x": 525,
+            "y": 500
           }
         ],
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
+          },
+          {
+            "name": "Refreshers",
+            "item_count": 1
+          },
+          {
+            "name": "Explosives",
+            "item_count": 1
+          },
+          {
+            "name": "Meteor Spell",
+            "item_count": 1
           }
         ]
       },
@@ -141,90 +138,30 @@
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
-          }
-        ]
-      },
-      // Giant Tree
-      {
-        "name": "Giant Tree",
-        "access_rules": [ "kaeli" ],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 525,
-            "y": 500
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cure Potions 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Cure Potions 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Cure Potions 3",
-            "clear_as_group": false,
-            "item_count": 4
-          },
-          {
-            "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 6
-          },
-          {
-            "name": "Explosives 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Meteor Spell",
             "item_count": 1
           }
         ]
       },
-      // Windia
+      // Light Temple
       {
-        "name": "Windia",
-        "access_rules": ["@Giant Tree/Meteor Spell"],
+        "name": "Light Temple",
+        "access_rules": ["phoebe"],
         "map_locations": [
           {
             "map": "drained-world",
-            "x": 690,
-            "y": 460
+            "x": 430,
+            "y": 550
           },
           {
             "map": "restored-world",
-            "x": 690,
-            "y": 460
+            "x": 430,
+            "y": 550
           }
         ],
         "sections": [
           {
-            "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 9
-          },
-          {
-            "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Arrows",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Cure Potions",
+            "item_count": 1
           }
         ]
       },
@@ -247,8 +184,7 @@
         "sections": [
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           }
         ]
       },
@@ -271,13 +207,11 @@
         "sections": [
           {
             "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Apollo Helmet",
@@ -303,39 +237,20 @@
         ],
         "sections": [
           {
-            "name": "Explosives 1",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Explosives",
+            "item_count": 1
           },
           {
-            "name": "Explosives 2",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Cure Potions",
+            "item_count": 1
           },
           {
-            "name": "Cure Potions 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Cure Potions 2",
-            "clear_as_group": false,
-            "item_count": 8
-          },
-          {
-            "name": "Heal Potions 1",
-            "clear_as_group": false,
-            "item_count": 108
-          },
-          {
-            "name": "Heal Potions 2",
-            "clear_as_group": false,
-            "item_count": 2
+            "name": "Heal Potions",
+            "item_count": 1
           },
           {
             "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Flare Spell",

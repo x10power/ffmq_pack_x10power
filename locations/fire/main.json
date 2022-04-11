@@ -26,28 +26,15 @@
         "sections": [
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 6
+            "item_count": 1
           },
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 6
+            "item_count": 1
           },
           {
-            "name": "Explosives 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 3",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Explosives",
+            "item_count": 1
           },
           {
             "name": "Charm Claw",
@@ -74,45 +61,10 @@
         "sections": [
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 3
-          }
-        ]
-      },
-      // Fireburg
-      {
-        "name": "Fireburg",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 265,
-            "y": 160
-          },
-          {
-            "map": "restored-world",
-            "x": 265,
-            "y": 160
-          }
-        ],
-        "sections": [
-          {
-            "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Multi-Key",
             "item_count": 1
           }
         ]
@@ -140,28 +92,19 @@
           },
           {
             "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 9
+            "item_count": 1
           },
           {
             "name": "Heal Potions",
-            "clear_as_group": false,
-            "item_count": 9
+            "item_count": 1
           },
           {
             "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 3
+            "item_count": 1
           },
           {
-            "name": "Explosives 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 2",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Explosives",
+            "item_count": 1
           },
           {
             "name": "White Spell",
@@ -187,42 +130,20 @@
         ],
         "sections": [
           {
-            "name": "39x Cure Potions",
+            "name": "Cure Potions",
             "item_count": 1
           },
           {
-            "name": "27x Heal Potions",
+            "name": "Heal Potions",
             "item_count": 1
           },
           {
             "name": "Refreshers",
-            "clear_as_group": false,
-            "item_count": 6
+            "item_count": 1
           },
           {
-            "name": "Explosives 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 3",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 4",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Explosives 5",
-            "clear_as_group": false,
-            "item_count": 10
+            "name": "Explosives",
+            "item_count": 1
           },
           {
             "name": "Moon Helmet",
@@ -234,123 +155,6 @@
           },
           {
             "name": "Sun Coin",
-            "item_count": 1
-          }
-        ]
-      },
-      // Bone Dungeon
-      {
-        "name": "Bone Dungeon",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 190,
-            "y": 340
-          },
-          {
-            "map": "restored-world",
-            "x": 190,
-            "y": 340
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cure Potions",
-            "clear_as_group": false,
-            "item_count": 6
-          },
-          {
-            "name": "Ninja Stars 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Ninja Stars 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Ninja Stars 3",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Ninja Stars 4",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Ninja Stars 5",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Ninja Stars 6",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Elixir",
-            "item_count": 1
-          },
-          {
-            "name": "Steel Shield",
-            "item_count": 1
-          },
-          {
-            "name": "Bombs 1",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Bombs 2",
-            "clear_as_group": false,
-            "item_count": 10
-          },
-          {
-            "name": "Quake Spell",
-            "item_count": 1
-          },
-          {
-            "name": "Seeds",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Sand Coin",
-            "item_count": 1
-          },
-          {
-            "name": "Dragon Claw",
-            "item_count": 1
-          },
-          {
-            "name": "Flamerus Rex",
-            "chest_unopened_img": "images/chests/enemy.png",
-            "item_count": 1
-          }
-        ]
-      },
-      // Sand Temple
-      {
-        "name": "Sand Temple",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 180,
-            "y": 395
-          },
-          {
-            "map": "restored-world",
-            "x": 180,
-            "y": 395
-          }
-        ],
-        "sections": [
-          {
-            "name": "[Event]",
             "item_count": 1
           }
         ]

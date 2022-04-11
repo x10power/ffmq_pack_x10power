@@ -1,35 +1,39 @@
 [
-  // Earth: Foresta
+  // Fire: Fireburg
   {
-    "name": "Foresta",
-    "parent": "Earth",
+    "name": "Fireburg",
+    "parent": "Fire",
     "access_rules": [
       // "@Start/Connection"
     ],
     "children": [
-      // Locations
+      // Fireburg
       {
-        "name": "Foresta",
+        "name": "Fireburg",
         "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
-            "x": 240,
-            "y": 500
+            "x": 265,
+            "y": 160
           },
           {
             "map": "restored-world",
-            "x": 240,
-            "y": 500
+            "x": 265,
+            "y": 160
           }
         ],
         "sections": [
           {
-            "name": "Cure Spell",
+            "name": "Heal Potions",
             "item_count": 1
           },
           {
-            "name": "Cure Potions",
+            "name": "Refreshers",
+            "item_count": 1
+          },
+          {
+            "name": "Multi-Key",
             "item_count": 1
           }
         ]
