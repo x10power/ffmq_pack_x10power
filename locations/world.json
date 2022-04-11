@@ -1,6 +1,8 @@
 [
   // World
   {
-    "name": "World"
+    "name": "World",
+    "chest_unopened_img": "images/chests/available.png",
+    "chest_opened_img": "images/chests/opened.png"
   }
 ]

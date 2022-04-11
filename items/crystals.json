@@ -1,0 +1,10 @@
+[
+  // Crystal of Earth
+  {
+    "name": "Crystal of Earth",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/crystals/crystal_earth.png",
+    "codes": "earth, earthcrystal"
+  }
+]

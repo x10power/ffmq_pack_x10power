@@ -30,6 +30,9 @@
       {
         "name": "Level Forest",
         "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
             "map": "drained-world",
@@ -44,15 +47,28 @@
         ],
         "sections": [
           {
-            "name": "Tree Wither",
+            "name": "Old Man",
+            "chest_unopened_img": "images/chests/oldman_available.png",
+            "#vanilla": "Tree Wither",
             "item_count": 1
           },
           {
             "name": "Cure Potions",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Cure Potion (SE)",
+            "access_rules": [ "axe" ],
             "item_count": 1
           },
           {
-            "name": "Heal Potions",
+            "name": "Heal Potion (NE)",
+            "item_count": 1
+          },
+          {
+            "name": "Heal Potion (SW)",
+            "access_rules": [ "axe" ],
             "item_count": 1
           }
         ]
@@ -75,7 +91,9 @@
         ],
         "sections": [
           {
-            "name": "[Event]",
+            "name": "Event Chest",
+            "chest_unopened_img": "images/party/tristam.gif",
+            "#vanilla": "tristam",
             "item_count": 1
           }
         ]
@@ -84,6 +102,9 @@
       {
         "name": "Bone Dungeon",
         "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
             "map": "drained-world",
@@ -98,44 +119,88 @@
         ],
         "sections": [
           {
-            "name": "Cure Potions",
+            "name": "1F C Pot",
             "item_count": 1
           },
           {
-            "name": "Ninja Stars",
-            "item_count": 1
-          },
-          {
-            "name": "Elixir",
-            "item_count": 1
+            "name": "1F Stars",
+            "clear_as_group": false,
+            "item_count": 2
           },
           {
             "name": "Steel Shield",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
             "item_count": 1
           },
           {
-            "name": "Bombs",
+            "name": "B1 Bombs",
+            "chest_unopened_img": "images/party/tristam.gif",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Stars",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Booms",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Stars",
+            "access_rules": ["bomb"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          // Needs Bombs
+          {
+            "name": "B2 -> B1 Stars",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2 Seeds",
+            "access_rules": ["bomb"],
             "item_count": 1
           },
           {
             "name": "Quake Spell",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
             "item_count": 1
           },
           {
-            "name": "Seeds",
+            "name": "B2 Elixir",
+            "chest_unopened_img": "images/party/tristam.gif",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2 Booms",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2 C Pot",
+            "access_rules": ["bomb"],
             "item_count": 1
           },
           {
             "name": "Sand Coin",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
             "item_count": 1
           },
           {
-            "name": "Dragon Claw",
-            "item_count": 1
-          },
-          {
-            "name": "Flamerus Rex",
+            "name": "Boss",
             "chest_unopened_img": "images/chests/enemy.png",
+            "access_rules": ["bomb"],
             "item_count": 1
           }
         ]

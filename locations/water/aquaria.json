@@ -5,6 +5,7 @@
     "parent": "Water",
     "access_rules": [
       // "@Start/Connection"
+      "kaelicured"
     ],
     "children": [
       // Aquaria
@@ -25,11 +26,15 @@
         ],
         "sections": [
           {
-            "name": "Heal Potions",
+            "name": "Heal Potions (Phoebe's House)",
             "item_count": 1
           },
           {
-            "name": "Refreshers",
+            "name": "Refreshers (NW House)",
+            "item_count": 1
+          },
+          {
+            "name": "Steel Helm (NW House NPC; 200GP)",
             "item_count": 1
           },
           {

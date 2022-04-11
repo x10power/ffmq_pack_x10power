@@ -9,6 +9,10 @@
       },
       {
         "type": "layout",
+        "key": "storymarkers_grid"
+      },
+      {
+        "type": "layout",
         "key": "weapons_grid"
       },
       {
@@ -30,6 +34,10 @@
       {
         "type": "layout",
         "key": "coins_grid"
+      },
+      {
+        "type": "layout",
+        "key": "crystals_grid"
       }
     ]
   },
@@ -64,6 +72,10 @@
       {
         "type": "layout",
         "key": "coins_grid"
+      },
+      {
+        "type": "layout",
+        "key": "crystals_grid"
       }
     ]
   },

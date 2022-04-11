@@ -25,7 +25,91 @@
         ],
         "sections": [
           {
-            "name": "Arrows",
+            "name": "Phoebe",
+            "chest_unopened_img": "images/party/phoebe.gif",
+            "item_count": 1
+          },
+          {
+            "name": "Booms",
+            "item_count": 1
+          },
+          {
+            "name": "Teleport to Life Temple",
+            "access_rules": ["libracrest"],
+            "item_count": 1
+          }
+        ]
+      },
+      // Wintry Cave
+      {
+        "name": "Wintry Cave",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 705,
+            "y": 140
+          },
+          {
+            "map": "restored-world",
+            "x": 705,
+            "y": 140
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Booms",
+            "item_count": 1
+          },
+          {
+            "name": "Phoebe",
+            "chest_unopened_img": "images/party/phoebe.gif",
+            "#vanilla": "claw",
+            "item_count": 1
+          },
+          // Needs Claw
+          {
+            "name": "1F H Pot",
+            "access_rules": ["claws"],
+            "item_count": 1
+          },
+          {
+            "name": "1F C Pot",
+            "access_rules": ["claws"],
+            "item_count": 1
+          },
+          {
+            "name": "1F Refreshers",
+            "access_rules": ["claws"],
+            "item_count": 1
+          },
+          {
+            "name": "3F Arrow",
+            "access_rules": ["bomb,claws"],
+            "item_count": 2
+          },
+          {
+            "name": "3F C Pot",
+            "access_rules": ["bomb,claws"],
+            "item_count": 1
+          },
+          {
+            "name": "2F Arrow",
+            "access_rules": ["bomb,claws"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "2F C Pot",
+            "access_rules": ["bomb,claws"],
+            "item_count": 1
+          },
+          {
+            "name": "2F H Pot",
+            "access_rules": ["bomb,claws"],
             "item_count": 1
           },
           {
@@ -36,49 +120,10 @@
           }
         ]
       },
-      // Wintry Cave
-      {
-        "name": "Wintry Cave",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 705,
-            "y": 140
-          },
-          {
-            "map": "restored-world",
-            "x": 705,
-            "y": 140
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cure Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Heal Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Refereshers",
-            "item_count": 1
-          },
-          {
-            "name": "Arrows",
-            "item_count": 1
-          },
-          {
-            "name": "Libra Crest",
-            "item_count": 1
-          }
-        ]
-      },
       // Life Temple
       {
         "name": "Life Temple",
-        "access_rules": [],
+        "access_rules": ["libracrest"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -92,6 +137,12 @@
           }
         ],
         "sections": [
+          {
+            "name": "Old Man",
+            "chest_unopened_img": "images/chests/oldman_available.png",
+            "#vanilla": "wakewater",
+            "item_count": 1
+          },
           {
             "name": "Cure Potions",
             "item_count": 1

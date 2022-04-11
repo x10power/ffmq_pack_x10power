@@ -11,6 +11,9 @@
       {
         "name": "Foresta",
         "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
             "map": "drained-world",
@@ -25,11 +28,34 @@
         ],
         "sections": [
           {
-            "name": "Cure Spell",
+            "name": "Kaeli's House (Kaeli)",
+            "chest_unopened_img": "images/party/kaeli.gif",
+            "#mikerpg": 2,
+            "#vanilla": "kaeli",
             "item_count": 1
           },
           {
-            "name": "Cure Potions",
+            "name": "Kaeli's House (Chest)",
+            "#mikerpg": 2,
+            "item_count": 1
+          },
+          {
+            "name": "NE House",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "#mikerpg": 4,
+            "#vanilla": "cure",
+            "item_count": 1
+          },
+          {
+            "name": "SE House",
+            "#mikerpg": 3,
+            "item_count": 1
+          },
+          {
+            "name": "Cure Potion (SE)",
+            "#mikerpg": "outside",
             "item_count": 1
           }
         ]

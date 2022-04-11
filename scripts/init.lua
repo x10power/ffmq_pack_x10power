@@ -12,8 +12,10 @@ print("Loading Items")
 dir = "items"
 items = {
   "armor",
+  "crystals",
   "magics",
   "party",
+  "storymarkers",
   "weapons",
   "toggles"
 }
@@ -26,16 +28,18 @@ print("")
 print("Loading Grids")
 dir = "layouts/grids"
 grids = {
-  "armors",
   "magics/blackmagics",
   "magics/whitemagics",
   "magics/wizardmagics",
-  "magics",
-  "party",
-  "weapons",
+  "armors",
   "coins",
   "crests",
+  "crystals",
   "keyitems",
+  "magics",
+  "party",
+  "storymarkers",
+  "weapons",
   "grids"
 }
 for _, gridCat in ipairs(grids) do
@@ -57,24 +61,24 @@ if string.find(variant, "map") then
 
   -- Locations
   locations = {
+    -- World
+    "world",
     -- Battlefields
     -- "battlefields/main",
     -- Center
     "center/focustower",
     -- Earth
-    "earth/foresta",
     "earth/main",
+    "earth/foresta",
     -- Fire
-    "fire/fireburg",
     "fire/main",
+    "fire/fireburg",
     -- Water
-    "water/aquaria",
     "water/main",
+    "water/aquaria",
     -- Wind
-    "wind/windia",
     "wind/main",
-    -- World
-    "world"
+    "wind/windia"
   }
   for _, locCat in ipairs(locations) do
     Tracker:AddLocations("locations/" .. locCat .. ".json")
