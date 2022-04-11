@@ -16,6 +16,11 @@ with open(os.path.join(".", "resources", "tests", "output", "funcNames.json"), "
 print("Reading Locations")
 dirname = os.path.join(".", "locations")
 for r, d, f in os.walk(dirname):
+    if "main.json" in f:
+        f.pop(f.index("main.json"))
+        f.reverse()
+        f.append("main.json")
+        f.reverse()
     for filename in f:
         if os.path.isfile(os.path.join(r, filename)):
             if os.path.splitext(filename)[1].lower() == ".json":
