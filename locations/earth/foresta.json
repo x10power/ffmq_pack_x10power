@@ -29,6 +29,7 @@
         "sections": [
           {
             "name": "Kaeli's House (Kaeli)",
+            "access_rules": ["treewither"],
             "chest_unopened_img": "images/party/kaeli.gif",
             "#mikerpg": 2,
             "#vanilla": "kaeli",

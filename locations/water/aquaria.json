@@ -5,7 +5,7 @@
     "parent": "Water",
     "access_rules": [
       // "@Start/Connection"
-      "kaelicured"
+      "kaeli:2"
     ],
     "children": [
       // Aquaria
@@ -27,6 +27,11 @@
         "sections": [
           {
             "name": "Heal Potions (Phoebe's House)",
+            "item_count": 1
+          },
+          {
+            "name": "Phoebe's House (Kaeli)",
+            "chest_unopened_img": "images/party/kaeli.gif",
             "item_count": 1
           },
           {
