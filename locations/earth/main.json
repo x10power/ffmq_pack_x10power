@@ -70,9 +70,15 @@
             "name": "Heal Potion (SW)",
             "access_rules": [ "axe" ],
             "item_count": 1
-          }
+          },
+		  {
+			"name": "Kaeli Gift 1:",
+			"access_rules": [ "treewither" ],
+			"item_count": 1	
+		  }
         ]
       },
+	  
       // Sand Temple
       {
         "name": "Sand Temple",
