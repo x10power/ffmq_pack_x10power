@@ -333,11 +333,17 @@
         ],
         "sections": [
           {
-            "name": "Cure Potions",
+            "name": "C Pot",
             "item_count": 1
           },
           {
             "name": "Mobius Crest",
+            "item_count": 1
+          },
+          {
+            "name": "Spencer",
+            "access_rules": ["water"],
+            "#vanilla": "venuskey",
             "item_count": 1
           }
         ]

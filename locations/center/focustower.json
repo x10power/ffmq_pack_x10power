@@ -58,6 +58,21 @@
             "item_count": 1
           },
           {
+            "name": "Blizzard Spell",
+            "access_rules": ["rivercoin"],
+            "item_count": 1
+          },
+          {
+            "name": "Venus Shield",
+            "access_rules": ["rivercoin","bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "C Pot",
+            "access_rules": ["rivercoin"],
+            "item_count": 1
+          },
+          {
             "name": "Fire Door",
             "access_rules": ["suncoin"],
             "item_count": 1
@@ -65,18 +80,6 @@
           {
             "name": "Wind Door",
             "access_rules": ["skycoin"],
-            "item_count": 1
-          },
-          {
-            "name": "Blizzard Spell",
-            "item_count": 1
-          },
-          {
-            "name": "Venus Shield",
-            "item_count": 1
-          },
-          {
-            "name": "Cure Potions",
             "item_count": 1
           }
         ]
