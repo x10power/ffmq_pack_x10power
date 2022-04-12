@@ -50,6 +50,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
             "#vanilla": "fire",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
@@ -60,11 +61,13 @@
           {
             "name": "Blizzard Spell",
             "access_rules": ["rivercoin"],
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Venus Shield",
             "access_rules": ["rivercoin","bomb"],
+            "#type": "keyitem",
             "item_count": 1
           },
           {

@@ -65,6 +65,7 @@
           },
           {
             "name": "Giant's Axe",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
@@ -115,6 +116,7 @@
           },
           {
             "name": "Meteor Spell",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]
@@ -215,6 +217,7 @@
           },
           {
             "name": "Apollo Helmet",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]
@@ -254,10 +257,12 @@
           },
           {
             "name": "Flare Spell",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Sky Coin",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]

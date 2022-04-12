@@ -47,6 +47,7 @@
             "chest_opened_img": "images/chests/opened.png",
             "#mikerpg": 4,
             "#vanilla": "cure",
+            "#type": "keyitem",
             "item_count": 1
           },
           {

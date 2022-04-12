@@ -38,6 +38,7 @@
           },
           {
             "name": "Gaia's Armor",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]
@@ -81,10 +82,12 @@
           },
           {
             "name": "Aegis Shield",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Aero Spell",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]

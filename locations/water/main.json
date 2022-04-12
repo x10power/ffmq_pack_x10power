@@ -27,6 +27,7 @@
           {
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
@@ -68,6 +69,7 @@
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
             "#vanilla": "claw",
+            "#type": "keyitem",
             "item_count": 1
           },
           // Needs Claw
@@ -116,6 +118,7 @@
             "name": "Squidite",
             "chest_unopened_img": "images/chests/enemy.png",
             "#note": "Gives Libra Crest in vanilla",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]
@@ -141,6 +144,7 @@
             "name": "Old Man",
             "chest_unopened_img": "images/chests/oldman_available.png",
             "#vanilla": "wakewater",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
@@ -175,12 +179,14 @@
           },
           {
             "name": "Heal Spell",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Snow Crab",
             "chest_unopened_img": "images/chests/enemy.png",
             "#vanilla": "bomb2",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]
@@ -220,6 +226,7 @@
           },
           {
             "name": "Magic Mirror",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
@@ -296,15 +303,18 @@
           },
           {
             "name": "Noble Armor",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Knight Sword",
             "access_rules": ["swords"],
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "River Coin",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
@@ -338,12 +348,14 @@
           },
           {
             "name": "Mobius Crest",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Spencer",
             "access_rules": ["watercrystal"],
             "#vanilla": "venuskey",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]

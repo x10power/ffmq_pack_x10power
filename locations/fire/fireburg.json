@@ -26,20 +26,24 @@
         "sections": [
           {
             "name": "Reuben",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Tristram",
             "#vanilla": "multikey",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Mega Grenade",
             "access_rules": ["multikey"],
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Battle Axe",
+            "#type": "keyitem",
             "item_count": 1
           },
           {

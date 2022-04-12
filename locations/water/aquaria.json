@@ -32,6 +32,7 @@
           {
             "name": "Phoebe's House (Kaeli)",
             "chest_unopened_img": "images/party/kaeli.gif",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
@@ -40,10 +41,12 @@
           },
           {
             "name": "Steel Helm (NW House NPC; 200GP)",
+            "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Venus Key",
+            "#type": "keyitem",
             "item_count": 1
           }
         ]
