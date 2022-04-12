@@ -34,10 +34,10 @@
       {
         "type": "layout",
         "key": "coins_grid"
-      },
-      {
-        "type": "layout",
-        "key": "crystals_grid"
+      // },
+      // {
+      //   "type": "layout",
+      //   "key": "crystals_grid"
       }
     ]
   },
