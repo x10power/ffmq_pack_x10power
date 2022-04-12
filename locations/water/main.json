@@ -194,7 +194,7 @@
       // Ice Pyramid
       {
         "name": "Ice Pyramid",
-        "access_rules": [ "bomb2,sword" ],
+        "access_rules": [ "bomb2,swords" ],
         "map_locations": [
           {
             "map": "drained-world",

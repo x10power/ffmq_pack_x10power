@@ -98,29 +98,45 @@
         ],
         "sections": [
           {
+            "name": "1L Refreshers",
+            "item_count": 1
+          },
+          {
+            "name": "1L H Pot",
+            "item_count": 1
+          },
+          {
+            "name": "1L C Pot",
+            "item_count": 1
+          },
+          {
             "name": "White Spell",
             "#type": "keyitem",
             "item_count": 1
           },
           {
+            "name": "2L Booms",
+            "item_count": 1
+          },
+          {
+            "name": "2L H Pot",
+            "item_count": 1
+          },
+          {
+            "name": "3L Booms",
+            "item_count": 1
+          },
+          {
+            "name": "4L H Pot",
+            "item_count": 1
+          },
+          {
+            "name": "4L C Pot",
+            "item_count": 2
+          },
+          {
             "name": "Gas Mask",
             "#type": "keyitem",
-            "item_count": 1
-          },
-          {
-            "name": "Cure Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Heal Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Refreshers",
-            "item_count": 1
-          },
-          {
-            "name": "Explosives",
             "item_count": 1
           }
         ]
@@ -142,22 +158,6 @@
           }
         ],
         "sections": [
-          {
-            "name": "Cure Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Heal Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Refreshers",
-            "item_count": 1
-          },
-          {
-            "name": "Explosives",
-            "item_count": 1
-          },
           {
             "name": "Moon Helmet",
             "#type": "keyitem",
