@@ -5,7 +5,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/crystals/crystal_earth.png",
-    "codes": "earth, earthcrystal"
+    "codes": "earthcrystal"
   },
   // Crystal of Water
   {
@@ -13,7 +13,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/crystals/crystal_water.png",
-    "codes": "water, watercrystal"
+    "codes": "watercrystal"
   },
   // Crystal of Fire
   {
@@ -21,7 +21,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/crystals/crystal_fire.png",
-    "codes": "fire, firecrystal"
+    "codes": "firecrystal"
   },
   // Crystal of Wind
   {
@@ -29,7 +29,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/crystals/crystal_wind.png",
-    "codes": "wind, windcrystal"
+    "codes": "windcrystal"
   },
   // Crystal of Light
   {
@@ -37,6 +37,6 @@
     "type": "toggle",
     "loop": true,
     "img": "images/crystals/crystal_light.png",
-    "codes": "light, lightcrystal"
+    "codes": "lightcrystal"
   }
 ]
