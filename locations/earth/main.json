@@ -48,7 +48,7 @@
         "sections": [
           {
             "name": "Old Man",
-            "chest_unopened_img": "images/chests/oldman_available.png",
+            "chest_unopened_img": "images/chests/blueman_available.png",
             "#vanilla": "Tree Wither",
             "item_count": 1
           },
@@ -74,11 +74,11 @@
 		  {
 			"name": "Kaeli Gift 1:",
 			"access_rules": [ "treewither" ],
-			"item_count": 1	
+			"item_count": 1
 		  }
         ]
       },
-	  
+
       // Sand Temple
       {
         "name": "Sand Temple",
