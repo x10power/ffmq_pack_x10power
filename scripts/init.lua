@@ -12,6 +12,7 @@ print("Loading Items")
 dir = "items"
 items = {
   "armor",
+  "counters",
   "crystals",
   "magics",
   "party",
@@ -33,6 +34,7 @@ grids = {
   "magics/wizardmagics",
   "armors",
   "coins",
+  "counters",
   "crests",
   "crystals",
   "keyitems",
