@@ -25,19 +25,30 @@
         ],
         "sections": [
           {
+            "name": "A C Pot",
+            "access_rules": ["bombs"],
+            "item_count": 1
+          },
+          {
+            "name": "A H Pot",
+            "access_rules": ["bombs"],
+            "item_count": 1
+          },
+          {
+            "name": "Charm Claw",
+            "access_rules": ["bombs"],
+            "item_count": 1
+          },
+          {
+            "name": "Booms",
+            "item_count": 1
+          },
+          {
             "name": "Heal Potions",
             "item_count": 1
           },
           {
             "name": "Cure Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Explosives",
-            "item_count": 1
-          },
-          {
-            "name": "Charm Claw",
             "item_count": 1
           }
         ]

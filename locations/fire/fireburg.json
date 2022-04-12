@@ -25,15 +25,29 @@
         ],
         "sections": [
           {
+            "name": "Reuben",
+            "item_count": 1
+          },
+          {
+            "name": "Tristram",
+            "#vanilla": "multikey",
+            "item_count": 1
+          },
+          {
+            "name": "Mega Grenade",
+            "access_rules": ["multikey"],
+            "item_count": 1
+          },
+          {
+            "name": "Battle Axe",
+            "item_count": 1
+          },
+          {
             "name": "Heal Potions",
             "item_count": 1
           },
           {
             "name": "Refreshers",
-            "item_count": 1
-          },
-          {
-            "name": "Multi-Key",
             "item_count": 1
           }
         ]
