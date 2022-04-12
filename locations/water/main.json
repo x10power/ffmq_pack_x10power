@@ -342,7 +342,7 @@
           },
           {
             "name": "Spencer",
-            "access_rules": ["water"],
+            "access_rules": ["watercrystal"],
             "#vanilla": "venuskey",
             "item_count": 1
           }
