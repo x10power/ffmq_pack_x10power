@@ -16,25 +16,25 @@
         "name": "Exit",
         "img": "images/magic/white/whitemagic.png",
         "img_mods": "overlay|images/magic/white/overlay/exit.png",
-        "codes": "whitemagic1"
+        "codes": "whitemagic1, exit"
       },
       {
         "name": "Cure",
         "img": "images/magic/white/whitemagic.png",
         "img_mods": "overlay|images/magic/white/overlay/cure.png",
-        "codes": "whitemagic2"
+        "codes": "whitemagic2, cure"
       },
       {
         "name": "Heal",
         "img": "images/magic/white/whitemagic.png",
         "img_mods": "overlay|images/magic/white/overlay/heal.png",
-        "codes": "whitemagic3"
+        "codes": "whitemagic3, heal"
       },
       {
         "name": "Life",
         "img": "images/magic/white/whitemagic.png",
         "img_mods": "overlay|images/magic/white/overlay/life.png",
-        "codes": "whitemagic4"
+        "codes": "whitemagic4, life"
       }
     ]
   },
@@ -55,25 +55,25 @@
         "name": "Quake",
         "img": "images/magic/black/blackmagic.png",
         "img_mods": "overlay|images/magic/black/overlay/quake.png",
-        "codes": "blackmagic1"
+        "codes": "blackmagic1, quake"
       },
       {
         "name": "Blizzard",
         "img": "images/magic/black/blackmagic.png",
         "img_mods": "overlay|images/magic/black/overlay/blizzard.png",
-        "codes": "blackmagic2"
+        "codes": "blackmagic2, blizzard"
       },
       {
         "name": "Fire",
         "img": "images/magic/black/blackmagic.png",
         "img_mods": "overlay|images/magic/black/overlay/fire.png",
-        "codes": "blackmagic3"
+        "codes": "blackmagic3, fire"
       },
       {
         "name": "Aero",
         "img": "images/magic/black/blackmagic.png",
         "img_mods": "overlay|images/magic/black/overlay/aero.png",
-        "codes": "blackmagic4"
+        "codes": "blackmagic4, aero"
       }
     ]
   },
@@ -95,25 +95,25 @@
         "name": "Thunder",
         "img": "images/magic/wizard/wizardmagic.png",
         "img_mods": "overlay|images/magic/wizard/overlay/thunder.png",
-        "codes": "wizardmagic1"
+        "codes": "wizardmagic1, thunder"
       },
       {
         "name": "White",
         "img": "images/magic/wizard/wizardmagic.png",
         "img_mods": "overlay|images/magic/wizard/overlay/white.png",
-        "codes": "wizardmagic2"
+        "codes": "wizardmagic2, white"
       },
       {
         "name": "Meteor",
         "img": "images/magic/wizard/wizardmagic.png",
         "img_mods": "overlay|images/magic/wizard/overlay/meteor.png",
-        "codes": "wizardmagic3"
+        "codes": "wizardmagic3, meteor"
       },
       {
         "name": "Flare",
         "img": "images/magic/wizard/wizardmagic.png",
         "img_mods": "overlay|images/magic/wizard/overlay/flare.png",
-        "codes": "wizardmagic4"
+        "codes": "wizardmagic4, flare"
       }
     ]
   },
