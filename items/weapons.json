@@ -5,6 +5,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "sword, swords",
     "stages": [
       {
         "name": "No Sword",
@@ -35,6 +36,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "axe, axes",
     "stages": [
       {
         "name": "No Axe",
@@ -65,6 +67,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "bombs",
     "stages": [
       {
         "name": "No Bombs",
@@ -95,6 +98,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "claws, claw",
     "stages": [
       {
         "name": "No Claws",

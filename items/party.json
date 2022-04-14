@@ -55,6 +55,7 @@
     "name": "Party Member 2",
     "type": "progressive",
     "loop": true,
+    "codes": "pm",
     "stages": [
       {
         "name": "Kaeli",
