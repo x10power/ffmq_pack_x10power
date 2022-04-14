@@ -2,28 +2,113 @@
   "game_map": {
     "type": "tabbed",
     "tabs": [
-      // {
-      //   "title": "Drained World",
-      //   "content": {
-      //     "type": "map",
-      //     "maps": ["drained-world"],
-      //     "width": 880
-      //   }
-      // },
       {
-        "title": "Restored World",
+        "title": "Overworld",
         "content": {
           "type": "map",
           "maps": ["restored-world"],
           "width": 880
         }
-      // },
-      // {
-      //   "title": "Both Worlds",
-      //   "content": {
-      //     "type": "map",
-      //     "maps": ["drained-world","restored-world"]
-      //   }
+      },
+      {
+        "title": "Dungeons",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Lava Dome",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Outside",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome"]
+                    }
+                  },
+                  {
+                    "title": "Area 1",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-1"]
+                    }
+                  },
+                  {
+                    "title": "Area 2",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-2"]
+                    }
+                  },
+                  {
+                    "title": "Area 3",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-3"]
+                    }
+                  },
+                  {
+                    "title": "Area 4",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-4"]
+                    }
+                  },
+                  {
+                    "title": "Area 5",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-5"]
+                    }
+                  },
+                  {
+                    "title": "Area 6",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-6"]
+                    }
+                  },
+                  {
+                    "title": "Area 7",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-7"]
+                    }
+                  },
+                  {
+                    "title": "Area 8",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-8"]
+                    }
+                  },
+                  {
+                    "title": "Area 9",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-9"]
+                    }
+                  },
+                  {
+                    "title": "Area 10",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-10"]
+                    }
+                  },
+                  {
+                    "title": "Area 11",
+                    "content": {
+                      "type": "map",
+                      "maps": ["lava-dome-11"]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     ]
   }

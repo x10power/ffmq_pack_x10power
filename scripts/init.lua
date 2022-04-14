@@ -56,8 +56,10 @@ end
 
 if string.find(variant, "map") then
   print("Map Variant; load map stuff")
-  -- Maps
+  -- World Map
   Tracker:AddMaps("maps/maps.json")
+  -- Dungeon Maps
+  Tracker:AddMaps("maps/dungeons/lavadome.json")
   -- Map Layouts
   Tracker:AddLayouts("layouts/maps/world.json")
 
