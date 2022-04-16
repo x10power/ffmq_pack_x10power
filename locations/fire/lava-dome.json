@@ -1,0 +1,73 @@
+[
+  // Fire: Lava Dome
+  {
+    "name": "Lava Dome",
+    "parent": "Fire",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Lave Dome
+      {
+        "name": "A1",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "lava-dome-1",
+            "x": 57,
+            "y": 78
+          }
+        ],
+        "sections": [
+          {
+            "name": "Booms",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "A2: Booms",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "lava-dome-2",
+            "x": 253,
+            "y": 75
+          }
+        ],
+        "sections": [
+          {
+            "name": "Booms",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
+      {
+        "name": "A2: Life",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "lava-dome-2",
+            "x": 365,
+            "y": 331
+          }
+        ],
+        "sections": [
+          {
+            "name": "Life",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

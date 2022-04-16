@@ -49,33 +49,39 @@
           {
             "name": "Old Man",
             "chest_unopened_img": "images/chests/blueman_available.png",
+            "#itemtype": "blueman",
             "#vanilla": "Tree Wither",
             "item_count": 1
           },
           {
             "name": "Cure Potions",
             "clear_as_group": false,
+            "#itemtype": "basket",
             "item_count": 2
           },
           {
             "name": "Cure Potion (SE)",
             "access_rules": [ "axe" ],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Heal Potion (NE)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Heal Potion (SW)",
             "access_rules": [ "axe" ],
+            "#itemtype": "basket",
             "item_count": 1
           },
-		  {
-			"name": "Kaeli Gift 1:",
-			"access_rules": [ "treewither" ],
-			"item_count": 1
-		  }
+          {
+            "name": "Kaeli Gift 1:",
+            "access_rules": [ "treewither" ],
+            "#itemtype": "kaeli",
+            "item_count": 1
+          }
         ]
       },
 
@@ -99,6 +105,7 @@
           {
             "name": "Event Chest",
             "chest_unopened_img": "images/party/tristam.gif",
+            "#itemtype": "tristam",
             "#vanilla": "tristam",
             "item_count": 1
           }
@@ -126,11 +133,13 @@
         "sections": [
           {
             "name": "1F C Pot",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "1F Stars",
             "clear_as_group": false,
+            "#itemtype": "basket",
             "item_count": 2
           },
           {
@@ -139,37 +148,44 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
             "access_rules": ["bomb"],
+            "#itemtype": "chest",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "B1 Bombs",
             "chest_unopened_img": "images/party/tristam.gif",
+            "#itemtype": "tristam",
             "item_count": 1
           },
           {
             "name": "B1 Stars",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "B2 Booms",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "B2 Stars",
             "access_rules": ["bomb"],
             "clear_as_group": false,
+            "#itemtype": "basket",
             "item_count": 2
           },
           // Needs Bombs
           {
             "name": "B2 -> B1 Stars",
             "access_rules": ["bomb"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "B2 Seeds",
             "access_rules": ["bomb"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
@@ -178,6 +194,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
             "access_rules": ["bomb"],
+            "#itemtype": "chest",
             "#type": "keyitem",
             "item_count": 1
           },
@@ -185,16 +202,19 @@
             "name": "B2 Elixir",
             "chest_unopened_img": "images/party/tristam.gif",
             "access_rules": ["bomb"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "B2 Booms",
             "access_rules": ["bomb"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "B2 C Pot",
             "access_rules": ["bomb"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
@@ -203,6 +223,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
             "access_rules": ["bomb"],
+            "#itemtype": "chest",
             "#type": "keyitem",
             "item_count": 1
           },
@@ -210,6 +231,7 @@
             "name": "Boss",
             "chest_unopened_img": "images/chests/enemy.png",
             "access_rules": ["bomb"],
+            "#itemtype": "basket",
             "item_count": 1
           }
         ]

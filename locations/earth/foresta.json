@@ -31,6 +31,7 @@
             "name": "Kaeli's House (Kaeli)",
             "access_rules": ["treewither"],
             "chest_unopened_img": "images/party/kaeli.gif",
+            "#itemtype": "kaeli",
             "#mikerpg": 2,
             "#vanilla": "kaeli",
             "item_count": 1
@@ -45,6 +46,7 @@
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
+            "#itemtype": "chest",
             "#mikerpg": 4,
             "#vanilla": "cure",
             "#type": "keyitem",
@@ -52,11 +54,13 @@
           },
           {
             "name": "SE House",
+            "#itemtype": "basket",
             "#mikerpg": 3,
             "item_count": 1
           },
           {
             "name": "Cure Potion (SE)",
+            "#itemtype": "basket",
             "#mikerpg": "outside",
             "item_count": 1
           }

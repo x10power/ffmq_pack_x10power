@@ -77,6 +77,7 @@ if string.find(variant, "map") then
     -- Fire
     "fire/main",
     "fire/fireburg",
+    "fire/lava-dome",
     -- Water
     "water/main",
     "water/aquaria",

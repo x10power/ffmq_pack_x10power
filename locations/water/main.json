@@ -63,11 +63,13 @@
         "sections": [
           {
             "name": "1F Booms",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
+            "#itemtype": "phoebe",
             "#vanilla": "claw",
             "#type": "keyitem",
             "item_count": 1
@@ -76,47 +78,56 @@
           {
             "name": "1F H Pot",
             "access_rules": ["claws"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "1F C Pot",
             "access_rules": ["claws"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "1F Refreshers",
             "access_rules": ["claws"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "3F Arrow",
             "access_rules": ["bomb,claws"],
+            "#itemtype": "basket",
             "item_count": 2
           },
           {
             "name": "3F C Pot",
             "access_rules": ["bomb,claws"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F Arrow",
             "access_rules": ["bomb,claws"],
             "clear_as_group": false,
+            "#itemtype": "basket",
             "item_count": 2
           },
           {
             "name": "2F C Pot",
             "access_rules": ["bomb,claws"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F H Pot",
             "access_rules": ["bomb,claws"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Squidite",
             "chest_unopened_img": "images/chests/enemy.png",
+            "#itemtype": "boss",
             "#note": "Gives Libra Crest in vanilla",
             "#type": "keyitem",
             "item_count": 1
@@ -143,6 +154,7 @@
           {
             "name": "Old Man",
             "chest_unopened_img": "images/chests/oldman_available.png",
+            "#itemtype": "oldman",
             "#vanilla": "wakewater",
             "#type": "keyitem",
             "item_count": 1
@@ -175,16 +187,19 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Heal Spell",
+            "#itemtype": "chest",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Snow Crab",
             "chest_unopened_img": "images/chests/enemy.png",
+            "#itemtype": "boss",
             "#vanilla": "bomb2",
             "#type": "keyitem",
             "item_count": 1
@@ -210,116 +225,142 @@
         "sections": [
           {
             "name": "1F Arrows",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "1F Refreshers",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "1F Explosives",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F H Pot",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Magic Mirror",
+            "#itemtype": "basket",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Closet, From B)",
             "access_rules": ["swords"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Gauntlet)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "3F H Pot (From A)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "3F Arrows (From B->F)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "3F Arrows (From G)",
             "clear_as_group": false,
+            "#itemtype": "basket",
             "item_count": 2
           },
           {
             "name": "3F H Pot (From B->F)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Hidden Passage)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Deep Closet)",
             "access_rules": ["swords"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Closet, From E)",
             "access_rules": ["swords"],
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "3F Arrows (Gauntlet, From G)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "3F Booms (Gauntlet, From G)",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "H Arrows",
+            "#itemtype": "basket",
             "item_count": 4
           },
           {
             "name": "H C Pot",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "H Refreshers",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "J Arrows",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "J C Pot",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "J H Pot",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Noble Armor",
+            "#itemtype": "basket",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Knight Sword",
             "access_rules": ["swords"],
+            "#itemtype": "basket",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "River Coin",
+            "#itemtype": "basket",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Boss",
             "chest_unopened_img": "images/chests/enemy.png",
+            "#itemtype": "boss",
             "#note": "Restores World",
             "item_count": 1
           }
@@ -344,16 +385,19 @@
         "sections": [
           {
             "name": "C Pot",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Mobius Crest",
+            "#itemtype": "basket",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Spencer",
             "access_rules": ["watercrystal"],
+            "#itemtype": "basket",
             "#vanilla": "venuskey",
             "#type": "keyitem",
             "item_count": 1
@@ -379,18 +423,22 @@
         "sections": [
           {
             "name": "Cure Potions",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Heal Potions",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Refreshers",
+            "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Explosives",
+            "#itemtype": "basket",
             "item_count": 1
           }
         ]
