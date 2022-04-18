@@ -49,14 +49,14 @@
     "img_mods": "overlay|images/crests/overlay/gemini.png",
     "codes": "gemini, geminicrest"
   },
-  // Mobious Crest
+  // Mobius Crest
   {
-    "name": "Mobious Crest",
+    "name": "Mobius Crest",
     "type": "toggle",
     "loop": true,
     "img": "images/crests/crest.png",
-    "img_mods": "overlay|images/crests/overlay/mobious.png",
-    "codes": "mobious, mobiouscrest"
+    "img_mods": "overlay|images/crests/overlay/mobius.png",
+    "codes": "mobius, mobiuscrest"
   },
   // Elixir
   {

@@ -1,0 +1,10 @@
+{
+  "party_grid": {
+    "type": "itemgrid",
+    "item_margin": "0",
+    "rows": [
+      ["kaeli","phoebe","reuben","tristam"],
+      ["benjamin","party2"]
+    ]
+  }
+}

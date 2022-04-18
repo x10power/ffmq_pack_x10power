@@ -1,0 +1,86 @@
+[
+  // Benjamin
+  {
+    "name": "Benjamin",
+    "type": "progressive",
+    "allow_disabled": false,
+    "img": "images/party/benjamin.gif",
+    "codes": "ben, benjamin",
+    "stages": [
+      {
+        "name": "Benjamin",
+        "img": "images/party/benjamin.gif",
+        "codes": "benjamin"
+      }
+    ]
+  },
+  // Kaeli
+  {
+    "name": "Kaeli",
+    "type": "consumable",
+    "loop": true,
+    "img": "images/party/kaeli.gif",
+    "max_quantity": 2,
+    "codes": "kaeli"
+  },
+  // Phoebe
+  {
+    "name": "Phoebe",
+    "type": "consumable",
+    "loop": true,
+    "img": "images/party/phoebe.gif",
+    "max_quantity": 2,
+    "codes": "phoebe"
+  },
+  // Reuben
+  {
+    "name": "Reuben",
+    "type": "consumable",
+    "loop": true,
+    "img": "images/party/reuben.gif",
+    "max_quantity": 2,
+    "codes": "reuben"
+  },
+  // Tristam
+  {
+    "name": "Tristam",
+    "type": "consumable",
+    "loop": true,
+    "img": "images/party/tristam.gif",
+    "max_quantity": 2,
+    "codes": "tristam"
+  },
+  // Party Member 2
+  {
+    "name": "Party Member 2",
+    "type": "progressive",
+    "loop": true,
+    "codes": "pm",
+    "stages": [
+      {
+        "name": "Kaeli",
+        "img": "images/party/kaeli.gif",
+        "codes": "party2, pm1",
+        "secondary_codes": "kaeli"
+      },
+      {
+        "name": "Phoebe",
+        "img": "images/party/phoebe.gif",
+        "codes": "party2, pm3",
+        "secondary_codes": "phoebe"
+      },
+      {
+        "name": "Reuben",
+        "img": "images/party/reuben.gif",
+        "codes": "party2, pm4",
+        "secondary_codes": "reuben"
+      },
+      {
+        "name": "Tristam",
+        "img": "images/party/tristam.gif",
+        "codes": "party2, pm2",
+        "secondary_codes": "tristam"
+      }
+    ]
+  }
+]

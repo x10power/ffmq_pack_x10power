@@ -5,6 +5,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "hats, hat, helm, helmet",
     "stages": [
       {
         "name": "No Helm",
@@ -39,6 +40,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "armors, armors",
     "stages": [
       {
         "name": "No Mail",
@@ -73,6 +75,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "shields, shield",
     "stages": [
       {
         "name": "No Shield",
@@ -107,6 +110,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "accessories",
     "stages": [
       {
         "name": "No Accessory",

@@ -1,34 +1,67 @@
+-- Version
+ScriptHost:LoadScript("scripts/ver.lua")
+
+-- Settings
+-- ScriptHost:LoadScript("scripts/settings/settings.lua")
+
+-- Auto-Tracking
+-- ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+
 -- Items
---  Armor
-Tracker:AddItems("items/armor.json")
---  Magics
-Tracker:AddItems("items/magics.json")
---  Weapons
-Tracker:AddItems("items/weapons.json")
---  Toggles
-Tracker:AddItems("items/toggles.json")
+print("Loading Items")
+dir = "items"
+items = {
+  "armor",
+  "counters",
+  "crystals",
+  "magics",
+  "party",
+  "storymarkers",
+  "weapons",
+  "toggles"
+}
+for _, itemCat in ipairs(items) do
+  Tracker:AddItems(dir .. "/" .. itemCat .. ".json")
+end
+print("")
+
+-- Grids
+print("Loading Grids")
+dir = "layouts/grids"
+grids = {
+  "magics/blackmagics",
+  "magics/whitemagics",
+  "magics/wizardmagics",
+  "armors",
+  "coins",
+  "counters",
+  "crests",
+  "crystals",
+  "keyitems",
+  "magics",
+  "party",
+  "storymarkers",
+  "weapons",
+  "grids"
+}
+for _, gridCat in ipairs(grids) do
+  Tracker:AddLayouts(dir .. "/" .. gridCat .. ".json")
+end
+print("")
 
 local variant = Tracker.ActiveVariantUID
 if variant == "" then
   variant = "items_only"
 end
 
-if string.find(variant, "map") then
-  -- Maps
-  Tracker:AddMaps("maps/maps.json")
-  -- Map Layouts
-  Tracker:AddLayouts("layouts/maps/world.json")
+print("Not a Map Variant; load default stuff")
+-- Layout Defaults
+Tracker:AddLayouts("layouts/broadcast.json")
+Tracker:AddLayouts("layouts/tracker.json")
+print("")
 
-  -- Locations
-  --  World
-  Tracker:AddLocations("locations/world.json")
-  --  Center
-  Tracker:AddLocations("locations/center/focustower.json")
-  --  Earth
-  Tracker:AddLocations("locations/earth/foresta.json")
-  Tracker:AddLocations("locations/earth/hod.json")
-  Tracker:AddLocations("locations/earth/levelforest.json")
-end
-
-Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
-Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
+-- Legacy
+print("Satisfy Legacy Loads")
+Tracker:AddMaps("maps/maps.json")
+Tracker:AddLocations("locations/world.json")
+print("")

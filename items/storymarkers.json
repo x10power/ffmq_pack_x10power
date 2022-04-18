@@ -1,0 +1,10 @@
+[
+  // Kaeli Cured
+  {
+    "name": "Kaeli Cured",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/party/kaeli.gif",
+    "codes": "kaelicured"
+  }
+]

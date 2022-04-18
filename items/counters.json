@@ -1,0 +1,10 @@
+[
+  // Battlefields
+  {
+    "name": "Battlefields",
+    "type": "consumable",
+    "img": "images/counters/battlefield.png",
+    "codes": "battlefield",
+    "max_quantity": 5
+  }
+]

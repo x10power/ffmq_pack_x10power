@@ -5,12 +5,13 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "sword, swords",
     "stages": [
       {
         "name": "No Sword",
         "img": "images/inventory/weapons/sword1.png",
         "img_mods": "@disabled",
-        "codes": "swords, sword0"
+        "codes": "sword,swords, sword0"
       },
       {
         "name": "Steel Sword",
@@ -35,12 +36,13 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "axe, axes",
     "stages": [
       {
         "name": "No Axe",
         "img": "images/inventory/weapons/axe1.png",
         "img_mods": "@disabled",
-        "codes": "axes, axe0"
+        "codes": "axe,axes, axe0"
       },
       {
         "name": "Axe",
@@ -65,6 +67,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "bombs",
     "stages": [
       {
         "name": "No Bombs",
@@ -80,12 +83,12 @@
       {
         "name": "Jumbo Bomb",
         "img": "images/inventory/weapons/bomb2.png",
-        "codes": "bomb2, jumbobomb"
+        "codes": "bomb2, jumbobomb, jumbo, jumbos"
       },
       {
         "name": "Mega Grenade",
         "img": "images/inventory/weapons/bomb3.png",
-        "codes": "bomb3, megagrenade"
+        "codes": "bomb3, megagrenade, megas"
       }
     ]
   },
@@ -95,12 +98,13 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "claws, claw",
     "stages": [
       {
         "name": "No Claws",
         "img": "images/inventory/weapons/claw1.png",
         "img_mods": "@disabled",
-        "codes": "claws"
+        "codes": "claws, claw"
       },
       {
         "name": "Cat Claws",
