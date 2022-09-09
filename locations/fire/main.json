@@ -10,7 +10,7 @@
       // Mine
       {
         "name": "Mine",
-        "access_rules": [],
+        "access_rules": ["rivercoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -41,22 +41,25 @@
           },
           {
             "name": "Booms",
+			"access_rules": ["bombs"],
             "item_count": 1
           },
           {
-            "name": "Heal Potions",
-            "item_count": 1
+            "name": "After Jinn",
+			"access_rules": ["claws"],
+            "item_count": 4
           },
-          {
-            "name": "Cure Potions",
-            "item_count": 1
-          }
+		  {
+			"name": "Reuben Gift",
+			"access_rules": ["Reuben"],
+			"item_count": 1
+		  }
         ]
       },
       // Sealed Temple
       {
         "name": "Sealed Temple",
-        "access_rules": [],
+        "access_rules": ["rivercoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -83,7 +86,7 @@
       // Volcano
       {
         "name": "Volcano",
-        "access_rules": [],
+        "access_rules": ["rivercoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -99,14 +102,27 @@
         "sections": [
           {
             "name": "1L Refreshers",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
+			
           },
           {
             "name": "1L H Pot",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "1L C Pot",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
@@ -116,26 +132,46 @@
           },
           {
             "name": "2L Booms",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "2L H Pot",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "3L Booms",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "4L H Pot",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "4L C Pot",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 2
           },
           {
-            "name": "Gas Mask",
+            "name": "Medusa Chest",
             "#type": "keyitem",
             "item_count": 1
           }

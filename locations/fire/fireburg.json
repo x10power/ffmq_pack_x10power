@@ -10,7 +10,7 @@
       // Fireburg
       {
         "name": "Fireburg",
-        "access_rules": [],
+        "access_rules": ["rivercoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -27,6 +27,9 @@
           {
             "name": "Reuben",
             "#type": "keyitem",
+			"chest_unavailable_img": "images/party/reuben.gif",
+			"chest_unopened_img": "images/party/reuben.gif",
+            "chest_opened_img": "images/party/reuben.gif",
             "item_count": 1
           },
           {
@@ -48,10 +51,24 @@
           },
           {
             "name": "Heal Potions",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "Refreshers",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+		  {
+            "name": "Rueben's Dad",
+            "access_rules": ["megas"],
+            "#type": "keyitem",
             "item_count": 1
           }
         ]

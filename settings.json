@@ -1,6 +1,6 @@
 {
   "auto_pin_capturing_locations": false,
   "auto_unpin_on_clear": false,
-  "allow_resize": false,
+  "allow_resize": true,
   "disabled_image_filter": "grayscale, dim"
 }

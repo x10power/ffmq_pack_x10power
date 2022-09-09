@@ -360,7 +360,7 @@
       // Spencer's Place
       {
         "name": "Spencer's Place",
-        "access_rules": ["wakewater","megagrenade"],
+        "access_rules": ["wakewater"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -377,7 +377,7 @@
           {
             "name": "Spencer Venus Key",
             "#itemtype": "basket",
-			"access_rules": ["sandcoin,wakewater"],
+			"access_rules": ["sandcoin,wakewater,venuskey"],
             "item_count": 1
           },
           {
