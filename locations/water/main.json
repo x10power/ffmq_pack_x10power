@@ -9,8 +9,8 @@
     "children": [
       // Libra Temple
       {
-        "name": "Libra Temple",
-        "access_rules": [],
+        "name": "Libra Temple", 
+		"access_rules": ["sandcoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -27,27 +27,23 @@
           {
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
+			"chest_opened_img": "images/party/phoebe.gif",
             "#type": "keyitem",
-            "item_count": 1
+            "item_count": 1,
           },
           {
             "name": "Booms",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
-          {
-            "name": "Teleport to Life Temple",
-            "access_rules": ["libracrest"],
-            "item_count": 1
-          }
         ]
       },
       // Wintry Cave
       {
         "name": "Wintry Cave",
-        "access_rules": [],
-        "chest_unavailable_img": "images/chests/basket_available.png",
-        "chest_unopened_img": "images/chests/basket_available.png",
-        "chest_opened_img": "images/chests/basket_opened.png",
+        "access_rules": ["sandcoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -62,72 +58,72 @@
         ],
         "sections": [
           {
-            "name": "1F Booms",
+            "name": "1F Arrows",			
             "#itemtype": "basket",
-            "item_count": 1
+			"access_rules": ["sandcoin"],
+            "item_count": 1			
           },
           {
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
-            "#itemtype": "phoebe",
+            "#itemtype": "keyitem",
             "#vanilla": "claw",
-            "#type": "keyitem",
+			"access_rules": ["Phoebe,sandcoin"],
             "item_count": 1
           },
-          // Needs Claw
           {
             "name": "1F H Pot",
-            "access_rules": ["claws"],
             "#itemtype": "basket",
             "item_count": 1
           },
+		  //Bombs Require
           {
             "name": "1F C Pot",
-            "access_rules": ["claws"],
+            "access_rules": ["bombs"],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
-            "name": "1F Refreshers",
-            "access_rules": ["claws"],
+            "name": "1F Arrows",
+            "access_rules": ["bombs"],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
-            "name": "3F Arrow",
-            "access_rules": ["bomb,claws"],
+            "name": "Refreshers",
+            "access_rules": ["claws"],
             "#itemtype": "basket",
             "item_count": 2
           },
           {
-            "name": "3F C Pot",
-            "access_rules": ["bomb,claws"],
+            "name": "Heal Pots & Arrow",
+            "access_rules": ["claws"],
             "#itemtype": "basket",
-            "item_count": 1
+            "item_count": 2
           },
           {
             "name": "2F Arrow",
-            "access_rules": ["bomb,claws"],
-            "clear_as_group": false,
+            "access_rules": ["bombs,claws"],
             "#itemtype": "basket",
-            "item_count": 2
+            "item_count": 1
           },
           {
             "name": "2F C Pot",
-            "access_rules": ["bomb,claws"],
+            "access_rules": ["bombs,claws"],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F H Pot",
-            "access_rules": ["bomb,claws"],
+            "access_rules": ["bombs,claws"],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Squidite",
-            "chest_unopened_img": "images/chests/enemy.png",
+            "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
+			"access_rules": ["bombs,claws"],
             "#note": "Gives Libra Crest in vanilla",
             "#type": "keyitem",
             "item_count": 1
@@ -137,7 +133,7 @@
       // Life Temple
       {
         "name": "Life Temple",
-        "access_rules": ["libracrest"],
+        "access_rules": ["libracrest,sandcoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -161,6 +157,7 @@
           },
           {
             "name": "Cure Potions",
+			"#itemtype": "basket",
             "item_count": 1
           }
         ]
@@ -168,7 +165,7 @@
       // Falls Basin
       {
         "name": "Falls Basin",
-        "access_rules": ["phoebe"],
+        "access_rules": ["sandcoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -191,14 +188,8 @@
             "item_count": 1
           },
           {
-            "name": "Heal Spell",
-            "#itemtype": "chest",
-            "#type": "keyitem",
-            "item_count": 1
-          },
-          {
             "name": "Snow Crab",
-            "chest_unopened_img": "images/chests/enemy.png",
+            "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
             "#vanilla": "bomb2",
             "#type": "keyitem",
@@ -209,7 +200,7 @@
       // Ice Pyramid
       {
         "name": "Ice Pyramid",
-        "access_rules": [ "bomb2,swords" ],
+        "access_rules": ["swords","sandcoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -359,7 +350,7 @@
           },
           {
             "name": "Boss",
-            "chest_unopened_img": "images/chests/enemy.png",
+            "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
             "#note": "Restores World",
             "item_count": 1
@@ -369,7 +360,7 @@
       // Spencer's Place
       {
         "name": "Spencer's Place",
-        "access_rules": [],
+        "access_rules": ["wakewater","megagrenade"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -384,21 +375,24 @@
         ],
         "sections": [
           {
-            "name": "C Pot",
+            "name": "Spencer Venus Key",
             "#itemtype": "basket",
-            "item_count": 1
-          },
-          {
-            "name": "Mobius Crest",
-            "#itemtype": "basket",
-            "#type": "keyitem",
+			"access_rules": ["sandcoin,wakewater"],
             "item_count": 1
           },
           {
             "name": "Spencer",
             "access_rules": ["watercrystal"],
             "#itemtype": "basket",
+			"access_rules": ["sandcoin,wakewater"],
             "#vanilla": "venuskey",
+            "#type": "keyitem",
+            "item_count": 1
+          },
+		  {
+            "name": "Mobius Crest",
+            "#itemtype": "basket",
+			"access_rules": ["suncoin,mobius,megas"],
             "#type": "keyitem",
             "item_count": 1
           }
@@ -422,23 +416,15 @@
         ],
         "sections": [
           {
-            "name": "Cure Potions",
-            "#itemtype": "basket",
-            "item_count": 1
-          },
-          {
-            "name": "Heal Potions",
-            "#itemtype": "basket",
-            "item_count": 1
-          },
-          {
             "name": "Refreshers",
             "#itemtype": "basket",
+			"access_rules": ["rivercoin,gemini"],
             "item_count": 1
           },
           {
             "name": "Explosives",
             "#itemtype": "basket",
+			"access_rules": ["rivercoin,gemini"],
             "item_count": 1
           }
         ]

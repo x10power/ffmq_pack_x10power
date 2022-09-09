@@ -62,6 +62,7 @@
             "name": "Cure Potion (SE)",
             "#itemtype": "basket",
             "#mikerpg": "outside",
+			"access_rules": ["axe"],
             "item_count": 1
           }
         ]

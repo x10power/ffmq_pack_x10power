@@ -5,13 +5,12 @@
     "parent": "Water",
     "access_rules": [
       // "@Start/Connection"
-      "kaeli:2"
     ],
     "children": [
       // Aquaria
       {
         "name": "Aquaria",
-        "access_rules": [],
+        "access_rules": ["sandcoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -27,16 +26,19 @@
         "sections": [
           {
             "name": "Heal Potions (Phoebe's House)",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
-          {
-            "name": "Phoebe's House (Kaeli)",
-            "chest_unopened_img": "images/party/kaeli.gif",
-            "#type": "keyitem",
-            "item_count": 1
-          },
+         
           {
             "name": "Refreshers (NW House)",
+			"#itemtype": "basket",
+			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
@@ -44,11 +46,6 @@
             "#type": "keyitem",
             "item_count": 1
           },
-          {
-            "name": "Venus Key",
-            "#type": "keyitem",
-            "item_count": 1
-          }
         ]
       }
     ]
