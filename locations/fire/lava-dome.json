@@ -52,7 +52,7 @@
       },
       {
         "name": "A2: Life",
-        "access_rules": [],
+        "access_rules": ["megas"],
         "map_locations": [
           {
             "map": "lava-dome-2",
@@ -66,8 +66,54 @@
             "#type": "chest",
             "item_count": 1
           }
+         
+        ]
+      },
+      {
+        "name": "A3: Items",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-3",
+            "x": 365,
+            "y": 135
+          }
+        ],
+        "sections": [
+          {
+            "name": "3 Items",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 3
+          }
+         
+        ]
+      },
+      {
+        "name": "A3 Potion",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-3",
+            "x": 125,
+            "y": 375
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
         ]
       }
+  
     ]
   }
 ]

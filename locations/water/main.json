@@ -29,7 +29,7 @@
             "chest_unopened_img": "images/party/phoebe.gif",
 			"chest_opened_img": "images/party/phoebe.gif",
             "#type": "keyitem",
-            "item_count": 1,
+            "item_count": 1
           },
           {
             "name": "Booms",
@@ -37,7 +37,7 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
-          },
+          }
         ]
       },
       // Wintry Cave
@@ -200,7 +200,7 @@
       // Ice Pyramid
       {
         "name": "Ice Pyramid",
-        "access_rules": ["swords","sandcoin"],
+        "access_rules": ["swords,sandcoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -360,7 +360,7 @@
       // Spencer's Place
       {
         "name": "Spencer's Place",
-        "access_rules": ["wakewater"],
+        "access_rules": [""],
         "map_locations": [
           {
             "map": "drained-world",
@@ -382,9 +382,8 @@
           },
           {
             "name": "Spencer",
-            "access_rules": ["watercrystal"],
             "#itemtype": "basket",
-			"access_rules": ["sandcoin,wakewater"],
+			      "access_rules": ["sandcoin,wakewater"],
             "#vanilla": "venuskey",
             "#type": "keyitem",
             "item_count": 1

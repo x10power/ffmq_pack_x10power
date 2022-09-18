@@ -10,7 +10,7 @@
       // Rope Bridge
       {
         "name": "Rope Bridge",
-        "access_rules": [],
+        "access_rules": ["suncoin"],
         "map_locations": [
           {
             "map": "drained-world",
@@ -43,7 +43,7 @@
       // Alive Forest
       {
         "name": "Alive Forest",
-        "access_rules": [],
+        "access_rules": ["suncoin"],
         "map_locations": [
           {
             "map": "drained-world",

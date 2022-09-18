@@ -57,5 +57,155 @@
     "name": "lava-dome-11",
     "img": "images/maps/dungeons/lava-dome/lava-dome-11.png",
     "location_size": 16
-  }
+  },
+  {
+    "name": "ice-pyramid-1",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-1.png",
+	"location_size": 16
+  },
+  {
+    "name": "ice-pyramid-2",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-2.png",
+	"location_size": 16
+  },
+  {
+    "name": "ice-pyramid-3",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-3.png",
+	"location_size": 16
+  },
+  {
+    "name": "ice-pyramid-4",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-4.png",
+	"location_size": 16
+  },
+  {
+    "name": "ice-pyramid-5",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-5.png",
+	"location_size": 16
+  },
+  {
+    "name": "ice-pyramid-basement",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-basement.png",
+	"location_size": 16
+  },
+  {
+    "name": "ice-pyramid-Boss",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-Boss.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-1",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-1.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-2",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-2.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-2a",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-2a.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-3",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-3.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-3a",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-3a.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-4",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-4.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-4a",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-4a.png",
+	"location_size": 16
+  },
+  {
+    "name": "giant-tree-boss",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-boss.png",
+	"location_size": 16
+  },
+  {
+    "name": "pazuru-tower-1", 
+    "img": "images/maps/dungeons/pazuru-tower/pazuru-tower-1.png",
+	"location_size": 16
+  },
+  {
+    "name": "pazuru-tower-2", 
+    "img": "images/maps/dungeons/pazuru-tower/pazuru-tower-2.png",
+	"location_size": 16
+  },
+  {
+    "name": "pazuru-tower-3", 
+    "img": "images/maps/dungeons/pazuru-tower/pazuru-tower-3.png",
+	"location_size": 16
+  },
+  {
+    "name": "pazuru-tower-4", 
+    "img": "images/maps/dungeons/pazuru-tower/pazuru-tower-4.png",
+	"location_size": 16
+  },
+  {
+    "name": "pazuru-tower-5", 
+    "img": "images/maps/dungeons/pazuru-tower/pazuru-tower-5.png",
+	"location_size": 16
+  },
+  {
+    "name": "pazuru-tower-6", 
+    "img": "images/maps/dungeons/pazuru-tower/pazuru-tower-6.png",
+	"location_size": 16
+  },
+  {
+    "name": "pazuru-tower-7", 
+    "img": "images/maps/dungeons/pazuru-tower/pazuru-tower-7.png",
+	"location_size": 16
+  },
+  {
+	"name": "Mac-ship-1",
+	"img": "images/maps/dungeons/mac-ship/mac-ship-1.png",
+	"location_size": 16
+  },
+  {
+	"name": "Mac-ship-2",
+	"img": "images/maps/dungeons/mac-ship/mac-ship-2.png",
+	"location_size": 16
+  },
+  {
+	"name": "Mac-ship-3",
+	"img": "images/maps/dungeons/mac-ship/mac-ship-3.png",
+	"location_size": 16
+  },
+  {
+	"name": "doom-castle-basement",
+	"img": "images/maps/dungeons/doom-castle/doom-castle-b2.png",
+	"location_size": 16
+  },
+  {
+	"name": "doom-castle-4",
+	"img": "images/maps/dungeons/doom-castle/doom-castle-F4.png",
+	"location_size": 16
+  },
+   {
+	"name": "doom-castle-5",
+	"img": "images/maps/dungeons/doom-castle/doom-castle-F5.png",
+	"location_size": 16
+  },
+   {
+	"name": "doom-castle-6",
+	"img": "images/maps/dungeons/doom-castle/doom-castle-F6.png",
+	"location_size": 16
+  },
+   {
+	"name": "doom-castle-7",
+	"img": "images/maps/dungeons/doom-castle/doom-castle-F7.png",
+	"location_size": 16
+  },
 ]

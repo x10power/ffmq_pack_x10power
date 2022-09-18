@@ -10,7 +10,7 @@
       {
         "name": "No Sword",
         "img": "images/inventory/weapons/sword1.png",
-        "img_mods": "@disabled",
+        "img_mods": "@disabled"
       },
       {
         "name": "Steel Sword",
@@ -102,7 +102,7 @@
       {
         "name": "No Claws",
         "img": "images/inventory/weapons/claw1.png",
-        "img_mods": "@disabled",
+        "img_mods": "@disabled"
       },
       {
         "name": "Cat Claws",

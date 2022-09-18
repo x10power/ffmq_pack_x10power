@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ice-pyramid-1",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-1.png",
+	"location_size": 16
+  },
+  {
+    "name": "ice-pyramid-2",
+    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-2.png",
+	"location_size": 16
+  },
+]
