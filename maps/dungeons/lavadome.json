@@ -1,5 +1,41 @@
 [
   {
+    "name": "bone-dungeon-1",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-1.png"
+  },
+  {
+    "name": "bone-dungeon-2",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-2.png"
+  },
+  {
+    "name": "bone-dungeon-3",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-3.png"
+  },
+  {
+    "name": "bone-dungeon-4",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-4.png"
+  },
+  {
+    "name": "bone-dungeon-5",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-5.png"
+  },
+  {
+    "name": "bone-dungeon-6",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-6.png"
+  },
+  {
+    "name": "bone-dungeon-7",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-7.png"
+  },
+  {
+    "name": "bone-dungeon-8",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-8.png"
+  },
+  {
+    "name": "bone-dungeon-boss",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-boss.png"
+  },
+  {
     "name": "lava-dome",
     "img": "images/maps/dungeons/lava-dome/lava-dome.png"
   },
@@ -207,5 +243,5 @@
 	"name": "doom-castle-7",
 	"img": "images/maps/dungeons/doom-castle/doom-castle-F7.png",
 	"location_size": 16
-  },
+  }
 ]

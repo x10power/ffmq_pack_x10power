@@ -9,6 +9,90 @@
     "children": [
       // Lave Dome
       {
+        "name": "Qutside Chest 1",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "lava-dome",
+            "x": 505,
+            "y": 422
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Qutside Chest 2",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "lava-dome",
+            "x": 999,
+            "y": 358
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Qutside Chest 3",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "lava-dome",
+            "x": 792,
+            "y": 197
+          }
+        ],
+        "sections": [
+          {
+            "name": "Refresher Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Qutside Chest 4",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "lava-dome",
+            "x": 8,
+            "y": 421
+          }
+        ],
+        "sections": [
+          {
+            "name": "Bombs Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
         "name": "A1",
         "access_rules": [],
         "chest_unavailable_img": "images/chests/basket_available.png",
@@ -31,7 +115,7 @@
       },
       {
         "name": "A2: Booms",
-        "access_rules": [],
+        "access_rules": ["claws"],
         "map_locations": [
           {
             "map": "lava-dome-2",
@@ -92,7 +176,7 @@
         ]
       },
       {
-        "name": "A3 Potion",
+        "name": "A3: Potion",
         "access_rules": [""],
         "map_locations": [
           {
@@ -112,8 +196,359 @@
           }
          
         ]
+      },
+      {
+        "name": "A4 Potion",
+        "access_rules": ["megas"],
+        "map_locations": [
+          {
+            "map": "lava-dome-5",
+            "x": 205,
+            "y": 90
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "Moon Helm",
+        "access_rules": ["megas"],
+        "map_locations": [
+          {
+            "map": "lava-dome-5",
+            "x": 140,
+            "y": 57
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion",
+            "chest_unavailable_img": "images/chests/chest_available.png",
+            "chest_unopened_img": "images/chests/chest_available.png",
+            "chest_opened_img": "images/chests/chest_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A4 Potions",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-5",
+            "x": 140,
+            "y": 185
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potions",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 2
+          }
+         
+        ]
+      },
+      {
+        "name": "A5 Corner",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-6",
+            "x": 28,
+            "y": 105
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Corner",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 2
+          }
+         
+        ]
+      },
+      {
+        "name": "A5 Maze 1",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-6",
+            "x": 43,
+            "y": 395
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 1",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A5 Maze 2",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-6",
+            "x": 155,
+            "y": 264
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 2",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A6 Maze 1",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-8",
+            "x": 58,
+            "y": 184
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 1",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A6 Maze 2",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-8",
+            "x": 220,
+            "y": 422
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 2",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A6 Maze 3",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-8",
+            "x": 410,
+            "y": 88
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 3",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A6 Maze 4",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-8",
+            "x": 237,
+            "y": 232
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 4",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A6 Maze 5",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-8",
+            "x": 267,
+            "y": 327
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 5",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "A6 Maze 6",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-8",
+            "x": 267,
+            "y": 440
+          }
+        ],
+        "sections": [
+          {
+            "name": "Maze Item 6",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "4 Chest Room",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-9",
+            "x": 75,
+            "y": 170
+          }
+        ],
+        "sections": [
+          {
+            "name": "4 Chest Room",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 4
+          }
+         
+        ]
+      },
+      {
+        "name": "SE Boss Room Chest",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-11",
+            "x": 411,
+            "y": 458
+          }
+        ],
+        "sections": [
+          {
+            "name": "SE Boss Room Chest",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "NW Boss Room Chest",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-11",
+            "x": 43,
+            "y": 58
+          }
+        ],
+        "sections": [
+          {
+            "name": "NW Boss Room Chest",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
+      },
+      {
+        "name": "Hydra Chest",
+        "access_rules": [""],
+        "map_locations": [
+          {
+            "map": "lava-dome-11",
+            "x": 203,
+            "y": 58
+          }
+        ],
+        "sections": [
+          {
+            "name": "Hydra Chest",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#type": "basket",
+            "item_count": 1
+          }
+         
+        ]
       }
-  
     ]
   }
 ]
