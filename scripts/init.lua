@@ -71,9 +71,11 @@ if string.find(variant, "map") then
     -- "battlefields/main",
     -- Center
     "center/focustower",
+    "center/doom-castle",
     -- Earth
     "earth/main",
     "earth/foresta",
+    "earth/bonedungeon",
     -- Fire
     "fire/main",
     "fire/fireburg",
@@ -81,9 +83,13 @@ if string.find(variant, "map") then
     -- Water
     "water/main",
     "water/aquaria",
+    "water/icepyramid",
     -- Wind
     "wind/main",
-    "wind/windia"
+    "wind/windia",
+    "wind/giant-tree",
+    "wind/pazuru-tower",
+    "wind/mac-ship"
   }
   for _, locCat in ipairs(locations) do
     Tracker:AddLocations("locations/" .. locCat .. ".json")

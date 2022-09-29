@@ -7,28 +7,306 @@
         // "@Start/Connection"
       ],
       "children": [
-        {
-          "name": "Left Chest",
-          "access_rules": [],
-          "chest_unavailable_img": "images/chests/basket_available.png",
-          "chest_unopened_img": "images/chests/basket_available.png",
-          "chest_opened_img": "images/chests/basket_opened.png",
-          "map_locations": [
-            {
-              "map": "bone-dungeon-1",
-              "x": 31,
-              "y": 187
-            }
-          ],
-          "sections": [
-            {
-              "name": "Ninja Star Basket",
-              "#type": "basket",
-              "item_count": 1
-            }
-        ]
-        }
-
+        //Bone Dungeon
+      {
+        "name": "Left Chest",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-1",
+            "x": 31,
+            "y": 187
+          }
+        ],
+        "sections": [
+          {
+            "name": "Ninja Star Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Middle Chest",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-1",
+            "x": 205,
+            "y": 187
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Right Chest",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-1",
+            "x": 366,
+            "y": 187
+          }
+        ],
+        "sections": [
+          {
+            "name": "Ninja Star Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Steel Shield",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-2",
+            "x": 481,
+            "y": 45
+          }
+        ],
+        "sections": [
+          {
+            "name": "Steel Shield Chest",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Tristham Business",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-2",
+            "x": 79,
+            "y": 205
+          }
+        ],
+        "sections": [
+          {
+            "name": "Tristham Gift",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Basket",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-3",
+            "x": 254,
+            "y": 76
+          }
+        ],
+        "sections": [
+          {
+            "name": "Ninja Star Basket",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Basket 1",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-4",
+            "x": 417,
+            "y": 429
+          }
+        ],
+        "sections": [
+          {
+            "name": "Bombs Basket",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Basket 2",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-4",
+            "x": 80,
+            "y": 315
+          }
+        ],
+        "sections": [
+          {
+            "name": "Ninja Star Basket",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Hidden Room",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-5",
+            "x": 210,
+            "y": 61
+          }
+        ],
+        "sections": [
+          {
+            "name": "Ninja Star Basket",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Basket",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-6",
+            "x": 64,
+            "y": 477
+          }
+        ],
+        "sections": [
+          {
+            "name": "Ninja Star Basket",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Seed Basket",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-7",
+            "x": 79,
+            "y": 75
+          }
+        ],
+        "sections": [
+          {
+            "name": "Seed Basket",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Quake Chest",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-8",
+            "x": 62,
+            "y": 93
+          }
+        ],
+        "sections": [
+          {
+            "name": "Quake Chest",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Boss Chests",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-boss",
+            "x": 133,
+            "y": 82
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sand Coin",
+            "#type": "chest",
+            "item_count": 1
+          },
+          {
+            "name": "Elixir",
+            "#type": "chest",
+            "item_count": 1
+          }
+      ]
+      },
+      {
+        "name": "Boss Baskets",
+        "access_rules": ["bombs"],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "bone-dungeon-boss",
+            "x": 153,
+            "y": 82
+          }
+        ],
+        "sections": [
+          {
+            "name": "Boss Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+      ]
+      }
   ]
     }   
 ]
