@@ -121,7 +121,7 @@
           }
         ]
       },
-      // Giant Tree
+      /* Giant Tree
       {
         "name": "Giant Tree",
         "access_rules": [ "suncoin" ],
@@ -151,7 +151,7 @@
             "item_count": 1
           }
         ]
-      },
+      },*/
       // Kaidge Temple
       {
         "name": "Kaidge Temple",
@@ -172,6 +172,9 @@
           {
             "name": "Cure Potions",
 			"access_rules": ["claws"],
+      "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           }
         ]
@@ -196,6 +199,9 @@
           {
             "name": "Cure Potions",
 			"access_rules": [ "mobius" ],
+      "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           }
         ]

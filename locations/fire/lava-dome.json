@@ -4,10 +4,140 @@
     "name": "Lava Dome",
     "parent": "Fire",
     "access_rules": [
-      // "@Start/Connection"
+     // "@Start/Connection"
     ],
     "children": [
-      // Lave Dome
+      // Lava Dome
+      {
+        "name": "Lava Dome",
+        "access_rules": ["rivercoin"],
+        "map_locations": [
+            {
+              "map": "drained-world",
+              "x": 324,
+              "y": 80
+            },
+            {
+              "map": "restored-world",
+              "x": 324,
+              "y": 80
+            }
+        ],
+        "sections":[
+          {
+            "name": "Outside Area Baskets",
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Outside Area Basket (Claw Require)",
+            "access_rules": ["rivercoin,claws"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 1
+          },
+          {
+            "name": "Area 1 Basket",
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Area 2 Baskets (Claw Require)",
+            "access_rules": ["rivercoin,claws"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Area 2 Chest",
+            "access_rules": ["rivercoin"],
+            "item_count": 1
+          },
+          {
+            "name": "Area 3 Baskets",
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Area 4 Baskets",
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Area 4 Basket (Megas Required)" ,
+            "access_rules": ["rivercoin,megas"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Area 4 Chest (Megas Required)" ,
+            "access_rules": ["rivercoin,megas"],
+            "item_count": 1
+          },
+          {
+            "name": "Area 5 Baskets" ,
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Area 6 Baskets" ,
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Area 7 Baskets" ,
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Area 8 Baskets" ,
+            "access_rules": ["rivercoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Area 8 Chest" ,
+            "access_rules": ["rivercoin"],
+            "item_count": 1
+          }
+        ] 
+      },
       {
         "name": "Outside Chest 1",
         "access_rules": ["rivercoin"],
@@ -549,7 +679,7 @@
           }
          
         ]
-      }, 
+      }
     ]
   }
 ]

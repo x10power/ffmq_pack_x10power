@@ -113,8 +113,8 @@
             "item_count": 1
           }
         ]
-      },
-      // Bone Dungeon
+      }
+      /* Bone Dungeon
       {
         "name": "Bone Dungeon",
         "access_rules": [],
@@ -242,7 +242,7 @@
             "item_count": 1
           }
         ]
-      }
+      }*/
     ]
   }
 ]

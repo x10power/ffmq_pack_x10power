@@ -4,7 +4,7 @@
     "name": "Fire",
     "parent": "World",
     "access_rules": [
-      // "@Start/Connection"
+     //  "@Start/Connection"
     ],
     "children": [
       // Mine
@@ -27,11 +27,17 @@
           {
             "name": "A C Pot",
             "access_rules": ["bombs"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "A H Pot",
             "access_rules": ["bombs"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
@@ -42,11 +48,17 @@
           {
             "name": "Booms",
 			"access_rules": ["bombs"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "After Jinn",
 			"access_rules": ["claws"],
+      "chest_unavailable_img": "images/chests/basket_available.png",
+      "chest_unopened_img": "images/chests/basket_available.png",
+      "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 4
           },
 		  {
@@ -75,10 +87,16 @@
         "sections": [
           {
             "name": "Cure Potions",
-            "item_count": 1
+            "item_count": 1,
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png"
           },
           {
             "name": "Heal Potions",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           }
         ]
@@ -103,7 +121,7 @@
           {
             "name": "1L Refreshers",
 			"#itemtype": "basket",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+			      "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
@@ -176,41 +194,8 @@
             "item_count": 1
           }
         ]
-      },
-      // Lava Dome
-      {
-        "name": "Lava Dome",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 323,
-            "y":  90
-          },
-          {
-            "map": "restored-world",
-            "x": 323,
-            "y":  90
-          }
-        ],
-        "sections": [
-          {
-            "name": "Moon Helmet",
-            "#type": "keyitem",
-            "item_count": 1
-          },
-          {
-            "name": "Life Spell",
-            "#type": "keyitem",
-            "item_count": 1
-          },
-          {
-            "name": "Sun Coin",
-            "#type": "keyitem",
-            "item_count": 1
-          }
-        ]
       }
+      
     ]
   }
 ]

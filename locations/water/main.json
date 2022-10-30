@@ -60,6 +60,9 @@
           {
             "name": "1F Arrows",			
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
 			"access_rules": ["sandcoin"],
             "item_count": 1			
           },
@@ -73,18 +76,27 @@
           },
           {
             "name": "1F H Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "#itemtype": "basket",
             "item_count": 1
           },
 		  //Bombs Require
           {
             "name": "1F C Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": ["bombs"],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "1F Arrows",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": ["bombs"],
             "#itemtype": "basket",
             "item_count": 1
@@ -92,29 +104,44 @@
           {
             "name": "Refreshers",
             "access_rules": ["claws"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "#itemtype": "basket",
             "item_count": 2
           },
           {
             "name": "Heal Pots & Arrow",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": ["claws"],
             "#itemtype": "basket",
             "item_count": 2
           },
           {
             "name": "2F Arrow",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": ["bombs,claws"],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F C Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": ["bombs,claws"],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "2F H Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": ["bombs,claws"],
             "#itemtype": "basket",
             "item_count": 1
@@ -157,6 +184,9 @@
           },
           {
             "name": "Cure Potions",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
 			"#itemtype": "basket",
             "item_count": 1
           }
@@ -197,7 +227,7 @@
           }
         ]
       },
-      // Ice Pyramid
+      /* Ice Pyramid
       {
         "name": "Ice Pyramid",
         "access_rules": ["swords,sandcoin"],
@@ -217,21 +247,33 @@
           {
             "name": "1F Arrows",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "1F Refreshers",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "1F Explosives",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "2F H Pot",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
@@ -244,89 +286,140 @@
             "name": "2F Arrows (Closet, From B)",
             "access_rules": ["swords"],
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Gauntlet)",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "3F H Pot (From A)",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "3F Arrows (From B->F)",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "3F Arrows (From G)",
             "clear_as_group": false,
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 2
           },
           {
             "name": "3F H Pot (From B->F)",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Hidden Passage)",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Deep Closet)",
             "access_rules": ["swords"],
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "2F Arrows (Closet, From E)",
             "access_rules": ["swords"],
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "3F Arrows (Gauntlet, From G)",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "3F Booms (Gauntlet, From G)",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "H Arrows",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 4
           },
           {
             "name": "H C Pot",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "H Refreshers",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "J Arrows",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "J C Pot",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "J H Pot",
             "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
@@ -346,17 +439,10 @@
             "name": "River Coin",
             "#itemtype": "basket",
             "#type": "keyitem",
-            "item_count": 1
-          },
-          {
-            "name": "Boss",
-            "chest_unopened_img": "images/chests/available.png",
-            "#itemtype": "boss",
-            "#note": "Restores World",
-            "item_count": 1
-          }
+            "item_count": 1,
+          }         
         ]
-      },
+      },*/
       // Spencer's Place
       {
         "name": "Spencer's Place",
@@ -418,12 +504,18 @@
             "name": "Refreshers",
             "#itemtype": "basket",
 			"access_rules": ["rivercoin,gemini"],
+      "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "Explosives",
             "#itemtype": "basket",
 			"access_rules": ["rivercoin,gemini"],
+      "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           }
         ]

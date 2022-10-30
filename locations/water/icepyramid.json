@@ -6,6 +6,111 @@
       // "@Start/Connection"
     ],
     "children": [
+      {
+        "name": "Ice Pyramid",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 575,
+            "y": 80
+          },
+          {
+            "map": "restored-world",
+            "x": 575,
+            "y": 80
+          }
+        ],
+        "sections":[
+          {
+            "name": "Floor 1 Baskets",
+            "access_rules": ["sandcoin,swords"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Floor 1 Chest",
+            "access_rules": ["sandcoin,swords"],
+            "clear_as_group": false,
+            "item_count": 1
+          },
+          {
+            "name": "Floor 2 Baskets",
+            "access_rules": ["sandcoin,swords"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Floor 3 Baskets",
+            "access_rules": ["sandcoin,swords"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Floor 4 Baskets",
+            "access_rules": ["sandcoin,swords"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 7
+          },
+          {
+            "name": "Floor 4 Chest",
+            "access_rules": ["sandcoin,swords"],
+            "clear_as_group": false,
+            "item_count": 1
+          },
+          {
+            "name": "Floor 5 Baskets",
+            "access_rules": ["sandcoin,sword"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 5 Baskets",
+            "access_rules": ["sandcoin,sword,claws,bombs"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Basement Baskets",
+            "access_rules": ["sandcoin,sword,claws,bombs"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Basement Chest",
+            "access_rules": ["sandcoin,sword,claws,bombs"],
+            "clear_as_group": false,
+            "item_count": 1
+          },
+          {
+            "name": "Boss Room Chest",
+            "access_rules": ["sandcoin,sword,claws,bombs"],
+            "clear_as_group": false,
+            "item_count": 1
+          }
+        ]
+      },
 {
     "name": "Mirror Chest",
     "access_rules": ["swords,sandcoin"],

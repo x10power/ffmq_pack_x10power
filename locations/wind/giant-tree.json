@@ -6,6 +6,109 @@
       // "@Start/Connection"
     ],
     "children": [
+      {
+        "name": "Giant Tree",
+        "access_rules": [ "suncoin" ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 324,
+            "y": 80
+          },
+          {
+            "map": "restored-world",
+            "x": 525,
+            "y": 500
+          }
+        ],
+        "sections":[
+          {
+            "name": "Floor 1 Baskets",
+            "access_rules": ["suncoin"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 2 Baskets",
+            "access_rules": ["suncoin,dragonclaw"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor 2 Basket (Axe Required)",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor 2 Chest (Boss Needs to be Defeated)",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "item_count": 1
+          },
+          {
+            "name": "Floor 2a Baskets",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor 3 Baskets",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 3a Baskets",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor 4 Baskets",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 4a Baskets",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Boss Floor",
+            "access_rules": ["suncoin,dragonclaw,swords,axe"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          }
+        ]
+      },
 {
     "name": "Right Basket",
     "access_rules": ["suncoin,axe"],
