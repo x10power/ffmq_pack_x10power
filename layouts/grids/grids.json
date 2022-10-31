@@ -38,10 +38,10 @@
       {
         "type": "layout",
         "key": "counters_grid"
-      // },
-      // {
-      //   "type": "layout",
-      //   "key": "crystals_grid"
+        // },
+        // {
+        //   "type": "layout",
+        //   "key": "crystals_grid"
       }
     ]
   },

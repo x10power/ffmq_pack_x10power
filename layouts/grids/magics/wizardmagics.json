@@ -3,7 +3,12 @@
     "type": "itemgrid",
     "item_margin": "0",
     "rows": [
-      ["thunder", "white", "meteor", "flare"]
+      [
+        "thunder",
+        "white",
+        "meteor",
+        "flare"
+      ]
     ]
   }
 }

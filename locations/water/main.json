@@ -9,8 +9,10 @@
     "children": [
       // Libra Temple
       {
-        "name": "Libra Temple", 
-		"access_rules": ["sandcoin"],
+        "name": "Libra Temple",
+        "access_rules": [
+          "sandcoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -27,13 +29,13 @@
           {
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
-			"chest_opened_img": "images/party/phoebe.gif",
+            "chest_opened_img": "images/party/phoebe.gif",
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Booms",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
@@ -43,7 +45,9 @@
       // Wintry Cave
       {
         "name": "Wintry Cave",
-        "access_rules": ["sandcoin"],
+        "access_rules": [
+          "sandcoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -58,20 +62,24 @@
         ],
         "sections": [
           {
-            "name": "1F Arrows",			
+            "name": "1F Arrows",
             "#itemtype": "basket",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-			"access_rules": ["sandcoin"],
-            "item_count": 1			
+            "access_rules": [
+              "sandcoin"
+            ],
+            "item_count": 1
           },
           {
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
             "#itemtype": "keyitem",
             "#vanilla": "claw",
-			"access_rules": ["Phoebe,sandcoin"],
+            "access_rules": [
+              "Phoebe,sandcoin"
+            ],
             "item_count": 1
           },
           {
@@ -82,13 +90,15 @@
             "#itemtype": "basket",
             "item_count": 1
           },
-		  //Bombs Require
+          //Bombs Require
           {
             "name": "1F C Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": ["bombs"],
+            "access_rules": [
+              "bombs"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
@@ -97,13 +107,17 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": ["bombs"],
+            "access_rules": [
+              "bombs"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Refreshers",
-            "access_rules": ["claws"],
+            "access_rules": [
+              "claws"
+            ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -115,7 +129,9 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": ["claws"],
+            "access_rules": [
+              "claws"
+            ],
             "#itemtype": "basket",
             "item_count": 2
           },
@@ -124,7 +140,9 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": ["bombs,claws"],
+            "access_rules": [
+              "bombs,claws"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
@@ -133,7 +151,9 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": ["bombs,claws"],
+            "access_rules": [
+              "bombs,claws"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
@@ -142,7 +162,9 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": ["bombs,claws"],
+            "access_rules": [
+              "bombs,claws"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
@@ -150,7 +172,9 @@
             "name": "Squidite",
             "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
-			"access_rules": ["bombs,claws"],
+            "access_rules": [
+              "bombs,claws"
+            ],
             "#note": "Gives Libra Crest in vanilla",
             "#type": "keyitem",
             "item_count": 1
@@ -160,7 +184,9 @@
       // Life Temple
       {
         "name": "Life Temple",
-        "access_rules": ["libracrest,sandcoin"],
+        "access_rules": [
+          "libracrest,sandcoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -187,7 +213,7 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-			"#itemtype": "basket",
+            "#itemtype": "basket",
             "item_count": 1
           }
         ]
@@ -195,7 +221,9 @@
       // Falls Basin
       {
         "name": "Falls Basin",
-        "access_rules": ["sandcoin"],
+        "access_rules": [
+          "sandcoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -446,7 +474,9 @@
       // Spencer's Place
       {
         "name": "Spencer's Place",
-        "access_rules": [""],
+        "access_rules": [
+          ""
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -463,21 +493,27 @@
           {
             "name": "Spencer Venus Key",
             "#itemtype": "basket",
-			"access_rules": ["sandcoin,wakewater,venuskey"],
+            "access_rules": [
+              "sandcoin,wakewater,venuskey"
+            ],
             "item_count": 1
           },
           {
             "name": "Spencer",
             "#itemtype": "basket",
-			      "access_rules": ["sandcoin,wakewater"],
+            "access_rules": [
+              "sandcoin,wakewater"
+            ],
             "#vanilla": "venuskey",
             "#type": "keyitem",
             "item_count": 1
           },
-		  {
+          {
             "name": "Mobius Crest",
             "#itemtype": "basket",
-			"access_rules": ["suncoin,mobius,megas"],
+            "access_rules": [
+              "suncoin,mobius,megas"
+            ],
             "#type": "keyitem",
             "item_count": 1
           }
@@ -503,8 +539,10 @@
           {
             "name": "Refreshers",
             "#itemtype": "basket",
-			"access_rules": ["rivercoin,gemini"],
-      "chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "rivercoin,gemini"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
@@ -512,8 +550,10 @@
           {
             "name": "Explosives",
             "#itemtype": "basket",
-			"access_rules": ["rivercoin,gemini"],
-      "chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "rivercoin,gemini"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1

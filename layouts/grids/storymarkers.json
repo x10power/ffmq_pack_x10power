@@ -3,7 +3,9 @@
     "type": "itemgrid",
     "item_margin": "0",
     "rows": [
-      ["kaeli:2"]
+      [
+        "kaeli:2"
+      ]
     ]
   }
 }

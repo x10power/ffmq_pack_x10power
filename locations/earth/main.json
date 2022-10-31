@@ -61,7 +61,9 @@
           },
           {
             "name": "Cure Potion (SE)",
-            "access_rules": [ "axe" ],
+            "access_rules": [
+              "axe"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
@@ -72,14 +74,18 @@
           },
           {
             "name": "Heal Potion (SW)",
-            "access_rules": [ "axe" ],
+            "access_rules": [
+              "axe"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Kaeli Gift 1:",
-            "access_rules": [ "treewither" ],
-			"chest_unavailable_img": "images/chests/available.png",
+            "access_rules": [
+              "treewither"
+            ],
+            "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
             "#itemtype": "kaeli",
@@ -87,7 +93,6 @@
           }
         ]
       },
-
       // Sand Temple
       {
         "name": "Sand Temple",

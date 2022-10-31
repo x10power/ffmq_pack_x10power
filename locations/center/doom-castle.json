@@ -1,326 +1,443 @@
 [
-    {
+  {
     "name": "Doom Castle",
     "parent": "center",
     "access_rules": [
       // "@Start/Connection"
     ],
     "children": [
-{
-    "name": "Aegis Shield",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap"],
-    "chest_unavailable_img": "images/chests/chest_available.png",
-    "chest_unopened_img": "images/chests/chest_available.png",
-    "chest_opened_img": "images/chests/chest_opened.png",
-    "map_locations": [
       {
-        "map": "doom-castle-basement",
-        "x": 544,
-        "y": 650
-      }
-    ],
-    "sections": [
+        "name": "Doom Castle",
+        "access_rules": [
+          "suncoin,thunderrock,mobius,"
+        ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 362,
+            "y": 512
+          },
+          {
+            "map": "restored-world",
+            "x": 362,
+            "y": 512
+          }
+        ],
+        "sections": [
+          {
+            "name": "Basement Chest",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Basement Basket",
+            "access_rules": [],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Basement Basket (Dragonclaw Require)",
+            "access_rules": [
+              "dragonclaw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor 4 Baskets",
+            "access_rules": [
+              "swords,megas,dragonclaw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 5 Baskets",
+            "access_rules": [
+              "swords,megas,dragonclaw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 6 Baskets",
+            "access_rules": [
+              "swords,megas,dragonclaw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor 7 Baskets",
+            "access_rules": [
+              "swords,megas,dragonclaw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          }
+        ]
+      },
       {
-        "name": "Aegis Shield Chest",
-        "#type": "chest",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "Bottom Layer Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
+        "name": "Aegis Shield",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap"
+        ],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-basement",
+            "x": 544,
+            "y": 650
+          }
+        ],
+        "sections": [
+          {
+            "name": "Aegis Shield Chest",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "map": "doom-castle-basement",
-        "x": 494,
-        "y": 509
-      }
-    ],
-    "sections": [
+        "name": "Bottom Layer Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-basement",
+            "x": 494,
+            "y": 509
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Basket",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "name": "Potion Basket",
-        "#type": "chest",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "Top Layer Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
+        "name": "Top Layer Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-basement",
+            "x": 319,
+            "y": 364
+          }
+        ],
+        "sections": [
+          {
+            "name": "Refresher Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "map": "doom-castle-basement",
-        "x": 319,
-        "y": 364
-      }
-    ],
-    "sections": [
+        "name": "South East Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-4",
+            "x": 551,
+            "y": 486
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "name": "Refresher Basket",
-        "#type": "basket",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "South East Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
+        "name": "North East Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-4",
+            "x": 568,
+            "y": 264
+          }
+        ],
+        "sections": [
+          {
+            "name": "Arrow Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "map": "doom-castle-4",
-        "x": 551,
-        "y": 486
-      }
-    ],
-    "sections": [
+        "name": "South West Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-4",
+            "x": 104,
+            "y": 454
+          }
+        ],
+        "sections": [
+          {
+            "name": "Refresher Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "name": "Heal Basket",
-        "#type": "basket",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "North East Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
+        "name": "North West Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-4",
+            "x": 184,
+            "y": 230
+          }
+        ],
+        "sections": [
+          {
+            "name": "Arrow Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "map": "doom-castle-4",
-        "x": 568,
-        "y": 264
-      }
-    ],
-    "sections": [
+        "name": "Top Baskets",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-5",
+            "x": 351,
+            "y": 311
+          }
+        ],
+        "sections": [
+          {
+            "name": "Multiple Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
       {
-        "name": "Arrow Basket",
-        "#type": "basket",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "South West Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
+        "name": "Bottom Baskets",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-5",
+            "x": 351,
+            "y": 487
+          }
+        ],
+        "sections": [
+          {
+            "name": "Multiple Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
       {
-        "map": "doom-castle-4",
-        "x": 104,
-        "y": 454
-      }
-    ],
-    "sections": [
+        "name": "South East Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-6",
+            "x": 600,
+            "y": 390
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Baskets",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "name": "Refresher Basket",
-        "#type": "basket",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "North West Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
+        "name": "North East Basket",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-6",
+            "x": 55,
+            "y": 183
+          }
+        ],
+        "sections": [
+          {
+            "name": "Arrow Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "map": "doom-castle-4",
-        "x": 184,
-        "y": 230
-      }
-    ],
-    "sections": [
+        "name": "Free Items",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-7",
+            "x": 360,
+            "y": 231
+          }
+        ],
+        "sections": [
+          {
+            "name": "25 Seeds",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "name": "Arrow Basket",
-        "#type": "basket",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "Top Baskets",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
+        "name": "Free Items",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-7",
+            "x": 248,
+            "y": 102
+          }
+        ],
+        "sections": [
+          {
+            "name": "25 Heals",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "map": "doom-castle-5",
-        "x": 351,
-        "y": 311
-      }
-    ],
-    "sections": [
+        "name": "Free Items",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-7",
+            "x": 168,
+            "y": 102
+          }
+        ],
+        "sections": [
+          {
+            "name": "25 Potions",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
+      },
       {
-        "name": "Multiple Baskets",
-        "#type": "basket",
-        "item_count": 2
+        "name": "Free Items",
+        "access_rules": [
+          "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+        ],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "doom-castle-7",
+            "x": 40,
+            "y": 231
+          }
+        ],
+        "sections": [
+          {
+            "name": "25 Arrows",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
       }
-  ]
-  },
-  {
-    "name": "Bottom Baskets",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
-      {
-        "map": "doom-castle-5",
-        "x": 351,
-        "y": 487
-      }
-    ],
-    "sections": [
-      {
-        "name": "Multiple Baskets",
-        "#type": "basket",
-        "item_count": 2
-      }
-  ]
-  },
-  {
-    "name": "South East Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
-      {
-        "map": "doom-castle-6",
-        "x": 600,
-        "y": 390
-      }
-    ],
-    "sections": [
-      {
-        "name": "Potion Baskets",
-        "#type": "basket",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "North East Basket",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/basket_available.png",
-    "chest_unopened_img": "images/chests/basket_available.png",
-    "chest_opened_img": "images/chests/basket_opened.png",
-    "map_locations": [
-      {
-        "map": "doom-castle-6",
-        "x": 55,
-        "y": 183
-      }
-    ],
-    "sections": [
-      {
-        "name": "Arrow Basket",
-        "#type": "basket",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "Free Items",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/chest_available.png",
-    "chest_unopened_img": "images/chests/chest_available.png",
-    "chest_opened_img": "images/chests/chest_opened.png",
-    "map_locations": [
-      {
-        "map": "doom-castle-7",
-        "x": 360,
-        "y": 231
-      }
-    ],
-    "sections": [
-      {
-        "name": "25 Seeds",
-        "#type": "chest",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "Free Items",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/chest_available.png",
-    "chest_unopened_img": "images/chests/chest_available.png",
-    "chest_opened_img": "images/chests/chest_opened.png",
-    "map_locations": [
-      {
-        "map": "doom-castle-7",
-        "x": 248,
-        "y": 102
-      }
-    ],
-    "sections": [
-      {
-        "name": "25 Heals",
-        "#type": "chest",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "Free Items",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/chest_available.png",
-    "chest_unopened_img": "images/chests/chest_available.png",
-    "chest_opened_img": "images/chests/chest_opened.png",
-    "map_locations": [
-      {
-        "map": "doom-castle-7",
-        "x": 168,
-        "y": 102
-      }
-    ],
-    "sections": [
-      {
-        "name": "25 Potions",
-        "#type": "chest",
-        "item_count": 1
-      }
-  ]
-  },
-  {
-    "name": "Free Items",
-    "access_rules": ["suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"],
-    "chest_unavailable_img": "images/chests/chest_available.png",
-    "chest_unopened_img": "images/chests/chest_available.png",
-    "chest_opened_img": "images/chests/chest_opened.png",
-    "map_locations": [
-      {
-        "map": "doom-castle-7",
-        "x": 40,
-        "y": 231
-      }
-    ],
-    "sections": [
-      {
-        "name": "25 Arrows",
-        "#type": "chest",
-        "item_count": 1
-      }
-  ]
+    ]
   }
-]
-}
 ]

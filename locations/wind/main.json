@@ -10,7 +10,9 @@
       // Rope Bridge
       {
         "name": "Rope Bridge",
-        "access_rules": ["suncoin"],
+        "access_rules": [
+          "suncoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -26,14 +28,14 @@
         "sections": [
           {
             "name": "Cure Potions",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "Seeds",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
@@ -43,7 +45,9 @@
       // Alive Forest
       {
         "name": "Alive Forest",
-        "access_rules": ["suncoin"],
+        "access_rules": [
+          "suncoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -59,24 +63,30 @@
         "sections": [
           {
             "name": "Cure Potions",
-			"access_rules": [ "axe" ],
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "Heal Potions",
-			"access_rules": [ "axe" ],
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "Refreshers",
-			"access_rules": [ "axe" ],
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
@@ -84,39 +94,49 @@
           {
             "name": "Giant's Axe",
             "#type": "keyitem",
-			"access_rules": [ "axe" ],
+            "access_rules": [
+              "axe"
+            ],
             "item_count": 1
           },
           {
             "name": "Cure Potions (Mobius Crest)",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [ "mobiuscrest,axe" ],
+            "access_rules": [
+              "mobiuscrest,axe"
+            ],
             "item_count": 1
           },
           {
             "name": "Heal Potions (Mobius Crest)",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [ "mobiuscrest,axe" ],
+            "access_rules": [
+              "mobiuscrest,axe"
+            ],
             "item_count": 1
           },
           {
             "name": "Explosives (Gemini Crest)",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [ "geminicrest,axe" ],
+            "access_rules": [
+              "geminicrest,axe"
+            ],
             "item_count": 1
           },
           {
             "name": "Refreshers (Libra Crest)",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [ "libracrest,axe" ],
+            "access_rules": [
+              "libracrest,axe"
+            ],
             "item_count": 1
           }
         ]
@@ -155,7 +175,9 @@
       // Kaidge Temple
       {
         "name": "Kaidge Temple",
-        "access_rules": ["suncoin"],
+        "access_rules": [
+          "suncoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -171,8 +193,10 @@
         "sections": [
           {
             "name": "Cure Potions",
-			"access_rules": ["claws"],
-      "chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "claws"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
@@ -182,7 +206,9 @@
       // Light Temple
       {
         "name": "Light Temple",
-		"access_rules": ["suncoin"],
+        "access_rules": [
+          "suncoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -198,8 +224,10 @@
         "sections": [
           {
             "name": "Cure Potions",
-			"access_rules": [ "mobius" ],
-      "chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "mobius"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
@@ -209,7 +237,9 @@
       // Windhole Temple
       {
         "name": "Windhole Temple",
-        "access_rules": ["suncoin"],
+        "access_rules": [
+          "suncoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -225,17 +255,19 @@
         "sections": [
           {
             "name": "Heal Potions",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "item_count": 1	
+            "item_count": 1
           }
         ]
       },
       // Mount Gale
       {
         "name": "Mount Gale",
-        "access_rules": ["suncoin"],
+        "access_rules": [
+          "suncoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -251,28 +283,32 @@
         "sections": [
           {
             "name": "Refreshers",
-			"access_rules": ["dragonclaw"],
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "access_rules": [
+              "dragonclaw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "Heal Potions",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
           {
             "name": "Dullahan Chest",
-			"access_rules": ["dragonclaw"],
+            "access_rules": [
+              "dragonclaw"
+            ],
             "#type": "keyitem",
             "item_count": 1
           }
         ]
-      },
-      // Pazuzu's Tower
+      }
+      /* Pazuzu's Tower
       {
         "name": "Pazuzu's Tower",
         "access_rules": ["suncoin"],
@@ -339,7 +375,7 @@
             "item_count": 1
           }
         ]
-      }
+      }*/
     ]
   }
 ]

@@ -10,7 +10,9 @@
       // Aquaria
       {
         "name": "Aquaria",
-        "access_rules": ["sandcoin"],
+        "access_rules": [
+          "sandcoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -26,17 +28,16 @@
         "sections": [
           {
             "name": "Heal Potions (Phoebe's House)",
-			"#itemtype": "basket",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1
           },
-         
           {
             "name": "Refreshers (NW House)",
-			"#itemtype": "basket",
-			"chest_unavailable_img": "images/chests/basket_available.png",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "item_count": 1

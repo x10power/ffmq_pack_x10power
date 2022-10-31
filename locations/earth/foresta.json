@@ -29,7 +29,9 @@
         "sections": [
           {
             "name": "Kaeli's House (Kaeli)",
-            "access_rules": ["treewither"],
+            "access_rules": [
+              "treewither"
+            ],
             "chest_unopened_img": "images/party/kaeli.gif",
             "#itemtype": "kaeli",
             "#mikerpg": 2,
@@ -62,7 +64,9 @@
             "name": "Cure Potion (SE)",
             "#itemtype": "basket",
             "#mikerpg": "outside",
-			"access_rules": ["axe"],
+            "access_rules": [
+              "axe"
+            ],
             "item_count": 1
           }
         ]

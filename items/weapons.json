@@ -41,7 +41,7 @@
         "name": "No Axe",
         "img": "images/inventory/weapons/axe1.png",
         "img_mods": "@disabled",
-		"codes": "axes"
+        "codes": "axes"
       },
       {
         "name": "Axe",

@@ -1,115 +1,132 @@
 [
-    // Earth: Bone Dungeon
-    {
-      "name": "Bone Dungeon",
-      "parent": "Earth",
-      "access_rules": [
-        // "@Start/Connection"
-      ],
-      "children": [
-        {
-          "name": "Bone Dungeon",
-          "access_rules": [],
-
-          "map_locations": [
-            {
-              "map": "drained-world",
-              "x": 190,
-              "y": 340
-            },
-            {
-              "map": "restored-world",
-              "x": 190,
-              "y": 340
-            }
-          ],
-          "sections":[
-              {
-                "name": "Floor 1 Baskets",
-                "access_rules": [],
-                "chest_unavailable_img": "images/chests/basket_available.png",
-                "chest_unopened_img": "images/chests/basket_available.png",
-                "chest_opened_img": "images/chests/basket_opened.png",
-                "clear_as_group": false,
-                "item_count": 3
-              },
-              {
-                "name": "Floor B1 Chest",
-                "access_rules": ["bombs"],
-                "item_count": 1
-              },
-              {
-                "name": "Floor B1 Tristam Gift",
-                "access_rules": [],
-                "chest_unavailable_img": "images/party/tristam.gif",
-                "chest_unopened_img": "images/party/tristam.gif",
-                "chest_opened_img": "images/party/tristam.gif",
-                "item_count": 1
-              },   
-              {
-                "name": "Floor B1a Chest",
-                "access_rules": ["bombs"],
-                "chest_unavailable_img": "images/chests/basket_available.png",
-                "chest_unopened_img": "images/chests/basket_available.png",
-                "chest_opened_img": "images/chests/basket_opened.png",
-                "item_count": 1
-              },     
-              {
-                "name": "Floor B2 Baskets",
-                "access_rules": ["bombs"],
-                "chest_unavailable_img": "images/chests/basket_available.png",
-                "chest_unopened_img": "images/chests/basket_available.png",
-                "chest_opened_img": "images/chests/basket_opened.png",
-                "clear_as_group": false,
-                "item_count": 2
-              },
-              {
-                "name": "Floor B2a Basket",
-                "access_rules": ["bombs"],
-                "chest_unavailable_img": "images/chests/basket_available.png",
-                "chest_unopened_img": "images/chests/basket_available.png",
-                "chest_opened_img": "images/chests/basket_opened.png",
-                "item_count": 1
-              },
-              {
-                "name": "Floor B2b Baskets",
-                "access_rules": ["bombs"],
-                "chest_unavailable_img": "images/chests/basket_available.png",
-                "chest_unopened_img": "images/chests/basket_available.png",
-                "chest_opened_img": "images/chests/basket_opened.png",
-                "item_count": 1
-              },
-              {
-                "name": "Floor B2c Baskets",
-                "access_rules": ["bombs"],
-                "chest_unavailable_img": "images/chests/basket_available.png",
-                "chest_unopened_img": "images/chests/basket_available.png",
-                "chest_opened_img": "images/chests/basket_opened.png",
-                "item_count": 1
-              },
-              {
-                "name": "Floor B2d Baskets",
-                "access_rules": ["bombs"],
-                "item_count": 1
-              },
-              {
-                "name": "Boss Room Baskets",
-                "access_rules": ["bombs"],
-                "chest_unavailable_img": "images/chests/basket_available.png",
-                "chest_unopened_img": "images/chests/basket_available.png",
-                "chest_opened_img": "images/chests/basket_opened.png",
-                "clear_as_group": false,
-                "item_count": 2
-              },
-              {
-                "name": "Boss Room Chests",
-                "access_rules": ["bombs"],
-                "clear_as_group": false,
-                "item_count": 2
-              }             
-            ]
-        },
-        //Bone Dungeon
+  // Earth: Bone Dungeon
+  {
+    "name": "Bone Dungeon",
+    "parent": "Earth",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      {
+        "name": "Bone Dungeon",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 190,
+            "y": 340
+          },
+          {
+            "map": "restored-world",
+            "x": 190,
+            "y": 340
+          }
+        ],
+        "sections": [
+          {
+            "name": "Floor 1 Baskets",
+            "access_rules": [],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Floor B1 Chest",
+            "access_rules": [
+              "bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Floor B1 Tristam Gift",
+            "access_rules": [],
+            "chest_unavailable_img": "images/party/tristam.gif",
+            "chest_unopened_img": "images/party/tristam.gif",
+            "chest_opened_img": "images/party/tristam.gif",
+            "item_count": 1
+          },
+          {
+            "name": "Floor B1a Chest",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor B2 Baskets",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor B2a Basket",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor B2b Baskets",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor B2c Baskets",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor B2d Baskets",
+            "access_rules": [
+              "bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Boss Room Baskets",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Boss Room Chests",
+            "access_rules": [
+              "bombs"
+            ],
+            "clear_as_group": false,
+            "item_count": 2
+          }
+        ]
+      },
+      //Bone Dungeon
       {
         "name": "Left Chest",
         "access_rules": [],
@@ -129,7 +146,7 @@
             "#type": "basket",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Middle Chest",
@@ -150,7 +167,7 @@
             "#type": "basket",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Right Chest",
@@ -171,11 +188,13 @@
             "#type": "basket",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Steel Shield",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
         "chest_opened_img": "images/chests/chest_opened.png",
@@ -192,7 +211,7 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Tristham Business",
@@ -213,11 +232,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Basket",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
         "chest_opened_img": "images/chests/basket_opened.png",
@@ -234,11 +255,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Basket 1",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
         "chest_opened_img": "images/chests/basket_opened.png",
@@ -255,11 +278,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Basket 2",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
         "chest_opened_img": "images/chests/basket_opened.png",
@@ -276,11 +301,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Hidden Room",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
         "chest_opened_img": "images/chests/basket_opened.png",
@@ -297,11 +324,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Basket",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
         "chest_opened_img": "images/chests/basket_opened.png",
@@ -318,11 +347,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Seed Basket",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
         "chest_opened_img": "images/chests/basket_opened.png",
@@ -339,11 +370,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Quake Chest",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
         "chest_opened_img": "images/chests/chest_opened.png",
@@ -360,11 +393,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Boss Chests",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
         "chest_opened_img": "images/chests/chest_opened.png",
@@ -386,11 +421,13 @@
             "#type": "chest",
             "item_count": 1
           }
-      ]
+        ]
       },
       {
         "name": "Boss Baskets",
-        "access_rules": ["bombs"],
+        "access_rules": [
+          "bombs"
+        ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
         "chest_opened_img": "images/chests/basket_opened.png",
@@ -407,8 +444,8 @@
             "#type": "basket",
             "item_count": 2
           }
-      ]
+        ]
       }
-  ]
-    }   
+    ]
+  }
 ]
