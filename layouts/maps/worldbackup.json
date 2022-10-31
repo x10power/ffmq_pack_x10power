@@ -15,7 +15,7 @@
         "content": {
           "type": "tabbed",
           "tabs": [
-            {				
+            {
               "title": "Lava Dome",
               "content": {
                 "type": "tabbed",
@@ -104,7 +104,7 @@
                       "maps": ["lava-dome-11"]
                     }
                   }
-                ]				
+                ]
               }
             }
           ]

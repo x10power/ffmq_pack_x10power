@@ -1,5 +1,8 @@
 [
   // Fire: Main
+  // Mine
+  // Sealed Temple
+  // Volcano
   {
     "name": "Fire",
     "parent": "World",

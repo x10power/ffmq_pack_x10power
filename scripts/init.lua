@@ -4,6 +4,9 @@ ScriptHost:LoadScript("scripts/ver.lua")
 -- Settings
 -- ScriptHost:LoadScript("scripts/settings/settings.lua")
 
+-- Helpers
+ScriptHost:LoadScript("scripts/items/helpers.lua")
+
 -- Auto-Tracking
 -- ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
 
@@ -58,8 +61,21 @@ if string.find(variant, "map") then
   print("Map Variant; load map stuff")
   -- World Map
   Tracker:AddMaps("maps/maps.json")
+
   -- Dungeon Maps
-  Tracker:AddMaps("maps/dungeons/lavadome.json")
+  dungeons = {
+    "bonedungeon",
+    "doomcastle",
+    "gianttree",
+    "icepyramid",
+    "lavadome",
+    "macship",
+    "pazuzutower"
+  }
+  for _, dungCat in ipairs(dungeons) do
+    Tracker:AddMaps("maps/dungeons/" .. dungCat .. ".json")
+  end
+
   -- Map Layouts
   Tracker:AddLayouts("layouts/maps/world.json")
 

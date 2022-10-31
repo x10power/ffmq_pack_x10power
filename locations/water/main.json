@@ -1,5 +1,12 @@
 [
   // Water: Main
+  // Libra Temple
+  // Wintry Cave
+  // Life Temple
+  // Falls Basin
+  // Ice Pyramid: FIXME: Obsolete?
+  // Spencer's Place
+  // Wintry Temple
   {
     "name": "Water",
     "parent": "World",
@@ -468,7 +475,7 @@
             "#itemtype": "basket",
             "#type": "keyitem",
             "item_count": 1,
-          }         
+          }
         ]
       },*/
       // Spencer's Place

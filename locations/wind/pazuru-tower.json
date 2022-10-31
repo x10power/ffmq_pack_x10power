@@ -1,6 +1,7 @@
 [
+  // Wind: Pazuzu's Tower
   {
-    "name": "Pazuru Tower",
+    "name": "Pazuzu's Tower",
     "parent": "wind",
     "access_rules": [
       // "@Start/Connection"
@@ -108,14 +109,9 @@
             "item_count": 1
           },
           {
-            "name": "Floor 7 Chest (Bombs will be require if above Floor 4",
+            "name": "Floor 7 Chest",
             "access_rules": [
-              "suncoin,dragonclaw,axe,pazuzu:1",
-              "suncoin,dragonclaw,axe,pazuzu:2",
-              "suncoin,dragonclaw,axe,pazuzu:3",
-              "suncoin,dragonclaw,axe,bombs,pazuzu:4",
-              "suncoin,dragonclaw,axe,bombs,pazuzu:5",
-              "suncoin,dragonclaw,axe,bombs,pazuzu:6"
+              "$pazuzuSeven"
             ],
             "item_count": 1
           }

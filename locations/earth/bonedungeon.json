@@ -214,7 +214,7 @@
         ]
       },
       {
-        "name": "Tristham Business",
+        "name": "Tristam Business",
         "access_rules": [],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
@@ -228,7 +228,7 @@
         ],
         "sections": [
           {
-            "name": "Tristham Gift",
+            "name": "Tristam Gift",
             "#type": "chest",
             "item_count": 1
           }

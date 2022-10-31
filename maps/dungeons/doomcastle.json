@@ -1,0 +1,32 @@
+[
+  {
+    "name": "doom-castle-basement",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-b2.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "doom-castle-4",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-F4.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "doom-castle-5",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-F5.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "doom-castle-6",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-F6.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "doom-castle-7",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-F7.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  }
+]

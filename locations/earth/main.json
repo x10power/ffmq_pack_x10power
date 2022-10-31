@@ -1,5 +1,9 @@
 [
   // Earth: Main
+  // Hill of Destiny
+  // Level Forest
+  // Sand Temple
+  // Bone Dungeon: FIXME: Obsolete?
   {
     "name": "Earth",
     "parent": "World",

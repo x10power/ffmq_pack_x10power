@@ -143,7 +143,7 @@
         "chest_opened_img": "images/chests/chest_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-1",
+            "map": "ice-pyramid-1",
             "x": 880,
             "y": 450
           }
@@ -166,7 +166,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-1",
+            "map": "ice-pyramid-1",
             "x": 593,
             "y": 304
           }
@@ -189,7 +189,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-1",
+            "map": "ice-pyramid-1",
             "x": 105,
             "y": 624
           }
@@ -212,7 +212,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-2",
+            "map": "ice-pyramid-2",
             "x": 177,
             "y": 93
           }
@@ -235,7 +235,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-2",
+            "map": "ice-pyramid-2",
             "x": 113,
             "y": 258
           }
@@ -258,7 +258,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-2",
+            "map": "ice-pyramid-2",
             "x": 177,
             "y": 272
           }
@@ -281,7 +281,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-2",
+            "map": "ice-pyramid-2",
             "x": 384,
             "y": 31
           }
@@ -304,7 +304,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-2",
+            "map": "ice-pyramid-2",
             "x": 482,
             "y": 223
           }
@@ -327,7 +327,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-2",
+            "map": "ice-pyramid-2",
             "x": 497,
             "y": 400
           }
@@ -350,7 +350,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-3",
+            "map": "ice-pyramid-3",
             "x": 160,
             "y": 208
           }
@@ -373,7 +373,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-3",
+            "map": "ice-pyramid-3",
             "x": 224,
             "y": 304
           }
@@ -396,7 +396,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-3",
+            "map": "ice-pyramid-3",
             "x": 401,
             "y": 159
           }
@@ -419,7 +419,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-3",
+            "map": "ice-pyramid-3",
             "x": 433,
             "y": 366
           }
@@ -442,7 +442,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-4",
+            "map": "ice-pyramid-4",
             "x": 256,
             "y": 114
           }
@@ -465,7 +465,7 @@
         "chest_opened_img": "images/chests/chest_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-4",
+            "map": "ice-pyramid-4",
             "x": 273,
             "y": 144
           }
@@ -488,7 +488,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-5",
+            "map": "ice-pyramid-5",
             "x": 129,
             "y": 306
           }
@@ -511,7 +511,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-5",
+            "map": "ice-pyramid-5",
             "x": 80,
             "y": 95
           }
@@ -534,7 +534,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-5",
+            "map": "ice-pyramid-5",
             "x": 223,
             "y": 83
           }
@@ -557,7 +557,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-5",
+            "map": "ice-pyramid-5",
             "x": 48,
             "y": 195
           }
@@ -580,7 +580,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-basement",
+            "map": "ice-pyramid-basement",
             "x": 159,
             "y": 258
           }
@@ -603,7 +603,7 @@
         "chest_opened_img": "images/chests/chest_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-basement",
+            "map": "ice-pyramid-basement",
             "x": 159,
             "y": 291
           }
@@ -626,7 +626,7 @@
         "chest_opened_img": "images/chests/chest_opened.png",
         "map_locations": [
           {
-            "map": "Ice-Pyramid-boss",
+            "map": "ice-pyramid-boss",
             "x": 192,
             "y": 64
           }

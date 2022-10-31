@@ -1,5 +1,7 @@
 /*[
   // Other: Main
+  // Mac's Ship: FIXME: Obsolete?
+  // Doom Castle: FIXME: Obsolete?
   {
     "name": "Other",
     "parent": "World",
