@@ -59,7 +59,7 @@
           },
           {
             "name": "Floor 4 Baskets",
-            "access_rules": ["suncoin,dragonclaw,bombs"],
+            "access_rules": ["suncoin,dragonclaw"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -68,18 +68,37 @@
           },
           {
             "name": "Floor 4 Chest",
-            "access_rules": ["suncoin,dragonclaw,bombs"],
+            "access_rules": ["suncoin,dragonclaw"],
             "clear_as_group": false,
             "item_count": 1
           },
           {
-            "name": "Floor 5 Baskets (Bombs Require)",
+            "name": "Floor 5 Baskets",
             "access_rules": ["suncoin,dragonclaw"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "clear_as_group": false,
             "item_count": 2
+          },
+          {
+            "name": "Floor 6 Basket",
+            "access_rules": ["suncoin,dragonclaw"],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor 7 Chest (Bombs will be require if above Floor 4",
+            "access_rules": [
+             "suncoin,dragonclaw,axe,pazuzu:1",
+             "suncoin,dragonclaw,axe,pazuzu:2",
+             "suncoin,dragonclaw,axe,pazuzu:3",
+             "suncoin,dragonclaw,axe,bombs,pazuzu:4",
+             "suncoin,dragonclaw,axe,bombs,pazuzu:5",
+             "suncoin,dragonclaw,axe,bombs,pazuzu:6"],
+            "item_count": 1
           }
         ]
       },

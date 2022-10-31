@@ -6,5 +6,13 @@
     "img": "images/counters/battlefield.png",
     "codes": "battlefield",
     "max_quantity": 5
+  },
+  //Pazuru Floor
+  {
+    "name": "Pazuzu Floor",
+    "type": "consumable",
+    "img": "images/counters/pazuzu.gif",
+    "codes": "pazuzu",
+    "max_quantity": 6
   }
 ]
