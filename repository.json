@@ -3,9 +3,9 @@
   "packages": [
     {
       "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
-      "author": "x10power, Mike Trethewey",
+      "author": "x10power, Mike Trethewey, Poolsharker",
       "game_name": "Final Fantasy Mystic Quest",
-      "version": "1.0.000",
+      "version": "1.0.1.1",
       "flags": [], // build from variants
       "required_app_version": "2.3.8.16",
       "uid": "ffmq_pack_x10power",
@@ -22,6 +22,10 @@
             "map",
             "pins"
           ]
+        },
+        {
+          "name": "Shard-Hunt",
+          "flags": ["chathud"]
         }
       ]
     }

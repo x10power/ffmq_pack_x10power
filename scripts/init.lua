@@ -2,13 +2,18 @@
 ScriptHost:LoadScript("scripts/ver.lua")
 
 -- Settings
--- ScriptHost:LoadScript("scripts/settings/settings.lua")
+ScriptHost:LoadScript("scripts/settings/settings.lua")
 
 -- Helpers
 ScriptHost:LoadScript("scripts/items/helpers.lua")
 
 -- Auto-Tracking
--- ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+if (string.find(Tracker.ActiveVariantUID, "items_only")) then
+  ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+end
+if (string.find(Tracker.ActiveVariantUID, "shard_hunt")) then
+  ScriptHost:LoadScript("scripts/tracking/autotracking-sh.lua")
+end
 
 -- Items
 print("Loading Items")
@@ -122,6 +127,14 @@ else
   print("Satisfy Legacy Loads")
   Tracker:AddMaps("maps/maps.json")
   Tracker:AddLocations("locations/world.json")
+  print("")
+end
+
+if variant == "shard_hunt" then
+  print("Loading Shard Hunt Variant")
+  -- Layout Defaults
+  Tracker:AddLayouts("layouts/broadcast-sh.json")
+  Tracker:AddLayouts("layouts/tracker-sh.json")
   print("")
 end
 

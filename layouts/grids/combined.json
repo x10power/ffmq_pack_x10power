@@ -1,0 +1,40 @@
+{
+  "combined_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "0",
+        "rows": [
+          ["elixir", "treewither", "wakewater", "venuskey"]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "0",
+        "rows": [
+          ["multikey", "gasmask", "magicmirror", "thunderrock"]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "0",
+        "rows": [
+          ["captaincap", "libracrest", "geminicrest", "mobiuscrest"]
+        ]
+      }
+    ]
+  }
+}
+// {
+//   "combined_grid": {
+//     "type": "itemgrid",
+//     "item_margin": "0,5",
+//     "rows": [
+//       ["elixir", "treewither", "wakewater", "venuskey"],
+//       ["multikey", "gasmask", "magicmirror", "thunderrock"],
+//       ["captaincap", "libracrest", "geminicrest", "mobiuscrest"]
+//     ]
+//   }
+// }

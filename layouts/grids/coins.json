@@ -10,5 +10,12 @@
         "skycoin"
       ]
     ]
+  },
+  "shards_grid": {
+    "type": "itemgrid",
+    "item_margin": "0",
+    "rows":[
+      ["sandcoin", "rivercoin", "suncoin", "skycoinshard24"]
+    ]
   }
 }
