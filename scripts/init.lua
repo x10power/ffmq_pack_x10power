@@ -2,13 +2,25 @@
 ScriptHost:LoadScript("scripts/ver.lua")
 
 -- Settings
--- ScriptHost:LoadScript("scripts/settings/settings.lua")
+ScriptHost:LoadScript("scripts/settings/settings.lua")
 
 -- Helpers
 ScriptHost:LoadScript("scripts/items/helpers.lua")
 
+local variant = Tracker.ActiveVariantUID
+if variant == "" then
+  variant = "items_only"
+end
+
 -- Auto-Tracking
--- ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+if (string.find(variant, "items_only")) then
+  print("Loading Auto-Tracking: " .. variant)
+  ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+end
+if (string.find(variant, "shard_hunt")) then
+  print("Loading Auto-Tracking: " .. variant)
+  ScriptHost:LoadScript("scripts/tracking/autotracking-sh.lua")
+end
 
 -- Items
 print("Loading Items")
@@ -51,11 +63,6 @@ for _, gridCat in ipairs(grids) do
   Tracker:AddLayouts(dir .. "/" .. gridCat .. ".json")
 end
 print("")
-
-local variant = Tracker.ActiveVariantUID
-if variant == "" then
-  variant = "items_only"
-end
 
 if string.find(variant, "map") then
   print("Map Variant; load map stuff")
@@ -112,12 +119,6 @@ if string.find(variant, "map") then
   end
   print("")
 else
-  print("Not a Map Variant; load default stuff")
-  -- Layout Defaults
-  Tracker:AddLayouts("layouts/broadcast.json")
-  Tracker:AddLayouts("layouts/tracker.json")
-  print("")
-
   -- Legacy
   print("Satisfy Legacy Loads")
   Tracker:AddMaps("maps/maps.json")
@@ -131,5 +132,11 @@ if variant ~= "items_only" then
   -- Layout Overrides
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
+  print("")
+else
+  print("Not a Variant; load default stuff")
+  -- Layout Defaults
+  Tracker:AddLayouts("layouts/tracker.json")
+  Tracker:AddLayouts("layouts/broadcast.json")
   print("")
 end

@@ -14,5 +14,27 @@
     "img": "images/counters/pazuzu.gif",
     "codes": "pazuzu",
     "max_quantity": 6
+  },
+  //Sky Coin Shards
+  {
+    "name": "SkyCoinShard-16",
+    "type": "consumable",
+    "img": "images/coins/coin_sky_shard.png",
+    "codes": "skycoinshard16",
+    "max_quantity": 16
+  },
+  {
+    "name": "SkyCoinShard-24",
+    "type": "consumable",
+    "img": "images/coins/coin_sky_shard.png",
+    "codes": "skycoinshard24",
+    "max_quantity": 24
+  },
+  {
+    "name": "SkyCoinShard-32",
+    "type": "consumable",
+    "img": "images/coins/coin_sky_shard.png",
+    "codes": "skycoinshard32",
+    "max_quantity": 32
   }
 ]

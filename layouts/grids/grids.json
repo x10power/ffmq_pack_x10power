@@ -1,4 +1,13 @@
 {
+  // party_grid
+  // / / storymarkers_grid
+  // weapons_grind
+  // armors_grid
+  // magics_grid
+  // keyitems_grid
+  // crests_grid
+  // coins_grid
+  // counters_grid
   "shared_item_grid": {
     "type": "array",
     "orientation": "vertical",
@@ -38,10 +47,10 @@
       {
         "type": "layout",
         "key": "counters_grid"
-        // },
-        // {
-        //   "type": "layout",
-        //   "key": "crystals_grid"
+      },
+      {
+        "type": "layout",
+        "key": "crystals_grid"
       }
     ]
   },
@@ -53,6 +62,10 @@
         "type": "layout",
         "key": "party_grid"
       },
+      // {
+      //   "type": "layout",
+      //   "key": "storymarkers_grid"
+      // },
       {
         "type": "layout",
         "key": "weapons_grid"
@@ -76,6 +89,56 @@
       {
         "type": "layout",
         "key": "coins_grid"
+      },
+      {
+        "type": "layout",
+        "key": "counters_grid"
+      },
+      {
+        "type": "layout",
+        "key": "crystals_grid"
+      }
+    ]
+  },
+  "shard_hunt": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "party_grid"
+      },
+      // {
+      //   "type": "layout",
+      //   "key": "storymarkers_grid"
+      // },
+      {
+        "type": "layout",
+        "key": "weapons_grid"
+      },
+      {
+        "type": "layout",
+        "key": "armors_grid"
+      },
+      {
+        "type": "layout",
+        "key": "magics_grid"
+      },
+      {
+        "type": "layout",
+        "key": "keyitems_grid"
+      },
+      {
+        "type": "layout",
+        "key": "crests_grid"
+      },
+      {
+        "type": "layout",
+        "key": "shards_grid"
+      },
+      {
+        "type": "layout",
+        "key": "counters_grid"
       },
       {
         "type": "layout",

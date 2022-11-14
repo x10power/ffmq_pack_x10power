@@ -1,9 +1,9 @@
 {
   "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
-  "author": "x10power, Mike Trethewey",
+  "author": "x10power, Mike Trethewey, Poolsharker",
   "game_name": "Final Fantasy Mystic Quest",
   "flags": [], // build from variants
-  "package_version": "1.0.000",
+  "package_version": "1.0.1.1",
   "package_uid": "ffmq_pack_x10power",
   "platform": "snes",
   "documentation_url": "",
@@ -20,6 +20,12 @@
         "chathud",
         "map",
         "pins"
+      ]
+    },
+    "shard_hunt": {
+      "display_name": "Shard Hunt",
+      "flags": [
+        "chathud"
       ]
     }
   }
