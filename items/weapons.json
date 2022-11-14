@@ -10,23 +10,22 @@
       {
         "name": "No Sword",
         "img": "images/inventory/weapons/sword1.png",
-        "img_mods": "@disabled",
-        "codes": "sword,swords, sword0"
+        "img_mods": "@disabled"
       },
       {
         "name": "Steel Sword",
         "img": "images/inventory/weapons/sword1.png",
-        "codes": "sword1, steelsword"
+        "codes": "sword1, steelsword, swords"
       },
       {
         "name": "Knight Sword",
         "img": "images/inventory/weapons/sword2.png",
-        "codes": "sword2, knightsword"
+        "codes": "sword2, knightsword, swords"
       },
       {
         "name": "Excalibur",
         "img": "images/inventory/weapons/sword3.png",
-        "codes": "sword3, excalibur"
+        "codes": "sword3, excalibur, swords"
       }
     ]
   },
@@ -42,7 +41,7 @@
         "name": "No Axe",
         "img": "images/inventory/weapons/axe1.png",
         "img_mods": "@disabled",
-        "codes": "axe,axes, axe0"
+        "codes": "axes"
       },
       {
         "name": "Axe",
@@ -73,12 +72,12 @@
         "name": "No Bombs",
         "img": "images/inventory/weapons/bomb1.png",
         "img_mods": "@disabled",
-        "codes": "bombs, bomb0"
+        "codes": "bomb0"
       },
       {
         "name": "Bomb",
         "img": "images/inventory/weapons/bomb1.png",
-        "codes": "bomb1, bomb"
+        "codes": "bomb1, bomb, bombs"
       },
       {
         "name": "Jumbo Bomb",
@@ -103,13 +102,12 @@
       {
         "name": "No Claws",
         "img": "images/inventory/weapons/claw1.png",
-        "img_mods": "@disabled",
-        "codes": "claws, claw"
+        "img_mods": "@disabled"
       },
       {
         "name": "Cat Claws",
         "img": "images/inventory/weapons/claw1.png",
-        "codes": "claw1, catclaw, catclaws"
+        "codes": "claw1, catclaw, catclaws, claws"
       },
       {
         "name": "Charm Claw",

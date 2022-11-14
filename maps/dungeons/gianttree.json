@@ -1,0 +1,50 @@
+[
+  {
+    "name": "giant-tree-1",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-1.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "giant-tree-2",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-2.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "giant-tree-2a",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-2a.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "giant-tree-3",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-3.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "giant-tree-3a",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-3a.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "giant-tree-4",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-4.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "giant-tree-4a",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-4a.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "giant-tree-boss",
+    "img": "images/maps/dungeons/giant-tree/Giant-Tree-boss.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  }
+]

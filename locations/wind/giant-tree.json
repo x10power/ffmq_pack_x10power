@@ -1,0 +1,574 @@
+[
+  // Wind: Giant Tree
+  {
+    "name": "Giant Tree",
+    "parent": "wind",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      {
+        "name": "Giant Tree",
+        "access_rules": [
+          "suncoin"
+        ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 324,
+            "y": 80
+          },
+          {
+            "map": "restored-world",
+            "x": 525,
+            "y": 500
+          }
+        ],
+        "sections": [
+          {
+            "name": "Floor 1 Baskets",
+            "access_rules": [
+              "suncoin"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 2 Baskets",
+            "access_rules": [
+              "suncoin,dragonclaw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor 2 Basket (Axe Required)",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Floor 2 Chest (Boss Needs to be Defeated)",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Floor 2a Baskets",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor 3 Baskets",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 3a Baskets",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Floor 4 Baskets",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Floor 4a Baskets",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Boss Floor",
+            "access_rules": [
+              "suncoin,dragonclaw,swords,axe"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 4
+          }
+        ]
+      },
+      {
+        "name": "Right Basket",
+        "access_rules": [
+          "suncoin,axe"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-1",
+            "x": 375,
+            "y": 315
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Middle Basket",
+        "access_rules": [
+          "suncoin,axe"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-1",
+            "x": 248,
+            "y": 267
+          }
+        ],
+        "sections": [
+          {
+            "name": "Refresher Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Left Baskets",
+        "access_rules": [
+          "suncoin,axe"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-1",
+            "x": 71,
+            "y": 316
+          }
+        ],
+        "sections": [
+          {
+            "name": "Multiple Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
+      {
+        "name": "Boss Chest",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/chest_available.png",
+        "chest_unopened_img": "images/chests/chest_available.png",
+        "chest_opened_img": "images/chests/chest_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-2",
+            "x": 472,
+            "y": 237
+          }
+        ],
+        "sections": [
+          {
+            "name": "Meteor Chest",
+            "#type": "chest",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "North East Basket",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-2",
+            "x": 440,
+            "y": 202
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "South East Basket",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-2",
+            "x": 440,
+            "y": 426
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "South West Basket",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-2",
+            "x": 104,
+            "y": 426
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Double Baskets",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-2a",
+            "x": 191,
+            "y": 107
+          }
+        ],
+        "sections": [
+          {
+            "name": "Multiple Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
+      {
+        "name": "Top Level Basket",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-3",
+            "x": 296,
+            "y": 443
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Bottom Layer Baskets",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-3",
+            "x": 199,
+            "y": 474
+          }
+        ],
+        "sections": [
+          {
+            "name": "Multiple Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
+      {
+        "name": "SW Bottom Layer",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-3",
+            "x": 136,
+            "y": 603
+          }
+        ],
+        "sections": [
+          {
+            "name": "Refresher Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Lower Chest",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-3a",
+            "x": 216,
+            "y": 189
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Upper Chest",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-3a",
+            "x": 232,
+            "y": 91
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Lower Baskets",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-4",
+            "x": 281,
+            "y": 475
+          }
+        ],
+        "sections": [
+          {
+            "name": "Multiple Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
+      {
+        "name": "Upper Baskets",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-4",
+            "x": 104,
+            "y": 291
+          }
+        ],
+        "sections": [
+          {
+            "name": "Multiple Baskets",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
+      {
+        "name": "Bottom Layer Basket",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-4a",
+            "x": 296,
+            "y": 154
+          }
+        ],
+        "sections": [
+          {
+            "name": "Potion Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Bottom Layer Basket",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-4a",
+            "x": 88,
+            "y": 186
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "South Baskets",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-boss",
+            "x": 192,
+            "y": 360
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      },
+      {
+        "name": "Northwest Baskets",
+        "access_rules": [
+          "suncoin,axe,dragonclaw,swords"
+        ],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "Giant-Tree-boss",
+            "x": 72,
+            "y": 136
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Basket",
+            "#type": "basket",
+            "item_count": 2
+          }
+        ]
+      }
+    ]
+  }
+]

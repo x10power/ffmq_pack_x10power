@@ -1,0 +1,54 @@
+[
+  // Water: Aquaria
+  {
+    "name": "Aquaria",
+    "parent": "Water",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Aquaria
+      {
+        "name": "Aquaria",
+        "access_rules": [
+          "sandcoin"
+        ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 630,
+            "y": 225
+          },
+          {
+            "map": "restored-world",
+            "x": 630,
+            "y": 225
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Potions (Phoebe's House)",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Refreshers (NW House)",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Steel Helm (NW House NPC; 200GP)",
+            "#type": "keyitem",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

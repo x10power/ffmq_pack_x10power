@@ -3,17 +3,31 @@
   "packages": [
     {
       "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
-      "author": "x10power, Mike Trethewey",
+      "author": "x10power, Mike Trethewey, Poolsharker",
       "game_name": "Final Fantasy Mystic Quest",
-      "version": "1.0.0.64",
-      "flags": ["chathud"],
+      "version": "1.0.1.1",
+      "flags": [], // build from variants
       "required_app_version": "2.3.8.16",
       "uid": "ffmq_pack_x10power",
-      "link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/1.0.0.64/ffmq-rando-tracker.zip",
+      "link": "https://github.com/x10power/ffmq-rando-tracker/releases/download/First/ffmq-rando-tracker.zip",
+      // build variants from individual manifests
       "variants": [
         {
-          "name": "Items-Only",
-          "flags": ["chathud"]
+          "name": "Items-Only"
+        },
+        {
+          "name": "Standard with Map",
+          "flags": [
+            "chathud",
+            "map",
+            "pins"
+          ]
+        },
+        {
+          "name": "Shard-Hunt",
+          "flags": [
+            "chathud"
+          ]
         }
       ]
     }

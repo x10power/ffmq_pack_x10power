@@ -1,0 +1,93 @@
+[
+  // Focus Tower
+  {
+    "name": "Focus Tower",
+    "parent": "World",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Doors
+      {
+        "name": "Focus Tower: Doors",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 382,
+            "y": 384
+          },
+          {
+            "map": "drained-world",
+            "x": 362,
+            "y": 432
+          },
+          {
+            "map": "restored-world",
+            "x": 382,
+            "y": 384
+          },
+          {
+            "map": "restored-world",
+            "x": 362,
+            "y": 432
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Booms",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Fire Spell",
+            "access_rules": [
+              "sandcoin"
+            ],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "#vanilla": "fire",
+            "#type": "keyitem",
+            "item_count": 1
+          },
+          {
+            "name": "C Pot",
+            "access_rules": [
+              "rivercoin"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Blizzard Spell",
+            "access_rules": [
+              "sandcoin,wakewater"
+            ],
+            "#type": "keyitem",
+            "item_count": 1
+          },
+          {
+            "name": "Venus Shield",
+            "access_rules": [
+              "sandcoin,bomb,venuskey,wakewater"
+            ],
+            "#type": "keyitem",
+            "item_count": 1
+          },
+          {
+            "name": "Aero Spell",
+            "access_rules": [
+              "suncoin"
+            ],
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

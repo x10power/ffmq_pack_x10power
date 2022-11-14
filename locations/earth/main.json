@@ -1,0 +1,128 @@
+[
+  // Earth: Main
+  // Hill of Destiny
+  // Level Forest
+  // Sand Temple
+  // Bone Dungeon: FIXME: Obsolete?
+  {
+    "name": "Earth",
+    "parent": "World",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Hill of Destiny
+      {
+        "name": "Hill of Destiny",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 320,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "Behemoth",
+            "chest_unopened_img": "images/chests/enemy.png",
+            "item_count": 1
+          }
+        ]
+      },
+      // Level Forest
+      {
+        "name": "Level Forest",
+        "access_rules": [],
+        "chest_unavailable_img": "images/chests/basket_available.png",
+        "chest_unopened_img": "images/chests/basket_available.png",
+        "chest_opened_img": "images/chests/basket_opened.png",
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 180,
+            "y": 520
+          },
+          {
+            "map": "restored-world",
+            "x": 180,
+            "y": 520
+          }
+        ],
+        "sections": [
+          {
+            "name": "Old Man",
+            "chest_unopened_img": "images/chests/blueman_available.png",
+            "#itemtype": "blueman",
+            "#vanilla": "Tree Wither",
+            "item_count": 1
+          },
+          {
+            "name": "Cure Potions",
+            "clear_as_group": false,
+            "#itemtype": "basket",
+            "item_count": 2
+          },
+          {
+            "name": "Cure Potion (SE)",
+            "access_rules": [
+              "axe"
+            ],
+            "#itemtype": "basket",
+            "item_count": 1
+          },
+          {
+            "name": "Heal Potion (NE)",
+            "#itemtype": "basket",
+            "item_count": 1
+          },
+          {
+            "name": "Heal Potion (SW)",
+            "access_rules": [
+              "axe"
+            ],
+            "#itemtype": "basket",
+            "item_count": 1
+          },
+          {
+            "name": "Kaeli Gift 1:",
+            "access_rules": [
+              "treewither"
+            ],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "#itemtype": "kaeli",
+            "item_count": 1
+          }
+        ]
+      },
+      // Sand Temple
+      {
+        "name": "Sand Temple",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 180,
+            "y": 395
+          },
+          {
+            "map": "restored-world",
+            "x": 180,
+            "y": 395
+          }
+        ],
+        "sections": [
+          {
+            "name": "Event Chest",
+            "chest_unopened_img": "images/party/tristam.gif",
+            "#itemtype": "tristam",
+            "#vanilla": "tristam",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+[
+  // Wind: Windia
+  {
+    "name": "Windia",
+    "parent": "Wind",
+    "access_rules": [
+      // "@Start/Connection"
+    ],
+    "children": [
+      // Windia
+      {
+        "name": "Windia",
+        "access_rules": [
+          "suncoin"
+        ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 690,
+            "y": 460
+          },
+          {
+            "map": "restored-world",
+            "x": 690,
+            "y": 460
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heal Potions",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Refreshers",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Arrows",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Mobius Chests",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "mobius"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Kaeli Check 2",
+            "#itemtype": "keyitem",
+            "access_rules": [
+              "elixir,kaeli,treewither"
+            ],
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

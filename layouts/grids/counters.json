@@ -3,7 +3,10 @@
     "type": "itemgrid",
     "item_margin": "0",
     "rows": [
-      ["battlefield"]
+      [
+        "battlefield",
+        "pazuzu"
+      ]
     ]
   }
 }

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "bone-dungeon-1",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-1.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-2",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-2.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-3",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-3.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-4",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-4.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-5",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-5.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-6",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-6.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-7",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-7.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-8",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-8.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "bone-dungeon-boss",
+    "img": "images/maps/dungeons/bone-dungeon/bone-dungeon-boss.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  }
+]

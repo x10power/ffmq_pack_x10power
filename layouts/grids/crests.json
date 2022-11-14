@@ -3,7 +3,11 @@
     "type": "itemgrid",
     "item_margin": "0",
     "rows": [
-      ["libracrest", "geminicrest", "mobiuscrest"]
+      [
+        "libracrest",
+        "geminicrest",
+        "mobiuscrest"
+      ]
     ]
   }
 }

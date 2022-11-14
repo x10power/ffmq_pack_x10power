@@ -1,0 +1,220 @@
+[
+  // Fire: Main
+  // Mine
+  // Sealed Temple
+  // Volcano
+  {
+    "name": "Fire",
+    "parent": "World",
+    "access_rules": [
+      //  "@Start/Connection"
+    ],
+    "children": [
+      // Mine
+      {
+        "name": "Mine",
+        "access_rules": [
+          "rivercoin"
+        ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 110,
+            "y": 100
+          },
+          {
+            "map": "restored-world",
+            "x": 110,
+            "y": 100
+          }
+        ],
+        "sections": [
+          {
+            "name": "A C Pot",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "A H Pot",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Charm Claw",
+            "access_rules": [
+              "bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Booms",
+            "access_rules": [
+              "bombs"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "After Jinn",
+            "access_rules": [
+              "claws"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 4
+          },
+          {
+            "name": "Reuben Gift",
+            "access_rules": [
+              "Reuben"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      // Sealed Temple
+      {
+        "name": "Sealed Temple",
+        "access_rules": [
+          "rivercoin"
+        ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 194,
+            "y": 214
+          },
+          {
+            "map": "restored-world",
+            "x": 194,
+            "y": 214
+          }
+        ],
+        "sections": [
+          {
+            "name": "Cure Potions",
+            "item_count": 1,
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png"
+          },
+          {
+            "name": "Heal Potions",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          }
+        ]
+      },
+      // Volcano
+      {
+        "name": "Volcano",
+        "access_rules": [
+          "rivercoin"
+        ],
+        "map_locations": [
+          {
+            "map": "drained-world",
+            "x": 310,
+            "y": 110
+          },
+          {
+            "map": "restored-world",
+            "x": 310,
+            "y": 110
+          }
+        ],
+        "sections": [
+          {
+            "name": "1L Refreshers",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "1L H Pot",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "1L C Pot",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "White Spell",
+            "#type": "keyitem",
+            "item_count": 1
+          },
+          {
+            "name": "2L Booms",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "2L H Pot",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "3L Booms",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "4L H Pot",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "4L C Pot",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Medusa Chest",
+            "#type": "keyitem",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

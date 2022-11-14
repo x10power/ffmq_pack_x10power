@@ -2,10 +2,25 @@
 ScriptHost:LoadScript("scripts/ver.lua")
 
 -- Settings
--- ScriptHost:LoadScript("scripts/settings/settings.lua")
+ScriptHost:LoadScript("scripts/settings/settings.lua")
+
+-- Helpers
+ScriptHost:LoadScript("scripts/items/helpers.lua")
+
+local variant = Tracker.ActiveVariantUID
+if variant == "" then
+  variant = "items_only"
+end
 
 -- Auto-Tracking
--- ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+if (string.find(variant, "items_only")) then
+  print("Loading Auto-Tracking: " .. variant)
+  ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+end
+if (string.find(variant, "shard_hunt")) then
+  print("Loading Auto-Tracking: " .. variant)
+  ScriptHost:LoadScript("scripts/tracking/autotracking-sh.lua")
+end
 
 -- Items
 print("Loading Items")
@@ -49,19 +64,79 @@ for _, gridCat in ipairs(grids) do
 end
 print("")
 
-local variant = Tracker.ActiveVariantUID
-if variant == "" then
-  variant = "items_only"
+if string.find(variant, "map") then
+  print("Map Variant; load map stuff")
+  -- World Map
+  Tracker:AddMaps("maps/maps.json")
+
+  -- Dungeon Maps
+  dungeons = {
+    "bonedungeon",
+    "doomcastle",
+    "gianttree",
+    "icepyramid",
+    "lavadome",
+    "macship",
+    "pazuzutower"
+  }
+  for _, dungCat in ipairs(dungeons) do
+    Tracker:AddMaps("maps/dungeons/" .. dungCat .. ".json")
+  end
+
+  -- Map Layouts
+  Tracker:AddLayouts("layouts/maps/world.json")
+
+  -- Locations
+  locations = {
+    -- World
+    "world",
+    -- Battlefields
+    -- "battlefields/main",
+    -- Center
+    "center/focustower",
+    "center/doom-castle",
+    -- Earth
+    "earth/main",
+    "earth/foresta",
+    "earth/bonedungeon",
+    -- Fire
+    "fire/main",
+    "fire/fireburg",
+    "fire/lava-dome",
+    -- Water
+    "water/main",
+    "water/aquaria",
+    "water/icepyramid",
+    -- Wind
+    "wind/main",
+    "wind/windia",
+    "wind/giant-tree",
+    "wind/pazuru-tower",
+    "wind/mac-ship"
+  }
+  for _, locCat in ipairs(locations) do
+    Tracker:AddLocations("locations/" .. locCat .. ".json")
+  end
+  print("")
+else
+  -- Legacy
+  print("Satisfy Legacy Loads")
+  Tracker:AddMaps("maps/maps.json")
+  Tracker:AddLocations("locations/world.json")
+  print("")
 end
 
-print("Not a Map Variant; load default stuff")
--- Layout Defaults
-Tracker:AddLayouts("layouts/broadcast.json")
-Tracker:AddLayouts("layouts/tracker.json")
-print("")
-
--- Legacy
-print("Satisfy Legacy Loads")
-Tracker:AddMaps("maps/maps.json")
-Tracker:AddLocations("locations/world.json")
-print("")
+-- Variant Overrides
+if variant ~= "items_only" then
+  print("Loading Variant")
+  -- Layout Overrides
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
+  print("")
+else
+  print("Not a Variant; load default stuff")
+  -- Layout Defaults
+  Tracker:AddLayouts("layouts/tracker.json")
+  Tracker:AddLayouts("layouts/broadcast.json")
+  print("")
+end
