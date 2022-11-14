@@ -9,7 +9,7 @@
       {
         "name": "Doom Castle",
         "access_rules": [
-          "suncoin,thunderrock,mobius,"
+          "suncoin,thunderrock,mobius"
         ],
         "map_locations": [
           {

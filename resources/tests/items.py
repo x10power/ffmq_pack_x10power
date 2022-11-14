@@ -1,5 +1,7 @@
-import commentjson
+"""Gathers item codes for location testing"""
+
 import os
+import commentjson
 
 chathud = {}
 codes = []
@@ -10,12 +12,17 @@ for filename in os.listdir(dirname):
     if os.path.isfile(os.path.join(dirname, filename)):
         if os.path.splitext(filename)[1].lower() == ".json":
             print(f"Reading: {os.path.join(dirname, filename)}")
-            with open(os.path.join(dirname, filename), "r") as itemsFile:
+            with open(os.path.join(dirname, filename), "r", encoding="utf-8") as itemsFile:
                 itemsManifest = commentjson.load(itemsFile)
                 for item in itemsManifest:
                     if "codes" in item:
                         primary = item["codes"].split(",")[0]
-                        chathud[primary] = {"codes":[],"secondary_codes":[],"name":item["name"],"type":item["type"]}
+                        chathud[primary] = {
+                            "codes": [],
+                            "secondary_codes": [],
+                            "name": item["name"],
+                            "type": item["type"]
+                        }
                         itemCodes = list(map(lambda x: x.strip(), item["codes"].split(",")))
                         for tmp in sorted(itemCodes):
                             chathud[primary]["codes"].append(tmp)
@@ -27,7 +34,12 @@ for filename in os.listdir(dirname):
                         for stage in item["stages"]:
                             for code in ["codes", "secondary_codes"]:
                                 if code in stage:
-                                    stageCodes = list(map(lambda x: x.strip(), stage[code].split(",")))
+                                    stageCodes = list(
+                                        map(
+                                            lambda x: x.strip(),
+                                            stage[code].split(",")
+                                        )
+                                    )
                                     for tmp in sorted(stageCodes):
                                         chathud[primary][code].append(tmp)
                                     chathud[primary][code] = sorted(set(chathud[primary][code]))
@@ -35,16 +47,16 @@ for filename in os.listdir(dirname):
 print("")
 
 chatcodes = ""
-for [code, codes] in chathud.items():
-    name = codes["name"]
+for [thisCode, thisCodes] in chathud.items():
+    name = thisCodes["name"]
     chatcodes += (f"{name}") + "\n"
     chatcodes += ("-" * len(name)) + "\n"
-    chatcodes += (f"!hud {code}") + "\n"
-    if len(codes["secondary_codes"]) or codes["type"] == "consumable":
-        chatcodes += (f"> !hud {code} up") + "\n"
-        chatcodes += (f"> !hud {code} down") + "\n"
-        for secondary in codes["secondary_codes"]:
-            chatcodes += (f"> !hud {code} {secondary}") + "\n"
+    chatcodes += (f"!hud {thisCode}") + "\n"
+    if len(thisCodes["secondary_codes"]) or thisCodes["type"] == "consumable":
+        chatcodes += (f"> !hud {thisCode} up") + "\n"
+        chatcodes += (f"> !hud {thisCode} down") + "\n"
+        for secondary in thisCodes["secondary_codes"]:
+            chatcodes += (f"> !hud {thisCode} {secondary}") + "\n"
 
     chatcodes += ("") + "\n"
 

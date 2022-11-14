@@ -149,37 +149,6 @@
           }
         ]
       },
-      /* Giant Tree
-      {
-        "name": "Giant Tree",
-        "access_rules": [ "suncoin" ],
-        "map_locations": [
-          {
-            "map": "restored-world",
-            "x": 525,
-            "y": 500
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cure Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Refreshers",
-            "item_count": 1
-          },
-          {
-            "name": "Explosives",
-            "item_count": 1
-          },
-          {
-            "name": "Meteor Spell",
-            "#type": "keyitem",
-            "item_count": 1
-          }
-        ]
-      },*/
       // Kaidge Temple
       {
         "name": "Kaidge Temple",
@@ -316,74 +285,6 @@
           }
         ]
       }
-      /* Pazuzu's Tower
-      {
-        "name": "Pazuzu's Tower",
-        "access_rules": ["suncoin"],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 685,
-            "y": 395
-          },
-          {
-            "map": "restored-world",
-            "x": 685,
-            "y": 395
-          }
-        ],
-        "sections": [
-          {
-            "name": "Explosives",
-            "item_count": 1
-          },
-          {
-            "name": "Cure Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Heal Potions",
-            "item_count": 1
-          },
-          {
-            "name": "Refreshers",
-            "item_count": 1
-          },
-          {
-            "name": "Flare Spell",
-            "#type": "keyitem",
-            "item_count": 1
-          },
-          {
-            "name": "Sky Coin",
-            "#type": "keyitem",
-            "item_count": 1
-          }
-        ]
-      },
-      // Ship Dock
-      {
-        "name": "Ship Dock",
-        "access_rules": [],
-        "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 635,
-            "y": 395
-          },
-          {
-            "map": "restored-world",
-            "x": 635,
-            "y": 395
-          }
-        ],
-        "sections": [
-          {
-            "name": "[Event]",
-            "item_count": 1
-          }
-        ]
-      }*/
     ]
   }
 ]
