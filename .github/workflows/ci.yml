@@ -7,10 +7,10 @@ on: [push, pull_request]
 #########
 # actions
 #########
-# actions/checkout@v3.0.0
-# actions/download-artifact@v3.0.0
-# actions/create-release
-# actions/upload-release-asset
+# actions/checkout@v3.3.0
+# actions/download-artifact@v3.0.2
+# actions/create-release@v1.1.4
+# actions/upload-release-asset@v1.0.2
 # ./.github/actions/get-parent-dir
 # ./.github/actions/install
 # ./.github/actions/test
@@ -27,7 +27,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.3.0
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
@@ -56,7 +56,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.3.0
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
@@ -91,14 +91,14 @@ jobs:
 
       # Upload AppVersion Artifact
       - name: Upload AppVersion Artifact
-        uses: actions/upload-artifact@v3.0.0
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/build
 
       # Upload Archive Artifact
       - name: Upload Archive Artifact
-        uses: actions/upload-artifact@v3.0.0
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: archive-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/deploy
@@ -124,7 +124,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.3.0
 
       # install dependencies via pip
       - name: 💿Install Dependencies via pip
@@ -139,13 +139,13 @@ jobs:
 
       # download appversion artifact
       - name: 🔽Download AppVersion Artifact
-        uses: actions/download-artifact@v3.0.0
+        uses: actions/download-artifact@v3.0.2
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir }}/build
       # download archive artifact
       - name: 🔽Download Archive Artifact
-        uses: actions/download-artifact@v3.0.0
+        uses: actions/download-artifact@v3.0.2
         with:
           name: archive-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir }}/deploy
@@ -158,7 +158,7 @@ jobs:
         #        git push origin ${GITHUB_TAG}
         run: |
           GITHUB_TAG="$(head -n 1 ../build/app_version.txt)"
-          echo "::set-output name=github_tag::$GITHUB_TAG"
+          echo "github_tag=$GITHUB_TAG" >> $GITHUB_OUTPUT
           GITHUB_TAG="v${GITHUB_TAG}"
           RELEASE_NAME="Final Fantasy Mystic Quest Tracker ${GITHUB_TAG}"
           echo "Release Name: ${RELEASE_NAME}"
@@ -207,7 +207,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.3.0
       - name: 💿Install Dependencies via pip
         run: |
           python -m pip install pytz requests
@@ -217,13 +217,13 @@ jobs:
         id: packlisting
         run: |
           PACKLISTING_USERNAME="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[1]})"
-          echo "::set-output name=packlisting_username::$PACKLISTING_USERNAME"
+          echo "packlisting_username=$PACKLISTING_USERNAME" >> $GITHUB_OUTPUT
 
           PACKLISTING_REPOSITORY="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[2]})"
-          echo "::set-output name=packlisting_repository::$PACKLISTING_REPOSITORY"
+          echo "packlisting_repository=$PACKLISTING_REPOSITORY" >> $GITHUB_OUTPUT
 
           PACKLISTING_BRANCH="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[3]})"
-          echo "::set-output name=packlisting_branch::$PACKLISTING_BRANCH"
+          echo "packlisting_branch=$PACKLISTING_BRANCH" >> $GITHUB_OUTPUT
 
           echo "Pack Listing Username:    $PACKLISTING_USERNAME"
           echo "Pack Listing Repository:  $PACKLISTING_REPOSITORY"
@@ -233,7 +233,7 @@ jobs:
       # Update EmoTracker Pack Repository
       - name: Update EmoTracker Pack Repository
         id: update-pack-repo
-        uses: benc-uk/workflow-dispatch@v1
+        uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: Deploy Pages
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
