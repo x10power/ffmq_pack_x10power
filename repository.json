@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
-      "author": "x10power, Mike Trethewey, Poolsharker",
+      "author": "x10power, Minnie A. Trethewey, Poolsharker",
       "game_name": "Final Fantasy Mystic Quest",
       "version": "1.0.1.1",
       "flags": [], // build from variants
@@ -13,7 +13,8 @@
       // build variants from individual manifests
       "variants": [
         {
-          "name": "Items-Only"
+          "name": "Items-Only",
+          "flags": []
         },
         {
           "name": "Standard with Map",

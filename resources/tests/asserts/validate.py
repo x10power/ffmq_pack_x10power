@@ -10,6 +10,26 @@ from pathlib import Path
 import pyjson5
 from jsonschema import validate, RefResolver
 
+def validate_file(r, filename, jsonType):
+    '''
+    Validate a file
+    '''
+    if ".json" in filename:
+        # open file
+        filePath = os.path.join(r, filename)
+        print("  " + filePath)
+        with open(filePath, "r", encoding="utf-8") as jsonFile:
+            fileJSON = pyjson5.decode_io(jsonFile)
+            validate(
+                instance=fileJSON,
+                schema=schemas["emo"][jsonType],
+                resolver=RefResolver(
+                    base_uri=schemaURI,
+                    referrer=schemas["emo"][jsonType]
+                )
+            )
+
+
 def check_files(dirs):
     '''
     Check files recursively
@@ -18,28 +38,20 @@ def check_files(dirs):
     for resrcDir in dirs:
         # cycle through this dir
         jsonType = ""
-        for jsonTypeCheck in ["items", "layouts", "locations"]:
+        for jsonTypeCheck in ["items", "layouts", "locations", "manifest.json", "repository.json"]:
             if jsonTypeCheck in resrcDir:
-                jsonType = jsonTypeCheck
+                jsonType = jsonTypeCheck.replace(".json", "")
         if "maps" in resrcDir:
             continue
         if jsonType != "":
-            for r, _, f in os.walk(resrcDir):
+            if os.path.isdir(resrcDir):
+                for r, _, f in os.walk(resrcDir):
+                    for filename in f:
+                        validate_file(r, filename, jsonType)
+            elif os.path.isfile(resrcDir):
+                (r, f) = ("", [ resrcDir ])
                 for filename in f:
-                    if ".json" in filename:
-                        # open file
-                        filePath = os.path.join(r, filename)
-                        print("  " + filePath)
-                        with open(filePath, "r", encoding="utf-8") as jsonFile:
-                            fileJSON = pyjson5.decode_io(jsonFile)
-                            validate(
-                                instance=fileJSON,
-                                schema=schemas["emo"][jsonType],
-                                resolver=RefResolver(
-                                    base_uri=schemaURI,
-                                    referrer=schemas["emo"][jsonType]
-                                )
-                            )
+                    validate_file(r, filename, jsonType)
         else:
             print("TYPE NOT FOUND: " + resrcDir)
             print()
@@ -103,6 +115,8 @@ for [gameID, packData] in srcs.items():
         print(gameID, packUID)
         layoutKeyMap = {}
         resrcDirs = [
+            os.path.join(packRoot, "manifest.json"),
+            os.path.join(packRoot, "repository.json"),
             os.path.join(packRoot, "items"),
             os.path.join(packRoot, "layouts"),
             os.path.join(packRoot, "locations"),
