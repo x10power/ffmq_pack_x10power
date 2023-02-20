@@ -89,6 +89,7 @@ srcs = {
         "variants": [
             "items_only",
             "shard_hunt",
+            "shard_hunt_map",
             "standard_map"
         ]
     }
