@@ -5,29 +5,29 @@
       {
         "title": "Overworld",
         "content": {
-          "type": "tabbed",
-          "tabs": [
-            {
-              "title": "Drained",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "drained-world"
-                ],
-                "width": 880
-              }
-            },
-            {
-              "title": "Restored",
-              "content": {
+          // "type": "tabbed",
+          // "tabs": [
+          //   {
+          //     "title": "Drained",
+          //     "content": {
+          //       "type": "map",
+          //       "maps": [
+          //         "drained-world"
+          //       ],
+          //       "width": 880
+          //     }
+          //   },
+          //   {
+          //     "title": "Restored",
+          //     "content": {
                 "type": "map",
                 "maps": [
                   "restored-world"
                 ],
                 "width": 880
-              }
-            }
-          ]
+          //     }
+          //   }
+          // ]
         }
       },
       {

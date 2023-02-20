@@ -7,6 +7,9 @@ ScriptHost:LoadScript("scripts/settings/settings.lua")
 -- Helpers
 ScriptHost:LoadScript("scripts/items/helpers.lua")
 
+-- Logic
+ScriptHost:LoadScript("scripts/logic.lua")
+
 local variant = Tracker.ActiveVariantUID
 if variant == "" then
   variant = "items_only"

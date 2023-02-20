@@ -15,8 +15,8 @@
         "map_locations": [
           {
             "map": "drained-world",
-            "x": 324,
-            "y": 80
+            "x": 575,
+            "y": 470
           },
           {
             "map": "restored-world",
