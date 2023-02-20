@@ -106,7 +106,7 @@ def prepare_release():
             mergeList[mergeDirs[idx]] = os.listdir(p)
         mergeDest = os.path.join(curDir, ".")
         mergeDestPath = os.path.join(curDir, mergeDest)
-        for s, c in mergeList.items():
+        for [s, c] in mergeList.items():
             cPath = os.path.join(s, c)
             mvPath = os.path.join(curDir, cPath)
             mvC = os.path.join(mergeDestPath, c)
