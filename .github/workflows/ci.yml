@@ -80,7 +80,7 @@ jobs:
           python ./resources/ci/common/prepare_manifest.py
 
       # Prepare Release
-      - name: Prepare Release
+      - name: 📀->📦Prepare Release
         run: |
           python ./resources/ci/common/prepare_release.py
 
@@ -90,14 +90,14 @@ jobs:
           python ./resources/ci/common/cleanup.py
 
       # Upload AppVersion Artifact
-      - name: Upload AppVersion Artifact
+      - name: 🔼Upload AppVersion Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/build
 
       # Upload Archive Artifact
-      - name: Upload Archive Artifact
+      - name: 🔼Upload Archive Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: archive-${{ matrix.os-name }}
@@ -151,7 +151,7 @@ jobs:
           path: ${{ steps.parentDir.outputs.parentDir }}/deploy
 
       # debug info
-      - name: Debug Info
+      - name: 📝Debug Info
         id: debug_info
         #      shell: bash
         #        git tag ${GITHUB_TAG}
@@ -165,7 +165,7 @@ jobs:
           echo "Git Tag:      ${GITHUB_TAG}"
 
       # create a release
-      - name: Create a Release (MASTER || MAIN)
+      - name: 📀->🚀Create a Release (MASTER || MAIN)
         id: create_release
         uses: actions/create-release@v1.1.4
         env:
@@ -178,7 +178,7 @@ jobs:
         if: contains(github.ref, 'master') || contains(github.ref, 'main')
 
       # upload archive asset
-      - name: Upload Archive Asset (MASTER || MAIN)
+      - name: 🔼Upload Archive Asset (MASTER || MAIN)
         id: upload-asset
         uses: actions/upload-release-asset@v1.0.2
         env:
