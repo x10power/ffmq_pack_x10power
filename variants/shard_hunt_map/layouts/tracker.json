@@ -1,0 +1,18 @@
+{
+  "tracker_default": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "layout",
+        "key": "shard_hunt",
+        "width": 200
+      },
+      {
+        "type": "layout",
+        "key": "game_map",
+        "width": 1000
+      }
+    ]
+  }
+}

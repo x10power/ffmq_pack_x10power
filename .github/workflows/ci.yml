@@ -85,7 +85,7 @@ jobs:
           python ./resources/ci/common/prepare_release.py
 
       # Cleanup Workspace
-      - name: Cleanup Workspace
+      - name: 🧹Cleanup Workspace
         run: |
           python ./resources/ci/common/cleanup.py
 
