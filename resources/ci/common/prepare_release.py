@@ -134,7 +134,7 @@ def prepare_release():
         ZIP_FILENAME = os.path.join(
             "..",
             "deploy",
-            env["REPO_NAME"]
+            "ffmq_pack_x10power" # env["REPO_NAME"] #FIXME: Get pack UID instead of the repo name
         )
         make_archive(ZIP_FILENAME, "zip")
         ZIP_FILENAME += ".zip"
