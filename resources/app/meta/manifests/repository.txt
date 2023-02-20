@@ -1,1 +1,1 @@
-x10power/x10power-packs:testing
+x10power/x10power-packs:publish
