@@ -5,11 +5,29 @@
       {
         "title": "Overworld",
         "content": {
-          "type": "map",
-          "maps": [
-            "restored-world"
-          ],
-          "width": 880
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Drained",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "drained-world"
+                ],
+                "width": 880
+              }
+            },
+            {
+              "title": "Restored",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "restored-world"
+                ],
+                "width": 880
+              }
+            }
+          ]
         }
       },
       {
@@ -458,7 +476,7 @@
                 "type": "tabbed",
                 "tabs": [
                   {
-                    "title": "Basememt",
+                    "title": "Basement",
                     "content": {
                       "type": "map",
                       "maps": [

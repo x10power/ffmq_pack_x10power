@@ -7,9 +7,14 @@ __pycache__/
 # no IDE stuff
 /.vscode
 /.idea
-
-# But do keep tasks file
+# But do keep tasks file, do keep settings file
+!/.vscode/settings.json
 !/.vscode/tasks.json
+
+# no schemas
+/schema/*
+# But do keep layouts schema
+!/schema/layouts.json
 
 # no get pip
 get-pip.py
