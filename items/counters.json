@@ -36,5 +36,12 @@
     "img": "images/coins/coin_sky_shard.png",
     "codes": "skycoinshard32",
     "max_quantity": 32
+  },
+  {
+    "name": "SkyCoinShard-38",
+    "type": "consumable",
+    "img": "images/coins/coin_sky_shard.png",
+    "codes": "skycoinshard38",
+    "max_quantity": 38
   }
 ]
