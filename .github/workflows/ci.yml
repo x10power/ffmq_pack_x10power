@@ -231,12 +231,12 @@ jobs:
           echo "Pack Listing Destination: $PACKLISTING_USERNAME/$PACKLISTING_REPOSITORY@refs/heads/$PACKLISTING_BRANCH"
 
       # Update EmoTracker Pack Repository
-      - name: Update EmoTracker Pack Repository (MASTER || MAIN)
+      - name: Update EmoTracker Pack Repository (MASTER || MAIN || UNSTABLE)
         id: update-pack-repo
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
-          workflow: Deploy Pages
+          workflow: 🌎->🚀Deploy Pages
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
           ref: ${{ steps.packlisting.outputs.packlisting_branch }}
           token: ${{ secrets.MY_PAT }}
-        if: contains(github.ref, 'master') || contains(github.ref, 'main')
+        if: contains(github.ref, 'master') || contains(github.ref, 'main') || contains(github.ref, 'unstable')
