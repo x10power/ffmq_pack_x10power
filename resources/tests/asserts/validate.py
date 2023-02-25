@@ -88,11 +88,12 @@ for schemaFileName in os.listdir(schemaDir):
             "r",
             encoding="utf-8"
         ) as schemaFile:
-            gameKey = "emo"
-            schemaKey = schemaFileName.replace(".json", "")
-            if gameKey not in schemas:
-                schemas[gameKey] = {}
-            schemas[gameKey][schemaKey] = json.load(schemaFile)
+            if schemaFileName.endswith(".json"):
+                gameKey = "emo"
+                schemaKey = schemaFileName.replace(".json", "")
+                if gameKey not in schemas:
+                    schemas[gameKey] = {}
+                schemas[gameKey][schemaKey] = json.load(schemaFile)
 
 print("VALIDATE")
 srcs = {
