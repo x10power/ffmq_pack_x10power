@@ -1,4 +1,4 @@
-# ffmq-rando-tracker
+# ffmq_pack_x10power
 
  Tracker for FFMQ Randomizer
 
