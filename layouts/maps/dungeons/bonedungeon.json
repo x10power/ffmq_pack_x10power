@@ -1,0 +1,88 @@
+{
+  "maps_bone_dungeon": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Floor 1",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-1"
+          ]
+        }
+      },
+      {
+        "title": "Floor B1",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-2"
+          ]
+        }
+      },
+      {
+        "title": "Floor B1a",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-3"
+          ]
+        }
+      },
+      {
+        "title": "Floor B2",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-4"
+          ]
+        }
+      },
+      {
+        "title": "Floor B2a",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-5"
+          ]
+        }
+      },
+      {
+        "title": "Floor B2b",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-6"
+          ]
+        }
+      },
+      {
+        "title": "Floor B2c",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-7"
+          ]
+        }
+      },
+      {
+        "title": "Floor B2d",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-8"
+          ]
+        }
+      },
+      {
+        "title": "Boss",
+        "content": {
+          "type": "map",
+          "maps": [
+            "bone-dungeon-boss"
+          ]
+        }
+      }
+    ]
+  }
+}

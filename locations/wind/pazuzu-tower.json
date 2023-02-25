@@ -127,7 +127,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-1",
+            "map": "pazuzu-tower-1",
             "x": 120,
             "y": 245
           }
@@ -150,7 +150,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-1",
+            "map": "pazuzu-tower-1",
             "x": 71,
             "y": 149
           }
@@ -173,7 +173,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-2",
+            "map": "pazuzu-tower-2",
             "x": 344,
             "y": 200
           }
@@ -196,7 +196,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-3",
+            "map": "pazuzu-tower-3",
             "x": 360,
             "y": 229
           }
@@ -219,7 +219,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-3",
+            "map": "pazuzu-tower-3",
             "x": 168,
             "y": 388
           }
@@ -242,7 +242,7 @@
         "chest_opened_img": "images/chests/chest_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-4",
+            "map": "pazuzu-tower-4",
             "x": 391,
             "y": 232
           }
@@ -265,7 +265,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-4",
+            "map": "pazuzu-tower-4",
             "x": 207,
             "y": 136
           }
@@ -288,7 +288,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-5",
+            "map": "pazuzu-tower-5",
             "x": 345,
             "y": 261
           }
@@ -311,7 +311,7 @@
         "chest_opened_img": "images/chests/basket_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-6",
+            "map": "pazuzu-tower-6",
             "x": 280,
             "y": 390
           }
@@ -334,7 +334,7 @@
         "chest_opened_img": "images/chests/chest_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-6",
+            "map": "pazuzu-tower-6",
             "x": 136,
             "y": 375
           }
@@ -357,7 +357,7 @@
         "chest_opened_img": "images/chests/chest_opened.png",
         "map_locations": [
           {
-            "map": "pazuru-tower-7",
+            "map": "pazuzu-tower-7",
             "x": 264,
             "y": 67
           }

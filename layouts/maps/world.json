@@ -20,11 +20,11 @@
           //   {
           //     "title": "Restored",
           //     "content": {
-                "type": "map",
-                "maps": [
-                  "restored-world"
-                ],
-                "width": 880
+          "type": "map",
+          "maps": [
+            "restored-world"
+          ],
+          "width": 880
           //     }
           //   }
           // ]
@@ -38,489 +38,50 @@
             {
               "title": "Bone Dungeon",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Floor 1",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-1"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor B1",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-2"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor B1a",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-3"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor B2",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-4"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor B2a",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-5"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor B2b",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-6"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor B2c",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-7"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor B2d",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-8"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Boss",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "bone-dungeon-boss"
-                      ]
-                    }
-                  }
-                ]
+                "type": "layout",
+                "key": "maps_bone_dungeon"
               }
             },
             {
               "title": "Ice Pyramid",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Floor 1",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "ice-pyramid-1"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 2",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "ice-pyramid-2"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 3",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "ice-pyramid-3"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 4",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "ice-pyramid-4"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 5",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "ice-pyramid-5"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Basement",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "ice-pyramid-basement"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Boss",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "ice-pyramid-Boss"
-                      ]
-                    }
-                  }
-                ]
+                "type": "layout",
+                "key": "maps_ice_pyramid"
               }
             },
             {
               "title": "Lava Dome",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Outside",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 1",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-1"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 2",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-2"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 3",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-3"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 4",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-5"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 5",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-6"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 6",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-8"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 7",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-9"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Area 8",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "lava-dome-11"
-                      ]
-                    }
-                  }
-                ]
+                "type": "layout",
+                "key": "maps_lava_dome"
               }
             },
             {
               "title": "Giant Tree",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Floor 1",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-1"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 2",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-2"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 2a",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-2a"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 3",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-3"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 3a",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-3a"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 4",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-4"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 4a",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-4a"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor Boss",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "giant-tree-boss"
-                      ]
-                    }
-                  }
-                ]
+                "type": "layout",
+                "key": "maps_giant_tree"
               }
             },
             {
-              "title": "Pazuru's Tower",
+              "title": "Pazuzu's Tower",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Floor 1",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "pazuru-tower-1"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 2",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "pazuru-tower-2"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 3",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "pazuru-tower-3"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 4",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "pazuru-tower-4"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 5",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "pazuru-tower-5"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 6",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "pazuru-tower-6"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 7",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "pazuru-tower-7"
-                      ]
-                    }
-                  }
-                ]
+                "type": "layout",
+                "key": "maps_pazuzu_tower"
               }
             },
             {
               "title": "Mac's Ship",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Floor 1",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "mac-ship-1"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 2",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "mac-ship-2"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 3",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "mac-ship-3"
-                      ]
-                    }
-                  }
-                ]
+                "type": "layout",
+                "key": "maps_macs_ship"
               }
             },
             {
               "title": "Doom Castle",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Basement",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "doom-castle-basement"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 4",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "doom-castle-4"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 5",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "doom-castle-5"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 6",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "doom-castle-6"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Floor 7",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "doom-castle-7"
-                      ]
-                    }
-                  }
-                ]
+                "type": "layout",
+                "key": "maps_doom_castle"
               }
             }
           ]

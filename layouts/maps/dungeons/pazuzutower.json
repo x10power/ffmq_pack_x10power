@@ -1,0 +1,70 @@
+{
+  "maps_pazuzu_tower": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Floor 1",
+        "content": {
+          "type": "map",
+          "maps": [
+            "pazuzu-tower-1"
+          ]
+        }
+      },
+      {
+        "title": "Floor 2",
+        "content": {
+          "type": "map",
+          "maps": [
+            "pazuzu-tower-2"
+          ]
+        }
+      },
+      {
+        "title": "Floor 3",
+        "content": {
+          "type": "map",
+          "maps": [
+            "pazuzu-tower-3"
+          ]
+        }
+      },
+      {
+        "title": "Floor 4",
+        "content": {
+          "type": "map",
+          "maps": [
+            "pazuzu-tower-4"
+          ]
+        }
+      },
+      {
+        "title": "Floor 5",
+        "content": {
+          "type": "map",
+          "maps": [
+            "pazuzu-tower-5"
+          ]
+        }
+      },
+      {
+        "title": "Floor 6",
+        "content": {
+          "type": "map",
+          "maps": [
+            "pazuzu-tower-6"
+          ]
+        }
+      },
+      {
+        "title": "Floor 7",
+        "content": {
+          "type": "map",
+          "maps": [
+            "pazuzu-tower-7"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -87,6 +87,10 @@ if string.find(variant, "map") then
   end
 
   -- Map Layouts
+  -- Dungeon Maps
+  for _, dungMap in pairs(dungeons) do
+    Tracker:AddLayouts("layouts/maps/dungeons/" .. dungMap .. ".json")
+  end
   Tracker:AddLayouts("layouts/maps/world.json")
 
   -- Locations
@@ -114,7 +118,7 @@ if string.find(variant, "map") then
     "wind/main",
     "wind/windia",
     "wind/giant-tree",
-    "wind/pazuru-tower",
+    "wind/pazuzu-tower",
     "wind/mac-ship"
   }
   for _, locCat in ipairs(locations) do

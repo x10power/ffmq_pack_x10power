@@ -472,7 +472,7 @@
         ],
         "sections": [
           {
-            "name": "Moon Helm Chest",
+            "name": "Noble Armor Chest",
             "#type": "chest",
             "item_count": 1
           }
@@ -610,7 +610,7 @@
         ],
         "sections": [
           {
-            "name": "Multiple Baskets",
+            "name": "Knight Sword Chest",
             "#type": "chest",
             "item_count": 1
           }

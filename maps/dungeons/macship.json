@@ -2,16 +2,19 @@
   {
     "name": "Mac-ship-1",
     "img": "images/maps/dungeons/mac-ship/mac-ship-1.png",
+    "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "Mac-ship-2",
     "img": "images/maps/dungeons/mac-ship/mac-ship-2.png",
+    "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "Mac-ship-3",
     "img": "images/maps/dungeons/mac-ship/mac-ship-3.png",
+    "location_border_thickness": 1,
     "location_size": 16
   }
 ]

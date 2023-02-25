@@ -1,0 +1,52 @@
+{
+  "maps_doom_castle": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Basement",
+        "content": {
+          "type": "map",
+          "maps": [
+            "doom-castle-basement"
+          ]
+        }
+      },
+      {
+        "title": "Floor 4",
+        "content": {
+          "type": "map",
+          "maps": [
+            "doom-castle-4"
+          ]
+        }
+      },
+      {
+        "title": "Floor 5",
+        "content": {
+          "type": "map",
+          "maps": [
+            "doom-castle-5"
+          ]
+        }
+      },
+      {
+        "title": "Floor 6",
+        "content": {
+          "type": "map",
+          "maps": [
+            "doom-castle-6"
+          ]
+        }
+      },
+      {
+        "title": "Floor 7",
+        "content": {
+          "type": "map",
+          "maps": [
+            "doom-castle-7"
+          ]
+        }
+      }
+    ]
+  }
+}

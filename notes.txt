@@ -1,0 +1,36 @@
+North of Libra Temple: Requires thawing Aquaria
+Bridge between Volcano & Aquaria: Requires defeating Dualhead Hydra
+Focus Tower: Requires Coins to reach beyond Foresta
+Focus Tower: River Coin -> Fireburg
+Spencer's Place: Enter from Rainbow Bridge with Mega Grenade, Spencer will give his item after the cave is collapsed
+
+Snow Crab: Defeated to get dungeon drop
+Medusa: Defeated to get dungeon drop
+Gidrah: Defeated to get dungeon drop
+Dullahan: Defeated to get dungeon drop
+Medusa has been moved to Mask Chest instead of top of Volcano
+
+Kaeli:
+ Joins with Tree Wither
+ Gives an item if you defeat Minotaur with her
+ Once cured with Elixir
+  Gives an item in Windia
+ Not required for Great Tree
+
+Tristam:
+ Gives an item in Sand Temple
+ Gives an item in Bone Dungeon
+ Gives an item in Fireburg
+
+Phoebe:
+ Found in Libra Temple
+ Gives an item in Wintry Cave
+ No item in Fall Basin
+ Find her in Windia
+
+Reuben:
+ Found in his house in Fireburg
+ Gives an item in the Mine (replaces Phoebe's Fall Basin item)
+
+Wakewater: Now required to thaw Aquaria instead of defeating Ice Golem
+Tristam's Chest: Spencer's Cave has a new chest that requires Venus Key that contains item to replace Tristam's Dragon Claw
