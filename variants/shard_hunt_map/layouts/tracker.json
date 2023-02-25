@@ -4,9 +4,28 @@
     "orientation": "horizontal",
     "content": [
       {
-        "type": "layout",
-        "key": "shard_hunt",
-        "width": 200
+        "type": "dock",
+        "dock": "left",
+        "content": [
+          {
+            "type": "group",
+            "header": "Inventory",
+            "dock": "top",
+            "content": {
+              "type": "layout",
+              "key": "shard_hunt",
+              "width": 200
+            }
+          },
+          {
+            "type": "group",
+            "header": "Pinned Locations",
+            "dock": "top",
+            "content": {
+              "type": "recentpins"
+            }
+          }
+        ]
       },
       {
         "type": "layout",

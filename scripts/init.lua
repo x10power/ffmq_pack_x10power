@@ -16,7 +16,7 @@ if variant == "" then
 end
 
 -- Auto-Tracking
-if (string.find(variant, "items_only")) then
+if (string.find(variant, "items_only") or string.find(variant, "standard_map")) then
   print("Loading Auto-Tracking: " .. variant)
   ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
 end
