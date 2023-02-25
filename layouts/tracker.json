@@ -1,11 +1,7 @@
+// Default tracker view
 {
   "tracker_default": {
-    "type": "container",
-    "h_alignment": "center",
-    "width": 175,
-    "content": {
-      "type": "layout",
-      "key": "shared_item_grid"
-    }
+    "type": "layout",
+    "key": "tracker_horizontal"
   }
 }

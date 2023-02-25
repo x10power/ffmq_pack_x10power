@@ -1,37 +1,7 @@
 {
+  // Default tracker view
   "tracker_default": {
-    "type": "array",
-    "orientation": "horizontal",
-    "content": [
-      {
-        "type": "dock",
-        "dock": "left",
-        "content": [
-          {
-            "type": "group",
-            "header": "Inventory",
-            "dock": "top",
-            "content": {
-              "type": "layout",
-              "key": "shared_item_grid",
-              "width": 200
-            }
-          },
-          {
-            "type": "group",
-            "header": "Pinned Locations",
-            "dock": "top",
-            "content": {
-              "type": "recentpins"
-            }
-          }
-        ]
-      },
-      {
-        "type": "layout",
-        "key": "game_map",
-        "width": 1000
-      }
-    ]
+    "type": "layout",
+    "key": "tracker_horizontal"
   }
 }

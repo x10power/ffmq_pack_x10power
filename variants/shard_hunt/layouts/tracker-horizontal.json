@@ -1,9 +1,8 @@
 {
-  // Broadcast View: Press F2
-  "tracker_broadcast": {
+  // Horizontal: When width of window is greater than height
+  "tracker_horizontal": {
     "type": "container",
     "h_alignment": "center",
-    "width": 175,
     "content": {
       "type": "layout",
       "key": "shard_hunt"

@@ -1,9 +1,9 @@
 {
-  // Broadcast View: Press F2
-  "tracker_broadcast": {
+  // Horizontal: When width of window is greater than height
+  "tracker_horizontal": {
     "type": "container",
     "h_alignment": "center",
-    "width": 150,
+    "width": 175,
     "content": {
       "type": "layout",
       "key": "shared_item_grid"

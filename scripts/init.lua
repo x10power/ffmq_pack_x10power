@@ -137,13 +137,17 @@ end
 if variant ~= "items_only" then
   print("Loading Variant")
   -- Layout Overrides
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-horizontal.json")  -- Horizontal Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-vertical.json")    -- Vertical Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")             -- Main Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")           -- Broadcast View
   print("")
 else
   print("Not a Variant; load default stuff")
   -- Layout Defaults
-  Tracker:AddLayouts("layouts/tracker.json")
-  Tracker:AddLayouts("layouts/broadcast.json")
+  Tracker:AddLayouts("layouts/tracker-horizontal.json") -- Horizontal Tracker
+  Tracker:AddLayouts("layouts/tracker-vertical.json")   -- Vertical Tracker
+  Tracker:AddLayouts("layouts/tracker.json")            -- Main Tracker
+  Tracker:AddLayouts("layouts/broadcast.json")          -- Broadcast View
   print("")
 end
