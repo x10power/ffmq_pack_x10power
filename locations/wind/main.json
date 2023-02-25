@@ -2,12 +2,10 @@
   // Wind: Main
   // Rope Bridge
   // Alive Forest
-  // Giant Tree: FIXME: Obsolete?
   // Kaidge Temple
   // Light Temple
   // Windhole Temple
   // Mount Gale
-  // Pazuzu's Tower: FIXME: Obsolete?
   {
     "name": "Wind",
     "parent": "World",
