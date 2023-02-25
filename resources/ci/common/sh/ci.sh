@@ -1,3 +1,4 @@
+python -m pip install --upgrade pip
 python -m pip install -r "./resources/app/meta/manifests/pip_requirements.txt"
 mkdir ./failures
 echo "" > ./failures/errors.txt
