@@ -6,7 +6,7 @@
   "package_version": "1.0.1.1",
   "package_uid": "ffmq_pack_x10power",
   "platform": "snes",
-  "documentation_url": "",
+  "documentation_url": "https://github.com/x10power/ffmq-rando-tracker/wiki",
   "variants": {
     "items_only": {
       "display_name": "Items-Only",
