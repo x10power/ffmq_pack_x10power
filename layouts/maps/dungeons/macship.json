@@ -3,7 +3,7 @@
     "type": "tabbed",
     "tabs": [
       {
-        "title": "Floor 1",
+        "title": "Deck",
         "content": {
           "type": "map",
           "maps": [
@@ -12,7 +12,7 @@
         }
       },
       {
-        "title": "Floor 2",
+        "title": "Floor B1",
         "content": {
           "type": "map",
           "maps": [
@@ -21,7 +21,7 @@
         }
       },
       {
-        "title": "Floor 3",
+        "title": "Floor B2",
         "content": {
           "type": "map",
           "maps": [

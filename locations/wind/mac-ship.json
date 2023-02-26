@@ -86,7 +86,7 @@
         ],
         "sections": [
           {
-            "name": "Heal Basket",
+            "name": "Bombs Basket",
             "#type": "basket",
             "item_count": 1
           }

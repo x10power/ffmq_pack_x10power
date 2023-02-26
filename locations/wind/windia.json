@@ -32,6 +32,16 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Bombs",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "clear_as_group": false,
             "item_count": 1
           },
           {
@@ -61,6 +71,14 @@
             ],
             "item_count": 2
           },
+          // TODO: Vanilla
+          // {
+          //   "name": "Cupid Locket",
+          //   "#itemtype": "keyitem",
+          //   "access_rules": [
+          //   ],
+          //   "item_count": 1
+          // },
           {
             "name": "Kaeli Check 2",
             "#itemtype": "keyitem",
