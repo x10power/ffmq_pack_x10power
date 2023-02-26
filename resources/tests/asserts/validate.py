@@ -99,14 +99,18 @@ print("VALIDATE")
 srcs = {
     "ffmq": {
         "packUID": "ffmq_pack_x10power",
-        "variants": [
-            "items_only",
-            "shard_hunt",
-            "shard_hunt_map",
-            "standard_map"
-        ]
+        "variants": []
     }
 }
+
+for [gameID, packData] in srcs.items():
+    if os.path.isdir(os.path.join(".", "variants")):
+        srcs[gameID]["variants"] = os.listdir(os.path.join(".", "variants"))
+    else:
+        for folder in os.listdir(os.path.join(".")):
+            if "var_" in folder:
+                thisDir = folder
+                srcs[gameID]["variants"].append(thisDir)
 
 for [gameID, packData] in srcs.items():
     packUID = packData["packUID"]
@@ -127,12 +131,20 @@ for [gameID, packData] in srcs.items():
         check_files(resrcDirs)
 
         for variant in variants:
-            layoutKeyMap = {}
-            resrcDirs = {
-                os.path.join(packRoot, "variants", variant, "items"),
-                os.path.join(packRoot, "variants", variant, "layouts"),
-                os.path.join(packRoot, "variants", variant, "locations"),
-                os.path.join(packRoot, "variants", variant, "maps")
-            }
-            # print(resrcDirs)
-            check_files(resrcDirs)
+            varRoot = packRoot
+            if "var_" in variant:
+                varRoot = os.path.join(varRoot, variant)
+            else:
+                varRoot = os.path.join(varRoot, "variants", variant)
+            if os.path.isdir(varRoot):
+                layoutKeyMap = {}
+                resrcDirs = {
+                    os.path.join(varRoot, "manifest.json"),
+                    os.path.join(varRoot, "repository.json"),
+                    os.path.join(varRoot, "items"),
+                    os.path.join(varRoot, "layouts"),
+                    os.path.join(varRoot, "locations"),
+                    os.path.join(varRoot, "maps")
+                }
+                # print(resrcDirs)
+                check_files(resrcDirs)
