@@ -11,6 +11,7 @@
       {
         "name": "Windia",
         "access_rules": [
+          "rivercoin,mobius",
           "suncoin"
         ],
         "map_locations": [
