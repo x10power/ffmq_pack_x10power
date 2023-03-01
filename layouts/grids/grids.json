@@ -45,17 +45,24 @@
         "type": "tabbed",
         "tabs": [
           {
-            "title": "Progressive",
+            "title": "+++",
             "content": {
               "type": "layout",
               "key": "shared_item_grid_p"
             }
           },
           {
-            "title": "Non-Progressive",
+            "title": "+-+",
             "content": {
               "type": "layout",
               "key": "shared_item_grid_nonp"
+            }
+          },
+          {
+            "title": "0010",
+            "content": {
+              "type": "layout",
+              "key": "shared_item_grid_bin"
             }
           }
         ]

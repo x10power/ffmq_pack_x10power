@@ -16,7 +16,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "bone-dungeon-2"
+            "bone-dungeon-b1"
           ]
         }
       },
@@ -25,7 +25,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "bone-dungeon-3"
+            "bone-dungeon-b1a"
           ]
         }
       },
@@ -34,7 +34,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "bone-dungeon-4"
+            "bone-dungeon-b2"
           ]
         }
       },
@@ -43,7 +43,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "bone-dungeon-5"
+            "bone-dungeon-b2a"
           ]
         }
       },
@@ -52,7 +52,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "bone-dungeon-6"
+            "bone-dungeon-b2b"
           ]
         }
       },
@@ -61,7 +61,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "bone-dungeon-7"
+            "bone-dungeon-b2c"
           ]
         }
       },
@@ -70,7 +70,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "bone-dungeon-8"
+            "bone-dungeon-b2d"
           ]
         }
       },

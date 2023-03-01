@@ -29,14 +29,20 @@
           {
             "name": "Reuben",
             "#type": "keyitem",
-            "access_rules": ["{}"],
+            "access_rules": ["","{}"],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/party/reuben.gif",
             "capture_item": true,
             "hosted_item": "reuben",
             "item_count": 1
           },
           {
             "name": "Tristam",
-            "access_rules": ["{}"],
+            "access_rules": ["","{}"],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/party/tristam.gif",
             "capture_item": true,
             "#vanilla": "multikey",
             "#type": "keyitem",

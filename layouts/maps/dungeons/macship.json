@@ -7,7 +7,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "mac-ship-1"
+            "mac-ship-deck"
           ]
         }
       },
@@ -16,7 +16,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "mac-ship-2"
+            "mac-ship-b1"
           ]
         }
       },
@@ -25,7 +25,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "mac-ship-3"
+            "mac-ship-b2"
           ]
         }
       }

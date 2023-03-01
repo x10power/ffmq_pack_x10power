@@ -1,18 +1,18 @@
 [
   {
-    "name": "Mac-ship-1",
+    "name": "mac-ship-deck",
     "img": "images/maps/dungeons/mac-ship/mac-ship-1.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "Mac-ship-2",
+    "name": "mac-ship-b1",
     "img": "images/maps/dungeons/mac-ship/mac-ship-2.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "Mac-ship-3",
+    "name": "mac-ship-b2",
     "img": "images/maps/dungeons/mac-ship/mac-ship-3.png",
     "location_border_thickness": 1,
     "location_size": 16

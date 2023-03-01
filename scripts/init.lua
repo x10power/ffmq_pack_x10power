@@ -28,6 +28,7 @@ items = {
   "crystals",
   "magics",
   "party",
+  "settings",
   "storymarkers",
   "weapons",
   "toggles"
@@ -59,6 +60,11 @@ grids = {
   "non-progressives/magics",
   "non-progressives/weapons",
   "non-progressives/grids",
+  "binary/armors",
+  "binary/keyitems",
+  "binary/magics",
+  "binary/weapons",
+  "binary/grids",
   "grids"
 }
 for _, gridCat in ipairs(grids) do

@@ -57,21 +57,33 @@
             "item_count": 1
           },
           {
-            "name": "Cure Potions",
-            "clear_as_group": false,
+            "name": "Cure Potion (Center)",
             "#itemtype": "basket",
-            "item_count": 2
+            "item_count": 1
           },
           {
-            "name": "Cure Potion (SE)",
+            "name": "Cure Potion (NW)",
             "access_rules": [
-              "axe"
+              "axe",
+              "kaeli"
             ],
             "#itemtype": "basket",
             "item_count": 1
           },
           {
             "name": "Heal Potion (NE)",
+            "access_rules": [
+              "axe",
+              "kaeli"
+            ],
+            "#itemtype": "basket",
+            "item_count": 1
+          },
+          {
+            "name": "Cure Potion (SE)",
+            "access_rules": [
+              "axe"
+            ],
             "#itemtype": "basket",
             "item_count": 1
           },
@@ -84,9 +96,9 @@
             "item_count": 1
           },
           {
-            "name": "Kaeli Gift 1:",
+            "name": "Kaeli Gift 1 (Defeat Minotaur)",
             "access_rules": [
-              "treewither"
+              "treewither,kaeli"
             ],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
@@ -99,7 +111,10 @@
       // Sand Temple
       {
         "name": "Sand Temple",
-        "access_rules": [],
+        "access_rules": [
+          "vanilla,kaeli:1",
+          "rando"
+        ],
         "map_locations": [
           {
             "map": "drained-world",
@@ -115,9 +130,12 @@
         "sections": [
           {
             "name": "Event Chest",
-            "chest_unopened_img": "images/party/tristam.gif",
-            "#itemtype": "tristam",
-            "#vanilla": "tristam",
+            "access_rules": ["","{}"],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/party/tristam.gif",
+            "capture_item": true,
+            "hosted_item": "tristam",
             "item_count": 1
           }
         ]

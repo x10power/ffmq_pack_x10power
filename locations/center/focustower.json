@@ -4,7 +4,8 @@
     "name": "Focus Tower",
     "parent": "World",
     "access_rules": [
-      // "@Start/Connection"
+      "vanilla, tristam:1",
+      "rando"
     ],
     "children": [
       // Doors

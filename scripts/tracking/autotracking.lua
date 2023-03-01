@@ -116,7 +116,7 @@ function setStateFromValue(value, states, override)
                                 msg = string.lpad(code, 15)
                                 -- print(value,v,code,stage,progressive.CurrentStage)
                                 toggle = Tracker:FindObjectForCode(code .. stage) -- Toggle the toggle
-                                if toggle then
+                                if toggle and not toggle.Active then
                                     toggle.Active = true
                                     msg = string.format(
                                         "%s: Toggling [%d].",
@@ -132,23 +132,27 @@ function setStateFromValue(value, states, override)
                                     dec2bin(value)
                                 )
                                 progressive.CurrentStage = stage  -- Upgrade the progressive
-                                print(msg)
+                                if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+                                    print(msg)
+                                end
                                 setStage = true
                             else  -- Toggle Item
                                 msg = string.lpad(code, 15)
                                 toggle = Tracker:FindObjectForCode(code .. stage)
-                                if toggle then
+                                if toggle and not toggle.Active then
                                     toggle.Active = true
                                     setToggle = true
+                                    msg = string.format(
+                                        "%s: Toggling [%d]. Already set: [%d] | [%s]",
+                                        msg,
+                                        stage,
+                                        progressive.CurrentStage,
+                                        dec2bin(value)
+                                    )
+                                    if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+                                        print(msg)
+                                    end
                                 end
-                                msg = string.format(
-                                    "%s: Toggling [%d]. Already set: [%d] | [%s]",
-                                    msg,
-                                    stage,
-                                    progressive.CurrentStage,
-                                    dec2bin(value)
-                                )
-                                print(msg)
                                 setStage = true
                             end
                         end
@@ -157,21 +161,23 @@ function setStateFromValue(value, states, override)
                     code = state
                     toggle = Tracker:FindObjectForCode(code)
                     msg = string.lpad(code, 15)
-                    if toggle then
+                    if toggle and not toggle.Active then
                         toggle.Active = true
                         setToggle = true
+                        msg = string.format(
+                            "%s: Toggling [%s]. | [%s]",
+                            msg,
+                            "X",
+                            dec2bin(value)
+                        )
+                        if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+                            print(msg)
+                        end
                     end
-                    msg = string.format(
-                        "%s: Toggling [%s]. | [%s]",
-                        msg,
-                        "X",
-                        dec2bin(value)
-                    )
-                    print(msg)
                 end
             end
         end
-        if not setStage and not setToggle then
+        if (not setStage) and (not setToggle) and (value > 0) and AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(
                 string.format(
                     "%s doesn't map to %s | [%s]",

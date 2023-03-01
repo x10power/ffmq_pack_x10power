@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Game Type",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "codes": "gametype",
+    "stages": [
+      {
+        "name": "Vanilla",
+        "img": "images/settings/vanilla.png",
+        "codes": "gametype, vanilla"
+      },
+      {
+        "name": "Rando",
+        "img": "images/settings/chocolate.png",
+        "codes": "gametype, rando"
+      }
+    ]
+  }
+]

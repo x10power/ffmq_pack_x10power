@@ -16,7 +16,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-1"
+            "lava-dome-a1"
           ]
         }
       },
@@ -25,7 +25,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-2"
+            "lava-dome-a2"
           ]
         }
       },
@@ -34,7 +34,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-3"
+            "lava-dome-a3"
           ]
         }
       },
@@ -43,7 +43,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-5"
+            "lava-dome-a4"
           ]
         }
       },
@@ -52,7 +52,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-6"
+            "lava-dome-a5"
           ]
         }
       },
@@ -61,7 +61,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-8"
+            "lava-dome-a6"
           ]
         }
       },
@@ -70,7 +70,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-9"
+            "lava-dome-a7"
           ]
         }
       },
@@ -79,7 +79,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-11"
+            "lava-dome-a8"
           ]
         }
       }

@@ -30,9 +30,14 @@
           {
             "name": "Kaeli's House (Kaeli)",
             "access_rules": [
-              "treewither"
+              "treewither",
+              "{}"
             ],
-            "chest_unopened_img": "images/party/kaeli.gif",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/party/kaeli.gif",
+            "capture_item": true,
+            "hosted_item": "kaeli",
             "#itemtype": "kaeli",
             "#mikerpg": 2,
             "#vanilla": "kaeli",
