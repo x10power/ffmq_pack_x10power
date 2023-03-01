@@ -29,15 +29,18 @@
           {
             "name": "Reuben",
             "#type": "keyitem",
-            "chest_unavailable_img": "images/party/reuben.gif",
-            "chest_unopened_img": "images/party/reuben.gif",
-            "chest_opened_img": "images/party/reuben.gif",
+            "access_rules": ["{}"],
+            "capture_item": true,
+            "hosted_item": "reuben",
             "item_count": 1
           },
           {
             "name": "Tristam",
+            "access_rules": ["{}"],
+            "capture_item": true,
             "#vanilla": "multikey",
             "#type": "keyitem",
+            "hosted_item": "tristam",
             "item_count": 1
           },
           {

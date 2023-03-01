@@ -4,10 +4,10 @@
     "item_margin": "0",
     "rows": [
       [
-        "swords",
-        "axes",
-        "bombs",
-        "claws"
+        "sword",
+        "axe",
+        "bomb",
+        "claw"
       ]
     ]
   }

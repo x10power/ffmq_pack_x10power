@@ -84,8 +84,11 @@
             "name": "Kaeli Check 2",
             "#itemtype": "keyitem",
             "access_rules": [
+              "{}",
               "elixir,kaeli,treewither"
             ],
+            "capture_item": true,
+            "hosted_item": "kaeli",
             "item_count": 1
           }
         ]

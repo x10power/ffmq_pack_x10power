@@ -54,6 +54,11 @@ grids = {
   "party",
   "storymarkers",
   "weapons",
+  "non-progressives/armors",
+  "non-progressives/keyitems",
+  "non-progressives/magics",
+  "non-progressives/weapons",
+  "non-progressives/grids",
   "grids"
 }
 for _, gridCat in ipairs(grids) do
@@ -131,6 +136,7 @@ end
 if variant ~= "items_only" then
   print("Loading Variant")
   -- Layout Overrides
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-capture.json")     -- Capture Grid
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-horizontal.json")  -- Horizontal Tracker
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-vertical.json")    -- Vertical Tracker
   Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")             -- Main Tracker
@@ -139,6 +145,7 @@ if variant ~= "items_only" then
 else
   print("Not a Variant; load default stuff")
   -- Layout Defaults
+  Tracker:AddLayouts("layouts/tracker-capture.json")    -- Capture Grid
   Tracker:AddLayouts("layouts/tracker-horizontal.json") -- Horizontal Tracker
   Tracker:AddLayouts("layouts/tracker-vertical.json")   -- Vertical Tracker
   Tracker:AddLayouts("layouts/tracker.json")            -- Main Tracker

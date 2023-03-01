@@ -1,0 +1,24 @@
+{
+  "shared_item_grid_nonp": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "keyitems_grid_nonp"
+      },
+      {
+        "type": "layout",
+        "key": "magics_grid_nonp"
+      },
+      {
+        "type": "layout",
+        "key": "armors_grid_nonp"
+      },
+      {
+        "type": "layout",
+        "key": "weapons_grid_nonp"
+      }
+    ]
+  }
+}

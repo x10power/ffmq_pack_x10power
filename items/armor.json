@@ -1,4 +1,28 @@
 [
+  // Steel Helm
+  {
+    "name": "Steel Helm",
+    "type": "toggle",
+    "loop": true,
+    "codes": "helmet1",
+    "img": "images/armor/hat/helmet1.png"
+  },
+  // Moon Helm
+  {
+    "name": "Moon Helm",
+    "type": "toggle",
+    "loop": true,
+    "codes": "helmet2",
+    "img": "images/armor/hat/helmet2.png"
+  },
+  // Apollo Helm
+  {
+    "name": "Apollo Helm",
+    "type": "toggle",
+    "loop": true,
+    "codes": "helmet3",
+    "img": "images/armor/hat/helmet3.png"
+  },
   // Helmets
   {
     "name": "Helmets",
@@ -33,6 +57,31 @@
         "secondary_codes": "apollo"
       }
     ]
+  },
+
+  // Steel Armor
+  {
+    "name": "Steel Armor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/armor/armor1.png",
+    "codes": "armor1"
+  },
+  // Noble Armor
+  {
+    "name": "Noble Armor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/armor/armor2.png",
+    "codes": "armor2"
+  },
+  // Gaia's Armor
+  {
+    "name": "Gaia's Armor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/armor/armor3.png",
+    "codes": "armor3"
   },
   // Body Armor
   {
@@ -69,6 +118,31 @@
       }
     ]
   },
+
+  // Steel Shield
+  {
+    "name": "Steel Shield",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/shield/shield1.png",
+    "codes": "shield1"
+  },
+  // Venus Shield
+  {
+    "name": "Venus Shield",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/shield/shield2.png",
+    "codes": "shield2"
+  },
+  // Aegis Shield
+  {
+    "name": "Aegis Shield",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/shield/shield3.png",
+    "codes": "shield3"
+  },
   // Shields
   {
     "name": "Shields",
@@ -103,6 +177,31 @@
         "secondary_codes": "aegis"
       }
     ]
+  },
+
+  // Charm
+  {
+    "name": "Charm",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/accessories/charm.png",
+    "codes": "accessories1"
+  },
+  // Magic Ring
+  {
+    "name": "Magic Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/accessories/magicring.png",
+    "codes": "accessories2"
+  },
+  // Cupid Locket
+  {
+    "name": "Cupid Locket",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/accessories/cupidlocket.png",
+    "codes": "accessories3"
   },
   // Accessories
   {

@@ -1,0 +1,11 @@
+{
+  "weapons_grid_nonp": {
+    "type": "itemgrid",
+    "item_margin": "0",
+    "rows": [
+      [ "sword1", "axe1", "claw1", "bomb1" ],
+      [ "sword2", "axe2", "claw2", "bomb2" ],
+      [ "sword3", "axe3", "claw3", "bomb3" ]
+    ]
+  }
+}

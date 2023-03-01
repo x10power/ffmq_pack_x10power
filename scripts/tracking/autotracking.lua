@@ -46,6 +46,19 @@ function ReadU16(segment, address)
     return U16_READ_CACHE
 end
 
+function bSel(b)
+    return 2 ^ (b - 1)
+end
+
+string.lpad = function(str, len, char)
+    if char == nil then char = " " end
+    return str .. string.rep(char, len - #str)
+end
+string.rpad = function(str, len, char)
+    if char == nil then char = " " end
+    return string.rep(char, len - #str) .. str
+end
+
 function getTableSize(t)
     local count = 0
     for _, __ in pairs(t) do
@@ -54,56 +67,130 @@ function getTableSize(t)
     return count
 end
 
+local h2b = {
+    ['0']='0000', ['1']='0001', ['2']='0010', ['3']='0011',
+    ['4']='0100', ['5']='0101', ['6']='0110', ['7']='0111',
+    ['8']='1000', ['9']='1001', ['A']='1010', ['B']='1011',
+    ['C']='1100', ['D']='1101', ['E']='1110', ['F']='1111'
+}
+function hex2bin(n)
+    local bin = n:upper():gsub(".", h2b)
+    return bin
+end
+function dec2bin(n)
+    local bin = hex2bin(tostring(n):format("%X"))
+    return bin:gsub("(.*)%..*$", "%1"):gsub("....","%1 "):gsub(" $","")
+end
+
 function isInGame()
     return AutoTracker:ReadU8(0x7e0010, 0) > 0x05
 end
 
-function setStateFromValue(value, states)
-    if value then
-        for v, state in pairs(states) do
+function setStateFromValue(value, states, override)
+    if not override then
+        override = false
+    end
+    if value then -- If we have a value
+        setStage = false
+        setToggle = false
+        for v, state in pairs(states) do -- Cycle through the possible bits/stages
             if (value & v) > 0 then
-                if type(state) == "table" then
+                if type(state) == "table" then  -- Progressive Item
                     code = state[1]
-                    obj = Tracker:FindObjectForCode(code)
-                    if obj then
+                    progressive = Tracker:FindObjectForCode(code)
+                    if progressive then
                         stage = state[2]
-                        if obj.CurrentStage then
-                            if stage == obj.CurrentStage then
-                                return
-                            elseif stage > obj.CurrentStage then
-                                print(value,v,code,stage)
-                                obj.CurrentStage = stage
-                            else
-                                print(
-                                    string.format(
-                                        "Would downgrade %s from %d to %d",
-                                        code,
-                                        obj.CurrentStage,
+                        if progressive.CurrentStage or true then
+                            if stage == progressive.CurrentStage then -- Setting again to current stage
+                                msg = string.lpad(code, 15)
+                                msg = string.format(
+                                    "%s is already at %d/%d/%s",
+                                    msg,
+                                    progressive.CurrentStage,
+                                    stage,
+                                    dec2bin(value)
+                                )
+                                -- print(msg)
+                                setStage = true
+                            elseif (stage > progressive.CurrentStage) or override then -- Upgrading
+                                msg = string.lpad(code, 15)
+                                -- print(value,v,code,stage,progressive.CurrentStage)
+                                toggle = Tracker:FindObjectForCode(code .. stage) -- Toggle the toggle
+                                if toggle then
+                                    toggle.Active = true
+                                    msg = string.format(
+                                        "%s: Toggling [%d].",
+                                        msg,
                                         stage
                                     )
+                                    setToggle = true
+                                end
+                                msg = string.format(
+                                    "%s Already set: [%d] | [%s]",
+                                    msg,
+                                    progressive.CurrentStage,
+                                    dec2bin(value)
                                 )
+                                progressive.CurrentStage = stage  -- Upgrade the progressive
+                                print(msg)
+                                setStage = true
+                            else  -- Toggle Item
+                                msg = string.lpad(code, 15)
+                                toggle = Tracker:FindObjectForCode(code .. stage)
+                                if toggle then
+                                    toggle.Active = true
+                                    setToggle = true
+                                end
+                                msg = string.format(
+                                    "%s: Toggling [%d]. Already set: [%d] | [%s]",
+                                    msg,
+                                    stage,
+                                    progressive.CurrentStage,
+                                    dec2bin(value)
+                                )
+                                print(msg)
+                                setStage = true
                             end
                         end
                     end
-                else
+                else  -- Toggle Item
                     code = state
-                    obj = Tracker:FindObjectForCode(code)
-                    if obj then
-                        obj.Active = true
+                    toggle = Tracker:FindObjectForCode(code)
+                    msg = string.lpad(code, 15)
+                    if toggle then
+                        toggle.Active = true
+                        setToggle = true
                     end
+                    msg = string.format(
+                        "%s: Toggling [%s]. | [%s]",
+                        msg,
+                        "X",
+                        dec2bin(value)
+                    )
+                    print(msg)
                 end
             end
+        end
+        if not setStage and not setToggle then
+            print(
+                string.format(
+                    "%s doesn't map to %s | [%s]",
+                    code,
+                    value,
+                    dec2bin(value)
+                )
+            )
         end
     end
 end
 
-function setStatesFromValues(checks, checkStates)
+function setStatesFromValues(checks, checkStates, override)
     for i=0, getTableSize(checks) do
-        setStateFromValue(checks[i], checkStates[i])
+        setStateFromValue(checks[i], checkStates[i], override)
     end
 end
 
-function updatePartyFromMemorySegment(segment)
+function updateActivePartyFromMemorySegment(segment)
     if not isInGame() then
         return false
     end
@@ -116,11 +203,13 @@ function updatePartyFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [0x04]= { "party2", 3 },
-                [0x02]= { "party2", 2 }
+                [bSel(4)]= { "party2", 1 }, -- Kaeli
+                [bSel(3)]= { "party2", 3 }, -- Reuben
+                [bSel(2)]= { "party2", 2 }, -- Phoebe
+                [bSel(1)]= { "party2", 4 }  -- Tristam
             }
         }
-        setStatesFromValues(checks, checkStates)
+        setStatesFromValues(checks, checkStates, true)
     end
 end
 
@@ -138,24 +227,26 @@ function updateWeaponsFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [0x80]= { "swords",  1 },
-                [0x40]= { "swords",  2 },
-                [0x20]= { "swords",  3 },
-                [0x10]= { "axes",    1 },
-                [0x08]= { "axes",    2 },
-                [0x04]= { "axes",    3 },
-                [0x02]= { "claws",   1 },
-                [0x01]= { "claws",   2 }
+                [bSel(8)]= { "sword", 1 },  -- Steel Sword
+                [bSel(7)]= { "sword", 2 },  -- Knight Sword
+                [bSel(6)]= { "sword", 3 },  -- Excalibur
+                [bSel(5)]= { "axe",   1 },  -- Axe
+                [bSel(4)]= { "axe",   2 },  -- Battle Axe
+                [bSel(3)]= { "axe",   3 },  -- Giant's Axe
+                [bSel(2)]= { "claw",  1 },  -- Cat Claw
+                [bSel(1)]= { "claw",  2 }   -- Charm Claw
             },
             {
-                [0x80]= { "claws",   3 },
-                [0x40]= { "bombs",   1 },
-                [0x20]= { "bombs",   2 },
-                [0x10]= { "bombs",   3 }
+                [bSel(8)]= { "claw",  3 },  -- Dragon Claw
+                [bSel(7)]= { "bomb",  1 },  -- Bomb
+                [bSel(6)]= { "bomb",  2 },  -- Jumbo Bomb
+                [bSel(5)]= { "bomb",  3 }   -- Mega Grenade
             }
         }
 
+        print("Weapons")
         setStatesFromValues(checks, checkStates)
+        print("")
     end
 end
 
@@ -172,37 +263,35 @@ function updateArmorFromMemorySegment(segment)
             ReadU8(segment, 0x7e1036),
             ReadU8(segment, 0x7e1037)
         }
-        -- if (armor1 & 0x02) > 0 then Tracker:FindObjectForCode("armors").CurrentStage =  end  -- Relica Armor
-        -- if (armor1 & 0x01) > 0 then Tracker:FindObjectForCode("armors").CurrentStage =  end  -- Mystic Robe
-        -- if (armor2 & 0x80) > 0 then Tracker:FindObjectForCode("armors").CurrentStage =  end  -- Flame Armor
-        -- if (armor2 & 0x40) > 0 then Tracker:FindObjectForCode("armors").CurrentStage =  end  -- Black Robe
-        -- if (armor2 & 0x04) > 0 then Tracker:FindObjectForCode("shield").CurrentStage =  end  -- Ether Shield
         checkStates = {
             {
-                [0x80]= { "helmet", 1 },
-                [0x40]= { "helmet", 2 },
-                [0x20]= { "helmet", 3 },
-                [0x10]= { "armors", 1 },
-                [0x08]= { "armors", 2 },
-                [0x04]= { "armors", 3 },
-                [0x02]= { "armors", 4 },
-                [0x01]= { "armors", 5 }
+                [bSel(8)]= { "helmet",  1 },  -- Steel Helm
+                [bSel(7)]= { "helmet",  2 },  -- Moon Helm
+                [bSel(6)]= { "helmet",  3 },  -- Apollo Helm
+                [bSel(5)]= { "armor",   1 },  -- Steel Armor
+                [bSel(4)]= { "armor",   2 },  -- Noble Armor
+                [bSel(3)]= { "armor",   3 },  -- Gaia's Armor
+                [bSel(2)]= { "armor",   4 },  -- Relica Armor
+                [bSel(1)]= { "armor",   5 }   -- Mystic Robe
             },
             {
-                [0x80]= { "armors",       6 },
-                [0x40]= { "armors",       7 },
-                [0x20]= { "shields",      1 },
-                [0x10]= { "shields",      2 },
-                [0x08]= { "shields",      3 },
-                [0x04]= { "accessories",  1 },
-                [0x02]= { "accessories",  2 }
+                [bSel(8)]= { "armor",       6 },  -- Flame Armor
+                [bSel(7)]= { "armor",       7 },  -- Black Robe
+                [bSel(6)]= { "shield",      1 },  -- Steel Shield
+                [bSel(5)]= { "shield",      2 },  -- Venus Shield
+                [bSel(4)]= { "shield",      3 },  -- Aegis Shield
+                [bSel(3)]= { "shield",      4 },  -- Ether Shield
+                [bSel(2)]= { "accessories", 1 },  -- Charm
+                [bSel(1)]= { "accessories", 2 }   -- Magic Ring
             },
             {
-                [0x80]= { "accessories",  3 }
+                [bSel(8)]= { "accessories",  3 }   -- Cupid Locket
             }
         }
 
+        print("Armors")
         setStatesFromValues(checks, checkStates)
+        print("")
     end
 end
 
@@ -220,24 +309,26 @@ function updateSpellFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [0x80]= "exit",
-                [0x40]= "cure",
-                [0x20]= "heal",
-                [0x10]= "life",
-                [0x08]= "quake",
-                [0x04]= "blizzard",
-                [0x02]= "fire",
-                [0x01]= "aero"
+                [bSel(8)]= "exit",
+                [bSel(7)]= "cure",
+                [bSel(6)]= "heal",
+                [bSel(5)]= "life",
+                [bSel(4)]= "quake",
+                [bSel(3)]= "blizzard",
+                [bSel(2)]= "fire",
+                [bSel(1)]= "aero"
             },
             {
-                [0x80]= "thunder",
-                [0x40]= "white",
-                [0x20]= "meteor",
-                [0x10]= "flare"
+                [bSel(8)]= "thunder",
+                [bSel(7)]= "white",
+                [bSel(6)]= "meteor",
+                [bSel(5)]= "flare"
             }
         }
 
+        print("Spells")
         setStatesFromValues(checks, checkStates)
+        print("")
     end
 end
 
@@ -255,28 +346,30 @@ function updateItemFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [0x80]= "elixir",
-                [0x40]= "treewither",
-                [0x20]= "wakewater",
-                [0x10]= "venuskey",
-                [0x08]= "multikey",
-                [0x04]= "gasmask",
-                [0x02]= "magicmirror",
-                [0x01]= "thunderrock"
+                [bSel(8)]= "elixir",
+                [bSel(7)]= "treewither",
+                [bSel(6)]= "wakewater",
+                [bSel(5)]= "venuskey",
+                [bSel(4)]= "multikey",
+                [bSel(3)]= "gasmask",
+                [bSel(2)]= "magicmirror",
+                [bSel(1)]= "thunderrock"
             },
             {
-                [0x80]= "captaincap",
-                [0x40]= "libra",
-                [0x20]= "gemini",
-                [0x10]= "mobius",
-                [0x08]= "sandcoin",
-                [0x04]= "rivercoin",
-                [0x02]= "suncoin",
-                [0x01]= "skycoin"
+                [bSel(8)]= "captaincap",
+                [bSel(7)]= "libra",
+                [bSel(6)]= "gemini",
+                [bSel(5)]= "mobius",
+                [bSel(4)]= "sandcoin",
+                [bSel(3)]= "rivercoin",
+                [bSel(2)]= "suncoin",
+                [bSel(1)]= "skycoin"
             }
         }
 
+        print("Items")
         setStatesFromValues(checks, checkStates)
+        print("")
     end
 end
 
@@ -291,11 +384,13 @@ function updateShardHuntFromMemorySegment(segment)
       shards = ReadU8(segment, 0x7e0e93)
       -- print(shards)
       -- print(SHARD_COUNT)
+      print("SkyShards")
       Tracker:FindObjectForCode(SHARD_COUNT).AcquiredCount = shards
-  end
+      print("")
+    end
 end
 
-ScriptHost:AddMemoryWatch("FFMQ Potential Party Data", 0x7e004d, 0x1FF, updatePartyFromMemorySegment)
+ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e004d, 0x1FF, updateActivePartyFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Item Data", 0x7e0ea6, 0x1FF, updateItemFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Shard Hunt Data", 0x7e0e93, 0x01, updateShardHuntFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Weapon Data", 0x7e1032, 0x1F0, updateWeaponsFromMemorySegment)
