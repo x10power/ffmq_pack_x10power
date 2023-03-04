@@ -4,7 +4,7 @@
     "name": "Focus Tower",
     "parent": "World",
     "access_rules": [
-      "vanilla, tristam:1",
+      "vanilla, tristam:1, kaelicured",
       "rando"
     ],
     "children": [

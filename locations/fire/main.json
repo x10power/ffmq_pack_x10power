@@ -32,7 +32,7 @@
           {
             "name": "A C Pot",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -42,7 +42,7 @@
           {
             "name": "A H Pot",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -52,14 +52,14 @@
           {
             "name": "Charm Claw",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "item_count": 1
           },
           {
             "name": "Booms",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -69,7 +69,7 @@
           {
             "name": "After Jinn",
             "access_rules": [
-              "claws"
+              "claw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",

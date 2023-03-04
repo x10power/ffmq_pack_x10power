@@ -41,7 +41,7 @@
               {
                 "name": "Floor 1 Baskets (Bombs Require)",
                 "access_rules": [
-                  "suncoin,dragonclaw,bombs"
+                  "suncoin,dragonclaw,bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -151,7 +151,7 @@
           {
             "name": "F1: Top Baskets",
             "access_rules": [
-              "suncoin,dragonclaw,bombs"
+              "suncoin,dragonclaw,bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -266,7 +266,7 @@
           {
             "name": "F4: N Baskets",
             "access_rules": [
-              "suncoin,bombs"
+              "suncoin,bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",

@@ -2,9 +2,94 @@
   // Kaeli Cured
   {
     "name": "Kaeli Cured",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/party/kaeli.gif",
+    "codes": "kaelicured",
+    "stages": [
+      {
+        "name": "Kaeli Normal",
+        "img": "images/party/kaeli.gif",
+        "codes": "kaelinormal"
+      },
+      {
+        "name": "Kaeli Poisoned",
+        "img": "images/party/kaelipoisoned.gif",
+        "codes": "kaelipoisoned, poisoned"
+      },
+      {
+        "name": "Kaeli Cured",
+        "img": "images/party/kaelicured.gif",
+        "codes": "kaelicured, cured"
+      }
+    ]
+  },
+  // Boss: Level Forest
+  {
+    "name": "Boss: Level Forest",
     "type": "toggle",
     "loop": true,
-    "img": "images/party/kaeli.gif",
-    "codes": "kaelicured"
+    "img": "images/bosstokens/levelforest.png",
+    "codes": "boss_levelforest"
+  },
+  // Boss: Bone Dungeon
+  {
+    "name": "Boss: Bone Dungeon",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/bonedungeon.png",
+    "codes": "boss_bonedungeon"
+  },
+  // Boss: Wintry Cave
+  {
+    "name": "Boss: Wintry Cave",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/wintrycave.png",
+    "codes": "boss_wintrycave"
+  },
+  // Boss: Falls Basin
+  {
+    "name": "Boss: Falls Basin",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/fallsbasin.png",
+    "codes": "boss_fallsbasin"
+  },
+  // Boss: Ice Pyramid
+  {
+    "name": "Boss: Ice Pyramid",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/icepyramid.png",
+    "codes": "boss_icepyramid"
+  },
+  {
+    "name": "Restore Aquaria",
+    "type": "progressive",
+    "loop": true,
+    "img": "images/restore_aquaria.png",
+    "allow_disabled": false,
+    "codes": "restore_aquaria",
+    "stages": [
+      {
+        "name": "Aquaria Frozen",
+        "img": "images/restore_aquaria.png",
+        "img_mods": "@disabled",
+        "codes": "restore_aquaria, aquaria_frozen"
+      },
+      {
+        "name": "Aquaria Thawing",
+        "img": "images/restore_aquaria.png",
+        "img_mods": "brightness|0.5",
+        "codes": "aquaria_thawing"
+      },
+      {
+        "name": "Aquaria Restored",
+        "img": "images/restore_aquaria.png",
+        "codes": "aquaria_restored"
+      }
+    ]
   }
 ]

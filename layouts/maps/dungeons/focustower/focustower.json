@@ -1,0 +1,21 @@
+{
+  "maps_focus_tower": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Mac's Ship",
+        "content": {
+          "type": "layout",
+          "key": "maps_macs_ship"
+        }
+      },
+      {
+        "title": "Doom Castle",
+        "content": {
+          "type": "layout",
+          "key": "maps_doom_castle"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "maps_wind": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Giant Tree",
+        "content": {
+          "type": "layout",
+          "key": "maps_giant_tree"
+        }
+      },
+      {
+        "title": "Pazuzu's Tower",
+        "icon": "images/coins/coin_sky.png",
+        "content": {
+          "type": "layout",
+          "key": "maps_pazuzu_tower"
+        }
+      }
+    ]
+  }
+}

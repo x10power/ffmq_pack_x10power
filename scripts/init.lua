@@ -80,10 +80,10 @@ if string.find(variant, "map") then
   -- Dungeon Maps
   dungeons = {
     "bonedungeon",
-    "doomcastle",
-    "gianttree",
     "icepyramid",
     "lavadome",
+    "doomcastle",
+    "gianttree",
     "macship",
     "pazuzutower"
   }
@@ -93,7 +93,21 @@ if string.find(variant, "map") then
 
   -- Map Layouts
   -- Dungeon Maps
-  for _, dungMap in pairs(dungeons) do
+  dungMaps = {
+    "earth/bonedungeon",
+    "earth/earth",
+    "water/icepyramid",
+    "water/water",
+    "fire/lavadome",
+    "fire/fire",
+    "wind/gianttree",
+    "wind/pazuzutower",
+    "wind/wind",
+    "focustower/doomcastle",
+    "focustower/macship",
+    "focustower/focustower"
+  }
+  for _, dungMap in pairs(dungMaps) do
     Tracker:AddLayouts("layouts/maps/dungeons/" .. dungMap .. ".json")
   end
   Tracker:AddLayouts("layouts/maps/world.json")

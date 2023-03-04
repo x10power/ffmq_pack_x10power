@@ -93,7 +93,9 @@ function setStateFromValue(value, states, override)
     if value then -- If we have a value
         setStage = false
         setToggle = false
+        msgs = {}
         for v, state in pairs(states) do -- Cycle through the possible bits/stages
+            msg = ""
             if (value & v) > 0 then
                 if type(state) == "table" then  -- Progressive Item
                     code = state[1]
@@ -102,20 +104,22 @@ function setStateFromValue(value, states, override)
                         stage = state[2]
                         if progressive.CurrentStage or true then
                             if stage == progressive.CurrentStage then -- Setting again to current stage
-                                msg = string.lpad(code, 15)
-                                msg = string.format(
-                                    "%s is already at %d/%d/%s",
-                                    msg,
-                                    progressive.CurrentStage,
-                                    stage,
-                                    dec2bin(value)
-                                )
-                                -- print(msg)
+                                -- msg = string.lpad(code, 15)
+                                -- msg = string.format(
+                                --     "%s is already at %d/%d/%s",
+                                --     msg,
+                                --     progressive.CurrentStage,
+                                --     stage,
+                                --     dec2bin(value)
+                                -- )
                                 setStage = true
                             elseif (stage > progressive.CurrentStage) or override then -- Upgrading
                                 msg = string.lpad(code, 15)
                                 -- print(value,v,code,stage,progressive.CurrentStage)
                                 toggle = Tracker:FindObjectForCode(code .. stage) -- Toggle the toggle
+                                if not toggle then
+                                    toggle = progressive
+                                end
                                 if toggle and not toggle.Active then
                                     toggle.Active = true
                                     msg = string.format(
@@ -132,16 +136,13 @@ function setStateFromValue(value, states, override)
                                     dec2bin(value)
                                 )
                                 progressive.CurrentStage = stage  -- Upgrade the progressive
-                                if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-                                    print(msg)
-                                end
                                 setStage = true
                             else  -- Toggle Item
-                                msg = string.lpad(code, 15)
-                                toggle = Tracker:FindObjectForCode(code .. stage)
-                                if toggle and not toggle.Active then
+                              toggle = Tracker:FindObjectForCode(code .. stage)
+                              if toggle and not toggle.Active then
                                     toggle.Active = true
                                     setToggle = true
+                                    msg = string.lpad(code, 15)
                                     msg = string.format(
                                         "%s: Toggling [%d]. Already set: [%d] | [%s]",
                                         msg,
@@ -149,9 +150,6 @@ function setStateFromValue(value, states, override)
                                         progressive.CurrentStage,
                                         dec2bin(value)
                                     )
-                                    if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-                                        print(msg)
-                                    end
                                 end
                                 setStage = true
                             end
@@ -160,25 +158,26 @@ function setStateFromValue(value, states, override)
                 else  -- Toggle Item
                     code = state
                     toggle = Tracker:FindObjectForCode(code)
-                    msg = string.lpad(code, 15)
                     if toggle and not toggle.Active then
                         toggle.Active = true
                         setToggle = true
+                        msg = string.lpad(code, 15)
                         msg = string.format(
                             "%s: Toggling [%s]. | [%s]",
                             msg,
                             "X",
                             dec2bin(value)
                         )
-                        if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-                            print(msg)
-                        end
                     end
                 end
             end
+            if msg ~= "" then
+                table.insert(msgs, msg)
+            end
         end
-        if (not setStage) and (not setToggle) and (value > 0) and AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-            print(
+        if (not setStage) and (not setToggle) and (value > 0) and AUTOTRACKER_ENABLE_DEBUG_LOGGING and false then
+            table.insert(
+                msgs,
                 string.format(
                     "%s doesn't map to %s | [%s]",
                     code,
@@ -187,12 +186,24 @@ function setStateFromValue(value, states, override)
                 )
             )
         end
+        return msgs
     end
 end
 
-function setStatesFromValues(checks, checkStates, override)
+function setStatesFromValues(label, checks, checkStates, override)
+    printedMsgs = false
     for i=0, getTableSize(checks) do
-        setStateFromValue(checks[i], checkStates[i], override)
+        msgs = setStateFromValue(checks[i], checkStates[i], override)
+        if msgs and (getTableSize(msgs) > 0) then
+            print(label)
+            printedMsgs = true
+            for _, msg in pairs(msgs) do
+                print(msg)
+            end
+        end
+    end
+    if printedMsgs then
+        print("")
     end
 end
 
@@ -204,18 +215,34 @@ function updateActivePartyFromMemorySegment(segment)
     InvalidateReadCaches()
 
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+        -- 0010 1000 Empty  --  40
+        -- 1100 1000 Empty  -- 200
+        -- 0110 1000 Empty  -- 104
+        -- 0111 1000 Kaeli  -- 120
+        -- 0111 0111 Kaeli  -- 119
         checks = {
             ReadU8(segment, 0x7e004d)
         }
         checkStates = {
             {
-                [bSel(4)]= { "party2", 1 }, -- Kaeli
                 [bSel(3)]= { "party2", 3 }, -- Reuben
-                [bSel(2)]= { "party2", 2 }, -- Phoebe
+                [bSel(2)]= { "party2", 1 }, -- Phoebe
                 [bSel(1)]= { "party2", 4 }  -- Tristam
             }
         }
-        setStatesFromValues(checks, checkStates, true)
+        setStatesFromValues("Party", checks, checkStates, true)
+
+        party2 = Tracker:FindObjectForCode("party2")
+        if party2.CurrentStage and party2.CurrentStage <= 1 then
+            maybeKaeli = ReadU8(segment, 0x7e004c)
+            if maybeKaeli >= 110 and maybeKaeli <= 120 then
+                -- Between 110 & 120
+                party2.CurrentStage = 1
+            elseif maybeKaeli <= 40 or maybeKaeli >= 200 then
+                -- <= 40 || >= 200
+                party2.Active = false
+            end
+        end
     end
 end
 
@@ -250,9 +277,7 @@ function updateWeaponsFromMemorySegment(segment)
             }
         }
 
-        print("Weapons")
-        setStatesFromValues(checks, checkStates)
-        print("")
+        setStatesFromValues("Weapons", checks, checkStates)
     end
 end
 
@@ -295,9 +320,7 @@ function updateArmorFromMemorySegment(segment)
             }
         }
 
-        print("Armors")
-        setStatesFromValues(checks, checkStates)
-        print("")
+        setStatesFromValues("Armors", checks, checkStates)
     end
 end
 
@@ -315,14 +338,14 @@ function updateSpellFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [bSel(8)]= "exit",
-                [bSel(7)]= "cure",
-                [bSel(6)]= "heal",
-                [bSel(5)]= "life",
-                [bSel(4)]= "quake",
-                [bSel(3)]= "blizzard",
-                [bSel(2)]= "fire",
-                [bSel(1)]= "aero"
+                [bSel(8)]= "exit",      -- 0x80 128
+                [bSel(7)]= "cure",      -- 0x40  64
+                [bSel(6)]= "heal",      -- 0x20  32
+                [bSel(5)]= "life",      -- 0x10  16
+                [bSel(4)]= "quake",     -- 0x08   8
+                [bSel(3)]= "blizzard",  -- 0x04   4
+                [bSel(2)]= "fire",      -- 0x02   2
+                [bSel(1)]= "aero"       -- 0x01   1
             },
             {
                 [bSel(8)]= "thunder",
@@ -332,9 +355,7 @@ function updateSpellFromMemorySegment(segment)
             }
         }
 
-        print("Spells")
-        setStatesFromValues(checks, checkStates)
-        print("")
+        setStatesFromValues("Spells", checks, checkStates)
     end
 end
 
@@ -373,9 +394,7 @@ function updateItemFromMemorySegment(segment)
             }
         }
 
-        print("Items")
-        setStatesFromValues(checks, checkStates)
-        print("")
+        setStatesFromValues("Items", checks, checkStates)
     end
 end
 
@@ -396,7 +415,7 @@ function updateShardHuntFromMemorySegment(segment)
     end
 end
 
-ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e004d, 0x1FF, updateActivePartyFromMemorySegment)
+ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e004c, 0x03, updateActivePartyFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Item Data", 0x7e0ea6, 0x1FF, updateItemFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Shard Hunt Data", 0x7e0e93, 0x01, updateShardHuntFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Weapon Data", 0x7e1032, 0x1F0, updateWeaponsFromMemorySegment)

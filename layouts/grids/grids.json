@@ -37,10 +37,10 @@
         "type": "layout",
         "key": "party_grid"
       },
-      // {
-      //   "type": "layout",
-      //   "key": "storymarkers_grid"
-      // },
+      {
+        "type": "layout",
+        "key": "storymarkers_grid"
+      },
       {
         "type": "tabbed",
         "tabs": [
@@ -85,10 +85,10 @@
         "type": "layout",
         "key": "party_grid"
       },
-      // {
-      //   "type": "layout",
-      //   "key": "storymarkers_grid"
-      // },
+      {
+        "type": "layout",
+        "key": "storymarkers_grid"
+      },
       {
         "type": "layout",
         "key": "weapons_grid"
@@ -131,10 +131,10 @@
         "type": "layout",
         "key": "party_grid"
       },
-      // {
-      //   "type": "layout",
-      //   "key": "storymarkers_grid"
-      // },
+      {
+        "type": "layout",
+        "key": "storymarkers_grid"
+      },
       {
         "type": "layout",
         "key": "weapons_grid"

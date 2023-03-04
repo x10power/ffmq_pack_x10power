@@ -1,0 +1,15 @@
+{
+  "maps_water": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Ice Pyramid",
+        "icon": "images/coins/coin_river.png",
+        "content": {
+          "type": "layout",
+          "key": "maps_ice_pyramid"
+        }
+      }
+    ]
+  }
+}

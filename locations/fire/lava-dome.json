@@ -42,7 +42,7 @@
               {
                 "name": "Outside Area Basket (Claw Require)",
                 "access_rules": [
-                  "rivercoin,claws"
+                  "rivercoin,claw"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -63,7 +63,7 @@
               {
                 "name": "Area 2 Baskets (Claw Require)",
                 "access_rules": [
-                  "rivercoin,claws"
+                  "rivercoin,claw"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -293,7 +293,7 @@
           {
             "name": "A2: Booms",
             "access_rules": [
-              "rivercoin,claws"
+              "rivercoin,claw"
             ],
             "map_locations": [
               {

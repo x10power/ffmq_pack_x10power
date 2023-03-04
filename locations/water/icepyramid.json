@@ -3,7 +3,8 @@
     "name": "Ice Pyramid",
     "parent": "water",
     "access_rules": [
-      // "@Start/Connection"
+        "sandcoin,vanilla,phoebe:1,boss_fallsbasin",
+        "sandcoin,rando"
     ],
     "children": [
       {
@@ -99,7 +100,7 @@
               {
                 "name": "Floor 5 Baskets (behind switch doors)",
                 "access_rules": [
-                  "sandcoin,swords,claws,bombs"
+                  "sandcoin,swords,claw,bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -110,7 +111,7 @@
               {
                 "name": "Basement Baskets",
                 "access_rules": [
-                  "sandcoin,swords,claws,bombs"
+                  "sandcoin,swords,claw,bombs"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -121,7 +122,7 @@
               {
                 "name": "Basement Chest",
                 "access_rules": [
-                  "sandcoin,swords,claws,bombs"
+                  "sandcoin,swords,claw,bombs"
                 ],
                 "clear_as_group": false,
                 "item_count": 1
@@ -129,7 +130,7 @@
               {
                 "name": "Boss Room Chest",
                 "access_rules": [
-                  "sandcoin,swords,claws,bombs"
+                  "sandcoin,swords,claw,bombs"
                 ],
                 "clear_as_group": false,
                 "item_count": 1
@@ -512,7 +513,7 @@
           {
             "name": "F5: Baskets",
             "access_rules": [
-              "swords,sandcoin,bombs,claws"
+              "swords,sandcoin,bombs,claw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -581,7 +582,7 @@
           {
             "name": "Basement: Baskets",
             "access_rules": [
-              "swords,sandcoin,bombs,claws"
+              "swords,sandcoin,bombs,claw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -604,7 +605,7 @@
           {
             "name": "Basement: Knight Sword",
             "access_rules": [
-              "swords,sandcoin,bombs,claws"
+              "swords,sandcoin,bombs,claw"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -627,7 +628,7 @@
           {
             "name": "Boss: Chest",
             "access_rules": [
-              "swords,sandcoin,bombs,claws"
+              "swords,sandcoin,bombs,claw"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",

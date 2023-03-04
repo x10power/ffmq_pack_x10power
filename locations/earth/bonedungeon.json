@@ -39,7 +39,7 @@
               {
                 "name": "Floor B1 Chest",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "item_count": 1
               },
@@ -54,7 +54,7 @@
               {
                 "name": "Floor B1a Chest",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -64,7 +64,7 @@
               {
                 "name": "Floor B2 Baskets",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -75,7 +75,7 @@
               {
                 "name": "Floor B2a Basket",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -85,7 +85,7 @@
               {
                 "name": "Floor B2b Baskets",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -95,7 +95,7 @@
               {
                 "name": "Floor B2c Baskets",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -105,14 +105,14 @@
               {
                 "name": "Floor B2d Baskets",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Boss Room Baskets",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -123,8 +123,9 @@
               {
                 "name": "Boss Room Chests",
                 "access_rules": [
-                  "bombs"
+                  "bomb"
                 ],
+                "hosted_item": "boss_bonedungeon",
                 "clear_as_group": false,
                 "item_count": 2
               }
@@ -202,7 +203,7 @@
           {
             "name": "B1: Steel Shield",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -246,7 +247,7 @@
           {
             "name": "B1a: Basket",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -269,7 +270,7 @@
           {
             "name": "B2: Basket 1",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -283,7 +284,7 @@
             ],
             "sections": [
               {
-                "name": "Bombs Basket",
+                "name": "bomb Basket",
                 "#type": "chest",
                 "item_count": 1
               }
@@ -292,7 +293,7 @@
           {
             "name": "B2: Basket 2",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -315,7 +316,7 @@
           {
             "name": "B2a: Hidden Room",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -338,7 +339,7 @@
           {
             "name": "B2b: Basket",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -361,7 +362,7 @@
           {
             "name": "B2c: Seed Basket",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -384,7 +385,7 @@
           {
             "name": "B2d: Quake Chest",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -407,7 +408,7 @@
           {
             "name": "Boss: Chests",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -423,6 +424,7 @@
               {
                 "name": "Sand Coin",
                 "#type": "chest",
+                "hosted_item": "boss_bonedungeon",
                 "item_count": 1
               },
               {
@@ -435,7 +437,7 @@
           {
             "name": "Boss: Baskets",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",

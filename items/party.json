@@ -53,7 +53,7 @@
   // Party Member 2
   {
     "name": "Party Member 2",
-    "type": "progressive",
+    "type": "progressive_toggle",
     "loop": true,
     "codes": "pm",
     "stages": [

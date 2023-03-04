@@ -4,7 +4,26 @@
     "item_margin": "0",
     "rows": [
       [
-        "kaeli:2"
+        "kaelicured",
+        "restore_aquaria"
+      ],
+      [
+        "boss_levelforest",
+        "boss_bonedungeon"
+      ],
+      [
+        "boss_wintrycave",
+        "boss_fallsbasin",
+        "boss_icepyramid"
+      ],
+      [
+        "boss_volcano",
+        "boss_lavadome"
+      ],
+      [
+        "boss_gianttree",
+        "boss_mountgale",
+        "boss_pazuzutower"
       ]
     ]
   }

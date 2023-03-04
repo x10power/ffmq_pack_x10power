@@ -49,7 +49,7 @@ end
 -- As an example of how to use the main functions, for accessing the fire area:
 
 -- Without these scripts:
--- "access_rules": [ "rivercoin", "sandcoin,geminicrest", "suncoin,multikey,claws,mobiuscrest" ]
+-- "access_rules": [ "rivercoin", "sandcoin,geminicrest", "suncoin,multikey,claw,mobiuscrest" ]
 
 -- With these scripts:
 -- "access_rules": [ "rivercoin", "$warp_fire" ]

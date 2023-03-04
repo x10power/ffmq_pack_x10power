@@ -169,7 +169,7 @@
           {
             "name": "Cure Potions",
             "access_rules": [
-              "claws"
+              "claw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",

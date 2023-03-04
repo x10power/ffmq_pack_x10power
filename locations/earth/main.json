@@ -104,6 +104,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
             "#itemtype": "kaeli",
+            "hosted_item": "boss_levelforest",
             "item_count": 1
           }
         ]
@@ -112,7 +113,7 @@
       {
         "name": "Sand Temple",
         "access_rules": [
-          "vanilla,kaeli:1",
+          "vanilla,boss_levelforest",
           "rando"
         ],
         "map_locations": [

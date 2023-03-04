@@ -10,14 +10,13 @@
     "name": "Water",
     "parent": "World",
     "access_rules": [
-      // "@Start/Connection"
+      "sandcoin"
     ],
     "children": [
       // Libra Temple
       {
         "name": "Libra Temple",
         "access_rules": [
-          "sandcoin"
         ],
         "map_locations": [
           {
@@ -34,9 +33,16 @@
         "sections": [
           {
             "name": "Phoebe",
-            "chest_unopened_img": "images/party/phoebe.gif",
-            "chest_opened_img": "images/party/phoebe.gif",
             "#type": "keyitem",
+            "access_rules": [
+              "",
+              "{}"
+            ],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/party/phoebe.gif",
+            "capture_item": true,
+            "hosted_item": "phoebe",
             "item_count": 1
           },
           {
@@ -52,7 +58,8 @@
       {
         "name": "Wintry Cave",
         "access_rules": [
-          "sandcoin"
+          "vanilla,phoebe:1",
+          "rando"
         ],
         "map_locations": [
           {
@@ -73,9 +80,7 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "sandcoin"
-            ],
+            "access_rules": [],
             "item_count": 1
           },
           {
@@ -83,9 +88,7 @@
             "chest_unopened_img": "images/party/phoebe.gif",
             "#itemtype": "keyitem",
             "#vanilla": "claw",
-            "access_rules": [
-              "Phoebe,sandcoin"
-            ],
+            "access_rules": [],
             "item_count": 1
           },
           {
@@ -94,6 +97,9 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "#itemtype": "basket",
+            "access_rules": [
+              "claw"
+            ],
             "item_count": 1
           },
           //Bombs Require
@@ -103,7 +109,7 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "#itemtype": "basket",
             "item_count": 1
@@ -114,7 +120,7 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "bombs"
+              "bomb"
             ],
             "#itemtype": "basket",
             "item_count": 1
@@ -122,7 +128,7 @@
           {
             "name": "Refreshers",
             "access_rules": [
-              "claws"
+              "claw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -136,7 +142,7 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "claws"
+              "claw"
             ],
             "#itemtype": "basket",
             "item_count": 2
@@ -147,7 +153,7 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "bombs,claws"
+              "bomb,claw"
             ],
             "#itemtype": "basket",
             "item_count": 1
@@ -158,7 +164,7 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "bombs,claws"
+              "bomb,claw"
             ],
             "#itemtype": "basket",
             "item_count": 1
@@ -169,7 +175,7 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "bombs,claws"
+              "bomb,claw"
             ],
             "#itemtype": "basket",
             "item_count": 1
@@ -179,10 +185,11 @@
             "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
             "access_rules": [
-              "bombs,claws"
+              "bomb,claw"
             ],
             "#note": "Gives Libra Crest in vanilla",
             "#type": "keyitem",
+            "hosted_item": "boss_wintrycave",
             "item_count": 1
           }
         ]
@@ -191,7 +198,7 @@
       {
         "name": "Life Temple",
         "access_rules": [
-          "libracrest,sandcoin"
+          "libracrest"
         ],
         "map_locations": [
           {
@@ -228,7 +235,8 @@
       {
         "name": "Falls Basin",
         "access_rules": [
-          "sandcoin"
+          "vanilla,phoebe:1,boss_wintrycave,aquaria_thawing",
+          "rando"
         ],
         "map_locations": [
           {
@@ -252,11 +260,23 @@
             "item_count": 1
           },
           {
+            "name": "Heal",
+            "#itemtype": "keyitem",
+            "item_count": 1
+          },
+          {
+            "name": "Phoebe Gift",
+            "chest_unavailable_img": "images/party/phoebe.gif",
+            "chest_unopened_img": "images/party/phoebe.gif",
+            "item_count": 1
+          },
+          {
             "name": "Snow Crab",
             "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
             "#vanilla": "bomb2",
             "#type": "keyitem",
+            "hosted_item": "boss_fallsbasin",
             "item_count": 1
           }
         ]
@@ -264,7 +284,9 @@
       // Spencer's Place
       {
         "name": "Spencer's Place",
-        "access_rules": [],
+        "access_rules": [
+          "rivercoin"
+        ],
         "map_locations": [
           {
             "map": "drained-world",

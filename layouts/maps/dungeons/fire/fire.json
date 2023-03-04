@@ -1,0 +1,15 @@
+{
+  "maps_fire": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Lava Dome",
+        "icon": "images/coins/coin_sun.png",
+        "content": {
+          "type": "layout",
+          "key": "maps_lava_dome"
+        }
+      }
+    ]
+  }
+}

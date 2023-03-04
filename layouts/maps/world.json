@@ -36,52 +36,43 @@
           "type": "tabbed",
           "tabs": [
             {
-              "title": "Bone Dungeon",
+              "title": "Earth",
+              "icon": "images/crystals/crystal_earth.png",
               "content": {
                 "type": "layout",
-                "key": "maps_bone_dungeon"
+                "key": "maps_earth"
               }
             },
             {
-              "title": "Ice Pyramid",
+              "title": "Water",
+              "icon": "images/crystals/crystal_water.png",
               "content": {
                 "type": "layout",
-                "key": "maps_ice_pyramid"
+                "key": "maps_water"
               }
             },
             {
-              "title": "Lava Dome",
+              "title": "Fire",
+              "icon": "images/crystals/crystal_fire.png",
               "content": {
                 "type": "layout",
-                "key": "maps_lava_dome"
+                "key": "maps_fire"
               }
             },
             {
-              "title": "Giant Tree",
+              "title": "Wind",
+              "icon": "images/crystals/crystal_wind.png",
               "content": {
                 "type": "layout",
-                "key": "maps_giant_tree"
+                "key": "maps_wind"
               }
             },
             {
-              "title": "Pazuzu's Tower",
+              "title": "Focus Tower",
+              "icon": "images/crystals/crystal_light.png",
               "content": {
                 "type": "layout",
-                "key": "maps_pazuzu_tower"
-              }
-            },
-            {
-              "title": "Mac's Ship",
-              "content": {
-                "type": "layout",
-                "key": "maps_macs_ship"
-              }
-            },
-            {
-              "title": "Doom Castle",
-              "content": {
-                "type": "layout",
-                "key": "maps_doom_castle"
+                "key": "maps_focus_tower"
               }
             }
           ]

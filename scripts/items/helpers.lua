@@ -27,7 +27,7 @@ function pazuzuSeven()
         return true
       end
       if getAmount("pazuzu") >= 4 then
-        return has("bombs")
+        return has("bomb")
       end
     end
   end

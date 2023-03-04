@@ -29,32 +29,29 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "codes": "swords, sword",
+    "codes": "sword, swords",
     "stages": [
       {
         "name": "No Sword",
         "img": "images/inventory/weapons/sword1.png",
         "img_mods": "@disabled",
-        "codes": "swords, sword, sword0",
+        "codes": "swords",
         "secondary_codes": "none"
       },
       {
         "name": "Steel Sword",
         "img": "images/inventory/weapons/sword1.png",
-        "codes": "sword1, steelsword",
-        "secondary_codes": "steel"
+        "codes": "sword1, steelsword, sword"
       },
       {
         "name": "Knight Sword",
         "img": "images/inventory/weapons/sword2.png",
-        "codes": "sword2, knightsword",
-        "secondary_codes": "knight"
+        "codes": "sword2, knightsword"
       },
       {
         "name": "Excalibur",
         "img": "images/inventory/weapons/sword3.png",
-        "codes": "sword3, excalibur",
-        "secondary_codes": "excalibur"
+        "codes": "sword3, excalibur"
       }
     ]
   },
@@ -145,35 +142,35 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "codes": "bombs",
+    "codes": "bomb, bombs",
     "stages": [
       {
         "name": "No Bombs",
         "img": "images/inventory/weapons/bomb1.png",
         "img_mods": "@disabled",
-        "codes": "bomb0"
+        "codes": "bombs"
       },
       {
         "name": "Bomb",
         "img": "images/inventory/weapons/bomb1.png",
-        "codes": "bomb1, bomb, bombs"
+        "codes": "bomb1, bomb"
       },
       {
         "name": "Jumbo Bomb",
         "img": "images/inventory/weapons/bomb2.png",
-        "codes": "bomb2, jumbobomb, jumbo, jumbos"
+        "codes": "bomb2, jumbobomb"
       },
       {
         "name": "Mega Grenade",
         "img": "images/inventory/weapons/bomb3.png",
-        "codes": "bomb3, megagrenade, megas"
+        "codes": "bomb3, megagrenade"
       }
     ]
   },
 
-  // Cat Claws
+  // Cat claw
   {
-    "name": "Cat Claws",
+    "name": "Cat claw",
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/weapons/claw1.png",
@@ -195,38 +192,34 @@
     "img": "images/inventory/weapons/claw3.png",
     "codes": "claw3"
   },
-  // Claws
+  // claw
   {
-    "name": "Claws",
+    "name": "claw",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "codes": "claws, claw",
+    "codes": "claw, claws",
     "stages": [
       {
-        "name": "No Claws",
+        "name": "No claw",
         "img": "images/inventory/weapons/claw1.png",
         "img_mods": "@disabled",
-        "codes": "claws, claw",
-        "secondary_codes": "none"
+        "codes": "claws"
       },
       {
-        "name": "Cat Claws",
+        "name": "Cat claw",
         "img": "images/inventory/weapons/claw1.png",
-        "codes": "claw1, catclaw, catclaws, claws",
-        "secondary_codes": "cat"
+        "codes": "claw1, catclaw, claw"
       },
       {
         "name": "Charm Claw",
         "img": "images/inventory/weapons/claw2.png",
-        "codes": "claw2, charmclaw, charmclaws",
-        "secondary_codes": "charm"
+        "codes": "claw2, charmclaw"
       },
       {
         "name": "Dragon Claw",
         "img": "images/inventory/weapons/claw3.png",
-        "codes": "claw3, dragonclaw, dragonclaws",
-        "secondary_codes": "dragon"
+        "codes": "claw3, dragonclaw"
       }
     ]
   }
