@@ -1,5 +1,5 @@
-// Default tracker view
 {
+  // Default tracker view
   "tracker_default": {
     "type": "layout",
     "key": "tracker_horizontal"
