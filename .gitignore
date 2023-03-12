@@ -16,6 +16,8 @@ __pycache__/
 # But do keep manifest, repository schema
 !/schema/manifest.json
 !/schema/repository.json
+# Layouts is bugged again
+!/schema/layouts.json
 
 # no get pip
 get-pip.py
