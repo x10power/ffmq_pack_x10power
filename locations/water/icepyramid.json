@@ -132,6 +132,7 @@
                 "access_rules": [
                   "sandcoin,swords,claw,bombs"
                 ],
+                "hosted_item": "boss_icepyramid",
                 "clear_as_group": false,
                 "item_count": 1
               }

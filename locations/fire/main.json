@@ -211,6 +211,7 @@
           {
             "name": "Medusa Chest",
             "#type": "keyitem",
+            "hosted_item": "boss_volcano",
             "item_count": 1
           }
         ]

@@ -278,6 +278,7 @@
             "access_rules": [
               "dragonclaw"
             ],
+            "hosted_item": "boss_mountgale",
             "#type": "keyitem",
             "item_count": 1
           }

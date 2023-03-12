@@ -25,6 +25,7 @@ get-pip.py
 # no custom files
 custom/
 failures/
+resources/ci/dev/datafiles/output
 resources/user/**/**
 resources/tests/output
 resources/tmp/*

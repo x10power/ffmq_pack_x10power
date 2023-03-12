@@ -127,6 +127,7 @@
                 "access_rules": [
                   "suncoin,dragonclaw,swords,axe"
                 ],
+                "hosted_item": "boss_gianttree",
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
