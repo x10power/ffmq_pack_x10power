@@ -1,3 +1,4 @@
+# pylint: disable=invalid-name
 """Gathers item codes for location testing"""
 
 import os
@@ -29,6 +30,7 @@ for filename in os.listdir(dirname):
                         codes += itemCodes
                     else:
                         print(f"Codes not defined for '{item['name']}'")
+                        continue
                     if "stages" in item:
                         for stage in item["stages"]:
                             for code in ["codes", "secondary_codes"]:

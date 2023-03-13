@@ -79,7 +79,7 @@
           {
             "name": "Reuben Gift",
             "access_rules": [
-              "Reuben"
+              "reuben"
             ],
             "item_count": 1
           }

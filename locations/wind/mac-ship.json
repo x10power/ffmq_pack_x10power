@@ -13,7 +13,7 @@
           {
             "name": "Mac's Ship",
             "access_rules": [
-              "thunderrock,mobius,megas,suncoin"
+              "thunderrock,mobius,megagrenade,suncoin"
             ],
             "map_locations": [
               {
@@ -80,7 +80,7 @@
           {
             "name": "Deck: Bottom Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas"
+              "suncoin,thunderrock,megagrenade"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -103,7 +103,7 @@
           {
             "name": "Deck: Middle Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas"
+              "suncoin,thunderrock,megagrenade"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -126,7 +126,7 @@
           {
             "name": "Deck: Top Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas"
+              "suncoin,thunderrock,megagrenade"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -149,7 +149,7 @@
           {
             "name": "B1: NW Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,dragonclaw"
+              "suncoin,thunderrock,megagrenade,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -172,7 +172,7 @@
           {
             "name": "B1: N Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,dragonclaw"
+              "suncoin,thunderrock,megagrenade,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -195,7 +195,7 @@
           {
             "name": "B1: Hallway Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,dragonclaw"
+              "suncoin,thunderrock,megagrenade,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -218,7 +218,7 @@
           {
             "name": "B1: Mac's Chest",
             "access_rules": [
-              "suncoin,thunderrock,megas,dragonclaw"
+              "suncoin,thunderrock,megagrenade,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -241,7 +241,7 @@
           {
             "name": "B2: NW Double Baskets",
             "access_rules": [
-              "suncoin,thunderrock,megas,dragonclaw"
+              "suncoin,thunderrock,megagrenade,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -264,7 +264,7 @@
           {
             "name": "B2: SW Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,dragonclaw"
+              "suncoin,thunderrock,megagrenade,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -287,7 +287,7 @@
           {
             "name": "B2: SE Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,dragonclaw"
+              "suncoin,thunderrock,megagrenade,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",

@@ -103,7 +103,7 @@
               {
                 "name": "Area 4 Basket (Megas Required)",
                 "access_rules": [
-                  "rivercoin,megas"
+                  "rivercoin,megagrenade"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -113,7 +113,7 @@
               {
                 "name": "Area 4 Chest (Megas Required)",
                 "access_rules": [
-                  "rivercoin,megas"
+                  "rivercoin,megagrenade"
                 ],
                 "item_count": 1
               },
@@ -317,7 +317,7 @@
           {
             "name": "A2: Life",
             "access_rules": [
-              "rivercoin,megas"
+              "rivercoin,megagrenade"
             ],
             "map_locations": [
               {
@@ -383,7 +383,7 @@
           {
             "name": "A4: Potion",
             "access_rules": [
-              "rivercoin,megas"
+              "rivercoin,megagrenade"
             ],
             "map_locations": [
               {
@@ -406,7 +406,7 @@
           {
             "name": "A4: Moon Helm",
             "access_rules": [
-              "rivercoin,megas"
+              "rivercoin,megagrenade"
             ],
             "map_locations": [
               {

@@ -22,7 +22,9 @@ end
 
 function pazuzuSeven()
   if getAmount("pazuzu") > 0 then
-    if has("suncoin") and has("dragonclaw") and has("axe") then
+    if has("suncoin") and
+      has("dragonclaw") and
+      has("axe") then
       if getAmount("pazuzu") <= 3 then
         return true
       end
