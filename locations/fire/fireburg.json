@@ -79,9 +79,9 @@
             "item_count": 1
           },
           {
-            "name": "Rueben's Dad",
+            "name": "Reuben's Dad",
             "access_rules": [
-              "megas"
+              "megagrenade"
             ],
             "#type": "keyitem",
             "item_count": 1

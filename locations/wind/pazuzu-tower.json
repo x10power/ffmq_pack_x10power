@@ -116,6 +116,7 @@
                 "access_rules": [
                   "$pazuzuSeven"
                 ],
+                "hosted_item": "boss_pazuzutower",
                 "item_count": 1
               }
             ]

@@ -33,6 +33,15 @@
     "img": "images/bosstokens/levelforest.png",
     "codes": "boss_levelforest"
   },
+  // Boss: Sand Temple
+  {
+    "name": "Boss: Sand Temple",
+    "type": "toggle",
+    "initial_active_state": true,
+    "ignore_user_input": true,
+    "img": "images/bosstokens/sandtemple.png",
+    "codes": "boss_sandtemple"
+  },
   // Boss: Bone Dungeon
   {
     "name": "Boss: Bone Dungeon",
@@ -64,6 +73,54 @@
     "loop": true,
     "img": "images/bosstokens/icepyramid.png",
     "codes": "boss_icepyramid"
+  },
+  // Boss: Mine
+  {
+    "name": "Boss: Mine",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/mine.png",
+    "codes": "boss_mine"
+  },
+  // Boss: Volcano
+  {
+    "name": "Boss: Volcano",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/volcano.png",
+    "codes": "boss_volcano"
+  },
+  // Boss: Lava Dome
+  {
+    "name": "Boss: Lava Dome",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/lavadome.png",
+    "codes": "boss_lavadome"
+  },
+  // Boss: Giant Tree
+  {
+    "name": "Boss: Giant Tree",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/gianttree.png",
+    "codes": "boss_gianttree"
+  },
+  // Boss: Mount Gale
+  {
+    "name": "Boss: Mount Gale",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/mountgale.png",
+    "codes": "boss_mountgale"
+  },
+  // Boss: Pazuzu's Tower
+  {
+    "name": "Boss: Pazuzu's Tower",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/pazuzutower.png",
+    "codes": "boss_pazuzutower"
   },
   {
     "name": "Restore Aquaria",

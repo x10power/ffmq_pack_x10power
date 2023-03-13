@@ -53,7 +53,7 @@
               {
                 "name": "Floor 4 Baskets",
                 "access_rules": [
-                  "swords,megas,dragonclaw"
+                  "swords,megagrenade,dragonclaw"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -64,7 +64,7 @@
               {
                 "name": "Floor 5 Baskets",
                 "access_rules": [
-                  "swords,megas,dragonclaw"
+                  "swords,megagrenade,dragonclaw"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -75,7 +75,7 @@
               {
                 "name": "Floor 6 Baskets",
                 "access_rules": [
-                  "swords,megas,dragonclaw"
+                  "swords,megagrenade,dragonclaw"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -86,7 +86,7 @@
               {
                 "name": "Floor 7 Baskets",
                 "access_rules": [
-                  "swords,megas,dragonclaw"
+                  "swords,megagrenade,dragonclaw"
                 ],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -104,7 +104,7 @@
           {
             "name": "Basement: Aegis Shield",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap"
+              "suncoin,thunderrock,megagrenade,captaincap"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -127,7 +127,7 @@
           {
             "name": "Basement: Bottom Layer Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap"
+              "suncoin,thunderrock,megagrenade,captaincap"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -150,7 +150,7 @@
           {
             "name": "Basement: Top Layer Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap"
+              "suncoin,thunderrock,megagrenade,captaincap"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -173,7 +173,7 @@
           {
             "name": "F4: SE Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -196,7 +196,7 @@
           {
             "name": "F4: NE Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -219,7 +219,7 @@
           {
             "name": "F4: SW Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -242,7 +242,7 @@
           {
             "name": "F4: NW Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -265,7 +265,7 @@
           {
             "name": "F5: Top Baskets",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -288,7 +288,7 @@
           {
             "name": "F5: Bottom Baskets",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -311,7 +311,7 @@
           {
             "name": "F6: SE Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -334,7 +334,7 @@
           {
             "name": "F6: NE Basket",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -357,7 +357,7 @@
           {
             "name": "F7: Free Items",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -380,7 +380,7 @@
           {
             "name": "F7: Free Items",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -403,7 +403,7 @@
           {
             "name": "F7: Free Items",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",
@@ -426,7 +426,7 @@
           {
             "name": "F7: Free Items",
             "access_rules": [
-              "suncoin,thunderrock,megas,captaincap,skycoin,dragonclaw"
+              "suncoin,thunderrock,megagrenade,captaincap,skycoin,dragonclaw"
             ],
             "chest_unavailable_img": "images/chests/chest_available.png",
             "chest_unopened_img": "images/chests/chest_available.png",

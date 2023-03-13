@@ -57,9 +57,11 @@ with urllib.request.urlopen(url, context=context) as rooms_req:
         # if this room has objects
         if len(room["game_objects"]):
             # assume not a dungeon
+            # assume overworld
             # get ID
             # get name
             is_dungeon = False
+            room_type = "overworld"
             room_id = room["id"]
             room_name = room["name"]
 
@@ -156,7 +158,14 @@ with urllib.request.urlopen(url, context=context) as rooms_req:
                         expr = (f"{item}:{q}")
                     new_access.append(expr)
                 # create room object object
-                room_obj = {
+                ow_room_obj = {
+                    "name": obj["name"],
+                    "type": obj["type"],
+                    "access_rules": [
+                        ",".join(new_access).lower()
+                    ]
+                }
+                uw_room_obj = {
                     "name": obj["name"],
                     "type": obj["type"],
                     "access_rules": [
@@ -164,40 +173,39 @@ with urllib.request.urlopen(url, context=context) as rooms_req:
                     ],
                     "map_locations": []
                 }
-                if is_dungeon:
-                    room_obj["name"] = (f"{room_name} - {obj['name']}")
-                    map_floor = region_data["name"].lower().replace(" ", "-")
-                    pattern = r"(?:[\s])([B\d|\dF]{2})(?:[\s])"
-                    match = re.search(pattern, " " + room_name + " ")
-                    if match:
-                        map_floor = (f"{map_floor}-{match.group(1).lower()}")
-                    else:
-                        print(f"{room_name} - {map_floor}")
-                    room_obj["map_locations"].append(
-                        {
-                            "map": map_floor,
-                            "x": 0,
-                            "y": 0
-                        }
-                    )
+                uw_room_obj["name"] = (f"{room_name} - {obj['name']}")
+                uw_room_obj["name"] = uw_room_obj["name"].replace(room_tag, "").strip()
+                map_floor = region_data["name"].lower().replace(" ", "-")
+                pattern = r"(?:[\s])([B\d|\dF]{2})(?:[\s])"
+                match = re.search(pattern, " " + room_name + " ")
+                if match:
+                    map_floor = (f"{map_floor}-{match.group(1).lower()}")
                 else:
-                    room_obj["map_locations"] = [
-                        {
-                            "map": "drained-world",
-                            "x": 0,
-                            "y": 0
-                        },
-                        {
-                            "map": "restored-world",
-                            "x": 0,
-                            "y": 0
-                        }
-                    ]
-                if room_obj["type"] == "Box":
-                    room_obj["chest_unavailable_img"] = "images/chests/basket_available.png"
-                    room_obj["chest_unopened_img"] = "images/chests/basket_available.png"
-                    room_obj["chest_opened_img"] = "images/chests/basket_opened.png"
-                room_obj["sections"] = [
+                    print(f"{room_name} - {map_floor}")
+                uw_room_obj["map_locations"].append(
+                    {
+                        "map": map_floor,
+                        "x": 0,
+                        "y": 0
+                    }
+                )
+                # ow_room_obj["map_locations"] = [
+                #     {
+                #         "map": "drained-world",
+                #         "x": 0,
+                #         "y": 0
+                #     },
+                #     {
+                #         "map": "restored-world",
+                #         "x": 0,
+                #         "y": 0
+                #     }
+                # ]
+                if uw_room_obj["type"] == "Box":
+                    uw_room_obj["chest_unavailable_img"] = "images/chests/basket_available.png"
+                    uw_room_obj["chest_unopened_img"] = "images/chests/basket_available.png"
+                    uw_room_obj["chest_opened_img"] = "images/chests/basket_opened.png"
+                uw_room_obj["sections"] = [
                     {
                         "name": obj["type"],
                         "item_count": 1
@@ -211,12 +219,12 @@ with urllib.request.urlopen(url, context=context) as rooms_req:
                 if is_dungeon:
                     #  add underworld listing
                     #  which is full-size per floor
-                    if " - " in room_obj["name"]:
-                        room_obj["name"] = room_obj["name"][room_obj["name"].rfind(" - ") + len(" - "):]
-                    groups[room_tag]["children"][1]["children"].append(room_obj)
+                    if " - " in uw_room_obj["name"]:
+                        uw_room_obj["name"] = uw_room_obj["name"][uw_room_obj["name"].rfind(" - ") + len(" - "):]
+                    groups[room_tag]["children"][1]["children"].append(uw_room_obj)
                     # add overworld listing,
                     #  which is shorthand name, small-size at root
-                    groups[room_tag]["children"][0]["children"][0]["sections"].append(room_obj)
+                    groups[room_tag]["children"][0]["children"][0]["sections"].append(ow_room_obj)
 
             #     if is_dungeon:
             #         region_data["children"][0]["children"].append(room_obj)

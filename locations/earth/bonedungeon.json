@@ -3,6 +3,7 @@
   {
     "name": "Bone Dungeon",
     "parent": "Earth",
+    "type": "Dungeon",
     "access_rules": [
       "vanilla, tristam:1",
       "rando"

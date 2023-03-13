@@ -322,7 +322,7 @@
             "name": "Mobius Crest",
             "#itemtype": "basket",
             "access_rules": [
-              "suncoin,mobius,megas"
+              "suncoin,mobius,megagrenade"
             ],
             "#type": "keyitem",
             "item_count": 1
