@@ -215,9 +215,9 @@
             "access_rules": [
               "suncoin,axe,dragonclaw,swords"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "giant-tree-2",

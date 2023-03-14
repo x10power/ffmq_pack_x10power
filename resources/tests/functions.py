@@ -11,6 +11,20 @@ import commentjson
 items = []
 funcs = []
 itemToFunc = {}
+images = []
+
+with open(
+    os.path.join(
+        ".",
+        "resources",
+        "tests",
+        "output",
+        "imageFiles.json"
+    ),
+    "r",
+    encoding="utf-8"
+) as imagesFile:
+    images = commentjson.load(imagesFile)
 
 with open(
     os.path.join(
@@ -35,7 +49,7 @@ for r,d,f in os.walk(dirname):
                 with open(os.path.join(r, filename), "r", encoding="utf-8") as funcsFile:
                     lines = funcsFile.read().split("\n")
                     funcName = ""
-                    for line in lines:
+                    for i, line in enumerate(lines):
                         func = re.search(r"function ([^\(]*)", line.strip())
                         if func:
                             funcName = func.group(1).strip()
@@ -51,6 +65,14 @@ for r,d,f in os.walk(dirname):
                                     if itemName not in itemToFunc:
                                         itemToFunc[itemName] = []
                                     itemToFunc[itemName].append(funcName)
+                        image = re.search(r"(?:[\"|\|])(?:images)([^\"]*)(?:[\"])", line.strip())
+                        if image:
+                            imageName = os.path.join("images", image.group(1).strip())
+                            linImg = imageName.replace("\\","/")
+                            winImg = imageName.replace("/","\\")
+                            if linImg not in images and winImg not in images:
+                                print(f" Invalid image reference on line '{i}'")
+
 print("")
 
 funcs = set(funcs)

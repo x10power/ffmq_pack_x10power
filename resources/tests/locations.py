@@ -6,6 +6,33 @@ import os
 import re
 import commentjson
 
+images = []
+
+with open(
+    os.path.join(
+        ".",
+        "resources",
+        "tests",
+        "output",
+        "imageFiles.json"
+    ),
+    "r",
+    encoding="utf-8"
+) as imagesFile:
+    images = commentjson.load(imagesFile)
+
+def checkImageRefs(loc):
+    for chest_img in [
+        "chest_unavailable_img",
+        "chest_unopened_img",
+        "chest_opened_img"
+    ]:
+        if chest_img in loc:
+            linImg = loc[chest_img].replace("\\","/")
+            winImg = loc[chest_img].replace("/","\\")
+            if linImg not in images and winImg not in images:
+                print(f" Invalid '{chest_img}' reference for '{loc['name']}'")
+
 def digForChildren(loc):
     children = []
     if "children" in loc:
@@ -15,6 +42,7 @@ def digForChildren(loc):
     for child in children:
         locs.append(child["name"])
         digForChildren(child)
+        checkImageRefs(child)
         if "access_rules" in child:
             for access_rule in child["access_rules"]:
                 access_items = list(
@@ -115,6 +143,7 @@ for r, d, f in os.walk(dirname):
                 with open(os.path.join(r, filename), "r", encoding="utf-8") as locsFile:
                     locsManifest = commentjson.load(locsFile)
                     for loc in locsManifest:
+                        checkImageRefs(loc)
                         if "access_rules" in loc:
                             locs.append(loc["name"])
                         digForChildren(loc)

@@ -29,7 +29,6 @@ def validate_file(r, filename, jsonType):
                 )
             )
 
-
 def check_files(dirs):
     '''
     Check files recursively
@@ -38,11 +37,9 @@ def check_files(dirs):
     for resrcDir in dirs:
         # cycle through this dir
         jsonType = ""
-        for jsonTypeCheck in ["items", "layouts", "locations", "manifest.json", "repository.json"]:
+        for jsonTypeCheck in ["items", "layouts", "locations", "maps", "manifest.json", "repository.json"]:
             if jsonTypeCheck in resrcDir:
                 jsonType = jsonTypeCheck.replace(".json", "")
-        if "maps" in resrcDir:
-            continue
         if jsonType != "":
             if os.path.isdir(resrcDir):
                 for r, _, f in os.walk(resrcDir):

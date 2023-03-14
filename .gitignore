@@ -13,8 +13,9 @@ __pycache__/
 
 # no schemas
 /schema/*.json
-# But do keep manifest, repository schema
+# But do keep manifest, maps, repository schema
 !/schema/manifest.json
+!/schema/maps.json
 !/schema/repository.json
 # Layouts is bugged again
 !/schema/layouts.json

@@ -148,9 +148,9 @@
             "access_rules": [
               "swords,sandcoin"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "ice-pyramid-1",
@@ -470,9 +470,9 @@
             "access_rules": [
               "swords,sandcoin"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "ice-pyramid-4",
@@ -608,9 +608,9 @@
             "access_rules": [
               "swords,sandcoin,bombs,claw"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "ice-pyramid-basement",
@@ -631,9 +631,9 @@
             "access_rules": [
               "swords,sandcoin,bombs,claw"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "ice-pyramid-boss",

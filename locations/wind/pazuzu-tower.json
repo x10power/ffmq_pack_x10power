@@ -246,9 +246,9 @@
             "access_rules": [
               "suncoin"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "pazuzu-tower-4",
@@ -338,9 +338,9 @@
             "access_rules": [
               "suncoin,dragonclaw"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "pazuzu-tower-6",
@@ -361,9 +361,9 @@
             "access_rules": [
               "suncoin,dragonclaw,axe,bombs"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "pazuzu-tower-7",

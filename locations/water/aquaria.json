@@ -67,7 +67,7 @@
             "#itemtype": "information",
             "chest_unavailable_img": "images/chests/spencer_available.png",
             "chest_unopened_img": "images/chests/spencer_available.png",
-            "chest_opened_img": "images/chests/spencer_opened.png",
+            "chest_opened_img": "images/chests/spencer_available.png",
             "item_count": 1
           }
         ]

@@ -206,9 +206,9 @@
             "access_rules": [
               "bomb"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "bone-dungeon-b1",
@@ -227,9 +227,9 @@
           {
             "name": "B1: Tristam Business",
             "access_rules": [],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "bone-dungeon-b1",
@@ -388,9 +388,9 @@
             "access_rules": [
               "bomb"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "bone-dungeon-b2d",
@@ -411,9 +411,9 @@
             "access_rules": [
               "bomb"
             ],
-            "chest_unavailable_img": "images/chests/chest_available.png",
-            "chest_unopened_img": "images/chests/chest_available.png",
-            "chest_opened_img": "images/chests/chest_opened.png",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
                 "map": "bone-dungeon-boss",
