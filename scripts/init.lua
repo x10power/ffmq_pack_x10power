@@ -116,8 +116,6 @@ if string.find(variant, "map") then
   locations = {
     -- World
     "world",
-    -- Battlefields
-    -- "battlefields/main",
     -- Center
     "center/focustower",
     "center/doom-castle",
@@ -138,7 +136,9 @@ if string.find(variant, "map") then
     "wind/windia",
     "wind/giant-tree",
     "wind/pazuzu-tower",
-    "wind/mac-ship"
+    "wind/mac-ship",
+    -- Battlefields
+    "battlefields/main"
   }
   for _, locCat in ipairs(locations) do
     Tracker:AddLocations("locations/" .. locCat .. ".json")

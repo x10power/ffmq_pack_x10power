@@ -10,15 +10,13 @@
     "name": "Wind",
     "parent": "World",
     "access_rules": [
-      // "@Start/Connection"
+      "suncoin"
     ],
     "children": [
       // Rope Bridge
       {
         "name": "Rope Bridge",
-        "access_rules": [
-          "suncoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
@@ -51,9 +49,7 @@
       // Alive Forest
       {
         "name": "Alive Forest",
-        "access_rules": [
-          "suncoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
@@ -150,9 +146,7 @@
       // Kaidge Temple
       {
         "name": "Kaidge Temple",
-        "access_rules": [
-          "suncoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
@@ -181,9 +175,7 @@
       // Light Temple
       {
         "name": "Light Temple",
-        "access_rules": [
-          "suncoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
@@ -212,9 +204,7 @@
       // Windhole Temple
       {
         "name": "Windhole Temple",
-        "access_rules": [
-          "suncoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
@@ -240,9 +230,7 @@
       // Mount Gale
       {
         "name": "Mount Gale",
-        "access_rules": [
-          "suncoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",

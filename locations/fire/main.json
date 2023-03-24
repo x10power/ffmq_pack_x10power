@@ -7,15 +7,13 @@
     "name": "Fire",
     "parent": "World",
     "access_rules": [
-      //  "@Start/Connection"
+      "rivercoin"
     ],
     "children": [
       // Mine
       {
         "name": "Mine",
-        "access_rules": [
-          "rivercoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
@@ -88,9 +86,7 @@
       // Sealed Temple
       {
         "name": "Sealed Temple",
-        "access_rules": [
-          "rivercoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
@@ -123,9 +119,7 @@
       // Volcano
       {
         "name": "Volcano",
-        "access_rules": [
-          "rivercoin"
-        ],
+        "access_rules": [],
         "map_locations": [
           {
             "map": "drained-world",
