@@ -24,50 +24,32 @@
     "location_size": 16
   },
   {
-    "name": "lava-dome-4",
+    "name": "lava-dome-a4",
     "img": "images/maps/dungeons/lava-dome/lava-dome-4.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "lava-dome-a4",
+    "name": "lava-dome-a5",
     "img": "images/maps/dungeons/lava-dome/lava-dome-5.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "lava-dome-a5",
+    "name": "lava-dome-a6",
     "img": "images/maps/dungeons/lava-dome/lava-dome-6.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "lava-dome-7",
+    "name": "lava-dome-a7",
     "img": "images/maps/dungeons/lava-dome/lava-dome-7.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "lava-dome-a6",
-    "img": "images/maps/dungeons/lava-dome/lava-dome-8.png",
-    "location_border_thickness": 1,
-    "location_size": 16
-  },
-  {
-    "name": "lava-dome-a7",
-    "img": "images/maps/dungeons/lava-dome/lava-dome-9.png",
-    "location_border_thickness": 1,
-    "location_size": 16
-  },
-  {
-    "name": "lava-dome-10",
-    "img": "images/maps/dungeons/lava-dome/lava-dome-10.png",
-    "location_border_thickness": 1,
-    "location_size": 16
-  },
-  {
-    "name": "lava-dome-a8",
-    "img": "images/maps/dungeons/lava-dome/lava-dome-11.png",
+    "name": "lava-dome-boss",
+    "img": "images/maps/dungeons/lava-dome/lava-dome-boss.png",
     "location_border_thickness": 1,
     "location_size": 16
   }

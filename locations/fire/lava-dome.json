@@ -686,7 +686,7 @@
             ],
             "map_locations": [
               {
-                "map": "lava-dome-a8",
+                "map": "lava-dome-boss",
                 "x": 411,
                 "y": 458
               }
@@ -709,7 +709,7 @@
             ],
             "map_locations": [
               {
-                "map": "lava-dome-a8",
+                "map": "lava-dome-boss",
                 "x": 43,
                 "y": 58
               }
@@ -732,7 +732,7 @@
             ],
             "map_locations": [
               {
-                "map": "lava-dome-a8",
+                "map": "lava-dome-boss",
                 "x": 203,
                 "y": 58
               }

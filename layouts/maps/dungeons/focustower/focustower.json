@@ -11,6 +11,7 @@
       },
       {
         "title": "Doom Castle",
+        "icon": "images/crystals/crystal_light.png",
         "content": {
           "type": "layout",
           "key": "maps_doom_castle"

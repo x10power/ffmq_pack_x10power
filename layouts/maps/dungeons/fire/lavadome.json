@@ -75,11 +75,11 @@
         }
       },
       {
-        "title": "Area 8",
+        "title": "Boss",
         "content": {
           "type": "map",
           "maps": [
-            "lava-dome-a8"
+            "lava-dome-boss"
           ]
         }
       }
