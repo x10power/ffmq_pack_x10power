@@ -79,13 +79,6 @@
             ],
             "#type": "keyitem",
             "item_count": 1
-          },
-          {
-            "name": "Aero Spell",
-            "access_rules": [
-              "suncoin"
-            ],
-            "item_count": 1
           }
         ]
       }

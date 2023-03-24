@@ -28,6 +28,11 @@
             ],
             "sections": [
               {
+                "name": "Basement Chest (from Focus Tower)",
+                "access_rules": ["suncoin"],
+                "item_count": 1
+              },
+              {
                 "name": "Basement Chest",
                 "access_rules": [],
                 "item_count": 1
@@ -101,6 +106,25 @@
       {
         "name": "Doom Castle Underworld",
         "children": [
+          {
+            "name": "Basement: Aero Spell",
+            "map_locations": [
+              {
+                "map": "doom-castle-basement",
+                "x": 495,
+                "y": 634
+              }
+            ],
+            "sections": [
+              {
+                "name": "Aero Spell",
+                "access_rules": [
+                  "suncoin"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
             "name": "Basement: Aegis Shield",
             "access_rules": [
