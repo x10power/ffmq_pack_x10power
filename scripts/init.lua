@@ -80,6 +80,7 @@ if string.find(variant, "map") then
   -- Dungeon Maps
   dungeons = {
     "bonedungeon",
+    "wintrycave",
     "icepyramid",
     "lavadome",
     "doomcastle",
@@ -96,6 +97,7 @@ if string.find(variant, "map") then
   dungMaps = {
     "earth/bonedungeon",
     "earth/earth",
+    "water/wintrycave",
     "water/icepyramid",
     "water/water",
     "fire/lavadome",
@@ -130,6 +132,7 @@ if string.find(variant, "map") then
     -- Water
     "water/main",
     "water/aquaria",
+    "water/wintrycave",
     "water/icepyramid",
     -- Wind
     "wind/main",

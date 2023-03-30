@@ -1,0 +1,340 @@
+[
+  {
+    "name": "Wintry Cave",
+    "parent": "water",
+    "access_rules": [
+      "vanilla,phoebe:1",
+      "rando"
+    ],
+    "children": [
+      {
+        "name": "Wintry Cave Underworld",
+        "children": [
+          {
+            "name": "1F Bombs",
+            "#itemtype": "basket",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [],
+            "map_locations": [
+              {
+                "map": "wintry-cave-1",
+                "x": 633,
+                "y": 611
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Phoebe",
+            "chest_unopened_img": "images/party/phoebe.gif",
+            "#itemtype": "keyitem",
+            "#vanilla": "claw",
+            "access_rules": [],
+            "map_locations": [
+              {
+                "map": "wintry-cave-1",
+                "x": 651,
+                "y": 261
+              }
+            ],
+            "sections": [
+              {
+                "name": "Phoebe",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "1F H Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#itemtype": "basket",
+            "access_rules": [
+              "claw"
+            ],
+            "map_locations": [
+              {
+                "map": "wintry-cave-1",
+                "x": 761,
+                "y": 371
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          //Bombs Require
+          {
+            "name": "1F C Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-1",
+                "x": 793,
+                "y": 51
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "1F Arrows",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb"
+            ],
+            "#itemtype": "basket",
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Refreshers",
+            "access_rules": [
+              "claw"
+            ],
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "#itemtype": "basket",
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 2
+              }
+            ]
+          },
+          {
+            "name": "Heal Pots & Arrow",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "claw"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-1",
+                "x": 457,
+                "y": 547
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 2
+              }
+            ]
+          },
+          {
+            "name": "2F Arrow Left",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-2",
+                "x": 121,
+                "y": 226
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "2F Arrow Right",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-2",
+                "x": 377,
+                "y": 258
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "2F C Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-2",
+                "x": 153,
+                "y": 258
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "2F H Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#itemtype": "basket",
+            "item_count": 1,
+            "map_locations": [
+              {
+                "map": "wintry-cave-2",
+                "x": 393,
+                "y": 258
+              }
+            ]
+          },
+          {
+            "name": "3F C Pot",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-3",
+                "x": 137,
+                "y": 50
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "3F Arrows (N)",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-3",
+                "x": 169,
+                "y": 66
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "3F Arrows (S)",
+            "chest_unavailable_img": "images/chests/basket_available.png",
+            "chest_unopened_img": "images/chests/basket_available.png",
+            "chest_opened_img": "images/chests/basket_opened.png",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#itemtype": "basket",
+            "map_locations": [
+              {
+                "map": "wintry-cave-3",
+                "x": 153,
+                "y": 226
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Squidite",
+            "chest_unopened_img": "images/chests/available.png",
+            "#itemtype": "boss",
+            "access_rules": [
+              "bomb,claw"
+            ],
+            "#note": "Gives Libra Crest in vanilla",
+            "#type": "keyitem",
+            "hosted_item": "boss_wintrycave",
+            "map_locations": [
+              {
+                "map": "wintry-cave-3",
+                "x": 169,
+                "y": 145
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basket",
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
