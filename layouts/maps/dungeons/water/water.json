@@ -4,6 +4,7 @@
     "tabs": [
       {
         "title": "Wintry Cave",
+        "icon": "images/bosstokens/wintrycave.png",
         "content": {
           "type": "layout",
           "key": "maps_wintry_cave"

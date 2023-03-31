@@ -328,8 +328,9 @@
             ],
             "sections": [
               {
-                "name": "Basket",
-                "item_count": 1
+                "name": "Chest",
+                "item_count": 1,
+                "hosted_item": "boss_wintrycave"
               }
             ]
           }

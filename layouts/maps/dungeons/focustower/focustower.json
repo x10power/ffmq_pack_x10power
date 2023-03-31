@@ -4,6 +4,7 @@
     "tabs": [
       {
         "title": "Mac's Ship",
+        "icon": "images/bosstokens/macship.png",
         "content": {
           "type": "layout",
           "key": "maps_macs_ship"

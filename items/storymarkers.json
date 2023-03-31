@@ -122,6 +122,22 @@
     "img": "images/bosstokens/pazuzutower.png",
     "codes": "boss_pazuzutower"
   },
+  // Boss: Mac's Ship
+  {
+    "name": "Boss: Mac's Ship",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/macship.png",
+    "codes": "boss_macship"
+  },
+  // Boss: Doom Castle
+  {
+    "name": "Boss: Doom Castle",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/bosstokens/doomcastle.png",
+    "codes": "boss_doomcastle"
+  },
   {
     "name": "Restore Aquaria",
     "type": "progressive",

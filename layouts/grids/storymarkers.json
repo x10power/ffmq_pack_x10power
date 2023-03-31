@@ -26,6 +26,10 @@
         "boss_gianttree",
         "boss_mountgale",
         "boss_pazuzutower"
+      ],
+      [
+        "boss_macship",
+        "boss_doomcastle"
       ]
     ]
   }
