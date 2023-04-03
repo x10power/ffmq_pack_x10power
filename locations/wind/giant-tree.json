@@ -151,7 +151,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-1",
+                "map": "giant-tree-1f",
                 "x": 375,
                 "y": 315
               }
@@ -174,7 +174,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-1",
+                "map": "giant-tree-1f",
                 "x": 248,
                 "y": 267
               }
@@ -197,7 +197,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-1",
+                "map": "giant-tree-1f",
                 "x": 71,
                 "y": 316
               }
@@ -220,7 +220,7 @@
             "chest_opened_img": "images/chests/opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-2",
+                "map": "giant-tree-2f",
                 "x": 472,
                 "y": 237
               }
@@ -243,7 +243,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-2",
+                "map": "giant-tree-2f",
                 "x": 440,
                 "y": 202
               }
@@ -266,7 +266,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-2",
+                "map": "giant-tree-2f",
                 "x": 440,
                 "y": 426
               }
@@ -289,7 +289,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-2",
+                "map": "giant-tree-2f",
                 "x": 104,
                 "y": 426
               }
@@ -335,7 +335,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-3",
+                "map": "giant-tree-3f",
                 "x": 296,
                 "y": 443
               }
@@ -358,7 +358,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-3",
+                "map": "giant-tree-3f",
                 "x": 199,
                 "y": 474
               }
@@ -381,7 +381,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-3",
+                "map": "giant-tree-3f",
                 "x": 136,
                 "y": 603
               }
@@ -450,7 +450,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-4",
+                "map": "giant-tree-4f",
                 "x": 281,
                 "y": 475
               }
@@ -473,7 +473,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-4",
+                "map": "giant-tree-4f",
                 "x": 104,
                 "y": 291
               }
@@ -542,7 +542,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-boss",
+                "map": "giant-tree-5f",
                 "x": 192,
                 "y": 360
               }
@@ -565,7 +565,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "giant-tree-boss",
+                "map": "giant-tree-5f",
                 "x": 72,
                 "y": 136
               }

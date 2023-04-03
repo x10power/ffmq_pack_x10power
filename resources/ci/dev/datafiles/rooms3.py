@@ -74,7 +74,8 @@ def get_floor(location):
         matches = re.findall(r"(B?)([\d])(F?)", floor_name)
         if len(matches) == 1:
             floor_number = "".join(matches[0])
-        # print(f"{location}:{floor_name}:{floor_number}")
+        if "Doom Castle Hero Chest" in location:
+            floor_number = "7F"
     return floor_number
 
 def is_dungeon(region):
@@ -189,6 +190,8 @@ with urllib.request.urlopen(url, context=context) as rooms_req:
                     room["#floor_id"] = floor_number
                     room["#room_name"] = room["#room_name"].replace(f"{region_name} {floor_number} - ", "")
                     room["#map_id"] = f"{region_name.replace(' ', '-')}-{floor_number}".lower()
+                    if "pazuzu" in room["#map_id"]:
+                        room["#map_id"] = room["#map_id"].replace("pazuzu","pazuzu-tower")
             room["#room_name"] = room["#room_name"].replace(f"{region_name} - ", "")
         # save roomID
         if "id" in room:
@@ -355,9 +358,28 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
 
             if len(child["sections"]) > max_sections:
                 max_sections = len(child["sections"])
-            for section in child["sections"]:
+            coords = [0,0]
+            for [sectionIDX, section] in enumerate(child["sections"]):
                 sectionTypes = [ "Basket", "Chest", "NPC" ]
                 if section["type"] in sectionTypes:
+                    floorID = child["#floor_id"]
+                    section["map_locations"] = [
+                        {
+                            "map": child["#map_id"],
+                            "x": coords[0],
+                            "y": coords[1],
+                            "location_size": 64
+                        }
+                    ]
+                    section["sections"] = [
+                        {
+                            "name": section["type"],
+                            "item_count": section["item_count"]
+                        }
+                    ]
+                    child["sections"][sectionIDX] = section
+                    coords[0] += 16
+
                     flat[sectionTypes.index(section["type"])]["item_count"] += section["item_count"]
                     for access in section["access_rules"]:
                         if access not in flat[sectionTypes.index(section["type"])]["access_rules"]:
@@ -414,6 +436,9 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
                     }
                 ]
             prevFloorID = child["#floor_id"]
+            if "sections" in child:
+                child["children"] = child["sections"]
+                del child["sections"]
             floor.append(child)
 
     if len(flats) > 0:
@@ -423,23 +448,14 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
                 newFlat.append(section)
         flat = newFlat
         flats = [*flats, *flat]
-        coords = [0,0]
         for flat in flats:
             for [access, q] in flat["access_rules"].items():
                 flatName = f"{flat['name']}"
                 if access != "":
                     flatName += f" ({access})"
-                floorID = re.match(r"Floor ([^\s]+)", flatName).group(1)
                 children[0]["sections"].append(
                     {
                         "name": flatName,
-                        "map_locations":[
-                            {
-                                "map": f"{region_name.replace(' ', '-').lower()}-{floorID.lower()}",
-                                "x": coords[0],
-                                "y": coords[1]
-                            }
-                        ],
                         "access_rules": [access],
                         "item_count": q
                     }
@@ -461,6 +477,8 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
     if region_name:
         new_rooms[region_name] = new_room
         filename = region_name.replace(" ", "-").replace("'", "").lower()
+        if "pazuzu" in filename:
+            filename = "pazuzu-tower"
         element = ""
         if get_base_dungeon_or_town(region_name):
             [element, _] = get_base_dungeon_or_town(region_name)
@@ -470,6 +488,6 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
         if not os.path.isdir(filepath):
             os.makedirs(filepath)
         with open(os.path.join(filepath, f"{filename}.json"), "w", encoding="utf-8") as region_file:
-            json.dump(new_rooms[region_name], region_file, indent=2)
+            json.dump([new_rooms[region_name]], region_file, indent=2)
 
 print(max_sections)

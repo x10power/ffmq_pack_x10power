@@ -119,12 +119,12 @@ if string.find(variant, "map") then
     -- World
     "world",
     -- Center
-    "center/focustower",
+    "center/focus-tower",
     "center/doom-castle",
     -- Earth
     "earth/main",
     "earth/foresta",
-    "earth/bonedungeon",
+    "earth/bone-dungeon",
     -- Fire
     "fire/main",
     "fire/fireburg",
@@ -132,8 +132,8 @@ if string.find(variant, "map") then
     -- Water
     "water/main",
     "water/aquaria",
-    "water/wintrycave",
-    "water/icepyramid",
+    "water/wintry-cave",
+    "water/ice-pyramid",
     -- Wind
     "wind/main",
     "wind/windia",

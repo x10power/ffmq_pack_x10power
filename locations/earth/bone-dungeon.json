@@ -146,7 +146,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "bone-dungeon-1",
+                "map": "bone-dungeon-1f",
                 "x": 31,
                 "y": 187
               }
@@ -167,7 +167,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "bone-dungeon-1",
+                "map": "bone-dungeon-1f",
                 "x": 205,
                 "y": 187
               }
@@ -188,7 +188,7 @@
             "chest_opened_img": "images/chests/basket_opened.png",
             "map_locations": [
               {
-                "map": "bone-dungeon-1",
+                "map": "bone-dungeon-1f",
                 "x": 366,
                 "y": 187
               }

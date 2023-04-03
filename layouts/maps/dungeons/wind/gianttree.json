@@ -7,7 +7,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "giant-tree-1"
+            "giant-tree-1f"
           ]
         }
       },
@@ -16,7 +16,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "giant-tree-2"
+            "giant-tree-2f"
           ]
         }
       },
@@ -34,7 +34,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "giant-tree-3"
+            "giant-tree-3f"
           ]
         }
       },
@@ -52,7 +52,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "giant-tree-4"
+            "giant-tree-4f"
           ]
         }
       },
@@ -70,7 +70,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "giant-tree-boss"
+            "giant-tree-5f"
           ]
         }
       }

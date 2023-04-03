@@ -7,7 +7,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "ice-pyramid-1"
+            "ice-pyramid-1f"
           ]
         }
       },
@@ -16,7 +16,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "ice-pyramid-2"
+            "ice-pyramid-2f"
           ]
         }
       },
@@ -25,7 +25,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "ice-pyramid-3"
+            "ice-pyramid-3f"
           ]
         }
       },
@@ -34,7 +34,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "ice-pyramid-4"
+            "ice-pyramid-4f"
           ]
         }
       },
@@ -43,7 +43,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "ice-pyramid-5"
+            "ice-pyramid-5f"
           ]
         }
       },
@@ -52,7 +52,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "ice-pyramid-basement"
+            "ice-pyramid-b1"
           ]
         }
       },
@@ -61,7 +61,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "ice-pyramid-boss"
+            "ice-pyramid-5f"
           ]
         }
       }

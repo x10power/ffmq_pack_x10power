@@ -19,7 +19,7 @@
             "access_rules": [],
             "map_locations": [
               {
-                "map": "wintry-cave-1",
+                "map": "wintry-cave-1f",
                 "x": 633,
                 "y": 611
               }
@@ -39,7 +39,7 @@
             "access_rules": [],
             "map_locations": [
               {
-                "map": "wintry-cave-1",
+                "map": "wintry-cave-1f",
                 "x": 651,
                 "y": 261
               }
@@ -62,7 +62,7 @@
             ],
             "map_locations": [
               {
-                "map": "wintry-cave-1",
+                "map": "wintry-cave-1f",
                 "x": 761,
                 "y": 371
               }
@@ -86,7 +86,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-1",
+                "map": "wintry-cave-1f",
                 "x": 793,
                 "y": 51
               }
@@ -141,7 +141,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-1",
+                "map": "wintry-cave-1f",
                 "x": 457,
                 "y": 547
               }
@@ -164,7 +164,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-2",
+                "map": "wintry-cave-2f",
                 "x": 121,
                 "y": 226
               }
@@ -187,7 +187,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-2",
+                "map": "wintry-cave-2f",
                 "x": 377,
                 "y": 258
               }
@@ -210,7 +210,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-2",
+                "map": "wintry-cave-2f",
                 "x": 153,
                 "y": 258
               }
@@ -234,7 +234,7 @@
             "item_count": 1,
             "map_locations": [
               {
-                "map": "wintry-cave-2",
+                "map": "wintry-cave-2f",
                 "x": 393,
                 "y": 258
               }
@@ -251,7 +251,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-3",
+                "map": "wintry-cave-3f",
                 "x": 137,
                 "y": 50
               }
@@ -274,7 +274,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-3",
+                "map": "wintry-cave-3f",
                 "x": 169,
                 "y": 66
               }
@@ -297,7 +297,7 @@
             "#itemtype": "basket",
             "map_locations": [
               {
-                "map": "wintry-cave-3",
+                "map": "wintry-cave-3f",
                 "x": 153,
                 "y": 226
               }
@@ -321,7 +321,7 @@
             "hosted_item": "boss_wintrycave",
             "map_locations": [
               {
-                "map": "wintry-cave-3",
+                "map": "wintry-cave-3f",
                 "x": 169,
                 "y": 145
               }

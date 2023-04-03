@@ -7,7 +7,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "wintry-cave-1"
+            "wintry-cave-1f"
           ]
         }
       },
@@ -16,7 +16,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "wintry-cave-2"
+            "wintry-cave-2f"
           ]
         }
       },
@@ -25,7 +25,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "wintry-cave-3"
+            "wintry-cave-3f"
           ]
         }
       }

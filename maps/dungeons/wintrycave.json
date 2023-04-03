@@ -1,18 +1,18 @@
 [
   {
-    "name": "wintry-cave-1",
+    "name": "wintry-cave-1f",
     "img": "images/maps/dungeons/wintry-cave/wintry-cave-1.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "wintry-cave-2",
+    "name": "wintry-cave-2f",
     "img": "images/maps/dungeons/wintry-cave/wintry-cave-2.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "wintry-cave-3",
+    "name": "wintry-cave-3f",
     "img": "images/maps/dungeons/wintry-cave/wintry-cave-3.png",
     "location_border_thickness": 1,
     "location_size": 16

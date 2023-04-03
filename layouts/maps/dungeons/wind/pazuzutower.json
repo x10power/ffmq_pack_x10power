@@ -7,7 +7,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "pazuzu-tower-1"
+            "pazuzu-tower-1f"
           ]
         }
       },
@@ -16,7 +16,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "pazuzu-tower-2"
+            "pazuzu-tower-2f"
           ]
         }
       },
@@ -25,7 +25,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "pazuzu-tower-3"
+            "pazuzu-tower-3f"
           ]
         }
       },
@@ -34,7 +34,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "pazuzu-tower-4"
+            "pazuzu-tower-4f"
           ]
         }
       },
@@ -43,7 +43,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "pazuzu-tower-5"
+            "pazuzu-tower-5f"
           ]
         }
       },
@@ -52,7 +52,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "pazuzu-tower-6"
+            "pazuzu-tower-6f"
           ]
         }
       },
@@ -61,7 +61,7 @@
         "content": {
           "type": "map",
           "maps": [
-            "pazuzu-tower-7"
+            "pazuzu-tower-7f"
           ]
         }
       }
