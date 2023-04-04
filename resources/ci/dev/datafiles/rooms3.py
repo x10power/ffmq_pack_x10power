@@ -308,11 +308,12 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
     children = [
         {
           "name": f"{region_name} Overworld",
-          "map_location": [
+          "map_locations": [
               {
                   "map": "",
                   "x": 0,
-                  "y": 0
+                  "y": 16,
+                  "location_size": 64
               }
           ],
           "sections": []
@@ -342,6 +343,9 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
                     {
                         "name": f"Floor {floorID} Baskets",
                         "access_rules": {},
+                        "chest_unavailable_img": "images/chests/basket_available.png",
+                        "chest_unopened_img": "images/chests/basket_available.png",
+                        "chest_opened_img": "images/chests/basket_opened.png",
                         "item_count": 0
                     },
                     {
@@ -363,6 +367,8 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
                 sectionTypes = [ "Basket", "Chest", "NPC" ]
                 if section["type"] in sectionTypes:
                     floorID = child["#floor_id"]
+                    if children[0]["map_locations"][0]["map"] == "" and sectionIDX == 0:
+                        children[0]["map_locations"][0]["map"] = child["#map_id"]
                     section["map_locations"] = [
                         {
                             "map": child["#map_id"],
@@ -422,6 +428,9 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
                     {
                         "name": f"Floor {floorID} Baskets",
                         "access_rules": {},
+                        "chest_unavailable_img": "images/chests/basket_available.png",
+                        "chest_unopened_img": "images/chests/basket_available.png",
+                        "chest_opened_img": "images/chests/basket_opened.png",
                         "item_count": 0
                     },
                     {
@@ -453,13 +462,16 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
                 flatName = f"{flat['name']}"
                 if access != "":
                     flatName += f" ({access})"
-                children[0]["sections"].append(
-                    {
-                        "name": flatName,
-                        "access_rules": [access],
-                        "item_count": q
-                    }
-                )
+                sect = {
+                    "name": flatName,
+                    "access_rules": [access],
+                    "item_count": q
+                }
+                if "Basket" in flatName:
+                    sect["chest_unavailable_img"] = "images/chests/basket_available.png"
+                    sect["chest_unopened_img"] = "images/chests/basket_available.png"
+                    sect["chest_opened_img"] = "images/chests/basket_opened.png"
+                children[0]["sections"].append(sect)
                 coords[0] += 16
         # children[0]["sections"] = flats
     if len(floors) > 0:
@@ -475,6 +487,8 @@ for [region_name, roomIDs] in rooms_model["idsByRegion"].items():
     new_room["children"] = children
 
     if region_name:
+        if new_room["parent"] == "":
+            new_room["parent"] = "World"
         new_rooms[region_name] = new_room
         filename = region_name.replace(" ", "-").replace("'", "").lower()
         if "pazuzu" in filename:
