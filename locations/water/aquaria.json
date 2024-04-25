@@ -11,7 +11,7 @@
       {
         "name": "Aquaria",
         "access_rules": [
-          "sandcoin"
+            "sandcoin" , "$warp_water"
         ],
         "map_locations": [
           {

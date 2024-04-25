@@ -10,7 +10,8 @@
       {
         "name": "Mac's Ship",
         "access_rules": [
-          "thunderrock,mobius,megas,suncoin"
+            "thunderrock,mobius,megas,suncoin",
+            "thunderrock,megas,$warp_wind"
         ],
         "map_locations": [
           {
@@ -72,7 +73,8 @@
       {
         "name": "Bottom Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas"
+            "suncoin,thunderrock,megas",
+            "thunderrock,megas,$warp_wind"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -95,7 +97,8 @@
       {
         "name": "Middle Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas"
+            "suncoin,thunderrock,megas",
+            "thunderrock,megas,$warp_wind"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -118,7 +121,8 @@
       {
         "name": "Top Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas"
+            "suncoin,thunderrock,megas",
+            "thunderrock,megas,$warp_wind"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -141,7 +145,8 @@
       {
         "name": "Northwest Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas,dragonclaw"
+            "suncoin,thunderrock,megas,dragonclaw",
+            "thunderrock,megas,$warp_wind"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -164,7 +169,8 @@
       {
         "name": "North Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas,dragonclaw"
+            "suncoin,thunderrock,megas,dragonclaw",
+            "thunderrock,megas,$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -187,7 +193,8 @@
       {
         "name": "Hallway Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas,dragonclaw"
+            "suncoin,thunderrock,megas,dragonclaw",
+            "thunderrock,megas,$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -210,7 +217,8 @@
       {
         "name": "Mac's Chest",
         "access_rules": [
-          "suncoin,thunderrock,megas,dragonclaw"
+            "suncoin,thunderrock,megas,dragonclaw",
+            "thunderrock,megas,$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
@@ -233,7 +241,8 @@
       {
         "name": "Northwest Double Baskets",
         "access_rules": [
-          "suncoin,thunderrock,megas,dragonclaw"
+            "suncoin,thunderrock,megas,dragonclaw",
+            "thunderrock,megas,$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -256,7 +265,8 @@
       {
         "name": "Southwest Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas,dragonclaw"
+            "suncoin,thunderrock,megas,dragonclaw",
+            "thunderrock,megas,$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -279,7 +289,8 @@
       {
         "name": "Southeast Basket",
         "access_rules": [
-          "suncoin,thunderrock,megas,dragonclaw"
+            "suncoin,thunderrock,megas,dragonclaw",
+            "thunderrock,megas,$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",

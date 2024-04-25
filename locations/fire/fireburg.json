@@ -11,7 +11,8 @@
       {
         "name": "Fireburg",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -43,7 +44,7 @@
           {
             "name": "Mega Grenade",
             "access_rules": [
-              "multikey"
+              "multikey,claws"
             ],
             "#type": "keyitem",
             "item_count": 1

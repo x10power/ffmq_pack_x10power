@@ -11,7 +11,8 @@
       {
         "name": "Lava Dome",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -29,7 +30,8 @@
           {
             "name": "Outside Area Baskets",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -40,7 +42,8 @@
           {
             "name": "Outside Area Basket (Claw Require)",
             "access_rules": [
-              "rivercoin,claws"
+                "rivercoin,claws",
+                "$warp_fire,claws"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -51,7 +54,8 @@
           {
             "name": "Area 1 Basket",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -61,7 +65,8 @@
           {
             "name": "Area 2 Baskets (Claw Require)",
             "access_rules": [
-              "rivercoin,claws"
+                "rivercoin,claws",
+                "$warp_fire,claws"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -72,14 +77,16 @@
           {
             "name": "Area 2 Chest",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "item_count": 1
           },
           {
             "name": "Area 3 Baskets",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -90,7 +97,8 @@
           {
             "name": "Area 4 Baskets",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -101,7 +109,8 @@
           {
             "name": "Area 4 Basket (Megas Required)",
             "access_rules": [
-              "rivercoin,megas"
+                "rivercoin,megas",
+                "$warp_fire,megas"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -111,14 +120,16 @@
           {
             "name": "Area 4 Chest (Megas Required)",
             "access_rules": [
-              "rivercoin,megas"
+                "rivercoin,megas",
+                "$warp_fire,megas"
             ],
             "item_count": 1
           },
           {
             "name": "Area 5 Baskets",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -129,7 +140,8 @@
           {
             "name": "Area 6 Baskets",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -140,7 +152,8 @@
           {
             "name": "Area 7 Baskets",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -151,7 +164,8 @@
           {
             "name": "Area 8 Baskets",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -162,7 +176,8 @@
           {
             "name": "Area 8 Chest",
             "access_rules": [
-              "rivercoin"
+                "rivercoin",
+                "$warp_fire"
             ],
             "item_count": 1
           }
@@ -171,7 +186,8 @@
       {
         "name": "Outside Chest 1",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -194,7 +210,8 @@
       {
         "name": "Outside Chest 2",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -217,7 +234,8 @@
       {
         "name": "Outside Chest 3",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -240,7 +258,8 @@
       {
         "name": "Outside Chest 4",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -263,7 +282,8 @@
       {
         "name": "A1",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -286,7 +306,8 @@
       {
         "name": "A2: Booms",
         "access_rules": [
-          "rivercoin,claws"
+            "rivercoin,claws",
+            "$warp_fire,claws"
         ],
         "map_locations": [
           {
@@ -309,7 +330,8 @@
       {
         "name": "A2: Life",
         "access_rules": [
-          "rivercoin,megas"
+            "rivercoin,megas",
+            "$warp_fire,megas"
         ],
         "map_locations": [
           {
@@ -329,7 +351,8 @@
       {
         "name": "A3: Items",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -352,7 +375,8 @@
       {
         "name": "A3: Potion",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -375,7 +399,8 @@
       {
         "name": "A4 Potion",
         "access_rules": [
-          "rivercoin,megas"
+            "rivercoin,megas",
+            "$warp_fire,megas"
         ],
         "map_locations": [
           {
@@ -398,7 +423,8 @@
       {
         "name": "Moon Helm",
         "access_rules": [
-          "rivercoin,megas"
+            "rivercoin,megas",
+            "$warp_fire,megas"
         ],
         "map_locations": [
           {
@@ -421,7 +447,8 @@
       {
         "name": "A4 Potions",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -444,7 +471,8 @@
       {
         "name": "A5 Corner",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -467,7 +495,8 @@
       {
         "name": "A5 Maze 1",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -490,7 +519,8 @@
       {
         "name": "A5 Maze 2",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -513,7 +543,8 @@
       {
         "name": "A6 Maze 1",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -536,7 +567,8 @@
       {
         "name": "A6 Maze 2",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -559,7 +591,8 @@
       {
         "name": "A6 Maze 3",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -582,7 +615,8 @@
       {
         "name": "A6 Maze 4",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -605,7 +639,8 @@
       {
         "name": "A6 Maze 5",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -628,7 +663,8 @@
       {
         "name": "A6 Maze 6",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -651,7 +687,8 @@
       {
         "name": "4 Chest Room",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -674,7 +711,8 @@
       {
         "name": "SE Boss Room Chest",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -697,7 +735,8 @@
       {
         "name": "NW Boss Room Chest",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -720,7 +759,8 @@
       {
         "name": "Hydra Chest",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {

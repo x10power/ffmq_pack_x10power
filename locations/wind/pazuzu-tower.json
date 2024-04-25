@@ -10,7 +10,8 @@
       {
         "name": "Pazuzu's Tower",
         "access_rules": [
-          "suncoin"
+            "suncoin",
+            "$warp_wind"
         ],
         "map_locations": [
           {
@@ -25,102 +26,124 @@
           }
         ],
         "sections": [
-          {
-            "name": "Floor 1 Basket",
-            "access_rules": [
-              "suncoin,dragonclaw"
-            ],
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "item_count": 1
-          },
-          {
-            "name": "Floor 1 Baskets (Bombs Require)",
-            "access_rules": [
-              "suncoin,dragonclaw,bombs"
-            ],
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Floor 2 Baskets",
-            "access_rules": [
-              "suncoin,dragonclaw"
-            ],
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "clear_as_group": false,
-            "item_count": 2
-          },
-          {
-            "name": "Floor 3 Baskets",
-            "access_rules": [
-              "suncoin,dragonclaw"
-            ],
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Floor 4 Baskets",
-            "access_rules": [
-              "suncoin,dragonclaw"
-            ],
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "clear_as_group": false,
-            "item_count": 2
-          },
-          {
-            "name": "Floor 4 Chest",
-            "access_rules": [
-              "suncoin,dragonclaw"
-            ],
-            "clear_as_group": false,
-            "item_count": 1
-          },
-          {
-            "name": "Floor 5 Baskets",
-            "access_rules": [
-              "suncoin,dragonclaw"
-            ],
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "clear_as_group": false,
-            "item_count": 2
-          },
-          {
-            "name": "Floor 6 Basket",
-            "access_rules": [
-              "suncoin,dragonclaw"
-            ],
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "item_count": 1
-          },
-          {
-            "name": "Floor 7 Chest",
-            "access_rules": [
-              "$pazuzuSeven"
-            ],
-            "item_count": 1
-          }
+            {
+                "name": "Floor 1 Basket",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "item_count": 1
+            },
+            {
+                "name": "Floor 1 Baskets (Bombs Require)",
+                "access_rules": [
+                    "suncoin,dragonclaw,bombs",
+                    "$warp_wind,dragonclaw,bombs"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "clear_as_group": false,
+                "item_count": 3
+            },
+            {
+                "name": "Floor 2 Baskets",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "clear_as_group": false,
+                "item_count": 2
+            },
+            {
+                "name": "Floor 3 Baskets",
+                "access_rules": [
+                    "suncoin",
+                    "$warp_wind"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "clear_as_group": false,
+                "item_count": 2
+            },
+            {
+                "name": "Floor 3 Basket",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "clear_as_group": false,
+                "item_count": 1
+            },
+            {
+                "name": "Floor 4 Baskets",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "clear_as_group": false,
+                "item_count": 2
+            },
+            {
+                "name": "Floor 4 Chest",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw"
+                ],
+                "clear_as_group": false,
+                "item_count": 1
+            },
+            {
+                "name": "Floor 5 Baskets",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "clear_as_group": false,
+                "item_count": 2
+            },
+            {
+                "name": "Floor 6 Basket",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw"
+                ],
+                "chest_unavailable_img": "images/chests/basket_available.png",
+                "chest_unopened_img": "images/chests/basket_available.png",
+                "chest_opened_img": "images/chests/basket_opened.png",
+                "item_count": 1
+            },
+            {
+                "name": "Floor 7 Chest",
+                "access_rules": [
+                    "suncoin,dragonclaw",
+                    "$warp_wind,dragonclaw,axe"
+                ],
+                "item_count": 1
+            }
         ]
       },
       {
         "name": "Bottom Basket",
         "access_rules": [
-          "suncoin,dragonclaw"
+            "suncoin,dragonclaw",
+            "$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -143,7 +166,8 @@
       {
         "name": "Top Baskets",
         "access_rules": [
-          "suncoin,dragonclaw,bombs"
+            "suncoin,dragonclaw,bombs",
+            "$warp_wind,dragonclaw,bombs"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -166,7 +190,8 @@
       {
         "name": "2 Baskets",
         "access_rules": [
-          "suncoin,dragonclaw"
+            "suncoin,dragonclaw",
+            "$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -189,7 +214,8 @@
       {
         "name": "East Baskets",
         "access_rules": [
-          "suncoin"
+            "suncoin",
+            "$warp_wind"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -212,7 +238,8 @@
       {
         "name": "South Basket",
         "access_rules": [
-          "suncoin,dragonclaw"
+            "suncoin,dragonclaw",
+            "$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -235,7 +262,8 @@
       {
         "name": "Excaliber",
         "access_rules": [
-          "suncoin"
+            "suncoin,dragonclaw",
+            "$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
@@ -258,7 +286,8 @@
       {
         "name": "North Baskets",
         "access_rules": [
-          "suncoin,bombs"
+            "suncoin,bombs",
+            "$warp_wind,bombs"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -281,7 +310,8 @@
       {
         "name": "Baskets",
         "access_rules": [
-          "suncoin,dragonclaw"
+            "suncoin,dragonclaw",
+            "$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -304,7 +334,8 @@
       {
         "name": "Potion Basket",
         "access_rules": [
-          "suncoin,dragonclaw"
+            "suncoin,dragonclaw",
+            "$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -327,7 +358,8 @@
       {
         "name": "Flare Chest",
         "access_rules": [
-          "suncoin,dragonclaw"
+            "suncoin,dragonclaw",
+            "$warp_wind,dragonclaw"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
@@ -348,9 +380,10 @@
         ]
       },
       {
-        "name": "Boss Chest",
+        "name": "Boss ... Chest",
         "access_rules": [
-          "suncoin,dragonclaw,axe,bombs"
+            "suncoin,dragonclaw,axe,bombs",
+            "$warp_wind,dragonclaw,axe,bombs"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",

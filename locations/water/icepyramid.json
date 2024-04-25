@@ -25,7 +25,8 @@
           {
             "name": "Floor 1 Baskets",
             "access_rules": [
-              "sandcoin,swords"
+                "sandcoin,swords,",
+                "$warp_water,swords"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -36,7 +37,8 @@
           {
             "name": "Floor 1 Chest",
             "access_rules": [
-              "sandcoin,swords"
+                "sandcoin,swords",
+                "$warp_water,swords"
             ],
             "clear_as_group": false,
             "item_count": 1
@@ -44,7 +46,8 @@
           {
             "name": "Floor 2 Baskets",
             "access_rules": [
-              "sandcoin,swords"
+                "sandcoin,swords",
+                "$warp_water,swords"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -55,7 +58,8 @@
           {
             "name": "Floor 3 Baskets",
             "access_rules": [
-              "sandcoin,swords"
+                "sandcoin,swords",
+                "$warp_water,swords"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -66,7 +70,8 @@
           {
             "name": "Floor 4 Baskets",
             "access_rules": [
-              "sandcoin,swords"
+                "sandcoin,swords",
+                "$warp_water,swords"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -77,7 +82,8 @@
           {
             "name": "Floor 4 Chest",
             "access_rules": [
-              "sandcoin,swords"
+                "sandcoin,swords",
+                "$warp_water,swords"
             ],
             "clear_as_group": false,
             "item_count": 1
@@ -85,7 +91,8 @@
           {
             "name": "Floor 5 Baskets",
             "access_rules": [
-              "sandcoin,swords"
+                "sandcoin,swords",
+                "$warp_water,swords"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -96,7 +103,8 @@
           {
             "name": "Floor 5 Baskets",
             "access_rules": [
-              "sandcoin,swords,claws,bombs"
+                "sandcoin,swords,claws,bombs",
+                "$warp_water,swords,claws,bombs"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -107,7 +115,8 @@
           {
             "name": "Basement Baskets",
             "access_rules": [
-              "sandcoin,swords,claws,bombs"
+                "sandcoin,swords,claws,bombs",
+                "$warp_water,swords,claws,bombs"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -118,7 +127,8 @@
           {
             "name": "Basement Chest",
             "access_rules": [
-              "sandcoin,swords,claws,bombs"
+                "sandcoin,swords,claws,bombs",
+                "$warp_water,swords,claws,bombs"
             ],
             "clear_as_group": false,
             "item_count": 1
@@ -126,7 +136,8 @@
           {
             "name": "Boss Room Chest",
             "access_rules": [
-              "sandcoin,swords,claws,bombs"
+                "sandcoin,swords,claws,bombs",
+                "$warp_water,swords,claws,bombs"
             ],
             "clear_as_group": false,
             "item_count": 1
@@ -136,7 +147,8 @@
       {
         "name": "Mirror Chest",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
@@ -159,7 +171,8 @@
       {
         "name": "Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -182,7 +195,8 @@
       {
         "name": "Double Baskets",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -205,7 +219,8 @@
       {
         "name": "Floor 2 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -228,7 +243,8 @@
       {
         "name": "Floor 2 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -251,7 +267,8 @@
       {
         "name": "Floor 2 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -274,7 +291,8 @@
       {
         "name": "Floor 2 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -297,7 +315,8 @@
       {
         "name": "Floor 2 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -320,7 +339,8 @@
       {
         "name": "Floor 2 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -343,7 +363,8 @@
       {
         "name": "Floor 3 Baskets",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -366,7 +387,8 @@
       {
         "name": "Floor 3 Baskets",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -389,7 +411,8 @@
       {
         "name": "Floor 3 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -412,7 +435,8 @@
       {
         "name": "Floor 3 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -435,7 +459,8 @@
       {
         "name": "Floor 4 Baskets",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -458,7 +483,8 @@
       {
         "name": "Floor 4 Baskets",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
@@ -481,7 +507,8 @@
       {
         "name": "Floor 5 Baskets",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -504,7 +531,8 @@
       {
         "name": "Floor 5 Baskets",
         "access_rules": [
-          "swords,sandcoin,bombs,claws"
+            "swords,sandcoin,bombs,claws",
+            "$warp_water,swords,bombs,claws"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -527,7 +555,8 @@
       {
         "name": "Floor 5 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords,bombs,claws"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -550,7 +579,8 @@
       {
         "name": "Floor 5 Basket",
         "access_rules": [
-          "swords,sandcoin"
+            "swords,sandcoin",
+            "$warp_water,swords,bombs,claws"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -573,7 +603,8 @@
       {
         "name": "Basement Baskets",
         "access_rules": [
-          "swords,sandcoin,bombs,claws"
+            "swords,sandcoin,bombs,claws",
+            "$warp_water,swords,bombs,claws"
         ],
         "chest_unavailable_img": "images/chests/basket_available.png",
         "chest_unopened_img": "images/chests/basket_available.png",
@@ -596,7 +627,8 @@
       {
         "name": "Knight Sword",
         "access_rules": [
-          "swords,sandcoin,bombs,claws"
+            "swords,sandcoin,bombs,claws",
+            "$warp_water,swords,bombs,claws"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",
@@ -619,7 +651,8 @@
       {
         "name": "Boss Chest",
         "access_rules": [
-          "swords,sandcoin,bombs,claws"
+            "swords,sandcoin,bombs,claws",
+            "$warp_water,swords,bombs,claws"
         ],
         "chest_unavailable_img": "images/chests/chest_available.png",
         "chest_unopened_img": "images/chests/chest_available.png",

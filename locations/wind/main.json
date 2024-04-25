@@ -52,7 +52,8 @@
       {
         "name": "Alive Forest",
         "access_rules": [
-          "suncoin"
+            "suncoin",
+            "$warp_wind"
         ],
         "map_locations": [
           {
@@ -111,7 +112,8 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "mobiuscrest,axe"
+                "mobiuscrest,axe",
+                "$warp_wind,axe"
             ],
             "item_count": 1
           },
@@ -121,7 +123,8 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "mobiuscrest,axe"
+                "mobiuscrest,axe",
+                "$warp_wind,axe"
             ],
             "item_count": 1
           },
@@ -131,7 +134,8 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "geminicrest,axe"
+                "geminicrest,axe",
+                "$warp_wind, axe"
             ],
             "item_count": 1
           },
@@ -151,7 +155,8 @@
       {
         "name": "Kaidge Temple",
         "access_rules": [
-          "suncoin"
+            "suncoin",
+            "$warp_wind"
         ],
         "map_locations": [
           {
@@ -182,7 +187,8 @@
       {
         "name": "Light Temple",
         "access_rules": [
-          "suncoin"
+            "suncoin",
+            "$warp_wind"
         ],
         "map_locations": [
           {
@@ -213,7 +219,8 @@
       {
         "name": "Windhole Temple",
         "access_rules": [
-          "suncoin"
+            "suncoin",
+            "$warp_wind"
         ],
         "map_locations": [
           {
@@ -241,7 +248,8 @@
       {
         "name": "Mount Gale",
         "access_rules": [
-          "suncoin"
+            "suncoin",
+            "$warp_wind"
         ],
         "map_locations": [
           {

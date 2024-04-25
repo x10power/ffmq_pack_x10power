@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\items",
-    "\\layouts",
     "\\layouts\\grids",
+    "\\layouts\\maps",
+    "\\locations",
+    "\\locations\\water",
+    "\\maps\\dungeons",
+    "\\resources\\tests",
     "\\scripts",
-    "\\scripts\\items",
-    "\\variants\\items_only",
-    "\\variants\\items_only\\layouts",
-    "\\variants\\shard_hunt",
-    "\\variants\\shard_hunt\\layouts"
+    "\\variants",
+    "\\variants\\Simple"
   ],
-  "SelectedNode": "\\layouts\\grids\\coins.json",
+  "SelectedNode": "\\locations\\water\\main.json",
   "PreviewInSolutionExplorer": false
 }

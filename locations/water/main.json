@@ -17,7 +17,8 @@
       {
         "name": "Libra Temple",
         "access_rules": [
-          "sandcoin"
+            "sandcoin",
+            "$warp_water"
         ],
         "map_locations": [
           {
@@ -52,7 +53,8 @@
       {
         "name": "Wintry Cave",
         "access_rules": [
-          "sandcoin"
+            "sandcoin",
+            "$warp_water"
         ],
         "map_locations": [
           {
@@ -74,7 +76,8 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [
-              "sandcoin"
+                "sandcoin",
+                "$warp_water"
             ],
             "item_count": 1
           },
@@ -84,7 +87,8 @@
             "#itemtype": "keyitem",
             "#vanilla": "claw",
             "access_rules": [
-              "Phoebe,sandcoin"
+                "Phoebe,sandcoin",
+                "Phoebe,$warp_water"
             ],
             "item_count": 1
           },
@@ -191,7 +195,8 @@
       {
         "name": "Life Temple",
         "access_rules": [
-          "libracrest,sandcoin"
+            "libracrest,sandcoin",
+            "$warp_water, libracrest"
         ],
         "map_locations": [
           {
@@ -228,7 +233,8 @@
       {
         "name": "Falls Basin",
         "access_rules": [
-          "sandcoin"
+            "sandcoin",
+            "$warp_water"
         ],
         "map_locations": [
           {
@@ -282,7 +288,9 @@
             "name": "Spencer Venus Key",
             "#itemtype": "basket",
             "access_rules": [
-              "sandcoin,wakewater,venuskey"
+                "sandcoin,wakewater,venuskey",
+                "$warp_water,wakewater,venuskey",
+                "$warp_wind,thunderrock"
             ],
             "item_count": 1
           },
@@ -290,7 +298,9 @@
             "name": "Spencer",
             "#itemtype": "basket",
             "access_rules": [
-              "sandcoin,wakewater"
+                "sandcoin,wakewater",
+                "$warp_water,wakewater",
+                "$warp_wind,thunderrock"
             ],
             "#vanilla": "venuskey",
             "#type": "keyitem",
@@ -300,7 +310,8 @@
             "name": "Mobius Crest",
             "#itemtype": "basket",
             "access_rules": [
-              "suncoin,mobius,megas"
+                "suncoin,mobius,megas",
+                "$warp_wind,mobius,megas"
             ],
             "#type": "keyitem",
             "item_count": 1
@@ -328,7 +339,7 @@
             "name": "Refreshers",
             "#itemtype": "basket",
             "access_rules": [
-              "rivercoin,gemini"
+                "$warp_water"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -339,7 +350,7 @@
             "name": "Explosives",
             "#itemtype": "basket",
             "access_rules": [
-              "rivercoin,gemini"
+                "$warp_water"
             ],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",

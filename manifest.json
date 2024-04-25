@@ -7,34 +7,41 @@
   "package_uid": "ffmq_pack_x10power",
   "platform": "snes",
   "documentation_url": "https://github.com/x10power/ffmq_pack_x10power/wiki",
-  "variants": {
-    "items_only": {
-      "display_name": "Items-Only",
-      "flags": [
-        "chathud"
-      ]
-    },
-    "standard_map": {
-      "display_name": "Standard with Map",
-      "flags": [
-        "chathud",
-        "map",
-        "pins"
-      ]
-    },
-    "shard_hunt": {
-      "display_name": "Shard Hunt",
-      "flags": [
-        "chathud"
-      ]
-    },
-    "shard_hunt_map": {
-      "display_name": "Shard Hunt with Map",
-      "flags": [
-        "chathud",
-        "map",
-        "pins"
-      ]
+    "variants": {
+        "items_only": {
+            "display_name": "Items-Only",
+            "flags": [
+                "chathud"
+            ]
+        },
+        "standard_map": {
+            "display_name": "Standard with Map",
+            "flags": [
+                "chathud",
+                "map",
+                "pins"
+            ]
+        },
+        "shard_hunt": {
+            "display_name": "Shard Hunt",
+            "flags": [
+                "chathud"
+            ]
+        },
+        "shard_hunt_map": {
+            "display_name": "Shard Hunt with Map",
+            "flags": [
+                "chathud",
+                "map",
+                "pins"
+            ]
+        },
+        "simple": {
+            "display_name": "Simple",
+            "flags": [
+                "chathud"           
+            ]
+        }
+
     }
-  }
 }

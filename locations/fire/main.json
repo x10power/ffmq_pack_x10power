@@ -14,7 +14,8 @@
       {
         "name": "Mine",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -89,7 +90,8 @@
       {
         "name": "Sealed Temple",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
@@ -124,7 +126,8 @@
       {
         "name": "Volcano",
         "access_rules": [
-          "rivercoin"
+            "rivercoin",
+            "$warp_fire"
         ],
         "map_locations": [
           {
