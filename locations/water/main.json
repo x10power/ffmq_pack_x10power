@@ -75,15 +75,6 @@
         ],
         "sections": [
           {
-            "name": "1F Arrows",
-            "#itemtype": "basket",
-            "chest_unavailable_img": "images/chests/basket_available.png",
-            "chest_unopened_img": "images/chests/basket_available.png",
-            "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [],
-            "item_count": 1
-          },
-          {
             "name": "Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
             "#itemtype": "keyitem",

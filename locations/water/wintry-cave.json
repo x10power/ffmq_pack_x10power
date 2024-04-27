@@ -11,7 +11,7 @@
         "name": "Wintry Cave Underworld",
         "children": [
           {
-            "name": "1F Bombs",
+            "name": "WC 1F Bombs",
             "#itemtype": "basket",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
@@ -32,7 +32,7 @@
             ]
           },
           {
-            "name": "Phoebe",
+            "name": "WC Phoebe",
             "chest_unopened_img": "images/party/phoebe.gif",
             "#itemtype": "keyitem",
             "#vanilla": "claw",
@@ -52,7 +52,7 @@
             ]
           },
           {
-            "name": "1F H Pot",
+            "name": "WC 1F H Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -76,7 +76,7 @@
           },
           //Bombs Require
           {
-            "name": "1F C Pot",
+            "name": "WC 1F C Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -99,7 +99,7 @@
             ]
           },
           {
-            "name": "1F Arrows",
+            "name": "WC 1F Arrows",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -115,7 +115,7 @@
             ]
           },
           {
-            "name": "Refreshers",
+            "name": "WC Refreshers",
             "access_rules": [
               "claw"
             ],
@@ -131,7 +131,7 @@
             ]
           },
           {
-            "name": "Heal Pots & Arrow",
+            "name": "WC Heal Pots & Arrow",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -154,7 +154,7 @@
             ]
           },
           {
-            "name": "2F Arrow Left",
+            "name": "WC 2F Arrow Left",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -177,7 +177,7 @@
             ]
           },
           {
-            "name": "2F Arrow Right",
+            "name": "WC 2F Arrow Right",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -200,7 +200,7 @@
             ]
           },
           {
-            "name": "2F C Pot",
+            "name": "WC 2F C Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -223,7 +223,7 @@
             ]
           },
           {
-            "name": "2F H Pot",
+            "name": "WC 2F H Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -238,10 +238,16 @@
                 "x": 393,
                 "y": 258
               }
-            ]
-          },
+            ],
+            "sections": [
+                {
+                  "name": "Basket",
+                  "item_count": 1
+                }
+              ]
+            },
           {
-            "name": "3F C Pot",
+            "name": "WC 3F C Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -264,7 +270,7 @@
             ]
           },
           {
-            "name": "3F Arrows (N)",
+            "name": "WC 3F Arrows (N)",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -287,7 +293,7 @@
             ]
           },
           {
-            "name": "3F Arrows (S)",
+            "name": "WC 3F Arrows (S)",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -310,7 +316,7 @@
             ]
           },
           {
-            "name": "Squidite",
+            "name": "WC Squidite",
             "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
             "access_rules": [
