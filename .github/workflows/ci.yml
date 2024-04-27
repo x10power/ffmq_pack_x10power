@@ -32,6 +32,7 @@ jobs:
       - name: 💿Call Install
         uses: ./.github/actions/install
         with:
+          job-name: install-test
           os-name: ${{ matrix.os-name }}
           python-version: ${{ matrix.python-version }}
       # Analyze used GitHub Actions
@@ -66,6 +67,7 @@ jobs:
       - name: 💿Call Install
         uses: ./.github/actions/install
         with:
+          job-name: install-release-prepare
           os-name: ${{ matrix.os-name }}
           python-version: ${{ matrix.python-version }}
 
