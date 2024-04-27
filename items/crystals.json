@@ -1,5 +1,4 @@
 [
-  // Crystal of Earth
   {
     "name": "Crystal of Earth",
     "type": "toggle",
@@ -7,7 +6,6 @@
     "img": "images/crystals/crystal_earth.png",
     "codes": "earthcrystal"
   },
-  // Crystal of Water
   {
     "name": "Crystal of Water",
     "type": "toggle",
@@ -15,7 +13,6 @@
     "img": "images/crystals/crystal_water.png",
     "codes": "watercrystal"
   },
-  // Crystal of Fire
   {
     "name": "Crystal of Fire",
     "type": "toggle",
@@ -23,7 +20,6 @@
     "img": "images/crystals/crystal_fire.png",
     "codes": "firecrystal"
   },
-  // Crystal of Wind
   {
     "name": "Crystal of Wind",
     "type": "toggle",
@@ -31,7 +27,6 @@
     "img": "images/crystals/crystal_wind.png",
     "codes": "windcrystal"
   },
-  // Crystal of Light
   {
     "name": "Crystal of Light",
     "type": "toggle",

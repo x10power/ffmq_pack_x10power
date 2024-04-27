@@ -1,13 +1,9 @@
 [
-  // Earth: Bone Dungeon
   {
     "name": "Bone Dungeon",
     "parent": "Earth",
     "type": "Dungeon",
-    "access_rules": [
-      "vanilla, tristam:1",
-      "rando"
-    ],
+    "access_rules": ["vanilla, tristam:1", "rando"],
     "children": [
       {
         "name": "Bone Dungeon Overworld",
@@ -16,16 +12,8 @@
             "name": "Bone Dungeon",
             "access_rules": [],
             "map_locations": [
-              {
-                "map": "drained-world",
-                "x": 190,
-                "y": 340
-              },
-              {
-                "map": "restored-world",
-                "x": 190,
-                "y": 340
-              }
+              {"map": "drained-world", "x": 190, "y": 340},
+              {"map": "restored-world", "x": 190, "y": 340}
             ],
             "sections": [
               {
@@ -39,9 +27,7 @@
               },
               {
                 "name": "Floor B1 Chest",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "item_count": 1
               },
               {
@@ -54,9 +40,7 @@
               },
               {
                 "name": "Floor B1a Chest",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -64,9 +48,7 @@
               },
               {
                 "name": "Floor B2 Baskets",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -75,9 +57,7 @@
               },
               {
                 "name": "Floor B2a Basket",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -85,9 +65,7 @@
               },
               {
                 "name": "Floor B2b Baskets",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -95,9 +73,7 @@
               },
               {
                 "name": "Floor B2c Baskets",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -105,16 +81,12 @@
               },
               {
                 "name": "Floor B2d Baskets",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "item_count": 1
               },
               {
                 "name": "Boss Room Baskets",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -123,9 +95,7 @@
               },
               {
                 "name": "Boss Room Chests",
-                "access_rules": [
-                  "bomb"
-                ],
+                "access_rules": ["bomb"],
                 "hosted_item": "boss_bonedungeon",
                 "clear_as_group": false,
                 "item_count": 2
@@ -134,7 +104,6 @@
           }
         ]
       },
-      //Bone Dungeon
       {
         "name": "Bone Dungeon Underworld",
         "children": [
@@ -144,13 +113,7 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-1f",
-                "x": 31,
-                "y": 187
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-1f", "x": 31, "y": 187}],
             "sections": [
               {
                 "name": "Ninja Star Basket",
@@ -165,13 +128,7 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-1f",
-                "x": 205,
-                "y": 187
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-1f", "x": 205, "y": 187}],
             "sections": [
               {
                 "name": "Potion Basket",
@@ -186,13 +143,7 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-1f",
-                "x": 366,
-                "y": 187
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-1f", "x": 366, "y": 187}],
             "sections": [
               {
                 "name": "Ninja Star Basket",
@@ -203,19 +154,11 @@
           },
           {
             "name": "B1: Steel Shield",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b1",
-                "x": 481,
-                "y": 45
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b1", "x": 481, "y": 45}],
             "sections": [
               {
                 "name": "Steel Shield Chest",
@@ -230,13 +173,7 @@
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b1",
-                "x": 79,
-                "y": 205
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b1", "x": 79, "y": 205}],
             "sections": [
               {
                 "name": "Tristam Gift",
@@ -247,19 +184,11 @@
           },
           {
             "name": "B1a: Basket",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b1a",
-                "x": 254,
-                "y": 76
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b1a", "x": 254, "y": 76}],
             "sections": [
               {
                 "name": "Ninja Star Basket",
@@ -270,19 +199,11 @@
           },
           {
             "name": "B2: Basket 1",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b2",
-                "x": 417,
-                "y": 429
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b2", "x": 417, "y": 429}],
             "sections": [
               {
                 "name": "bomb Basket",
@@ -293,19 +214,11 @@
           },
           {
             "name": "B2: Basket 2",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b2",
-                "x": 80,
-                "y": 315
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b2", "x": 80, "y": 315}],
             "sections": [
               {
                 "name": "Ninja Star Basket",
@@ -316,19 +229,11 @@
           },
           {
             "name": "B2a: Hidden Room",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b2a",
-                "x": 210,
-                "y": 61
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b2a", "x": 210, "y": 61}],
             "sections": [
               {
                 "name": "Ninja Star Basket",
@@ -339,19 +244,11 @@
           },
           {
             "name": "B2b: Basket",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b2b",
-                "x": 64,
-                "y": 477
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b2b", "x": 64, "y": 477}],
             "sections": [
               {
                 "name": "Ninja Star Basket",
@@ -362,19 +259,11 @@
           },
           {
             "name": "B2c: Seed Basket",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b2c",
-                "x": 79,
-                "y": 75
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b2c", "x": 79, "y": 75}],
             "sections": [
               {
                 "name": "Seed Basket",
@@ -385,19 +274,11 @@
           },
           {
             "name": "B2d: Quake Chest",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-b2d",
-                "x": 62,
-                "y": 93
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-b2d", "x": 62, "y": 93}],
             "sections": [
               {
                 "name": "Quake Chest",
@@ -408,19 +289,11 @@
           },
           {
             "name": "Boss: Chests",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-boss",
-                "x": 133,
-                "y": 82
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-boss", "x": 133, "y": 82}],
             "sections": [
               {
                 "name": "Sand Coin",
@@ -437,19 +310,11 @@
           },
           {
             "name": "Boss: Baskets",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "bone-dungeon-boss",
-                "x": 153,
-                "y": 82
-              }
-            ],
+            "map_locations": [{"map": "bone-dungeon-boss", "x": 153, "y": 82}],
             "sections": [
               {
                 "name": "Boss Baskets",

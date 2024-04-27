@@ -5,10 +5,7 @@
   "title": "EmoTracker: Maps Container",
   "description": "The root schema comprises the entire JSON document.",
   "default": [],
-  "required": [
-    "name",
-    "img"
-  ],
+  "required": ["name", "img"],
   "properties": {
     "name": {
       "type": "string",
@@ -26,17 +23,13 @@
       "type": "integer",
       "title": "Size of location squares",
       "description": "Width in pixels",
-      "examples": [
-        16
-      ]
+      "examples": [16]
     },
     "location_border_thickness": {
       "type": "integer",
       "title": "Size of border on location squares",
       "description": "Width in pixels",
-      "examples": [
-        1
-      ]
+      "examples": [1]
     }
   }
 }

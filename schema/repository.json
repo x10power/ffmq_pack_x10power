@@ -5,10 +5,7 @@
   "title": "EmoTracker: Repository Manifest",
   "description": "The root schema comprises the entire JSON document.",
   "default": {},
-  "required": [
-    "name",
-    "packages"
-  ],
+  "required": ["name", "packages"],
   "properties": {
     "name": {
       "$id": "#/properties/name",
@@ -63,9 +60,7 @@
                 "title": "Game Name",
                 "description": "Name of game to list this package under.",
                 "default": "",
-                "examples": [
-                  "A Link to the Past Randomizer"
-                ]
+                "examples": ["A Link to the Past Randomizer"]
               },
               "version": {
                 "$id": "#/properties/packages/items/anyOf/0/properties/version",
@@ -97,18 +92,8 @@
                       "title": "The first anyOf schema",
                       "description": "An explanation about the purpose of this instance.",
                       "default": "",
-                      "enum": [
-                        "autotracker",
-                        "chathud",
-                        "map",
-                        "pins"
-                      ],
-                      "examples": [
-                        "autotracker",
-                        "chathud",
-                        "map",
-                        "pins"
-                      ]
+                      "enum": ["autotracker", "chathud", "map", "pins"],
+                      "examples": ["autotracker", "chathud", "map", "pins"]
                     }
                   ]
                 }
@@ -150,10 +135,7 @@
                       "title": "Variant",
                       "description": "",
                       "default": {},
-                      "required": [
-                        "name",
-                        "flags"
-                      ],
+                      "required": ["name", "flags"],
                       "properties": {
                         "name": {
                           "$id": "#/properties/packages/items/anyOf/0/properties/variants/items/anyOf/0/properties/name",
@@ -178,18 +160,8 @@
                                 "title": "The first anyOf schema",
                                 "description": "An explanation about the purpose of this instance.",
                                 "default": "",
-                                "enum": [
-                                  "autotracker",
-                                  "chathud",
-                                  "map",
-                                  "pins"
-                                ],
-                                "examples": [
-                                  "autotracker",
-                                  "chathud",
-                                  "map",
-                                  "pins"
-                                ]
+                                "enum": ["autotracker", "chathud", "map", "pins"],
+                                "examples": ["autotracker", "chathud", "map", "pins"]
                               }
                             ]
                           }

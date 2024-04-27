@@ -1,5 +1,4 @@
 [
-  // Steel Sword
   {
     "name": "Steel Sword",
     "type": "toggle",
@@ -7,7 +6,6 @@
     "codes": "sword1",
     "img": "images/inventory/weapons/sword1.png"
   },
-  // Knight Sword
   {
     "name": "Knight Sword",
     "type": "toggle",
@@ -15,7 +13,6 @@
     "codes": "sword2",
     "img": "images/inventory/weapons/sword2.png"
   },
-  // Excalibur
   {
     "name": "Excalibur",
     "type": "toggle",
@@ -23,7 +20,6 @@
     "codes": "sword3",
     "img": "images/inventory/weapons/sword3.png"
   },
-  // Swords
   {
     "name": "Swords",
     "type": "progressive",
@@ -55,8 +51,6 @@
       }
     ]
   },
-
-  // Axe
   {
     "name": "Axe",
     "type": "toggle",
@@ -64,7 +58,6 @@
     "img": "images/inventory/weapons/axe1.png",
     "codes": "axe1"
   },
-  // Battle Axe
   {
     "name": "Battle Axe",
     "type": "toggle",
@@ -72,7 +65,6 @@
     "img": "images/inventory/weapons/axe2.png",
     "codes": "axe2"
   },
-  // Giant's Axe
   {
     "name": "Giant's Axe",
     "type": "toggle",
@@ -80,7 +72,6 @@
     "img": "images/inventory/weapons/axe3.png",
     "codes": "axe3"
   },
-  // Axes
   {
     "name": "Axes",
     "type": "progressive",
@@ -111,8 +102,6 @@
       }
     ]
   },
-
-  // Bomb
   {
     "name": "Bomb",
     "type": "toggle",
@@ -120,7 +109,6 @@
     "img": "images/inventory/weapons/bomb1.png",
     "codes": "bomb1"
   },
-  // Jumbo Bomb
   {
     "name": "Jumbo Bomb",
     "type": "toggle",
@@ -128,7 +116,6 @@
     "img": "images/inventory/weapons/bomb2.png",
     "codes": "bomb2"
   },
-  // Mega Grenade
   {
     "name": "Mega Grenade",
     "type": "toggle",
@@ -136,7 +123,6 @@
     "img": "images/inventory/weapons/bomb3.png",
     "codes": "bomb3"
   },
-  // Bombs
   {
     "name": "Bombs",
     "type": "progressive",
@@ -167,8 +153,6 @@
       }
     ]
   },
-
-  // Cat claw
   {
     "name": "Cat claw",
     "type": "toggle",
@@ -176,7 +160,6 @@
     "img": "images/inventory/weapons/claw1.png",
     "codes": "claw1"
   },
-  // Charm Claw
   {
     "name": "Charm Claw",
     "type": "toggle",
@@ -184,7 +167,6 @@
     "img": "images/inventory/weapons/claw2.png",
     "codes": "claw2"
   },
-  // Dragon Claw
   {
     "name": "Dragon Claw",
     "type": "toggle",
@@ -192,7 +174,6 @@
     "img": "images/inventory/weapons/claw3.png",
     "codes": "claw3"
   },
-  // claw
   {
     "name": "claw",
     "type": "progressive",

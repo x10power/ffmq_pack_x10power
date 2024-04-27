@@ -2,10 +2,7 @@
   {
     "name": "Wintry Cave",
     "parent": "water",
-    "access_rules": [
-      "vanilla,phoebe:1",
-      "rando"
-    ],
+    "access_rules": ["vanilla,phoebe:1", "rando"],
     "children": [
       {
         "name": "Wintry Cave Underworld",
@@ -17,19 +14,8 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "access_rules": [],
-            "map_locations": [
-              {
-                "map": "wintry-cave-1f",
-                "x": 633,
-                "y": 611
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-1f", "x": 633, "y": 611}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC Phoebe",
@@ -37,19 +23,8 @@
             "#itemtype": "keyitem",
             "#vanilla": "claw",
             "access_rules": [],
-            "map_locations": [
-              {
-                "map": "wintry-cave-1f",
-                "x": 651,
-                "y": 261
-              }
-            ],
-            "sections": [
-              {
-                "name": "Phoebe",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-1f", "x": 651, "y": 261}],
+            "sections": [{"name": "Phoebe", "item_count": 1}]
           },
           {
             "name": "WC 1F H Pot",
@@ -57,281 +32,128 @@
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "#itemtype": "basket",
-            "access_rules": [
-              "claw"
-            ],
-            "map_locations": [
-              {
-                "map": "wintry-cave-1f",
-                "x": 761,
-                "y": 371
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "access_rules": ["claw"],
+            "map_locations": [{"map": "wintry-cave-1f", "x": 761, "y": 371}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
-          //Bombs Require
           {
             "name": "WC 1F C Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-1f",
-                "x": 793,
-                "y": 51
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-1f", "x": 793, "y": 51}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC 1F Arrows",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "#itemtype": "basket",
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC Refreshers",
-            "access_rules": [
-              "claw"
-            ],
+            "access_rules": ["claw"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
             "#itemtype": "basket",
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 2
-              }
-            ]
+            "sections": [{"name": "Basket", "item_count": 2}]
           },
           {
             "name": "WC Heal Pots & Arrow",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "claw"
-            ],
+            "access_rules": ["claw"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-1f",
-                "x": 457,
-                "y": 547
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 2
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-1f", "x": 457, "y": 547}],
+            "sections": [{"name": "Basket", "item_count": 2}]
           },
           {
             "name": "WC 2F Arrow Left",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-2f",
-                "x": 121,
-                "y": 226
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-2f", "x": 121, "y": 226}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC 2F Arrow Right",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-2f",
-                "x": 377,
-                "y": 258
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-2f", "x": 377, "y": 258}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC 2F C Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-2f",
-                "x": 153,
-                "y": 258
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-2f", "x": 153, "y": 258}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC 2F H Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#itemtype": "basket",
             "item_count": 1,
-            "map_locations": [
-              {
-                "map": "wintry-cave-2f",
-                "x": 393,
-                "y": 258
-              }
-            ],
-            "sections": [
-                {
-                  "name": "Basket",
-                  "item_count": 1
-                }
-              ]
-            },
+            "map_locations": [{"map": "wintry-cave-2f", "x": 393, "y": 258}],
+            "sections": [{"name": "Basket", "item_count": 1}]
+          },
           {
             "name": "WC 3F C Pot",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-3f",
-                "x": 137,
-                "y": 50
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-3f", "x": 137, "y": 50}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC 3F Arrows (N)",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-3f",
-                "x": 169,
-                "y": 66
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-3f", "x": 169, "y": 66}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC 3F Arrows (S)",
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#itemtype": "basket",
-            "map_locations": [
-              {
-                "map": "wintry-cave-3f",
-                "x": 153,
-                "y": 226
-              }
-            ],
-            "sections": [
-              {
-                "name": "Basket",
-                "item_count": 1
-              }
-            ]
+            "map_locations": [{"map": "wintry-cave-3f", "x": 153, "y": 226}],
+            "sections": [{"name": "Basket", "item_count": 1}]
           },
           {
             "name": "WC Squidite",
             "chest_unopened_img": "images/chests/available.png",
             "#itemtype": "boss",
-            "access_rules": [
-              "bomb,claw"
-            ],
+            "access_rules": ["bomb,claw"],
             "#note": "Gives Libra Crest in vanilla",
             "#type": "keyitem",
             "hosted_item": "boss_wintrycave",
-            "map_locations": [
-              {
-                "map": "wintry-cave-3f",
-                "x": 169,
-                "y": 145
-              }
-            ],
+            "map_locations": [{"map": "wintry-cave-3f", "x": 169, "y": 145}],
             "sections": [
               {
                 "name": "Chest",

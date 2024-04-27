@@ -1,83 +1,61 @@
-{
-  "game_map": {
-    "type": "tabbed",
-    "tabs": [
-      {
-        "title": "Overworld",
-        "content": {
-          // "type": "tabbed",
-          // "tabs": [
-          //   {
-          //     "title": "Drained",
-          //     "content": {
-          //       "type": "map",
-          //       "maps": [
-          //         "drained-world"
-          //       ],
-          //       "width": 880
-          //     }
-          //   },
-          //   {
-          //     "title": "Restored",
-          //     "content": {
-          "type": "map",
-          "maps": [
-            "restored-world"
-          ],
-          "width": 880
-          //     }
-          //   }
-          // ]
-        }
-      },
-      {
-        "title": "Dungeons",
-        "content": {
-          "type": "tabbed",
-          "tabs": [
-            {
-              "title": "Earth",
-              "icon": "images/crystals/crystal_earth.png",
-              "content": {
-                "type": "layout",
-                "key": "maps_earth"
-              }
-            },
-            {
-              "title": "Water",
-              "icon": "images/crystals/crystal_water.png",
-              "content": {
-                "type": "layout",
-                "key": "maps_water"
-              }
-            },
-            {
-              "title": "Fire",
-              "icon": "images/crystals/crystal_fire.png",
-              "content": {
-                "type": "layout",
-                "key": "maps_fire"
-              }
-            },
-            {
-              "title": "Wind",
-              "icon": "images/crystals/crystal_wind.png",
-              "content": {
-                "type": "layout",
-                "key": "maps_wind"
-              }
-            },
-            {
-              "title": "Focus Tower",
-              "icon": "images/crystals/crystal_light.png",
-              "content": {
-                "type": "layout",
-                "key": "maps_focus_tower"
-              }
-            }
-          ]
-        }
+{"game_map": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Overworld",
+      "content": {
+        "type": "map",
+        "maps": ["restored-world"],
+        "width": 880
       }
-    ]
-  }
-}
+    },
+    {
+      "title": "Dungeons",
+      "content": {
+        "type": "tabbed",
+        "tabs": [
+          {
+            "title": "Earth",
+            "icon": "images/crystals/crystal_earth.png",
+            "content": {
+              "type": "layout",
+              "key": "maps_earth"
+            }
+          },
+          {
+            "title": "Water",
+            "icon": "images/crystals/crystal_water.png",
+            "content": {
+              "type": "layout",
+              "key": "maps_water"
+            }
+          },
+          {
+            "title": "Fire",
+            "icon": "images/crystals/crystal_fire.png",
+            "content": {
+              "type": "layout",
+              "key": "maps_fire"
+            }
+          },
+          {
+            "title": "Wind",
+            "icon": "images/crystals/crystal_wind.png",
+            "content": {
+              "type": "layout",
+              "key": "maps_wind"
+            }
+          },
+          {
+            "title": "Focus Tower",
+            "icon": "images/crystals/crystal_light.png",
+            "content": {
+              "type": "layout",
+              "key": "maps_focus_tower"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}}

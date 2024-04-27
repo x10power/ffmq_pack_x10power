@@ -1,14 +1,5 @@
-{
-  "weapons_grid": {
-    "type": "itemgrid",
-    "item_margin": "0",
-    "rows": [
-      [
-        "sword",
-        "axe",
-        "claw",
-        "bomb"
-      ]
-    ]
-  }
-}
+{"weapons_grid": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [["sword", "axe", "claw", "bomb"]]
+}}

@@ -1,5 +1,4 @@
 [
-  // Steel Helm
   {
     "name": "Steel Helm",
     "type": "toggle",
@@ -7,7 +6,6 @@
     "codes": "helmet1",
     "img": "images/armor/hat/helmet1.png"
   },
-  // Moon Helm
   {
     "name": "Moon Helm",
     "type": "toggle",
@@ -15,7 +13,6 @@
     "codes": "helmet2",
     "img": "images/armor/hat/helmet2.png"
   },
-  // Apollo Helm
   {
     "name": "Apollo Helm",
     "type": "toggle",
@@ -23,7 +20,6 @@
     "codes": "helmet3",
     "img": "images/armor/hat/helmet3.png"
   },
-  // Helmets
   {
     "name": "Helmets",
     "type": "progressive",
@@ -58,8 +54,6 @@
       }
     ]
   },
-
-  // Steel Armor
   {
     "name": "Steel Armor",
     "type": "toggle",
@@ -67,7 +61,6 @@
     "img": "images/armor/armor/armor1.png",
     "codes": "armor1"
   },
-  // Noble Armor
   {
     "name": "Noble Armor",
     "type": "toggle",
@@ -75,7 +68,6 @@
     "img": "images/armor/armor/armor2.png",
     "codes": "armor2"
   },
-  // Gaia's Armor
   {
     "name": "Gaia's Armor",
     "type": "toggle",
@@ -83,7 +75,6 @@
     "img": "images/armor/armor/armor3.png",
     "codes": "armor3"
   },
-  // Body Armor
   {
     "name": "Body Armor",
     "type": "progressive",
@@ -118,8 +109,6 @@
       }
     ]
   },
-
-  // Steel Shield
   {
     "name": "Steel Shield",
     "type": "toggle",
@@ -127,7 +116,6 @@
     "img": "images/armor/shield/shield1.png",
     "codes": "shield1"
   },
-  // Venus Shield
   {
     "name": "Venus Shield",
     "type": "toggle",
@@ -135,7 +123,6 @@
     "img": "images/armor/shield/shield2.png",
     "codes": "shield2"
   },
-  // Aegis Shield
   {
     "name": "Aegis Shield",
     "type": "toggle",
@@ -143,7 +130,6 @@
     "img": "images/armor/shield/shield3.png",
     "codes": "shield3"
   },
-  // Shields
   {
     "name": "Shields",
     "type": "progressive",
@@ -178,8 +164,6 @@
       }
     ]
   },
-
-  // Charm
   {
     "name": "Charm",
     "type": "toggle",
@@ -187,7 +171,6 @@
     "img": "images/armor/accessories/charm.png",
     "codes": "accessories1"
   },
-  // Magic Ring
   {
     "name": "Magic Ring",
     "type": "toggle",
@@ -195,7 +178,6 @@
     "img": "images/armor/accessories/magicring.png",
     "codes": "accessories2"
   },
-  // Cupid Locket
   {
     "name": "Cupid Locket",
     "type": "toggle",
@@ -203,7 +185,6 @@
     "img": "images/armor/accessories/cupidlocket.png",
     "codes": "accessories3"
   },
-  // Accessories
   {
     "name": "Accessories",
     "type": "progressive",

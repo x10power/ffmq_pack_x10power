@@ -1,13 +1,16 @@
-{
-  "armors_grid_bin": {
-    "type": "itemgrid",
-    "item_margin": "0",
-    "rows": [
-      [ "helmet1",  "helmet2",  "helmet3",  "armor1" ],
-      [ "armor2",   "armor3",   "armor4",   "armor5" ],
-      [ "armor6",   "armor7",   "shield1",  "shield2"],
-      [ "shield3",  "shield4",  "accessories1", "accessories2" ],
-      [ "accessories3", "", "", "" ]
-    ]
-  }
-}
+{"armors_grid_bin": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    ["helmet1", "helmet2", "helmet3", "armor1"],
+    ["armor2", "armor3", "armor4", "armor5"],
+    ["armor6", "armor7", "shield1", "shield2"],
+    [
+      "shield3",
+      "shield4",
+      "accessories1",
+      "accessories2"
+    ],
+    ["accessories3", "", "", ""]
+  ]
+}}

@@ -1,14 +1,5 @@
-{
-  "whitemagics_grid": {
-    "type": "itemgrid",
-    "item_margin": "0",
-    "rows": [
-      [
-        "exit",
-        "cure",
-        "heal",
-        "life"
-      ]
-    ]
-  }
-}
+{"whitemagics_grid": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [["exit", "cure", "heal", "life"]]
+}}

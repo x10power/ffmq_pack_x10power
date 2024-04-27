@@ -1,11 +1,8 @@
-{
-  // Horizontal: When width of window is greater than height
-  "tracker_horizontal": {
-    "type": "container",
-    "h_alignment": "center",
-    "content": {
-      "type": "layout",
-      "key": "shard_hunt"
-    }
+{"tracker_horizontal": {
+  "type": "container",
+  "h_alignment": "center",
+  "content": {
+    "type": "layout",
+    "key": "shard_hunt"
   }
-}
+}}

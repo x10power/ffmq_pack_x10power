@@ -1,5 +1,4 @@
 [
-  // Sand Coin
   {
     "name": "Sand Coin",
     "type": "toggle",
@@ -7,7 +6,6 @@
     "img": "images/coins/coin_sand.png",
     "codes": "sand, sandcoin"
   },
-  // River Coin
   {
     "name": "River Coin",
     "type": "toggle",
@@ -15,7 +13,6 @@
     "img": "images/coins/coin_river.png",
     "codes": "river, rivercoin"
   },
-  // Sun Coin
   {
     "name": "Sun Coin",
     "type": "toggle",
@@ -23,7 +20,6 @@
     "img": "images/coins/coin_sun.png",
     "codes": "sun, suncoin"
   },
-  // Sky Coin
   {
     "name": "Sky Coin",
     "type": "toggle",
@@ -31,7 +27,6 @@
     "img": "images/coins/coin_sky.png",
     "codes": "sky, skycoin"
   },
-  // Libra Crest
   {
     "name": "Libra Crest",
     "type": "toggle",
@@ -40,7 +35,6 @@
     "img_mods": "overlay|images/crests/overlay/libra.png",
     "codes": "libra, libracrest"
   },
-  // Gemini Crest
   {
     "name": "Gemini Crest",
     "type": "toggle",
@@ -49,7 +43,6 @@
     "img_mods": "overlay|images/crests/overlay/gemini.png",
     "codes": "gemini, geminicrest"
   },
-  // Mobius Crest
   {
     "name": "Mobius Crest",
     "type": "toggle",
@@ -58,7 +51,6 @@
     "img_mods": "overlay|images/crests/overlay/mobius.png",
     "codes": "mobius, mobiuscrest"
   },
-  // Elixir
   {
     "name": "Elixir",
     "type": "toggle",
@@ -66,7 +58,6 @@
     "img": "images/inventory/elixir.png",
     "codes": "elixir"
   },
-  // Tree Wither
   {
     "name": "Tree Wither",
     "type": "toggle",
@@ -74,7 +65,6 @@
     "img": "images/inventory/treewither.png",
     "codes": "treewither"
   },
-  // Wake Water
   {
     "name": "Wake Water",
     "type": "toggle",
@@ -82,7 +72,6 @@
     "img": "images/inventory/wakewater.png",
     "codes": "wakewater"
   },
-  // Venus Key
   {
     "name": "Venus Key",
     "type": "toggle",
@@ -90,7 +79,6 @@
     "img": "images/inventory/venuskey.png",
     "codes": "venuskey"
   },
-  // Multi Key
   {
     "name": "Multi Key",
     "type": "toggle",
@@ -98,7 +86,6 @@
     "img": "images/inventory/multikey.png",
     "codes": "multikey"
   },
-  // Gas Mask
   {
     "name": "Gas Mask",
     "type": "toggle",
@@ -106,7 +93,6 @@
     "img": "images/inventory/gasmask.png",
     "codes": "gasmask"
   },
-  // Magic Mirror
   {
     "name": "Magic Mirror",
     "type": "toggle",
@@ -114,7 +100,6 @@
     "img": "images/inventory/magicmirror.png",
     "codes": "magicmirror"
   },
-  // Thunder Rock
   {
     "name": "Thunder Rock",
     "type": "toggle",
@@ -122,7 +107,6 @@
     "img": "images/inventory/thunderrock.png",
     "codes": "thunderrock"
   },
-  // Captain Cap
   {
     "name": "Captain Cap",
     "type": "toggle",

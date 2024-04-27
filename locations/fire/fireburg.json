@@ -1,35 +1,21 @@
 [
-  // Fire: Fireburg
   {
     "name": "Fireburg",
     "parent": "Fire",
-    "access_rules": [
-      // "@Start/Connection"
-    ],
+    "access_rules": [],
     "children": [
-      // Fireburg
       {
         "name": "Fireburg",
-        "access_rules": [
-          "rivercoin"
-        ],
+        "access_rules": ["rivercoin"],
         "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 265,
-            "y": 160
-          },
-          {
-            "map": "restored-world",
-            "x": 265,
-            "y": 160
-          }
+          {"map": "drained-world", "x": 265, "y": 160},
+          {"map": "restored-world", "x": 265, "y": 160}
         ],
         "sections": [
           {
             "name": "Reuben",
             "#type": "keyitem",
-            "access_rules": ["","{}"],
+            "access_rules": ["", "{}"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/party/reuben.gif",
@@ -39,7 +25,7 @@
           },
           {
             "name": "Tristam",
-            "access_rules": ["","{}"],
+            "access_rules": ["", "{}"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/party/tristam.gif",
@@ -51,9 +37,7 @@
           },
           {
             "name": "Mega Grenade",
-            "access_rules": [
-              "multikey"
-            ],
+            "access_rules": ["multikey"],
             "#type": "keyitem",
             "item_count": 1
           },
@@ -80,9 +64,7 @@
           },
           {
             "name": "Reuben's Dad",
-            "access_rules": [
-              "megagrenade"
-            ],
+            "access_rules": ["megagrenade"],
             "#type": "keyitem",
             "item_count": 1
           }

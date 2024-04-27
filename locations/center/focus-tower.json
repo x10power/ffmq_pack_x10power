@@ -1,38 +1,17 @@
 [
-  // Focus Tower
   {
     "name": "Focus Tower",
     "parent": "World",
-    "access_rules": [
-      "vanilla, tristam:1, kaelicured",
-      "rando"
-    ],
+    "access_rules": ["vanilla, tristam:1, kaelicured", "rando"],
     "children": [
-      // Doors
       {
         "name": "Focus Tower: Doors",
         "access_rules": [],
         "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 382,
-            "y": 384
-          },
-          {
-            "map": "drained-world",
-            "x": 362,
-            "y": 432
-          },
-          {
-            "map": "restored-world",
-            "x": 382,
-            "y": 384
-          },
-          {
-            "map": "restored-world",
-            "x": 362,
-            "y": 432
-          }
+          {"map": "drained-world", "x": 382, "y": 384},
+          {"map": "drained-world", "x": 362, "y": 432},
+          {"map": "restored-world", "x": 382, "y": 384},
+          {"map": "restored-world", "x": 362, "y": 432}
         ],
         "sections": [
           {
@@ -44,9 +23,7 @@
           },
           {
             "name": "Fire Spell",
-            "access_rules": [
-              "sandcoin"
-            ],
+            "access_rules": ["sandcoin"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -56,9 +33,7 @@
           },
           {
             "name": "C Pot",
-            "access_rules": [
-              "rivercoin"
-            ],
+            "access_rules": ["rivercoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -66,17 +41,13 @@
           },
           {
             "name": "Blizzard Spell",
-            "access_rules": [
-              "sandcoin,wakewater"
-            ],
+            "access_rules": ["sandcoin,wakewater"],
             "#type": "keyitem",
             "item_count": 1
           },
           {
             "name": "Venus Shield",
-            "access_rules": [
-              "sandcoin,bomb,venuskey,wakewater"
-            ],
+            "access_rules": ["sandcoin,bomb,venuskey,wakewater"],
             "#type": "keyitem",
             "item_count": 1
           }

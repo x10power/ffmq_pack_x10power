@@ -2,14 +2,7 @@
   "coins_grid": {
     "type": "itemgrid",
     "item_margin": "0",
-    "rows": [
-      [
-        "sandcoin",
-        "rivercoin",
-        "suncoin",
-        "skycoin"
-      ]
-    ]
+    "rows": [["sandcoin", "rivercoin", "suncoin", "skycoin"]]
   },
   "shards_grid": {
     "type": "itemgrid",

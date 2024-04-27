@@ -1,30 +1,15 @@
 [
-  // Water: Aquaria
   {
     "name": "Aquaria",
     "parent": "Water",
-    "access_rules": [
-      // "@Start/Connection"
-    ],
+    "access_rules": [],
     "children": [
-      // Aquaria
       {
         "name": "Aquaria",
-        "access_rules": [
-          "sandcoin,vanilla,phoebe:1",
-          "sandcoin,rando"
-        ],
+        "access_rules": ["sandcoin,vanilla,phoebe:1", "sandcoin,rando"],
         "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 630,
-            "y": 225
-          },
-          {
-            "map": "restored-world",
-            "x": 630,
-            "y": 225
-          }
+          {"map": "drained-world", "x": 630, "y": 225},
+          {"map": "restored-world", "x": 630, "y": 225}
         ],
         "sections": [
           {
@@ -50,9 +35,7 @@
           },
           {
             "name": "Restoring Aquaria",
-            "access_rules": [
-              "wakewater"
-            ],
+            "access_rules": ["wakewater"],
             "chest_unavailable_img": "images/restore_aquaria.png",
             "chest_unopened_img": "images/restore_aquaria.png",
             "chest_opened_img": "images/restore_aquaria.png",
@@ -61,9 +44,7 @@
           },
           {
             "name": "Access to Spencer's Place",
-            "access_rules": [
-              "rivercoin"
-            ],
+            "access_rules": ["rivercoin"],
             "#itemtype": "information",
             "chest_unavailable_img": "images/chests/spencer_available.png",
             "chest_unopened_img": "images/chests/spencer_available.png",

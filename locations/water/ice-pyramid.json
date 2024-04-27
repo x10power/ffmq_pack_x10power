@@ -3,8 +3,8 @@
     "name": "Ice Pyramid",
     "parent": "water",
     "access_rules": [
-        "sandcoin,vanilla,phoebe:1,boss_fallsbasin",
-        "sandcoin,rando"
+      "sandcoin,vanilla,phoebe:1,boss_fallsbasin",
+      "sandcoin,rando"
     ],
     "children": [
       {
@@ -14,23 +14,13 @@
             "name": "Ice Pyramid",
             "access_rules": [],
             "map_locations": [
-              {
-                "map": "drained-world",
-                "x": 575,
-                "y": 80
-              },
-              {
-                "map": "restored-world",
-                "x": 575,
-                "y": 80
-              }
+              {"map": "drained-world", "x": 575, "y": 80},
+              {"map": "restored-world", "x": 575, "y": 80}
             ],
             "sections": [
               {
                 "name": "Floor 1 Baskets",
-                "access_rules": [
-                  "sandcoin,swords"
-                ],
+                "access_rules": ["sandcoin,swords"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -39,17 +29,13 @@
               },
               {
                 "name": "Floor 1 Chest",
-                "access_rules": [
-                  "sandcoin,swords"
-                ],
+                "access_rules": ["sandcoin,swords"],
                 "clear_as_group": false,
                 "item_count": 1
               },
               {
                 "name": "Floor 2 Baskets",
-                "access_rules": [
-                  "sandcoin,swords"
-                ],
+                "access_rules": ["sandcoin,swords"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -58,9 +44,7 @@
               },
               {
                 "name": "Floor 3 Baskets",
-                "access_rules": [
-                  "sandcoin,swords"
-                ],
+                "access_rules": ["sandcoin,swords"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -69,9 +53,7 @@
               },
               {
                 "name": "Floor 4 Baskets",
-                "access_rules": [
-                  "sandcoin,swords"
-                ],
+                "access_rules": ["sandcoin,swords"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -80,17 +62,13 @@
               },
               {
                 "name": "Floor 4 Chest",
-                "access_rules": [
-                  "sandcoin,swords"
-                ],
+                "access_rules": ["sandcoin,swords"],
                 "clear_as_group": false,
                 "item_count": 1
               },
               {
                 "name": "Floor 5 Baskets",
-                "access_rules": [
-                  "sandcoin,swords"
-                ],
+                "access_rules": ["sandcoin,swords"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -99,9 +77,7 @@
               },
               {
                 "name": "Floor 5 Baskets (behind switch doors)",
-                "access_rules": [
-                  "sandcoin,swords,claw,bomb"
-                ],
+                "access_rules": ["sandcoin,swords,claw,bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -110,9 +86,7 @@
               },
               {
                 "name": "Basement Baskets",
-                "access_rules": [
-                  "sandcoin,swords,claw,bombs"
-                ],
+                "access_rules": ["sandcoin,swords,claw,bombs"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -121,17 +95,13 @@
               },
               {
                 "name": "Basement Chest",
-                "access_rules": [
-                  "sandcoin,swords,claw,bombs"
-                ],
+                "access_rules": ["sandcoin,swords,claw,bombs"],
                 "clear_as_group": false,
                 "item_count": 1
               },
               {
                 "name": "Boss Room Chest",
-                "access_rules": [
-                  "sandcoin,swords,claw,bombs"
-                ],
+                "access_rules": ["sandcoin,swords,claw,bombs"],
                 "hosted_item": "boss_icepyramid",
                 "clear_as_group": false,
                 "item_count": 1
@@ -145,19 +115,11 @@
         "children": [
           {
             "name": "F1: Mirror Chest",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-1f",
-                "x": 880,
-                "y": 450
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-1f", "x": 880, "y": 450}],
             "sections": [
               {
                 "name": "Mirror",
@@ -168,19 +130,11 @@
           },
           {
             "name": "F1: Basket",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-1f",
-                "x": 593,
-                "y": 304
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-1f", "x": 593, "y": 304}],
             "sections": [
               {
                 "name": "Bomb Basket",
@@ -191,19 +145,11 @@
           },
           {
             "name": "F1: Double Baskets",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-1f",
-                "x": 105,
-                "y": 624
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-1f", "x": 105, "y": 624}],
             "sections": [
               {
                 "name": "Double Basket",
@@ -214,19 +160,11 @@
           },
           {
             "name": "F2: NW Basket",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-2f",
-                "x": 177,
-                "y": 93
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-2f", "x": 177, "y": 93}],
             "sections": [
               {
                 "name": "Heal Basket",
@@ -237,19 +175,11 @@
           },
           {
             "name": "F2: W Basket (next to switch, behind door)",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-2f",
-                "x": 113,
-                "y": 258
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-2f", "x": 113, "y": 258}],
             "sections": [
               {
                 "name": "Arrow Basket",
@@ -260,19 +190,11 @@
           },
           {
             "name": "F2: W Basket (behind door)",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-2f",
-                "x": 177,
-                "y": 272
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-2f", "x": 177, "y": 272}],
             "sections": [
               {
                 "name": "Arrow Basket",
@@ -283,19 +205,11 @@
           },
           {
             "name": "F2: N Basket (next to switch, behind door)",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-2f",
-                "x": 384,
-                "y": 31
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-2f", "x": 384, "y": 31}],
             "sections": [
               {
                 "name": "Arrow Basket",
@@ -306,19 +220,11 @@
           },
           {
             "name": "F2: E Basket (next to switch, behind door)",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-2f",
-                "x": 482,
-                "y": 223
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-2f", "x": 482, "y": 223}],
             "sections": [
               {
                 "name": "Arrow Basket",
@@ -329,19 +235,11 @@
           },
           {
             "name": "F2: SE Basket",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-2f",
-                "x": 497,
-                "y": 400
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-2f", "x": 497, "y": 400}],
             "sections": [
               {
                 "name": "Arrow Basket",
@@ -352,19 +250,11 @@
           },
           {
             "name": "F3: Baskets",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-3f",
-                "x": 160,
-                "y": 208
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-3f", "x": 160, "y": 208}],
             "sections": [
               {
                 "name": "Arrow & Bomb Baskets",
@@ -375,19 +265,11 @@
           },
           {
             "name": "F3: Baskets",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-3f",
-                "x": 224,
-                "y": 304
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-3f", "x": 224, "y": 304}],
             "sections": [
               {
                 "name": "Arrow & Heal Baskets",
@@ -398,19 +280,11 @@
           },
           {
             "name": "F3: Basket",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-3f",
-                "x": 401,
-                "y": 159
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-3f", "x": 401, "y": 159}],
             "sections": [
               {
                 "name": "Arrow Baskets",
@@ -421,19 +295,11 @@
           },
           {
             "name": "F3: Basket",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-3f",
-                "x": 433,
-                "y": 366
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-3f", "x": 433, "y": 366}],
             "sections": [
               {
                 "name": "Arrow Basket",
@@ -444,19 +310,11 @@
           },
           {
             "name": "F4: Baskets",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-4f",
-                "x": 256,
-                "y": 114
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-4f", "x": 256, "y": 114}],
             "sections": [
               {
                 "name": "Multiple Baskets",
@@ -467,19 +325,11 @@
           },
           {
             "name": "F4: Baskets",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-4f",
-                "x": 273,
-                "y": 144
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-4f", "x": 273, "y": 144}],
             "sections": [
               {
                 "name": "Noble Armor Chest",
@@ -490,19 +340,11 @@
           },
           {
             "name": "F5: Baskets",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-5f",
-                "x": 129,
-                "y": 306
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-5f", "x": 129, "y": 306}],
             "sections": [
               {
                 "name": "Double Bomb",
@@ -513,19 +355,11 @@
           },
           {
             "name": "F5: Baskets",
-            "access_rules": [
-              "swords,sandcoin,bombs,claw"
-            ],
+            "access_rules": ["swords,sandcoin,bombs,claw"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-5f",
-                "x": 80,
-                "y": 95
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-5f", "x": 80, "y": 95}],
             "sections": [
               {
                 "name": "Double Arrow",
@@ -536,19 +370,11 @@
           },
           {
             "name": "F5: Basket",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-5f",
-                "x": 223,
-                "y": 83
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-5f", "x": 223, "y": 83}],
             "sections": [
               {
                 "name": "Bomb Basket",
@@ -559,19 +385,11 @@
           },
           {
             "name": "F5: Basket",
-            "access_rules": [
-              "swords,sandcoin"
-            ],
+            "access_rules": ["swords,sandcoin"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-5f",
-                "x": 48,
-                "y": 195
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-5f", "x": 48, "y": 195}],
             "sections": [
               {
                 "name": "Potion Basket",
@@ -582,19 +400,11 @@
           },
           {
             "name": "Basement: Baskets",
-            "access_rules": [
-              "swords,sandcoin,bombs,claw"
-            ],
+            "access_rules": ["swords,sandcoin,bombs,claw"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-b1",
-                "x": 159,
-                "y": 258
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-b1", "x": 159, "y": 258}],
             "sections": [
               {
                 "name": "Multiple Baskets",
@@ -605,19 +415,11 @@
           },
           {
             "name": "Basement: Knight Sword",
-            "access_rules": [
-              "swords,sandcoin,bombs,claw"
-            ],
+            "access_rules": ["swords,sandcoin,bombs,claw"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-b1",
-                "x": 159,
-                "y": 291
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-b1", "x": 159, "y": 291}],
             "sections": [
               {
                 "name": "Knight Sword Chest",
@@ -628,19 +430,11 @@
           },
           {
             "name": "Boss: Chest",
-            "access_rules": [
-              "swords,sandcoin,bombs,claw"
-            ],
+            "access_rules": ["swords,sandcoin,bombs,claw"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "ice-pyramid-5f",
-                "x": 192,
-                "y": 64
-              }
-            ],
+            "map_locations": [{"map": "ice-pyramid-5f", "x": 192, "y": 64}],
             "sections": [
               {
                 "name": "Rivercoin",

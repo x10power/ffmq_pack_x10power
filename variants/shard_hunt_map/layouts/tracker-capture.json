@@ -1,7 +1,4 @@
-{
-  // Capture Grid
-  "tracker_capture_item": {
-    "type": "layout",
-    "key": "party_grid"
-  }
-}
+{"tracker_capture_item": {
+  "type": "layout",
+  "key": "party_grid"
+}}

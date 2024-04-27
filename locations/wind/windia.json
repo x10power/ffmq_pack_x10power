@@ -1,30 +1,15 @@
 [
-  // Wind: Windia
   {
     "name": "Windia",
     "parent": "Wind",
-    "access_rules": [
-      // "@Start/Connection"
-    ],
+    "access_rules": [],
     "children": [
-      // Windia
       {
         "name": "Windia",
-        "access_rules": [
-          "rivercoin,mobius",
-          "suncoin"
-        ],
+        "access_rules": ["rivercoin,mobius", "suncoin"],
         "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 690,
-            "y": 460
-          },
-          {
-            "map": "restored-world",
-            "x": 690,
-            "y": 460
-          }
+          {"map": "drained-world", "x": 690, "y": 460},
+          {"map": "restored-world", "x": 690, "y": 460}
         ],
         "sections": [
           {
@@ -67,26 +52,13 @@
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "access_rules": [
-              "mobius"
-            ],
+            "access_rules": ["mobius"],
             "item_count": 2
           },
-          // TODO: Vanilla
-          // {
-          //   "name": "Cupid Locket",
-          //   "#itemtype": "keyitem",
-          //   "access_rules": [
-          //   ],
-          //   "item_count": 1
-          // },
           {
             "name": "Kaeli Check 2",
             "#itemtype": "keyitem",
-            "access_rules": [
-              "{}",
-              "elixir,kaeli,treewither"
-            ],
+            "access_rules": ["{}", "elixir,kaeli,treewither"],
             "capture_item": true,
             "hosted_item": "kaeli",
             "item_count": 1

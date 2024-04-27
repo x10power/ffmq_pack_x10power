@@ -1,23 +1,21 @@
-{
-  "maps_water": {
-    "type": "tabbed",
-    "tabs": [
-      {
-        "title": "Wintry Cave",
-        "icon": "images/bosstokens/wintrycave.png",
-        "content": {
-          "type": "layout",
-          "key": "maps_wintry_cave"
-        }
-      },
-      {
-        "title": "Ice Pyramid",
-        "icon": "images/coins/coin_river.png",
-        "content": {
-          "type": "layout",
-          "key": "maps_ice_pyramid"
-        }
+{"maps_water": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Wintry Cave",
+      "icon": "images/bosstokens/wintrycave.png",
+      "content": {
+        "type": "layout",
+        "key": "maps_wintry_cave"
       }
-    ]
-  }
-}
+    },
+    {
+      "title": "Ice Pyramid",
+      "icon": "images/coins/coin_river.png",
+      "content": {
+        "type": "layout",
+        "key": "maps_ice_pyramid"
+      }
+    }
+  ]
+}}

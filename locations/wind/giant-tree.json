@@ -1,38 +1,23 @@
 [
-  // Wind: Giant Tree
   {
     "name": "Giant Tree",
     "parent": "wind",
-    "access_rules": [
-      // "@Start/Connection"
-    ],
+    "access_rules": [],
     "children": [
       {
         "name": "Giant Tree Overworld",
         "children": [
           {
             "name": "Giant Tree",
-            "access_rules": [
-              "suncoin"
-            ],
+            "access_rules": ["suncoin"],
             "map_locations": [
-              {
-                "map": "drained-world",
-                "x": 575,
-                "y": 470
-              },
-              {
-                "map": "restored-world",
-                "x": 525,
-                "y": 500
-              }
+              {"map": "drained-world", "x": 575, "y": 470},
+              {"map": "restored-world", "x": 525, "y": 500}
             ],
             "sections": [
               {
                 "name": "Floor 1 Baskets",
-                "access_rules": [
-                  "suncoin"
-                ],
+                "access_rules": ["suncoin"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -41,9 +26,7 @@
               },
               {
                 "name": "Floor 2 Baskets",
-                "access_rules": [
-                  "suncoin,dragonclaw"
-                ],
+                "access_rules": ["suncoin,dragonclaw"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -52,9 +35,7 @@
               },
               {
                 "name": "Floor 2 Basket (Axe Required)",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -62,16 +43,12 @@
               },
               {
                 "name": "Floor 2 Chest (Boss Needs to be Defeated)",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "item_count": 1
               },
               {
                 "name": "Floor 2a Baskets",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -80,9 +57,7 @@
               },
               {
                 "name": "Floor 3 Baskets",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -91,9 +66,7 @@
               },
               {
                 "name": "Floor 3a Baskets",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -102,9 +75,7 @@
               },
               {
                 "name": "Floor 4 Baskets",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -113,9 +84,7 @@
               },
               {
                 "name": "Floor 4a Baskets",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
                 "chest_opened_img": "images/chests/basket_opened.png",
@@ -124,9 +93,7 @@
               },
               {
                 "name": "Boss Floor",
-                "access_rules": [
-                  "suncoin,dragonclaw,swords,axe"
-                ],
+                "access_rules": ["suncoin,dragonclaw,swords,axe"],
                 "hosted_item": "boss_gianttree",
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",
@@ -143,19 +110,11 @@
         "children": [
           {
             "name": "F1: Right Basket",
-            "access_rules": [
-              "suncoin,axe"
-            ],
+            "access_rules": ["suncoin,axe"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-1f",
-                "x": 375,
-                "y": 315
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-1f", "x": 375, "y": 315}],
             "sections": [
               {
                 "name": "Potion Basket",
@@ -166,19 +125,11 @@
           },
           {
             "name": "F1: Middle Basket",
-            "access_rules": [
-              "suncoin,axe"
-            ],
+            "access_rules": ["suncoin,axe"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-1f",
-                "x": 248,
-                "y": 267
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-1f", "x": 248, "y": 267}],
             "sections": [
               {
                 "name": "Refresher Basket",
@@ -189,19 +140,11 @@
           },
           {
             "name": "F1: Left Baskets",
-            "access_rules": [
-              "suncoin,axe"
-            ],
+            "access_rules": ["suncoin,axe"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-1f",
-                "x": 71,
-                "y": 316
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-1f", "x": 71, "y": 316}],
             "sections": [
               {
                 "name": "Multiple Baskets",
@@ -212,19 +155,11 @@
           },
           {
             "name": "F2: Boss Chest",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-2f",
-                "x": 472,
-                "y": 237
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-2f", "x": 472, "y": 237}],
             "sections": [
               {
                 "name": "Meteor Chest",
@@ -235,19 +170,11 @@
           },
           {
             "name": "F2: NE Basket",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-2f",
-                "x": 440,
-                "y": 202
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-2f", "x": 440, "y": 202}],
             "sections": [
               {
                 "name": "Heal Basket",
@@ -258,19 +185,11 @@
           },
           {
             "name": "F2: SE Basket",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-2f",
-                "x": 440,
-                "y": 426
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-2f", "x": 440, "y": 426}],
             "sections": [
               {
                 "name": "Potion Basket",
@@ -281,19 +200,11 @@
           },
           {
             "name": "F2: SW Basket",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-2f",
-                "x": 104,
-                "y": 426
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-2f", "x": 104, "y": 426}],
             "sections": [
               {
                 "name": "Heal Basket",
@@ -304,19 +215,11 @@
           },
           {
             "name": "F2a: Double Baskets",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-2a",
-                "x": 191,
-                "y": 107
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-2a", "x": 191, "y": 107}],
             "sections": [
               {
                 "name": "Multiple Baskets",
@@ -327,19 +230,11 @@
           },
           {
             "name": "F3: Top Level Basket",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-3f",
-                "x": 296,
-                "y": 443
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-3f", "x": 296, "y": 443}],
             "sections": [
               {
                 "name": "Heal Basket",
@@ -350,19 +245,11 @@
           },
           {
             "name": "F3: Bottom Layer Baskets",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-3f",
-                "x": 199,
-                "y": 474
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-3f", "x": 199, "y": 474}],
             "sections": [
               {
                 "name": "Multiple Baskets",
@@ -373,19 +260,11 @@
           },
           {
             "name": "F3: Bottom Layer (SW)",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-3f",
-                "x": 136,
-                "y": 603
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-3f", "x": 136, "y": 603}],
             "sections": [
               {
                 "name": "Refresher Basket",
@@ -396,19 +275,11 @@
           },
           {
             "name": "F3a: Lower Chest",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-3a",
-                "x": 216,
-                "y": 189
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-3a", "x": 216, "y": 189}],
             "sections": [
               {
                 "name": "Heal Basket",
@@ -419,19 +290,11 @@
           },
           {
             "name": "F3a: Upper Chest",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-3a",
-                "x": 232,
-                "y": 91
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-3a", "x": 232, "y": 91}],
             "sections": [
               {
                 "name": "Potion Basket",
@@ -442,19 +305,11 @@
           },
           {
             "name": "F4: Lower Baskets",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-4f",
-                "x": 281,
-                "y": 475
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-4f", "x": 281, "y": 475}],
             "sections": [
               {
                 "name": "Multiple Baskets",
@@ -465,19 +320,11 @@
           },
           {
             "name": "F4: Upper Baskets",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-4f",
-                "x": 104,
-                "y": 291
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-4f", "x": 104, "y": 291}],
             "sections": [
               {
                 "name": "Multiple Baskets",
@@ -488,19 +335,11 @@
           },
           {
             "name": "F4a: Bottom Layer Basket",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-4a",
-                "x": 296,
-                "y": 154
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-4a", "x": 296, "y": 154}],
             "sections": [
               {
                 "name": "Potion Basket",
@@ -511,19 +350,11 @@
           },
           {
             "name": "F4a: Bottom Layer Basket",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-4a",
-                "x": 88,
-                "y": 186
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-4a", "x": 88, "y": 186}],
             "sections": [
               {
                 "name": "Heal Basket",
@@ -534,19 +365,11 @@
           },
           {
             "name": "Boss: S Baskets",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-5f",
-                "x": 192,
-                "y": 360
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-5f", "x": 192, "y": 360}],
             "sections": [
               {
                 "name": "Heal Basket",
@@ -557,19 +380,11 @@
           },
           {
             "name": "Boss: NW Baskets",
-            "access_rules": [
-              "suncoin,axe,dragonclaw,swords"
-            ],
+            "access_rules": ["suncoin,axe,dragonclaw,swords"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
-            "map_locations": [
-              {
-                "map": "giant-tree-5f",
-                "x": 72,
-                "y": 136
-              }
-            ],
+            "map_locations": [{"map": "giant-tree-5f", "x": 72, "y": 136}],
             "sections": [
               {
                 "name": "Heal Basket",

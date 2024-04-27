@@ -1,5 +1,4 @@
 [
-  // White Magics
   {
     "name": "White Magic",
     "type": "progressive",
@@ -39,7 +38,6 @@
       }
     ]
   },
-  // Black Magics
   {
     "name": "Black Magic",
     "type": "progressive",
@@ -79,7 +77,6 @@
       }
     ]
   },
-  // Wizard Magics
   {
     "name": "Wizard Magic",
     "type": "progressive",
@@ -119,8 +116,6 @@
       }
     ]
   },
-  // White Magics
-  // Exit
   {
     "name": "Exit",
     "type": "toggle",
@@ -129,7 +124,6 @@
     "img_mods": "overlay|images/magic/white/overlay/exit.png",
     "codes": "exit"
   },
-  // Cure
   {
     "name": "Cure",
     "type": "toggle",
@@ -138,7 +132,6 @@
     "img_mods": "overlay|images/magic/white/overlay/cure.png",
     "codes": "cure"
   },
-  // Heal
   {
     "name": "Heal",
     "type": "toggle",
@@ -147,7 +140,6 @@
     "img_mods": "overlay|images/magic/white/overlay/heal.png",
     "codes": "heal"
   },
-  // Life
   {
     "name": "Life",
     "type": "toggle",
@@ -156,8 +148,6 @@
     "img_mods": "overlay|images/magic/white/overlay/life.png",
     "codes": "life"
   },
-  // Black Magics
-  // Quake
   {
     "name": "Quake",
     "type": "toggle",
@@ -166,7 +156,6 @@
     "img_mods": "overlay|images/magic/black/overlay/quake.png",
     "codes": "quake"
   },
-  // Blizzard
   {
     "name": "Blizzard",
     "type": "toggle",
@@ -175,7 +164,6 @@
     "img_mods": "overlay|images/magic/black/overlay/blizzard.png",
     "codes": "blizzard"
   },
-  // Fire
   {
     "name": "Fire",
     "type": "toggle",
@@ -184,7 +172,6 @@
     "img_mods": "overlay|images/magic/black/overlay/fire.png",
     "codes": "fire"
   },
-  // Aero
   {
     "name": "Aero",
     "type": "toggle",
@@ -193,8 +180,6 @@
     "img_mods": "overlay|images/magic/black/overlay/aero.png",
     "codes": "aero"
   },
-  // Wizard Magics
-  // Thunder
   {
     "name": "Thunder",
     "type": "toggle",
@@ -203,7 +188,6 @@
     "img_mods": "overlay|images/magic/wizard/overlay/thunder.png",
     "codes": "thunder"
   },
-  // White
   {
     "name": "White",
     "type": "toggle",
@@ -212,7 +196,6 @@
     "img_mods": "overlay|images/magic/wizard/overlay/white.png",
     "codes": "white"
   },
-  // Meteor
   {
     "name": "Meteor",
     "type": "toggle",
@@ -221,7 +204,6 @@
     "img_mods": "overlay|images/magic/wizard/overlay/meteor.png",
     "codes": "meteor"
   },
-  // Flare
   {
     "name": "Flare",
     "type": "toggle",

@@ -1,37 +1,20 @@
 [
-  // Fire: Main
-  // Mine
-  // Sealed Temple
-  // Volcano
   {
     "name": "Fire",
     "parent": "World",
-    "access_rules": [
-      "rivercoin"
-    ],
+    "access_rules": ["rivercoin"],
     "children": [
-      // Mine
       {
         "name": "Mine",
         "access_rules": [],
         "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 110,
-            "y": 100
-          },
-          {
-            "map": "restored-world",
-            "x": 110,
-            "y": 100
-          }
+          {"map": "drained-world", "x": 110, "y": 100},
+          {"map": "restored-world", "x": 110, "y": 100}
         ],
         "sections": [
           {
             "name": "A C Pot",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -39,9 +22,7 @@
           },
           {
             "name": "A H Pot",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -49,16 +30,12 @@
           },
           {
             "name": "Charm Claw",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "item_count": 1
           },
           {
             "name": "Booms",
-            "access_rules": [
-              "bomb"
-            ],
+            "access_rules": ["bomb"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -66,9 +43,7 @@
           },
           {
             "name": "After Jinn",
-            "access_rules": [
-              "claw"
-            ],
+            "access_rules": ["claw"],
             "chest_unavailable_img": "images/chests/basket_available.png",
             "chest_unopened_img": "images/chests/basket_available.png",
             "chest_opened_img": "images/chests/basket_opened.png",
@@ -76,28 +51,17 @@
           },
           {
             "name": "Reuben Gift",
-            "access_rules": [
-              "reuben"
-            ],
+            "access_rules": ["reuben"],
             "item_count": 1
           }
         ]
       },
-      // Sealed Temple
       {
         "name": "Sealed Temple",
         "access_rules": [],
         "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 194,
-            "y": 214
-          },
-          {
-            "map": "restored-world",
-            "x": 194,
-            "y": 214
-          }
+          {"map": "drained-world", "x": 194, "y": 214},
+          {"map": "restored-world", "x": 194, "y": 214}
         ],
         "sections": [
           {
@@ -116,21 +80,12 @@
           }
         ]
       },
-      // Volcano
       {
         "name": "Volcano",
         "access_rules": [],
         "map_locations": [
-          {
-            "map": "drained-world",
-            "x": 310,
-            "y": 110
-          },
-          {
-            "map": "restored-world",
-            "x": 310,
-            "y": 110
-          }
+          {"map": "drained-world", "x": 310, "y": 110},
+          {"map": "restored-world", "x": 310, "y": 110}
         ],
         "sections": [
           {
