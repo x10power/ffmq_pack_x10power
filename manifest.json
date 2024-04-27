@@ -23,6 +23,10 @@
     "shard_hunt_map": {
       "display_name": "Shard Hunt with Map",
       "flags": ["chathud", "map", "pins"]
+    },
+    "simple": {
+      "display_name": "Simple",
+      "flags": ["chathud"]
     }
   }
 }

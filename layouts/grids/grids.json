@@ -82,5 +82,16 @@
   "shared_item_grid_vertical": {
     "type": "layout",
     "key": "shared_item_grid"
+  },
+  "simple_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {"type": "layout", "key": "keyitems_grid"},
+      {"type": "layout", "key": "crests_grid"},
+      {"type": "layout", "key": "shards_grid"},
+      {"type": "layout", "key": "counters_grid"},
+      {"type": "layout", "key": "crystals_grid"}
+    ]
   }
 }

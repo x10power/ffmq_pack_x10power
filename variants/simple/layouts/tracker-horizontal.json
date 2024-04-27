@@ -2,8 +2,9 @@
   "note": "Horizontal: When width of window is greater than height",
   "type": "container",
   "h_alignment": "center",
+  "width": 175,
   "content": {
     "type": "layout",
-    "key": "shard_hunt"
+    "key": "simple_grid"
   }
 }}
