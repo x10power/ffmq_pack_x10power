@@ -132,6 +132,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
             "access_rules": ["bomb"],
+            "hosted_item": "boss_bonedungeon",
             "item_count": 1
           }
         ]

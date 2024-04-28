@@ -1,1 +1,247 @@
-[]
+[
+  {
+    "name": "Ice Pyramid",
+    "parent": "Water",
+    "access_rules": ["sword,[magicmirror]"],
+    "children": [
+      {
+        "name": "Ice Pyramid Overworld",
+        "map_locations": [{"map": "restored-world", "x": 575, "y": 80}],
+        "sections": [
+          {
+            "name": "1F - East Alcove Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "1F - Sandwiched Alcove Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "1F - Southwest Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "1F - Southwest Left Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "1F - Southwest Right Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "2Fa - South Side Glass Door Box",
+            "note": "From 1Fa",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "2Fa - South Side East Box",
+            "note": "From 1Fa",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "2Fb - Northwest Room Box",
+            "note": "From 1Fb",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {"name": "2F - Center Room Box?"},
+          {"name": "2F - North Room Glass Door Box?"},
+          {"name": "2F - North Corridor Glass Door Box?"},
+          {
+            "name": "3Fa - Staircase Dead End Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "3Fa - Staircase Dead End Left Box",
+            "note": "From 2Fa",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3Fa - Staircase Dead End Right Box",
+            "note": "From 2Fa",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3Fb - Inner Room Boxes",
+            "note": "From 2Fb",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "3Fb - Inner Room Left Box",
+            "note": "From 2Fb",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3Fb - Inner Room Right Box",
+            "note": "From 2Fb",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3F - East Alcove Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "3F - Leapfrog Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "4F - Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "4F - Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 7
+          },
+          {
+            "name": "4F - Northwest Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - West Left Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - West Right Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - South Left Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - South Right Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - East Left Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - East Right Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "5F - West Ledge Box?",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "5F - South Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "5F - South Shelf Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "5F - South Leapfrog Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "5F - North Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "5F - Glass Door Boxes",
+            "clear_as_group": false,
+            "access_rules": ["bomb,claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "5F - Glass Door Left Box",
+            "access_rules": ["bomb,claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "5F - Glass Door Right Box",
+            "access_rules": ["bomb,claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B1 - Boxes",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "B1 - West Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - North Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - East Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "6F - Ice Golem Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb,claw"],
+            "hosted_item": "boss_icepyramid",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]
