@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "name": "Aquaria",
+    "map_locations": [{"map": "restored-world", "x": 630, "y": 225}],
+    "sections": [
+      {
+        "name": "Phoebe's House Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {"name": "Vendor"},
+      {
+        "name": "Vendor House Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Aquaria Tree",
+        "access_rules": ["wakewater"],
+        "hosted_item": "aquaria_thawing"
+      }
+    ]
+  }
+]
