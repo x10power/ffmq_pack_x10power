@@ -8,7 +8,7 @@
     "children": [
       {
         "name": "Water Battlefield 1",
-        "access_rules": ["", "{}"],
+        "access_rules": ["moo", "{}"],
         "map_locations": [{"map": "restored-world", "x": 395, "y": 207}],
         "sections": [
           {
@@ -21,7 +21,7 @@
       },
       {
         "name": "Water Battlefield 2",
-        "access_rules": ["", "{}"],
+        "access_rules": ["moo", "{}"],
         "map_locations": [{"map": "restored-world", "x": 460, "y": 207}],
         "sections": [
           {
