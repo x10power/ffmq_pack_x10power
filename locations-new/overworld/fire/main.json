@@ -2,6 +2,89 @@
   {
     "name": "Fire",
     "parent": "World",
-    "access_rules": ["@Focus Tower Doors/3F - River Door Box"]
+    "access_rules": ["@Focus Tower Doors/3F - River Door Box"],
+    "children": [
+      {
+        "name": "Mine",
+        "access_rules": ["claw"],
+        "map_locations": [{"map": "restored-world", "x": 110, "y": 100}],
+        "sections": [
+          {
+            "name": "Parallel Room Boxes (NE from Mine OW)",
+            "access_rules": ["bomb"],
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "Parallel Room West Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Parallel Room East Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Crescent Room Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "Glitchy Collision Cave Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Djinn Fight",
+            "hosted_item": "boss_mine"
+          },
+          {
+            "name": "Cliff Boxes",
+            "access_rules":["boss_mine"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 4
+          },
+          {
+            "name": "Cliff Southwest Box",
+            "access_rules":["boss_mine"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Cliff Northwest Box",
+            "access_rules":["boss_mine"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Cliff Northeast Box",
+            "access_rules":["boss_mine"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Cliff Southeast Box",
+            "access_rules":["boss_mine"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Reuben's Dad",
+            "access_rules": ["boss_mine,megas"],
+            "chest_opened_img": "images/party/reuben.gif",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
   }
 ]
