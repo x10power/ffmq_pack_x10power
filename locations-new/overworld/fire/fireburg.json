@@ -1,1 +1,81 @@
-[]
+[
+  {
+    "name": "Fireburg",
+    "parent": "Fire",
+    "#access_rules": [
+      "rivercoin",
+      "[rivercoin],$fireburg_expert_access"
+    ],
+    "map_locations": [{"map": "restored-world", "x": 265, "y": 160}],
+    "sections": [
+      {
+        "name": "Hidden Tunnel Box",
+        "access_rules": [
+          "rivercoin,claw",
+          "[rivercoin],sandcoin,geminicrest,claw",
+          "[rivercoin],suncoin,mobiuscrest,multikey"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Reuben's House: Reuben",
+        "access_rules": ["", "{}"],
+        "chest_opened_img": "images/party/reuben.gif",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_party",
+        "item_count": 1
+      },
+      {
+        "name": "Reuben's House: Arion",
+        "access_rules": [
+          "rivercoin,megas",
+          "megas,[rivercoin],$fireburg_expert_access"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Reuben's House: Box",
+        "access_rules": [
+          "rivercoin",
+          "[rivercoin],$fireburg_expert_access"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Locked House Man",
+        "access_rules": [
+          "rivercoin,multikey,claw",
+          "[rivercoin],[multikey],suncoin,mobiuscrest",
+          "[rivercoin],sandcoin,geminicrest,multikey,claw"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Vendor",
+        "access_rules": [
+          "rivercoin",
+          "[rivercoin],$fireburg_expert_access"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Tristam (Hotel Gift)",
+        "access_rules": [
+          "rivercoin",
+          "[rivercoin],$fireburg_expert_access"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Hotel: Tristam",
+        "access_rules": ["", "{}"],
+        "chest_opened_img": "images/party/tristam.gif",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_party",
+        "item_count": 1
+      }
+    ]
+  }
+]

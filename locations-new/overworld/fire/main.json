@@ -48,38 +48,38 @@
           },
           {
             "name": "Cliff Boxes",
-            "access_rules":["boss_mine"],
+            "access_rules": ["boss_mine"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "clear_as_group": false,
             "item_count": 4
           },
           {
             "name": "Cliff Southwest Box",
-            "access_rules":["boss_mine"],
+            "access_rules": ["boss_mine"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "Cliff Northwest Box",
-            "access_rules":["boss_mine"],
+            "access_rules": ["boss_mine"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "Cliff Northeast Box",
-            "access_rules":["boss_mine"],
+            "access_rules": ["boss_mine"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "Cliff Southeast Box",
-            "access_rules":["boss_mine"],
+            "access_rules": ["boss_mine"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
-            "name": "Reuben's Dad",
-            "access_rules": ["boss_mine,megas"],
+            "name": "Reuben's Cutscene (Near Dad)",
+            "access_rules": ["boss_mine,reuben","boss_mine,pm4"],
             "chest_opened_img": "images/party/reuben.gif",
             "item_count": 1
           }
