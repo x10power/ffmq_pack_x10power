@@ -2,7 +2,7 @@
   "note": "Horizontal: When width of window is greater than height",
   "type": "container",
   "h_alignment": "center",
-  "width": 175,
+  "width": 200,
   "content": {
     "type": "layout",
     "key": "shared_item_grid"

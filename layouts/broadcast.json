@@ -2,7 +2,7 @@
   "note": "Broadcast View: Press F2",
   "type": "container",
   "h_alignment": "center",
-  "width": 150,
+  "width": 200,
   "content": {
     "type": "layout",
     "key": "shared_item_grid"
