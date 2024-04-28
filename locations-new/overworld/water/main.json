@@ -39,6 +39,29 @@
             "item_count": 1
           }
         ]
+      },
+      {
+        "name": "Falls Basin",
+        "access_rules": [
+          "vanilla,phoebe:1,boss_wintrycave,aquaria_thawing",
+          "rando"
+        ],
+        "map_locations": [{"map": "restored-world", "x": 580, "y": 185}],
+        "sections": [
+          {
+            "name": "Snow Crab Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "hosted_item": "boss_fallsbasin",
+            "item_count": 1
+          },
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
       }
     ]
   }

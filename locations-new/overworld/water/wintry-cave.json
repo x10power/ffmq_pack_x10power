@@ -2,6 +2,7 @@
   {
     "name": "Wintry Cave",
     "parent": "Water",
+    "access_rules": ["vanilla,phoebe:1", "rando"],
     "children": [
       {
         "name": "Wintry Cave Overworld",
