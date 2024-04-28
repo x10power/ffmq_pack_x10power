@@ -20,6 +20,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/party/reuben.gif",
             "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
             "hosted_item": "reuben",
             "item_count": 1
           },
@@ -30,6 +31,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/party/tristam.gif",
             "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
             "#vanilla": "multikey",
             "#type": "keyitem",
             "hosted_item": "tristam",

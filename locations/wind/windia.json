@@ -60,6 +60,7 @@
             "#itemtype": "keyitem",
             "access_rules": ["{}", "elixir,kaeli,treewither"],
             "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
             "hosted_item": "kaeli",
             "item_count": 1
           }

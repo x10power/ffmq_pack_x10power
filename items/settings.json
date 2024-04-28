@@ -39,5 +39,27 @@
         "codes": "setting_shufflebrownbox, setting_shufflebrownbox_yes"
       }
     ]
+  },
+  {
+    "name": "Kaeli's Mom Fight Minotaur",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "codes": "setting_minotaur-predead",
+    "stages": [
+      {
+        "name": "Minotaur NOT already killed",
+        "img": "images/bosstokens/levelforest.png",
+        "img_mods": "@disabled",
+        "codes": "setting_minotaur-predead, setting_minotaur-predead_no",
+        "inherit_codes": true
+      },
+      {
+        "name": "Minotaur already killed",
+        "img": "images/bosstokens/levelforest.png",
+        "codes": "setting_minotaur-predead, setting_minotaur-predead_yes",
+        "inherit_codes": true
+      }
+    ]
   }
 ]

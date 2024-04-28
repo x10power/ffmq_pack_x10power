@@ -20,6 +20,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/party/phoebe.gif",
             "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
             "hosted_item": "phoebe",
             "item_count": 1
           },

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Fire",
+    "parent": "World",
+    "access_rules": []
+  }
+]

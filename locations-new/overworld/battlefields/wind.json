@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Wind Battlefields",
+    "parent": "Wind",
+    "chest_unavailable_img": "images/counters/battlefield.png",
+    "chest_unopened_img": "images/counters/battlefield.png",
+    "chest_opened_img": "images/battlefields/battlefield_complete.png",
+    "access_rules": [],
+    "children": [
+      {
+        "name": "Wind Battlefield 1",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 589, "y": 530}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Wind Battlefield 2",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 654, "y": 517}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

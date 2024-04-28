@@ -16,6 +16,16 @@
           "item": "setting_shufflebrownbox"
         }
       ]
+    },
+    {
+      "type": "group",
+      "header": "Kaeli's Mom Fight Minotaur",
+      "content": [
+        {
+          "type": "item",
+          "item": "setting_minotaur-predead"
+        }
+      ]
     }
   ]
 }}

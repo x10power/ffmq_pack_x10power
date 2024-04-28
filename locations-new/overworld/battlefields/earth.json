@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Earth Battlefields",
+    "parent": "Earth",
+    "chest_unavailable_img": "images/counters/battlefield.png",
+    "chest_unopened_img": "images/counters/battlefield.png",
+    "chest_opened_img": "images/battlefields/battlefield_complete.png",
+    "access_rules": [],
+    "children": [
+      {
+        "name": "Earth Battlefield 1",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 175, "y": 453}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Earth Battlefield 2",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 97, "y": 401}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Earth Battlefield 3",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 278, "y": 401}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

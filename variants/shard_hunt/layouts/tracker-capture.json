@@ -1,5 +1,18 @@
-{"tracker_capture_item": {
-  "note": "Capture Grid",
-  "type": "layout",
-  "key": "party_grid"
-}}
+{
+  "tracker_capture_party": {
+    "note": "Capture Party",
+    "type": "layout",
+    "key": "party_grid"
+  },
+  "tracker_capture_battlefield": {
+    "note": "Capture Battlefield",
+    "type": "itemgrid",
+    "rows": [
+      [
+        "battlefield_item",
+        "battlefield_gp",
+        "battlefield_xp"
+      ]
+    ]
+  }
+}

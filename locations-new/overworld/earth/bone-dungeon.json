@@ -1,0 +1,141 @@
+[
+  {
+    "name": "Bone Dungeon",
+    "parent": "Earth",
+    "children": [
+      {
+        "name": "Bone Dungeon Overworld",
+        "map_locations": [{"map": "restored-world", "x": 190, "y": 340}],
+        "sections": [
+          {
+            "name": "1F - Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "1F - Entrance Room West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "1F - Entrance Room Middle Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "1F - Entrance Room East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - Skull Chest",
+            "note": "Floor B1 Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {"name": "B1 - Tristam (Gift)", "item_count": 1},
+          {
+            "name": "B1a - Checker Room Box",
+            "note": "Floor B1a Basket",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B1 - Ribcage Waterway Box?",
+            "note": "#FIXME: Can't find!",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2 - Spines Room Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "item_count": 2
+          },
+          {
+            "name": "B2 - Spines Room Alcove Box",
+            "note": "East",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - Spines Room Looped Hallway Box",
+            "note": "West",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - Two Skulls Room Box?",
+            "note": "#FIXME: Can't find!",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2c - Lone Room Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2d - Penultimate Room Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2 - Tristam's Treasure Chest",
+            "note": "Boss Room",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "Boss - Boxes",
+            "note": "Boss Room",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "item_count": 2
+          },
+          {
+            "name": "B2 - South Box",
+            "note": "Boss Room",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - North Box",
+            "note": "Boss Room",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - Flamerus Rex Chest",
+            "note": "Boss Room",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["bomb"],
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

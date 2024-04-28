@@ -24,6 +24,7 @@ print("Loading Items")
 dir = "items"
 items = {
   "armor",
+  "battlefields",
   "counters",
   "crystals",
   "magics",
@@ -115,10 +116,10 @@ if string.find(variant, "map") then
   end
   Tracker:AddLayouts("layouts/maps/world.json")
 
+  Tracker:AddLocations("locations-new/world.json")
+
   -- Locations
   locations = {
-    -- World
-    "world",
     -- Center
     "center/focus-tower",
     "center/doom-castle",
@@ -142,12 +143,15 @@ if string.find(variant, "map") then
     "wind/pazuzu-tower",
     "wind/mac-ship",
     -- Battlefields
-    "battlefields/main"
+    "battlefields/earth",
+    "battlefields/fire",
+    "battlefields/water",
+    "battlefields/wind",
   }
   for _, locCat in ipairs(locations) do
-    Tracker:AddLocations("locations/" .. locCat .. ".json")
+    Tracker:AddLocations("locations-new/overworld/" .. locCat .. ".json")
     Tracker:AddLocations("resources/ci/dev/datafiles/output/" .. locCat .. ".json")
-  end
+end
   print("")
 else
   -- Legacy

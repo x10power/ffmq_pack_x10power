@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Fire Battlefields",
+    "parent": "Fire",
+    "chest_unavailable_img": "images/counters/battlefield.png",
+    "chest_unopened_img": "images/counters/battlefield.png",
+    "chest_opened_img": "images/battlefields/battlefield_complete.png",
+    "access_rules": [],
+    "children": [
+      {
+        "name": "Fire Battlefield 1",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 330, "y": 298}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Fire Battlefield 2",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 330, "y": 246}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Fire Battlefield 3",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 330, "y": 181}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Fire Battlefield 4",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 188, "y": 155}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Fire Battlefield 5",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 110, "y": 155}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Fire Battlefield 6",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 200, "y": 103}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Fire Battlefield 7",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 395, "y": 129}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

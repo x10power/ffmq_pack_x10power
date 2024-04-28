@@ -39,7 +39,7 @@
                 "item_count": 1
               },
               {
-                "name": "Floor B1a Chest",
+                "name": "Floor B1a Basket",
                 "access_rules": ["bomb"],
                 "chest_unavailable_img": "images/chests/basket_available.png",
                 "chest_unopened_img": "images/chests/basket_available.png",

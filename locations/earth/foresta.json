@@ -22,6 +22,7 @@
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/party/kaeli.gif",
             "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
             "hosted_item": "kaeli",
             "#itemtype": "kaeli",
             "#mikerpg": 2,
