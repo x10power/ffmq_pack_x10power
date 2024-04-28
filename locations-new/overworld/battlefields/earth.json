@@ -5,7 +5,6 @@
     "chest_unavailable_img": "images/counters/battlefield.png",
     "chest_unopened_img": "images/counters/battlefield.png",
     "chest_opened_img": "images/battlefields/battlefield_complete.png",
-    "access_rules": [],
     "children": [
       {
         "name": "Earth Battlefield 1",

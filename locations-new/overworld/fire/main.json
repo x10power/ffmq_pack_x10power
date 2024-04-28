@@ -2,6 +2,6 @@
   {
     "name": "Fire",
     "parent": "World",
-    "access_rules": []
+    "access_rules": ["@Focus Tower Doors/3F - River Door Box"]
   }
 ]

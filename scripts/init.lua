@@ -8,7 +8,7 @@ ScriptHost:LoadScript("scripts/settings/settings.lua")
 ScriptHost:LoadScript("scripts/items/helpers.lua")
 
 -- Logic
-ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 local variant = Tracker.ActiveVariantUID
 if variant == "" then

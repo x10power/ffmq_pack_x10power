@@ -2,11 +2,9 @@
   {
     "name": "Earth",
     "parent": "World",
-    "access_rules": [],
     "children": [
       {
         "name": "Level Forest",
-        "access_rules": [],
         "map_locations": [{"map": "restored-world", "x": 180, "y": 520}],
         "sections": [
           {
@@ -48,7 +46,7 @@
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
-            "access_rules": ["treewither"],
+            "access_rules": ["treewither,kaeli"],
             "item_count": 1
           }
         ]

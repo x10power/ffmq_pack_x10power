@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "name": "Focus Tower",
+    "parent": "World",
+    "access_rules": ["vanilla,tristam:1,kaliecured", "rando"],
+    "children": [
+      {
+        "name": "Focus Tower Doors",
+        "map_locations": [
+          {"map": "restored-world", "x": 382, "y": 384},
+          {"map": "restored-world", "x": 362, "y": 432}
+        ],
+        "sections": [
+          {
+            "name": "1F - Main Lobby Box",
+            "note": "1F Booms",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "2F - Sand Door Chest",
+            "note": "Fire Spell",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["sandcoin", "[sandcoin],$aquaria_expert_access"],
+            "item_count": 1
+          },
+          {
+            "name": "3F - River Door Box",
+            "access_rules": [
+              "rivercoin",
+              "[rivercoin],$fireburg_expert_access"
+            ],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]
