@@ -36,6 +36,7 @@ items = {
 for _, itemCat in ipairs(items) do
   Tracker:AddItems(dir .. "/" .. itemCat .. ".json")
 end
+Tracker:AddLayouts("layouts/settings.json")
 print("")
 
 -- Grids

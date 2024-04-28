@@ -11,6 +11,11 @@
           "type": "group",
           "header": "Inventory",
           "dock": "top",
+          "header_content": {
+            "type": "button_popup",
+            "style": "settings",
+            "layout": "settings_popup"
+          },
           "content": {
             "type": "layout",
             "key": "shard_hunt",

@@ -4,6 +4,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "initial_stage_idx": 1,
     "codes": "gametype",
     "stages": [
       {
@@ -15,6 +16,27 @@
         "name": "Rando",
         "img": "images/settings/chocolate.png",
         "codes": "gametype, rando"
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Brown Boxes' Content",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "initial_stage_idx": 1,
+    "codes": "setting_shufflebrownbox",
+    "stages": [
+      {
+        "name": "Do NOT shuffle Brown Boxes' Content",
+        "img": "images/chests/basket_available.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shufflebrownbox, setting_shufflebrownbox_no"
+      },
+      {
+        "name": "Do shuffle Brown Boxes' Content",
+        "img": "images/chests/basket_available.png",
+        "codes": "setting_shufflebrownbox, setting_shufflebrownbox_yes"
       }
     ]
   }

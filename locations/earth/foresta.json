@@ -30,6 +30,7 @@
           },
           {
             "name": "Kaeli's House (Chest)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#mikerpg": 2,
             "item_count": 1
           },
@@ -46,12 +47,14 @@
           },
           {
             "name": "SE House",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#itemtype": "basket",
             "#mikerpg": 3,
             "item_count": 1
           },
           {
             "name": "Cure Potion (SE)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#itemtype": "basket",
             "#mikerpg": "outside",
             "access_rules": ["axe"],
