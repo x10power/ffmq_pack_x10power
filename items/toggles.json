@@ -112,6 +112,6 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/captaincap.png",
-    "codes": "captaincap"
+    "codes": "captaincap,captainscap"
   }
 ]

@@ -148,5 +148,12 @@
         "codes": "aquaria_restored"
       }
     ]
+  },
+  {
+    "name": "First Mate",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/captaincap.png",
+    "codes": "firstmate"
   }
 ]

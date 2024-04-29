@@ -116,6 +116,7 @@
         "sections": [
           {
             "name": "Boxes",
+            "clear_as_group": false,
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 2
           },

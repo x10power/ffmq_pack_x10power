@@ -1,1 +1,115 @@
-[]
+[
+  {
+    "name": "Mac's Ship",
+    "parent": "Wind",
+    "children": [
+      {
+        "name": "Mac's Ship Overworld",
+        "map_locations": [
+          {"map": "restored-world", "x": 634, "y": 365},
+          {
+            "map": "restored-world",
+            "x": 362,
+            "y": 530,
+            "visibility_rules": ["firstmate"]
+          }
+        ],
+        "sections": [
+          {
+            "name": "Deck - Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 3
+          },
+          {
+            "name": "Deck - North Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Deck - Center Box (Push Barrel)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Deck - South Box (On Bow)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - Hook Platform Boxes",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "B1 - Northwest Hook Platform Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - Center Hook Platform Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - Central Corridor Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - Barrel Room Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "B2 - Barrel Room North Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - Barrel Room South Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - Southern Rooms Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "B2 - Southwest Room Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B2 - Southeast Room Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "B1 - Mac Room Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "B1 - Captain Mac",
+            "access_rules": ["captaincap"],
+            "hosted_item": "firstmate"
+          },
+          {
+            "name": "Deck - Ship's Wheel",
+            "access_rules": ["firstmate"],
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]
