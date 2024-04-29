@@ -126,7 +126,6 @@
   {
     "name": "Restore Aquaria",
     "type": "progressive",
-    "loop": true,
     "img": "images/restore_aquaria.png",
     "allow_disabled": false,
     "codes": "restore_aquaria",

@@ -77,7 +77,7 @@
             "item_count": 1
           },
           {
-            "name": "Exterior South Cliff Box (SE of A2a)",
+            "name": "Exterior South Cliff Box (SE of A2b)",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 1
           },
@@ -120,6 +120,7 @@
           {
             "name": "A4 - U-Bend Room Boxes",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
             "item_count": 2
           },
           {
@@ -135,6 +136,7 @@
           {
             "name": "A7 - Caldera Stairway Boxes",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
             "item_count": 4
           },
           {
@@ -199,9 +201,20 @@
             "#item_count": 1
           },
           {
+            "name": "Boss - Hydra Room Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Boss - Hydra Room Southeast Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
             "name": "Boss - Hydra Room Northwest Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "item_count": 1
+            "#item_count": 1
           },
           {
             "name": "Dualhead Hydra Chest",

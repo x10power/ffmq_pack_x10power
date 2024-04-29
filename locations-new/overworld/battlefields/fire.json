@@ -86,7 +86,7 @@
       },
       {
         "name": "Fire Battlefield 7",
-        "access_rules": ["", "{}"],
+        "access_rules": ["boss_lavadome", "{}"],
         "map_locations": [{"map": "restored-world", "x": 395, "y": 129}],
         "sections": [
           {
