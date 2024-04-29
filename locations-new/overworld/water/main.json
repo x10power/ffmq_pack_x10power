@@ -85,6 +85,39 @@
             "#item_count": 1
           }
         ]
+      },
+      {
+        "name": "Spencer's Cave",
+        "access_rules": ["aquaria_restored"],
+        "map_locations": [{"map": "restored-world", "x": 675, "y": 315}],
+        "sections": [
+          {
+            "name": "Box",
+            "access_rules": ["wakewater,claw", "thunderrock"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {"name": "Spencer", "item_count": 1},
+          {
+            "name": "Locked Chest",
+            "access_rules": ["venuskey"],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Mobius Chest",
+            "access_rules": [
+              "suncoin,thunderrock,megagrenade,libracrest",
+              "[suncoin],$windia_expert_access,thunderrock,megagrenade,libracrest"
+            ],
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          }
+        ]
       }
     ]
   }

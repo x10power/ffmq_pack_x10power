@@ -18,6 +18,11 @@
         "name": "Aquaria Tree",
         "access_rules": ["wakewater"],
         "hosted_item": "aquaria_thawing"
+      },
+      {
+        "name": "Spencer's Place",
+        "access_rules": ["aquaria_restored"],
+        "item_count": 1
       }
     ]
   }

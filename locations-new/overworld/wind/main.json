@@ -85,6 +85,29 @@
             "item_count": 1
           }
         ]
+      },
+      {
+        "name": "Kaidge Temple",
+        "map_locations": [{"map": "restored-world", "x": 520, "y": 535}],
+        "sections": [
+          {
+            "name": "Box",
+            "access_rules": ["claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Windhole Temple",
+        "map_locations": [{"map": "restored-world", "x": 765, "y": 525}],
+        "sections": [
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
       }
     ]
   }
