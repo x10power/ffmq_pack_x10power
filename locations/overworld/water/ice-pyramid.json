@@ -239,6 +239,10 @@
             "access_rules": ["bomb,claw"],
             "hosted_item": "boss_icepyramid",
             "item_count": 1
+          },
+          {
+            "name": "Crystal of Water",
+            "hosted_item": "watercrystal"
           }
         ]
       }

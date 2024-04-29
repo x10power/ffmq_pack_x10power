@@ -223,6 +223,10 @@
             "chest_opened_img": "images/chests/opened.png",
             "hosted_item": "boss_lavadome",
             "item_count": 1
+          },
+          {
+            "name": "Crystal of Fire",
+            "hosted_item": "firecrystal"
           }
         ]
       }

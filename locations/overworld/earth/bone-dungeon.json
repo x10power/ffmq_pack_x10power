@@ -134,6 +134,10 @@
             "access_rules": ["bomb"],
             "hosted_item": "boss_bonedungeon",
             "item_count": 1
+          },
+          {
+            "name": "Crystal of Earth",
+            "hosted_item": "earthcrystal"
           }
         ]
       }
