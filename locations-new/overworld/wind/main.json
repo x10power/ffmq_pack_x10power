@@ -108,6 +108,33 @@
             "item_count": 1
           }
         ]
+      },
+      {
+        "name": "Mount Gale",
+        "access_rules": [],
+        "map_locations": [{"map": "restored-world", "x": 775, "y": 475}],
+        "sections": [
+          {
+            "name": "Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Dullahan Chest",
+            "hosted_item": "boss_mountgale",
+            "item_count": 1
+          }
+        ]
       }
     ]
   }

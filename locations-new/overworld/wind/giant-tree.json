@@ -201,6 +201,11 @@
             "access_rules": ["sword,dragonclaw"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
+          },
+          {
+            "name": "5F - Giant Tree",
+            "access_rules": ["sword,dragonclaw"],
+            "hosted_item": "boss_gianttree"
           }
         ]
       }
