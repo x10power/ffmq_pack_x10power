@@ -9,7 +9,7 @@
       {
         "name": "Water Battlefield 1",
         "access_rules": ["aquaria_restored", "{}"],
-        "note":"#FIXME: Maybe from boss_lavadome?",
+        "note": "#FIXME: Maybe from boss_lavadome?",
         "map_locations": [{"map": "restored-world", "x": 395, "y": 207}],
         "sections": [
           {
@@ -23,7 +23,7 @@
       {
         "name": "Water Battlefield 2",
         "access_rules": ["aquaria_restored", "{}"],
-        "note":"#FIXME: Maybe from boss_lavadome?",
+        "note": "#FIXME: Maybe from boss_lavadome?",
         "map_locations": [{"map": "restored-world", "x": 460, "y": 207}],
         "sections": [
           {

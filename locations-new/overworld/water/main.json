@@ -62,6 +62,29 @@
             "item_count": 1
           }
         ]
+      },
+      {
+        "name": "Wintry Temple",
+        "access_rules": ["geminicrest"],
+        "map_locations": [{"map": "restored-world", "x": 400, "y": 280}],
+        "sections": [
+          {
+            "name": "Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          }
+        ]
       }
     ]
   }
