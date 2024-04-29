@@ -116,7 +116,7 @@ if string.find(variant, "map") then
   end
   Tracker:AddLayouts("layouts/maps/world.json")
 
-  Tracker:AddLocations("locations-new/world.json")
+  Tracker:AddLocations("locations/world.json")
 
   -- Locations
   locations = {
