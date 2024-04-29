@@ -58,6 +58,8 @@
           "rivercoin",
           "[rivercoin],$fireburg_expert_access"
         ],
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_vendor",
         "item_count": 1
       },
       {
