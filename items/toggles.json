@@ -91,7 +91,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/gasmask.png",
-    "codes": "gasmask"
+    "codes": "gasmask,mask"
   },
   {
     "name": "Magic Mirror",

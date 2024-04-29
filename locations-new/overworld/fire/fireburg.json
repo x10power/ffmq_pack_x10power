@@ -29,8 +29,8 @@
       {
         "name": "Reuben's House: Arion",
         "access_rules": [
-          "rivercoin,megas",
-          "megas,[rivercoin],$fireburg_expert_access"
+          "rivercoin,megagrenade",
+          "megagrenade,[rivercoin],$fireburg_expert_access"
         ],
         "item_count": 1
       },

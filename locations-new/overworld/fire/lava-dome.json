@@ -1,1 +1,218 @@
-[]
+[
+  {
+    "name": "Lava Dome",
+    "parent": "Fire",
+    "children": [
+      {
+        "name": "Lava Dome Overworld",
+        "map_locations": [{"map": "restored-world", "x": 324, "y": 80}],
+        "sections": [
+          {
+            "name": "A1 - Three Jumps Room Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "A3 - Lava River Room Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "A3 - Lava River Room North Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A3 - Lava River Room East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A3 - Lava River Room South Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A4 - Beyond River Room Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["megagrenade"],
+            "item_count": 1
+          },
+          {
+            "name": "A4 - Beyond River Room Box",
+            "access_rules": ["megagrenade"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "A2 - Gold Bar Room Boulder Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["megagrenade"],
+            "item_count": 1
+          },
+          {
+            "name": "A2 - Gold Bar Room Leapfrog Alcove Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "A2 - Gold Bar Room Leapfrog Alcove Box West",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A2 - Gold Bar Room Leapfrog Alcove Box East",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A2a - Exterior Center Dropoff Ledge Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Exterior South Cliff Box (SE of A2a)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Exterior Caldera Near Switch Cliff Box (SE of A4a)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "A3 - Split Corridor Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "A5 - Bare Maze Leapfrog Alcove Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "A5 - Bare Maze Leapfrog Alcove South Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A5 - Bare Maze Leapfrog Alcove North Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A5 - Bare Maze Center Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "A5 - Bare Maze Southwest Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "A4 - U-Bend Room Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "A4 - U-Bend Room South Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A4 - U-Bend Room North Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A7 - Caldera Stairway Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 4
+          },
+          {
+            "name": "A7 - Caldera Stairway West Left Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A7 - Caldera Stairway West Right Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A7 - Caldera Stairway East Left Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A7 - Caldera Stairway East Right Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A7b - Exterior Dead End Caldera Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "A6 - Gold Maze Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 6
+          },
+          {
+            "name": "A6 - Gold Maze Southwest Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A6 - Gold Maze Northwest Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A6 - Gold Maze Northeast Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A6 - Gold Maze North Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A6 - Gold Maze Center Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "A6 - Gold Maze Southeast Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Boss - Hydra Room Northwest Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Dualhead Hydra Chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "hosted_item": "boss_lavadome",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]
