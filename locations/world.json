@@ -1,7 +1,38 @@
 [
   {
     "name": "World",
+    "chest_unavailable_img": "images/chests/basket_available.png",
+    "chest_unopened_img": "images/chests/basket_available.png",
+    "chest_opened_img": "images/chests/basket_opened.png",
+    "access_rules": []
+  },
+  {
+    "name": "Basket",
+    "chest_unavailable_img": "images/chests/basket_available.png",
+    "chest_unopened_img": "images/chests/basket_available.png",
+    "chest_opened_img": "images/chests/basket_opened.png",
+    "access_rules": []
+  },
+  {
+    "name": "Chest",
+    "chest_unavailable_img": "images/chests/available.png",
     "chest_unopened_img": "images/chests/available.png",
-    "chest_opened_img": "images/chests/opened.png"
+    "chest_opened_img": "images/chests/opened.png",
+    "access_rules": []
+  },
+  {
+    "name": "Blue Man",
+    "chest_unopened_img": "images/chests/blueman_available.png",
+    "access_rules": []
+  },
+  {
+    "name": "Old Man",
+    "chest_unopened_img": "images/chests/oldman_available.png",
+    "access_rules": []
+  },
+  {
+    "name": "Spencer",
+    "chest_unopened_img": "images/chests/spencer_available.png",
+    "access_rules": []
   }
 ]

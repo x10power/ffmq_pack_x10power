@@ -149,7 +149,7 @@ if string.find(variant, "map") then
     "battlefields/wind",
   }
   for _, locCat in ipairs(locations) do
-    Tracker:AddLocations("locations-new/overworld/" .. locCat .. ".json")
+    Tracker:AddLocations("locations/overworld/" .. locCat .. ".json")
     Tracker:AddLocations("resources/ci/dev/datafiles/output/" .. locCat .. ".json")
 end
   print("")
