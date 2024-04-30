@@ -1,0 +1,169 @@
+[
+  {
+    "name": "Bone Dungeon Underworld",
+    "parent": "Bone Dungeon Overworld",
+    "children": [
+      {
+        "name": "Entrance Room West Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/1F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-1f", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor 1F"
+      },
+      {
+        "name": "Entrance Room Middle Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/1F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-1f", "x": 16, "y": 0}],
+        "#floor": "Bone Dungeon Floor 1F"
+      },
+      {
+        "name": "Entrance Room East Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/1F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-1f", "x": 32, "y": 0}],
+        "#floor": "Bone Dungeon Floor 1F"
+      },
+      {
+        "name": "Skull Chest",
+        "note": "Floor B1 Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Bone Dungeon Overworld/B1 - Skull Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b1", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B1"
+      },
+      {
+        "name": "Tristam (Gift)",
+        "access_rules": ["@Bone Dungeon Overworld/B1 - Tristam (Gift)"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b1", "x": 16, "y": 0}],
+        "#floor": "Bone Dungeon Floor B1"
+      },
+      {
+        "name": "Checker Room Box",
+        "note": "Floor B1a Basket",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/B1a - Checker Room Box"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b1a", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B1A"
+      },
+      {
+        "name": "Ribcage Waterway Box?",
+        "note": "#FIXME: Can't find!",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Bone Dungeon Overworld/B1 - Ribcage Waterway Box?"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b1", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B1"
+      },
+      {
+        "name": "Spines Room Alcove Box",
+        "note": "East",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/B2 - Spines Room Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2"
+      },
+      {
+        "name": "Spines Room Looped Hallway Box",
+        "note": "West",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/B2 - Spines Room Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2", "x": 16, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2"
+      },
+      {
+        "name": "Two Skulls Room Box?",
+        "note": "#FIXME: Can't find!",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Bone Dungeon Overworld/B2 - Two Skulls Room Box?"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2", "x": 32, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2"
+      },
+      {
+        "name": "Lone Room Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/B2c - Lone Room Box"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2c", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2C"
+      },
+      {
+        "name": "Penultimate Room Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": [
+          "@Bone Dungeon Overworld/B2d - Penultimate Room Chest"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2d", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2D"
+      },
+      {
+        "name": "Tristam's Treasure Chest",
+        "note": "Boss Room",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": [
+          "@Bone Dungeon Overworld/B2 - Tristam's Treasure Chest"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2"
+      },
+      {
+        "name": "South Box",
+        "note": "Boss Room",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/Boss - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2", "x": 0, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2"
+      },
+      {
+        "name": "North Box",
+        "note": "Boss Room",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Bone Dungeon Overworld/Boss - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2", "x": 16, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2"
+      },
+      {
+        "name": "Flamerus Rex Chest",
+        "note": "Boss Room",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": [
+          "@Bone Dungeon Overworld/B2 - Flamerus Rex Chest"
+        ],
+        "hosted_item": "boss_bonedungeon",
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "bone-dungeon-b2", "x": 32, "y": 0}],
+        "#floor": "Bone Dungeon Floor B2"
+      },
+      {
+        "name": "Crystal of Earth",
+        "hosted_item": "earthcrystal",
+        "access_rules": ["@Bone Dungeon Overworld/Crystal of Earth"]
+      }
+    ]
+  }
+]

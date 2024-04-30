@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Pazuzu's Tower Underworld",
+    "parent": "Pazuzu's Tower Overworld",
+    "children": [
+      {
+        "name": "Descent Bomb Wall West Box",
+        "access_rules": [
+          "@Pazuzu's Tower Overworld/1F - Descent Bomb Wall Boxes"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-1f", "x": 0, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 1F"
+      },
+      {
+        "name": "Descent Bomb Wall Center Box",
+        "access_rules": [
+          "@Pazuzu's Tower Overworld/1F - Descent Bomb Wall Boxes"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-1f", "x": 16, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 1F"
+      },
+      {
+        "name": "Descent Bomb Wall East Box",
+        "access_rules": [
+          "@Pazuzu's Tower Overworld/1F - Descent Bomb Wall Boxes"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-1f", "x": 32, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 1F"
+      },
+      {
+        "name": "Descent Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/1F - Descent Box"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-1f", "x": 48, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 1F"
+      },
+      {
+        "name": "East Room West Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/2F - East Room Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-2f", "x": 0, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 2F"
+      },
+      {
+        "name": "East Room East Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/2F - East Room Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-2f", "x": 16, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 2F"
+      },
+      {
+        "name": "Guest Room West Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Pazuzu's Tower Overworld/3F - Guest Room Boxes"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-3f", "x": 0, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 3F"
+      },
+      {
+        "name": "Guest Room East Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Pazuzu's Tower Overworld/3F - Guest Room Boxes"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-3f", "x": 16, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 3F"
+      },
+      {
+        "name": "South Ledge Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/3F - South Ledge Box"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-3f", "x": 32, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 3F"
+      },
+      {
+        "name": "Elevator West Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/4F - Elevator Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-4f", "x": 0, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 4F"
+      },
+      {
+        "name": "Elevator East Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/4F - Elevator Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-4f", "x": 16, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 4F"
+      },
+      {
+        "name": "East Storage Room Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": [
+          "@Pazuzu's Tower Overworld/4F - East Storage Room Chest"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-4f", "x": 32, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 4F"
+      },
+      {
+        "name": "North Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-5f", "x": 0, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 5F"
+      },
+      {
+        "name": "South Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-5f", "x": 16, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 5F"
+      },
+      {
+        "name": "Box",
+        "access_rules": ["@Pazuzu's Tower Overworld/6F - Box"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-6f", "x": 0, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 6F"
+      },
+      {
+        "name": "Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Pazuzu's Tower Overworld/6F - Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-6f", "x": 16, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 6F"
+      },
+      {
+        "name": "Pazuzu Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Pazuzu's Tower Overworld/7F - Pazuzu Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "pazuzu-tower-7f", "x": 0, "y": 0}],
+        "#floor": "Pazuzu's Tower Floor 7F"
+      },
+      {
+        "name": "Crystal of Wind",
+        "hosted_item": "windcrystal",
+        "access_rules": ["@Pazuzu's Tower Overworld/Crystal of Wind"]
+      }
+    ]
+  }
+]

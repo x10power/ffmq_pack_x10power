@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Wintry Cave Underworld",
+    "parent": "Wintry Cave Overworld",
+    "children": [
+      {
+        "name": "Entrance Box (Southeast)",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Wintry Cave Overworld/1F - Entrance Box (Southeast)"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-1f", "x": 0, "y": 0}],
+        "#floor": "Wintry Cave Floor 1F"
+      },
+      {
+        "name": "Phoebe (Gift)",
+        "access_rules": ["@Wintry Cave Overworld/1F - Phoebe (Gift)"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-1f", "x": 16, "y": 0}],
+        "#floor": "Wintry Cave Floor 1F"
+      },
+      {
+        "name": "North Box (Northeast)",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Wintry Cave Overworld/1F - North Box (Northeast)"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-1f", "x": 32, "y": 0}],
+        "#floor": "Wintry Cave Floor 1F"
+      },
+      {
+        "name": "Slippery Cliff Box (East)",
+        "access_rules": [
+          "@Wintry Cave Overworld/1F - Slippery Cliff Box (East)"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-1f", "x": 48, "y": 0}],
+        "#floor": "Wintry Cave Floor 1F"
+      },
+      {
+        "name": "Scenic Overlook Box (Southwest)",
+        "access_rules": [
+          "@Wintry Cave Overworld/1F - Scenic Overlook Box (Southwest)"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-1f", "x": 64, "y": 0}],
+        "#floor": "Wintry Cave Floor 1F"
+      },
+      {
+        "name": "West Left Box",
+        "access_rules": ["@Wintry Cave Overworld/2F - West Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-2f", "x": 0, "y": 0}],
+        "#floor": "Wintry Cave Floor 2F"
+      },
+      {
+        "name": "West Right Box",
+        "access_rules": ["@Wintry Cave Overworld/2F - West Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-2f", "x": 16, "y": 0}],
+        "#floor": "Wintry Cave Floor 2F"
+      },
+      {
+        "name": "East Left Box",
+        "access_rules": ["@Wintry Cave Overworld/2F - East Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-2f", "x": 32, "y": 0}],
+        "#floor": "Wintry Cave Floor 2F"
+      },
+      {
+        "name": "East Right Box",
+        "access_rules": ["@Wintry Cave Overworld/2F - East Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-2f", "x": 48, "y": 0}],
+        "#floor": "Wintry Cave Floor 2F"
+      },
+      {
+        "name": "West Box",
+        "access_rules": [
+          "@Wintry Cave Overworld/3F - Above Boxes, access from 1F"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-3f", "x": 0, "y": 0}],
+        "#floor": "Wintry Cave Floor 3F"
+      },
+      {
+        "name": "East Box",
+        "access_rules": [
+          "@Wintry Cave Overworld/3F - Above Boxes, access from 1F"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-3f", "x": 16, "y": 0}],
+        "#floor": "Wintry Cave Floor 3F"
+      },
+      {
+        "name": "Before Boss Box",
+        "access_rules": ["@Wintry Cave Overworld/3F - Before Boss Box"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-3f", "x": 32, "y": 0}],
+        "#floor": "Wintry Cave Floor 3F"
+      },
+      {
+        "name": "Squidite Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Wintry Cave Overworld/3F - Squidite Chest"],
+        "hosted_item": "boss_wintrycave",
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "wintry-cave-3f", "x": 48, "y": 0}],
+        "#floor": "Wintry Cave Floor 3F"
+      }
+    ]
+  }
+]

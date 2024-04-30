@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Focus Tower Underworld",
+    "parent": "Focus Tower Overworld",
+    "children": [
+      {
+        "name": "Main Lobby Box",
+        "note": "1F Booms",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Focus Tower Overworld/1F - Main Lobby Box"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "focus-tower-1f", "x": 0, "y": 0}],
+        "#floor": "Focus Tower Floor 1F"
+      },
+      {
+        "name": "Sand Door Chest",
+        "note": "Fire Spell",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Focus Tower Overworld/2F - Sand Door Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "focus-tower-2f", "x": 0, "y": 0}],
+        "#floor": "Focus Tower Floor 2F"
+      },
+      {
+        "name": "River Door Box",
+        "access_rules": ["@Focus Tower Overworld/3F - River Door Box"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "focus-tower-3f", "x": 0, "y": 0}],
+        "#floor": "Focus Tower Floor 3F"
+      },
+      {
+        "name": "Sun Door Chest",
+        "note": "In Doom Castle",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Focus Tower Overworld/B2 - Sun Door Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "focus-tower-b2", "x": 0, "y": 0}],
+        "#floor": "Focus Tower Floor B2"
+      }
+    ]
+  }
+]

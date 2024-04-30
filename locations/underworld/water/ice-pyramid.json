@@ -1,0 +1,297 @@
+[
+  {
+    "name": "Ice Pyramid Underworld",
+    "parent": "Ice Pyramid Overworld",
+    "children": [
+      {
+        "name": "East Alcove Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Ice Pyramid Overworld/1F - East Alcove Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-1f", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 1F"
+      },
+      {
+        "name": "Sandwiched Alcove Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/1F - Sandwiched Alcove Box"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-1f", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor 1F"
+      },
+      {
+        "name": "Southwest Left Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/1F - Southwest Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-1f", "x": 32, "y": 0}],
+        "#floor": "Ice Pyramid Floor 1F"
+      },
+      {
+        "name": "Southwest Right Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/1F - Southwest Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-1f", "x": 48, "y": 0}],
+        "#floor": "Ice Pyramid Floor 1F"
+      },
+      {
+        "name": "South Side Glass Door Box",
+        "note": "From 1Fa",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/2Fa - South Side Glass Door Box"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-2fa", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 2FA"
+      },
+      {
+        "name": "South Side East Box",
+        "note": "From 1Fa",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/2Fa - South Side East Box"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-2fa", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor 2FA"
+      },
+      {
+        "name": "Northwest Room Box",
+        "note": "From 1Fb",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/2Fb - Northwest Room Box"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-2fb", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 2FB"
+      },
+      {
+        "name": "Staircase Dead End Left Box",
+        "note": "From 2Fa",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/3Fa - Staircase Dead End Boxes"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-3fa", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 3FA"
+      },
+      {
+        "name": "Staircase Dead End Right Box",
+        "note": "From 2Fa",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/3Fa - Staircase Dead End Boxes"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-3fa", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor 3FA"
+      },
+      {
+        "name": "Inner Room Left Box",
+        "note": "From 2Fb",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/3Fb - Inner Room Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-3fb", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 3FB"
+      },
+      {
+        "name": "Inner Room Right Box",
+        "note": "From 2Fb",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/3Fb - Inner Room Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-3fb", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor 3FB"
+      },
+      {
+        "name": "East Alcove Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/3F - East Alcove Box"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-3f", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 3F"
+      },
+      {
+        "name": "Leapfrog Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/3F - Leapfrog Box"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-3f", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor 3F"
+      },
+      {
+        "name": "Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Ice Pyramid Overworld/4F - Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "Northwest Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/4F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "West Left Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/4F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 32, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "West Right Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/4F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 48, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "South Left Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/4F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 64, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "South Right Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/4F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 80, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "East Left Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/4F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 96, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "East Right Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/4F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-4f", "x": 112, "y": 0}],
+        "#floor": "Ice Pyramid Floor 4F"
+      },
+      {
+        "name": "West Ledge Box?",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/5F - West Ledge Box?"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-5f", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 5F"
+      },
+      {
+        "name": "South Shelf Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/5F - South Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-5f", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor 5F"
+      },
+      {
+        "name": "South Leapfrog Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/5F - South Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-5f", "x": 32, "y": 0}],
+        "#floor": "Ice Pyramid Floor 5F"
+      },
+      {
+        "name": "North Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Ice Pyramid Overworld/5F - North Box"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-5f", "x": 48, "y": 0}],
+        "#floor": "Ice Pyramid Floor 5F"
+      },
+      {
+        "name": "Glass Door Left Box",
+        "access_rules": ["@Ice Pyramid Overworld/5F - Glass Door Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-5f", "x": 64, "y": 0}],
+        "#floor": "Ice Pyramid Floor 5F"
+      },
+      {
+        "name": "Glass Door Right Box",
+        "access_rules": ["@Ice Pyramid Overworld/5F - Glass Door Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-5f", "x": 80, "y": 0}],
+        "#floor": "Ice Pyramid Floor 5F"
+      },
+      {
+        "name": "Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Ice Pyramid Overworld/B1 - Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-b1", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor B1"
+      },
+      {
+        "name": "West Box",
+        "access_rules": ["@Ice Pyramid Overworld/B1 - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-b1", "x": 16, "y": 0}],
+        "#floor": "Ice Pyramid Floor B1"
+      },
+      {
+        "name": "North Box",
+        "access_rules": ["@Ice Pyramid Overworld/B1 - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-b1", "x": 32, "y": 0}],
+        "#floor": "Ice Pyramid Floor B1"
+      },
+      {
+        "name": "East Box",
+        "access_rules": ["@Ice Pyramid Overworld/B1 - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-b1", "x": 48, "y": 0}],
+        "#floor": "Ice Pyramid Floor B1"
+      },
+      {
+        "name": "Ice Golem Chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Ice Pyramid Overworld/6F - Ice Golem Chest"],
+        "hosted_item": "boss_icepyramid",
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-6f", "x": 0, "y": 0}],
+        "#floor": "Ice Pyramid Floor 6F"
+      },
+      {
+        "name": "Crystal of Water",
+        "hosted_item": "watercrystal",
+        "access_rules": ["@Ice Pyramid Overworld/Crystal of Water"]
+      }
+    ]
+  }
+]
