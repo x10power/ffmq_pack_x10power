@@ -96,4 +96,4 @@ if not os.path.exists(outputdir):
 with open(os.path.join(outputdir, "chathud.txt"), mode="w+", encoding="utf-8") as chathudTxt:
     chathudTxt.write(chatcodes)
 with open(os.path.join(outputdir, "itemCodes.json"), mode="w+", encoding="utf-8") as itemsJSON:
-    itemsJSON.write(commentjson.dumps(codes, indent=2))
+    itemsJSON.write(commentjson.dumps(sorted(codes), indent=2))

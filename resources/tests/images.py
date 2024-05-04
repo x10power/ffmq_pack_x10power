@@ -18,4 +18,4 @@ outputdir = os.path.join(".","resources","tests","output")
 if not os.path.exists(outputdir):
     os.makedirs(outputdir)
 with open(os.path.join(outputdir, "imageFiles.json"), mode="w+", encoding="utf-8") as imagesJSON:
-    imagesJSON.write(json.dumps(images, indent=2))
+    imagesJSON.write(json.dumps(sorted(images), indent=2))

@@ -90,7 +90,7 @@ with open(
     mode="w+",
     encoding="utf-8"
 ) as funcsJSON:
-    funcsJSON.write(commentjson.dumps(funcs, indent=2))
+    funcsJSON.write(commentjson.dumps(sorted(funcs), indent=2))
 with open(
     os.path.join(
         ".",
