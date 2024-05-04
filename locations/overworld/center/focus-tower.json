@@ -1,6 +1,6 @@
 [
   {
-    "name": "Focus Tower",
+    "name": "Focus Tower Overworld",
     "parent": "World",
     "access_rules": ["vanilla,tristam:1,kaliecured", "rando"],
     "children": [
