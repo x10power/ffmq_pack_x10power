@@ -78,6 +78,7 @@ def digForChildren(loc):
                                 circle = "🔴"
                                 errMsg = "not a valid location"
                             elif check not in items:
+                                print(match.groups())
                                 err = True
                                 circle = "🔴"
                                 errMsg = "not a valid item code"
