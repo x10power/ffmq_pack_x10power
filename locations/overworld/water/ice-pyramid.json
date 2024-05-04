@@ -84,13 +84,13 @@
             "item_count": 2
           },
           {
-            "name": "3Fb - Inner Room Left Box",
+            "name": "3Fb - Inner Room Top Box",
             "note": "From 2Fb",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
-            "name": "3Fb - Inner Room Right Box",
+            "name": "3Fb - Inner Room Bottom Box",
             "note": "From 2Fb",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
