@@ -10,7 +10,7 @@
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-b2", "x": 0, "y": 0}],
+        "map_locations": [{"map": "doom-castle-b2", "x": 495, "y": 635}],
         "#floor": "Doom Castle Floor B2"
       },
       {
@@ -20,7 +20,7 @@
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-b2", "x": 16, "y": 0}],
+        "map_locations": [{"map": "doom-castle-b2", "x": 495, "y": 510}],
         "#floor": "Doom Castle Floor B2"
       },
       {
@@ -30,7 +30,7 @@
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-b2", "x": 32, "y": 0}],
+        "map_locations": [{"map": "doom-castle-b2", "x": 320, "y": 365}],
         "#floor": "Doom Castle Floor B2"
       },
       {
@@ -38,7 +38,7 @@
         "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-4f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 550, "y": 490}],
         "#floor": "Doom Castle Floor 4F"
       },
       {
@@ -46,7 +46,7 @@
         "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-4f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 570, "y": 265}],
         "#floor": "Doom Castle Floor 4F"
       },
       {
@@ -54,7 +54,7 @@
         "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-4f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 105, "y": 455}],
         "#floor": "Doom Castle Floor 4F"
       },
       {
@@ -62,7 +62,7 @@
         "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-4f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 185, "y": 230}],
         "#floor": "Doom Castle Floor 4F"
       },
       {
@@ -70,7 +70,7 @@
         "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-5f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 345, "y": 310}],
         "#floor": "Doom Castle Floor 5F"
       },
       {
@@ -78,7 +78,7 @@
         "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-5f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 361, "y": 310}],
         "#floor": "Doom Castle Floor 5F"
       },
       {
@@ -86,7 +86,7 @@
         "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-5f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 345, "y": 490}],
         "#floor": "Doom Castle Floor 5F"
       },
       {
@@ -94,7 +94,7 @@
         "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-5f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 361, "y": 490}],
         "#floor": "Doom Castle Floor 5F"
       },
       {
@@ -102,7 +102,7 @@
         "access_rules": ["@Doom Castle Overworld/6F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-6f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "doom-castle-6f", "x": 55, "y": 185}],
         "#floor": "Doom Castle Floor 6F"
       },
       {
@@ -110,7 +110,7 @@
         "access_rules": ["@Doom Castle Overworld/6F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-6f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "doom-castle-6f", "x": 600, "y": 392}],
         "#floor": "Doom Castle Floor 6F"
       },
       {
@@ -120,7 +120,7 @@
         "chest_opened_img": "images/chests/opened.png",
         "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-7f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 40, "y": 230}],
         "#floor": "Doom Castle Floor 7F"
       },
       {
@@ -130,7 +130,7 @@
         "chest_opened_img": "images/chests/opened.png",
         "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-7f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 170, "y": 100}],
         "#floor": "Doom Castle Floor 7F"
       },
       {
@@ -140,7 +140,7 @@
         "chest_opened_img": "images/chests/opened.png",
         "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-7f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 250, "y": 100}],
         "#floor": "Doom Castle Floor 7F"
       },
       {
@@ -150,7 +150,7 @@
         "chest_opened_img": "images/chests/opened.png",
         "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "doom-castle-7f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 360, "y": 230}],
         "#floor": "Doom Castle Floor 7F"
       },
       {
