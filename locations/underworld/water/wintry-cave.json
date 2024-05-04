@@ -85,7 +85,7 @@
       {
         "name": "West Box",
         "access_rules": [
-          "@Wintry Cave Overworld/3F - Above Boxes, access from 1F"
+          "@Wintry Cave Overworld/3F - Above Boxes (access from 1F)"
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
@@ -95,7 +95,7 @@
       {
         "name": "East Box",
         "access_rules": [
-          "@Wintry Cave Overworld/3F - Above Boxes, access from 1F"
+          "@Wintry Cave Overworld/3F - Above Boxes (access from 1F)"
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
