@@ -154,7 +154,7 @@
             "#item_count": 1
           },
           {
-            "name": "5F - West Ledge Box?",
+            "name": "5F - West Ledge Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 1
           },

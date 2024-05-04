@@ -46,13 +46,6 @@
             "item_count": 1
           },
           {
-            "name": "B1 - Ribcage Waterway Box?",
-            "note": "#FIXME: Can't find!",
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "access_rules": ["bomb"],
-            "item_count": 1
-          },
-          {
             "name": "B2 - Spines Room Boxes",
             "clear_as_group": false,
             "visibility_rules": ["setting_shufflebrownbox_yes"],
@@ -76,6 +69,12 @@
           {
             "name": "B2 - Two Skulls Room Box?",
             "note": "#FIXME: Can't find!",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["bomb"],
+            "item_count": 1
+          },
+          {
+            "name": "B2a - Ribcage Waterway Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "access_rules": ["bomb"],
             "item_count": 1
