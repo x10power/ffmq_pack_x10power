@@ -80,7 +80,7 @@
           "@Ice Pyramid Overworld/3Fa - Staircase Dead End Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "ice-pyramid-3f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "ice-pyramid-3f", "x": 210, "y": 305}],
         "#floor": "Ice Pyramid Floor 3FA"
       },
       {
@@ -91,25 +91,25 @@
           "@Ice Pyramid Overworld/3Fa - Staircase Dead End Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "ice-pyramid-3f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "ice-pyramid-3f", "x": 240, "y": 305}],
         "#floor": "Ice Pyramid Floor 3FA"
       },
       {
-        "name": "Inner Room Left Box",
+        "name": "Inner Room Top Box",
         "note": "From 2Fb",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Ice Pyramid Overworld/3Fb - Inner Room Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "ice-pyramid-3f", "x": 210, "y": 305}],
+        "map_locations": [{"map": "ice-pyramid-3f", "x": 160, "y": 195}],
         "#floor": "Ice Pyramid Floor 3FB"
       },
       {
-        "name": "Inner Room Right Box",
+        "name": "Inner Room Bottom Box",
         "note": "From 2Fb",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Ice Pyramid Overworld/3Fb - Inner Room Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "ice-pyramid-3f", "x": 240, "y": 305}],
+        "map_locations": [{"map": "ice-pyramid-3f", "x": 160, "y": 225}],
         "#floor": "Ice Pyramid Floor 3FB"
       },
       {
