@@ -57,7 +57,7 @@ def digForChildren(loc):
                     match = re.search(
                         r"([\[\{\$\@]*)" +
                         r"([\$\@]*)" +
-                        r"([\w\s\/-]+)" +
+                        r"([\w\s\/-\']+)" +
                         r"(?:[\]\}\|\:]*)" +
                         r"([\d]*)" +
                         r"([\]\}]*)",
@@ -74,11 +74,11 @@ def digForChildren(loc):
                                 errMsg = "not a valid function"
                             elif match.group(1) == "@" or \
                                 match.group(2) == "@":
+                                print(match.groups())
                                 err = check[:check.find("/"):] not in locs
                                 circle = "🔴"
                                 errMsg = "not a valid location"
                             elif check not in items:
-                                print(match.groups())
                                 err = True
                                 circle = "🔴"
                                 errMsg = "not a valid item code"
