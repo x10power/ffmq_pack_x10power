@@ -31,7 +31,7 @@ def checkImageRefs(loc):
             linImg = loc[chest_img].replace("\\","/")
             winImg = loc[chest_img].replace("/","\\")
             if linImg not in images and winImg not in images:
-                print(f" Invalid '{chest_img}' reference for '{loc['name']}'")
+                print(f" 🔴Invalid '{chest_img}' reference for '{loc['name']}'")
 
 def digForChildren(loc):
     children = []
@@ -63,28 +63,33 @@ def digForChildren(loc):
                         r"([\]\}]*)",
                         access_item
                     )
+                    circle = ""
                     if match:
                         if match.group(3) != "":
                             check = match.group(3)
                             if match.group(1) == "$" or \
                                 match.group(2) == "$":
                                 err = check not in funcs
+                                circle = "🔴"
                                 errMsg = "not a valid function"
                             elif match.group(1) == "@" or \
                                 match.group(2) == "@":
                                 err = check[:check.find("/"):] not in locs
+                                circle = "🔴"
                                 errMsg = "not a valid location"
                             elif check not in items:
                                 err = True
+                                circle = "🔴"
                                 errMsg = "not a valid item code"
                             elif check in itemToFunc and itemToFunc[check][0] != "pazuzuSeven":
                                 err = True
+                                circle = "🟡"
                                 errMsg = f"can be replaced with '{itemToFunc[check]}'"
 
                     if err:
                         print(f"> {loc['name']}")
                         print(f">  {child['name']}")
-                        print(f">   '{access_item}' {errMsg}")
+                        print(f">   {circle}'{access_item}' {errMsg}")
 
 itemToFunc = {}
 items = []

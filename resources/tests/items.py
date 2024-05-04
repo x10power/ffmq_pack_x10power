@@ -35,7 +35,7 @@ for filename in os.listdir(dirname):
                         linImg = item["img"].replace("\\","/")
                         winImg = item["img"].replace("/","\\")
                         if linImg not in images and winImg not in images:
-                            print(f" Invalid image reference for '{item['name']}'")
+                            print(f" 🔴Invalid image reference for '{item['name']}'")
                     if "codes" in item:
                         primary = item["codes"].split(",")[0]
                         chathud[primary] = {
@@ -49,7 +49,7 @@ for filename in os.listdir(dirname):
                             chathud[primary]["codes"].append(tmp)
                         codes += itemCodes
                     else:
-                        print(f"Codes not defined for '{item['name']}'")
+                        print(f"🔴Codes not defined for '{item['name']}'")
                         continue
                     if "stages" in item:
                         for stage in item["stages"]:
@@ -57,7 +57,7 @@ for filename in os.listdir(dirname):
                                 linImg = stage["img"].replace("\\","/")
                                 winImg = stage["img"].replace("/","\\")
                                 if linImg not in images and winImg not in images:
-                                    print(f" Invalid image reference for '{item['name']}:{stage['name']}'")
+                                    print(f" 🔴Invalid image reference for '{item['name']}:{stage['name']}'")
                             for code in ["codes", "secondary_codes"]:
                                 if code in stage:
                                     stageCodes = list(

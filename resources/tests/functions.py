@@ -59,7 +59,7 @@ for r,d,f in os.walk(dirname):
                             itemName = item.group(1).strip()
                             if itemName not in items:
                                 print(f"> {funcName}")
-                                print(f">  '{itemName}' not a valid item code")
+                                print(f">  🔴'{itemName}' not a valid item code")
                             else:
                                 if funcName != "canGoMode":
                                     if itemName not in itemToFunc:
@@ -71,7 +71,7 @@ for r,d,f in os.walk(dirname):
                             linImg = imageName.replace("\\","/")
                             winImg = imageName.replace("/","\\")
                             if linImg not in images and winImg not in images:
-                                print(f" Invalid image reference on line '{i}'")
+                                print(f" 🔴Invalid image reference on line '{i}'")
 
 print("")
 
