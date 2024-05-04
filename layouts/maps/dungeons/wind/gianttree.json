@@ -19,7 +19,7 @@
       "title": "Floor 2a",
       "content": {
         "type": "map",
-        "maps": ["giant-tree-2a"]
+        "maps": ["giant-tree-2fa"]
       }
     },
     {
@@ -33,7 +33,7 @@
       "title": "Floor 3a",
       "content": {
         "type": "map",
-        "maps": ["giant-tree-3a"]
+        "maps": ["giant-tree-3fa"]
       }
     },
     {
@@ -47,7 +47,7 @@
       "title": "Floor 4a",
       "content": {
         "type": "map",
-        "maps": ["giant-tree-4a"]
+        "maps": ["giant-tree-4fa"]
       }
     },
     {

@@ -8,7 +8,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-1f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 55, "y": 190}],
         "#floor": "Giant Tree Floor 1F"
       },
       {
@@ -16,7 +16,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-1f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 55, "y": 365}],
         "#floor": "Giant Tree Floor 1F"
       },
       {
@@ -24,7 +24,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-1f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 250, "y": 270}],
         "#floor": "Giant Tree Floor 1F"
       },
       {
@@ -32,7 +32,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-1f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 375, "y": 315}],
         "#floor": "Giant Tree Floor 1F"
       },
       {
@@ -40,7 +40,7 @@
         "access_rules": ["@Giant Tree Overworld/2F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-2f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 440, "y": 200}],
         "#floor": "Giant Tree Floor 2F"
       },
       {
@@ -48,7 +48,7 @@
         "access_rules": ["@Giant Tree Overworld/2F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-2f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 440, "y": 430}],
         "#floor": "Giant Tree Floor 2F"
       },
       {
@@ -56,7 +56,7 @@
         "access_rules": ["@Giant Tree Overworld/2F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-2f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 105, "y": 425}],
         "#floor": "Giant Tree Floor 2F"
       },
       {
@@ -66,7 +66,7 @@
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-2f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 470, "y": 235}],
         "#floor": "Giant Tree Floor 2F"
       },
       {
@@ -76,7 +76,7 @@
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-2f", "x": 64, "y": 0}],
+        "map_locations": [{"map": "giant-tree-2fa", "x": 185, "y": 110}],
         "#floor": "Giant Tree Floor 2F"
       },
       {
@@ -86,7 +86,7 @@
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-2f", "x": 80, "y": 0}],
+        "map_locations": [{"map": "giant-tree-2fa", "x": 200, "y": 110}],
         "#floor": "Giant Tree Floor 2F"
       },
       {
@@ -94,7 +94,7 @@
         "access_rules": ["@Giant Tree Overworld/3F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-3f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 295, "y": 445}],
         "#floor": "Giant Tree Floor 3F"
       },
       {
@@ -102,7 +102,7 @@
         "access_rules": ["@Giant Tree Overworld/3F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-3f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 215, "y": 445}],
         "#floor": "Giant Tree Floor 3F"
       },
       {
@@ -110,7 +110,7 @@
         "access_rules": ["@Giant Tree Overworld/3F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-3f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 185, "y": 490}],
         "#floor": "Giant Tree Floor 3F"
       },
       {
@@ -118,7 +118,7 @@
         "access_rules": ["@Giant Tree Overworld/3F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-3f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "giant-tree-3fa", "x": 230, "y": 90}],
         "#floor": "Giant Tree Floor 3F"
       },
       {
@@ -126,7 +126,7 @@
         "access_rules": ["@Giant Tree Overworld/3F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-3f", "x": 64, "y": 0}],
+        "map_locations": [{"map": "giant-tree-3fa", "x": 215, "y": 190}],
         "#floor": "Giant Tree Floor 3F"
       },
       {
@@ -134,7 +134,7 @@
         "access_rules": ["@Giant Tree Overworld/3F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-3f", "x": 80, "y": 0}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 135, "y": 605}],
         "#floor": "Giant Tree Floor 3F"
       },
       {
@@ -142,7 +142,7 @@
         "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-4f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "giant-tree-4fa", "x": 295, "y": 155}],
         "#floor": "Giant Tree Floor 4F"
       },
       {
@@ -150,7 +150,7 @@
         "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-4f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "giant-tree-4fa", "x": 90, "y": 190}],
         "#floor": "Giant Tree Floor 4F"
       },
       {
@@ -158,7 +158,7 @@
         "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-4f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 310, "y": 475}],
         "#floor": "Giant Tree Floor 4F"
       },
       {
@@ -166,7 +166,7 @@
         "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-4f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 280, "y": 510}],
         "#floor": "Giant Tree Floor 4F"
       },
       {
@@ -174,7 +174,7 @@
         "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-4f", "x": 64, "y": 0}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 105, "y": 285}],
         "#floor": "Giant Tree Floor 4F"
       },
       {
@@ -182,7 +182,7 @@
         "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-4f", "x": 80, "y": 0}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 105, "y": 300}],
         "#floor": "Giant Tree Floor 4F"
       },
       {
@@ -190,7 +190,7 @@
         "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-5f", "x": 0, "y": 0}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 170, "y": 360}],
         "#floor": "Giant Tree Floor 5F"
       },
       {
@@ -198,7 +198,7 @@
         "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-5f", "x": 16, "y": 0}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 215, "y": 360}],
         "#floor": "Giant Tree Floor 5F"
       },
       {
@@ -206,7 +206,7 @@
         "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-5f", "x": 32, "y": 0}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 55, "y": 140}],
         "#floor": "Giant Tree Floor 5F"
       },
       {
@@ -214,7 +214,7 @@
         "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-5f", "x": 48, "y": 0}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 90, "y": 140}],
         "#floor": "Giant Tree Floor 5F"
       },
       {
@@ -222,7 +222,7 @@
         "access_rules": ["@Giant Tree Overworld/5F - Giant Tree"],
         "hosted_item": "boss_gianttree",
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "giant-tree-5f", "x": 64, "y": 0}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 200, "y": 40}],
         "#floor": "Giant Tree Floor 5F"
       }
     ]

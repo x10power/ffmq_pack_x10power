@@ -5,7 +5,20 @@
     "children": [
       {
         "name": "Giant Tree Overworld",
-        "map_locations": [{"map": "restored-world", "x": 525, "y": 500}],
+        "map_locations": [
+          {
+            "map": "restored-world",
+            "visibility_rules": ["$not_has|boss_gianttree"],
+            "x": 580,
+            "y": 465
+          },
+          {
+            "map": "restored-world",
+            "visibility_rules": ["boss_gianttree"],
+            "x": 525,
+            "y": 500
+          }
+        ],
         "sections": [
           {
             "name": "1F - Boxes",

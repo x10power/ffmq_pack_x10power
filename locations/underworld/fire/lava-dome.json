@@ -307,7 +307,7 @@
         "hosted_item": "boss_lavadome",
         "access_rules": ["@Lava Dome Overworld/Dualhead Hydra Chest"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-boss", "x": 200, "y": 60}],
+        "map_locations": [{"map": "lava-dome-boss", "x": 200, "y": 60}]
       },
       {
         "name": "Crystal of Fire",

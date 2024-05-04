@@ -1,3 +1,23 @@
+function has(item, amount)
+    local count = Tracker:ProviderCountForCode(item)
+    amount = tonumber(amount)
+    if not amount then
+        return count > 0
+    else
+        return count >= amount
+    end
+end
+
+function not_has(item, amount)
+    local count = Tracker:ProviderCountForCode(item)
+    amount = tonumber(amount)
+    if not amount then
+        return not has(item)
+    else
+        return count < amount
+    end
+end
+
 -- Component functions.
 -- These are not meant to be used directly in the tracker json files.
 -- Instead, they are used for the main functions.
