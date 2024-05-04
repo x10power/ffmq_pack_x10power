@@ -39,8 +39,9 @@
           {
             "name": "B1 - Hook Platform Boxes",
             "access_rules": ["dragonclaw"],
+            "clear_as_group": false,
             "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "item_count": 1
+            "item_count": 2
           },
           {
             "name": "B1 - Northwest Hook Platform Box",
