@@ -161,4 +161,4 @@ outputdir = os.path.join(".","resources","tests","output")
 if not os.path.exists(outputdir):
     os.makedirs(outputdir)
 with open(os.path.join(outputdir, "locNames.json"), mode="w+", encoding="utf-8") as locsJSON:
-    locsJSON.write(json.dumps(locs, indent=2))
+    locsJSON.write(commentjson.dumps(sorted(locs), indent=2))
