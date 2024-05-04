@@ -8,7 +8,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A1 - Three Jumps Room Box"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a1", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a1", "x": 60, "y": 80}],
         "#floor": "Lava Dome Floor A1"
       },
       {
@@ -18,7 +18,7 @@
           "@Lava Dome Overworld/A3 - Lava River Room Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a3", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a3", "x": 365, "y": 105}],
         "#floor": "Lava Dome Floor A3"
       },
       {
@@ -28,7 +28,7 @@
           "@Lava Dome Overworld/A3 - Lava River Room Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a3", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a3", "x": 395, "y": 135}],
         "#floor": "Lava Dome Floor A3"
       },
       {
@@ -38,7 +38,7 @@
           "@Lava Dome Overworld/A3 - Lava River Room Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a3", "x": 32, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a3", "x": 365, "y": 170}],
         "#floor": "Lava Dome Floor A3"
       },
       {
@@ -50,7 +50,7 @@
           "@Lava Dome Overworld/A4 - Beyond River Room Chest"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a4", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a4", "x": 140, "y": 60}],
         "#floor": "Lava Dome Floor A4"
       },
       {
@@ -60,7 +60,7 @@
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a4", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a4", "x": 205, "y": 90}],
         "#floor": "Lava Dome Floor A4"
       },
       {
@@ -72,7 +72,7 @@
           "@Lava Dome Overworld/A2 - Gold Bar Room Boulder Chest"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a2", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a2", "x": 365, "y": 330}],
         "#floor": "Lava Dome Floor A2"
       },
       {
@@ -82,7 +82,7 @@
           "@Lava Dome Overworld/A2 - Gold Bar Room Leapfrog Alcove Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a2", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a2", "x": 240, "y": 75}],
         "#floor": "Lava Dome Floor A2"
       },
       {
@@ -92,7 +92,7 @@
           "@Lava Dome Overworld/A2 - Gold Bar Room Leapfrog Alcove Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a2", "x": 32, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a2", "x": 270, "y": 75}],
         "#floor": "Lava Dome Floor A2"
       },
       {
@@ -102,7 +102,7 @@
           "@Lava Dome Overworld/A2a - Exterior Center Dropoff Ledge Box"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a2a", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome", "x": 790, "y": 200}],
         "#floor": "Lava Dome Floor A2A"
       },
       {
@@ -110,21 +110,25 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": [
           "@Lava Dome Overworld/Exterior South Cliff Box (SE of A2b)"
-        ]
+        ],
+        "map_locations": [{"map": "lava-dome", "x": 1000, "y": 360}],
+        "sections": [{"name": "Item", "item_count": 1}]
       },
       {
         "name": "Exterior Caldera Near Switch Cliff Box (SE of A4a)",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": [
           "@Lava Dome Overworld/Exterior Caldera Near Switch Cliff Box (SE of A4a)"
-        ]
+        ],
+        "map_locations": [{"map": "lava-dome", "x": 505, "y": 425}],
+        "sections": [{"name": "Item", "item_count": 1}]
       },
       {
         "name": "Split Corridor Box",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A3 - Split Corridor Box"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a3", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a3", "x": 125, "y": 375}],
         "#floor": "Lava Dome Floor A3"
       },
       {
@@ -134,7 +138,7 @@
           "@Lava Dome Overworld/A5 - Bare Maze Leapfrog Alcove Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a5", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a5", "x": 30, "y": 125}],
         "#floor": "Lava Dome Floor A5"
       },
       {
@@ -144,7 +148,7 @@
           "@Lava Dome Overworld/A5 - Bare Maze Leapfrog Alcove Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a5", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a5", "x": 30, "y": 90}],
         "#floor": "Lava Dome Floor A5"
       },
       {
@@ -152,7 +156,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A5 - Bare Maze Center Box"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a5", "x": 32, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a5", "x": 155, "y": 270}],
         "#floor": "Lava Dome Floor A5"
       },
       {
@@ -162,7 +166,7 @@
           "@Lava Dome Overworld/A5 - Bare Maze Southwest Box"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a5", "x": 48, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a5", "x": 45, "y": 395}],
         "#floor": "Lava Dome Floor A5"
       },
       {
@@ -170,7 +174,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A4 - U-Bend Room Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a4", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a4", "x": 140, "y": 200}],
         "#floor": "Lava Dome Floor A4"
       },
       {
@@ -178,7 +182,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A4 - U-Bend Room Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a4", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a4", "x": 140, "y": 170}],
         "#floor": "Lava Dome Floor A4"
       },
       {
@@ -188,7 +192,7 @@
           "@Lava Dome Overworld/A7 - Caldera Stairway Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a7", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a7", "x": 30, "y": 170}],
         "#floor": "Lava Dome Floor A7"
       },
       {
@@ -198,7 +202,7 @@
           "@Lava Dome Overworld/A7 - Caldera Stairway Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a7", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a7", "x": 45, "y": 170}],
         "#floor": "Lava Dome Floor A7"
       },
       {
@@ -208,7 +212,7 @@
           "@Lava Dome Overworld/A7 - Caldera Stairway Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a7", "x": 32, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a7", "x": 108, "y": 170}],
         "#floor": "Lava Dome Floor A7"
       },
       {
@@ -218,7 +222,7 @@
           "@Lava Dome Overworld/A7 - Caldera Stairway Boxes"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a7", "x": 48, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a7", "x": 125, "y": 170}],
         "#floor": "Lava Dome Floor A7"
       },
       {
@@ -228,7 +232,7 @@
           "@Lava Dome Overworld/A7b - Exterior Dead End Caldera Box"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a7b", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome", "x": 10, "y": 420}],
         "#floor": "Lava Dome Floor A7B"
       },
       {
@@ -236,7 +240,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A6 - Gold Maze Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a6", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a6", "x": 220, "y": 425}],
         "#floor": "Lava Dome Floor A6"
       },
       {
@@ -244,7 +248,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A6 - Gold Maze Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a6", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a6", "x": 60, "y": 185}],
         "#floor": "Lava Dome Floor A6"
       },
       {
@@ -252,7 +256,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A6 - Gold Maze Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a6", "x": 32, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a6", "x": 410, "y": 90}],
         "#floor": "Lava Dome Floor A6"
       },
       {
@@ -260,7 +264,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A6 - Gold Maze Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a6", "x": 48, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a6", "x": 235, "y": 230}],
         "#floor": "Lava Dome Floor A6"
       },
       {
@@ -268,7 +272,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A6 - Gold Maze Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a6", "x": 64, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a6", "x": 265, "y": 330}],
         "#floor": "Lava Dome Floor A6"
       },
       {
@@ -276,7 +280,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/A6 - Gold Maze Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-a6", "x": 80, "y": 0}],
+        "map_locations": [{"map": "lava-dome-a6", "x": 270, "y": 440}],
         "#floor": "Lava Dome Floor A6"
       },
       {
@@ -284,7 +288,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/Boss - Hydra Room Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-boss", "x": 0, "y": 0}],
+        "map_locations": [{"map": "lava-dome-boss", "x": 410, "y": 460}],
         "#floor": "Lava Dome Floor BOSS"
       },
       {
@@ -292,7 +296,7 @@
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Lava Dome Overworld/Boss - Hydra Room Boxes"],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "lava-dome-boss", "x": 16, "y": 0}],
+        "map_locations": [{"map": "lava-dome-boss", "x": 40, "y": 60}],
         "#floor": "Lava Dome Floor BOSS"
       },
       {
@@ -301,7 +305,9 @@
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
         "hosted_item": "boss_lavadome",
-        "access_rules": ["@Lava Dome Overworld/Dualhead Hydra Chest"]
+        "access_rules": ["@Lava Dome Overworld/Dualhead Hydra Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "lava-dome-boss", "x": 200, "y": 60}],
       },
       {
         "name": "Crystal of Fire",

@@ -61,7 +61,7 @@
           "@Bone Dungeon Overworld/B2a - Ribcage Waterway Box"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "bone-dungeon-b2a", "x": 0, "y": 0}],
+        "map_locations": [{"map": "bone-dungeon-b2a", "x": 210, "y": 60}],
         "#floor": "Bone Dungeon Floor B2A"
       },
       {
