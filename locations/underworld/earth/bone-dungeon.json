@@ -83,14 +83,13 @@
         "#floor": "Bone Dungeon Floor B2"
       },
       {
-        "name": "Two Skulls Room Box?",
-        "note": "#FIXME: Can't find!",
+        "name": "Two Skulls Room Box",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": [
-          "@Bone Dungeon Overworld/B2 - Two Skulls Room Box?"
+          "@Bone Dungeon Overworld/B2 - Two Skulls Room Box"
         ],
         "sections": [{"name": "Item", "item_count": 1}],
-        "map_locations": [{"map": "bone-dungeon-b2", "x": 32, "y": 0}],
+        "map_locations": [{"map": "bone-dungeon-b2b", "x": 65, "y": 480}],
         "#floor": "Bone Dungeon Floor B2"
       },
       {

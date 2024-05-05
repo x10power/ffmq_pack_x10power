@@ -73,6 +73,33 @@
         "#floor": "Ice Pyramid Floor 2FB"
       },
       {
+        "name": "Center Room Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/2Fc - Center Room Box"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-2f", "x": 175, "y": 275}]
+      },
+      {
+        "name": "North Room Glass Door Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/2Fd - North Room Glass Door Box"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-2f", "x": 385, "y": 30}]
+      },
+      {
+        "name": "North Corridor Glass Door Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Ice Pyramid Overworld/2Fe - North Corridor Glass Door Box"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "ice-pyramid-2f", "x": 480, "y": 225}]
+      },
+      {
         "name": "Staircase Dead End Left Box",
         "note": "From 2Fa",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
