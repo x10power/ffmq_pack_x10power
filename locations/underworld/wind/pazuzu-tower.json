@@ -103,6 +103,7 @@
       },
       {
         "name": "East Storage Room Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -139,6 +140,7 @@
       },
       {
         "name": "Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -149,6 +151,7 @@
       },
       {
         "name": "Pazuzu Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",

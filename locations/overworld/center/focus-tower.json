@@ -20,6 +20,7 @@
           {
             "name": "2F - Sand Door Chest",
             "note": "Fire Spell",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -29,6 +30,7 @@
           {
             "name": "2F - Back Door Chest",
             "note": "From Water",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -41,6 +43,7 @@
           {
             "name": "2F - Venus Chest",
             "note": "From Water",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -62,6 +65,7 @@
           {
             "name": "B2 - Sun Door Chest",
             "note": "In Doom Castle",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",

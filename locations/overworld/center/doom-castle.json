@@ -14,6 +14,10 @@
           {
             "name": "B2 - Southeast Chest",
             "access_rules": ["bomb"],
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
             "item_count": 1
           },
           {
@@ -111,6 +115,7 @@
           },
           {
             "name": "7F - Hero Chests",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -120,6 +125,7 @@
           },
           {
             "name": "7F - West Hero Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -128,6 +134,7 @@
           },
           {
             "name": "7F - North Left Hero Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -136,6 +143,7 @@
           },
           {
             "name": "7F - North Right Hero Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -144,6 +152,7 @@
           },
           {
             "name": "7F - East Hero Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",

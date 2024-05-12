@@ -5,6 +5,7 @@
     "children": [
       {
         "name": "East Alcove Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -75,9 +76,7 @@
       {
         "name": "Center Room Box",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
-        "access_rules": [
-          "@Ice Pyramid Overworld/2Fc - Center Room Box"
-        ],
+        "access_rules": ["@Ice Pyramid Overworld/2Fc - Center Room Box"],
         "sections": [{"name": "Item", "item_count": 1}],
         "map_locations": [{"map": "ice-pyramid-2f", "x": 175, "y": 275}]
       },
@@ -157,6 +156,7 @@
       },
       {
         "name": "Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -271,6 +271,7 @@
       },
       {
         "name": "Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",

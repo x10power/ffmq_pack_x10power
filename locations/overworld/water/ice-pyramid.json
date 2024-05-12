@@ -10,6 +10,7 @@
         "sections": [
           {
             "name": "1F - East Alcove Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -122,6 +123,7 @@
           },
           {
             "name": "4F - Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -215,6 +217,7 @@
           },
           {
             "name": "B1 - Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -248,6 +251,7 @@
           },
           {
             "name": "6F - Ice Golem Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",

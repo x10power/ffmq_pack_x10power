@@ -69,6 +69,7 @@
           },
           {
             "name": "Tree Stump Chest (SE)",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -132,6 +133,7 @@
           },
           {
             "name": "Dullahan Chest",
+            "#type": "chest",
             "hosted_item": "boss_mountgale",
             "item_count": 1
           }

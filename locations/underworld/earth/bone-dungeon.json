@@ -30,6 +30,7 @@
       {
         "name": "Skull Chest",
         "note": "Floor B1 Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -40,6 +41,8 @@
       },
       {
         "name": "Tristam (Gift)",
+        "#type": "tristam",
+        "chest_opened_img": "images/party/tristam.gif",
         "access_rules": ["@Bone Dungeon Overworld/B1 - Tristam (Gift)"],
         "sections": [{"name": "Item", "item_count": 1}],
         "map_locations": [{"map": "bone-dungeon-b1", "x": 80, "y": 190}],
@@ -102,6 +105,7 @@
       },
       {
         "name": "Penultimate Room Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -115,6 +119,7 @@
       {
         "name": "Tristam's Treasure Chest",
         "note": "Boss Room",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -146,6 +151,7 @@
       {
         "name": "Flamerus Rex Chest",
         "note": "Boss Room",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",

@@ -35,6 +35,7 @@
           },
           {
             "name": "A4 - Beyond River Room Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -49,6 +50,7 @@
           },
           {
             "name": "A2 - Gold Bar Room Boulder Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -218,6 +220,7 @@
           },
           {
             "name": "Dualhead Hydra Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",

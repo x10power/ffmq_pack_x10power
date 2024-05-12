@@ -94,6 +94,7 @@
           },
           {
             "name": "B1 - Mac Room Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",

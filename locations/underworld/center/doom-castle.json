@@ -6,6 +6,7 @@
       {
         "name": "Southeast Chest",
         "access_rules": ["@Doom Castle Overworld/B2 - Southeast Chest"],
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -115,6 +116,7 @@
       },
       {
         "name": "West Hero Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -125,6 +127,7 @@
       },
       {
         "name": "North Left Hero Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -135,6 +138,7 @@
       },
       {
         "name": "North Right Hero Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",
@@ -145,6 +149,7 @@
       },
       {
         "name": "East Hero Chest",
+        "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
         "chest_opened_img": "images/chests/opened.png",

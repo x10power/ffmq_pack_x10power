@@ -6,6 +6,7 @@
     "sections": [
       {
         "name": "Phoebe's House Box",
+        "#type": "default",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "item_count": 1
       },

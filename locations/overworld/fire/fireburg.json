@@ -21,6 +21,7 @@
       {
         "name": "Reuben's House: Reuben",
         "access_rules": ["", "{}"],
+        "#type": "reuben",
         "chest_opened_img": "images/party/reuben.gif",
         "capture_item": true,
         "capture_item_layout": "tracker_capture_party",
@@ -32,6 +33,7 @@
           "rivercoin,megagrenade",
           "megagrenade,[rivercoin],$fireburg_expert_access"
         ],
+        "#type": "default",
         "item_count": 1
       },
       {
@@ -40,6 +42,7 @@
           "rivercoin",
           "[rivercoin],$fireburg_expert_access"
         ],
+        "#type": "default",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "item_count": 1
       },
@@ -68,11 +71,13 @@
           "rivercoin",
           "[rivercoin],$fireburg_expert_access"
         ],
+        "#type": "default",
         "item_count": 1
       },
       {
         "name": "Hotel: Tristam",
         "access_rules": ["", "{}"],
+        "#type": "tristam",
         "chest_opened_img": "images/party/tristam.gif",
         "capture_item": true,
         "capture_item_layout": "tracker_capture_party",

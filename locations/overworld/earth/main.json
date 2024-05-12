@@ -38,11 +38,13 @@
           },
           {
             "name": "Free Old Man",
+            "#type": "blueman",
             "chest_unopened_img": "images/chests/blueman_available.png",
             "item_count": 1
           },
           {
             "name": "Beat Minotaur",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",

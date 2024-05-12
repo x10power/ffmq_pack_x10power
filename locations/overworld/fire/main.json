@@ -30,6 +30,7 @@
           },
           {
             "name": "Crescent Room Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -80,6 +81,7 @@
           {
             "name": "Reuben's Cutscene (Near Dad)",
             "access_rules": ["boss_mine,reuben", "boss_mine,pm4"],
+            "#type": "reuben",
             "chest_opened_img": "images/party/reuben.gif",
             "item_count": 1
           }
@@ -114,6 +116,7 @@
         "sections": [
           {
             "name": "Base Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -142,6 +145,7 @@
           },
           {
             "name": "Medusa Chest",
+            "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",

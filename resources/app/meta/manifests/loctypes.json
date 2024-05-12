@@ -1,0 +1,48 @@
+{
+  "default": {
+    "chest_unavailable_img": "images/chests/basket_available.png",
+    "chest_unopened_img": "images/chests/basket_available.png",
+    "chest_opened_img": "images/chests/basket_opened.png",
+    "moo": "moo"
+  },
+  "chest": {
+    "chest_unavailable_img": "images/chests/available.png",
+    "chest_unopened_img": "images/chests/available.png",
+    "chest_opened_img": "images/chests/opened.png",
+    "moo": "moo"
+  },
+  "blueman": {
+    "chest_unopened_img": "images/chests/blueman_available.png",
+    "moo": "moo"
+  },
+  "oldman": {
+    "chest_unopened_img": "images/chests/oldman_available.png",
+    "moo": "moo"
+  },
+  "kaeli": {
+    "chest_opened_img": "images/party/kaeli.gif",
+    "moo": "moo"
+  },
+  "phoebe": {
+    "chest_opened_img": "images/party/phoebe.gif",
+    "moo": "moo"
+  },
+  "reuben": {
+    "chest_opened_img": "images/party/reuben.gif",
+    "moo": "moo"
+  },
+  "tristam": {
+    "chest_opened_img": "images/party/tristam.gif",
+    "moo": "moo"
+  },
+  "battlefield": {
+    "chest_unavailable_img": "images/counters/battlefield.png",
+    "chest_unopened_img": "images/counters/battlefield.png",
+    "chest_opened_img": "images/battlefields/battlefield_complete.png",
+    "moo": "moo"
+  },
+  "spencer": {
+    "chest_unopened_img": "images/chests/spencer_available.png",
+    "moo": "moo"
+  }
+}
