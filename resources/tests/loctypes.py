@@ -7,6 +7,7 @@ typeDefnsPath = os.path.join(".","resources","app","meta","manifests","loctypes.
 with open(typeDefnsPath, "r") as typeDefnsFile:
     typeDefnsJSON = json.load(typeDefnsFile)
 
+print("Reading Location Image Types")
 dirname = os.path.join(".", "locations")
 for r, d, f in os.walk(dirname):
     if "main.json" in f:
@@ -17,7 +18,7 @@ for r, d, f in os.walk(dirname):
     for filename in f:
         if os.path.isfile(os.path.join(r, filename)):
             if os.path.splitext(filename)[1].lower() == ".json":
-                print(f"Reading: {os.path.join(r, filename)}")
+                print(f" Reading: {os.path.join(r, filename)}")
                 with open(os.path.join(r, filename), "r", encoding="utf-8") as locsFile:
                     locsManifest = json.load(locsFile)
                     flattened_dict = [
@@ -49,12 +50,12 @@ for r, d, f in os.walk(dirname):
                                     if checkType in v:
                                         if locName != "" and locName != v:
                                             if typeName == "":
-                                                print(f"🔴{locName} no type set!")
+                                                print(f"  🔴{locName} no type set!")
                                             if typeCheck != "" and \
                                                 typeCheck in list(typeDefnsJSON.keys()) and \
                                                 typeCheck != "default" and \
                                                 typeCheckPass < len(typeDefnsJSON[typeCheck]) - 1:
-                                                print(f"🔴{locName}: '{typeCheck}' images not set!")
+                                                print(f"  🔴{locName}: '{typeCheck}' images not set!")
                                         locName = v
                                         locTree = k
                                         typeName = ""
@@ -68,7 +69,7 @@ for r, d, f in os.walk(dirname):
                                 if typeName in list(typeDefnsJSON.keys()):
                                     typeCheck = typeName
                                     typeCheckPass = 0
-                                # print(f"🟡{locName}",v)
+                                # print(f"  🟡{locName}",v)
                             if "_img" in k:
                                 imgType = k.split(".")[-1]
                                 if typeCheck != "":
@@ -76,6 +77,7 @@ for r, d, f in os.walk(dirname):
                                         if typeDefnsJSON[typeCheck][imgType] == v:
                                             typeCheckPass += 1
                                     else:
-                                        print(f"🟡{locName}: Image Type '{imgType}' not found in '{typeCheck}' defn!")
+                                        print(f"  🟡{locName}: Image Type '{imgType}' not found in '{typeCheck}' defn!")
                                 else:
-                                    print(f"🟡{locName}",k,v)
+                                    print(f"  🟡{locName}",k,v)
+print("")
