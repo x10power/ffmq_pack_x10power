@@ -29,6 +29,7 @@ for r, d, f in os.walk(dirname):
                     locTree = ""
                     typeName = ""
                     typeCheck = ""
+                    typesChecked = []
                     typeCheckPass = 0
 
                     hasSections = False
@@ -36,7 +37,7 @@ for r, d, f in os.walk(dirname):
 
                     for [k, v] in flattened_dict.items():
                         if ".name" in k:
-                            if v not in ["Box","Item"]:
+                            if v not in ["Box"]:
                                 for checkType in [
                                     "Chest",
                                     "Old Man",
@@ -52,13 +53,17 @@ for r, d, f in os.walk(dirname):
                                             if typeName == "":
                                                 print(f"  🔴{locName} no type set!")
                                             if typeCheck != "" and \
-                                                typeCheck in list(typeDefnsJSON.keys()) and \
                                                 typeCheck != "default" and \
+                                                typeCheck in list(typeDefnsJSON.keys()) and \
                                                 typeCheckPass < len(typeDefnsJSON[typeCheck]) - 1:
-                                                print(f"  🔴{locName}: '{typeCheck}' images not set!")
+                                                typesNotChecked = list(set(list(typeDefnsJSON[typeCheck].keys())) - set(typesChecked))
+                                                if "moo" in typesNotChecked:
+                                                    del typesNotChecked[typesNotChecked.index("moo")]
+                                                print(f"  🔴{locName}: '{typeCheck}' properties not set! {typesNotChecked}")
                                         locName = v
                                         locTree = k
                                         typeName = ""
+                                        typesChecked = []
                                         typeCheckPass = 0
                                 if locName != "" and \
                                     "Box" not in v:
@@ -70,14 +75,32 @@ for r, d, f in os.walk(dirname):
                                     typeCheck = typeName
                                     typeCheckPass = 0
                                 # print(f"  🟡{locName}",v)
-                            if "_img" in k:
-                                imgType = k.split(".")[-1]
-                                if typeCheck != "":
-                                    if imgType in typeDefnsJSON[typeCheck]:
-                                        if typeDefnsJSON[typeCheck][imgType] == v:
-                                            typeCheckPass += 1
+                            if typeCheck != "":
+                                baseK = k.split(".")
+                                baseK.pop()
+                                propType = k.split(".")[-1]
+                                if propType.isnumeric():
+                                    propType = k.split(".")[-2]
+                                if propType in typeDefnsJSON[typeCheck]:
+                                    if typeDefnsJSON[typeCheck][propType] == v:
+                                        typeCheckPass += 1
+                                        typesChecked.append(propType)
+                                        # print(f"  🟢{locName}: Property Type '{propType}' set!")
                                     else:
-                                        print(f"  🟡{locName}: Image Type '{imgType}' not found in '{typeCheck}' defn!")
-                                else:
-                                    print(f"  🟡{locName}",k,v)
+                                        handleK = "locsManifest[0]"
+                                        lastK = baseK.pop()
+                                        for partK in baseK:
+                                            if partK.isnumeric():
+                                                handleK += f"[{partK}]"
+                                            else:
+                                                handleK += f"[\"{partK}\"]"
+                                        if "sections" not in baseK and \
+                                            lastK in eval(handleK):
+                                            # print(handleK,lastK)
+                                            typeCheckPass += 1
+                                            typesChecked.append(propType)
+                                            pass
+                                        else:
+                                            # print(f"  🔴{locName}: Property Type '{propType}' invalid value [{type(v)}: {v}]!")
+                                            pass
 print("")

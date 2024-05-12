@@ -90,6 +90,7 @@
       },
       {
         "name": "Spencer's Cave",
+        "#type": "child",
         "access_rules": ["aquaria_restored"],
         "map_locations": [{"map": "restored-world", "x": 675, "y": 315}],
         "sections": [
