@@ -31,6 +31,7 @@ for r, d, f in os.walk(dirname):
                     typeCheck = ""
                     typesChecked = []
                     typeCheckPass = 0
+                    typeCheckToPass = 0
 
                     hasSections = False
                     notChest = False
@@ -49,17 +50,19 @@ for r, d, f in os.walk(dirname):
                                     "Spencer"
                                 ]:
                                     if checkType in v:
-                                        if locName != "" and locName != v:
+                                        if locName != "": # and locName != v:
                                             if typeName == "":
                                                 print(f"  🔴{locName} no type set!")
-                                            if typeCheck != "" and \
-                                                typeCheck != "default" and \
-                                                typeCheck in list(typeDefnsJSON.keys()) and \
-                                                typeCheckPass < len(typeDefnsJSON[typeCheck]) - 1:
-                                                typesNotChecked = list(set(list(typeDefnsJSON[typeCheck].keys())) - set(typesChecked))
-                                                if "moo" in typesNotChecked:
-                                                    del typesNotChecked[typesNotChecked.index("moo")]
-                                                print(f"  🔴{locName}: '{typeCheck}' properties not set! {typesNotChecked}")
+                                            if typeCheck != "":
+                                                if typeCheck != "default":
+                                                    if typeCheck in list(typeDefnsJSON.keys()):
+                                                        typeCheckToPass = len(typeDefnsJSON[typeCheck]) - 1
+                                                        if typeCheckPass < typeCheckToPass:
+                                                            typesNotChecked = list(set(list(typeDefnsJSON[typeCheck].keys())) - set(typesChecked))
+                                                            if "moo" in typesNotChecked:
+                                                                del typesNotChecked[typesNotChecked.index("moo")]
+                                                            if len(typesNotChecked) > 0:
+                                                                print(f"  🔴{locName}: '{typeCheck}' properties not set! {typesNotChecked}")
                                         locName = v
                                         locTree = k
                                         typeName = ""
@@ -85,7 +88,7 @@ for r, d, f in os.walk(dirname):
                                     if typeDefnsJSON[typeCheck][propType] == v:
                                         typeCheckPass += 1
                                         typesChecked.append(propType)
-                                        # print(f"  🟢{locName}: Property Type '{propType}' set!")
+                                        # print(f"  🟢{locName}: Property Type '{propType}' set! [{typeCheckPass}/{typeCheckToPass}]")
                                     else:
                                         handleK = "locsManifest[0]"
                                         lastK = baseK.pop()
@@ -94,13 +97,16 @@ for r, d, f in os.walk(dirname):
                                                 handleK += f"[{partK}]"
                                             else:
                                                 handleK += f"[\"{partK}\"]"
-                                        if "sections" not in baseK and \
+                                        if (
+                                            "sections" not in baseK or
+                                            ("sections" in baseK and "connection" in typeCheck)
+                                        ) and \
                                             lastK in eval(handleK):
-                                            # print(handleK,lastK)
                                             typeCheckPass += 1
                                             typesChecked.append(propType)
+                                            # print(f"  🟢{locName}: Property Type '{propType}' set! [{typeCheckPass}/{typeCheckToPass}]")
                                             pass
                                         else:
-                                            # print(f"  🔴{locName}: Property Type '{propType}' invalid value [{type(v)}: {v}]!")
+                                            print(f"  🔴{handleK},{lastK}: Property Type '{propType}' invalid value [{v}]!")
                                             pass
 print("")
