@@ -68,8 +68,8 @@
       {
         "name": "Tristam (Hotel Gift)",
         "access_rules": [
-          "rivercoin",
-          "[rivercoin],$fireburg_expert_access"
+          "rivercoin,tristam",
+          "[rivercoin,tristam],$fireburg_expert_access"
         ],
         "#type": "default",
         "item_count": 1
