@@ -42,7 +42,8 @@
             "name": "B1 - Tristam (Gift)",
             "#type": "tristam",
             "chest_opened_img": "images/party/tristam.gif",
-            "item_count": 1
+            "item_count": 1,
+            "access_rules":  ["tristam"]
           },
           {
             "name": "B1a - Checker Room Box",
