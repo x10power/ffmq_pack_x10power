@@ -222,7 +222,6 @@
         "name": "Giant Tree",
         "access_rules": ["@Giant Tree Overworld/5F - Giant Tree"],
         "hosted_item": "boss_gianttree",
-        "sections": [{"name": "Item", "item_count": 1}],
         "map_locations": [{"map": "giant-tree-5f", "x": 200, "y": 40}],
         "#floor": "Giant Tree Floor 5F"
       }

@@ -88,7 +88,9 @@
       {
         "name": "Three Skulls Room Box",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
-        "access_rules": ["@Bone Dungeon Overworld/B2b - Three Skulls Room Box"],
+        "access_rules": [
+          "@Bone Dungeon Overworld/B2b - Three Skulls Room Box"
+        ],
         "sections": [{"name": "Item", "item_count": 1}],
         "map_locations": [{"map": "bone-dungeon-b2b", "x": 65, "y": 480}],
         "#floor": "Bone Dungeon Floor B2B"

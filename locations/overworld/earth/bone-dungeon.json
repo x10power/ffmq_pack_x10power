@@ -43,7 +43,7 @@
             "#type": "tristam",
             "chest_opened_img": "images/party/tristam.gif",
             "item_count": 1,
-            "access_rules":  ["tristam"]
+            "access_rules": ["tristam"]
           },
           {
             "name": "B1a - Checker Room Box",

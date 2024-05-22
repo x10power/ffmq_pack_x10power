@@ -73,7 +73,7 @@
           },
           {
             "name": "2F - Gidrah Chest",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,boss_gianttree"],
             "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
