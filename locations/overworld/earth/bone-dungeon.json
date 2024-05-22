@@ -74,7 +74,7 @@
             "#item_count": 1
           },
           {
-            "name": "B2b - Two Skulls Room Box",
+            "name": "B2b - Three Skulls Room Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "access_rules": ["bomb"],
             "item_count": 1
