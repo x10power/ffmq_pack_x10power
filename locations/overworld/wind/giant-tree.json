@@ -73,7 +73,7 @@
           },
           {
             "name": "2F - Gidrah Chest",
-            "access_rules": ["sword,dragonclaw,boss_gianttree"],
+            "access_rules": ["sword,dragonclaw,boss_gianttree,axe"],
             "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
@@ -82,20 +82,20 @@
           },
           {
             "name": "2F - Mushroom Tunnel Boxes",
-            "access_rules": ["dragonclaw"],
+            "access_rules": ["dragonclaw,axe"],
             "clear_as_group": false,
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 2
           },
           {
             "name": "2F - Mushroom Tunnel West Box",
-            "access_rules": ["dragonclaw"],
+            "access_rules": ["dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "2F - Mushroom Tunnel East Box",
-            "access_rules": ["dragonclaw"],
+            "access_rules": ["dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
@@ -104,7 +104,7 @@
             "access_rules": ["sword,dragonclaw"],
             "clear_as_group": false,
             "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "item_count": 6
+            "item_count": 3
           },
           {
             "name": "3F - Central Island Box",
@@ -120,105 +120,110 @@
           },
           {
             "name": "3F - Center West Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "3F - Worm Room North Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "3F - Worm Room South Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
+            "name": "3F - Worm Room Boxes",
+            "access_rules": ["sword,dragonclaw,axe"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"]
+          },
+          {
             "name": "3F - West Side Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "4F - Boxes",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "clear_as_group": false,
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 6
           },
           {
             "name": "4F - East Slime Room Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "4F - West Slime Room Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "4F - Hook Ledge Northeast Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "4F - Hook Ledge Southwest Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "4F - Highest Platform North Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "4F - Highest Platform South Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "5F - Boxes",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "clear_as_group": false,
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 4
           },
           {
             "name": "5F - South Left Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "5F - South Right Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "5F - Northwest Left Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "5F - Northwest Right Box",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "5F - Giant Tree",
-            "access_rules": ["sword,dragonclaw"],
+            "access_rules": ["sword,dragonclaw,axe"],
             "hosted_item": "boss_gianttree"
           }
         ]
