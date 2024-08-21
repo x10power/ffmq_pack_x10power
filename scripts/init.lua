@@ -121,6 +121,7 @@ if string.find(variant, "map") then
   -- Locations
   locations = {
     -- Center
+    "center/main",
     "center/focus-tower",
     "center/doom-castle",
     -- Earth
@@ -150,8 +151,10 @@ if string.find(variant, "map") then
   }
   for _, locCat in ipairs(locations) do
     Tracker:AddLocations("locations/overworld/" .. locCat .. ".json")
-    Tracker:AddLocations("locations/underworld/" .. locCat .. ".json")
-end
+    if string.find(locCat, "-") ~= nil then
+      Tracker:AddLocations("locations/underworld/" .. locCat .. ".json")
+    end
+  end
   print("")
 else
   -- Legacy

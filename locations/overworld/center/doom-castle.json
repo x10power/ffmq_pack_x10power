@@ -1,7 +1,7 @@
 [
   {
     "name": "Doom Castle",
-    "parent": "Focus Tower",
+    "parent": "Center",
     "access_rules": [
       "$doom_castle_access",
       "[suncoin],$doom_castle_expert_access"
@@ -11,15 +11,15 @@
         "name": "Doom Castle Overworld",
         "map_locations": [{"map": "restored-world", "x": 362, "y": 512}],
         "sections": [
-            {
-                "name": "B2 - Southeast Chest",
-                "access_rules": [ "bomb" ],
-                "#type": "chest",
-                "chest_unavailable_img": "images/chests/available.png",
-                "chest_unopened_img": "images/chests/available.png",
-                "chest_opened_img": "images/chests/opened.png",
-                "item_count": 1
-            },
+          {
+            "name": "B2 - Southeast Chest",
+            "access_rules": ["bomb"],
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
           {
             "name": "B2 - Bone Ledge Box (East)",
             "access_rules": ["dragonclaw"],
