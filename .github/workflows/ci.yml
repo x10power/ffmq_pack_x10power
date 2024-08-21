@@ -149,13 +149,13 @@ jobs:
       - name: 🔽Download AppVersion Artifact
         uses: actions/download-artifact@v4.1.8
         with:
-          name: appversion-windows
+          name: appversion-windows-latest
           path: ${{ steps.parentDir.outputs.parentDir }}/build
       # download archive artifact
       - name: 🔽Download Archive Artifact
         uses: actions/download-artifact@v4.1.8
         with:
-          name: archive-windows
+          name: archive-windows-latest
           path: ${{ steps.parentDir.outputs.parentDir }}/deploy
 
       # debug info
