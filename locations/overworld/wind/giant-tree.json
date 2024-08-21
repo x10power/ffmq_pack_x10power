@@ -125,6 +125,12 @@
             "#item_count": 1
           },
           {
+            "name": "3F - Worm Room Boxes",
+            "access_rules": ["sword,dragonclaw,axe"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
             "name": "3F - Worm Room North Box",
             "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
@@ -135,11 +141,6 @@
             "access_rules": ["sword,dragonclaw,axe"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
-          },
-          {
-            "name": "3F - Worm Room Boxes",
-            "access_rules": ["sword,dragonclaw,axe"],
-            "visibility_rules": ["setting_shufflebrownbox_yes"]
           },
           {
             "name": "3F - West Side Box",

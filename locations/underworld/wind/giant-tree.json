@@ -116,7 +116,7 @@
       },
       {
         "name": "Worm Room North Box",
-        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "access_rules": ["@Giant Tree Overworld/3F - Worm Room Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
         "map_locations": [{"map": "giant-tree-3fa", "x": 230, "y": 90}],
@@ -124,7 +124,7 @@
       },
       {
         "name": "Worm Room South Box",
-        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "access_rules": ["@Giant Tree Overworld/3F - Worm Room Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],
         "map_locations": [{"map": "giant-tree-3fa", "x": 215, "y": 190}],
