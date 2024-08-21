@@ -124,8 +124,8 @@ jobs:
     #  os & python versions
     strategy:
       matrix:
-        # release only on windows
-        os-name: [windows-latest]
+        # release only on ubuntu
+        os-name: [ubuntu-latest]
         python-version: ["3.12"]
 
     needs: [install-release-prepare]
@@ -149,13 +149,13 @@ jobs:
       - name: 🔽Download AppVersion Artifact
         uses: actions/download-artifact@v4.1.8
         with:
-          name: appversion-${{ matrix.os-name }}
+          name: appversion-windows
           path: ${{ steps.parentDir.outputs.parentDir }}/build
       # download archive artifact
       - name: 🔽Download Archive Artifact
         uses: actions/download-artifact@v4.1.8
         with:
-          name: archive-${{ matrix.os-name }}
+          name: archive-windows
           path: ${{ steps.parentDir.outputs.parentDir }}/deploy
 
       # debug info
