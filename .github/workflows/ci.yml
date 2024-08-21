@@ -24,7 +24,7 @@ jobs:
     strategy:
       matrix:
         os-name: [ubuntu-latest]
-        python-version: [3.8]
+        python-version: ["3.12"]
     steps:
       # checkout commit
       - name: ✔️Checkout commit
@@ -57,8 +57,8 @@ jobs:
     strategy:
       matrix:
         # one OS
-        os-name: [ubuntu-latest]
-        python-version: [3.8]
+        os-name: [windows-latest]
+        python-version: ["3.12"]
 
     steps:
       # checkout commit
@@ -126,7 +126,7 @@ jobs:
       matrix:
         # release only on ubuntu
         os-name: [ubuntu-latest]
-        python-version: [3.8]
+        python-version: ["3.12"]
 
     needs: [install-release-prepare]
     steps:
@@ -219,7 +219,7 @@ jobs:
       matrix:
         # run only on ubuntu
         os-name: [ubuntu-latest]
-        python-version: [3.8]
+        python-version: ["3.12"]
 
     needs: [release-deploy]
     steps:
