@@ -129,7 +129,7 @@ if len(BUILD_FILENAMES) > 0:
 
   # .zip if windows
   # .tar.gz otherwise
-  if len(BUILD_FILENAMES) > 1:
+  if len(BUILD_FILENAMES) > 1 or BUILD_FILENAMES[0] == os.path.join("."):
     ZIP_FILENAME = os.path.join("..","deploy",env["REPO_NAME"])
   else:
     ZIP_FILENAME = os.path.join("..","deploy",os.path.splitext(BUILD_FILENAME)[0])

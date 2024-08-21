@@ -1,6 +1,6 @@
 {"common": {
   "cleanup": {
-    "nuke": [".git", "resources", "schemas"]
+    "nuke": [".git", "resources", "schema"]
   },
   "common": {
     "ubuntu": {
