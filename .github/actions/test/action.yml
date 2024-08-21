@@ -11,18 +11,18 @@ inputs:
 #########
 # actions
 #########
-# actions/checkout@v4.1.4
-# actions/download-artifact@v4.1.7
-# actions/upload-artifact@v4.3.3
+# actions/checkout@v4.1.7
+# actions/download-artifact@v4.1.8
+# actions/upload-artifact@v4.3.6
 
 runs:
   using: "composite"
   steps:
     # download pipline
     - name: 🔽Download PipLine
-      uses: actions/download-artifact@v4.1.7
+      uses: actions/download-artifact@v4.1.8
       with:
-        name: pipline-install-test-${{ inputs.os-name }}-${{ inputs.python-version }}
+        name: pipline-test-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/user/meta/manifests
     # start virtual display driver & run tests
     - name: ⏱️Test
@@ -52,7 +52,7 @@ runs:
 
     # upload output
     - name: 🔼Upload Output
-      uses: actions/upload-artifact@v4.3.3
+      uses: actions/upload-artifact@v4.3.6
       with:
         name: testoutput-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/tests/output
@@ -60,7 +60,7 @@ runs:
     # upload failures
     - name: 🔼Upload Failures
       if: failure()
-      uses: actions/upload-artifact@v4.3.3
+      uses: actions/upload-artifact@v4.3.6
       with:
         name: failures-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./failures

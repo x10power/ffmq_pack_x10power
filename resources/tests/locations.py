@@ -55,8 +55,8 @@ def digForChildren(loc):
                     err = False
                     errMsg = ""
                     match = re.search(
-                        r"([\[\{\$\@]*)" +
-                        r"([\$\@]*)" +
+                        r"([\[\{\$\@]?)" +
+                        r"([\$\@]?)" +
                         r"([\w\s\/\-\'\(\)]+)" +
                         r"(?:[\]\}\|\:]*)" +
                         r"([\d]*)" +
@@ -67,6 +67,8 @@ def digForChildren(loc):
                     if match:
                         if match.group(3) != "":
                             check = match.group(3)
+                            for char in ["{","}","[","]"]:
+                                check = check.replace(char,"")
                             if match.group(1) == "$" or \
                                 match.group(2) == "$":
                                 err = check not in funcs

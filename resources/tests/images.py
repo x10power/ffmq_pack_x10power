@@ -1,7 +1,6 @@
 import json
 import os
 
-print("Reading Images")
 images = []
 for r,d,f in os.walk(
     os.path.join(
@@ -14,7 +13,6 @@ for r,d,f in os.walk(
         image = image[2:]
         image = image.replace("\\", "/")
         images.append(image)
-print("")
 
 outputdir = os.path.join(".","resources","tests","output")
 if not os.path.exists(outputdir):
