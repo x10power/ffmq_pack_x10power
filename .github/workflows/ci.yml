@@ -269,5 +269,5 @@ jobs:
           workflow: ci.yml
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
           ref: ${{ steps.packlisting.outputs.packlisting_branch }}
-          token: ${{ secrets.EMOPACK_MANAGER }}
+          token: ${{ secrets.MegaGrenades }}
         if: contains(github.ref, 'master') || contains(github.ref, 'unstable')
