@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Mac's Ship Underworld",
+    "parent": "Mac's Ship Overworld",
+    "children": [
+      {
+        "name": "North Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Mac's Ship Overworld/Deck - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-deck", "x": 150, "y": 170}],
+        "#floor": "Mac's Ship Floor DECK"
+      },
+      {
+        "name": "Center Box (Push Barrel)",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Mac's Ship Overworld/Deck - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-deck", "x": 170, "y": 425}],
+        "#floor": "Mac's Ship Floor DECK"
+      },
+      {
+        "name": "South Box (On Bow)",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Mac's Ship Overworld/Deck - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-deck", "x": 200, "y": 890}],
+        "#floor": "Mac's Ship Floor DECK"
+      },
+      {
+        "name": "Northwest Hook Platform Box",
+        "access_rules": ["@Mac's Ship Overworld/B1 - Hook Platform Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b1", "x": 70, "y": 55}],
+        "#floor": "Mac's Ship Floor B1"
+      },
+      {
+        "name": "Center Hook Platform Box",
+        "access_rules": ["@Mac's Ship Overworld/B1 - Hook Platform Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b1", "x": 185, "y": 230}],
+        "#floor": "Mac's Ship Floor B1"
+      },
+      {
+        "name": "Central Corridor Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Mac's Ship Overworld/Deck - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b1", "x": 200, "y": 520}],
+        "#floor": "Mac's Ship Floor B1"
+      },
+      {
+        "name": "Barrel Room North Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Mac's Ship Overworld/B2 - Barrel Room Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b2", "x": 120, "y": 250}],
+        "#floor": "Mac's Ship Floor B2"
+      },
+      {
+        "name": "Barrel Room South Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Mac's Ship Overworld/B2 - Barrel Room Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b2", "x": 120, "y": 280}],
+        "#floor": "Mac's Ship Floor B2"
+      },
+      {
+        "name": "Southwest Room Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Mac's Ship Overworld/B2 - Southern Rooms Boxes"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b2", "x": 120, "y": 650}],
+        "#floor": "Mac's Ship Floor B2"
+      },
+      {
+        "name": "Southeast Room Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": [
+          "@Mac's Ship Overworld/B2 - Southern Rooms Boxes"
+        ],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b2", "x": 250, "y": 650}],
+        "#floor": "Mac's Ship Floor B2"
+      },
+      {
+        "name": "Mac Room Chest",
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Mac's Ship Overworld/B1 - Mac Room Chest"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b1", "x": 105, "y": 760}],
+        "#floor": "Mac's Ship Floor B1"
+      },
+      {
+        "name": "Captain Mac",
+        "access_rules": ["@Mac's Ship Overworld/B1 - Captain Mac"],
+        "hosted_item": "firstmate",
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-b1", "x": 170, "y": 760}],
+        "#floor": "Mac's Ship Floor B1"
+      },
+      {
+        "name": "Ship's Wheel",
+        "access_rules": ["@Mac's Ship Overworld/Deck - Ship's Wheel"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "mac-ship-deck", "x": 200, "y": 630}],
+        "#floor": "Mac's Ship Floor DECK"
+      }
+    ]
+  }
+]

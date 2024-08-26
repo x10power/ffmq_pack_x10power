@@ -1,0 +1,41 @@
+{"tracker_horizontal": {
+  "note": "Horizontal: When width of window is greater than height",
+  "type": "array",
+  "orientation": "horizontal",
+  "content": [
+    {
+      "type": "dock",
+      "dock": "left",
+      "content": [
+        {
+          "type": "group",
+          "header": "Inventory",
+          "dock": "top",
+          "header_content": {
+            "type": "button_popup",
+            "style": "settings",
+            "layout": "settings_popup"
+          },
+          "content": {
+            "type": "layout",
+            "key": "shared_item_grid",
+            "width": 200
+          }
+        },
+        {
+          "type": "group",
+          "header": "Pinned Locations",
+          "dock": "top",
+          "content": {
+            "type": "recentpins"
+          }
+        }
+      ]
+    },
+    {
+      "type": "layout",
+      "key": "game_map",
+      "width": 1000
+    }
+  ]
+}}

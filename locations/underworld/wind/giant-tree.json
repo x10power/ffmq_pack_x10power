@@ -1,0 +1,230 @@
+[
+  {
+    "name": "Giant Tree Underworld",
+    "parent": "Giant Tree Overworld",
+    "children": [
+      {
+        "name": "Northwest Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 55, "y": 190}],
+        "#floor": "Giant Tree Floor 1F"
+      },
+      {
+        "name": "Southwest Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 55, "y": 365}],
+        "#floor": "Giant Tree Floor 1F"
+      },
+      {
+        "name": "Center Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 250, "y": 270}],
+        "#floor": "Giant Tree Floor 1F"
+      },
+      {
+        "name": "East Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "access_rules": ["@Giant Tree Overworld/1F - Boxes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-1f", "x": 375, "y": 315}],
+        "#floor": "Giant Tree Floor 1F"
+      },
+      {
+        "name": "North Box",
+        "access_rules": ["@Giant Tree Overworld/2F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 440, "y": 200}],
+        "#floor": "Giant Tree Floor 2F"
+      },
+      {
+        "name": "South Box",
+        "access_rules": ["@Giant Tree Overworld/2F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 440, "y": 430}],
+        "#floor": "Giant Tree Floor 2F"
+      },
+      {
+        "name": "Dropdown Ledge Box",
+        "access_rules": ["@Giant Tree Overworld/2F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 105, "y": 425}],
+        "#floor": "Giant Tree Floor 2F"
+      },
+      {
+        "name": "Gidrah Chest",
+        "access_rules": ["@Giant Tree Overworld/2F - Gidrah Chest"],
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-2f", "x": 470, "y": 235}],
+        "#floor": "Giant Tree Floor 2F"
+      },
+      {
+        "name": "Mushroom Tunnel West Box",
+        "access_rules": [
+          "@Giant Tree Overworld/2F - Mushroom Tunnel Boxes"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-2fa", "x": 185, "y": 110}],
+        "#floor": "Giant Tree Floor 2F"
+      },
+      {
+        "name": "Mushroom Tunnel East Box",
+        "access_rules": [
+          "@Giant Tree Overworld/2F - Mushroom Tunnel Boxes"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-2fa", "x": 200, "y": 110}],
+        "#floor": "Giant Tree Floor 2F"
+      },
+      {
+        "name": "Central Island Box",
+        "access_rules": ["@Giant Tree Overworld/3F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 295, "y": 445}],
+        "#floor": "Giant Tree Floor 3F"
+      },
+      {
+        "name": "Center North Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 215, "y": 445}],
+        "#floor": "Giant Tree Floor 3F"
+      },
+      {
+        "name": "Center West Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 185, "y": 490}],
+        "#floor": "Giant Tree Floor 3F"
+      },
+      {
+        "name": "Worm Room North Box",
+        "access_rules": ["@Giant Tree Overworld/3F - Worm Room Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-3fa", "x": 230, "y": 90}],
+        "#floor": "Giant Tree Floor 3F"
+      },
+      {
+        "name": "Worm Room South Box",
+        "access_rules": ["@Giant Tree Overworld/3F - Worm Room Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-3fa", "x": 215, "y": 190}],
+        "#floor": "Giant Tree Floor 3F"
+      },
+      {
+        "name": "West Side Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-3f", "x": 135, "y": 605}],
+        "#floor": "Giant Tree Floor 3F"
+      },
+      {
+        "name": "East Slime Room Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-4fa", "x": 295, "y": 155}],
+        "#floor": "Giant Tree Floor 4F"
+      },
+      {
+        "name": "West Slime Room Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-4fa", "x": 90, "y": 190}],
+        "#floor": "Giant Tree Floor 4F"
+      },
+      {
+        "name": "Hook Ledge Northeast Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 310, "y": 475}],
+        "#floor": "Giant Tree Floor 4F"
+      },
+      {
+        "name": "Hook Ledge Southwest Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 280, "y": 510}],
+        "#floor": "Giant Tree Floor 4F"
+      },
+      {
+        "name": "Highest Platform North Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 105, "y": 285}],
+        "#floor": "Giant Tree Floor 4F"
+      },
+      {
+        "name": "Highest Platform South Box",
+        "access_rules": ["@Giant Tree Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-4f", "x": 105, "y": 300}],
+        "#floor": "Giant Tree Floor 4F"
+      },
+      {
+        "name": "South Left Box",
+        "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 170, "y": 360}],
+        "#floor": "Giant Tree Floor 5F"
+      },
+      {
+        "name": "South Right Box",
+        "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 215, "y": 360}],
+        "#floor": "Giant Tree Floor 5F"
+      },
+      {
+        "name": "Northwest Left Box",
+        "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 55, "y": 140}],
+        "#floor": "Giant Tree Floor 5F"
+      },
+      {
+        "name": "Northwest Right Box",
+        "access_rules": ["@Giant Tree Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "giant-tree-5f", "x": 90, "y": 140}],
+        "#floor": "Giant Tree Floor 5F"
+      },
+      {
+        "name": "Giant Tree",
+        "access_rules": ["@Giant Tree Overworld/5F - Giant Tree"],
+        "hosted_item": "boss_gianttree",
+        "map_locations": [{"map": "giant-tree-5f", "x": 200, "y": 40}],
+        "#floor": "Giant Tree Floor 5F"
+      }
+    ]
+  }
+]

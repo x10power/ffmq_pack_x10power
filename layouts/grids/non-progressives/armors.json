@@ -1,0 +1,9 @@
+{"armors_grid_nonp": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    ["helmet1", "armor1", "shield1", "accessories1"],
+    ["helmet2", "armor2", "shield2", "accessories2"],
+    ["helmet3", "armor3", "shield3", "accessories3"]
+  ]
+}}

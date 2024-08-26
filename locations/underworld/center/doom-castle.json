@@ -1,0 +1,168 @@
+[
+  {
+    "name": "Doom Castle Underworld",
+    "parent": "Doom Castle Overworld",
+    "children": [
+      {
+        "name": "Southeast Chest",
+        "access_rules": ["@Doom Castle Overworld/B2 - Southeast Chest"],
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-b2", "x": 495, "y": 635}],
+        "#floor": "Doom Castle Floor B2"
+      },
+      {
+        "name": "Bone Ledge Box (East)",
+        "access_rules": [
+          "@Doom Castle Overworld/B2 - Bone Ledge Box (East)"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-b2", "x": 495, "y": 510}],
+        "#floor": "Doom Castle Floor B2"
+      },
+      {
+        "name": "Hook Platform Box (West)",
+        "access_rules": [
+          "@Doom Castle Overworld/B2 - Hook Platform Box (West)"
+        ],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-b2", "x": 320, "y": 365}],
+        "#floor": "Doom Castle Floor B2"
+      },
+      {
+        "name": "Southeast Room Box",
+        "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 550, "y": 490}],
+        "#floor": "Doom Castle Floor 4F"
+      },
+      {
+        "name": "Northeast Room Box",
+        "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 570, "y": 265}],
+        "#floor": "Doom Castle Floor 4F"
+      },
+      {
+        "name": "Southwest Room Box",
+        "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 105, "y": 455}],
+        "#floor": "Doom Castle Floor 4F"
+      },
+      {
+        "name": "Northwest Room Box",
+        "access_rules": ["@Doom Castle Overworld/4F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-4f", "x": 185, "y": 230}],
+        "#floor": "Doom Castle Floor 4F"
+      },
+      {
+        "name": "North Left Box",
+        "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 345, "y": 310}],
+        "#floor": "Doom Castle Floor 5F"
+      },
+      {
+        "name": "North Right Box",
+        "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 361, "y": 310}],
+        "#floor": "Doom Castle Floor 5F"
+      },
+      {
+        "name": "South Left Box",
+        "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 345, "y": 490}],
+        "#floor": "Doom Castle Floor 5F"
+      },
+      {
+        "name": "South Right Box",
+        "access_rules": ["@Doom Castle Overworld/5F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-5f", "x": 361, "y": 490}],
+        "#floor": "Doom Castle Floor 5F"
+      },
+      {
+        "name": "West Box",
+        "access_rules": ["@Doom Castle Overworld/6F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-6f", "x": 55, "y": 185}],
+        "#floor": "Doom Castle Floor 6F"
+      },
+      {
+        "name": "East Box",
+        "access_rules": ["@Doom Castle Overworld/6F - Boxes"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-6f", "x": 600, "y": 392}],
+        "#floor": "Doom Castle Floor 6F"
+      },
+      {
+        "name": "West Hero Chest",
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 40, "y": 230}],
+        "#floor": "Doom Castle Floor 7F"
+      },
+      {
+        "name": "North Left Hero Chest",
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 170, "y": 100}],
+        "#floor": "Doom Castle Floor 7F"
+      },
+      {
+        "name": "North Right Hero Chest",
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 250, "y": 100}],
+        "#floor": "Doom Castle Floor 7F"
+      },
+      {
+        "name": "East Hero Chest",
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "access_rules": ["@Doom Castle Overworld/7F - Hero Chests"],
+        "sections": [{"name": "Item", "item_count": 1}],
+        "map_locations": [{"map": "doom-castle-7f", "x": 360, "y": 230}],
+        "#floor": "Doom Castle Floor 7F"
+      },
+      {
+        "name": "Crystal of Light",
+        "hosted_item": "lightcrystal",
+        "access_rules": ["@Doom Castle Overworld/Crystal of Light"]
+      }
+    ]
+  }
+]

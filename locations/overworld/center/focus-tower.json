@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Focus Tower",
+    "parent": "Center",
+    "children": [
+      {
+        "name": "Focus Tower Overworld",
+        "access_rules": ["vanilla,tristam:1,kaelicured", "rando"],
+        "children": [
+          {
+            "name": "Focus Tower Doors",
+            "map_locations": [
+              {"map": "restored-world", "x": 382, "y": 384},
+              {"map": "restored-world", "x": 362, "y": 432}
+            ],
+            "sections": [
+              {
+                "name": "1F - Main Lobby Box",
+                "note": "1F Booms",
+                "visibility_rules": ["setting_shufflebrownbox_yes"],
+                "item_count": 1
+              },
+              {
+                "name": "2F - Sand Door Chest",
+                "note": "Fire Spell",
+                "#type": "chest",
+                "chest_unavailable_img": "images/chests/available.png",
+                "chest_unopened_img": "images/chests/available.png",
+                "chest_opened_img": "images/chests/opened.png",
+                "access_rules": ["sandcoin", "[sandcoin],$aquaria_expert_access"],
+                "item_count": 1
+              },
+              {
+                "name": "2F - Back Door Chest",
+                "note": "From Water",
+                "#type": "chest",
+                "chest_unavailable_img": "images/chests/available.png",
+                "chest_unopened_img": "images/chests/available.png",
+                "chest_opened_img": "images/chests/opened.png",
+                "access_rules": [
+                  "wakewater,sandcoin",
+                  "[sandcoin],wakewater,$aquaria_expert_access",
+                  "[wakewater],[sandcoin],$fireburg_access,geminicrest,exitbook"
+                ]
+              },
+              {
+                "name": "2F - Venus Chest",
+                "note": "From Water",
+                "#type": "chest",
+                "chest_unavailable_img": "images/chests/available.png",
+                "chest_unopened_img": "images/chests/available.png",
+                "chest_opened_img": "images/chests/opened.png",
+                "access_rules": [
+                  "venuskey,wakewater,sandcoin,bomb",
+                  "venuskey,[sandcoin],wakewater,$aquaria_expert_access,bomb",
+                  "venuskey,[wakewater],[sandcoin],$fireburg_access,geminicrest,exitbook,bomb"
+                ]
+              },
+              {
+                "name": "3F - River Door Box",
+                "access_rules": [
+                  "rivercoin",
+                  "[rivercoin],$fireburg_expert_access"
+                ],
+                "visibility_rules": ["setting_shufflebrownbox_yes"],
+                "item_count": 1
+              },
+              {
+                "name": "B2 - Sun Door Chest",
+                "note": "In Doom Castle",
+                "#type": "chest",
+                "chest_unavailable_img": "images/chests/available.png",
+                "chest_unopened_img": "images/chests/available.png",
+                "chest_opened_img": "images/chests/opened.png",
+                "access_rules": ["suncoin", "[suncoin],$windia_expert_access"],
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

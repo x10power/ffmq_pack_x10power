@@ -1,11 +1,5 @@
-﻿{
-  "tracker_default": {
-    "type": "container",
-    "h_alignment": "center",
-    "width": 175,
-    "content": {
-      "type": "layout",
-      "key": "shared_item_grid"
-    }
-  }
-}
+{"tracker_default": {
+  "note": "Default tracker view",
+  "type": "layout",
+  "key": "tracker_horizontal"
+}}

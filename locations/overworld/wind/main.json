@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Wind",
+    "parent": "World",
+    "access_rules": ["@Focus Tower Doors/B2 - Sun Door Chest"],
+    "children": [
+      {
+        "name": "Rope Bridge",
+        "map_locations": [{"map": "restored-world", "x": 400, "y": 410}],
+        "sections": [
+          {
+            "name": "Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Alive Forest",
+        "access_rules": ["axe"],
+        "map_locations": [{"map": "restored-world", "x": 490, "y": 410}],
+        "sections": [
+          {
+            "name": "Near Entrance Box (NW)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Libra Treehouse Box",
+            "access_rules": ["libracrest"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Gemini Treehouse Box",
+            "access_rules": ["geminicrest"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Mobius Treehouse Boxes",
+            "access_rules": ["mobiuscrest"],
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "Mobius Treehouse West Box",
+            "access_rules": ["mobiuscrest"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Mobius Treehouse East Box",
+            "access_rules": ["mobiuscrest"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Tree Stump Chest (SE)",
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "After Bridge Box (SW)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Gemini Stump Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Kaidge Temple",
+        "map_locations": [{"map": "restored-world", "x": 520, "y": 535}],
+        "sections": [
+          {
+            "name": "Box",
+            "access_rules": ["claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Windhole Temple",
+        "map_locations": [{"map": "restored-world", "x": 765, "y": 525}],
+        "sections": [
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Mount Gale",
+        "access_rules": [],
+        "map_locations": [{"map": "restored-world", "x": 775, "y": 475}],
+        "sections": [
+          {
+            "name": "Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "Dullahan Chest",
+            "#type": "chest",
+            "hosted_item": "boss_mountgale",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

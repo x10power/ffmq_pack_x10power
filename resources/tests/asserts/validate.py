@@ -4,11 +4,19 @@ Validate JSON against provided schema
 '''
 import os
 import json
+import re
 import ssl
 import urllib.request
-from pathlib import Path
+
+import jsonschema.validators
 import pyjson5
+
+from pathlib import Path
+from jsonschema.validators import Draft7Validator
 from jsonschema import validate, RefResolver
+from jsonschema import exceptions as JSONSchemaExceptions
+
+global schemaURI
 
 def validate_file(r, filename, jsonType):
     '''
@@ -20,15 +28,14 @@ def validate_file(r, filename, jsonType):
         print("  " + filePath)
         with open(filePath, "r", encoding="utf-8") as jsonFile:
             fileJSON = pyjson5.decode_io(jsonFile)
-            validate(
-                instance=fileJSON,
+            validator = Draft7Validator(
                 schema=schemas["emo"][jsonType],
                 resolver=RefResolver(
                     base_uri=schemaURI,
                     referrer=schemas["emo"][jsonType]
                 )
             )
-
+            result = validator.validate(fileJSON)
 
 def check_files(dirs):
     '''
@@ -38,11 +45,9 @@ def check_files(dirs):
     for resrcDir in dirs:
         # cycle through this dir
         jsonType = ""
-        for jsonTypeCheck in ["items", "layouts", "locations", "manifest.json", "repository.json"]:
+        for jsonTypeCheck in ["items", "layouts", "locations", "maps", "manifest.json", "repository.json"]:
             if jsonTypeCheck in resrcDir:
                 jsonType = jsonTypeCheck.replace(".json", "")
-        if "maps" in resrcDir:
-            continue
         if jsonType != "":
             if os.path.isdir(resrcDir):
                 for r, _, f in os.walk(resrcDir):
@@ -59,11 +64,13 @@ def check_files(dirs):
 schemas = {}
 schemaSrcs = [
   "https://emotracker.net/developers/schemas/items.json",
-  # "https://emotracker.net/developers/schemas/layouts.json",
+  "https://emotracker.net/developers/schemas/layouts.json",
   "https://emotracker.net/developers/schemas/locations.json"
 ]
 
 schemaDir = os.path.join(".", "schema")
+schemaAbsPath = os.path.abspath(schemaDir)
+schemaURI = Path(schemaAbsPath).as_uri() + "/"
 print("DOWNLOAD SCHEMAS")
 if not os.path.isdir(schemaDir):
     os.makedirs(schemaDir)
@@ -99,14 +106,19 @@ print("VALIDATE")
 srcs = {
     "ffmq": {
         "packUID": "ffmq_pack_x10power",
-        "variants": [
-            "items_only",
-            "shard_hunt",
-            "shard_hunt_map",
-            "standard_map"
-        ]
+        "variants": []
     }
 }
+
+for [gameID, packData] in srcs.items():
+    packUID = packData["packUID"]
+    if os.path.isdir(os.path.join(".", "variants")):
+        srcs[gameID]["variants"] = os.listdir(os.path.join(".", "variants"))
+    elif os.path.isdir(os.path.join(".", packUID)):
+        for folder in os.listdir(os.path.join(".")):
+            if "var_" in folder:
+                thisDir = folder
+                srcs[gameID]["variants"].append(thisDir)
 
 for [gameID, packData] in srcs.items():
     packUID = packData["packUID"]
@@ -127,12 +139,20 @@ for [gameID, packData] in srcs.items():
         check_files(resrcDirs)
 
         for variant in variants:
-            layoutKeyMap = {}
-            resrcDirs = {
-                os.path.join(packRoot, "variants", variant, "items"),
-                os.path.join(packRoot, "variants", variant, "layouts"),
-                os.path.join(packRoot, "variants", variant, "locations"),
-                os.path.join(packRoot, "variants", variant, "maps")
-            }
-            # print(resrcDirs)
-            check_files(resrcDirs)
+            varRoot = packRoot
+            if "var_" in variant:
+                varRoot = os.path.join(varRoot, variant)
+            else:
+                varRoot = os.path.join(varRoot, "variants", variant)
+            if os.path.isdir(varRoot):
+                layoutKeyMap = {}
+                resrcDirs = {
+                    os.path.join(varRoot, "manifest.json"),
+                    os.path.join(varRoot, "repository.json"),
+                    os.path.join(varRoot, "items"),
+                    os.path.join(varRoot, "layouts"),
+                    os.path.join(varRoot, "locations"),
+                    os.path.join(varRoot, "maps")
+                }
+                # print(resrcDirs)
+                check_files(resrcDirs)

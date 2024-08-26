@@ -1,0 +1,10 @@
+{"magics_grid_nonp": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    ["exit", "quake", "thunder"],
+    ["cure", "blizzard", "white"],
+    ["heal", "fire", "meteor"],
+    ["life", "aero", "flare"]
+  ]
+}}

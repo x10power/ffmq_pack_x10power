@@ -27,9 +27,7 @@
       "title": "Game Name",
       "description": "Name of game to list this package under.",
       "default": "",
-      "examples": [
-        "A Link to the Past Randomizer"
-      ]
+      "examples": ["A Link to the Past Randomizer"]
     },
     "platform": {
       "$id": "#/properties/platform",
@@ -37,17 +35,8 @@
       "title": "Platform ID.",
       "description": "Internal platform ID of package. Usually useful for identifying auto-tracking type.",
       "default": "",
-      "enum": [
-        "gameboy",
-        "gba",
-        "nes",
-        "n64",
-        "pc",
-        "snes"
-      ],
-      "examples": [
-        "snes"
-      ]
+      "enum": ["gameboy", "gba", "nes", "n64", "pc", "snes"],
+      "examples": ["snes"]
     },
     "package_version": {
       "$id": "#/properties/package_version",
@@ -100,18 +89,8 @@
                 "title": "The first anyOf schema",
                 "description": "An explanation about the purpose of this instance.",
                 "default": "",
-                "enum": [
-                  "autotracker",
-                  "chathud",
-                  "map",
-                  "pins"
-                ],
-                "examples": [
-                  "autotracker",
-                  "chathud",
-                  "map",
-                  "pins"
-                ]
+                "enum": ["autotracker", "chathud", "map", "pins"],
+                "examples": ["autotracker", "chathud", "map", "pins"]
               }
             ]
           }

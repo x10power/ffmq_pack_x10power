@@ -6,6 +6,7 @@ import os                 # for env vars
 from shutil import copy   # file manipulation
 import common
 import commentjson
+from itertools import repeat, chain
 
 
 def prepare_appversion():
@@ -71,7 +72,14 @@ def prepare_appversion():
                     f"print(\"Package Version: {env['GITHUB_TAG']}\")"
                 ]
                 print(toWrite)
-                ver.writelines(toWrite)
+                ver.writelines(
+                    chain.from_iterable(
+                        zip(
+                            toWrite,
+                            repeat("\n")
+                        )
+                    )
+                )
                 ver.truncate()
 
         copy(

@@ -1,5 +1,25 @@
 [
-  // Helmets
+  {
+    "name": "Steel Helm",
+    "type": "toggle",
+    "loop": true,
+    "codes": "helmet1",
+    "img": "images/armor/hat/helmet1.png"
+  },
+  {
+    "name": "Moon Helm",
+    "type": "toggle",
+    "loop": true,
+    "codes": "helmet2",
+    "img": "images/armor/hat/helmet2.png"
+  },
+  {
+    "name": "Apollo Helm",
+    "type": "toggle",
+    "loop": true,
+    "codes": "helmet3",
+    "img": "images/armor/hat/helmet3.png"
+  },
   {
     "name": "Helmets",
     "type": "progressive",
@@ -34,7 +54,27 @@
       }
     ]
   },
-  // Body Armor
+  {
+    "name": "Steel Armor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/armor/armor1.png",
+    "codes": "armor1"
+  },
+  {
+    "name": "Noble Armor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/armor/armor2.png",
+    "codes": "armor2"
+  },
+  {
+    "name": "Gaia's Armor",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/armor/armor3.png",
+    "codes": "armor3"
+  },
   {
     "name": "Body Armor",
     "type": "progressive",
@@ -69,7 +109,27 @@
       }
     ]
   },
-  // Shields
+  {
+    "name": "Steel Shield",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/shield/shield1.png",
+    "codes": "shield1"
+  },
+  {
+    "name": "Venus Shield",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/shield/shield2.png",
+    "codes": "shield2"
+  },
+  {
+    "name": "Aegis Shield",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/shield/shield3.png",
+    "codes": "shield3"
+  },
   {
     "name": "Shields",
     "type": "progressive",
@@ -104,7 +164,27 @@
       }
     ]
   },
-  // Accessories
+  {
+    "name": "Charm",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/accessories/charm.png",
+    "codes": "accessories1"
+  },
+  {
+    "name": "Magic Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/accessories/magicring.png",
+    "codes": "accessories2"
+  },
+  {
+    "name": "Cupid Locket",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/armor/accessories/cupidlocket.png",
+    "codes": "accessories3"
+  },
   {
     "name": "Accessories",
     "type": "progressive",

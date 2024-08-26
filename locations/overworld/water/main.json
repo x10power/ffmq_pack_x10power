@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Water",
+    "parent": "World",
+    "access_rules": ["@Focus Tower Doors/2F - Sand Door Chest"],
+    "children": [
+      {
+        "name": "Libra Temple",
+        "map_locations": [{"map": "restored-world", "x": 465, "y": 250}],
+        "sections": [
+          {
+            "name": "Phoebe (Phoebe)",
+            "access_rules": ["", "{}"],
+            "#type": "phoebe",
+            "chest_opened_img": "images/party/phoebe.gif",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
+            "item_count": 1
+          },
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Life Temple",
+        "access_rules": ["libracrest"],
+        "map_locations": [{"map": "restored-world", "x": 520, "y": 315}],
+        "sections": [
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Mysterious Man",
+            "chest_unopened_img": "images/chests/oldman_available.png",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Falls Basin",
+        "access_rules": [
+          "vanilla,phoebe:1,boss_wintrycave,aquaria_thawing",
+          "rando"
+        ],
+        "map_locations": [{"map": "restored-world", "x": 580, "y": 185}],
+        "sections": [
+          {
+            "name": "Snow Crab Chest",
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "hosted_item": "boss_fallsbasin",
+            "item_count": 1
+          },
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Wintry Temple",
+        "access_rules": ["geminicrest"],
+        "map_locations": [{"map": "restored-world", "x": 400, "y": 280}],
+        "sections": [
+          {
+            "name": "Boxes",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Spencer's Cave",
+        "access_rules": ["aquaria_restored"],
+        "map_locations": [{"map": "restored-world", "x": 675, "y": 315}],
+        "sections": [
+          {
+            "name": "Box",
+            "access_rules": ["wakewater,claw", "thunderrock"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Spencer",
+            "#type": "spencer",
+            "chest_unopened_img": "images/chests/spencer_available.png",
+            "item_count": 1
+          },
+          {
+            "name": "Locked Chest",
+            "access_rules": ["venuskey"],
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Mobius Chest",
+            "access_rules": [
+              "suncoin,thunderrock,megagrenade,libracrest",
+              "[suncoin],$windia_expert_access,thunderrock,megagrenade,libracrest"
+            ],
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

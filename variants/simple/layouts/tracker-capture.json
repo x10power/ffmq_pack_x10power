@@ -1,0 +1,30 @@
+{
+  "tracker_capture_party": {
+    "note": "Capture Party",
+    "type": "layout",
+    "key": "party_grid"
+  },
+  "tracker_capture_battlefield": {
+    "note": "Capture Battlefield",
+    "type": "itemgrid",
+    "rows": [
+      [
+        "battlefield_item",
+        "battlefield_gp",
+        "battlefield_xp"
+      ]
+    ]
+  },
+  "tracker_capture_vendor": {
+    "note": "Capture Vendor",
+    "type": "array",
+    "content": [
+      {"type": "layout", "key": "weapons_grid_nonp"},
+      {"type": "layout", "key": "armors_grid_nonp"},
+      {"type": "layout", "key": "magics_grid"},
+      {"type": "layout", "key": "keyitems_grid"},
+      {"type": "layout", "key": "crests_grid"},
+      {"type": "layout", "key": "coins_grid"}
+    ]
+  }
+}

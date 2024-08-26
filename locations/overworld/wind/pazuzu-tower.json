@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Pazuzu's Tower",
+    "parent": "Wind",
+    "children": [
+      {
+        "name": "Pazuzu's Tower Overworld",
+        "map_locations": [{"map": "restored-world", "x": 685, "y": 395}],
+        "sections": [
+          {
+            "name": "1F - Descent Bomb Wall Boxes",
+            "access_rules": ["dragonclaw,bomb"],
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 3
+          },
+          {
+            "name": "1F - Descent Bomb Wall West Box",
+            "access_rules": ["dragonclaw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "1F - Descent Bomb Wall Center Box",
+            "access_rules": ["dragonclaw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "1F - Descent Bomb Wall East Box",
+            "access_rules": ["dragonclaw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "1F - Descent Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "2F - East Room Boxes",
+            "access_rules": ["dragonclaw"],
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "2F - East Room West Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "2F - East Room East Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3F - Guest Room Boxes",
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "3F - Guest Room West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3F - Guest Room East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3F - South Ledge Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "4F - Elevator Boxes",
+            "access_rules": ["dragonclaw,bomb"],
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "4F - Elevator West Box",
+            "access_rules": ["dragonclaw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - Elevator East Box",
+            "access_rules": ["dragonclaw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "4F - East Storage Room Chest",
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "5F - Boxes",
+            "access_rules": ["dragonclaw"],
+            "clear_as_group": false,
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 2
+          },
+          {
+            "name": "5F - North Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "5F - South Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "6F - Box",
+            "access_rules": ["dragonclaw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "6F - Chest",
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "7F - Pazuzu Chest",
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Crystal of Wind",
+            "hosted_item": "windcrystal"
+          }
+        ]
+      }
+    ]
+  }
+]

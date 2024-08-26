@@ -8,7 +8,7 @@ ScriptHost:LoadScript("scripts/settings/settings.lua")
 ScriptHost:LoadScript("scripts/items/helpers.lua")
 
 -- Logic
-ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 local variant = Tracker.ActiveVariantUID
 if variant == "" then
@@ -16,24 +16,20 @@ if variant == "" then
 end
 
 -- Auto-Tracking
-if (string.find(variant, "items_only") or string.find(variant, "standard_map")) then
-  print("Loading Auto-Tracking: " .. variant)
-  ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
-end
-if (string.find(variant, "shard_hunt")) then
-  print("Loading Auto-Tracking: " .. variant)
-  ScriptHost:LoadScript("scripts/tracking/autotracking-sh.lua")
-end
+print("Loading Auto-Tracking: " .. variant)
+ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
 
 -- Items
 print("Loading Items")
 dir = "items"
 items = {
   "armor",
+  "battlefields",
   "counters",
   "crystals",
   "magics",
   "party",
+  "settings",
   "storymarkers",
   "weapons",
   "toggles"
@@ -41,6 +37,7 @@ items = {
 for _, itemCat in ipairs(items) do
   Tracker:AddItems(dir .. "/" .. itemCat .. ".json")
 end
+Tracker:AddLayouts("layouts/settings.json")
 print("")
 
 -- Grids
@@ -60,6 +57,16 @@ grids = {
   "party",
   "storymarkers",
   "weapons",
+  "non-progressives/armors",
+  "non-progressives/keyitems",
+  "non-progressives/magics",
+  "non-progressives/weapons",
+  "non-progressives/grids",
+  "binary/armors",
+  "binary/keyitems",
+  "binary/magics",
+  "binary/weapons",
+  "binary/grids",
   "grids"
 }
 for _, gridCat in ipairs(grids) do
@@ -75,10 +82,11 @@ if string.find(variant, "map") then
   -- Dungeon Maps
   dungeons = {
     "bonedungeon",
-    "doomcastle",
-    "gianttree",
+    "wintrycave",
     "icepyramid",
     "lavadome",
+    "doomcastle",
+    "gianttree",
     "macship",
     "pazuzutower"
   }
@@ -88,24 +96,38 @@ if string.find(variant, "map") then
 
   -- Map Layouts
   -- Dungeon Maps
-  for _, dungMap in pairs(dungeons) do
+  dungMaps = {
+    "earth/bonedungeon",
+    "earth/earth",
+    "water/wintrycave",
+    "water/icepyramid",
+    "water/water",
+    "fire/lavadome",
+    "fire/fire",
+    "wind/gianttree",
+    "wind/pazuzutower",
+    "wind/wind",
+    "focustower/doomcastle",
+    "focustower/macship",
+    "focustower/focustower"
+  }
+  for _, dungMap in pairs(dungMaps) do
     Tracker:AddLayouts("layouts/maps/dungeons/" .. dungMap .. ".json")
   end
   Tracker:AddLayouts("layouts/maps/world.json")
 
+  Tracker:AddLocations("locations/world.json")
+
   -- Locations
   locations = {
-    -- World
-    "world",
-    -- Battlefields
-    -- "battlefields/main",
     -- Center
-    "center/focustower",
+    "center/main",
+    "center/focus-tower",
     "center/doom-castle",
     -- Earth
     "earth/main",
     "earth/foresta",
-    "earth/bonedungeon",
+    "earth/bone-dungeon",
     -- Fire
     "fire/main",
     "fire/fireburg",
@@ -113,16 +135,25 @@ if string.find(variant, "map") then
     -- Water
     "water/main",
     "water/aquaria",
-    "water/icepyramid",
+    "water/wintry-cave",
+    "water/ice-pyramid",
     -- Wind
     "wind/main",
     "wind/windia",
     "wind/giant-tree",
     "wind/pazuzu-tower",
-    "wind/mac-ship"
+    "wind/mac-ship",
+    -- Battlefields
+    "battlefields/earth",
+    "battlefields/fire",
+    "battlefields/water",
+    "battlefields/wind",
   }
   for _, locCat in ipairs(locations) do
-    Tracker:AddLocations("locations/" .. locCat .. ".json")
+    Tracker:AddLocations("locations/overworld/" .. locCat .. ".json")
+    if string.find(locCat, "-") ~= nil then
+      Tracker:AddLocations("locations/underworld/" .. locCat .. ".json")
+    end
   end
   print("")
 else
@@ -137,13 +168,19 @@ end
 if variant ~= "items_only" then
   print("Loading Variant")
   -- Layout Overrides
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")    -- Main Tracker
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")  -- Broadcast View
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-capture.json")     -- Capture Grid
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-horizontal.json")  -- Horizontal Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-vertical.json")    -- Vertical Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")             -- Main Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")           -- Broadcast View
   print("")
 else
   print("Not a Variant; load default stuff")
   -- Layout Defaults
-  Tracker:AddLayouts("layouts/tracker.json")
-  Tracker:AddLayouts("layouts/broadcast.json")
+  Tracker:AddLayouts("layouts/tracker-capture.json")    -- Capture Grid
+  Tracker:AddLayouts("layouts/tracker-horizontal.json") -- Horizontal Tracker
+  Tracker:AddLayouts("layouts/tracker-vertical.json")   -- Vertical Tracker
+  Tracker:AddLayouts("layouts/tracker.json")            -- Main Tracker
+  Tracker:AddLayouts("layouts/broadcast.json")          -- Broadcast View
   print("")
 end

@@ -1,11 +1,20 @@
-{
-  "storymarkers_grid": {
-    "type": "itemgrid",
-    "item_margin": "0",
-    "rows": [
-      [
-        "kaeli:2"
-      ]
-    ]
-  }
-}
+{"storymarkers_grid": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    ["kaelicured", "restore_aquaria", "firstmate"],
+    ["boss_levelforest", "boss_bonedungeon"],
+    [
+      "boss_wintrycave",
+      "boss_fallsbasin",
+      "boss_icepyramid"
+    ],
+    ["boss_mine", "boss_volcano", "boss_lavadome"],
+    [
+      "boss_gianttree",
+      "boss_mountgale",
+      "boss_pazuzutower"
+    ],
+    ["boss_doomcastle"]
+  ]
+}}

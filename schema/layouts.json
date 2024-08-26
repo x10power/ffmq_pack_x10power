@@ -4,9 +4,7 @@
   "definitions": {
     "layout_element_base": {
       "type": "object",
-      "required": [
-        "type"
-      ],
+      "required": ["type"],
       "properties": {
         "type": {
           "type": "string",
@@ -35,41 +33,22 @@
         "dock": {
           "type": "string",
           "description": "Specifies the docking direction for this element if it is contained within a dock element.",
-          "enum": [
-            "left",
-            "right",
-            "top",
-            "bottom"
-          ]
+          "enum": ["left", "right", "top", "bottom"]
         },
         "margin": {
           "type": "string",
           "description": "Specifies the margin around this element in 1, 2, or 4 elements",
-          "examples": [
-            "5",
-            "5, 5",
-            "5, 5, 5, 5"
-          ]
+          "examples": ["5", "5, 5", "5, 5, 5, 5"]
         },
         "h_alignment": {
           "type": "string",
           "description": "Specifies the horizontal alignment for this element within its container (default is stretch)",
-          "enum": [
-            "left",
-            "right",
-            "center",
-            "stretch"
-          ]
+          "enum": ["left", "right", "center", "stretch"]
         },
         "v_alignment": {
           "type": "string",
           "description": "Specifies the vertical alignment for this element within its container (default is stretch)",
-          "enum": [
-            "top",
-            "bottom",
-            "center",
-            "stretch"
-          ]
+          "enum": ["top", "bottom", "center", "stretch"]
         },
         "scale": {
           "description": "An optional scale factor to be applied to this element",
@@ -123,33 +102,21 @@
     },
     "array": {
       "description": "Represent a vertical or horizontal list of layout elements, presented in order",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "array"
-          ]
+          "enum": ["array"]
         },
         "orientation": {
           "type": "string",
           "description": "Specifies the flow direction of the array (default is horizontal)",
-          "enum": [
-            "horizontal",
-            "vertical"
-          ]
+          "enum": ["horizontal", "vertical"]
         },
         "style": {
           "type": "string",
           "description": "Specifies the behavior style of the array (default is stack)",
-          "enum": [
-            "stack",
-            "wrap"
-          ]
+          "enum": ["stack", "wrap"]
         },
         "content": {
           "type": "array",
@@ -161,20 +128,12 @@
     },
     "button_popup": {
       "description": "Displays a button which, when clicked, displays a popup containing a referenced layout",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
-      "required": [
-        "layout"
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
+      "required": ["layout"],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "button_popup"
-          ]
+          "enum": ["button_popup"]
         },
         "layout": {
           "type": "string",
@@ -187,11 +146,7 @@
         "style": {
           "type": "string",
           "description": "Specifies the display style of the button (default is settings)",
-          "enum": [
-            "settings",
-            "solid",
-            "image"
-          ]
+          "enum": ["settings", "solid", "image"]
         },
         "image": {
           "type": "string",
@@ -209,17 +164,11 @@
     },
     "canvas": {
       "description": "A canvas within which elements can be placed arbitrarily using canvas_x and canvas_y",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "canvas"
-          ]
+          "enum": ["canvas"]
         },
         "content": {
           "type": "array",
@@ -231,17 +180,11 @@
     },
     "container": {
       "description": "A simple container which can contain a single element, or a list of elements. Multiple elements will be drawn on top of each other.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "container"
-          ]
+          "enum": ["container"]
         },
         "content": {
           "oneOf": [
@@ -251,26 +194,18 @@
                 "$ref": "#/definitions/layout_element"
               }
             },
-            {
-              "$ref": "#/definitions/layout_element"
-            }
+            {"$ref": "#/definitions/layout_element"}
           ]
         }
       }
     },
     "scroll": {
       "description": "A simple container which can contain a single element, or a list of elements. Multiple elements will be drawn on top of each other. Adds scrolling functionality to the contents. Requires scrollable axes to have their dimensions defined or constrained",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "scroll"
-          ]
+          "enum": ["scroll"]
         },
         "content": {
           "oneOf": [
@@ -280,46 +215,28 @@
                 "$ref": "#/definitions/layout_element"
               }
             },
-            {
-              "$ref": "#/definitions/layout_element"
-            }
+            {"$ref": "#/definitions/layout_element"}
           ]
         },
         "horizontal_scrollbar_visibility": {
           "type": "string",
-          "enum": [
-            "disabled",
-            "auto",
-            "hidden",
-            "visible"
-          ],
+          "enum": ["disabled", "auto", "hidden", "visible"],
           "description": "Controls the visibility/functionality of the horizontal scrollbar. Default is 'auto'"
         },
         "vertical_scrollbar_visibility": {
           "type": "string",
-          "enum": [
-            "disabled",
-            "auto",
-            "hidden",
-            "visible"
-          ],
+          "enum": ["disabled", "auto", "hidden", "visible"],
           "description": "Controls the visibility/functionality of the vertical scrollbar. Default is 'auto'"
         }
       }
     },
     "dock": {
       "description": "A dock element positions its children according to the dock values. The last item, with no direction specified, will fill remaining space.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "dock"
-          ]
+          "enum": ["dock"]
         },
         "content": {
           "type": "array",
@@ -331,17 +248,11 @@
     },
     "group": {
       "description": "A group element acts like a container, but with a header text bar placed above the content.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "group"
-          ]
+          "enum": ["group"]
         },
         "header": {
           "type": "string",
@@ -353,11 +264,7 @@
         },
         "header_content": {
           "description": "Specifies optional layout content to be display at the rightmost end of the group header bar",
-          "oneOf": [
-            {
-              "$ref": "#/definitions/layout_element"
-            }
-          ]
+          "oneOf": [{"$ref": "#/definitions/layout_element"}]
         },
         "content": {
           "oneOf": [
@@ -367,29 +274,19 @@
                 "$ref": "#/definitions/layout_element"
               }
             },
-            {
-              "$ref": "#/definitions/layout_element"
-            }
+            {"$ref": "#/definitions/layout_element"}
           ]
         }
       }
     },
     "image": {
       "description": "Displays an image, optionally processed with a filter",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
-      "required": [
-        "image"
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
+      "required": ["image"],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "image"
-          ]
+          "enum": ["image"]
         },
         "image": {
           "type": "string",
@@ -403,20 +300,12 @@
     },
     "item": {
       "description": "Displays a single item. Use width and height to control its display size.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
-      "required": [
-        "item"
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
+      "required": ["item"],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "item"
-          ]
+          "enum": ["item"]
         },
         "item": {
           "type": "string",
@@ -426,50 +315,32 @@
     },
     "itemgrid": {
       "description": "A regularly sized grid of items",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "itemgrid"
-          ]
+          "enum": ["itemgrid"]
         },
         "item_margin": {
           "type": "string",
           "description": "Specifies the margin around each item in 1, 2, or 4 elements",
-          "examples": [
-            "5",
-            "5, 5",
-            "5, 5, 5, 5"
-          ]
+          "examples": ["5", "5, 5", "5, 5, 5, 5"]
         },
         "item_size": {
           "description": "Specifies the size of each item",
-          "examples": [
-            32
-          ]
+          "examples": [32]
         },
         "item_width": {
           "description": "Specifies the width of each item. Overrides item_size",
-          "examples": [
-            32
-          ]
+          "examples": [32]
         },
         "item_height": {
           "description": "Specifies the height of each item. Overrides item_size",
-          "examples": [
-            32
-          ]
+          "examples": [32]
         },
         "badge_font_size": {
           "description": "Specifies the font size for badges, used for e.g. displaying consumable item count",
-          "examples": [
-            32
-          ]
+          "examples": [32]
         },
         "rows": {
           "type": "array",
@@ -485,20 +356,12 @@
     },
     "layout_reference": {
       "description": "Displays another layout, referenced by key/name",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
-      "required": [
-        "key"
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
+      "required": ["key"],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "layout"
-          ]
+          "enum": ["layout"]
         },
         "key": {
           "type": "string",
@@ -508,17 +371,11 @@
     },
     "map": {
       "description": "Displays all of the pack's maps, or a specific set",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "map"
-          ]
+          "enum": ["map"]
         },
         "maps": {
           "type": "array",
@@ -530,28 +387,18 @@
         "orientation": {
           "type": "string",
           "description": "The orientation of the maps array when displayed. (default is 'auto', which adjusts based on the aspect ratio of the control)",
-          "enum": [
-            "auto",
-            "horizontal",
-            "vertical"
-          ],
+          "enum": ["auto", "horizontal", "vertical"],
           "default": "auto"
         }
       }
     },
     "recentpins": {
       "description": "Displays a list of recently pinned locations",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "recentpins"
-          ]
+          "enum": ["recentpins"]
         },
         "compact": {
           "type": "boolean",
@@ -564,18 +411,12 @@
         "orientation": {
           "type": "string",
           "description": "Specifies the flow direction of the array (default is horizontal)",
-          "enum": [
-            "horizontal",
-            "vertical"
-          ]
+          "enum": ["horizontal", "vertical"]
         },
         "style": {
           "type": "string",
           "description": "Specifies the behavior style of the array (default is stack)",
-          "enum": [
-            "stack",
-            "wrap"
-          ]
+          "enum": ["stack", "wrap"]
         }
       }
     },
@@ -595,43 +436,27 @@
           "description": "The image filter spec to apply to the icon"
         },
         "content": {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/layout_element"
-            }
-          ]
+          "oneOf": [{"$ref": "#/definitions/layout_element"}]
         }
       }
     },
     "tabbed": {
       "description": "Represents a set tabbed views, each of which is defined by a layout element",
-      "allOf": [
-        {
-          "$ref": "#/definitions/layout_element_base"
-        }
-      ],
+      "allOf": [{"$ref": "#/definitions/layout_element_base"}],
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "tabbed"
-          ]
+          "enum": ["tabbed"]
         },
         "orientation": {
           "type": "string",
           "description": "Specifies the flow direction of the array (default is horizontal)",
-          "enum": [
-            "horizontal",
-            "vertical"
-          ]
+          "enum": ["horizontal", "vertical"]
         },
         "style": {
           "type": "string",
           "description": "Specifies the behavior style of the array (default is stack)",
-          "enum": [
-            "stack",
-            "wrap"
-          ]
+          "enum": ["stack", "wrap"]
         },
         "tabs": {
           "type": "array",
@@ -644,48 +469,20 @@
     "layout_element": {
       "type": "object",
       "oneOf": [
-        {
-          "$ref": "#/definitions/array"
-        },
-        {
-          "$ref": "#/definitions/button_popup"
-        },
-        {
-          "$ref": "#/definitions/canvas"
-        },
-        {
-          "$ref": "#/definitions/container"
-        },
-        {
-          "$ref": "#/definitions/dock"
-        },
-        {
-          "$ref": "#/definitions/group"
-        },
-        {
-          "$ref": "#/definitions/image"
-        },
-        {
-          "$ref": "#/definitions/item"
-        },
-        {
-          "$ref": "#/definitions/itemgrid"
-        },
-        {
-          "$ref": "#/definitions/layout_reference"
-        },
-        {
-          "$ref": "#/definitions/map"
-        },
-        {
-          "$ref": "#/definitions/recentpins"
-        },
-        {
-          "$ref": "#/definitions/scroll"
-        },
-        {
-          "$ref": "#/definitions/tabbed"
-        }
+        {"$ref": "#/definitions/array"},
+        {"$ref": "#/definitions/button_popup"},
+        {"$ref": "#/definitions/canvas"},
+        {"$ref": "#/definitions/container"},
+        {"$ref": "#/definitions/dock"},
+        {"$ref": "#/definitions/group"},
+        {"$ref": "#/definitions/image"},
+        {"$ref": "#/definitions/item"},
+        {"$ref": "#/definitions/itemgrid"},
+        {"$ref": "#/definitions/layout_reference"},
+        {"$ref": "#/definitions/map"},
+        {"$ref": "#/definitions/recentpins"},
+        {"$ref": "#/definitions/scroll"},
+        {"$ref": "#/definitions/tabbed"}
       ]
     }
   },

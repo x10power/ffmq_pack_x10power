@@ -1,5 +1,5 @@
 # workflow name
-name: Manage Release
+name: 🔨Build/📦Release/🚀Deploy
 
 # fire on
 on: [push, pull_request]
@@ -7,10 +7,11 @@ on: [push, pull_request]
 #########
 # actions
 #########
-# actions/checkout@v3.3.0
-# actions/download-artifact@v3.0.2
+# actions/checkout@v4.1.7
+# actions/download-artifact@v4.1.8
 # actions/create-release@v1.1.4
 # actions/upload-release-asset@v1.0.2
+# benc-uk/workflow-dispatch@v1.2.4
 # ./.github/actions/get-parent-dir
 # ./.github/actions/install
 # ./.github/actions/test
@@ -23,17 +24,23 @@ jobs:
     strategy:
       matrix:
         os-name: [ubuntu-latest]
-        python-version: [3.8]
+        python-version: ["3.12"]
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4.1.7
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
         with:
+          calling-job: test
           os-name: ${{ matrix.os-name }}
           python-version: ${{ matrix.python-version }}
+      # Analyze used GitHub Actions
+      - name: ⚙️Analyze used GitHub Actions
+        shell: bash
+        run: |
+          python ./resources/ci/common/list_actions.py
       # test
       - name: ⏱️Call Test
         uses: ./.github/actions/test
@@ -50,17 +57,18 @@ jobs:
     strategy:
       matrix:
         # one OS
-        os-name: [ubuntu-latest]
-        python-version: [3.8]
+        os-name: [windows-latest]
+        python-version: ["3.12"]
 
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4.1.7
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
         with:
+          calling-job: release-prepare
           os-name: ${{ matrix.os-name }}
           python-version: ${{ matrix.python-version }}
 
@@ -70,12 +78,12 @@ jobs:
         uses: ./.github/actions/get-parent-dir
 
       # Prepare AppVersion
-      - name: Prepare AppVersion
+      - name: 💬Prepare AppVersion
         run: |
           python ./resources/ci/common/prepare_appversion.py
 
       # Prepare Manifest
-      - name: Prepare Manifest
+      - name: 💬Prepare Manifest
         run: |
           python ./resources/ci/common/prepare_manifest.py
 
@@ -91,14 +99,14 @@ jobs:
 
       # Upload AppVersion Artifact
       - name: 🔼Upload AppVersion Artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4.3.6
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/build
 
       # Upload Archive Artifact
       - name: 🔼Upload Archive Artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4.3.6
         with:
           name: archive-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/deploy
@@ -118,13 +126,13 @@ jobs:
       matrix:
         # release only on ubuntu
         os-name: [ubuntu-latest]
-        python-version: [3.8]
+        python-version: ["3.12"]
 
     needs: [install-release-prepare]
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4.1.7
 
       # install dependencies via pip
       - name: 💿Install Dependencies via pip
@@ -139,15 +147,15 @@ jobs:
 
       # download appversion artifact
       - name: 🔽Download AppVersion Artifact
-        uses: actions/download-artifact@v3.0.2
+        uses: actions/download-artifact@v4.1.8
         with:
-          name: appversion-${{ matrix.os-name }}
+          name: appversion-windows-latest
           path: ${{ steps.parentDir.outputs.parentDir }}/build
       # download archive artifact
       - name: 🔽Download Archive Artifact
-        uses: actions/download-artifact@v3.0.2
+        uses: actions/download-artifact@v4.1.8
         with:
-          name: archive-${{ matrix.os-name }}
+          name: archive-windows-latest
           path: ${{ steps.parentDir.outputs.parentDir }}/deploy
 
       # debug info
@@ -157,28 +165,38 @@ jobs:
         #        git tag ${GITHUB_TAG}
         #        git push origin ${GITHUB_TAG}
         run: |
+          PROJECT_NAME="Final Fantasy Mystic Quest EmoTracker Pack"
+          echo "project_name=$PROJECT_NAME" >> $GITHUB_OUTPUT
+
           GITHUB_TAG="$(head -n 1 ../build/app_version.txt)"
           echo "github_tag=$GITHUB_TAG" >> $GITHUB_OUTPUT
-          GITHUB_TAG="v${GITHUB_TAG}"
-          RELEASE_NAME="Final Fantasy Mystic Quest Tracker ${GITHUB_TAG}"
-          echo "Release Name: ${RELEASE_NAME}"
-          echo "Git Tag:      ${GITHUB_TAG}"
+
+          RELEASE_NAME="${PROJECT_NAME} ${GITHUB_TAG}"
+          echo "release_name=$RELEASE_NAME" >> $GITHUB_OUTPUT
+
+          ASSET_PREFIX="${PROJECT_NAME}-${GITHUB_TAG}"
+          echo "asset_prefix=$ASSET_PREFIX" >> $GITHUB_OUTPUT
+
+          echo "Project Name:  ${PROJECT_NAME}"
+          echo "Release Name:  ${RELEASE_NAME}"
+          echo "Asset Prefix:  ${ASSET_PREFIX}"
+          echo "Git Tag:       ${GITHUB_TAG}"
 
       # create a release
-      - name: 📀->🚀Create a Release (MASTER || MAIN)
+      - name: 📀->🚀Create a Release (MAIN)
         id: create_release
         uses: actions/create-release@v1.1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.debug_info.outputs.github_tag }}
-          release_name: Final Fantasy Mystic Quest Tracker v${{ steps.debug_info.outputs.github_tag }}
+          release_name: Final Fantasy Mystic Quest EmoTracker Pack v${{ steps.debug_info.outputs.github_tag }}
           body_path: RELEASENOTES.md
           # draft: true
-        if: contains(github.ref, 'master') || contains(github.ref, 'main')
+        if: contains(github.ref, 'main')
 
       # upload archive asset
-      - name: 🔼Upload Archive Asset (MASTER || MAIN)
+      - name: 🔼Upload Archive Asset (MAIN)
         id: upload-asset
         uses: actions/upload-release-asset@v1.0.2
         env:
@@ -188,11 +206,11 @@ jobs:
           asset_path: ../deploy/ffmq_pack_x10power.zip
           asset_name: ffmq_pack_x10power.zip
           asset_content_type: application/zip
-        if: contains(github.ref, 'master') || contains(github.ref, 'main')
+        if: contains(github.ref, 'main')
 
   # Update Pack Listing
   update-packlisting:
-    name: Update Pack Listing
+    name: 📝Update Pack Listing
     runs-on: ${{ matrix.os-name }}
 
     # VM settings
@@ -201,13 +219,13 @@ jobs:
       matrix:
         # run only on ubuntu
         os-name: [ubuntu-latest]
-        python-version: [3.8]
+        python-version: ["3.12"]
 
     needs: [release-deploy]
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4.1.7
       - name: 💿Install Dependencies via pip
         run: |
           python -m pip install pytz requests
@@ -231,12 +249,25 @@ jobs:
           echo "Pack Listing Destination: $PACKLISTING_USERNAME/$PACKLISTING_REPOSITORY@refs/heads/$PACKLISTING_BRANCH"
 
       # Update EmoTracker Pack Repository
-      - name: Update EmoTracker Pack Repository (MASTER || MAIN)
-        id: update-pack-repo
-        uses: benc-uk/workflow-dispatch@v1.2.2
+      # Fine-grained personal access token
+      #  https://github.com/settings/tokens?type=beta
+      #  token needs perms:
+      #   actions:         read/write
+      #   contents:        read/write
+      #   pages:           read/write
+      #   workflows:       read/write
+      #  copy token
+      # Actions secrets and variables
+      # github.com/<owner>/<repo>/settings/secrets/actions
+      #  repository secret
+      #   name a new secret "EMOPACK_MANAGER"
+      #   value set to copied token
+      - name: Update EmoTracker Pack Repository (MAIN)
+        id: update-pack-repo-benc
+        uses: benc-uk/workflow-dispatch@v1.2.4
         with:
-          workflow: 🌎->🚀Deploy Pages
+          workflow: ci.yml
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
           ref: ${{ steps.packlisting.outputs.packlisting_branch }}
-          token: ${{ secrets.MY_PAT }}
-        if: contains(github.ref, 'master') || contains(github.ref, 'main')
+          token: ${{ secrets.EMOPACK_MANAGER }}
+        if: contains(github.ref, 'main') || contains(github.ref, 'unstable')

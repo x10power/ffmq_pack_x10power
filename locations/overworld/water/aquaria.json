@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Aquaria",
+    "parent": "Water",
+    "map_locations": [{"map": "restored-world", "x": 630, "y": 225}],
+    "sections": [
+      {
+        "name": "Phoebe's House Box",
+        "#type": "default",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Vendor",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_vendor",
+        "item_count": 1
+      },
+      {
+        "name": "Vendor House Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Aquaria Tree",
+        "access_rules": ["wakewater"],
+        "hosted_item": "aquaria_thawing"
+      },
+      {
+        "name": "Spencer's Place",
+        "access_rules": ["aquaria_restored"],
+        "item_count": 1
+      }
+    ]
+  }
+]

@@ -1,20 +1,9 @@
-{
-  "magics_grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "content": [
-      {
-        "type": "layout",
-        "key": "whitemagics_grid"
-      },
-      {
-        "type": "layout",
-        "key": "blackmagics_grid"
-      },
-      {
-        "type": "layout",
-        "key": "wizardmagics_grid"
-      }
-    ]
-  }
-}
+{"magics_grid": {
+  "type": "array",
+  "orientation": "vertical",
+  "content": [
+    {"type": "layout", "key": "whitemagics_grid"},
+    {"type": "layout", "key": "blackmagics_grid"},
+    {"type": "layout", "key": "wizardmagics_grid"}
+  ]
+}}

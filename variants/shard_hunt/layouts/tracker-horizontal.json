@@ -1,0 +1,9 @@
+{"tracker_horizontal": {
+  "note": "Horizontal: When width of window is greater than height",
+  "type": "container",
+  "h_alignment": "center",
+  "content": {
+    "type": "layout",
+    "key": "shard_hunt"
+  }
+}}

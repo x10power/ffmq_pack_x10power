@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Earth",
+    "parent": "World",
+    "children": [
+      {
+        "name": "Level Forest",
+        "map_locations": [{"map": "restored-world", "x": 180, "y": 520}],
+        "sections": [
+          {
+            "name": "Northwest Box",
+            "access_rules": ["axe"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Northeast Box",
+            "access_rules": ["axe"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Middle Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Southwest Box",
+            "access_rules": ["axe"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Southeast Box",
+            "access_rules": ["axe"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Free Old Man",
+            "#type": "blueman",
+            "chest_unopened_img": "images/chests/blueman_available.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beat Minotaur",
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["treewither,kaeli"],
+            "hosted_item": "boss_levelforest",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Sand Temple",
+        "access_rules": ["vanilla,boss_levelforest", "rando"],
+        "map_locations": [{"map": "restored-world", "x": 180, "y": 395}],
+        "sections": [
+          {
+            "name": "Event Chest",
+            "access_rules": ["", "{}"],
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
+            "hosted_item": "tristam"
+          }
+        ]
+      }
+    ]
+  }
+]

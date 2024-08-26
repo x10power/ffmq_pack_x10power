@@ -1,10 +1,5 @@
-{
-  "tracker_default": {
-    "type": "container",
-    "h_alignment": "center",
-    "content": {
-      "type": "layout",
-      "key": "shard_hunt"
-    }
-  }
-}
+{"tracker_default": {
+  "note": "Default tracker view",
+  "type": "layout",
+  "key": "tracker_horizontal"
+}}

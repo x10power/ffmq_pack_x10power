@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Wintry Cave",
+    "parent": "Water",
+    "access_rules": ["vanilla,phoebe:1", "rando"],
+    "children": [
+      {
+        "name": "Wintry Cave Overworld",
+        "map_locations": [{"map": "restored-world", "x": 705, "y": 140}],
+        "sections": [
+          {
+            "name": "1F - Entrance Box (Southeast)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "1F - Phoebe (Gift)",
+            "#type": "phoebe",
+            "chest_opened_img": "images/party/phoebe.gif",
+            "item_count": 1
+          },
+          {
+            "name": "1F - North Box (Northeast)",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "1F - Slippery Cliff Box (East)",
+            "access_rules": ["claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "1F - Scenic Overlook Box (Southwest)",
+            "access_rules": ["claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "2F - West Boxes",
+            "access_rules": ["claw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "2F - West Left Box",
+            "access_rules": ["claw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "2F - West Right Box",
+            "access_rules": ["claw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "2F - East Boxes",
+            "access_rules": ["claw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "2F - East Left Box",
+            "access_rules": ["claw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "2F - East Right Box",
+            "access_rules": ["claw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3F - Above Boxes (access from 1F)",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "3F - West Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3F - East Box",
+            "access_rules": ["bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "3F - Before Boss Box",
+            "access_rules": ["claw,bomb"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "3F - Squidite Chest",
+            "#type": "chest",
+            "chest_unavailable_img": "images/chests/available.png",
+            "chest_unopened_img": "images/chests/available.png",
+            "chest_opened_img": "images/chests/opened.png",
+            "access_rules": ["claw,bomb"],
+            "hosted_item": "boss_wintrycave",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

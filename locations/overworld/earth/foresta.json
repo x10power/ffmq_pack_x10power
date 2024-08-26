@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Foresta",
+    "parent": "Earth",
+    "map_locations": [{"map": "restored-world", "x": 240, "y": 500}],
+    "sections": [
+      {
+        "name": "Kaeli's House (Kaeli)",
+        "access_rules": ["treewither", "{}"],
+        "#type": "kaeli",
+        "chest_opened_img": "images/party/kaeli.gif",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_party",
+        "item_count": 1
+      },
+      {
+        "name": "Outside Box (SE)",
+        "access_rules": ["axe"],
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Kaeli's House Box (SW)",
+        "access_rules": ["axe", "rando"],
+        "#type": "default",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Old Man House Chest (NE)",
+        "#type": "chest",
+        "chest_unavailable_img": "images/chests/available.png",
+        "chest_unopened_img": "images/chests/available.png",
+        "chest_opened_img": "images/chests/opened.png",
+        "item_count": 1
+      },
+      {
+        "name": "Rest House Box (SE)",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      }
+    ]
+  }
+]

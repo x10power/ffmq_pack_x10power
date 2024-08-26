@@ -1,0 +1,10 @@
+{"shared_item_grid_bin": {
+  "type": "array",
+  "orientation": "vertical",
+  "content": [
+    {"type": "layout", "key": "keyitems_grid_bin"},
+    {"type": "layout", "key": "magics_grid_bin"},
+    {"type": "layout", "key": "armors_grid_bin"},
+    {"type": "layout", "key": "weapons_grid_bin"}
+  ]
+}}

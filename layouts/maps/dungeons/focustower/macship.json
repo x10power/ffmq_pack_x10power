@@ -1,0 +1,26 @@
+{"maps_macs_ship": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Deck",
+      "content": {
+        "type": "map",
+        "maps": ["mac-ship-deck"]
+      }
+    },
+    {
+      "title": "Floor B1",
+      "content": {
+        "type": "map",
+        "maps": ["mac-ship-b1"]
+      }
+    },
+    {
+      "title": "Floor B2",
+      "content": {
+        "type": "map",
+        "maps": ["mac-ship-b2"]
+      }
+    }
+  ]
+}}

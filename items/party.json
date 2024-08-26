@@ -1,5 +1,4 @@
 [
-  // Benjamin
   {
     "name": "Benjamin",
     "type": "progressive",
@@ -14,7 +13,6 @@
       }
     ]
   },
-  // Kaeli
   {
     "name": "Kaeli",
     "type": "consumable",
@@ -23,7 +21,6 @@
     "max_quantity": 2,
     "codes": "kaeli"
   },
-  // Phoebe
   {
     "name": "Phoebe",
     "type": "consumable",
@@ -32,7 +29,6 @@
     "max_quantity": 2,
     "codes": "phoebe"
   },
-  // Reuben
   {
     "name": "Reuben",
     "type": "consumable",
@@ -41,7 +37,6 @@
     "max_quantity": 2,
     "codes": "reuben"
   },
-  // Tristam
   {
     "name": "Tristam",
     "type": "consumable",
@@ -50,10 +45,9 @@
     "max_quantity": 2,
     "codes": "tristam"
   },
-  // Party Member 2
   {
     "name": "Party Member 2",
-    "type": "progressive",
+    "type": "progressive_toggle",
     "loop": true,
     "codes": "pm",
     "stages": [

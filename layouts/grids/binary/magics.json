@@ -1,0 +1,9 @@
+{"magics_grid_bin": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    ["exit", "cure", "heal", "life"],
+    ["quake", "blizzard", "fire", "aero"],
+    ["thunder", "white", "meteor", "flare"]
+  ]
+}}

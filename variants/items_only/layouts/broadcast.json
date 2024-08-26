@@ -1,11 +1,10 @@
-﻿{
-  "tracker_broadcast": {
-    "type": "container",
-    "h_alignment": "center",
-    "width": 175,
-    "content": {
-      "type": "layout",
-      "key": "shared_item_grid"
-    }
+{"tracker_broadcast": {
+  "note": "Broadcast View: Press F2",
+  "type": "container",
+  "h_alignment": "center",
+  "width": 200,
+  "content": {
+    "type": "layout",
+    "key": "shared_item_grid"
   }
-}
+}}

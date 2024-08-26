@@ -1,10 +1,10 @@
-{
-  "tracker_broadcast": {
-    "type": "container",
-    "h_alignment": "center",
-    "content": {
-      "type": "layout",
-      "key": "shard_hunt"
-    }
+{"tracker_broadcast": {
+  "note": "Broadcast View: Press F2",
+  "type": "container",
+  "h_alignment": "center",
+  "width": 200,
+  "content": {
+    "type": "layout",
+    "key": "shard_hunt"
   }
-}
+}}

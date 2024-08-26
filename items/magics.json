@@ -1,5 +1,4 @@
 [
-  // White Magics
   {
     "name": "White Magic",
     "type": "progressive",
@@ -39,7 +38,6 @@
       }
     ]
   },
-  // Black Magics
   {
     "name": "Black Magic",
     "type": "progressive",
@@ -79,7 +77,6 @@
       }
     ]
   },
-  // Wizard Magics
   {
     "name": "Wizard Magic",
     "type": "progressive",
@@ -119,82 +116,70 @@
       }
     ]
   },
-  // White Magics
-  // Exit
   {
     "name": "Exit",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/white/whitemagic.png",
     "img_mods": "overlay|images/magic/white/overlay/exit.png",
-    "codes": "exit"
+    "codes": "exit,exitbook"
   },
-  // Cure
   {
     "name": "Cure",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/white/whitemagic.png",
     "img_mods": "overlay|images/magic/white/overlay/cure.png",
-    "codes": "cure"
+    "codes": "cure,curebook"
   },
-  // Heal
   {
     "name": "Heal",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/white/whitemagic.png",
     "img_mods": "overlay|images/magic/white/overlay/heal.png",
-    "codes": "heal"
+    "codes": "heal,healbook"
   },
-  // Life
   {
     "name": "Life",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/white/whitemagic.png",
     "img_mods": "overlay|images/magic/white/overlay/life.png",
-    "codes": "life"
+    "codes": "life,lifebook"
   },
-  // Black Magics
-  // Quake
   {
     "name": "Quake",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/black/blackmagic.png",
     "img_mods": "overlay|images/magic/black/overlay/quake.png",
-    "codes": "quake"
+    "codes": "quake,quakebook"
   },
-  // Blizzard
   {
     "name": "Blizzard",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/black/blackmagic.png",
     "img_mods": "overlay|images/magic/black/overlay/blizzard.png",
-    "codes": "blizzard"
+    "codes": "blizzard,blizzardbook"
   },
-  // Fire
   {
     "name": "Fire",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/black/blackmagic.png",
     "img_mods": "overlay|images/magic/black/overlay/fire.png",
-    "codes": "fire"
+    "codes": "fire,firebook"
   },
-  // Aero
   {
     "name": "Aero",
     "type": "toggle",
     "loop": true,
     "img": "images/magic/black/blackmagic.png",
     "img_mods": "overlay|images/magic/black/overlay/aero.png",
-    "codes": "aero"
+    "codes": "aero,aerobook"
   },
-  // Wizard Magics
-  // Thunder
   {
     "name": "Thunder",
     "type": "toggle",
@@ -203,7 +188,6 @@
     "img_mods": "overlay|images/magic/wizard/overlay/thunder.png",
     "codes": "thunder"
   },
-  // White
   {
     "name": "White",
     "type": "toggle",
@@ -212,7 +196,6 @@
     "img_mods": "overlay|images/magic/wizard/overlay/white.png",
     "codes": "white"
   },
-  // Meteor
   {
     "name": "Meteor",
     "type": "toggle",
@@ -221,7 +204,6 @@
     "img_mods": "overlay|images/magic/wizard/overlay/meteor.png",
     "codes": "meteor"
   },
-  // Flare
   {
     "name": "Flare",
     "type": "toggle",

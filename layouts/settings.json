@@ -1,0 +1,31 @@
+{"settings_popup": {
+  "type": "array",
+  "margin": "5",
+  "content": [
+    {
+      "type": "group",
+      "header": "Game Type",
+      "content": [{"type": "item", "item": "gametype"}]
+    },
+    {
+      "type": "group",
+      "header": "Shuffle Brown Boxes' Contents",
+      "content": [
+        {
+          "type": "item",
+          "item": "setting_shufflebrownbox"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "header": "Kaeli's Mom Fight Minotaur",
+      "content": [
+        {
+          "type": "item",
+          "item": "setting_minotaur-predead"
+        }
+      ]
+    }
+  ]
+}}

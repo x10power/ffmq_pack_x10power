@@ -2,39 +2,31 @@
   "name": "Final Fantasy Mystic Quest Randomizer Item Tracker",
   "author": "x10power, Minnie A. Trethewey, Poolsharker",
   "game_name": "Final Fantasy Mystic Quest",
-  "flags": [], // build from variants
-  "package_version": "1.0.1.1",
+  "flags": [],
+  "package_version": "",
   "package_uid": "ffmq_pack_x10power",
   "platform": "snes",
   "documentation_url": "https://github.com/x10power/ffmq_pack_x10power/wiki",
   "variants": {
     "items_only": {
       "display_name": "Items-Only",
-      "flags": [
-        "chathud"
-      ]
+      "flags": ["chathud"]
     },
     "standard_map": {
       "display_name": "Standard with Map",
-      "flags": [
-        "chathud",
-        "map",
-        "pins"
-      ]
+      "flags": ["chathud", "map", "pins"]
     },
     "shard_hunt": {
       "display_name": "Shard Hunt",
-      "flags": [
-        "chathud"
-      ]
+      "flags": ["chathud"]
     },
     "shard_hunt_map": {
       "display_name": "Shard Hunt with Map",
-      "flags": [
-        "chathud",
-        "map",
-        "pins"
-      ]
+      "flags": ["chathud", "map", "pins"]
+    },
+    "simple": {
+      "display_name": "Simple",
+      "flags": ["chathud"]
     }
   }
 }

@@ -1,5 +1,4 @@
 [
-  // Battlefields
   {
     "name": "Battlefields",
     "type": "consumable",
@@ -7,7 +6,6 @@
     "codes": "battlefield",
     "max_quantity": 5
   },
-  //Pazuzu Floor
   {
     "name": "Pazuzu Floor",
     "type": "consumable",
@@ -15,7 +13,6 @@
     "codes": "pazuzu",
     "max_quantity": 6
   },
-  //Sky Coin Shards
   {
     "name": "SkyCoinShard-16",
     "type": "consumable",
@@ -43,5 +40,12 @@
     "img": "images/coins/coin_sky_shard.png",
     "codes": "skycoinshard38",
     "max_quantity": 38
+  },
+  {
+    "name": "SkyCoinShard-40",
+    "type": "consumable",
+    "img": "images/coins/coin_sky_shard.png",
+    "codes": "skycoinshard40",
+    "max_quantity": 40
   }
 ]

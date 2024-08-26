@@ -1,0 +1,15 @@
+{"keyitems_grid_nonp": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    [
+      "elixir",
+      "treewither",
+      "wakewater",
+      "thunderrock"
+    ],
+    ["multikey", "gasmask", "magicmirror", "venuskey"],
+    ["captaincap", "libra", "gemini", "mobius"],
+    ["sandcoin", "rivercoin", "suncoin", "skycoin"]
+  ]
+}}

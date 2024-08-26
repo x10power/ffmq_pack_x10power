@@ -1,0 +1,13 @@
+{"maps_earth": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Bone Dungeon",
+      "icon": "images/coins/coin_sand.png",
+      "content": {
+        "type": "layout",
+        "key": "maps_bone_dungeon"
+      }
+    }
+  ]
+}}

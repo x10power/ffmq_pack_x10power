@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Water Battlefields",
+    "parent": "Water",
+    "#type": "battlefield",
+    "chest_unavailable_img": "images/counters/battlefield.png",
+    "chest_unopened_img": "images/counters/battlefield.png",
+    "chest_opened_img": "images/battlefields/battlefield_complete.png",
+    "children": [
+      {
+        "name": "Water Battlefield 1",
+        "access_rules": ["aquaria_restored", "{}"],
+        "note": "#FIXME: Maybe from boss_lavadome?",
+        "map_locations": [{"map": "restored-world", "x": 395, "y": 207}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Water Battlefield 2",
+        "access_rules": ["aquaria_restored", "{}"],
+        "note": "#FIXME: Maybe from boss_lavadome?",
+        "map_locations": [{"map": "restored-world", "x": 460, "y": 207}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Water Battlefield 3",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 434, "y": 323}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Water Battlefield 4",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 525, "y": 246}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Water Battlefield 5",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 589, "y": 271}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Water Battlefield 6",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 706, "y": 194}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Water Battlefield 7",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 654, "y": 168}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Water Battlefield 8",
+        "access_rules": ["", "{}"],
+        "map_locations": [{"map": "restored-world", "x": 577, "y": 117}],
+        "sections": [
+          {
+            "name": "Battlefield",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_battlefield",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

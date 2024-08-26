@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Battlefield Item",
+    "type": "consumable",
+    "img": "images/chests/available.png",
+    "min_quantity": 1,
+    "codes": "battlefield_item"
+  },
+  {
+    "name": "Battlefield GP",
+    "type": "consumable",
+    "img": "images/battlefields/gp.png",
+    "min_quantity": 1,
+    "codes": "battlefield_gp"
+  },
+  {
+    "name": "Battlefield XP",
+    "type": "consumable",
+    "img": "images/battlefields/xp.png",
+    "min_quantity": 1,
+    "codes": "battlefield_xp"
+  }
+]

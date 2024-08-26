@@ -1,4 +1,7 @@
 wheel
 commentjson
+flatten_json
 jsonschema
 pyjson5
+pyyaml
+setuptools

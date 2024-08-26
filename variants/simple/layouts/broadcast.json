@@ -1,0 +1,10 @@
+{"tracker_broadcast": {
+  "note": "Broadcast View: Press F2",
+  "type": "container",
+  "h_alignment": "center",
+  "width": 200,
+  "content": {
+    "type": "layout",
+    "key": "tracker_horizontal"
+  }
+}}

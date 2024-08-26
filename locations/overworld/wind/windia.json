@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Windia",
+    "parent": "Wind",
+    "map_locations": [{"map": "restored-world", "x": 690, "y": 460}],
+    "sections": [
+      {
+        "name": "Otto's Attic Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 1
+      },
+      {
+        "name": "Mobius Basement Boxes",
+        "clear_as_group": false,
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 2
+      },
+      {
+        "name": "Mobius Basement West Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "#item_count": 1
+      },
+      {
+        "name": "Mobius Basement East Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "#item_count": 1
+      },
+      {
+        "name": "Inn Bedroom Boxes",
+        "clear_as_group": false,
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "item_count": 2
+      },
+      {
+        "name": "Inn Bedroom North Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "#item_count": 1
+      },
+      {
+        "name": "Inn Bedroom South Box",
+        "visibility_rules": ["setting_shufflebrownbox_yes"],
+        "#item_count": 1
+      },
+      {
+        "name": "Kaeli",
+        "access_rules": ["treewither,elixir"]
+      },
+      {
+        "name": "Vendor",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_vendor",
+        "item_count": 1
+      }
+    ]
+  }
+]

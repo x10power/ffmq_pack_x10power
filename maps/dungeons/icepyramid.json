@@ -1,43 +1,43 @@
 [
   {
-    "name": "ice-pyramid-1",
-    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-1.png",
+    "name": "ice-pyramid-1f",
+    "img": "images/maps/dungeons/ice-pyramid/ice-pyramid-1.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "ice-pyramid-2",
-    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-2.png",
+    "name": "ice-pyramid-2f",
+    "img": "images/maps/dungeons/ice-pyramid/ice-pyramid-2.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "ice-pyramid-3",
-    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-3.png",
+    "name": "ice-pyramid-3f",
+    "img": "images/maps/dungeons/ice-pyramid/ice-pyramid-3.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "ice-pyramid-4",
-    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-4.png",
+    "name": "ice-pyramid-4f",
+    "img": "images/maps/dungeons/ice-pyramid/ice-pyramid-4.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "ice-pyramid-5",
-    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-5.png",
+    "name": "ice-pyramid-5f",
+    "img": "images/maps/dungeons/ice-pyramid/ice-pyramid-5.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "ice-pyramid-basement",
-    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-Basement.png",
+    "name": "ice-pyramid-b1",
+    "img": "images/maps/dungeons/ice-pyramid/ice-pyramid-basement.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
-    "name": "ice-pyramid-boss",
-    "img": "images/maps/dungeons/ice-pyramid/Ice-Pyramid-Boss.png",
+    "name": "ice-pyramid-6f",
+    "img": "images/maps/dungeons/ice-pyramid/ice-pyramid-boss.png",
     "location_border_thickness": 1,
     "location_size": 16
   }

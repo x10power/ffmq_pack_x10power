@@ -1,0 +1,9 @@
+{"tracker_horizontal": {
+  "type": "container",
+  "h_alignment": "center",
+  "width": 200,
+  "content": {
+    "type": "layout",
+    "key": "shared_item_grid"
+  }
+}}
