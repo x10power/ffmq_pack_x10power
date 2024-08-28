@@ -80,7 +80,8 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "codes": "armors, armors",
+    "codes": "armor, armors",
+    "initial_stage_idx": 1,
     "stages": [
       {
         "name": "No Mail",

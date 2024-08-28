@@ -77,8 +77,11 @@ function hex2bin(n)
     local bin = n:upper():gsub(".", h2b)
     return bin
 end
+function dec2hex(n)
+    return tostring(n):format("%X")
+end
 function dec2bin(n)
-    local bin = hex2bin(tostring(n):format("%X"))
+    local bin = hex2bin(dec2hex(n))
     return bin:gsub("(.*)%..*$", "%1"):gsub("....","%1 "):gsub(" $","")
 end
 
@@ -97,11 +100,14 @@ function setStateFromValue(value, states, override)
         for v, state in pairs(states) do -- Cycle through the possible bits/stages
             msg = ""
             if (value & v) > 0 then
+                local code = ""
+                local note = ""
                 if type(state) == "table" then  -- Progressive Item
                     code = state[1]
                     progressive = Tracker:FindObjectForCode(code)
                     if progressive then
                         stage = state[2]
+                        note = state[3]
                         if progressive.CurrentStage or true then
                             if stage == progressive.CurrentStage then -- Setting again to current stage
                                 -- msg = string.lpad(code, 15)
@@ -123,9 +129,10 @@ function setStateFromValue(value, states, override)
                                 if toggle and not toggle.Active then
                                     toggle.Active = true
                                     msg = string.format(
-                                        "%s: Toggling [%d].",
+                                        "%s: Setting [%d|%s].",
                                         msg,
-                                        stage
+                                        stage,
+                                        note
                                     )
                                     setToggle = true
                                 end
@@ -144,9 +151,10 @@ function setStateFromValue(value, states, override)
                                     setToggle = true
                                     msg = string.lpad(code, 15)
                                     msg = string.format(
-                                        "%s: Toggling [%d]. Already set: [%d] | [%s]",
+                                        "%s: Toggling [%d|%s]. Already set: [%d] | [%s]",
                                         msg,
                                         stage,
+                                        note,
                                         progressive.CurrentStage,
                                         dec2bin(value)
                                     )
@@ -155,20 +163,30 @@ function setStateFromValue(value, states, override)
                             end
                         end
                     end
-                else  -- Toggle Item
-                    code = state
-                    toggle = Tracker:FindObjectForCode(code)
-                    if toggle and not toggle.Active then
-                        toggle.Active = true
-                        setToggle = true
-                        msg = string.lpad(code, 15)
-                        msg = string.format(
-                            "%s: Toggling [%s]. | [%s]",
-                            msg,
-                            "X",
-                            dec2bin(value)
-                        )
+                    if setStage then
+                        code = code .. stage
                     end
+                else
+                    code = state
+                end
+
+                if note == "" then
+                    note = code
+                end
+
+                -- Toggle Item
+                toggle = Tracker:FindObjectForCode(code)
+                if toggle and not toggle.Active then
+                    toggle.Active = true
+                    setToggle = true
+                    msg = string.lpad(code, 15)
+                    msg = string.format(
+                        "%s: Toggling [%s|%s]. | [%s]",
+                        msg,
+                        "X",
+                        note,
+                        dec2bin(value)
+                    )
                 end
             end
             if msg ~= "" then
@@ -207,6 +225,44 @@ function setStatesFromValues(label, checks, checkStates, override)
     end
 end
 
+function updateCheckedLocationsFromMemorySegment(segment)
+    if not isInGame() then
+        return false
+    end
+
+    InvalidateReadCaches()
+
+    if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+        for i=0x00,0x50,0x01 do
+            address = 0x7e0ec8 + i
+            bitFlag = ReadU8(segment, address)
+            if bitFlag > 0 then
+                locStart = i * 8
+                locEnd = locStart + 8 - 1
+                print(
+                    dec2hex(address),
+                    dec2hex(i),
+                    ':',
+                    (locStart) .. '-' .. (locEnd),
+                    ':',
+                    dec2bin(bitFlag)
+                )
+            end
+        end
+    end
+end
+
+function updatePartyQuestFromMemorySegment(segment)
+    if not isInGame() then
+        return false
+    end
+
+    InvalidateReadCaches()
+
+    if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+    end
+end
+
 function updateActivePartyFromMemorySegment(segment)
     if not isInGame() then
         return false
@@ -225,9 +281,9 @@ function updateActivePartyFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [bSel(3)]= { "party2", 3 }, -- Reuben
-                [bSel(2)]= { "party2", 1 }, -- Phoebe
-                [bSel(1)]= { "party2", 4 }  -- Tristam
+                [bSel(3)]= { "party2", 2, "Reuben"  },
+                [bSel(2)]= { "party2", 1, "Phoebe"  },
+                [bSel(1)]= { "party2", 3, "Tristam" }
             }
         }
         setStatesFromValues("Party", checks, checkStates, true)
@@ -260,20 +316,20 @@ function updateWeaponsFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [bSel(8)]= { "sword", 1 },  -- Steel Sword
-                [bSel(7)]= { "sword", 2 },  -- Knight Sword
-                [bSel(6)]= { "sword", 3 },  -- Excalibur
-                [bSel(5)]= { "axe",   1 },  -- Axe
-                [bSel(4)]= { "axe",   2 },  -- Battle Axe
-                [bSel(3)]= { "axe",   3 },  -- Giant's Axe
-                [bSel(2)]= { "claw",  1 },  -- Cat Claw
-                [bSel(1)]= { "claw",  2 }   -- Charm Claw
+                [bSel(8)]= { "sword", 1, "Steel Sword"  },  -- Steel Sword
+                [bSel(7)]= { "sword", 2, "Knight Sword" },  -- Knight Sword
+                [bSel(6)]= { "sword", 3, "Excalibur"    },  -- Excalibur
+                [bSel(5)]= { "axe",   1, "Axe"          },  -- Axe
+                [bSel(4)]= { "axe",   2, "Battle Axe"   },  -- Battle Axe
+                [bSel(3)]= { "axe",   3, "Giant's Axe"  },  -- Giant's Axe
+                [bSel(2)]= { "claw",  1, "Cat Claw"     },  -- Cat Claw
+                [bSel(1)]= { "claw",  2, "Charm Claw"   }   -- Charm Claw
             },
             {
-                [bSel(8)]= { "claw",  3 },  -- Dragon Claw
-                [bSel(7)]= { "bomb",  1 },  -- Bomb
-                [bSel(6)]= { "bomb",  2 },  -- Jumbo Bomb
-                [bSel(5)]= { "bomb",  3 }   -- Mega Grenade
+                [bSel(8)]= { "claw",  3, "Dragon Claw"  },
+                [bSel(7)]= { "bomb",  1, "Bomb"         },
+                [bSel(6)]= { "bomb",  2, "Jumbo Bomb"   },
+                [bSel(5)]= { "bomb",  3, "Mega Grenade" }
             }
         }
 
@@ -296,27 +352,27 @@ function updateArmorFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [bSel(8)]= { "helmet",  1 },  -- Steel Helm
-                [bSel(7)]= { "helmet",  2 },  -- Moon Helm
-                [bSel(6)]= { "helmet",  3 },  -- Apollo Helm
-                [bSel(5)]= { "armor",   1 },  -- Steel Armor
-                [bSel(4)]= { "armor",   2 },  -- Noble Armor
-                [bSel(3)]= { "armor",   3 },  -- Gaia's Armor
-                [bSel(2)]= { "armor",   4 },  -- Relica Armor
-                [bSel(1)]= { "armor",   5 }   -- Mystic Robe
+                [bSel(8)]= { "helmet",  1, "Steel Helm"     },
+                [bSel(7)]= { "helmet",  2, "Moon Helm"      },
+                [bSel(6)]= { "helmet",  3, "Apollo Helm"    },
+                [bSel(5)]= { "armor",   1, "Steel Armor"    },
+                [bSel(4)]= { "armor",   2, "Noble Armor"    },
+                [bSel(3)]= { "armor",   3, "Gaia's Armor"   },
+                [bSel(2)]= { "armor",   4, "Relica Armor"   },
+                [bSel(1)]= { "armor",   5, "Mystic Robe"    }
             },
             {
-                [bSel(8)]= { "armor",       6 },  -- Flame Armor
-                [bSel(7)]= { "armor",       7 },  -- Black Robe
-                [bSel(6)]= { "shield",      1 },  -- Steel Shield
-                [bSel(5)]= { "shield",      2 },  -- Venus Shield
-                [bSel(4)]= { "shield",      3 },  -- Aegis Shield
-                [bSel(3)]= { "shield",      4 },  -- Ether Shield
-                [bSel(2)]= { "accessories", 1 },  -- Charm
-                [bSel(1)]= { "accessories", 2 }   -- Magic Ring
+                [bSel(8)]= { "armor",       6, "Flame Armor"    },
+                [bSel(7)]= { "armor",       7, "Black Robe"     },
+                [bSel(6)]= { "shield",      1, "Steel Shield"   },
+                [bSel(5)]= { "shield",      2, "Venus Shield"   },
+                [bSel(4)]= { "shield",      3, "Aegis Shield"   },
+                [bSel(3)]= { "shield",      4, "Ether Shield"   },
+                [bSel(2)]= { "accessories", 1, "Charm"          },
+                [bSel(1)]= { "accessories", 2, "Magic Ring"     }
             },
             {
-                [bSel(8)]= { "accessories",  3 }   -- Cupid Locket
+                [bSel(8)]= { "accessories",  3, "Cupid Locket"  }
             }
         }
 
@@ -416,7 +472,9 @@ function updateShardHuntFromMemorySegment(segment)
 end
 
 ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e004c, 0x03, updateActivePartyFromMemorySegment)
+ScriptHost:AddMemoryWatch("FFMQ Checked Locations Data", 0x7e0ec8, 0x1FF, updateCheckedLocationsFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Item Data", 0x7e0ea6, 0x1FF, updateItemFromMemorySegment)
+-- ScriptHost:AddMemoryWatch("FFMQ Party Quest Data", 0x7e0ea8, 0x1FF, updatePartyQuestFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Shard Hunt Data", 0x7e0e93, 0x01, updateShardHuntFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Weapon Data", 0x7e1032, 0x1F0, updateWeaponsFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Armor Data", 0x7e1035, 0x280, updateArmorFromMemorySegment)
