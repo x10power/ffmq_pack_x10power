@@ -99,6 +99,7 @@ function setStateFromValue(value, states, override)
         msgs = {}
         for v, state in pairs(states) do -- Cycle through the possible bits/stages
             msg = ""
+            -- if (bit.bor(value, v) > 0) then
             if (value & v) > 0 then
                 local code = ""
                 local note = ""
