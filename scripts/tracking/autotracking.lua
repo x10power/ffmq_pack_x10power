@@ -23,6 +23,11 @@ U8_READ_CACHE_ADDRESS = 0
 U16_READ_CACHE = 0
 U16_READ_CACHE_ADDRESS = 0
 
+checkedFlags = {
+    ["battlefields"] = {},
+    ["rooms"] = {}
+}
+
 function InvalidateReadCaches()
     U8_READ_CACHE_ADDRESS = 0
     U16_READ_CACHE_ADDRESS = 0
@@ -65,6 +70,32 @@ function getTableSize(t)
         count = count + 1
     end
     return count
+end
+
+--
+-- based on https://www.php.net/manual/en/function.str-split.php
+-- feel to free to validate/adjust to uses asserto/error
+--
+-- Denis Dos Santos Silva
+--
+
+local function str_split(str, length)
+    local result = {}
+    local index = 1
+
+    if (type(str) ~= 'string') then return result; end
+    local slen = #str;
+
+    if (not length) then length=1; end
+    if (length <= 0) then return result; end
+    if (length > slen) then return result; end
+
+    while index <= slen do
+        table.insert(result, string.sub(str, index, index + length - 1))
+        index = index + length
+    end
+
+    return result
 end
 
 local h2b = {
@@ -240,14 +271,37 @@ function updateCheckedLocationsFromMemorySegment(segment)
             if bitFlag > 0 then
                 locStart = i * 8
                 locEnd = locStart + 8 - 1
-                print(
-                    dec2hex(address),
-                    dec2hex(i),
-                    ':',
-                    (locStart) .. '-' .. (locEnd),
-                    ':',
-                    dec2bin(bitFlag)
-                )
+                bitFlags = dec2bin(bitFlag)
+                if #bitFlags <= 4 then
+                    bitFlags = "0000" .. bitFlags
+                end
+                printedMsgs = false
+                for j, bit in ipairs(str_split(bitFlags)) do
+                    locCurr = locStart + j - 1
+                    if tonumber(bit) == 1 then
+                        if not checkedFlags["rooms"][locCurr] then
+                            roomName = roomIDs["rooms"][locCurr]
+                            if roomName then
+                                print(
+                                    dec2hex(locCurr),
+                                    roomName
+                                )
+                                printedMsgs = true
+                                local location = Tracker:FindObjectForCode(roomName)
+                                if location then
+                                    print(roomName .. " found!")
+                                    checkedFlags["rooms"][locCurr] = true
+                                    -- location.AvailableChestCount = 0
+                                else
+                                    print(roomName .. " NOT found!")
+                                end
+                            end
+                        end
+                    end
+                end
+                if printedMsgs then
+                    print("")
+                end
             end
         end
     end
@@ -471,6 +525,8 @@ function updateShardHuntFromMemorySegment(segment)
       print("")
     end
 end
+
+ScriptHost:LoadScript("scripts/constants/roomIDs.lua")
 
 ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e004c, 0x03, updateActivePartyFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Checked Locations Data", 0x7e0ec8, 0x1FF, updateCheckedLocationsFromMemorySegment)

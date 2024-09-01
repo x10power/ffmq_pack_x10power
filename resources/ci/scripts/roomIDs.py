@@ -24,7 +24,7 @@ if roomReq:
                         if "Battlefield" not in gObj["name"] and not startedRooms:
                             startedRooms = True
                             line = lines[len(lines) - 1]
-                            line = line[:len(line)-1]
+                            line = line[:len(line) - 1]
                             lines[len(lines) - 1] = line
                             lines.append("  },")
                             lines.append("  [\"rooms\"] = {")
@@ -32,16 +32,25 @@ if roomReq:
                         msg += "    [" + str(gObj["object_id"]) + "]"
                         msg += " = "
                         rName = "@" + room["name"]
+                        gName = gObj["name"]
                         if "-" in rName:
-                            rName = rName[:rName.find("-") - 1]
+                            rName = rName[:rName.find("-") - 1].strip()
+                        if "-" in gName:
+                            gName = gName[gName.find("-") + 1:].strip()
                         match = re.match(r"^(\@[^\d\@\\]+)([B\d]+)([\dF]+)", rName)
                         if match:
-                            rName = match.group(1)
+                            rName = match.group(1)  # Room Name
+                            # fLevel = match.group(2) # Floor Level
+                            # bLevel = match.group(3) # Basement Level
+                            # if bLevel.isnumeric():
+                            #     gName = f"B{bLevel} - {gName}"
+                            # if fLevel.isnumeric():
+                            #     gName = f"F{fLevel} - {gName}"
                         rName = rName.strip()
-                        msg += "\"" + rName + "\\" + gObj["name"] + "\","
+                        msg += "\"" + rName + "/" + gName + "\","
                         lines.append(msg)
     line = lines[len(lines) - 1]
-    line = line[:len(line)-1]
+    line = line[:len(line) - 1]
     lines[len(lines) - 1] = line
     lines.append("  }")
     lines.append("}")
