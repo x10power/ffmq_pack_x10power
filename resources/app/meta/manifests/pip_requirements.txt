@@ -2,6 +2,7 @@ wheel
 commentjson
 flatten_json
 jsonschema
+natsort
 pyjson5
 pyyaml
 setuptools

@@ -24,8 +24,9 @@ U16_READ_CACHE = 0
 U16_READ_CACHE_ADDRESS = 0
 
 checkedFlags = {
-    ["battlefields"] = {},
-    ["rooms"] = {}
+    ["battlefield"] = {},
+    ["item"] = {},
+    ["npc"] = {}
 }
 
 function InvalidateReadCaches()
@@ -257,7 +258,81 @@ function setStatesFromValues(label, checks, checkStates, override)
     end
 end
 
-function updateCheckedLocationsFromMemorySegment(segment)
+function updateLocationsFromByteflags(segment, address, offset, locType)
+    bitFlag = ReadU8(segment, address + offset)
+    if bitFlag > 0 then
+        locStart = offset * 8
+        locEnd = locStart + 8 - 1
+        bitFlags = dec2bin(bitFlag)
+        if #bitFlags <= 4 then
+            bitFlags = "0000" .. bitFlags
+        end
+        printedMsgs = false
+        for j, bit in ipairs(str_split(bitFlags)) do
+            locCurr = locStart + j - 1
+            -- print(locType, locCurr, tonumber(bit))
+            if tonumber(bit) == 1 then
+                if not checkedFlags[locType][locCurr] then
+                    roomName = roomIDs[locType][locCurr]
+                    if roomName then
+                        -- print(
+                        --     dec2hex(locCurr),
+                        --     roomName
+                        -- )
+                        -- printedMsgs = true
+                        local locFound = false
+                        local locQuiet = false
+                        checkedFlags[locType][locCurr] = true
+                        for k, suffix in pairs({
+                            "",
+                            "a",
+                            "b",
+                            "c",
+                            "d",
+                            "e",
+                            "f",
+                            "g",
+                            "h",
+                            "i",
+                            "j",
+                            "k",
+                            "l",
+                            "m"
+                        }) do
+                            local srch = "<sub>"
+                            roomSrch = string.gsub(roomName, srch, suffix)
+                            local location = Tracker:FindObjectForCode(roomSrch)
+                            if not locFound then
+                                if location then
+                                    print("[" .. locType .. ':' .. locCurr .. "] " .. roomSrch .. " found!")
+                                    location.AvailableChestCount = 0
+                                    locFound = true
+                                    printedMsgs = true
+                                else
+                                    if not locQuiet then
+                                        print("!!![" .. locType .. ':' .. locCurr .. "] " .. roomSrch .. " NOT found!")
+                                    end
+                                    locFound = roomSrch == roomIDs[locType][locCurr]
+                                    if not string.find(roomName, srch) then
+                                        locFound = true
+                                    else
+                                        locQuiet = true
+                                    end
+                                    printedMsgs = true
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if printedMsgs then
+            print("")
+        end
+    end
+end
+
+function updateLocationGroup(segment, address, length, locType)
     if not isInGame() then
         return false
     end
@@ -265,46 +340,35 @@ function updateCheckedLocationsFromMemorySegment(segment)
     InvalidateReadCaches()
 
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
-        for i=0x00,0x50,0x01 do
-            address = 0x7e0ec8 + i
-            bitFlag = ReadU8(segment, address)
-            if bitFlag > 0 then
-                locStart = i * 8
-                locEnd = locStart + 8 - 1
-                bitFlags = dec2bin(bitFlag)
-                if #bitFlags <= 4 then
-                    bitFlags = "0000" .. bitFlags
-                end
-                printedMsgs = false
-                for j, bit in ipairs(str_split(bitFlags)) do
-                    locCurr = locStart + j - 1
-                    if tonumber(bit) == 1 then
-                        if not checkedFlags["rooms"][locCurr] then
-                            roomName = roomIDs["rooms"][locCurr]
-                            if roomName then
-                                print(
-                                    dec2hex(locCurr),
-                                    roomName
-                                )
-                                printedMsgs = true
-                                local location = Tracker:FindObjectForCode(roomName)
-                                if location then
-                                    print(roomName .. " found!")
-                                    checkedFlags["rooms"][locCurr] = true
-                                    -- location.AvailableChestCount = 0
-                                else
-                                    print(roomName .. " NOT found!")
-                                end
-                            end
-                        end
-                    end
-                end
-                if printedMsgs then
-                    print("")
-                end
-            end
+        locType = locType or "item"
+        for i=0x00,length,0x01 do
+            updateLocationsFromByteflags(segment, address, i, locType)
         end
     end
+end
+
+function updateLocationGroupsByType(segment, locType)
+    if locType == "battlefield" then
+        address = 0x7e0fd4
+        length = 0x03 - 1
+    elseif locType == "item" then
+        address = 0x7e0ec8
+        length = 0x1F - 1
+    elseif locType == "npc" then
+        address = 0x7e0ea8
+        length = 0x02 - 1
+    end
+    updateLocationGroup(segment, address, length, locType)
+end
+
+function updateLocationGroupsOfBattlefields(segment)
+    updateLocationGroupsByType(segment, "battlefield")
+end
+function updateLocationGroupsOfItems(segment)
+    updateLocationGroupsByType(segment, "item")
+end
+function updateLocationGroupsOfNPCs(segment)
+    updateLocationGroupsByType(segment, "npc")
 end
 
 function updatePartyQuestFromMemorySegment(segment)
@@ -529,7 +593,9 @@ end
 ScriptHost:LoadScript("scripts/constants/roomIDs.lua")
 
 ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e004c, 0x03, updateActivePartyFromMemorySegment)
-ScriptHost:AddMemoryWatch("FFMQ Checked Locations Data", 0x7e0ec8, 0x1FF, updateCheckedLocationsFromMemorySegment)
+ScriptHost:AddMemoryWatch("FFMQ Collected NPCs Data", 0x7e0ea8, 0x02, updateLocationGroupsOfNPCs)
+ScriptHost:AddMemoryWatch("FFMQ Checked Locations Data", 0x7e0ec8, 0x1F, updateLocationGroupsOfItems)
+ScriptHost:AddMemoryWatch("FFMQ Completed Battlefields Data", 0x7e0fd4, 0x03, updateLocationGroupsOfBattlefields)
 ScriptHost:AddMemoryWatch("FFMQ Item Data", 0x7e0ea6, 0x1FF, updateItemFromMemorySegment)
 -- ScriptHost:AddMemoryWatch("FFMQ Party Quest Data", 0x7e0ea8, 0x1FF, updatePartyQuestFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Shard Hunt Data", 0x7e0e93, 0x01, updateShardHuntFromMemorySegment)
