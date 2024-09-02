@@ -22,6 +22,7 @@ roomIDs = {
     [20] = "@Subregion Windia/South of Windia Battlefield",
   },
   ["item"] = {
+    [0] = "@Doom Castle/Sun Door Chest",
     [1] = "@Doom Castle/Southeast Chest",
     [2] = "@Focus Tower/F2<sub> - Back Door Chest",
     [3] = "@Focus Tower/F2<sub> - Sand Door Chest",
@@ -257,6 +258,7 @@ roomIDs = {
     [250] = "@Lava Dome Jump Maze II/Gold Maze Southeast Box",
   },
   ["npc"] = {
+    [0] = "@Level Forest/Old Man",
     [1] = "@Level Forest/Kaeli",
     [2] = "@Bone Dungeon/B1<sub> - Tristam",
     [4] = "@Aquaria Vendor House/Vendor",

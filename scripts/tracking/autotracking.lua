@@ -391,10 +391,10 @@ function updateActivePartyFromMemorySegment(segment)
 
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
         -- 0010 1000 Empty  --  40
-        -- 1100 1000 Empty  -- 200
         -- 0110 1000 Empty  -- 104
-        -- 0111 1000 Kaeli  -- 120
+        -- 1100 1000 Empty  -- 200
         -- 0111 0111 Kaeli  -- 119
+        -- 0111 1000 Kaeli  -- 120
         checks = {
             ReadU8(segment, 0x7e004d)
         }
