@@ -59,7 +59,8 @@
     "type": "toggle",
     "loop": true,
     "img": "images/armor/armor/armor1.png",
-    "codes": "armor1"
+    "codes": "armor1",
+    "initial_active_state": true
   },
   {
     "name": "Noble Armor",
