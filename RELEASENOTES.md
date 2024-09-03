@@ -20,5 +20,6 @@
 
 ## Bug Fixes
 - Fixed some autotracking
+- Steel Armor (non-progressive) start On
 
 ***Enjoy!***
