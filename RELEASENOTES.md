@@ -20,7 +20,5 @@
 
 ## Bug Fixes
 - Fixed some autotracking
-- Steel Armor on by default (like Benjamin, thanks Hebinx!)
-- Item Autotracking enabled by default (thanks Cyrus28!)
 
 ***Enjoy!***
