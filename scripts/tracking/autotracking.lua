@@ -305,7 +305,9 @@ function updateLocationsFromByteflags(segment, address, offset, locType)
                             if not locFound then
                                 if location then
                                     print("[" .. locType .. ':' .. locCurr .. "] " .. roomSrch .. " found!")
-                                    location.AvailableChestCount = 0
+                                    if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
+                                        location.AvailableChestCount = 0
+                                    end
                                     locFound = true
                                     printedMsgs = true
                                 else
@@ -339,12 +341,12 @@ function updateLocationGroup(segment, address, length, locType)
 
     InvalidateReadCaches()
 
-    if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+    -- if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
         locType = locType or "item"
         for i=0x00,length,0x01 do
             updateLocationsFromByteflags(segment, address, i, locType)
         end
-    end
+    -- end
 end
 
 function updateLocationGroupsByType(segment, locType)
@@ -395,26 +397,33 @@ function updateActivePartyFromMemorySegment(segment)
         -- 1100 1000 Empty  -- 200
         -- 0111 0111 Kaeli  -- 119
         -- 0111 1000 Kaeli  -- 120
-        checks = {
-            ReadU8(segment, 0x7e004d)
-        }
-        checkStates = {
-            {
-                [bSel(3)]= { "party2", 2, "Reuben"  },
-                [bSel(2)]= { "party2", 1, "Phoebe"  },
-                [bSel(1)]= { "party2", 3, "Tristam" }
-            }
-        }
-        setStatesFromValues("Party", checks, checkStates, true)
+        -- checks = {
+        --     ReadU8(segment, 0x7e004d)
+        -- }
+        -- checkStates = {
+        --     {
+        --         [bSel(3)]= { "party2", 2, "Reuben"  },
+        --         [bSel(2)]= { "party2", 1, "Phoebe"  },
+        --         [bSel(1)]= { "party2", 3, "Tristam" }
+        --     }
+        -- }
+        -- setStatesFromValues("Party", checks, checkStates, true)
 
         party2 = Tracker:FindObjectForCode("party2")
-        if party2.CurrentStage and party2.CurrentStage <= 1 then
-            maybeKaeli = ReadU8(segment, 0x7e004c)
-            if maybeKaeli >= 110 and maybeKaeli <= 120 then
-                -- Between 110 & 120
-                party2.CurrentStage = 1
-            elseif maybeKaeli <= 40 or maybeKaeli >= 200 then
-                -- <= 40 || >= 200
+        if party2.CurrentStage then
+            partyByte = math.floor(ReadU8(segment, 0x7e004d))
+            print("Party:",partyByte)
+            companions = {
+                [0] = { 0, "Kaeli" },
+                [1] = { 3, "Tristam" },
+                [2] = { 1, "Phoebe" },
+                [3] = { 2, "Reuben" }
+            }
+            if companions[partyByte] then
+                party2.CurrentStage = companions[partyByte][1]
+                party2.Active = true
+            else
+                party2.CurrentStage = 0
                 party2.Active = false
             end
         end
