@@ -5,7 +5,7 @@
       "title": "Outside",
       "content": {
         "type": "map",
-        "maps": ["lava-dome"]
+        "maps": ["lava-dome-outside"]
       }
     },
     {

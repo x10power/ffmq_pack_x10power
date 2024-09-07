@@ -6,6 +6,7 @@ from yaml import CLoader as Loader, CDumper as Dumper
 
 for region in [
     "earth",
+    "fire",
     "water",
     "wind",
     "focus-tower"
@@ -59,7 +60,15 @@ for region in [
                                 floorTitle = f"Room {floorNum}"
                             else:
                                 floorNum = floorNum[:len(floorNum)-1]
-                        floorTitle += "Floor" if len(floorNum) == 1 else "Room"
+                        if len(floorNum) == 1:
+                            floorTitle += "Floor"
+                        elif floorNum[:1].upper() == "A":
+                            floorTitle += "Area"
+                            floorNum = floorNum[1:]
+                        elif floorNum.lower() == "outside":
+                            floorNum = "Outside"
+                        elif len(floorNum) != 1:
+                            floorTitle += "Room"
                     floorTitle += f" {floorNum}"
                     if floorID in [
                         "boss",
@@ -70,7 +79,7 @@ for region in [
                         floorTitle = floorID[:1].upper() + floorID[1:]
                     tabsData.append(
                         {
-                            "title": floorTitle,
+                            "title": floorTitle.strip(),
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -99,6 +108,8 @@ for region in [
                         for destination in destinations:
                             if destination:
                                 if connectID not in ["note"]:
+                                    if connectID[:1].upper() == "A":
+                                        connectID = connectID[1:2] + "f" + connectID[2:]
                                     connectFolder = ""
                                     if connectID.lower() in [
                                         "boss",
