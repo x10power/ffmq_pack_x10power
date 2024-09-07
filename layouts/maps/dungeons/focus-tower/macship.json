@@ -9,14 +9,14 @@
       }
     },
     {
-      "title": "Floor B1",
+      "title": "Basement B1",
       "content": {
         "type": "map",
         "maps": ["mac-ship-b1"]
       }
     },
     {
-      "title": "Floor B2",
+      "title": "Basement B2",
       "content": {
         "type": "map",
         "maps": ["mac-ship-b2"]

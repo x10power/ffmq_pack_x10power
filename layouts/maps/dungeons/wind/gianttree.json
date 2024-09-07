@@ -2,49 +2,49 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Floor 1F",
+      "title": "Floor 1",
       "content": {
         "type": "map",
         "maps": ["giant-tree-1f"]
       }
     },
     {
-      "title": "Floor 2F",
+      "title": "Floor 2",
       "content": {
         "type": "map",
         "maps": ["giant-tree-2f"]
       }
     },
     {
-      "title": "Floor 2Fa",
+      "title": "Room 2fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-2fa"]
       }
     },
     {
-      "title": "Floor 3F",
+      "title": "Floor 3",
       "content": {
         "type": "map",
         "maps": ["giant-tree-3f"]
       }
     },
     {
-      "title": "Floor 3Fa",
+      "title": "Room 3fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-3fa"]
       }
     },
     {
-      "title": "Floor 4F",
+      "title": "Floor 4",
       "content": {
         "type": "map",
         "maps": ["giant-tree-4f"]
       }
     },
     {
-      "title": "Floor 4Fa",
+      "title": "Room 4fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-4fa"]

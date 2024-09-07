@@ -2,56 +2,56 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Floor 1F",
+      "title": "Floor 1",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-1f"]
       }
     },
     {
-      "title": "Floor B1",
+      "title": "Basement B1",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-b1"]
       }
     },
     {
-      "title": "Floor B1a",
+      "title": "Room B1a",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-b1a"]
       }
     },
     {
-      "title": "Floor B2",
+      "title": "Basement B2",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-b2"]
       }
     },
     {
-      "title": "Floor B2a",
+      "title": "Room B2a",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-b2a"]
       }
     },
     {
-      "title": "Floor B2b",
+      "title": "Room B2b",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-b2b"]
       }
     },
     {
-      "title": "Floor B2c",
+      "title": "Room B2c",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-b2c"]
       }
     },
     {
-      "title": "Floor B2d",
+      "title": "Room B2d",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-b2d"]

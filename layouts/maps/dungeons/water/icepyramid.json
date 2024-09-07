@@ -37,7 +37,7 @@
       }
     },
     {
-      "title": "Basement",
+      "title": "Basement B1",
       "content": {
         "type": "map",
         "maps": ["ice-pyramid-b1"]
@@ -47,7 +47,7 @@
       "title": "Boss",
       "content": {
         "type": "map",
-        "maps": ["ice-pyramid-6f"]
+        "maps": ["ice-pyramid-boss"]
       }
     }
   ]

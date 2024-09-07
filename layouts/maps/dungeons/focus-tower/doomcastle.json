@@ -2,7 +2,7 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Floor B2",
+      "title": "Basement B2",
       "content": {
         "type": "map",
         "maps": ["doom-castle-b2"]
@@ -16,28 +16,28 @@
       }
     },
     {
-      "title": "Floor 4F",
+      "title": "Floor 4",
       "content": {
         "type": "map",
         "maps": ["doom-castle-4f"]
       }
     },
     {
-      "title": "Floor 5F",
+      "title": "Floor 5",
       "content": {
         "type": "map",
         "maps": ["doom-castle-5f"]
       }
     },
     {
-      "title": "Floor 6F",
+      "title": "Floor 6",
       "content": {
         "type": "map",
         "maps": ["doom-castle-6f"]
       }
     },
     {
-      "title": "Floor 7F",
+      "title": "Floor 7",
       "content": {
         "type": "map",
         "maps": ["doom-castle-7f"]

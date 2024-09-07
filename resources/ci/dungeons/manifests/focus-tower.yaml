@@ -1,5 +1,8 @@
 mac-ship:
   deck:
+    exit:
+      x: 360
+      y: 600
     b1:
       - x: 136
         y: 88
@@ -47,7 +50,13 @@ doom-castle:
     1f:
       x: 446
       y: 638
+    stairs:
+      x: 400
+      y: 318
   stairs:
+    b2:
+      x: 56
+      y: 552
     4f:
       x: 56
       y: 424

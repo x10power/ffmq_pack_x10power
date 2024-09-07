@@ -44,8 +44,29 @@ for region in [
                             "location_size": 16
                         }
                     )
-                    floorTitle = "Floor " + floorID[:2].upper() + floorID[2:]
-                    if floorID in ["boss", "deck", "stairs"]:
+                    floorTitle = ""
+                    floorNum = floorID
+                    if floorID[:1].upper() == "B":
+                        # basement
+                        floorNum = "B" + floorID[1:]
+                        floorTitle += "Basement" if len(floorNum) == 2 else "Room"
+                    else:
+                        # floor
+                        # ends with F: nuke F
+                        if floorNum[len(floorNum)-1:] == "f":
+                            # ends with FF: keep F
+                            if floorNum[len(floorNum)-2:] == "ff":
+                                floorTitle = f"Room {floorNum}"
+                            else:
+                                floorNum = floorNum[:len(floorNum)-1]
+                        floorTitle += "Floor" if len(floorNum) == 1 else "Room"
+                    floorTitle += f" {floorNum}"
+                    if floorID in [
+                        "boss",
+                        "deck",
+                        "exit",
+                        "stairs"
+                    ]:
                         floorTitle = floorID[:1].upper() + floorID[1:]
                     tabsData.append(
                         {
@@ -77,9 +98,14 @@ for region in [
                             destinations = [destinations]
                         for destination in destinations:
                             if destination:
-                                if connectID not in ["note", "exit"]:
+                                if connectID not in ["note"]:
                                     connectFolder = ""
-                                    if connectID.lower() in ["boss", "deck", "stairs"]:
+                                    if connectID.lower() in [
+                                        "boss",
+                                        "deck",
+                                        "exit",
+                                        "stairs"
+                                    ]:
                                         connectID = connectID[:1].upper() + connectID[1:]
                                         connectFolder = connectID
                                     else:
@@ -89,7 +115,10 @@ for region in [
                                     connectImg = Image.open(
                                         os.path.join(
                                             ".",
+                                            "resources",
+                                            "app",
                                             "images",
+                                            "maps",
                                             "icons",
                                             connectFolder,
                                             "icon" + connectID + ".png"
