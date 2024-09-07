@@ -4,19 +4,19 @@ from PIL import Image
 from yaml import load, dump
 from yaml import CLoader as Loader, CDumper as Dumper
 
-with open(
-    os.path.join(
-        ".",
-        "resources",
-        "ci",
-        "dungeons",
-        "manifests",
-        "bone-dungeon.yaml"
-    )
-) as dungeonFile:
-    dungeonYAML = load(dungeonFile.read(), Loader=Loader)
-    for [region, dungeon] in dungeonYAML.items():
-        for [dungeonName, floors] in dungeon.items():
+for region in ["earth"]:
+    with open(
+        os.path.join(
+            ".",
+            "resources",
+            "ci",
+            "dungeons",
+            "manifests",
+            region + ".yaml"
+        )
+    ) as dungeonFile:
+        dungeonYAML = load(dungeonFile.read(), Loader=Loader)
+        for [dungeonName, floors] in dungeonYAML.items():
             # images\maps\dungeons\bone-dungeon
             destPath = os.path.join(
                 ".",
