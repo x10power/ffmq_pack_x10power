@@ -2,21 +2,21 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Floor 1",
+      "title": "Floor 1F",
       "content": {
         "type": "map",
         "maps": ["wintry-cave-1f"]
       }
     },
     {
-      "title": "Floor 2",
+      "title": "Floor 2F",
       "content": {
         "type": "map",
         "maps": ["wintry-cave-2f"]
       }
     },
     {
-      "title": "Floor 3",
+      "title": "Floor 3F",
       "content": {
         "type": "map",
         "maps": ["wintry-cave-3f"]

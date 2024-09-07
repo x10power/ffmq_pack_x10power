@@ -4,7 +4,10 @@ from PIL import Image
 from yaml import load, dump
 from yaml import CLoader as Loader, CDumper as Dumper
 
-for region in ["earth"]:
+for region in [
+    "earth",
+    "water"
+]:
     with open(
         os.path.join(
             ".",
@@ -129,7 +132,7 @@ for region in ["earth"]:
             ) as tabsJSON:
                 tabsJSON.write(json.dumps(
                     {
-                        "maps_bone_dungeon": {
+                        "maps_" + dungeonName.replace("-","_"): {
                             "type": "tabbed",
                             "tabs": tabsData
                         }
