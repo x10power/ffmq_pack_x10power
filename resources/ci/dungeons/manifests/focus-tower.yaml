@@ -42,3 +42,44 @@ mac-ship:
         y: 536
       - x: 184
         y: 744
+doom-castle:
+  b2:
+    1f:
+      x: 446
+      y: 638
+  stairs:
+    4f:
+      x: 56
+      y: 424
+    5f:
+      x: 56
+      y: 296
+    6f:
+      x: 56
+      y: 168
+    7f:
+      x: 56
+      y: 40
+  4f:
+    stairs:
+      x: 312
+      y: 664
+  5f:
+    stairs:
+      x: 312
+      y: 616
+  6f:
+    stairs:
+      x: 328
+      y: 616
+  7f:
+    stairs:
+      x: 200
+      y: 390
+    boss:
+      x: 208
+      y: 80
+  boss:
+    7f:
+      x: 200
+      y: 440

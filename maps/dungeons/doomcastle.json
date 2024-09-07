@@ -6,26 +6,38 @@
     "location_size": 16
   },
   {
+    "name": "doom-castle-stairs",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-stairs.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
     "name": "doom-castle-4f",
-    "img": "images/maps/dungeons/doom-castle/doom-castle-F4.png",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-4f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "doom-castle-5f",
-    "img": "images/maps/dungeons/doom-castle/doom-castle-F5.png",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-5f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "doom-castle-6f",
-    "img": "images/maps/dungeons/doom-castle/doom-castle-F6.png",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-6f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "doom-castle-7f",
-    "img": "images/maps/dungeons/doom-castle/doom-castle-F7.png",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-7f.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "doom-castle-boss",
+    "img": "images/maps/dungeons/doom-castle/doom-castle-boss.png",
     "location_border_thickness": 1,
     "location_size": 16
   }

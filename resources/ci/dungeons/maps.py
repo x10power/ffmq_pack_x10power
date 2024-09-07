@@ -35,84 +35,86 @@ for region in [
             mapsData = []
             tabsData = []
             for [floorID, connections] in floors.items():
-                mapsData.append(
-                    {
-                        "name": dungeonName + "-" + floorID.lower(),
-                        "img": "images/maps/dungeons/" + dungeonName + "/" + dungeonName + "-" + floorID.lower() + ".png",
-                        "location_border_thickness": 1,
-                        "location_size": 16
-                    }
-                )
-                floorTitle = "Floor " + floorID[:2].upper() + floorID[2:]
-                if floorID in ["boss", "deck"]:
-                    floorTitle = floorID[:1].upper() + floorID[1:]
-                tabsData.append(
-                    {
-                        "title": floorTitle,
-                        "content": {
-                            "type": "map",
-                            "maps": [
-                                dungeonName + "-" + floorID.lower()
-                            ]
+                if connections:
+                    mapsData.append(
+                        {
+                            "name": dungeonName + "-" + floorID.lower(),
+                            "img": "images/maps/dungeons/" + dungeonName + "/" + dungeonName + "-" + floorID.lower() + ".png",
+                            "location_border_thickness": 1,
+                            "location_size": 16
                         }
-                    }
-                )
-                annotatedImg = Image.open(
-                    os.path.join(
-                        ".",
-                        "resources",
-                        "app",
-                        "images",
-                        "maps",
-                        "dungeons",
-                        region,
-                        dungeonName,
-                        dungeonName + "-" + floorID + ".png"
                     )
-                )
-                annotatedImg = annotatedImg.convert("RGBA")
-                for [connectID, connections] in connections.items():
-                    if not isinstance(connections, list):
-                        connections = [connections]
-                    for connection in connections:
-                        if connectID not in ["note", "exit"]:
-                            connectFolder = ""
-                            if connectID.lower() in ["boss", "deck"]:
-                                connectID = connectID[:1].upper() + connectID[1:]
-                                connectFolder = connectID
-                            else:
-                                connectID = connectID.upper()
-                                connectFolder = connectID[:2]
-                            connectFolder = connectFolder.lower()
-                            connectImg = Image.open(
-                                os.path.join(
-                                    ".",
-                                    "images",
-                                    "icons",
-                                    connectFolder,
-                                    "icon" + connectID + ".png"
-                                )
-                            )
-                            connectSize = (32,32)
-                            connectImg = connectImg.resize(
-                                connectSize,
-                                Image.Resampling.NEAREST
-                            )
-                            annotatedImg.paste(
-                                connectImg,
-                                (
-                                    int(connection["x"] - (connectSize[0] / 2)),
-                                    int(connection["y"] - (connectSize[1] / 2))
-                                ),
-                                connectImg
-                            )
-                            print(dungeonName, floorID, connectID, connection)
-                annotatedImg.save(
-                    os.path.join(
-                        destPath,
-                        dungeonName + "-" + floorID + ".png"
+                    floorTitle = "Floor " + floorID[:2].upper() + floorID[2:]
+                    if floorID in ["boss", "deck", "stairs"]:
+                        floorTitle = floorID[:1].upper() + floorID[1:]
+                    tabsData.append(
+                        {
+                            "title": floorTitle,
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    dungeonName + "-" + floorID.lower()
+                                ]
+                            }
+                        }
                     )
-                )
+                    annotatedImg = Image.open(
+                        os.path.join(
+                            ".",
+                            "resources",
+                            "app",
+                            "images",
+                            "maps",
+                            "dungeons",
+                            region,
+                            dungeonName,
+                            dungeonName + "-" + floorID + ".png"
+                        )
+                    )
+                    annotatedImg = annotatedImg.convert("RGBA")
+                    for [connectID, destinations] in connections.items():
+                        if not isinstance(destinations, list):
+                            destinations = [destinations]
+                        for destination in destinations:
+                            if destination:
+                                if connectID not in ["note", "exit"]:
+                                    connectFolder = ""
+                                    if connectID.lower() in ["boss", "deck", "stairs"]:
+                                        connectID = connectID[:1].upper() + connectID[1:]
+                                        connectFolder = connectID
+                                    else:
+                                        connectID = connectID.upper()
+                                        connectFolder = connectID[:2]
+                                    connectFolder = connectFolder.lower()
+                                    connectImg = Image.open(
+                                        os.path.join(
+                                            ".",
+                                            "images",
+                                            "icons",
+                                            connectFolder,
+                                            "icon" + connectID + ".png"
+                                        )
+                                    )
+                                    connectSize = (32,32)
+                                    connectImg = connectImg.resize(
+                                        connectSize,
+                                        Image.Resampling.NEAREST
+                                    )
+                                    annotatedImg.paste(
+                                        connectImg,
+                                        (
+                                            int(destination["x"] - (connectSize[0] / 2)),
+                                            int(destination["y"] - (connectSize[1] / 2))
+                                        ),
+                                        connectImg
+                                    )
+                                    print(dungeonName, floorID, connectID, destination)
+                    annotatedImg.save(
+                        os.path.join(
+                            destPath,
+                            dungeonName + "-" + floorID + ".png"
+                        )
+                    )
             with open(
                 os.path.join(
                     ".",
