@@ -2,7 +2,7 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Floor 1",
+      "title": "Floor 1F",
       "content": {
         "type": "map",
         "maps": ["bone-dungeon-1f"]
