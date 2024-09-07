@@ -107,9 +107,9 @@ if string.find(variant, "map") then
     "wind/gianttree",
     "wind/pazuzutower",
     "wind/wind",
-    "focustower/doomcastle",
-    "focustower/macship",
-    "focustower/focustower"
+    "focus-tower/doomcastle",
+    "focus-tower/macship",
+    "focus-tower/focus-tower"
   }
   for _, dungMap in pairs(dungMaps) do
     Tracker:AddLayouts("layouts/maps/dungeons/" .. dungMap .. ".json")

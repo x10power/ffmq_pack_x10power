@@ -6,7 +6,7 @@
       "icon": "images/bosstokens/macship.png",
       "content": {
         "type": "layout",
-        "key": "maps_macs_ship"
+        "key": "maps_mac_ship"
       }
     },
     {

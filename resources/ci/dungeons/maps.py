@@ -7,7 +7,8 @@ from yaml import CLoader as Loader, CDumper as Dumper
 for region in [
     "earth",
     "water",
-    "wind"
+    "wind",
+    "focus-tower"
 ]:
     with open(
         os.path.join(
@@ -43,8 +44,8 @@ for region in [
                     }
                 )
                 floorTitle = "Floor " + floorID[:2].upper() + floorID[2:]
-                if floorID == "boss":
-                    floorTitle = "Boss"
+                if floorID in ["boss", "deck"]:
+                    floorTitle = floorID[:1].upper() + floorID[1:]
                 tabsData.append(
                     {
                         "title": floorTitle,
@@ -76,8 +77,8 @@ for region in [
                     for connection in connections:
                         if connectID not in ["note", "exit"]:
                             connectFolder = ""
-                            if connectID == "boss":
-                                connectID = "Boss"
+                            if connectID.lower() in ["boss", "deck"]:
+                                connectID = connectID[:1].upper() + connectID[1:]
                                 connectFolder = connectID
                             else:
                                 connectID = connectID.upper()

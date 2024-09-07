@@ -78,6 +78,9 @@ giant-tree:
       y: 248
 pazuzu-tower:
   1f:
+    exit:
+      x: 208
+      y: 462
     2f:
       - x: 264
         y: 374
