@@ -2,49 +2,49 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Floor 1",
+      "title": "Floor 1F",
       "content": {
         "type": "map",
         "maps": ["pazuzu-tower-1f"]
       }
     },
     {
-      "title": "Floor 2",
+      "title": "Floor 2F",
       "content": {
         "type": "map",
         "maps": ["pazuzu-tower-2f"]
       }
     },
     {
-      "title": "Floor 3",
+      "title": "Floor 3F",
       "content": {
         "type": "map",
         "maps": ["pazuzu-tower-3f"]
       }
     },
     {
-      "title": "Floor 4",
+      "title": "Floor 4F",
       "content": {
         "type": "map",
         "maps": ["pazuzu-tower-4f"]
       }
     },
     {
-      "title": "Floor 5",
+      "title": "Floor 5F",
       "content": {
         "type": "map",
         "maps": ["pazuzu-tower-5f"]
       }
     },
     {
-      "title": "Floor 6",
+      "title": "Floor 6F",
       "content": {
         "type": "map",
         "maps": ["pazuzu-tower-6f"]
       }
     },
     {
-      "title": "Floor 7",
+      "title": "Floor 7F",
       "content": {
         "type": "map",
         "maps": ["pazuzu-tower-7f"]
