@@ -6,7 +6,8 @@ from yaml import CLoader as Loader, CDumper as Dumper
 
 for region in [
     "earth",
-    "water"
+    "water",
+    "wind"
 ]:
     with open(
         os.path.join(
@@ -69,39 +70,42 @@ for region in [
                     )
                 )
                 annotatedImg = annotatedImg.convert("RGBA")
-                for [connectID, connection] in connections.items():
-                    if connectID not in ["note", "exit"]:
-                        connectFolder = ""
-                        if connectID == "boss":
-                            connectID = "Boss"
-                            connectFolder = connectID
-                        else:
-                            connectID = connectID.upper()
-                            connectFolder = connectID[:2]
-                        connectFolder = connectFolder.lower()
-                        connectImg = Image.open(
-                            os.path.join(
-                                ".",
-                                "images",
-                                "icons",
-                                connectFolder,
-                                "icon" + connectID + ".png"
+                for [connectID, connections] in connections.items():
+                    if not isinstance(connections, list):
+                        connections = [connections]
+                    for connection in connections:
+                        if connectID not in ["note", "exit"]:
+                            connectFolder = ""
+                            if connectID == "boss":
+                                connectID = "Boss"
+                                connectFolder = connectID
+                            else:
+                                connectID = connectID.upper()
+                                connectFolder = connectID[:2]
+                            connectFolder = connectFolder.lower()
+                            connectImg = Image.open(
+                                os.path.join(
+                                    ".",
+                                    "images",
+                                    "icons",
+                                    connectFolder,
+                                    "icon" + connectID + ".png"
+                                )
                             )
-                        )
-                        connectSize = (32,32)
-                        connectImg = connectImg.resize(
-                            connectSize,
-                            Image.Resampling.NEAREST
-                        )
-                        annotatedImg.paste(
-                            connectImg,
-                            (
-                                int(connection["x"] - (connectSize[0] / 2)),
-                                int(connection["y"] - (connectSize[1] / 2))
-                            ),
-                            connectImg
-                        )
-                        print(dungeonName, floorID, connectID, connection)
+                            connectSize = (32,32)
+                            connectImg = connectImg.resize(
+                                connectSize,
+                                Image.Resampling.NEAREST
+                            )
+                            annotatedImg.paste(
+                                connectImg,
+                                (
+                                    int(connection["x"] - (connectSize[0] / 2)),
+                                    int(connection["y"] - (connectSize[1] / 2))
+                                ),
+                                connectImg
+                            )
+                            print(dungeonName, floorID, connectID, connection)
                 annotatedImg.save(
                     os.path.join(
                         destPath,

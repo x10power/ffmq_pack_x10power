@@ -2,49 +2,49 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Floor 1",
+      "title": "Floor 1F",
       "content": {
         "type": "map",
         "maps": ["giant-tree-1f"]
       }
     },
     {
-      "title": "Floor 2",
+      "title": "Floor 2F",
       "content": {
         "type": "map",
         "maps": ["giant-tree-2f"]
       }
     },
     {
-      "title": "Floor 2a",
+      "title": "Floor 2Fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-2fa"]
       }
     },
     {
-      "title": "Floor 3",
+      "title": "Floor 3F",
       "content": {
         "type": "map",
         "maps": ["giant-tree-3f"]
       }
     },
     {
-      "title": "Floor 3a",
+      "title": "Floor 3Fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-3fa"]
       }
     },
     {
-      "title": "Floor 4",
+      "title": "Floor 4F",
       "content": {
         "type": "map",
         "maps": ["giant-tree-4f"]
       }
     },
     {
-      "title": "Floor 4a",
+      "title": "Floor 4Fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-4fa"]
@@ -54,7 +54,7 @@
       "title": "Boss",
       "content": {
         "type": "map",
-        "maps": ["giant-tree-5f"]
+        "maps": ["giant-tree-boss"]
       }
     }
   ]
