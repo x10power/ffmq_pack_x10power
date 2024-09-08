@@ -1,7 +1,7 @@
 [
   {
     "name": "level-forest-restored",
-    "img": "images/maps/settlements/level-forest/level-forest-restored.png",
+    "img": "images/maps/dungeons/level-forest/level-forest-restored.png",
     "location_border_thickness": 1,
     "location_size": 16
   }

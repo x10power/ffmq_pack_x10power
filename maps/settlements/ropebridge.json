@@ -1,7 +1,7 @@
 [
   {
-    "name": "rope-bridge-ow",
-    "img": "images/maps/settlements/rope-bridge/rope-bridge-ow.png",
+    "name": "rope-bridge-overworld",
+    "img": "images/maps/settlements/rope-bridge/rope-bridge-overworld.png",
     "location_border_thickness": 1,
     "location_size": 16
   }

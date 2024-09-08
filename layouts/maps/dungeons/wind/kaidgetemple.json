@@ -1,11 +1,11 @@
-{"settlements_windia": {
+{"maps_kaidge_temple": {
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Room Overworld",
+      "title": "Room Standard",
       "content": {
         "type": "map",
-        "maps": ["windia-overworld"]
+        "maps": ["kaidge-temple-standard"]
       }
     }
   ]

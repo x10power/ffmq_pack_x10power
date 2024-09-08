@@ -10,6 +10,14 @@
       }
     },
     {
+      "title": "Mount Gale",
+      "icon": "images/bosstokens/mountgale.png",
+      "content": {
+        "type": "layout",
+        "key": "maps_mount_gale"
+      }
+    },
+    {
       "title": "Pazuzu's Tower",
       "icon": "images/coins/coin_sky.png",
       "content": {

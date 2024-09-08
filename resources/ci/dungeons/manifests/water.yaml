@@ -23,6 +23,11 @@ wintry-cave:
     1f:
       x: 353
       y: 105
+falls-basin:
+  solution:
+    exit:
+      x: 248
+      y: 424
 ice-pyramid:
   1f:
     exit:

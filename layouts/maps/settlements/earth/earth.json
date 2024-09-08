@@ -2,14 +2,6 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Level Forest",
-      "icon": "images/bosstokens/levelforest.png",
-      "content": {
-        "type": "layout",
-        "key": "settlements_level_forest"
-      }
-    },
-    {
       "title": "Foresta",
       "icon": "images/party/kaeli.gif",
       "content": {

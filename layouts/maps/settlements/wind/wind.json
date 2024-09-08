@@ -18,14 +18,6 @@
       }
     },
     {
-      "title": "Mount Gale",
-      "icon": "images/bosstokens/mountgale.png",
-      "content": {
-        "type": "layout",
-        "key": "settlements_mount_gale"
-      }
-    },
-    {
       "title": "Rope Bridge",
       "icon": "images/bosstokens/ropebridge.png",
       "content": {

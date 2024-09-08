@@ -1,7 +1,7 @@
 [
   {
-    "name": "windia-ow",
-    "img": "images/maps/settlements/windia/windia-ow.png",
+    "name": "windia-overworld",
+    "img": "images/maps/settlements/windia/windia-overworld.png",
     "location_border_thickness": 1,
     "location_size": 16
   }

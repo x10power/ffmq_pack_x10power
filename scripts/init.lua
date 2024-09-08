@@ -81,23 +81,22 @@ if string.find(variant, "map") then
 
   -- Dungeon Maps
   dungeons = {
-    "settlements/levelforest",
     "settlements/foresta",
 
-    "settlements/fallsbasin",
     "settlements/aquaria",
 
     "settlements/fireburg",
 
     "settlements/aliveforest",
     "settlements/kaidgetemple",
-    "settlements/mountgale",
     "settlements/ropebridge",
     "settlements/windia",
 
+    "dungeons/levelforest",
     "dungeons/bonedungeon",
 
     "dungeons/wintrycave",
+    "dungeons/fallsbasin",
     "dungeons/icepyramid",
 
     "dungeons/mine",
@@ -107,6 +106,7 @@ if string.find(variant, "map") then
     "dungeons/doomcastle",
 
     "dungeons/gianttree",
+    "dungeons/mountgale",
     "dungeons/macship",
     "dungeons/pazuzutower"
   }
@@ -117,11 +117,9 @@ if string.find(variant, "map") then
   -- Map Layouts
   -- Dungeon Maps
   dungMaps = {
-    "settlements/earth/levelforest",
     "settlements/earth/foresta",
     "settlements/earth/earth",
 
-    "settlements/water/fallsbasin",
     "settlements/water/aquaria",
     "settlements/water/water",
 
@@ -130,15 +128,16 @@ if string.find(variant, "map") then
 
     "settlements/wind/aliveforest",
     "settlements/wind/kaidgetemple",
-    "settlements/wind/mountgale",
     "settlements/wind/ropebridge",
     "settlements/wind/windia",
     "settlements/wind/wind",
 
+    "dungeons/earth/levelforest",
     "dungeons/earth/bonedungeon",
     "dungeons/earth/earth",
 
     "dungeons/water/wintrycave",
+    "dungeons/water/fallsbasin",
     "dungeons/water/icepyramid",
     "dungeons/water/water",
 
@@ -148,6 +147,7 @@ if string.find(variant, "map") then
     "dungeons/fire/fire",
 
     "dungeons/wind/gianttree",
+    "dungeons/wind/mountgale",
     "dungeons/wind/pazuzutower",
     "dungeons/wind/wind",
 

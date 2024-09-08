@@ -10,6 +10,14 @@
       }
     },
     {
+      "title": "Falls Basin",
+      "icon": "images/bosstokens/fallsbasin.png",
+      "content": {
+        "type": "layout",
+        "key": "maps_falls_basin"
+      }
+    },
+    {
       "title": "Ice Pyramid",
       "icon": "images/coins/coin_river.png",
       "content": {

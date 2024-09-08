@@ -8,20 +8,15 @@ kaidge-temple:
     exit:
       x: 200
       y: 424
-mount-gale:
-  ow:
-    exit:
-      x: 0
-      y: 0
 rope-bridge:
-  ow:
+  overworld:
     exit:
       - x: 128
         y: 204
       - x: 960
         y: 204
 windia:
-  ow:
+  overworld:
     exit:
       x: 204
       y: 624

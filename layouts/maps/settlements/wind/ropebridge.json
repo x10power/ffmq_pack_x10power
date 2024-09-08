@@ -2,10 +2,10 @@
   "type": "tabbed",
   "tabs": [
     {
-      "title": "Room Ow",
+      "title": "Room Overworld",
       "content": {
         "type": "map",
-        "maps": ["rope-bridge-ow"]
+        "maps": ["rope-bridge-overworld"]
       }
     }
   ]
