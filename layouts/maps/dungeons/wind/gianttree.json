@@ -1,79 +1,61 @@
-{
-  "maps_giant_tree": {
-    "type": "tabbed",
-    "tabs": [
-      {
-        "title": "Floor 1",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-1f"
-          ]
-        }
-      },
-      {
-        "title": "Floor 2",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-2f"
-          ]
-        }
-      },
-      {
-        "title": "Room 2fa",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-2fa"
-          ]
-        }
-      },
-      {
-        "title": "Floor 3",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-3f"
-          ]
-        }
-      },
-      {
-        "title": "Room 3fa",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-3fa"
-          ]
-        }
-      },
-      {
-        "title": "Floor 4",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-4f"
-          ]
-        }
-      },
-      {
-        "title": "Room 4fa",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-4fa"
-          ]
-        }
-      },
-      {
-        "title": "Boss",
-        "content": {
-          "type": "map",
-          "maps": [
-            "giant-tree-boss"
-          ]
-        }
+{"maps_giant_tree": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Floor 1",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-1f"]
       }
-    ]
-  }
-}
+    },
+    {
+      "title": "Floor 2",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-2f"]
+      }
+    },
+    {
+      "title": "Room 2fa",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-2fa"]
+      }
+    },
+    {
+      "title": "Floor 3",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-3f"]
+      }
+    },
+    {
+      "title": "Room 3fa",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-3fa"]
+      }
+    },
+    {
+      "title": "Floor 4",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-4f"]
+      }
+    },
+    {
+      "title": "Room 4fa",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-4fa"]
+      }
+    },
+    {
+      "title": "Boss",
+      "content": {
+        "type": "map",
+        "maps": ["giant-tree-boss"]
+      }
+    }
+  ]
+}}

@@ -1,70 +1,54 @@
-{
-  "maps_doom_castle": {
-    "type": "tabbed",
-    "tabs": [
-      {
-        "title": "Basement B2",
-        "content": {
-          "type": "map",
-          "maps": [
-            "doom-castle-b2"
-          ]
-        }
-      },
-      {
-        "title": "Stairs",
-        "content": {
-          "type": "map",
-          "maps": [
-            "doom-castle-stairs"
-          ]
-        }
-      },
-      {
-        "title": "Floor 4",
-        "content": {
-          "type": "map",
-          "maps": [
-            "doom-castle-4f"
-          ]
-        }
-      },
-      {
-        "title": "Floor 5",
-        "content": {
-          "type": "map",
-          "maps": [
-            "doom-castle-5f"
-          ]
-        }
-      },
-      {
-        "title": "Floor 6",
-        "content": {
-          "type": "map",
-          "maps": [
-            "doom-castle-6f"
-          ]
-        }
-      },
-      {
-        "title": "Floor 7",
-        "content": {
-          "type": "map",
-          "maps": [
-            "doom-castle-7f"
-          ]
-        }
-      },
-      {
-        "title": "Boss",
-        "content": {
-          "type": "map",
-          "maps": [
-            "doom-castle-boss"
-          ]
-        }
+{"maps_doom_castle": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Basement B2",
+      "content": {
+        "type": "map",
+        "maps": ["doom-castle-b2"]
       }
-    ]
-  }
-}
+    },
+    {
+      "title": "Stairs",
+      "content": {
+        "type": "map",
+        "maps": ["doom-castle-stairs"]
+      }
+    },
+    {
+      "title": "Floor 4",
+      "content": {
+        "type": "map",
+        "maps": ["doom-castle-4f"]
+      }
+    },
+    {
+      "title": "Floor 5",
+      "content": {
+        "type": "map",
+        "maps": ["doom-castle-5f"]
+      }
+    },
+    {
+      "title": "Floor 6",
+      "content": {
+        "type": "map",
+        "maps": ["doom-castle-6f"]
+      }
+    },
+    {
+      "title": "Floor 7",
+      "content": {
+        "type": "map",
+        "maps": ["doom-castle-7f"]
+      }
+    },
+    {
+      "title": "Boss",
+      "content": {
+        "type": "map",
+        "maps": ["doom-castle-boss"]
+      }
+    }
+  ]
+}}

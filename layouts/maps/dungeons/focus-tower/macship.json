@@ -1,34 +1,26 @@
-{
-  "maps_mac_ship": {
-    "type": "tabbed",
-    "tabs": [
-      {
-        "title": "Deck",
-        "content": {
-          "type": "map",
-          "maps": [
-            "mac-ship-deck"
-          ]
-        }
-      },
-      {
-        "title": "Basement B1",
-        "content": {
-          "type": "map",
-          "maps": [
-            "mac-ship-b1"
-          ]
-        }
-      },
-      {
-        "title": "Basement B2",
-        "content": {
-          "type": "map",
-          "maps": [
-            "mac-ship-b2"
-          ]
-        }
+{"maps_mac_ship": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Deck",
+      "content": {
+        "type": "map",
+        "maps": ["mac-ship-deck"]
       }
-    ]
-  }
-}
+    },
+    {
+      "title": "Basement B1",
+      "content": {
+        "type": "map",
+        "maps": ["mac-ship-b1"]
+      }
+    },
+    {
+      "title": "Basement B2",
+      "content": {
+        "type": "map",
+        "maps": ["mac-ship-b2"]
+      }
+    }
+  ]
+}}

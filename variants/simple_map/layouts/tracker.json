@@ -1,0 +1,10 @@
+{"tracker_default": {
+  "note": "Default tracker view",
+  "type": "container",
+  "h_alignment": "center",
+  "width": 200,
+  "content": {
+    "type": "layout",
+    "key": "tracker_horizontal"
+  }
+}}

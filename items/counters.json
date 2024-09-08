@@ -44,7 +44,8 @@
   {
     "name": "SkyCoinShard-40",
     "type": "consumable",
-    "img": "images/coins/coin_sky_shard.png",
+    "img": "images/coins/coin_sky.png",
+    "img_mods": "overlay|images/coins/coin_sky_shroud.png",
     "codes": "skycoinshard40",
     "max_quantity": 40
   }
