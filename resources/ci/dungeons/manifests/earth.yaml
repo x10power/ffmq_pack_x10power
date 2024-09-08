@@ -45,11 +45,11 @@ bone-dungeon:
       x: 271
       y: 509
     b2c:
-      x: 295
+      x: 255
       y: 253
     b2d:
       x: 63
-      y: 109
+      y: 189
     boss:
       x: 159
       y: 29
