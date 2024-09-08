@@ -1,0 +1,12 @@
+{"settlements_aquaria": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Restored",
+      "content": {
+        "type": "map",
+        "maps": ["aquaria-restored"]
+      }
+    }
+  ]
+}}

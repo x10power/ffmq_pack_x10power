@@ -1,0 +1,12 @@
+{"settlements_falls_basin": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Solution",
+      "content": {
+        "type": "map",
+        "maps": ["falls-basin-solution"]
+      }
+    }
+  ]
+}}

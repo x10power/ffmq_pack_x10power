@@ -81,42 +81,82 @@ if string.find(variant, "map") then
 
   -- Dungeon Maps
   dungeons = {
-    "bonedungeon",
-    "wintrycave",
-    "icepyramid",
-    "mine",
-    "volcano",
-    "lavadome",
-    "doomcastle",
-    "gianttree",
-    "macship",
-    "pazuzutower"
+    "settlements/levelforest",
+    "settlements/foresta",
+
+    "settlements/fallsbasin",
+    "settlements/aquaria",
+
+    "settlements/fireburg",
+
+    "settlements/aliveforest",
+    "settlements/kaidgetemple",
+    "settlements/mountgale",
+    "settlements/ropebridge",
+    "settlements/windia",
+
+    "dungeons/bonedungeon",
+
+    "dungeons/wintrycave",
+    "dungeons/icepyramid",
+
+    "dungeons/mine",
+    "dungeons/volcano",
+    "dungeons/lavadome",
+
+    "dungeons/doomcastle",
+
+    "dungeons/gianttree",
+    "dungeons/macship",
+    "dungeons/pazuzutower"
   }
   for _, dungCat in ipairs(dungeons) do
-    Tracker:AddMaps("maps/dungeons/" .. dungCat .. ".json")
+    Tracker:AddMaps("maps/" .. dungCat .. ".json")
   end
 
   -- Map Layouts
   -- Dungeon Maps
   dungMaps = {
-    "earth/bonedungeon",
-    "earth/earth",
-    "water/wintrycave",
-    "water/icepyramid",
-    "water/water",
-    "fire/mine",
-    "fire/volcano",
-    "fire/lavadome",
-    "fire/fire",
-    "wind/gianttree",
-    "wind/pazuzutower",
-    "wind/wind",
-    "focus-tower/doomcastle",
-    "focus-tower/macship",
-    "focus-tower/focus-tower"
+    "settlements/earth/levelforest",
+    "settlements/earth/foresta",
+    "settlements/earth/earth",
+
+    "settlements/water/fallsbasin",
+    "settlements/water/aquaria",
+    "settlements/water/water",
+
+    "settlements/fire/fireburg",
+    "settlements/fire/fire",
+
+    "settlements/wind/aliveforest",
+    "settlements/wind/kaidgetemple",
+    "settlements/wind/mountgale",
+    "settlements/wind/ropebridge",
+    "settlements/wind/windia",
+    "settlements/wind/wind",
+
+    "dungeons/earth/bonedungeon",
+    "dungeons/earth/earth",
+
+    "dungeons/water/wintrycave",
+    "dungeons/water/icepyramid",
+    "dungeons/water/water",
+
+    "dungeons/fire/mine",
+    "dungeons/fire/volcano",
+    "dungeons/fire/lavadome",
+    "dungeons/fire/fire",
+
+    "dungeons/wind/gianttree",
+    "dungeons/wind/pazuzutower",
+    "dungeons/wind/wind",
+
+    "dungeons/focus-tower/doomcastle",
+    "dungeons/focus-tower/macship",
+    "dungeons/focus-tower/focus-tower"
   }
   for _, dungMap in pairs(dungMaps) do
-    Tracker:AddLayouts("layouts/maps/dungeons/" .. dungMap .. ".json")
+    Tracker:AddLayouts("layouts/maps/" .. dungMap .. ".json")
   end
   Tracker:AddLayouts("layouts/maps/world.json")
 

@@ -1,0 +1,27 @@
+alive-forest:
+  restored:
+    exit:
+      x: 32
+      y: 216
+kaidge-temple:
+  standard:
+    exit:
+      x: 200
+      y: 424
+mount-gale:
+  ow:
+    exit:
+      x: 0
+      y: 0
+rope-bridge:
+  ow:
+    exit:
+      - x: 128
+        y: 204
+      - x: 960
+        y: 204
+windia:
+  ow:
+    exit:
+      x: 204
+      y: 624

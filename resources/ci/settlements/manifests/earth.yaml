@@ -1,0 +1,14 @@
+level-forest:
+  restored:
+    exit:
+      - x: 336
+        y: 480
+      - x: 336
+        y: 32
+      - x: 586
+        y: 232
+foresta:
+  restored:
+    exit:
+      x: 176
+      y: 450

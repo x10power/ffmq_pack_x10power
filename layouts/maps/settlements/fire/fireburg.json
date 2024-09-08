@@ -1,0 +1,12 @@
+{"settlements_fireburg": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Standard",
+      "content": {
+        "type": "map",
+        "maps": ["fireburg-standard"]
+      }
+    }
+  ]
+}}

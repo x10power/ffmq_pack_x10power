@@ -1,0 +1,21 @@
+{"settlements_water": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Falls Basin",
+      "icon": "images/bosstokens/fallsbasin.png",
+      "content": {
+        "type": "layout",
+        "key": "settlements_falls_basin"
+      }
+    },
+    {
+      "title": "Aquaria",
+      "icon": "images/party/phoebe.gif",
+      "content": {
+        "type": "layout",
+        "key": "settlements_aquaria"
+      }
+    }
+  ]
+}}

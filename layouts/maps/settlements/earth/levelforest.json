@@ -1,0 +1,12 @@
+{"settlements_level_forest": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Restored",
+      "content": {
+        "type": "map",
+        "maps": ["level-forest-restored"]
+      }
+    }
+  ]
+}}

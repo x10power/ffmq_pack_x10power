@@ -1,0 +1,10 @@
+falls-basin:
+  solution:
+    exit:
+      x: 248
+      y: 424
+aquaria:
+  restored:
+    exit:
+      x: 384
+      y: 432

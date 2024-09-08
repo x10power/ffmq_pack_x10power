@@ -1,0 +1,12 @@
+{"settlements_mount_gale": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Ow",
+      "content": {
+        "type": "map",
+        "maps": ["mount-gale-ow"]
+      }
+    }
+  ]
+}}

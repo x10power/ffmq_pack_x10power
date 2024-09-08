@@ -10,6 +10,46 @@
       }
     },
     {
+      "title": "Settlements",
+      "content": {
+        "type": "tabbed",
+        "tabs": [
+          {
+            "title": "Earth",
+            "icon": "images/crystals/crystal_earth.png",
+            "content": {
+              "type": "layout",
+              "key": "settlements_earth"
+            }
+          },
+          {
+            "title": "Water",
+            "icon": "images/crystals/crystal_water.png",
+            "content": {
+              "type": "layout",
+              "key": "settlements_water"
+            }
+          },
+          {
+            "title": "Fire",
+            "icon": "images/crystals/crystal_fire.png",
+            "content": {
+              "type": "layout",
+              "key": "settlements_fire"
+            }
+          },
+          {
+            "title": "Wind",
+            "icon": "images/crystals/crystal_wind.png",
+            "content": {
+              "type": "layout",
+              "key": "settlements_wind"
+            }
+          }
+        ]
+      }
+    },
+    {
       "title": "Dungeons",
       "content": {
         "type": "tabbed",

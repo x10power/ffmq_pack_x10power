@@ -1,0 +1,12 @@
+{"settlements_rope_bridge": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Ow",
+      "content": {
+        "type": "map",
+        "maps": ["rope-bridge-ow"]
+      }
+    }
+  ]
+}}
