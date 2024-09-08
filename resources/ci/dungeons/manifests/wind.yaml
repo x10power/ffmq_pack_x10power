@@ -79,8 +79,8 @@ giant-tree:
 mount-gale:
   overworld:
     exit:
-      x: 0
-      y: 0
+      x: 114
+      y: 660
 pazuzu-tower:
   1f:
     exit:

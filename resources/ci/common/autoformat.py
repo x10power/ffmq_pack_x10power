@@ -6,7 +6,7 @@ import pyjson5 as json
 import tempfile
 from pathlib import Path
 
-import resources.ci.common.format_json as format_json
+from . import format_json as format_json
 
 def autoformat(test=False):
     made_changes = False

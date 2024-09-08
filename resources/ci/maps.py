@@ -6,6 +6,8 @@ import re
 from yaml import load, dump
 from yaml import CLoader as Loader, CDumper as Dumper
 
+import common.autoformat as autoformat
+
 paths = [
     os.path.join(".","resources","ci","dungeons","manifests"),
     os.path.join(".","resources","ci","settlements","manifests")
@@ -194,3 +196,5 @@ for seekPath in paths:
                             }
                         , indent=2))
                         tabsJSON.write("\n")
+
+autoformat.autoformat()
