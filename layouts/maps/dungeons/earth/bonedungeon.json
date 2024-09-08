@@ -1,88 +1,68 @@
-{
-  "maps_bone_dungeon": {
-    "type": "tabbed",
-    "tabs": [
-      {
-        "title": "Floor 1",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-1f"
-          ]
-        }
-      },
-      {
-        "title": "Basement B1",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-b1"
-          ]
-        }
-      },
-      {
-        "title": "Room B1a",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-b1a"
-          ]
-        }
-      },
-      {
-        "title": "Basement B2",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-b2"
-          ]
-        }
-      },
-      {
-        "title": "Room B2a",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-b2a"
-          ]
-        }
-      },
-      {
-        "title": "Room B2b",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-b2b"
-          ]
-        }
-      },
-      {
-        "title": "Room B2c",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-b2c"
-          ]
-        }
-      },
-      {
-        "title": "Room B2d",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-b2d"
-          ]
-        }
-      },
-      {
-        "title": "Boss",
-        "content": {
-          "type": "map",
-          "maps": [
-            "bone-dungeon-boss"
-          ]
-        }
+{"maps_bone_dungeon": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Floor 1",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-1f"]
       }
-    ]
-  }
-}
+    },
+    {
+      "title": "Basement B1",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-b1"]
+      }
+    },
+    {
+      "title": "Room B1a",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-b1a"]
+      }
+    },
+    {
+      "title": "Basement B2",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-b2"]
+      }
+    },
+    {
+      "title": "Room B2a",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-b2a"]
+      }
+    },
+    {
+      "title": "Room B2b",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-b2b"]
+      }
+    },
+    {
+      "title": "Room B2c",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-b2c"]
+      }
+    },
+    {
+      "title": "Room B2d",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-b2d"]
+      }
+    },
+    {
+      "title": "Boss",
+      "content": {
+        "type": "map",
+        "maps": ["bone-dungeon-boss"]
+      }
+    }
+  ]
+}}

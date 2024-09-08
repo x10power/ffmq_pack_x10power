@@ -48,36 +48,39 @@ for region in [
                         )
                         floorTitle = ""
                         floorNum = floorID
-                        if floorID[:1].upper() == "B":
-                            # basement
-                            floorNum = "B" + floorID[1:]
-                            floorTitle += "Basement" if len(floorNum) == 2 else "Room"
-                        else:
-                            # floor
-                            # ends with F: nuke F
-                            if floorNum[len(floorNum)-1:] == "f":
-                                # ends with FF: keep F
-                                if floorNum[len(floorNum)-2:] == "ff":
-                                    floorTitle = f"Room {floorNum}"
+                        if floorID.lower() != "boss":
+                            if floorID[:1].upper() == "B":
+                                # basement
+                                floorNum = "B" + floorID[1:]
+                                floorTitle += "Basement" if len(floorNum) == 2 else "Room"
+                            else:
+                                # floor
+                                # ends with F: nuke F
+                                if floorNum[len(floorNum)-1:] == "f":
+                                    # ends with FF: keep F
+                                    if floorNum[len(floorNum)-2:] == "ff":
+                                        floorTitle = "Room"
+                                    else:
+                                        floorNum = floorNum[:len(floorNum)-1]
                                 else:
-                                    floorNum = floorNum[:len(floorNum)-1]
-                            if len(floorNum) == 1:
-                                floorTitle += "Floor"
-                            elif floorNum[:1].upper() == "A":
-                                floorTitle += "Area"
-                                floorNum = floorNum[1:]
-                            elif floorNum.lower() == "outside":
-                                floorNum = "Outside"
-                            elif len(floorNum) != 1:
-                                floorTitle += "Room"
-                        floorTitle += f" {floorNum}"
-                        if floorID in [
-                            "boss",
+                                    floorTitle = "Room"
+                        capSet = 1
+                        if re.search(r'\d', floorNum):
+                            capSet = 2
+                        if len(floorNum) == 1:
+                            floorTitle = "Floor"
+                        elif floorNum[:1].upper() == "A":
+                            floorTitle = "Area"
+                            floorNum = floorNum[1:]
+                        elif floorNum.lower() in [
                             "deck",
-                            "exit",
+                            "outside",
                             "stairs"
                         ]:
-                            floorTitle = floorID[:1].upper() + floorID[1:]
+                            floorTitle = floorNum[:1].upper() + floorNum[1:]
+                            floorNum = ""
+                        floorTitle += " " + floorNum[:capSet].upper() + floorNum[capSet:].lower()
+
                         tabsData.append(
                             {
                                 "title": floorTitle.strip(),
@@ -119,6 +122,7 @@ for region in [
                                                 connectSize,
                                                 (0,0,0,0)
                                             ) as connectImg:
+                                                bold = True
                                                 d = ImageDraw.Draw(connectImg)
                                                 d.ellipse(
                                                     (
@@ -142,8 +146,8 @@ for region in [
                                                     fill=(255,255,255,255),
                                                     anchor="mm",
                                                     font_size=16,
-                                                    stroke_width=1,
-                                                    stroke_fill=(255,255,255,255)
+                                                    stroke_width=1 if bold else 0,
+                                                    stroke_fill=(0,0,0,255)
                                                 )
                                                 annotatedImg.paste(
                                                     connectImg,
