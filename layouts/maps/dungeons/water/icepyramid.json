@@ -1,54 +1,70 @@
-{"maps_ice_pyramid": {
-  "type": "tabbed",
-  "tabs": [
-    {
-      "title": "Floor 1",
-      "content": {
-        "type": "map",
-        "maps": ["ice-pyramid-1f"]
+{
+  "maps_ice_pyramid": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Floor 1",
+        "content": {
+          "type": "map",
+          "maps": [
+            "ice-pyramid-1f"
+          ]
+        }
+      },
+      {
+        "title": "Floor 2",
+        "content": {
+          "type": "map",
+          "maps": [
+            "ice-pyramid-2f"
+          ]
+        }
+      },
+      {
+        "title": "Floor 3",
+        "content": {
+          "type": "map",
+          "maps": [
+            "ice-pyramid-3f"
+          ]
+        }
+      },
+      {
+        "title": "Floor 4",
+        "content": {
+          "type": "map",
+          "maps": [
+            "ice-pyramid-4f"
+          ]
+        }
+      },
+      {
+        "title": "Floor 5",
+        "content": {
+          "type": "map",
+          "maps": [
+            "ice-pyramid-5f"
+          ]
+        }
+      },
+      {
+        "title": "Basement B1",
+        "content": {
+          "type": "map",
+          "maps": [
+            "ice-pyramid-b1"
+          ]
+        }
+      },
+      {
+        "title": "Boss",
+        "content": {
+          "type": "map",
+          "maps": [
+            "ice-pyramid-boss"
+          ]
+        }
       }
-    },
-    {
-      "title": "Floor 2",
-      "content": {
-        "type": "map",
-        "maps": ["ice-pyramid-2f"]
-      }
-    },
-    {
-      "title": "Floor 3",
-      "content": {
-        "type": "map",
-        "maps": ["ice-pyramid-3f"]
-      }
-    },
-    {
-      "title": "Floor 4",
-      "content": {
-        "type": "map",
-        "maps": ["ice-pyramid-4f"]
-      }
-    },
-    {
-      "title": "Floor 5",
-      "content": {
-        "type": "map",
-        "maps": ["ice-pyramid-5f"]
-      }
-    },
-    {
-      "title": "Basement B1",
-      "content": {
-        "type": "map",
-        "maps": ["ice-pyramid-b1"]
-      }
-    },
-    {
-      "title": "Boss",
-      "content": {
-        "type": "map",
-        "maps": ["ice-pyramid-boss"]
-      }
-    }
-  ]
-}}
+    ]
+  }
+}

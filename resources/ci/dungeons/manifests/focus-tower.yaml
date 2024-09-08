@@ -56,7 +56,7 @@ doom-castle:
   stairs:
     b2:
       x: 56
-      y: 552
+      y: 536
     4f:
       x: 56
       y: 424

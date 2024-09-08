@@ -1,6 +1,7 @@
 import json
 import os
-from PIL import Image
+from PIL import Image, ImageDraw
+import re
 from yaml import load, dump
 from yaml import CLoader as Loader, CDumper as Dumper
 
@@ -88,7 +89,7 @@ for region in [
                                 }
                             }
                         )
-                        annotatedImg = Image.open(
+                        with Image.open(
                             os.path.join(
                                 ".",
                                 "resources",
@@ -100,61 +101,65 @@ for region in [
                                 dungeonName,
                                 dungeonName + "-" + floorID + ".png"
                             )
-                        )
-                        annotatedImg = annotatedImg.convert("RGBA")
-                        for [connectID, destinations] in connections.items():
-                            if not isinstance(destinations, list):
-                                destinations = [destinations]
-                            for destination in destinations:
-                                if destination:
-                                    if connectID not in ["note"]:
-                                        if connectID[:1].upper() == "A":
-                                            connectID = connectID[1:2] + "f" + connectID[2:]
-                                        connectFolder = ""
-                                        if connectID.lower() in [
-                                            "boss",
-                                            "deck",
-                                            "exit",
-                                            "stairs"
-                                        ]:
-                                            connectID = connectID[:1].upper() + connectID[1:]
-                                            connectFolder = connectID
-                                        else:
-                                            connectID = connectID.upper()
-                                            connectFolder = connectID[:2]
-                                        connectFolder = connectFolder.lower()
-                                        connectImg = Image.open(
-                                            os.path.join(
-                                                ".",
-                                                "resources",
-                                                "app",
-                                                "images",
-                                                "maps",
-                                                "icons",
-                                                connectFolder,
-                                                "icon" + connectID + ".png"
-                                            )
-                                        )
-                                        connectSize = (32,32)
-                                        connectImg = connectImg.resize(
-                                            connectSize,
-                                            Image.Resampling.NEAREST
-                                        )
-                                        annotatedImg.paste(
-                                            connectImg,
-                                            (
-                                                int(destination["x"] - (connectSize[0] / 2)),
-                                                int(destination["y"] - (connectSize[1] / 2))
-                                            ),
-                                            connectImg
-                                        )
-                                        print(dungeonName, floorID, connectID, destination)
-                        annotatedImg.save(
-                            os.path.join(
-                                destPath,
-                                dungeonName + "-" + floorID + ".png"
+                        ) as annotatedImg:
+                            annotatedImg = annotatedImg.convert("RGBA")
+                            for [connectID, destinations] in connections.items():
+                                if not isinstance(destinations, list):
+                                    destinations = [destinations]
+                                for destination in destinations:
+                                    if destination:
+                                        if connectID not in ["note"]:
+                                            capSet = 1
+                                            if re.search(r'\d', connectID):
+                                                capSet = 2
+                                            connectID = connectID[:capSet].upper() + connectID[capSet:].lower()
+                                            connectSize = (40,40)
+                                            with Image.new(
+                                                "RGBA",
+                                                connectSize,
+                                                (0,0,0,0)
+                                            ) as connectImg:
+                                                d = ImageDraw.Draw(connectImg)
+                                                d.ellipse(
+                                                    (
+                                                        0,
+                                                        0,
+                                                        (connectSize[0] - 1),
+                                                        (connectSize[1] - 1)
+                                                    ),
+                                                    fill="red",
+                                                    outline="red"
+                                                )
+                                                connectText = connectID
+                                                if connectText == "Stairs":
+                                                    connectText = "Stair"
+                                                d.text(
+                                                    (
+                                                        int(connectSize[0] / 2),
+                                                        int(connectSize[1] / 2)
+                                                    ),
+                                                    connectText,
+                                                    fill=(255,255,255,255),
+                                                    anchor="mm",
+                                                    font_size=16,
+                                                    stroke_width=1,
+                                                    stroke_fill=(255,255,255,255)
+                                                )
+                                                annotatedImg.paste(
+                                                    connectImg,
+                                                    (
+                                                        int(destination["x"] - (connectSize[0] / 2)),
+                                                        int(destination["y"] - (connectSize[1] / 2))
+                                                    ),
+                                                    connectImg
+                                                )
+                                                print(dungeonName, floorID, connectID, destination)
+                            annotatedImg.save(
+                                os.path.join(
+                                    destPath,
+                                    dungeonName + "-" + floorID + ".png"
+                                )
                             )
-                        )
                 with open(
                     os.path.join(
                         ".",
