@@ -1,0 +1,32 @@
+[
+  {
+    "name": "mine-outside",
+    "img": "images/maps/dungeons/mine/mine-outside.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "mine-a1",
+    "img": "images/maps/dungeons/mine/mine-a1.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "mine-a2",
+    "img": "images/maps/dungeons/mine/mine-a2.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "mine-a3",
+    "img": "images/maps/dungeons/mine/mine-a3.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "mine-a4",
+    "img": "images/maps/dungeons/mine/mine-a4.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  }
+]

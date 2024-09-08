@@ -1,0 +1,52 @@
+{
+  "maps_mine": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Outside",
+        "content": {
+          "type": "map",
+          "maps": [
+            "mine-outside"
+          ]
+        }
+      },
+      {
+        "title": "Area 1",
+        "content": {
+          "type": "map",
+          "maps": [
+            "mine-a1"
+          ]
+        }
+      },
+      {
+        "title": "Area 2",
+        "content": {
+          "type": "map",
+          "maps": [
+            "mine-a2"
+          ]
+        }
+      },
+      {
+        "title": "Area 3",
+        "content": {
+          "type": "map",
+          "maps": [
+            "mine-a3"
+          ]
+        }
+      },
+      {
+        "title": "Area 4",
+        "content": {
+          "type": "map",
+          "maps": [
+            "mine-a4"
+          ]
+        }
+      }
+    ]
+  }
+}
