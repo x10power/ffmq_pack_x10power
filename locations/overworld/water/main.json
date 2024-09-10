@@ -21,6 +21,17 @@
             "name": "Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 1
+          },
+          {
+            "name": "Libra Crest Tile: To Life Temple",
+            "access_rules": ["libracrest", "{}"],
+            "#type": "warp",
+            "chest_opened_img": "images/crests/crest_libra.png",
+            "chest_unopened_img": "images/crests/crest_libra.png",
+            "chest_unavailable_img": "images/crests/crest_libra.png",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_crest",
+            "item_count": 1
           }
         ]
       },
@@ -37,6 +48,17 @@
           {
             "name": "Mysterious Man",
             "chest_unopened_img": "images/chests/oldman_available.png",
+            "item_count": 1
+          },
+          {
+            "name": "Libra Crest Tile: To Libra Temple",
+            "access_rules": ["libracrest", "{}"],
+            "#type": "warp",
+            "chest_opened_img": "images/crests/crest_libra.png",
+            "chest_unopened_img": "images/crests/crest_libra.png",
+            "chest_unavailable_img": "images/crests/crest_libra.png",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_crest",
             "item_count": 1
           }
         ]
@@ -85,6 +107,17 @@
             "name": "East Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
+          },
+          {
+            "name": "Gemini Crest Tile: To Sealed Temple",
+            "access_rules": ["geminicrest", "{}"],
+            "#type": "warp",
+            "chest_opened_img": "images/crests/crest_gemini.png",
+            "chest_unopened_img": "images/crests/crest_gemini.png",
+            "chest_unavailable_img": "images/crests/crest_gemini.png",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_crest",
+            "item_count": 1
           }
         ]
       },

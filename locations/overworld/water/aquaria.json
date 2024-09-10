@@ -30,6 +30,17 @@
         "name": "Spencer's Place",
         "access_rules": ["aquaria_restored"],
         "item_count": 1
+      },
+      {
+        "name": "Gemini Crest Tile: To Fireburg",
+        "access_rules": ["geminicrest", "{}"],
+        "#type": "warp",
+        "chest_opened_img": "images/crests/crest_gemini.png",
+        "chest_unopened_img": "images/crests/crest_gemini.png",
+        "chest_unavailable_img": "images/crests/crest_gemini.png",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_crest",
+        "item_count": 1
       }
     ]
   }

@@ -26,5 +26,10 @@
       {"type": "layout", "key": "crests_grid"},
       {"type": "layout", "key": "coins_grid"}
     ]
+  },
+  "tracker_capture_crest": {
+    "note": "Capture Crest",
+    "type": "array",
+    "content": [{"type": "layout", "key": "crests_grid"}]
   }
 }

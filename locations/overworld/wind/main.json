@@ -96,6 +96,39 @@
             "access_rules": ["claw"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 1
+          },
+          {
+            "name": "Mobius Crest Tile: To Light Temple",
+            "access_rules": ["mobiuscrest", "{}"],
+            "#type": "warp",
+            "chest_opened_img": "images/crests/crest_mobius.png",
+            "chest_unopened_img": "images/crests/crest_mobius.png",
+            "chest_unavailable_img": "images/crests/crest_mobius.png",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_crest",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Light Temple",
+        "map_locations": [{"map": "restored-world", "x": 0, "y": 0}],
+        "sections": [
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Mobius Crest Tile: To Kaidge Temple",
+            "access_rules": ["mobiuscrest", "{}"],
+            "#type": "warp",
+            "chest_opened_img": "images/crests/crest_mobius.png",
+            "chest_unopened_img": "images/crests/crest_mobius.png",
+            "chest_unavailable_img": "images/crests/crest_mobius.png",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_crest",
+            "item_count": 1
           }
         ]
       },

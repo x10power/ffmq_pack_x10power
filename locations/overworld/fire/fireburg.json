@@ -30,8 +30,8 @@
       {
         "name": "Reuben's House: Arion",
         "access_rules": [
-          "rivercoin,megagrenade",
-          "megagrenade,[rivercoin],$fireburg_expert_access"
+          "@Mine/Reuben's Cutscene (Near Dad),rivercoin,megagrenade",
+          "@Mine/Reuben's Cutscene (Near Dad),megagrenade,[rivercoin],$fireburg_expert_access"
         ],
         "#type": "default",
         "item_count": 1
@@ -81,6 +81,28 @@
         "chest_opened_img": "images/party/tristam.gif",
         "capture_item": true,
         "capture_item_layout": "tracker_capture_party",
+        "item_count": 1
+      },
+      {
+        "name": "Gemini Crest Tile: To Aquaria",
+        "access_rules": ["geminicrest", "{}"],
+        "#type": "warp",
+        "chest_opened_img": "images/crests/crest_gemini.png",
+        "chest_unopened_img": "images/crests/crest_gemini.png",
+        "chest_unavailable_img": "images/crests/crest_gemini.png",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_crest",
+        "item_count": 1
+      },
+      {
+        "name": "Mobius Crest Tile: To Windia",
+        "access_rules": ["mobiuscrest", "{}"],
+        "#type": "warp",
+        "chest_opened_img": "images/crests/crest_mobius.png",
+        "chest_unopened_img": "images/crests/crest_mobius.png",
+        "chest_unavailable_img": "images/crests/crest_mobius.png",
+        "capture_item": true,
+        "capture_item_layout": "tracker_capture_crest",
         "item_count": 1
       }
     ]
