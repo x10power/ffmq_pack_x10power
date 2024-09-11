@@ -123,7 +123,8 @@
           },
           {
             "name": "West Box",
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "visibility_rules": [ "setting_shufflebrownbox_yes" ],
+            "access_rules": ["dragonclaw"],
             "#item_count": 1
           },
           {
@@ -134,6 +135,7 @@
           {
             "name": "Dullahan Chest",
             "#type": "chest",
+            "access_rules": ["dragonclaw"],
             "hosted_item": "boss_mountgale",
             "item_count": 1
           }
