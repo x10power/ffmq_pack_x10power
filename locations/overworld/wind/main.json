@@ -91,12 +91,18 @@
         "name": "Kaidge Temple",
         "map_locations": [{"map": "restored-world", "x": 520, "y": 535}],
         "sections": [
-          {
-            "name": "Box",
-            "access_rules": ["claw"],
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "item_count": 1
-          }
+            {
+                "name": "Box",
+                "access_rules": [ "claw" ],
+                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
+                "item_count": 1
+            },
+            {
+                "name": "Light Temple Box",
+                "access_rules": [ "claw,mobius" ],
+                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
+                "item_count": 1
+            }
         ]
       },
       {
@@ -115,28 +121,27 @@
         "access_rules": [],
         "map_locations": [{"map": "restored-world", "x": 775, "y": 475}],
         "sections": [
-          {
-            "name": "Boxes",
-            "clear_as_group": false,
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "item_count": 2
-          },
-          {
-            "name": "West Box",
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "#item_count": 1
-          },
-          {
-            "name": "East Box",
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "#item_count": 1
-          },
-          {
-            "name": "Dullahan Chest",
-            "#type": "chest",
-            "hosted_item": "boss_mountgale",
-            "item_count": 1
-          }
+            {
+                "name": " West Box",
+                "clear_as_group": false,
+                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
+                "access_rules": [ "" ],
+                "item_count": 1
+            },
+            {
+                "name": " East Box",
+                "clear_as_group": false,
+                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
+                "access_rules": [ "dragonclaw" ],
+                "item_count": 1
+            },        
+            {
+                "name": "Dullahan Chest",
+                "#type": "chest",
+                "access_rules": [ "dragonclaw" ],
+                "hosted_item": "boss_mountgale",
+                "item_count": 1
+            }
         ]
       }
     ]
