@@ -115,30 +115,27 @@
         "access_rules": [],
         "map_locations": [{"map": "restored-world", "x": 775, "y": 475}],
         "sections": [
-          {
-            "name": "Boxes",
-            "clear_as_group": false,
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "item_count": 2
-          },
-          {
-            "name": "West Box",
-            "visibility_rules": [ "setting_shufflebrownbox_yes" ],
-            "access_rules": ["dragonclaw"],
-            "#item_count": 1
-          },
-          {
-            "name": "East Box",
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "#item_count": 1
-          },
-          {
-            "name": "Dullahan Chest",
-            "#type": "chest",
-            "access_rules": ["dragonclaw"],
-            "hosted_item": "boss_mountgale",
-            "item_count": 1
-          }
+            {
+                "name": " West Box",
+                "clear_as_group": false,
+                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
+                "access_rules": [ "" ],
+                "item_count": 1
+            },
+            {
+                "name": " East Box",
+                "clear_as_group": false,
+                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
+                "access_rules": [ "dragonclaw" ],
+                "item_count": 1
+            },        
+            {
+                "name": "Dullahan Chest",
+                "#type": "chest",
+                "access_rules": [ "dragonclaw" ],
+                "hosted_item": "boss_mountgale",
+                "item_count": 1
+            }
         ]
       }
     ]
