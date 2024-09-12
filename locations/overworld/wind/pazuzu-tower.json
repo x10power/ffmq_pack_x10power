@@ -152,7 +152,8 @@
           },
           {
             "name": "Crystal of Wind",
-            "hosted_item": "windcrystal"
+            "hosted_item": "windcrystal",
+            "access_rules": ["dragonclaw,axes"]
           }
         ]
       }
