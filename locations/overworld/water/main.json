@@ -25,7 +25,7 @@
           {
             "name": "Libra Crest Tile: To Life Temple",
             "access_rules": ["libracrest", "{}"],
-            "#type": "warp",
+            "#type": "librawarp",
             "chest_opened_img": "images/crests/crest_libra.png",
             "chest_unopened_img": "images/crests/crest_libra.png",
             "chest_unavailable_img": "images/crests/crest_libra.png",
@@ -47,13 +47,14 @@
           },
           {
             "name": "Mysterious Man",
+            "#type": "oldman",
             "chest_unopened_img": "images/chests/oldman_available.png",
             "item_count": 1
           },
           {
             "name": "Libra Crest Tile: To Libra Temple",
             "access_rules": ["libracrest", "{}"],
-            "#type": "warp",
+            "#type": "librawarp",
             "chest_opened_img": "images/crests/crest_libra.png",
             "chest_unopened_img": "images/crests/crest_libra.png",
             "chest_unavailable_img": "images/crests/crest_libra.png",
@@ -111,7 +112,7 @@
           {
             "name": "Gemini Crest Tile: To Sealed Temple",
             "access_rules": ["geminicrest", "{}"],
-            "#type": "warp",
+            "#type": "geminiwarp",
             "chest_opened_img": "images/crests/crest_gemini.png",
             "chest_unopened_img": "images/crests/crest_gemini.png",
             "chest_unavailable_img": "images/crests/crest_gemini.png",

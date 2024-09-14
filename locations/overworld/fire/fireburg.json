@@ -86,7 +86,7 @@
       {
         "name": "Gemini Crest Tile: To Aquaria",
         "access_rules": ["geminicrest", "{}"],
-        "#type": "warp",
+        "#type": "geminiwarp",
         "chest_opened_img": "images/crests/crest_gemini.png",
         "chest_unopened_img": "images/crests/crest_gemini.png",
         "chest_unavailable_img": "images/crests/crest_gemini.png",
@@ -97,7 +97,7 @@
       {
         "name": "Mobius Crest Tile: To Windia",
         "access_rules": ["mobiuscrest", "{}"],
-        "#type": "warp",
+        "#type": "mobiuswarp",
         "chest_opened_img": "images/crests/crest_mobius.png",
         "chest_unopened_img": "images/crests/crest_mobius.png",
         "chest_unavailable_img": "images/crests/crest_mobius.png",

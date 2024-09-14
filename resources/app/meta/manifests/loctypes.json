@@ -44,5 +44,23 @@
   "spencer": {
     "chest_unopened_img": "images/chests/spencer_available.png",
     "moo": "moo"
+  },
+  "geminiwarp": {
+    "chest_unavailable_img": "images/crests/crest_gemini.png",
+    "chest_unopened_img": "images/crests/crest_gemini.png",
+    "chest_opened_img": "images/crests/crest_gemini.png",
+    "moo": "moo"
+  },
+  "librawarp": {
+    "chest_unavailable_img": "images/crests/crest_libra.png",
+    "chest_unopened_img": "images/crests/crest_libra.png",
+    "chest_opened_img": "images/crests/crest_libra.png",
+    "moo": "moo"
+  },
+  "mobiuswarp": {
+    "chest_unavailable_img": "images/crests/crest_mobius.png",
+    "chest_unopened_img": "images/crests/crest_mobius.png",
+    "chest_opened_img": "images/crests/crest_mobius.png",
+    "moo": "moo"
   }
 }

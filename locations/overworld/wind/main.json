@@ -99,8 +99,8 @@
           },
           {
             "name": "Mobius Crest Tile: To Light Temple",
-            "access_rules": ["mobiuscrest", "{}"],
-            "#type": "warp",
+            "access_rules": ["claw,mobiuscrest", "{}"],
+            "#type": "mobiuswarp",
             "chest_opened_img": "images/crests/crest_mobius.png",
             "chest_unopened_img": "images/crests/crest_mobius.png",
             "chest_unavailable_img": "images/crests/crest_mobius.png",
@@ -113,6 +113,9 @@
       {
         "name": "Light Temple",
         "map_locations": [{"map": "restored-world", "x": 0, "y": 0}],
+        "access_rules": [
+          "@Kaidge Temple/Mobius Crest Tile: To Light Temple"
+        ],
         "sections": [
           {
             "name": "Box",
@@ -122,7 +125,7 @@
           {
             "name": "Mobius Crest Tile: To Kaidge Temple",
             "access_rules": ["mobiuscrest", "{}"],
-            "#type": "warp",
+            "#type": "mobiuswarp",
             "chest_opened_img": "images/crests/crest_mobius.png",
             "chest_unopened_img": "images/crests/crest_mobius.png",
             "chest_unavailable_img": "images/crests/crest_mobius.png",
@@ -149,12 +152,6 @@
         "map_locations": [{"map": "restored-world", "x": 775, "y": 475}],
         "sections": [
           {
-            "name": "Boxes",
-            "clear_as_group": false,
-            "visibility_rules": ["setting_shufflebrownbox_yes"],
-            "item_count": 2
-          },
-          {
             "name": "West Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
@@ -162,11 +159,13 @@
           {
             "name": "East Box",
             "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["dragonclaw"],
             "#item_count": 1
           },
           {
             "name": "Dullahan Chest",
             "#type": "chest",
+            "access_rules": ["dragonclaw"],
             "hosted_item": "boss_mountgale",
             "item_count": 1
           }

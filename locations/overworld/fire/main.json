@@ -110,7 +110,7 @@
           {
             "name": "Gemini Crest Tile: To Wintry Temple",
             "access_rules": ["geminicrest", "{}"],
-            "#type": "warp",
+            "#type": "geminiwarp",
             "chest_opened_img": "images/crests/crest_gemini.png",
             "chest_unopened_img": "images/crests/crest_gemini.png",
             "chest_unavailable_img": "images/crests/crest_gemini.png",
