@@ -65,6 +65,15 @@
             "capture_item": true,
             "capture_item_layout": "tracker_capture_party",
             "hosted_item": "tristam"
+          },
+          {
+            "name": "Sand Temple (Tristam)",
+            "access_rules": ["", "{}"],
+            "#type": "tristam",
+            "chest_opened_img": "images/party/tristam.gif",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_party",
+            "item_count": 1
           }
         ]
       }
