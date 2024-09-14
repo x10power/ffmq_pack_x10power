@@ -1,0 +1,12 @@
+{"settlements_windia": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Overworld",
+      "content": {
+        "type": "map",
+        "maps": ["windia-overworld"]
+      }
+    }
+  ]
+}}

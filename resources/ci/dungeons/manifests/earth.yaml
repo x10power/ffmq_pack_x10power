@@ -1,0 +1,79 @@
+level-forest:
+  restored:
+    exit:
+      - x: 336
+        y: 480
+      - x: 336
+        y: 32
+      - x: 586
+        y: 232
+bone-dungeon:
+  1f:
+    note: From Entrance, 3 items
+    exit:
+      x: 206
+      y: 365
+    b1:
+      x: 206
+      y: 29
+  b1:
+    note: 2 items; 1 bomb; 1 story; 1 bomb path
+    1f:
+      x: 513
+      y: 460
+    b1a:
+      x: 81
+      y: 108
+  b1a:
+    note: 1 item; 1 bomb
+    b1:
+      x: 303
+      y: 379
+    b2:
+      x: 47
+      y: 235
+  b2:
+    note: 2 items; 2 bomb paths
+    b1a:
+      x: 161
+      y: 412
+    b2a:
+      x: 337
+      y: 220
+    b2b:
+      x: 497
+      y: 252
+  b2a:
+    note: 1 item; jump puzzle
+    b2:
+      x: 33
+      y: 109
+  b2b:
+    note: 1 item; 3 bomb paths
+    b2:
+      x: 271
+      y: 509
+    b2c:
+      x: 255
+      y: 253
+    b2d:
+      x: 63
+      y: 189
+    boss:
+      x: 159
+      y: 29
+  b2c:
+    note: 1 item
+    b2b:
+      x: 63
+      y: 173
+  b2d:
+    note: 1 item
+    b2b:
+      x: 63
+      y: 173
+  boss:
+    note: 4 items; 1 boss prize; Flamerus Rex; Crystal of Earth
+    b2b:
+      x: 158
+      y: 237

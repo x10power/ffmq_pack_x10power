@@ -1,11 +1,12 @@
 # Final Fantasy Mystic Quest Tracker
 
 ## 5 Variants
-- Items Only
+- Items-Only
 - Standard with Map
-- Shard Hunt (Items Only)
+- Shard Hunt (Items-Only)
 - Shard Hunt with Map
-- Simple (Items Only but with less items shown)
+- Simple (Items-Only but with less items shown)
+- Simple with Map
 
 ## ChatHud Support
 - See [ReadMe](http://github.com/x10power/ffmq_pack_x10power/blob/master/README.md) for setup instructions
@@ -20,6 +21,6 @@
 
 ## Bug Fixes
 - Fixed some autotracking
-- Steel Armor (non-progressive) start On
+- Fixed some location logic
 
 ***Enjoy!***

@@ -415,9 +415,10 @@ function updateActivePartyFromMemorySegment(segment)
             print("Party:",partyByte)
             companions = {
                 [0] = { 0, "Kaeli" },
-                [1] = { 3, "Tristam" },
-                [2] = { 1, "Phoebe" },
-                [3] = { 2, "Reuben" }
+                [1] = { 1, "Phoebe" },
+                [2] = { 2, "Reuben" },
+                [3] = { 3, "Tristam" },
+                [4] = { 3, "Tristam" }
             }
             if companions[partyByte] then
                 party2.CurrentStage = companions[partyByte][1]
@@ -591,10 +592,12 @@ function updateShardHuntFromMemorySegment(segment)
 
   if AUTOTRACKER_ENABLE_ITEM_TRACKING then
       shards = ReadU8(segment, 0x7e0e93)
-      -- print(shards)
-      -- print(SHARD_COUNT)
+      print(shards)
       print("SkyShards")
-      Tracker:FindObjectForCode(SHARD_COUNT).AcquiredCount = shards
+      shardsItem = Tracker:FindObjectForCode(SHARD_COUNT)
+      if shardsItem then
+        shardsItem.AcquiredCount = shards
+      end
       print("")
     end
 end

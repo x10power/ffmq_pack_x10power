@@ -1,43 +1,43 @@
 [
   {
     "name": "pazuzu-tower-1f",
-    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-1.png",
+    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-1f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "pazuzu-tower-2f",
-    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-2.png",
+    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-2f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "pazuzu-tower-3f",
-    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-3.png",
+    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-3f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "pazuzu-tower-4f",
-    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-4.png",
+    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-4f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "pazuzu-tower-5f",
-    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-5.png",
+    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-5f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "pazuzu-tower-6f",
-    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-6.png",
+    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-6f.png",
     "location_border_thickness": 1,
     "location_size": 16
   },
   {
     "name": "pazuzu-tower-7f",
-    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-7.png",
+    "img": "images/maps/dungeons/pazuzu-tower/pazuzu-tower-7f.png",
     "location_border_thickness": 1,
     "location_size": 16
   }

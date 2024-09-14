@@ -49,7 +49,9 @@ for r, d, f in os.walk(dirname):
                                     "Tristam",
                                     "Spencer"
                                 ]:
-                                    if checkType in v:
+                                    if checkType in v and \
+                                        f"{checkType}'" not in v and \
+                                        f"{checkType} House" not in v:
                                         if locName != "": # and locName != v:
                                             if typeName == "":
                                                 print(f"  🔴{locName} no type set!")

@@ -61,7 +61,15 @@ for r,d,f in os.walk(dirname):
                                 print(f"> {funcName}")
                                 print(f">  🔴'{itemName}' not a valid item code")
                             else:
-                                if funcName != "canGoMode":
+                                if funcName not in [
+                                    "aquaria_expert_access",
+                                    "doom_castle_access",
+                                    "doom_castle_expert_access",
+                                    "fireburg_access",
+                                    "fireburg_expert_access",
+                                    "windia_expert_access",
+                                    "canGoMode"
+                                ]:
                                     if itemName not in itemToFunc:
                                         itemToFunc[itemName] = []
                                     itemToFunc[itemName].append(funcName)

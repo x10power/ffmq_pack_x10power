@@ -1,0 +1,12 @@
+{"maps_kaidge_temple": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Standard",
+      "content": {
+        "type": "map",
+        "maps": ["kaidge-temple-standard"]
+      }
+    }
+  ]
+}}

@@ -144,7 +144,7 @@
           {
             "name": "7F - Pazuzu Chest",
             "#type": "chest",
-            "access_rules": ["dragonclaw,axes"],
+            "access_rules": ["dragonclaw"],
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
@@ -152,6 +152,7 @@
           },
           {
             "name": "Crystal of Wind",
+            "access_rules": ["dragonclaw,axes"],
             "hosted_item": "windcrystal"
           }
         ]

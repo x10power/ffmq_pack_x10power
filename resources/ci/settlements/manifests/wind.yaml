@@ -1,0 +1,22 @@
+alive-forest:
+  restored:
+    exit:
+      x: 32
+      y: 216
+kaidge-temple:
+  standard:
+    exit:
+      x: 200
+      y: 424
+rope-bridge:
+  overworld:
+    exit:
+      - x: 128
+        y: 204
+      - x: 960
+        y: 204
+windia:
+  overworld:
+    exit:
+      x: 204
+      y: 624

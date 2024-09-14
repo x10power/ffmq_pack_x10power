@@ -16,7 +16,7 @@
       }
     },
     {
-      "title": "Floor 2a",
+      "title": "Room 2Fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-2fa"]
@@ -30,7 +30,7 @@
       }
     },
     {
-      "title": "Floor 3a",
+      "title": "Room 3Fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-3fa"]
@@ -44,7 +44,7 @@
       }
     },
     {
-      "title": "Floor 4a",
+      "title": "Room 4Fa",
       "content": {
         "type": "map",
         "maps": ["giant-tree-4fa"]
@@ -54,7 +54,7 @@
       "title": "Boss",
       "content": {
         "type": "map",
-        "maps": ["giant-tree-5f"]
+        "maps": ["giant-tree-boss"]
       }
     }
   ]

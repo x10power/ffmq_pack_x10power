@@ -1,0 +1,33 @@
+{"maps_volcano": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Area 1",
+      "content": {
+        "type": "map",
+        "maps": ["volcano-a1"]
+      }
+    },
+    {
+      "title": "Area 2",
+      "content": {
+        "type": "map",
+        "maps": ["volcano-a2"]
+      }
+    },
+    {
+      "title": "Area 3",
+      "content": {
+        "type": "map",
+        "maps": ["volcano-a3"]
+      }
+    },
+    {
+      "title": "Area 4",
+      "content": {
+        "type": "map",
+        "maps": ["volcano-a4"]
+      }
+    }
+  ]
+}}

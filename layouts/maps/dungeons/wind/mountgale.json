@@ -1,0 +1,12 @@
+{"maps_mount_gale": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Room Overworld",
+      "content": {
+        "type": "map",
+        "maps": ["mount-gale-overworld"]
+      }
+    }
+  ]
+}}

@@ -27,6 +27,10 @@
     "simple": {
       "display_name": "Simple",
       "flags": ["chathud"]
+    },
+    "simple_map": {
+      "display_name": "Simple with Map",
+      "flags": ["chathud", "map", "pins"]
     }
   }
 }

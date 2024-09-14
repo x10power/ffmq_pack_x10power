@@ -1,0 +1,13 @@
+{"settlements_fire": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Fireburg",
+      "icon": "images/party/reuben.gif",
+      "content": {
+        "type": "layout",
+        "key": "settlements_fireburg"
+      }
+    }
+  ]
+}}

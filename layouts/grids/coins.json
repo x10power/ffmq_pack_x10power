@@ -6,6 +6,7 @@
   },
   "shards_grid": {
     "type": "itemgrid",
+    "background": "#000000",
     "item_margin": "0",
     "rows": [
       [

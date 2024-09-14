@@ -2,6 +2,22 @@
   "type": "tabbed",
   "tabs": [
     {
+      "title": "Mine",
+      "icon": "images/bosstokens/mine.png",
+      "content": {
+        "type": "layout",
+        "key": "maps_mine"
+      }
+    },
+    {
+      "title": "Volcano",
+      "icon": "images/bosstokens/volcano.png",
+      "content": {
+        "type": "layout",
+        "key": "maps_volcano"
+      }
+    },
+    {
       "title": "Lava Dome",
       "icon": "images/coins/coin_sun.png",
       "content": {

@@ -1,0 +1,13 @@
+{"settlements_earth": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Foresta",
+      "icon": "images/party/kaeli.gif",
+      "content": {
+        "type": "layout",
+        "key": "settlements_foresta"
+      }
+    }
+  ]
+}}

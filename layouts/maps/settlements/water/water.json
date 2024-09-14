@@ -1,0 +1,13 @@
+{"settlements_water": {
+  "type": "tabbed",
+  "tabs": [
+    {
+      "title": "Aquaria",
+      "icon": "images/party/phoebe.gif",
+      "content": {
+        "type": "layout",
+        "key": "settlements_aquaria"
+      }
+    }
+  ]
+}}

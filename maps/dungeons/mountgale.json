@@ -1,0 +1,8 @@
+[
+  {
+    "name": "mount-gale-overworld",
+    "img": "images/maps/dungeons/mount-gale/mount-gale-overworld.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  }
+]

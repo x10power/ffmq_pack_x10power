@@ -1,0 +1,26 @@
+[
+  {
+    "name": "volcano-a1",
+    "img": "images/maps/dungeons/volcano/volcano-a1.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "volcano-a2",
+    "img": "images/maps/dungeons/volcano/volcano-a2.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "volcano-a3",
+    "img": "images/maps/dungeons/volcano/volcano-a3.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  },
+  {
+    "name": "volcano-a4",
+    "img": "images/maps/dungeons/volcano/volcano-a4.png",
+    "location_border_thickness": 1,
+    "location_size": 16
+  }
+]

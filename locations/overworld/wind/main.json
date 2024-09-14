@@ -91,18 +91,48 @@
         "name": "Kaidge Temple",
         "map_locations": [{"map": "restored-world", "x": 520, "y": 535}],
         "sections": [
-            {
-                "name": "Box",
-                "access_rules": [ "claw" ],
-                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
-                "item_count": 1
-            },
-            {
-                "name": "Light Temple Box",
-                "access_rules": [ "claw,mobius" ],
-                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
-                "item_count": 1
-            }
+          {
+            "name": "Box",
+            "access_rules": ["claw"],
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Mobius Crest Tile: To Light Temple",
+            "access_rules": ["claw,mobiuscrest", "{}"],
+            "#type": "mobiuswarp",
+            "chest_opened_img": "images/crests/crest_mobius.png",
+            "chest_unopened_img": "images/crests/crest_mobius.png",
+            "chest_unavailable_img": "images/crests/crest_mobius.png",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_crest",
+            "#item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Light Temple",
+        "map_locations": [{"map": "restored-world", "x": 426, "y": 548}],
+        "access_rules": [
+          "@Kaidge Temple/Mobius Crest Tile: To Light Temple"
+        ],
+        "sections": [
+          {
+            "name": "Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "item_count": 1
+          },
+          {
+            "name": "Mobius Crest Tile: To Kaidge Temple",
+            "access_rules": ["mobiuscrest", "{}"],
+            "#type": "mobiuswarp",
+            "chest_opened_img": "images/crests/crest_mobius.png",
+            "chest_unopened_img": "images/crests/crest_mobius.png",
+            "chest_unavailable_img": "images/crests/crest_mobius.png",
+            "capture_item": true,
+            "capture_item_layout": "tracker_capture_crest",
+            "#item_count": 1
+          }
         ]
       },
       {
@@ -121,27 +151,24 @@
         "access_rules": [],
         "map_locations": [{"map": "restored-world", "x": 775, "y": 475}],
         "sections": [
-            {
-                "name": " West Box",
-                "clear_as_group": false,
-                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
-                "access_rules": [ "" ],
-                "item_count": 1
-            },
-            {
-                "name": " East Box",
-                "clear_as_group": false,
-                "visibility_rules": [ "setting_shufflebrownbox_yes" ],
-                "access_rules": [ "dragonclaw" ],
-                "item_count": 1
-            },        
-            {
-                "name": "Dullahan Chest",
-                "#type": "chest",
-                "access_rules": [ "dragonclaw" ],
-                "hosted_item": "boss_mountgale",
-                "item_count": 1
-            }
+          {
+            "name": "West Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "#item_count": 1
+          },
+          {
+            "name": "East Box",
+            "visibility_rules": ["setting_shufflebrownbox_yes"],
+            "access_rules": ["dragonclaw"],
+            "#item_count": 1
+          },
+          {
+            "name": "Dullahan Chest",
+            "#type": "chest",
+            "access_rules": ["dragonclaw"],
+            "hosted_item": "boss_mountgale",
+            "item_count": 1
+          }
         ]
       }
     ]

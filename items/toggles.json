@@ -22,9 +22,9 @@
   },
   {
     "name": "Sky Coin",
-    "type": "consumable",
-    "max_quantity": 1,
-    "img": "images/coins/coin_sky_shard.png",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/coins/coin_sky.png",
     "codes": "sky, skycoin"
   },
   {
