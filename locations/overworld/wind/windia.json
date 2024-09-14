@@ -60,7 +60,7 @@
         "chest_unavailable_img": "images/crests/crest_mobius.png",
         "capture_item": true,
         "capture_item_layout": "tracker_capture_crest",
-        "item_count": 1
+        "#item_count": 1
       },
       {
         "name": "Mobius Crest Tile: To Ship Doc",
@@ -71,7 +71,7 @@
         "chest_unavailable_img": "images/crests/crest_mobius.png",
         "capture_item": true,
         "capture_item_layout": "tracker_capture_crest",
-        "item_count": 1
+        "#item_count": 1
       }
     ]
   }

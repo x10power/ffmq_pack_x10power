@@ -195,7 +195,7 @@ if string.find(variant, "map") then
   }
   for _, locCat in ipairs(locations) do
     Tracker:AddLocations("locations/overworld/" .. locCat .. ".json")
-    if string.find(locCat, "-") ~= nil then
+    if AUTOTRACKER_ENABLE_LOCATION_TRACKING and string.find(locCat, "-") ~= nil then
       Tracker:AddLocations("locations/underworld/" .. locCat .. ".json")
     end
   end

@@ -106,13 +106,13 @@
             "chest_unavailable_img": "images/crests/crest_mobius.png",
             "capture_item": true,
             "capture_item_layout": "tracker_capture_crest",
-            "item_count": 1
+            "#item_count": 1
           }
         ]
       },
       {
         "name": "Light Temple",
-        "map_locations": [{"map": "restored-world", "x": 0, "y": 0}],
+        "map_locations": [{"map": "restored-world", "x": 426, "y": 548}],
         "access_rules": [
           "@Kaidge Temple/Mobius Crest Tile: To Light Temple"
         ],
@@ -131,7 +131,7 @@
             "chest_unavailable_img": "images/crests/crest_mobius.png",
             "capture_item": true,
             "capture_item_layout": "tracker_capture_crest",
-            "item_count": 1
+            "#item_count": 1
           }
         ]
       },
