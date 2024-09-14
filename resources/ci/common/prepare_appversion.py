@@ -71,7 +71,7 @@ def prepare_appversion():
                     f"print(\"Package Author:  {packManifestJSON['author']}\")",
                     f"print(\"Package Version: {env['GITHUB_TAG']}\")"
                 ]
-                print(toWrite)
+                print(*toWrite, sep="\n")
                 ver.writelines(
                     chain.from_iterable(
                         zip(
