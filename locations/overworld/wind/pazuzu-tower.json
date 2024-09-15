@@ -148,6 +148,7 @@
             "chest_unavailable_img": "images/chests/available.png",
             "chest_unopened_img": "images/chests/available.png",
             "chest_opened_img": "images/chests/opened.png",
+            "hosted_item": "boss_pazuzutower",
             "item_count": 1
           },
           {

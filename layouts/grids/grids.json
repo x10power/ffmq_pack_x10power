@@ -40,6 +40,13 @@
               "type": "layout",
               "key": "shared_item_grid_bin"
             }
+          },
+          {
+            "title": "Warps",
+            "content": {
+              "type": "layout",
+              "key": "warps_grid"
+            }
           }
         ]
       },

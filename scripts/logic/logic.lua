@@ -130,3 +130,30 @@ function doom_castle_expert_access()
         has("megagrenade")
     )
 end
+
+function crest_warp(source, destination)
+    if has("libra") and has("gemini") and has("mobius") then
+        return 1
+    end
+
+    local setName = source .. destination
+    local setItem = Tracker:FindObjectForCode(setName)
+
+    for i,crest in ipairs(
+        {
+            "libra",
+            "gemini",
+            "mobius"
+        }
+    ) do
+        local thisItem = Tracker:FindObjectForCode(setName .. "_" .. crest)
+        if thisItem and
+            thisItem.Active and
+            i-1 == thisItem.CurrentStage and
+            has(crest) then
+            return 1
+        end
+    end
+
+    return 0
+end

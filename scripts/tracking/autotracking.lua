@@ -411,14 +411,18 @@ function updateActivePartyFromMemorySegment(segment)
 
         party2 = Tracker:FindObjectForCode("party2")
         if party2.CurrentStage then
-            partyByte = math.floor(ReadU8(segment, 0x7e004d))
+            partyByte = math.floor(ReadU8(segment, 0x7e10a0))
+            partyByte = partyByte - 128
             print("Party:",partyByte)
             companions = {
-                [0] = { 0, "Kaeli" },
-                [1] = { 1, "Phoebe" },
-                [2] = { 2, "Reuben" },
-                [3] = { 3, "Tristam" },
-                [4] = { 3, "Tristam" }
+                [1] = { 0, "Kaeli" },
+                [2] = { 3, "Tristam" },
+                [3] = { 1, "Phoebe" },
+                [4] = { 2, "Reuben" },
+                [5] = { 0, "Kaeli" },
+                [6] = { 3, "Tristam" },
+                [7] = { 1, "Phoebe" },
+                [8] = { 2, "Reuben" },
             }
             if companions[partyByte] then
                 party2.CurrentStage = companions[partyByte][1]
@@ -604,7 +608,7 @@ end
 
 ScriptHost:LoadScript("scripts/constants/roomIDs.lua")
 
-ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e004c, 0x03, updateActivePartyFromMemorySegment)
+ScriptHost:AddMemoryWatch("FFMQ Active Party Member Data", 0x7e10a0, 0x01, updateActivePartyFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFMQ Collected NPCs Data", 0x7e0ea8, 0x02, updateLocationGroupsOfNPCs)
 ScriptHost:AddMemoryWatch("FFMQ Checked Locations Data", 0x7e0ec8, 0x1F, updateLocationGroupsOfItems)
 ScriptHost:AddMemoryWatch("FFMQ Completed Battlefields Data", 0x7e0fd4, 0x03, updateLocationGroupsOfBattlefields)

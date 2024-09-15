@@ -52,26 +52,16 @@
         "item_count": 1
       },
       {
-        "name": "Mobius Crest Tile: To Fireburg",
-        "access_rules": ["mobiuscrest", "{}"],
+        "name": "Crest Tile to Fireburg",
+        "access_rules": ["$crest_warp|wn|fb"],
         "#type": "warp",
-        "chest_opened_img": "images/crests/crest_mobius.png",
-        "chest_unopened_img": "images/crests/crest_mobius.png",
-        "chest_unavailable_img": "images/crests/crest_mobius.png",
-        "capture_item": true,
-        "capture_item_layout": "tracker_capture_crest",
-        "#item_count": 1
+        "hosted_item": "wnfb"
       },
       {
-        "name": "Mobius Crest Tile: To Ship Doc",
-        "access_rules": ["mobiuscrest", "{}"],
+        "name": "Crest Tile to Ship Dock",
+        "access_rules": ["$crest_warp|wn|sd"],
         "#type": "warp",
-        "chest_opened_img": "images/crests/crest_mobius.png",
-        "chest_unopened_img": "images/crests/crest_mobius.png",
-        "chest_unavailable_img": "images/crests/crest_mobius.png",
-        "capture_item": true,
-        "capture_item_layout": "tracker_capture_crest",
-        "#item_count": 1
+        "hosted_item": "wnsd"
       }
     ]
   }

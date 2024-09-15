@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Fireburg -> Aquaria",
+    "type": "progressive_toggle",
+    "codes": "fbaq",
+    "initial_active_state": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "codes": "fbaq, fbaq_libra",
+        "img": "images/warps/fireburg-aquaria.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "fbaq_gemini",
+        "img": "images/warps/fireburg-aquaria.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "fbaq_mobius",
+        "img": "images/warps/fireburg-aquaria.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Aquaria -> Fireburg",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 1,
+    "codes": "fbaq",
+    "stages": [
+      {
+        "codes": "aqfb, aqfb_libra",
+        "img": "images/warps/aquaria-fireburg.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "aqfb_gemini",
+        "img": "images/warps/aquaria-fireburg.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "aqfb_mobius",
+        "img": "images/warps/aquaria-fireburg.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Sealed Temple -> Wintry Temple",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 1,
+    "codes": "stwt",
+    "stages": [
+      {
+        "codes": "stwt, stwt_libra",
+        "img": "images/warps/sealed-wintry.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "stwt_gemini",
+        "img": "images/warps/sealed-wintry.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "stwt_mobius",
+        "img": "images/warps/sealed-wintry.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Wintry Temple -> Sealed Temple",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 1,
+    "codes": "wtst",
+    "stages": [
+      {
+        "codes": "wtst, wtst_libra",
+        "img": "images/warps/wintry-sealed.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "wtst_gemini",
+        "img": "images/warps/wintry-sealed.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "wtst_mobius",
+        "img": "images/warps/wintry-sealed.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Fireburg -> Windia",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 2,
+    "codes": "fbwn",
+    "stages": [
+      {
+        "codes": "fbwn, fbwn_libra",
+        "img": "images/warps/fireburg-windia.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "fbwn_gemini",
+        "img": "images/warps/fireburg-windia.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "fbwn_mobius",
+        "img": "images/warps/fireburg-windia.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Windia -> Fireburg",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 2,
+    "codes": "wnfb",
+    "stages": [
+      {
+        "codes": "wnfb, wnfb_libra",
+        "img": "images/warps/windia-fireburg.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "wnfb_gemini",
+        "img": "images/warps/windia-fireburg.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "wnfb_mobius",
+        "img": "images/warps/windia-fireburg.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Libra Temple -> Life Temple",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 0,
+    "codes": "lbtlft",
+    "stages": [
+      {
+        "codes": "lbtlft, lbtlft_libra",
+        "img": "images/warps/libra-life.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "lbtlft_gemini",
+        "img": "images/warps/libra-life.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "lbtlft_mobius",
+        "img": "images/warps/libra-life.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Life Temple -> Libra Temple",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 0,
+    "codes": "lftlbt",
+    "stages": [
+      {
+        "codes": "lftlbt, lftlbt_libra",
+        "img": "images/warps/life-libra.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "lftlbt_gemini",
+        "img": "images/warps/life-libra.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "lftlbt_mobius",
+        "img": "images/warps/life-libra.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Kaidge Temple -> Light Temple",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 2,
+    "codes": "lftlbt",
+    "stages": [
+      {
+        "codes": "ktlit, ktlit_libra",
+        "img": "images/warps/kaidge-light.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "ktlit_gemini",
+        "img": "images/warps/kaidge-light.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "ktlit_mobius",
+        "img": "images/warps/kaidge-light.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Light Temple -> Kaidge Temple",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 2,
+    "codes": "lftlbt",
+    "stages": [
+      {
+        "codes": "litkt, litkt_libra",
+        "img": "images/warps/light-kaidge.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "litkt_gemini",
+        "img": "images/warps/light-kaidge.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "litkt_mobius",
+        "img": "images/warps/light-kaidge.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Windia -> Ship's Dock",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 2,
+    "codes": "wnsd",
+    "stages": [
+      {
+        "codes": "wnsd, wnsd_libra",
+        "img": "images/warps/windia-ship.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "wnsd_gemini",
+        "img": "images/warps/windia-ship.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "wnsd_mobius",
+        "img": "images/warps/windia-ship.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  },
+  {
+    "name": "Ship's Dock -> Windia",
+    "type": "progressive_toggle",
+    "initial_active_state": true,
+    "initial_stage_idx": 2,
+    "codes": "sdwn",
+    "stages": [
+      {
+        "codes": "sdwn, sdwn_libra",
+        "img": "images/warps/ship-windia.png",
+        "img_mods": "overlay|images/warps/overlay/libra.png"
+      },
+      {
+        "codes": "sdwn_gemini",
+        "img": "images/warps/ship-windia.png",
+        "img_mods": "overlay|images/warps/overlay/gemini.png"
+      },
+      {
+        "codes": "sdwn_mobius",
+        "img": "images/warps/ship-windia.png",
+        "img_mods": "overlay|images/warps/overlay/mobius.png"
+      }
+    ]
+  }
+]

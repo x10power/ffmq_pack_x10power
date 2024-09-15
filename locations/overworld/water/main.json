@@ -2,10 +2,14 @@
   {
     "name": "Water",
     "parent": "World",
-    "access_rules": ["@Focus Tower Doors/2F - Sand Door Chest"],
+    "access_rules": [
+      "@Focus Tower Doors/2F - Sand Door Chest",
+      "$crest_warp|fb|aq"
+    ],
     "children": [
       {
         "name": "Libra Temple",
+        "access_rules": ["@Water", "$crest_warp|lft|lbt"],
         "map_locations": [{"map": "restored-world", "x": 465, "y": 250}],
         "sections": [
           {
@@ -23,21 +27,16 @@
             "item_count": 1
           },
           {
-            "name": "Libra Crest Tile: To Life Temple",
-            "access_rules": ["libracrest", "{}"],
-            "#type": "librawarp",
-            "chest_opened_img": "images/crests/crest_libra.png",
-            "chest_unopened_img": "images/crests/crest_libra.png",
-            "chest_unavailable_img": "images/crests/crest_libra.png",
-            "capture_item": true,
-            "capture_item_layout": "tracker_capture_crest",
-            "#item_count": 1
+            "name": "Crest Tile to Life Temple",
+            "access_rules": ["$crest_warp|lbt|lft"],
+            "#type": "warp",
+            "hosted_item": "lbtlft"
           }
         ]
       },
       {
         "name": "Life Temple",
-        "access_rules": ["libracrest"],
+        "access_rules": ["$crest_warp|lft|lbt"],
         "map_locations": [{"map": "restored-world", "x": 520, "y": 315}],
         "sections": [
           {
@@ -52,15 +51,10 @@
             "item_count": 1
           },
           {
-            "name": "Libra Crest Tile: To Libra Temple",
-            "access_rules": ["libracrest", "{}"],
-            "#type": "librawarp",
-            "chest_opened_img": "images/crests/crest_libra.png",
-            "chest_unopened_img": "images/crests/crest_libra.png",
-            "chest_unavailable_img": "images/crests/crest_libra.png",
-            "capture_item": true,
-            "capture_item_layout": "tracker_capture_crest",
-            "#item_count": 1
+            "name": "Crest Tile to Libra Temple",
+            "access_rules": ["$crest_warp|lft|lbt"],
+            "#type": "warp",
+            "hosted_item": "lftlbt"
           }
         ]
       },
@@ -90,7 +84,7 @@
       },
       {
         "name": "Wintry Temple",
-        "access_rules": ["geminicrest"],
+        "access_rules": ["$crest_warp|st|wt"],
         "map_locations": [{"map": "restored-world", "x": 400, "y": 280}],
         "sections": [
           {
@@ -119,15 +113,10 @@
             "item_count": 1
           },
           {
-            "name": "Gemini Crest Tile: To Sealed Temple",
-            "access_rules": ["geminicrest", "{}"],
-            "#type": "geminiwarp",
-            "chest_opened_img": "images/crests/crest_gemini.png",
-            "chest_unopened_img": "images/crests/crest_gemini.png",
-            "chest_unavailable_img": "images/crests/crest_gemini.png",
-            "capture_item": true,
-            "capture_item_layout": "tracker_capture_crest",
-            "#item_count": 1
+            "name": "Crest Tile to Sealed Temple",
+            "access_rules": ["$crest_warp|wt|st"],
+            "#type": "warp",
+            "hosted_item": "wtst"
           }
         ]
       },

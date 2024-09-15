@@ -2,10 +2,6 @@
   {
     "name": "Fireburg",
     "parent": "Fire",
-    "#access_rules": [
-      "rivercoin",
-      "[rivercoin],$fireburg_expert_access"
-    ],
     "map_locations": [{"map": "restored-world", "x": 265, "y": 160}],
     "sections": [
       {
@@ -84,26 +80,16 @@
         "item_count": 1
       },
       {
-        "name": "Gemini Crest Tile: To Aquaria",
-        "access_rules": ["geminicrest", "{}"],
-        "#type": "geminiwarp",
-        "chest_opened_img": "images/crests/crest_gemini.png",
-        "chest_unopened_img": "images/crests/crest_gemini.png",
-        "chest_unavailable_img": "images/crests/crest_gemini.png",
-        "capture_item": true,
-        "capture_item_layout": "tracker_capture_crest",
-        "#item_count": 1
+        "name": "Crest Tile to Aquaria",
+        "access_rules": ["$crest_warp|fb|aq"],
+        "#type": "warp",
+        "hosted_item": "fbaq"
       },
       {
-        "name": "Mobius Crest Tile: To Windia",
-        "access_rules": ["mobiuscrest", "{}"],
-        "#type": "mobiuswarp",
-        "chest_opened_img": "images/crests/crest_mobius.png",
-        "chest_unopened_img": "images/crests/crest_mobius.png",
-        "chest_unavailable_img": "images/crests/crest_mobius.png",
-        "capture_item": true,
-        "capture_item_layout": "tracker_capture_crest",
-        "#item_count": 1
+        "name": "Crest Tile to Windia",
+        "access_rules": ["$crest_warp|fb|wn"],
+        "#type": "warp",
+        "hosted_item": "fbwn"
       }
     ]
   }

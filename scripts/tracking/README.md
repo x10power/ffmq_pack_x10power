@@ -1,8 +1,8 @@
 # Auto-Tracking
 
 ## Get stuff
-1. Get an emul
-   - [BizHawk]()
+1. Get an emulator
+   - [BizHawk](https://github.com/TASEmulators/BizHawk)
    - [Mesen2-emunwa](https://github.com/tewtal/Mesen2-emunwa)
    - [Snes9x-emunwa](https://github.com/Skarsnik/snes9x-emunwa)
 2. Get [SNI](https://github.com/alttpo/sni)
@@ -20,7 +20,7 @@
    - Enable lua connector
      - BizHawk
        - Use BSNES core
-       - 2.9: Get [connector](https://en-minish-cap.deoxis9001.ovh/zip/Connector-2.9.zip)
+       - 2.9.x: Get [connector](https://en-minish-cap.deoxis9001.ovh/zip/Connector-2.9.zip)
 1. Run SNI
 1. Run EmoTracker
    - Right-click Robot

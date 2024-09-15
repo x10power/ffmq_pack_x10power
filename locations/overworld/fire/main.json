@@ -2,7 +2,11 @@
   {
     "name": "Fire",
     "parent": "World",
-    "access_rules": ["@Focus Tower Doors/3F - River Door Box"],
+    "access_rules": [
+      "@Focus Tower Doors/3F - River Door Box",
+      "$crest_warp|aq|fb",
+      "$crest_warp|wn|fb"
+    ],
     "children": [
       {
         "name": "Mine",
@@ -89,6 +93,7 @@
       },
       {
         "name": "Sealed Temple",
+        "access_rules": ["@Fire", "@Wintry Temple,$crest_warp|wt|st"],
         "map_locations": [{"map": "restored-world", "x": 194, "y": 214}],
         "sections": [
           {
@@ -108,15 +113,10 @@
             "#item_count": 1
           },
           {
-            "name": "Gemini Crest Tile: To Wintry Temple",
-            "access_rules": ["geminicrest", "{}"],
-            "#type": "geminiwarp",
-            "chest_opened_img": "images/crests/crest_gemini.png",
-            "chest_unopened_img": "images/crests/crest_gemini.png",
-            "chest_unavailable_img": "images/crests/crest_gemini.png",
-            "capture_item": true,
-            "capture_item_layout": "tracker_capture_crest",
-            "#item_count": 1
+            "name": "Crest Tile to Wintry Temple",
+            "access_rules": ["$crest_warp|st|wt"],
+            "#type": "warp",
+            "hosted_item": "stwt"
           }
         ]
       },

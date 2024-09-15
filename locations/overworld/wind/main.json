@@ -2,7 +2,10 @@
   {
     "name": "Wind",
     "parent": "World",
-    "access_rules": ["@Focus Tower Doors/B2 - Sun Door Chest"],
+    "access_rules": [
+      "@Focus Tower Doors/B2 - Sun Door Chest",
+      "$crest_warp|fb|wn"
+    ],
     "children": [
       {
         "name": "Rope Bridge",
@@ -89,6 +92,7 @@
       },
       {
         "name": "Kaidge Temple",
+        "access_rules": ["@Wind", "$crest_warp|lit|kt"],
         "map_locations": [{"map": "restored-world", "x": 520, "y": 535}],
         "sections": [
           {
@@ -98,24 +102,17 @@
             "item_count": 1
           },
           {
-            "name": "Mobius Crest Tile: To Light Temple",
-            "access_rules": ["claw,mobiuscrest", "{}"],
-            "#type": "mobiuswarp",
-            "chest_opened_img": "images/crests/crest_mobius.png",
-            "chest_unopened_img": "images/crests/crest_mobius.png",
-            "chest_unavailable_img": "images/crests/crest_mobius.png",
-            "capture_item": true,
-            "capture_item_layout": "tracker_capture_crest",
-            "#item_count": 1
+            "name": "Crest Tile to Light Temple",
+            "access_rules": ["$crest_warp|kt|lit"],
+            "#type": "warp",
+            "hosted_item": "ktlit"
           }
         ]
       },
       {
         "name": "Light Temple",
         "map_locations": [{"map": "restored-world", "x": 426, "y": 548}],
-        "access_rules": [
-          "@Kaidge Temple/Mobius Crest Tile: To Light Temple"
-        ],
+        "access_rules": ["$crest_warp|kt|lit"],
         "sections": [
           {
             "name": "Box",
@@ -123,15 +120,10 @@
             "item_count": 1
           },
           {
-            "name": "Mobius Crest Tile: To Kaidge Temple",
-            "access_rules": ["mobiuscrest", "{}"],
-            "#type": "mobiuswarp",
-            "chest_opened_img": "images/crests/crest_mobius.png",
-            "chest_unopened_img": "images/crests/crest_mobius.png",
-            "chest_unavailable_img": "images/crests/crest_mobius.png",
-            "capture_item": true,
-            "capture_item_layout": "tracker_capture_crest",
-            "#item_count": 1
+            "name": "Crest Tile to Kaidge Temple",
+            "access_rules": ["$crest_warp|lit|kt"],
+            "#type": "warp",
+            "hosted_item": "litkt"
           }
         ]
       },

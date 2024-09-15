@@ -31,6 +31,7 @@ items = {
   "party",
   "settings",
   "storymarkers",
+  "warps",
   "weapons",
   "toggles"
 }
@@ -67,6 +68,7 @@ grids = {
   "binary/magics",
   "binary/weapons",
   "binary/grids",
+  "warps",
   "grids"
 }
 for _, gridCat in ipairs(grids) do
