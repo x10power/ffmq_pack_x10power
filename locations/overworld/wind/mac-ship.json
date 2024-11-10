@@ -11,7 +11,7 @@
             "map": "restored-world",
             "x": 362,
             "y": 530,
-            "access_rules": ["bombs3,thunderrock"],
+            "access_rules": ["bombs3,thunderrock,mobius"],
             "visibility_rules": ["firstmate"]
           }
         ],
