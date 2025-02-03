@@ -21,6 +21,9 @@ ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
 
 -- Items
 print("Loading Items")
+ScriptHost:LoadScript("scripts/class.lua")
+ScriptHost:LoadScript("scripts/items/custom_item.lua")
+ScriptHost:LoadScript("scripts/items/resistances.lua")
 dir = "items"
 items = {
   "armor",
@@ -69,6 +72,7 @@ grids = {
   "binary/weapons",
   "binary/grids",
   "warps",
+  "resists",
   "grids"
 }
 for _, gridCat in ipairs(grids) do

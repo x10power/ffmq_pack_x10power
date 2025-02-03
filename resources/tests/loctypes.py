@@ -1,4 +1,4 @@
-import json
+import commentjson as json
 import os
 
 from flatten_json import flatten

@@ -93,7 +93,7 @@
       },
       {
         "name": "Sealed Temple",
-        "access_rules": ["@Fire", "@Wintry Temple,$crest_warp|wt|st"],
+        "access_rules": ["@Wintry Temple,$crest_warp|wt|st"],
         "map_locations": [{"map": "restored-world", "x": 194, "y": 214}],
         "sections": [
           {

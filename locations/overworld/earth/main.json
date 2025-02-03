@@ -62,6 +62,7 @@
           {
             "name": "Event Chest",
             "access_rules": ["", "{}"],
+            "#type": "party",
             "capture_item": true,
             "capture_item_layout": "tracker_capture_party",
             "hosted_item": "tristam"

@@ -9,7 +9,7 @@
     "children": [
       {
         "name": "Libra Temple",
-        "access_rules": ["@Water", "$crest_warp|lft|lbt"],
+        "access_rules": ["$crest_warp|lft|lbt"],
         "map_locations": [{"map": "restored-world", "x": 465, "y": 250}],
         "sections": [
           {

@@ -77,8 +77,8 @@ def digForChildren(loc):
                             elif match.group(1) == "@" or \
                                 match.group(2) == "@":
                                 err = check[:check.find("/"):] not in locs
-                                if err:
-                                    print(match.groups())
+                                # if err:
+                                #     print(match.groups())
                                 circle = "🔴"
                                 errMsg = "not a valid location"
                             elif check not in items:

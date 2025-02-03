@@ -47,6 +47,13 @@
               "type": "layout",
               "key": "warps_grid"
             }
+          },
+          {
+            "title": "Resist",
+            "content": {
+              "type": "layout",
+              "key": "resists_grid"
+            }
           }
         ]
       },

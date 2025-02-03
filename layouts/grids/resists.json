@@ -1,0 +1,30 @@
+{"resists_grid": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    [
+      "resist_earth",
+      "resist_water",
+      "resist_fire",
+      "resist_air"
+    ],
+    [
+      "resist_zombie",
+      "resist_axe",
+      "resist_bomb",
+      "resist_projectile"
+    ],
+    [
+      "resist_doom",
+      "resist_paralysis",
+      "resist_sleep",
+      "resist_stone"
+    ],
+    [
+      "resist_blind",
+      "resist_confusion",
+      "resist_poison",
+      "resist_silence"
+    ]
+  ]
+}}

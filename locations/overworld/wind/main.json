@@ -92,7 +92,7 @@
       },
       {
         "name": "Kaidge Temple",
-        "access_rules": ["@Wind", "$crest_warp|lit|kt"],
+        "access_rules": ["$crest_warp|lit|kt"],
         "map_locations": [{"map": "restored-world", "x": 520, "y": 535}],
         "sections": [
           {
