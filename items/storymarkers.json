@@ -44,7 +44,7 @@
     "initial_active_state": true,
     "ignore_user_input": true,
     "img": "images/bosstokens/sandtemple.png",
-    "codes": "boss_sandtemple, minibosses"
+    "codes": "boss_sandtemple"
   },
   {
     "name": "Boss: Bone Dungeon",
