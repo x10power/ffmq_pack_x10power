@@ -1,10 +1,22 @@
 [
   {
-    "name": "Battlefields",
+    "name": "Battlefield Checks",
     "type": "consumable",
     "img": "images/counters/battlefield.png",
     "codes": "battlefield",
     "max_quantity": 5
+  },
+  {
+    "name": "# Battlefields",
+    "type": "consumable",
+    "img": "images/counters/battlefield.png",
+    "codes": "battlefields"
+  },
+  {
+    "name": "# Refreshers",
+    "type": "consumable",
+    "img": "images/consumables/refreshers.png",
+    "codes": "refreshers"
   },
   {
     "name": "Pazuzu Floor",
@@ -17,28 +29,28 @@
     "name": "SkyCoinShard-16",
     "type": "consumable",
     "img": "images/coins/coin_sky_shard.png",
-    "codes": "skycoinshard16",
+    "codes": "skycoinshard16, skyshards",
     "max_quantity": 16
   },
   {
     "name": "SkyCoinShard-24",
     "type": "consumable",
     "img": "images/coins/coin_sky_shard.png",
-    "codes": "skycoinshard24",
+    "codes": "skycoinshard24, skyshards",
     "max_quantity": 24
   },
   {
     "name": "SkyCoinShard-32",
     "type": "consumable",
     "img": "images/coins/coin_sky_shard.png",
-    "codes": "skycoinshard32",
+    "codes": "skycoinshard32, skyshards",
     "max_quantity": 32
   },
   {
-    "name": "SkyCoinShard-40",
+    "name": "SkyCoinShard-38",
     "type": "consumable",
     "img": "images/coins/coin_sky_shard.png",
-    "codes": "skycoinshard38",
+    "codes": "skycoinshard38, skyshards",
     "max_quantity": 38
   },
   {
@@ -46,7 +58,7 @@
     "type": "consumable",
     "img": "images/coins/coin_sky.png",
     "img_mods": "overlay|images/coins/coin_sky_shroud.png",
-    "codes": "skycoinshard40",
+    "codes": "skycoinshard40, skyshards",
     "max_quantity": 40
   }
 ]

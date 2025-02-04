@@ -59,6 +59,7 @@ grids = {
   "keyitems",
   "magics",
   "party",
+  "quests",
   "storymarkers",
   "weapons",
   "non-progressives/armors",
@@ -114,7 +115,9 @@ if string.find(variant, "map") then
     "dungeons/gianttree",
     "dungeons/mountgale",
     "dungeons/macship",
-    "dungeons/pazuzutower"
+    "dungeons/pazuzutower",
+
+    "quests"
   }
   for _, dungCat in ipairs(dungeons) do
     Tracker:AddMaps("maps/" .. dungCat .. ".json")
@@ -205,6 +208,7 @@ if string.find(variant, "map") then
       Tracker:AddLocations("locations/underworld/" .. locCat .. ".json")
     end
   end
+  Tracker:AddLocations("locations/quests.json")
   print("")
 else
   -- Legacy

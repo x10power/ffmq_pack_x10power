@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Quests",
+    "parent": "World",
+    "children": [
+      {
+        "name": "Give Elixir to Kaeli",
+        "map_locations": [{"map": "quests", "x": 0, "y": 0}],
+        "sections": [
+          {
+            "name": "Give Elixir to Kaeli",
+            "access_rules": ["elixir", "kaelicured"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Visits",
+        "map_locations": [{"map": "quests", "x": 16, "y": 0}],
+        "sections": [
+          {
+            "name": "Bone Dungeon with Tristam",
+            "access_rules": [
+              "@Bone Dungeon Overworld/B1 - Tristam (Gift),@Fireburg/Tristam (Hotel Gift)"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Wintry Cave with Phoebe",
+            "access_rules": [
+              "@Wintry Cave Overworld/1F - Phoebe (Gift),@Windia/Inn Bedroom Boxes"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Mine with Reuben",
+            "access_rules": ["@Fireburg/Reuben's House (Arion)"],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Crystals",
+        "map_locations": [{"map": "quests", "x": 32, "y": 0}],
+        "sections": [
+          {
+            "name": "1 Crystal",
+            "access_rules": ["crystal:1"],
+            "item_count": 1
+          },
+          {
+            "name": "2 Crystals",
+            "access_rules": ["crystal:2"],
+            "item_count": 1
+          },
+          {
+            "name": "3 Crystals",
+            "access_rules": ["crystal:3"],
+            "item_count": 1
+          },
+          {
+            "name": "4 Crystals",
+            "access_rules": ["crystal:4"],
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

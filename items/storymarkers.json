@@ -25,11 +25,18 @@
     ]
   },
   {
+    "name": "Save Arion",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/party/arion.png",
+    "codes": "arionsaved"
+  },
+  {
     "name": "Boss: Level Forest",
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/levelforest.png",
-    "codes": "boss_levelforest"
+    "codes": "boss_levelforest, minibosses"
   },
   {
     "name": "Boss: Sand Temple",
@@ -37,7 +44,7 @@
     "initial_active_state": true,
     "ignore_user_input": true,
     "img": "images/bosstokens/sandtemple.png",
-    "codes": "boss_sandtemple"
+    "codes": "boss_sandtemple, minibosses"
   },
   {
     "name": "Boss: Bone Dungeon",
@@ -51,14 +58,14 @@
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/wintrycave.png",
-    "codes": "boss_wintrycave"
+    "codes": "boss_wintrycave, minibosses"
   },
   {
     "name": "Boss: Falls Basin",
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/fallsbasin.png",
-    "codes": "boss_fallsbasin"
+    "codes": "boss_fallsbasin, minibosses"
   },
   {
     "name": "Boss: Ice Pyramid",
@@ -72,14 +79,14 @@
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/mine.png",
-    "codes": "boss_mine"
+    "codes": "boss_mine, minibosses"
   },
   {
     "name": "Boss: Volcano",
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/volcano.png",
-    "codes": "boss_volcano"
+    "codes": "boss_volcano, minibosses"
   },
   {
     "name": "Boss: Lava Dome",
@@ -93,14 +100,14 @@
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/gianttree.png",
-    "codes": "boss_gianttree"
+    "codes": "boss_gianttree, minibosses"
   },
   {
     "name": "Boss: Mount Gale",
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/mountgale.png",
-    "codes": "boss_mountgale"
+    "codes": "boss_mountgale, minibosses"
   },
   {
     "name": "Boss: Pazuzu's Tower",
@@ -114,7 +121,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/bosstokens/macship.png",
-    "codes": "boss_macship"
+    "codes": "boss_macship, minibosses"
   },
   {
     "name": "Boss: Doom Castle",

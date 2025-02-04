@@ -54,6 +54,13 @@
               "type": "layout",
               "key": "resists_grid"
             }
+          },
+          {
+            "title": "Quests",
+            "content": {
+              "type": "layout",
+              "key": "quests_grid"
+            }
           }
         ]
       },

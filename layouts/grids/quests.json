@@ -1,0 +1,25 @@
+{"quests_grid": {
+  "type": "itemgrid",
+  "item_margin": "0",
+  "rows": [
+    ["kaelicured", "arionsaved", "aquaria_restored"],
+    [
+      "earthcrystal",
+      "watercrystal",
+      "firecrystal",
+      "windcrystal"
+    ],
+    ["refreshers", "battlefields", "skyshards"],
+    [
+      "boss_levelforest",
+      "boss_wintrycave",
+      "boss_fallsbasin",
+      "boss_mine"
+    ],
+    [
+      "boss_volcano",
+      "boss_gianttree",
+      "boss_mountgale"
+    ]
+  ]
+}}
