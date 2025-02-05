@@ -3,7 +3,7 @@
     "name": "Mac's Ship",
     "parent": "Wind",
     "access_rules": [
-      "$crest_warp|wn|sd,megagrenade,@Quests/Build the Rainbow Bridge"
+      "$crest_warp|wn|sd,megagrenade,@Build the Rainbow Bridge/Build it!"
     ],
     "children": [
       {
