@@ -34,9 +34,7 @@
       },
       {
         "name": "Reuben's House (Box)",
-        "access_rules": [
-          "$fireburg_expert_access"
-        ],
+        "access_rules": ["$fireburg_expert_access"],
         "#type": "default",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "item_count": 1
@@ -52,19 +50,14 @@
       },
       {
         "name": "Vendor",
-        "access_rules": [
-          "$fireburg_expert_access"
-        ],
+        "access_rules": ["$fireburg_expert_access"],
         "capture_item": true,
         "capture_item_layout": "tracker_capture_vendor",
         "item_count": 1
       },
       {
         "name": "Tristam (Hotel Gift)",
-        "access_rules": [
-          "tristam",
-          "[tristam],$fireburg_expert_access"
-        ],
+        "access_rules": ["tristam", "[tristam],$fireburg_expert_access"],
         "#type": "default",
         "item_count": 1
       },
