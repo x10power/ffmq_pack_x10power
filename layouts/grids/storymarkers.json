@@ -2,7 +2,6 @@
   "type": "itemgrid",
   "item_margin": "0",
   "rows": [
-    ["kaelicured", "restore_aquaria", "firstmate"],
     ["boss_levelforest", "boss_bonedungeon"],
     [
       "boss_wintrycave",

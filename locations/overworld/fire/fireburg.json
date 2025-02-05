@@ -8,8 +8,8 @@
         "name": "Hidden Tunnel Box",
         "access_rules": [
           "rivercoin,claw",
-          "[rivercoin],sandcoin,geminicrest,claw",
-          "[rivercoin],suncoin,mobiuscrest,multikey"
+          "[rivercoin],sandcoin,$crest_warp|aq|fb,claw",
+          "[rivercoin],suncoin,$crest_warp|wn|fb,multikey"
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "item_count": 1
@@ -46,8 +46,8 @@
         "name": "Locked House Man",
         "access_rules": [
           "rivercoin,multikey,claw",
-          "[rivercoin],[multikey],suncoin,mobiuscrest",
-          "[rivercoin],sandcoin,geminicrest,multikey,claw"
+          "[rivercoin],[multikey],suncoin,$crest_warp|wn|fb",
+          "[rivercoin],sandcoin,$crest_warp|aq|fb,multikey,claw"
         ],
         "item_count": 1
       },
@@ -87,7 +87,7 @@
       },
       {
         "name": "Crest Tile to Windia",
-        "access_rules": ["$crest_warp|fb|wn"],
+        "access_rules": ["$crest_warp|fb|wn,multikey,claw"],
         "#type": "warp",
         "hosted_item": "fbwn"
       }

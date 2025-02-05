@@ -1,11 +1,11 @@
-Clear Ice Pyramid Battlefield
-Clear Mine Battlefield
-Clear Lava Dome Battlefield
-Clear Windia Small Battlefield
-Clear Windia Large Battlefield
-Visit the Summit of Volcano
-Visit the Chocobo of Windia
-Visit the box in the Light Temple
-Visit the Pointless Ledge in Lava Dome
+Clear Ice Pyramid Battlefield - Water Battlefield 8
+Clear Mine Battlefield - Fire Battlefield 5
+Clear Lava Dome Battlefield - Fire Battlefield 6 or 7
+Clear Windia Small Battlefield - Wind Battlefield 1 or 2
+Clear Windia Large Battlefield - Wind Battlefield 1 or 2
+Visit the Summit of Volcano - Must be RAMWatch
+Visit the Chocobo of Windia - Must be RAMWatch, Dragon Claw
+Visit the box in the Light Temple - Must be RAMWatch
+Visit the Pointless Ledge in Lava Dome - Must be RAMWatch
 Someone is hiding in the Alive Forest treehouses
-Visit the upper right ledge on Mount Gale
+Visit the upper right ledge on Mount Gale - Visit White's Spawnpoint

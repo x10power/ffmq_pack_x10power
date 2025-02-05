@@ -4,8 +4,8 @@
     "parent": "World",
     "access_rules": [
       "@Focus Tower Doors/3F - River Door Box",
-      "$crest_warp|aq|fb",
-      "$crest_warp|wn|fb"
+      "sandcoin,$crest_warp|aq|fb",
+      "firecoin,$crest_warp|wn|fb"
     ],
     "children": [
       {
@@ -93,7 +93,7 @@
       },
       {
         "name": "Sealed Temple",
-        "access_rules": ["@Wintry Temple,$crest_warp|wt|st"],
+        "access_rules": ["vanilla,arionsaved", "rando"],
         "map_locations": [{"map": "restored-world", "x": 194, "y": 214}],
         "sections": [
           {
@@ -104,11 +104,13 @@
           },
           {
             "name": "West Box",
+            "access_rules": ["@Sealed Temple/Boxes"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "East Box",
+            "access_rules": ["@Sealed Temple/Boxes"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },

@@ -36,7 +36,7 @@
       },
       {
         "name": "Life Temple",
-        "access_rules": ["$crest_warp|lft|lbt"],
+        "access_rules": ["@Libra Temple/Box,$crest_warp|lft|lbt"],
         "map_locations": [{"map": "restored-world", "x": 520, "y": 315}],
         "sections": [
           {
@@ -84,27 +84,30 @@
       },
       {
         "name": "Wintry Temple",
-        "access_rules": ["$crest_warp|st|wt"],
+        "access_rules": ["aquaria_restored"],
         "map_locations": [{"map": "restored-world", "x": 400, "y": 280}],
         "sections": [
           {
             "name": "Boxes",
+            "access_rules": ["@Sealed Temple/Crest Tile to Wintry Temple"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "clear_as_group": false,
             "item_count": 2
           },
           {
             "name": "West Box",
+            "access_rules": ["@Wintry Temple/Boxes"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "East Box",
+            "access_rules": ["@Wintry Temple/Boxes"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
-            "name": "Wintry Cave (Tristam)",
+            "name": "Wintry Temple (Tristam)",
             "access_rules": ["", "{}"],
             "#type": "tristam",
             "chest_opened_img": "images/party/tristam.gif",
@@ -114,7 +117,7 @@
           },
           {
             "name": "Crest Tile to Sealed Temple",
-            "access_rules": ["$crest_warp|wt|st"],
+            "access_rules": ["@Wintry Temple/Boxes,$crest_warp|wt|st"],
             "#type": "warp",
             "hosted_item": "wtst"
           }
@@ -122,6 +125,7 @@
       },
       {
         "name": "Spencer's Cave",
+        "#FIXME": "NYI: Crest Tile Randomization Support",
         "access_rules": ["aquaria_restored"],
         "map_locations": [{"map": "restored-world", "x": 675, "y": 315}],
         "sections": [

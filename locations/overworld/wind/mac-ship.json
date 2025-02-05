@@ -2,6 +2,9 @@
   {
     "name": "Mac's Ship",
     "parent": "Wind",
+    "access_rules": [
+      "$crest_warp|wn|sd,megagrenade,@Quests/Build the Rainbow Bridge"
+    ],
     "children": [
       {
         "name": "Mac's Ship Overworld",

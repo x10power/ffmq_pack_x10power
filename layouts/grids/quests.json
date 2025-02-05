@@ -2,7 +2,7 @@
   "type": "itemgrid",
   "item_margin": "0",
   "rows": [
-    ["kaelicured", "arionsaved", "aquaria_restored"],
+    ["elixir", "arionsaved", "wakewater"],
     [
       "earthcrystal",
       "watercrystal",

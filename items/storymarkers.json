@@ -129,38 +129,5 @@
     "loop": true,
     "img": "images/bosstokens/doomcastle.png",
     "codes": "boss_doomcastle"
-  },
-  {
-    "name": "Restore Aquaria",
-    "type": "progressive",
-    "img": "images/restore_aquaria.png",
-    "allow_disabled": false,
-    "codes": "restore_aquaria",
-    "stages": [
-      {
-        "name": "Aquaria Frozen",
-        "img": "images/restore_aquaria.png",
-        "img_mods": "@disabled",
-        "codes": "restore_aquaria, aquaria_frozen"
-      },
-      {
-        "name": "Aquaria Thawing",
-        "img": "images/restore_aquaria.png",
-        "img_mods": "brightness|0.5",
-        "codes": "aquaria_thawing"
-      },
-      {
-        "name": "Aquaria Restored",
-        "img": "images/restore_aquaria.png",
-        "codes": "aquaria_restored"
-      }
-    ]
-  },
-  {
-    "name": "First Mate",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/inventory/captaincap.png",
-    "codes": "firstmate"
   }
 ]

@@ -4,11 +4,11 @@
     "parent": "World",
     "children": [
       {
-        "name": "Give Elixir to Kaeli",
+        "name": "Use Elixir to Cure",
         "map_locations": [{"map": "quests", "x": 0, "y": 0}],
         "sections": [
           {
-            "name": "Give Elixir to Kaeli",
+            "name": "Use Elixir to Cure",
             "access_rules": ["elixir", "kaelicured"],
             "item_count": 1
           }
@@ -62,6 +62,26 @@
             "name": "4 Crystals",
             "access_rules": ["crystal:4"],
             "item_count": 1
+          },
+          {
+            "name": "Crystal of Earth",
+            "access_rules": ["crystal_earth"],
+            "item_count": 1
+          },
+          {
+            "name": "Crystal of Fire",
+            "access_rules": ["crystal_fire"],
+            "item_count": 1
+          },
+          {
+            "name": "Crystal of Water",
+            "access_rules": ["crystal_water"],
+            "item_count": 1
+          },
+          {
+            "name": "Crystal of Wind",
+            "access_rules": ["crystal_wind"],
+            "item_count": 1
           }
         ]
       },
@@ -112,7 +132,7 @@
         "sections": [
           {
             "name": "Build it!",
-            "access_rules": ["boss_mountgale,thunderrock"],
+            "access_rules": ["@Windia/Vendor,thunderrock"],
             "item_count": 1
           }
         ]
