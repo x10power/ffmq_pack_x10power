@@ -7,9 +7,9 @@
       {
         "name": "Hidden Tunnel Box",
         "access_rules": [
-          "rivercoin,claw",
-          "[rivercoin],sandcoin,$crest_warp|aq|fb,claw",
-          "[rivercoin],suncoin,$crest_warp|wn|fb,multikey"
+          "claw",
+          "sandcoin,$crest_warp|aq|fb,claw",
+          "suncoin,$crest_warp|wn|fb,multikey"
         ],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "item_count": 1
@@ -26,7 +26,7 @@
       {
         "name": "Reuben's House (Arion)",
         "access_rules": [
-          "@Mine/Reuben's Cutscene (Near Dad),rivercoin,megagrenade",
+          "@Mine/Reuben's Cutscene (Near Dad),megagrenade",
           "@Mine/Reuben's Cutscene (Near Dad),megagrenade,[rivercoin],$fireburg_expert_access"
         ],
         "#type": "default",
@@ -35,8 +35,7 @@
       {
         "name": "Reuben's House (Box)",
         "access_rules": [
-          "rivercoin",
-          "[rivercoin],$fireburg_expert_access"
+          "$fireburg_expert_access"
         ],
         "#type": "default",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
@@ -45,17 +44,16 @@
       {
         "name": "Locked House Man",
         "access_rules": [
-          "rivercoin,multikey,claw",
-          "[rivercoin],[multikey],suncoin,$crest_warp|wn|fb",
-          "[rivercoin],sandcoin,$crest_warp|aq|fb,multikey,claw"
+          "claw,multikey",
+          "sandcoin,$crest_warp|aq|fb,claw,multikey",
+          "suncoin,$crest_warp|wn|fb,multikey"
         ],
         "item_count": 1
       },
       {
         "name": "Vendor",
         "access_rules": [
-          "rivercoin",
-          "[rivercoin],$fireburg_expert_access"
+          "$fireburg_expert_access"
         ],
         "capture_item": true,
         "capture_item_layout": "tracker_capture_vendor",
@@ -64,8 +62,8 @@
       {
         "name": "Tristam (Hotel Gift)",
         "access_rules": [
-          "rivercoin,tristam",
-          "[rivercoin,tristam],$fireburg_expert_access"
+          "tristam",
+          "[tristam],$fireburg_expert_access"
         ],
         "#type": "default",
         "item_count": 1

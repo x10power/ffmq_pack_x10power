@@ -195,6 +195,7 @@ if string.find(variant, "map") then
     "wind/windia",
     "wind/giant-tree",
     "wind/pazuzu-tower",
+    "quests", -- Pre-req for Mac's Ship
     "wind/mac-ship",
     -- Battlefields
     "battlefields/earth",
@@ -208,7 +209,6 @@ if string.find(variant, "map") then
       Tracker:AddLocations("locations/underworld/" .. locCat .. ".json")
     end
   end
-  Tracker:AddLocations("locations/quests.json")
   print("")
 else
   -- Legacy

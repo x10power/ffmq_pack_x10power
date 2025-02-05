@@ -84,12 +84,11 @@
       },
       {
         "name": "Wintry Temple",
-        "access_rules": ["aquaria_restored"],
+        "access_rules": ["@Sealed Temple/Crest Tile to Wintry Temple"],
         "map_locations": [{"map": "restored-world", "x": 400, "y": 280}],
         "sections": [
           {
             "name": "Boxes",
-            "access_rules": ["@Sealed Temple/Crest Tile to Wintry Temple"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "clear_as_group": false,
             "item_count": 2
@@ -117,7 +116,7 @@
           },
           {
             "name": "Crest Tile to Sealed Temple",
-            "access_rules": ["@Wintry Temple/Boxes,$crest_warp|wt|st"],
+            "access_rules": ["$crest_warp|wt|st"],
             "#type": "warp",
             "hosted_item": "wtst"
           }
