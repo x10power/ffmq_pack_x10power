@@ -9,9 +9,10 @@
       "firecrystal",
       "windcrystal"
     ],
-    ["refreshers", "battlefields", "skyshards"],
+    ["refreshers", "battlefields", "skyshards", "crystals"],
     ["tristam_bd", "phoebe_wc", "reuben_mine"],
     [
+      "minibosses",
       "boss_levelforest",
       "boss_wintrycave",
       "boss_fallsbasin"

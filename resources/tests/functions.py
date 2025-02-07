@@ -73,13 +73,17 @@ for r,d,f in os.walk(dirname):
                                     if itemName not in itemToFunc:
                                         itemToFunc[itemName] = []
                                     itemToFunc[itemName].append(funcName)
-                        image = re.search(r"(?:[\"|\|])(?:images)([^\"]*)(?:[\"])", line.strip())
+                        image = re.search(r"(?:[\"\|\|])(?:images)(?:[\/]?)([^\"]*)(?:[\"])", line.strip())
                         if image:
-                            imageName = os.path.join("images", image.group(1).strip())
-                            linImg = imageName.replace("\\","/")
-                            winImg = imageName.replace("/","\\")
-                            if linImg not in images and winImg not in images:
-                                print(f" 🔴Invalid image reference on line '{i}'")
+                            if image.group(1) and image.group(1).strip() != "":
+                                imageName = os.path.join(
+                                    "images",
+                                    image.group(1).strip()
+                                )
+                                linImg = imageName.replace("\\","/")
+                                winImg = imageName.replace("/","\\")
+                                if linImg not in images and winImg not in images:
+                                    print(f" 🔴Invalid image reference on line '{i+1}'")
 
 print("")
 

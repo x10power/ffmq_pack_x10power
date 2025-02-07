@@ -16,14 +16,6 @@
       "display_name": "Standard with Map",
       "flags": ["chathud", "map", "pins"]
     },
-    "shard_hunt": {
-      "display_name": "Shard Hunt",
-      "flags": ["chathud"]
-    },
-    "shard_hunt_map": {
-      "display_name": "Shard Hunt with Map",
-      "flags": ["chathud", "map", "pins"]
-    },
     "simple": {
       "display_name": "Simple",
       "flags": ["chathud"]

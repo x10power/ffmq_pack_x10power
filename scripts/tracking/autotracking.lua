@@ -562,24 +562,24 @@ function updateItemFromMemorySegment(segment)
         }
         checkStates = {
             {
-                [bSel(8)]= "elixir",
-                [bSel(7)]= "treewither",
-                [bSel(6)]= "wakewater",
+                [bSel(8)]= { "elixir", 1, "Elixir Obtained" },
+                [bSel(7)]= { "treewither", 1, "Tree Wither Obtained" },
+                [bSel(6)]= { "wakewater", 1, "Wake Water Obtained" },
                 [bSel(5)]= "venuskey",
                 [bSel(4)]= "multikey",
                 [bSel(3)]= "gasmask",
                 [bSel(2)]= "magicmirror",
-                [bSel(1)]= "thunderrock"
+                [bSel(1)]= { "thunderrock", 1, "Thunder Rock Obtained" }
             },
             {
-                [bSel(8)]= "captaincap",
+                [bSel(8)]= { "captaincap", 1, "Captain Cap Obtained" },
                 [bSel(7)]= "libra",
                 [bSel(6)]= "gemini",
                 [bSel(5)]= "mobius",
                 [bSel(4)]= "sandcoin",
                 [bSel(3)]= "rivercoin",
                 [bSel(2)]= "suncoin",
-                [bSel(1)]= "skycoin"
+                [bSel(1)]= "skyshards"
             }
         }
 
@@ -598,7 +598,7 @@ function updateShardHuntFromMemorySegment(segment)
       shards = ReadU8(segment, 0x7e0e93)
       print(shards)
       print("SkyShards")
-      shardsItem = Tracker:FindObjectForCode(SHARD_COUNT)
+      shardsItem = Tracker:FindObjectForCode("skyshards")
       if shardsItem then
         shardsItem.AcquiredCount = shards
       end

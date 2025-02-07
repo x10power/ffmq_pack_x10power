@@ -45,22 +45,22 @@
         "sections": [
           {
             "name": "1 Crystal",
-            "access_rules": ["crystal:1"],
+            "access_rules": ["crystals:1", "crystal:1"],
             "item_count": 1
           },
           {
             "name": "2 Crystals",
-            "access_rules": ["crystal:2"],
+            "access_rules": ["crystals:2", "crystal:2"],
             "item_count": 1
           },
           {
             "name": "3 Crystals",
-            "access_rules": ["crystal:3"],
+            "access_rules": ["crystals:3", "crystal:3"],
             "item_count": 1
           },
           {
             "name": "4 Crystals",
-            "access_rules": ["crystal:4"],
+            "access_rules": ["crystals:4", "crystal:4"],
             "item_count": 1
           },
           {
@@ -91,37 +91,37 @@
         "sections": [
           {
             "name": "1 Miniboss",
-            "access_rules": ["minibosses:1"],
+            "access_rules": ["minibosses:1","miniboss:1"],
             "item_count": 1
           },
           {
             "name": "2 Minibosses",
-            "access_rules": ["minibosses:2"],
+            "access_rules": ["minibosses:2","miniboss:2"],
             "item_count": 1
           },
           {
             "name": "3 Minibosses",
-            "access_rules": ["minibosses:3"],
+            "access_rules": ["minibosses:3","miniboss:3"],
             "item_count": 1
           },
           {
             "name": "4 Minibosses",
-            "access_rules": ["minibosses:4"],
+            "access_rules": ["minibosses:4","miniboss:4"],
             "item_count": 1
           },
           {
             "name": "5 Minibosses",
-            "access_rules": ["minibosses:5"],
+            "access_rules": ["minibosses:5","miniboss:5"],
             "item_count": 1
           },
           {
             "name": "6 Minibosses",
-            "access_rules": ["minibosses:6"],
+            "access_rules": ["minibosses:6","miniboss:6"],
             "item_count": 1
           },
           {
             "name": "7 Minibosses",
-            "access_rules": ["minibosses:7"],
+            "access_rules": ["minibosses:7","miniboss:7"],
             "item_count": 1
           }
         ]

@@ -132,7 +132,9 @@ function doom_castle_expert_access()
 end
 
 function crest_warp(source, destination)
-    if has("libra") and has("gemini") and has("mobius") then
+    if has("libra") and
+        has("gemini") and
+        has("mobius") then
         return 1
     end
 

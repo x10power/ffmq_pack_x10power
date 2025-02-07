@@ -93,7 +93,7 @@ How do I track my key items?
 * `sandcoin`
 * `rivercoin`
 * `suncoin`
-* `skycoin`
+* `skyshards`
 
 How do I progressively track how many items I got from battlefields?
 

@@ -1,6 +1,9 @@
 -- Version
 ScriptHost:LoadScript("scripts/ver.lua")
 
+-- Counters
+ScriptHost:LoadScript("scripts/settings/counters.lua")
+
 -- Settings
 ScriptHost:LoadScript("scripts/settings/settings.lua")
 
@@ -21,9 +24,17 @@ ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
 
 -- Items
 print("Loading Items")
-ScriptHost:LoadScript("scripts/class.lua")
-ScriptHost:LoadScript("scripts/items/custom_item.lua")
-ScriptHost:LoadScript("scripts/items/resistances.lua")
+
+--Classes & SDK
+ScriptHost:LoadScript("scripts/sdk/base/class.lua")
+ScriptHost:LoadScript("scripts/sdk/base/custom_item.lua")       -- Extends Class
+ScriptHost:LoadScript("scripts/sdk/base/consumableitem.lua")    -- Extends CustomItem
+ScriptHost:LoadScript("scripts/sdk/base/collectableitem.lua")   -- Extends ConsumableItem
+ScriptHost:LoadScript("scripts/sdk/surrogateitem.lua")
+ScriptHost:LoadScript("scripts/sdk/actionitem.lua")
+
+ScriptHost:LoadScript("scripts/items/resistances.lua")  -- Resistances
+ScriptHost:LoadScript("scripts/items/counters.lua")     -- Counters
 dir = "items"
 items = {
   "armor",
