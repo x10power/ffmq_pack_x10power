@@ -5,7 +5,11 @@
     "children": [
       {
         "name": "Focus Tower Overworld",
-        "access_rules": ["vanilla,tristam:1,kaelicured", "rando"],
+        "access_rules": [
+          "vanilla,[tristam:1],kaelicured",
+          "vanilla,[pm2],kaelicured",
+          "rando"
+        ],
         "children": [
           {
             "name": "Focus Tower Doors",

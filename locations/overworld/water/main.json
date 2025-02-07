@@ -61,7 +61,8 @@
       {
         "name": "Falls Basin",
         "access_rules": [
-          "vanilla,phoebe:1,boss_wintrycave,aquaria_thawing",
+          "vanilla,[phoebe:1],boss_wintrycave,aquaria_thawing",
+          "vanilla,[pm3],boss_wintrycave,aquaria_thawing",
           "rando"
         ],
         "map_locations": [{"map": "restored-world", "x": 580, "y": 185}],

@@ -10,13 +10,14 @@
       "windcrystal"
     ],
     ["refreshers", "battlefields", "skyshards"],
+    ["tristam_bd", "phoebe_wc", "reuben_mine"],
     [
       "boss_levelforest",
       "boss_wintrycave",
-      "boss_fallsbasin",
-      "boss_mine"
+      "boss_fallsbasin"
     ],
     [
+      "boss_mine",
       "boss_volcano",
       "boss_gianttree",
       "boss_mountgale"

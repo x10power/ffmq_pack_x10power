@@ -84,7 +84,7 @@
           },
           {
             "name": "Reuben's Cutscene (Near Dad)",
-            "access_rules": ["boss_mine,reuben", "boss_mine,pm4"],
+            "access_rules": ["boss_mine,[reuben]", "boss_mine,[pm4]"],
             "#type": "reuben",
             "chest_opened_img": "images/party/reuben.gif",
             "item_count": 1

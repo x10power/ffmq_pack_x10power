@@ -57,7 +57,12 @@
       },
       {
         "name": "Tristam (Hotel Gift)",
-        "access_rules": ["tristam", "[tristam],$fireburg_expert_access"],
+        "access_rules": [
+          "[tristam]",
+          "[tristam],$fireburg_expert_access",
+          "[pm2]",
+          "[pm2],$fireburg_expert_access"
+        ],
         "#type": "default",
         "item_count": 1
       },

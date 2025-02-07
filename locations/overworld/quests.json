@@ -10,7 +10,7 @@
           {
             "name": "Use Elixir to Cure",
             "access_rules": ["elixir", "kaelicured"],
-            "item_count": 1
+            "hosted_item": "cured"
           }
         ]
       },
@@ -23,19 +23,19 @@
             "access_rules": [
               "@Bone Dungeon Overworld/B1 - Tristam (Gift),@Fireburg/Tristam (Hotel Gift)"
             ],
-            "item_count": 1
+            "hosted_item": "tristam_bd_done"
           },
           {
             "name": "Wintry Cave with Phoebe",
             "access_rules": [
               "@Wintry Cave Overworld/1F - Phoebe (Gift),@Windia/Inn Bedroom Boxes"
             ],
-            "item_count": 1
+            "hosted_item": "phoebe_wc_done"
           },
           {
             "name": "Mine with Reuben",
             "access_rules": ["@Fireburg/Reuben's House (Arion)"],
-            "item_count": 1
+            "hosted_item": "reuben_mine_done"
           }
         ]
       },
@@ -65,23 +65,23 @@
           },
           {
             "name": "Crystal of Earth",
-            "access_rules": ["crystal_earth"],
-            "item_count": 1
-          },
-          {
-            "name": "Crystal of Fire",
-            "access_rules": ["crystal_fire"],
-            "item_count": 1
+            "access_rules": ["earthcrystal"],
+            "hosted_item": "earthcrystal"
           },
           {
             "name": "Crystal of Water",
-            "access_rules": ["crystal_water"],
-            "item_count": 1
+            "access_rules": ["watercrystal"],
+            "hosted_item": "watercrystal"
+          },
+          {
+            "name": "Crystal of Fire",
+            "access_rules": ["firecrystal"],
+            "hosted_item": "firecrystal"
           },
           {
             "name": "Crystal of Wind",
-            "access_rules": ["crystal_wind"],
-            "item_count": 1
+            "access_rules": ["windcrystal"],
+            "hosted_item": "windcrystal"
           }
         ]
       },

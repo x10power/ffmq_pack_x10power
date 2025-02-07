@@ -32,6 +32,75 @@
     "codes": "arionsaved"
   },
   {
+    "name": "Tristam to Bone Dungeon",
+    "type": "progressive",
+    "loop": true,
+    "img": "images/party/tristam.gif",
+    "img_mods": "overlay|images/overlay/bonedungeon.png",
+    "allow_disabled": false,
+    "codes": "tristam_bd",
+    "stages": [
+      {
+        "name": "Tristam to Bone Dungeon",
+        "img": "images/party/tristam.gif",
+        "img_mods": "overlay|images/overlay/bonedungeon.png",
+        "codes": "tristam_bd"
+      },
+      {
+        "name": "Tristam at Bone Dungeon",
+        "img": "images/party/tristam.gif",
+        "img_mods": "overlay|images/overlay/check.png",
+        "codes": "tristam_bd, tristam_bd_done"
+      }
+    ]
+  },
+  {
+    "name": "Phoebe to Wintry Cave",
+    "type": "progressive",
+    "loop": true,
+    "img": "images/party/phoebe.gif",
+    "img_mods": "overlay|images/overlay/wc.png",
+    "allow_disabled": false,
+    "codes": "phoebe_wc",
+    "stages": [
+      {
+        "name": "Phoebe to Wintry Cave",
+        "img": "images/party/phoebe.gif",
+        "img_mods": "overlay|images/overlay/wc.png",
+        "codes": "phoebe_wc"
+      },
+      {
+        "name": "Phoebe at Wintry Cave",
+        "img": "images/party/phoebe.gif",
+        "img_mods": "overlay|images/overlay/check.png",
+        "codes": "phoebe_wc, phoebe_wc_done"
+      }
+    ]
+  },
+  {
+    "name": "Reuben to Mine",
+    "type": "progressive",
+    "loop": true,
+    "img": "images/party/reuben.gif",
+    "img_mods": "overlay|images/overlay/mine.png",
+    "allow_disabled": false,
+    "codes": "reuben_mine",
+    "stages": [
+      {
+        "name": "Reuben to Mine",
+        "img": "images/party/reuben.gif",
+        "img_mods": "overlay|images/overlay/mine.png",
+        "codes": "reuben_mine"
+      },
+      {
+        "name": "Reuben at Mine",
+        "img": "images/party/reuben.gif",
+        "img_mods": "overlay|images/overlay/check.png",
+        "codes": "reuben_mine, reuben_mine_done"
+      }
+    ]
+  },
+  {
     "name": "Boss: Level Forest",
     "type": "toggle",
     "loop": true,
