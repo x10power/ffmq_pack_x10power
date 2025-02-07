@@ -127,7 +127,7 @@
         "name": "Spencer's Cave",
         "#FIXME": "NYI: Crest Tile Randomization Support",
         "access_rules": [
-          "vanilla,aquaria_restored",
+          "aquaria_restored",
           "rando,megagrenade,@Build the Rainbow Bridge/Build it!"
         ],
         "map_locations": [{"map": "restored-world", "x": 675, "y": 315}],
@@ -155,8 +155,8 @@
           {
             "name": "Mobius Chest",
             "access_rules": [
-              "megagrenade,libracrest,claw",
-              "megagrenade,mobiuscrest"
+              "@Windia,megagrenade,libracrest,claw",
+              "@Windia,megagrenade,mobiuscrest"
             ],
             "#type": "chest",
             "chest_unavailable_img": "images/chests/available.png",

@@ -132,7 +132,7 @@
         "sections": [
           {
             "name": "Build it!",
-            "access_rules": ["@Windia/Vendor,thunderrock"],
+            "access_rules": ["@Windia,thunderrock"],
             "item_count": 1
           }
         ]
