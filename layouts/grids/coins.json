@@ -1,8 +1,8 @@
-{
-  "coins_grid": {
-    "type": "itemgrid",
-    "background": "#000000",
-    "item_margin": "0",
-    "rows": [["sandcoin", "rivercoin", "suncoin", "skyshards"]]
-  }
-}
+{"coins_grid": {
+  "type": "itemgrid",
+  "background": "#000000",
+  "item_margin": "0",
+  "rows": [
+    ["sandcoin", "rivercoin", "suncoin", "skyshards"]
+  ]
+}}

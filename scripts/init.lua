@@ -33,6 +33,9 @@ ScriptHost:LoadScript("scripts/sdk/base/collectableitem.lua")   -- Extends Consu
 ScriptHost:LoadScript("scripts/sdk/surrogateitem.lua")
 ScriptHost:LoadScript("scripts/sdk/actionitem.lua")
 
+ScriptHost:LoadScript("scripts/items/mm1/sdk/toggleitem.lua")   -- MM1 Items
+ScriptHost:LoadScript("scripts/items/mm1/items/toggles.lua")    -- MM1 Toggles
+
 ScriptHost:LoadScript("scripts/items/resistances.lua")  -- Resistances
 ScriptHost:LoadScript("scripts/items/counters.lua")     -- Counters
 dir = "items"
@@ -40,7 +43,6 @@ items = {
   "armor",
   "battlefields",
   "counters",
-  "crystals",
   "magics",
   "party",
   "settings",

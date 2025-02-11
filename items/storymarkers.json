@@ -98,102 +98,11 @@
     ]
   },
   {
-    "name": "Boss: Level Forest",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/levelforest.png",
-    "codes": "boss_levelforest, miniboss"
-  },
-  {
     "name": "Boss: Sand Temple",
     "type": "toggle",
     "initial_active_state": true,
     "ignore_user_input": true,
     "img": "images/bosstokens/sandtemple.png",
     "codes": "boss_sandtemple"
-  },
-  {
-    "name": "Boss: Bone Dungeon",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/bonedungeon.png",
-    "codes": "boss_bonedungeon"
-  },
-  {
-    "name": "Boss: Wintry Cave",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/wintrycave.png",
-    "codes": "boss_wintrycave, miniboss"
-  },
-  {
-    "name": "Boss: Falls Basin",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/fallsbasin.png",
-    "codes": "boss_fallsbasin, miniboss"
-  },
-  {
-    "name": "Boss: Ice Pyramid",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/icepyramid.png",
-    "codes": "boss_icepyramid"
-  },
-  {
-    "name": "Boss: Mine",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/mine.png",
-    "codes": "boss_mine, miniboss"
-  },
-  {
-    "name": "Boss: Volcano",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/volcano.png",
-    "codes": "boss_volcano, miniboss"
-  },
-  {
-    "name": "Boss: Lava Dome",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/lavadome.png",
-    "codes": "boss_lavadome"
-  },
-  {
-    "name": "Boss: Giant Tree",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/gianttree.png",
-    "codes": "boss_gianttree, miniboss"
-  },
-  {
-    "name": "Boss: Mount Gale",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/mountgale.png",
-    "codes": "boss_mountgale, miniboss"
-  },
-  {
-    "name": "Boss: Pazuzu's Tower",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/pazuzutower.png",
-    "codes": "boss_pazuzutower"
-  },
-  {
-    "name": "Boss: Mac's Ship",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/macship.png",
-    "codes": "boss_macship, miniboss"
-  },
-  {
-    "name": "Boss: Doom Castle",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/bosstokens/doomcastle.png",
-    "codes": "boss_doomcastle"
   }
 ]

@@ -1,50 +1,5 @@
 [
   {
-    "name": "Sand Coin",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/coins/coin_sand.png",
-    "codes": "sand, sandcoin"
-  },
-  {
-    "name": "River Coin",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/coins/coin_river.png",
-    "codes": "river, rivercoin"
-  },
-  {
-    "name": "Sun Coin",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/coins/coin_sun.png",
-    "codes": "sun, suncoin"
-  },
-  {
-    "name": "Libra Crest",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/crests/crest.png",
-    "img_mods": "overlay|images/crests/overlay/libra.png",
-    "codes": "libra, libracrest"
-  },
-  {
-    "name": "Gemini Crest",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/crests/crest.png",
-    "img_mods": "overlay|images/crests/overlay/gemini.png",
-    "codes": "gemini, geminicrest"
-  },
-  {
-    "name": "Mobius Crest",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/crests/crest.png",
-    "img_mods": "overlay|images/crests/overlay/mobius.png",
-    "codes": "mobius, mobiuscrest"
-  },
-  {
     "name": "Elixir",
     "type": "progressive",
     "loop": true,
@@ -108,34 +63,6 @@
         "codes": "aquaria_restored"
       }
     ]
-  },
-  {
-    "name": "Venus Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/inventory/venuskey.png",
-    "codes": "venuskey"
-  },
-  {
-    "name": "Multi Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/inventory/multikey.png",
-    "codes": "multikey"
-  },
-  {
-    "name": "Gas Mask",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/inventory/gasmask.png",
-    "codes": "gasmask,mask"
-  },
-  {
-    "name": "Magic Mirror",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/inventory/magicmirror.png",
-    "codes": "magicmirror"
   },
   {
     "name": "Thunder Rock",

@@ -9,7 +9,12 @@
       "firecrystal",
       "windcrystal"
     ],
-    ["refreshers", "battlefields", "skyshards", "crystals"],
+    [
+      "refreshers",
+      "battlefields",
+      "skyshards",
+      "crystals"
+    ],
     ["tristam_bd", "phoebe_wc", "reuben_mine"],
     [
       "minibosses",
