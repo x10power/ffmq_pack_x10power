@@ -10,6 +10,16 @@ function CollectableItem:init(name, code, maxqty, img, disabledImg, imgMods, dis
     self.MaxCount = maxqty
     if img then
         self.FullIcon = ImageReference:FromPackRelativePath(img, imgMods or "")
+        if disabledImg == nil then
+            disabledImg = img
+        end
+    end
+    if disabledImgMods == nil then
+        if imgMods ~= nil then
+            disabledImgMods = "@disabled," .. imgMods
+        else
+            disabledImgMods = "@disabled"
+        end
     end
     if disabledImg then
         self.EmptyIcon = ImageReference:FromPackRelativePath(disabledImg, disabledImgMods or "")

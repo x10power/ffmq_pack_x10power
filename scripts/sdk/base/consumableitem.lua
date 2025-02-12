@@ -53,10 +53,25 @@ function ConsumableItem:init(name, code, maxqty, img, disabledImg, imgMods, disa
 
     self.MaxCount = maxqty
     if img then
-        self.FullIcon = ImageReference:FromPackRelativePath(img, imgMods or "")
+        if imgMods == nil then
+            imgMods = ""
+        end
+        self.FullIcon = ImageReference:FromPackRelativePath(
+            img,
+            imgMods
+        )
+        if disabledImg == nil then
+            disabledImg = img
+            if disabledImgMods == nil then
+                disabledImgMods = "@disabled," .. imgMods
+            end
+        end
     end
     if disabledImg then
-        self.EmptyIcon = ImageReference:FromPackRelativePath(disabledImg, disabledImgMods or "")
+        self.EmptyIcon = ImageReference:FromPackRelativePath(
+            disabledImg,
+            disabledImgMods
+        )
     end
     self:UpdateBadgeAndIcon()
 end

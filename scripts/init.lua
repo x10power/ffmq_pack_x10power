@@ -29,15 +29,15 @@ print("Loading Items")
 ScriptHost:LoadScript("scripts/sdk/base/class.lua")
 ScriptHost:LoadScript("scripts/sdk/base/custom_item.lua")       -- Extends Class
 ScriptHost:LoadScript("scripts/sdk/base/consumableitem.lua")    -- Extends CustomItem
-ScriptHost:LoadScript("scripts/sdk/base/collectableitem.lua")   -- Extends ConsumableItem
 ScriptHost:LoadScript("scripts/sdk/surrogateitem.lua")
 ScriptHost:LoadScript("scripts/sdk/actionitem.lua")
 
-ScriptHost:LoadScript("scripts/items/mm1/sdk/toggleitem.lua")   -- MM1 Items
-ScriptHost:LoadScript("scripts/items/mm1/items/toggles.lua")    -- MM1 Toggles
+ScriptHost:LoadScript("scripts/items/mm1/sdk/toggleitem.lua")       -- MM1 Items
+ScriptHost:LoadScript("scripts/items/mm1/sdk/collectableitem.lua")  -- Extends ConsumableItem
+ScriptHost:LoadScript("scripts/items/mm1/items/toggles.lua")        -- MM1 Toggles
+ScriptHost:LoadScript("scripts/items/mm1/items/counters.lua")       -- MM1 Counters
 
 ScriptHost:LoadScript("scripts/items/resistances.lua")  -- Resistances
-ScriptHost:LoadScript("scripts/items/counters.lua")     -- Counters
 dir = "items"
 items = {
   "armor",
