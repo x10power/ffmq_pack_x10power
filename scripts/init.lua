@@ -32,24 +32,20 @@ ScriptHost:LoadScript("scripts/sdk/base/consumableitem.lua")    -- Extends Custo
 ScriptHost:LoadScript("scripts/sdk/surrogateitem.lua")
 ScriptHost:LoadScript("scripts/sdk/actionitem.lua")
 
-ScriptHost:LoadScript("scripts/items/mm1/sdk/toggleitem.lua")       -- MM1 Items
+ScriptHost:LoadScript("scripts/items/mm1/sdk/toggleitem.lua")       -- MM1 Toggle Objects
 ScriptHost:LoadScript("scripts/items/mm1/sdk/collectableitem.lua")  -- Extends ConsumableItem
+ScriptHost:LoadScript("scripts/items/mm1/sdk/progressiveitem.lua")  -- MM1 Progressive Objects
 ScriptHost:LoadScript("scripts/items/mm1/items/toggles.lua")        -- MM1 Toggles
 ScriptHost:LoadScript("scripts/items/mm1/items/counters.lua")       -- MM1 Counters
+ScriptHost:LoadScript("scripts/items/mm1/items/progressives.lua")   -- MM1 Progressives
 
 ScriptHost:LoadScript("scripts/items/resistances.lua")  -- Resistances
 dir = "items"
 items = {
-  "armor",
   "battlefields",
-  "counters",
-  "magics",
   "party",
-  "settings",
   "storymarkers",
-  "warps",
-  "weapons",
-  "toggles"
+  "warps"
 }
 for _, itemCat in ipairs(items) do
   Tracker:AddItems(dir .. "/" .. itemCat .. ".json")

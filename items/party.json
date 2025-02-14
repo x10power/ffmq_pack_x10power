@@ -1,19 +1,5 @@
 [
   {
-    "name": "Benjamin",
-    "type": "progressive",
-    "allow_disabled": false,
-    "img": "images/party/benjamin.gif",
-    "codes": "ben, benjamin",
-    "stages": [
-      {
-        "name": "Benjamin",
-        "img": "images/party/benjamin.gif",
-        "codes": "benjamin"
-      }
-    ]
-  },
-  {
     "name": "Kaeli",
     "type": "consumable",
     "loop": true,

@@ -60,21 +60,25 @@
           {
             "name": "A2 - Gold Bar Room Leapfrog Alcove Boxes",
             "clear_as_group": false,
+            "access_rules": ["claw"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 2
           },
           {
             "name": "A2 - Gold Bar Room Leapfrog Alcove Box West",
+            "access_rules": ["claw"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "A2 - Gold Bar Room Leapfrog Alcove Box East",
+            "access_rules": ["claw"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "#item_count": 1
           },
           {
             "name": "A2a - Exterior Center Dropoff Ledge Box",
+            "access_rules": ["claw"],
             "visibility_rules": ["setting_shufflebrownbox_yes"],
             "item_count": 1
           },
