@@ -29,3 +29,102 @@ ProgressiveToggleItem(
         }
     }
 )
+
+for _,warp in ipairs({
+    {   -- FB -> AQ
+        ["src"] = "Fireburg",
+        ["dest"] = "Aquaria",
+        ["code"] = "fbaq",
+        ["initialStage"] = 2
+    },
+    {   -- AQ -> FB
+        ["src"] = "Aquaria",
+        ["dest"] = "Fireburg",
+        ["code"] = "aqfb",
+        ["initialStage"] = 2
+    },
+    {   -- ST -> WT
+        ["src"] = "Sealed Temple",
+        ["dest"] = "Wintry Temple",
+        ["code"] = "stwt",
+        ["initialStage"] = 2
+    },
+    {   -- WT -> ST
+        ["src"] = "Wintry Temple",
+        ["dest"] = "Sealed Temple",
+        ["code"] = "wtst",
+        ["initialStage"] = 2
+    },
+    {   -- FB -> WN
+        ["src"] = "Fireburg",
+        ["dest"] = "Windia",
+        ["code"] = "fbwn",
+        ["initialStage"] = 3
+    },
+    {   -- WN -> FB
+        ["src"] = "Windia",
+        ["dest"] = "Fireburg",
+        ["code"] = "wnfb",
+        ["initialStage"] = 3
+    },
+    {   -- Libra -> Life
+        ["src"] = "Libra Temple",
+        ["dest"] = "Life Temple",
+        ["code"] = "lbtlft",
+        ["initialStage"] = 1
+    },
+    {   -- Life -> Libra
+        ["src"] = "Life Temple",
+        ["dest"] = "Libra Temple",
+        ["code"] = "lftlbt",
+        ["initialStage"] = 1
+    },
+    {   -- Kaidge -> Light
+        ["src"] = "Kaidge Temple",
+        ["dest"] = "Light Temple",
+        ["code"] = "ktlit",
+        ["initialStage"] = 3
+    },
+    {   -- Light -> Kaidge
+        ["src"] = "Light Temple",
+        ["dest"] = "Kaidge Temple",
+        ["code"] = "litkt",
+        ["initialStage"] = 3
+    },
+    {   -- Windia -> Ship
+        ["src"] = "Windia",
+        ["dest"] = "Ship Dock",
+        ["code"] = "wnsd",
+        ["initialStage"] = 3
+    },
+    {
+        ["src"] = "Ship Dock",
+        ["dest"] = "Windia",
+        ["code"] = "sdwn",
+        ["initialStage"] = 3
+    }
+}) do
+    local stages = {}
+    for _,crest in pairs({"libra","gemini","mobius"}) do
+        table.insert(
+            stages,
+            {
+                ["name"] = warp["code"]:upper() .. ": " .. ucfirst(crest),
+                ["codes"] = warp["code"] .. "_" .. crest,
+                ["img"] = "images/warps/" ..
+                    warp["src"]:gsub(" Temple",""):gsub(" Dock",""):lower() ..
+                    "-" ..
+                    warp["dest"]:gsub(" Temple",""):gsub(" Dock",""):lower() ..
+                    ".png",
+                ["img_mods"] = "overlay|images/warps/overlay/" .. crest .. ".png"
+            }
+        )
+    end
+    ProgressiveToggleItem(
+        warp["src"] .. " -> " .. warp["dest"],
+        warp["code"],
+        stages,
+        warp["initialStage"] or 0,
+        false
+    )
+end

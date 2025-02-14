@@ -48,6 +48,55 @@ for _,item in pairs(
     )
 end
 
+-- Party Quests
+for _,member in pairs({
+    "kaeli",
+    "phoebe",
+    "reuben",
+    "tristam"
+}) do
+    CollectableItem(
+        ucfirst(member),
+        member:lower(),
+        4,
+        "images/party/" .. member:lower() .. ".gif"
+    )
+end
+
+-- Battlefields with Item Prize
+CollectableItem(
+    "Battlefield Item",             -- Name
+    "battlefield_item",             -- Code
+    nil,                            -- Max
+    "images/chests/available.png",  -- ActiveImg
+    nil,                            -- InactiveImg
+    nil,                            -- ActiveMods
+    nil,                            -- InactiveMods
+    1                               -- Min
+)
+-- Battlefields with GP Prize
+CollectableItem(
+    "Battlefield GP",               -- Name
+    "battlefield_gp",               -- Code
+    nil,                            -- Max
+    "images/battlefields/gp.png",   -- ActiveImg
+    nil,                            -- InactiveImg
+    nil,                            -- ActiveMods
+    nil,                            -- InactiveMods
+    1                               -- Min
+)
+-- Battlefields with XP Prize
+CollectableItem(
+    "Battlefield XP",               -- Name
+    "battlefield_xp",               -- Code
+    nil,                            -- Max
+    "images/battlefields/xp.png",   -- ActiveImg
+    nil,                            -- InactiveImg
+    nil,                            -- ActiveMods
+    nil,                            -- InactiveMods
+    1                               -- Min
+)
+
 -- Skyshards
 CollectableItem(
     "# Skyshards",

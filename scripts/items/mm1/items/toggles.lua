@@ -177,6 +177,27 @@ for _,dungeon in pairs(
     )
 end
 
+-- Boss: Sand Temple
+table.insert(
+    toggles,
+    {
+        ["name"] = "Boss: Sand Temple",
+        ["code"] = "boss_sandtemple",
+        ["img"] = "images/bosstokens/sandtemple.png",
+        ["ignore_user_input"] = true
+    }
+)
+
+-- Save Arion
+table.insert(
+    toggles,
+    {
+        ["name"] = "Save Arion",
+        ["code"] = "arionsaved",
+        ["img"] = "images/party/arion.png"
+    }
+)
+
 -- Weapons
 for slot,items in pairs(
     {
@@ -232,6 +253,9 @@ for _,item in ipairs(toggles) do
         ucfirst(item["name"]),
         item["code"],
         item["img"],
-        item["imgMods"] or ""
+        item["imgMods"] or "",
+        nil,
+        nil,
+        item["ignore_user_input"] or false
     )
 end

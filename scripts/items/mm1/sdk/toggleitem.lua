@@ -17,7 +17,7 @@ function mysplit(inputstr, sep)
 end
 
 -- Initialize Override
-function ToggleItem:init(name, codes, img, imgMods, disabledImg, disabledMods)
+function ToggleItem:init(name, codes, img, imgMods, disabledImg, disabledMods, ignoreuserinput)
     self:createItem(name)
     self.name = name
     self.code = {}
@@ -32,7 +32,8 @@ function ToggleItem:init(name, codes, img, imgMods, disabledImg, disabledMods)
         code = trim(code)
         self.code[code] = code
     end
-    self:setProperty("active", false)
+    self:setProperty("active", ignoreuserinput or false)
+    self:setProperty("ignore_user_input", ignoreuserinput or false)
 
     if img then
         imgMods = imgMods or ""
@@ -91,8 +92,10 @@ end
 
 -- Toggle
 function ToggleItem:toggle()
-    self:setActive(not self:getActive())
-    self:updateIcon()
+    if not self:getProperty("ignore_user_input") then
+        self:setActive(not self:getActive())
+        self:updateIcon()
+    end
 end
 
 -- LeftClick Override

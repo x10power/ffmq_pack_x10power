@@ -26,7 +26,7 @@ function ProgressiveItem:init(name, codes, stages, initialStage, allowDisabled)
         code = trim(code)
         self.code[code] = code
     end
-    self:setProperty("active", false)
+    self:setProperty("active", allowDisabled ~= nil and (not allowDisabled) or false)
     self:setProperty("allow_disabled", allowDisabled ~= nil and allowDisabled or true)
     self:setProperty("current_stage", initialStage or 1)
 

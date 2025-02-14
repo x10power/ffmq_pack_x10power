@@ -1,7 +1,7 @@
 CollectableItem = ConsumableItem:extend()
 CollectableItem.Loop = true
 
-function CollectableItem:init(name, code, maxqty, img, disabledImg, imgMods, disabledImgMods)
+function CollectableItem:init(name, code, maxqty, img, disabledImg, imgMods, disabledImgMods, minqty)
     maxqty = maxqty or self.MaxCount
 
     self:createItem(name)
@@ -26,7 +26,8 @@ function CollectableItem:init(name, code, maxqty, img, disabledImg, imgMods, dis
     end
 
     self.SwapActions = true
-    self.AcquiredCount = 0
+    self.AcquiredCount = minqty or 0
+    print(minqty,maxqty)
 
     self:UpdateBadgeAndIcon()
 end
