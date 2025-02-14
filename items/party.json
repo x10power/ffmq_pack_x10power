@@ -30,37 +30,5 @@
     "img": "images/party/tristam.gif",
     "max_quantity": 2,
     "codes": "tristam"
-  },
-  {
-    "name": "Party Member 2",
-    "type": "progressive_toggle",
-    "loop": true,
-    "codes": "pm",
-    "stages": [
-      {
-        "name": "Kaeli",
-        "img": "images/party/kaeli.gif",
-        "codes": "party2, pm1",
-        "secondary_codes": "kaeli"
-      },
-      {
-        "name": "Phoebe",
-        "img": "images/party/phoebe.gif",
-        "codes": "party2, pm3",
-        "secondary_codes": "phoebe"
-      },
-      {
-        "name": "Reuben",
-        "img": "images/party/reuben.gif",
-        "codes": "party2, pm4",
-        "secondary_codes": "reuben"
-      },
-      {
-        "name": "Tristam",
-        "img": "images/party/tristam.gif",
-        "codes": "party2, pm2",
-        "secondary_codes": "tristam"
-      }
-    ]
   }
 ]
