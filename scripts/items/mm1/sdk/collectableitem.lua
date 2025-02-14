@@ -27,7 +27,6 @@ function CollectableItem:init(name, code, maxqty, img, disabledImg, imgMods, dis
 
     self.SwapActions = true
     self.AcquiredCount = minqty or 0
-    print(minqty,maxqty)
 
     self:UpdateBadgeAndIcon()
 end

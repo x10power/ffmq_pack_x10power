@@ -12,7 +12,6 @@ function mysplit(inputstr, sep)
 end
 
 function ProgressiveItem:init(name, codes, stages, initialStage, allowDisabled)
-    print(name)
     self:createItem(name)
     self.code = {}
     if type(codes) ~= "table" then
