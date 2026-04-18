@@ -126,6 +126,7 @@ function setStateFromValue(value, states, override)
         override = false
     end
     if value then -- If we have a value
+        local code = ""
         setStage = false
         setToggle = false
         msgs = {}
@@ -133,7 +134,6 @@ function setStateFromValue(value, states, override)
             msg = ""
             -- if (bit.bor(value, v) > 0) then
             if (value & v) > 0 then
-                local code = ""
                 local note = ""
                 if type(state) == "table" then  -- Progressive Item
                     code = state[1]

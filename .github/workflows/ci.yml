@@ -7,11 +7,11 @@ on: [push, pull_request]
 #########
 # actions
 #########
-# actions/checkout@v4.1.7
-# actions/download-artifact@v4.1.8
+# actions/checkout@v6.0.2
+# actions/download-artifact@v8.0.1
 # actions/create-release@v1.1.4
 # actions/upload-release-asset@v1.0.2
-# benc-uk/workflow-dispatch@v1.2.4
+# benc-uk/workflow-dispatch@v1.3.1
 # ./.github/actions/get-parent-dir
 # ./.github/actions/install
 # ./.github/actions/test
@@ -28,7 +28,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v6.0.2
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
@@ -63,7 +63,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v6.0.2
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
@@ -99,14 +99,14 @@ jobs:
 
       # Upload AppVersion Artifact
       - name: 🔼Upload AppVersion Artifact
-        uses: actions/upload-artifact@v4.3.6
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/build
 
       # Upload Archive Artifact
       - name: 🔼Upload Archive Artifact
-        uses: actions/upload-artifact@v4.3.6
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: archive-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/deploy
@@ -132,7 +132,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v6.0.2
 
       # install dependencies via pip
       - name: 💿Install Dependencies via pip
@@ -147,13 +147,13 @@ jobs:
 
       # download appversion artifact
       - name: 🔽Download AppVersion Artifact
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v8.0.1
         with:
           name: appversion-windows-latest
           path: ${{ steps.parentDir.outputs.parentDir }}/build
       # download archive artifact
       - name: 🔽Download Archive Artifact
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v8.0.1
         with:
           name: archive-windows-latest
           path: ${{ steps.parentDir.outputs.parentDir }}/deploy
@@ -225,7 +225,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v6.0.2
       - name: 💿Install Dependencies via pip
         run: |
           python -m pip install pytz requests
@@ -264,7 +264,7 @@ jobs:
       #   value set to copied token
       - name: Update EmoTracker Pack Repository (MAIN)
         id: update-pack-repo-benc
-        uses: benc-uk/workflow-dispatch@v1.2.4
+        uses: benc-uk/workflow-dispatch@v1.3.1
         with:
           workflow: ci.yml
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}

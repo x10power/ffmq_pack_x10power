@@ -14,16 +14,16 @@ inputs:
 #########
 # actions
 #########
-# actions/checkout@v4.1.7
-# actions/setup-python@v5.1.1
-# actions/upload-artifact@v4.3.6
+# actions/checkout@v6.0.2
+# actions/setup-python@v6.2.0
+# actions/upload-artifact@v7.0.1
 
 runs:
   using: "composite"
   steps:
     # install python
     - name: 💿Install Python
-      uses: actions/setup-python@v5.1.1
+      uses: actions/setup-python@v6.2.0
       with:
         python-version: ${{ inputs.python-version }}
     # install modules via pip
@@ -43,7 +43,7 @@ runs:
       if: contains(inputs.calling-job, 'test')
     # upload pipline
     - name: 🔼Upload PipLine
-      uses: actions/upload-artifact@v4.3.6
+      uses: actions/upload-artifact@v7.0.1
       with:
         name: pipline-${{ inputs.calling-job }}-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/user/meta/manifests

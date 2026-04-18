@@ -1,6 +1,7 @@
 {
   "shared_item_grid_p": {
     "type": "array",
+    "background": "#000000",
     "orientation": "vertical",
     "content": [
       {"type": "layout", "key": "weapons_grid"},
@@ -13,6 +14,7 @@
   },
   "shared_item_grid": {
     "type": "array",
+    "background": "#000000",
     "orientation": "vertical",
     "content": [
       {"type": "layout", "key": "party_grid"},
@@ -70,6 +72,7 @@
   },
   "shared_item_grid_horizontal": {
     "type": "array",
+    "background": "#000000",
     "orientation": "horizontal",
     "content": [
       {"type": "layout", "key": "party_grid"},
@@ -90,6 +93,7 @@
   },
   "simple_grid": {
     "type": "array",
+    "background": "#000000",
     "orientation": "vertical",
     "content": [
       {"type": "layout", "key": "keyitems_grid"},

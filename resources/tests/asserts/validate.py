@@ -61,11 +61,15 @@ def check_files(dirs):
             print("TYPE NOT FOUND: " + resrcDir)
             print()
 
+schemaSrcDir = "https://raw.githubusercontent.com/EmoTracker-Community/EmoTracker-Service/refs/heads/main/sdk/schema"
 schemas = {}
 schemaSrcs = [
-  "https://emotracker.net/developers/schemas/items.json",
-  "https://emotracker.net/developers/schemas/layouts.json",
-  "https://emotracker.net/developers/schemas/locations.json"
+  f"{schemaSrcDir}/items.json",
+  f"{schemaSrcDir}/layouts.json",
+  f"{schemaSrcDir}/locations.json",
+  f"{schemaSrcDir}/manifest.json",
+  f"{schemaSrcDir}/repository.json",
+  f"{schemaSrcDir}/settings.json"
 ]
 
 schemaDir = os.path.join(".", "schema")

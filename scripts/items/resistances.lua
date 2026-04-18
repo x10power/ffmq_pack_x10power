@@ -49,7 +49,8 @@ function ResistanceItem:init(name)
         imgMods
     )
     self.disabledImage = ImageReference:FromPackRelativePath(
-        disabledImg or img,
+        -- disabledImg or img,
+        img,
         disabledMods or imgMods
     )
 
