@@ -23,6 +23,8 @@
             "access_rules": [
               "@Bone Dungeon Overworld/B1 - Tristam (Gift),@Fireburg/Tristam (Hotel Gift)"
             ],
+            "#type": "tristam",
+            "chest_opened_img": "images/party/tristam.gif",
             "hosted_item": "tristam_bd_done"
           },
           {
@@ -30,6 +32,8 @@
             "access_rules": [
               "@Wintry Cave Overworld/1F - Phoebe (Gift),@Windia/Inn Bedroom Boxes"
             ],
+            "#type": "phoebe",
+            "chest_opened_img": "images/party/phoebe.gif",
             "hosted_item": "phoebe_wc_done"
           },
           {
@@ -132,7 +136,7 @@
         "sections": [
           {
             "name": "Build it!",
-            "access_rules": ["@Windia,thunderrock"],
+            "access_rules": ["@Windia/Access,thunderrock"],
             "item_count": 1
           }
         ]

@@ -21,6 +21,7 @@ end
 -- Auto-Tracking
 print("Loading Auto-Tracking: " .. variant)
 ScriptHost:LoadScript("scripts/tracking/autotracking.lua")
+print("")
 
 -- Items
 print("Loading Items")
@@ -88,6 +89,7 @@ print("")
 
 if string.find(variant, "map") then
   print("Map Variant; load map stuff")
+  print("Load Maps")
   -- World Map
   Tracker:AddMaps("maps/maps.json")
 
@@ -128,6 +130,7 @@ if string.find(variant, "map") then
     Tracker:AddMaps("maps/" .. dungCat .. ".json")
   end
 
+  print("Load Map Layouts")
   -- Map Layouts
   -- Dungeon Maps
   dungMaps = {
@@ -174,10 +177,17 @@ if string.find(variant, "map") then
   end
   Tracker:AddLayouts("layouts/maps/world.json")
 
+  print("Load Locations")
+  -- World
   Tracker:AddLocations("locations/world.json")
 
   -- Locations
   locations = {
+    -- Battlefields
+    "battlefields/earth",
+    "battlefields/fire",
+    "battlefields/water",
+    "battlefields/wind",
     -- Center
     "center/main",
     "center/focus-tower",
@@ -191,7 +201,6 @@ if string.find(variant, "map") then
     "fire/fireburg",
     "fire/lava-dome",
     -- Water
-    "water/main",
     "water/aquaria",
     "water/wintry-cave",
     "water/ice-pyramid",
@@ -200,13 +209,9 @@ if string.find(variant, "map") then
     "wind/windia",
     "wind/giant-tree",
     "wind/pazuzu-tower",
-    "quests", -- Pre-req for Mac's Ship
     "wind/mac-ship",
-    -- Battlefields
-    "battlefields/earth",
-    "battlefields/fire",
-    "battlefields/water",
-    "battlefields/wind",
+    "quests",
+    "water/main",
   }
   for _, locCat in ipairs(locations) do
     Tracker:AddLocations("locations/overworld/" .. locCat .. ".json")

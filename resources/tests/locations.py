@@ -81,6 +81,9 @@ def digForChildren(loc):
                                 #     print(match.groups())
                                 circle = "🔴"
                                 errMsg = "not a valid location"
+                                # locsSet = list(set(locs))
+                                # locsSet.sort()
+                                # print(locsSet)
                             elif check not in items:
                                 err = True
                                 circle = "🔴"
@@ -94,6 +97,25 @@ def digForChildren(loc):
                         print(f"> {loc['name']}")
                         print(f">  {child['name']}")
                         print(f">   {circle}'{access_item}' {errMsg}")
+
+def process_file(r, d, f):
+    doWaterMain = f == ["main.json"]
+    for filename in f:
+        process = True
+        if filename == "main.json":
+            if "water" in r:
+                process = doWaterMain
+        if process:
+            if os.path.isfile(os.path.join(r, filename)):
+                if os.path.splitext(filename)[1].lower() == ".json":
+                    print(f"Reading: {os.path.join(r, filename)}")
+                    with open(os.path.join(r, filename), "r", encoding="utf-8") as locsFile:
+                        locsManifest = commentjson.load(locsFile)
+                        for loc in locsManifest:
+                            checkImageRefs(loc)
+                            if "map_locations" in loc or "access_rules" in loc:
+                                locs.append(loc["name"])
+                            digForChildren(loc)
 
 itemToFunc = {}
 items = []
@@ -112,6 +134,7 @@ with open(
     encoding="utf-8"
 ) as itemToFuncFile:
     itemToFunc = commentjson.load(itemToFuncFile)
+
 with open(
     os.path.join(
         ".",
@@ -128,6 +151,22 @@ with open(
     os.path.join(
         ".",
         "resources",
+        "app",
+        "items",
+        "names.json"
+    ),
+    "r",
+    encoding="utf-8"
+) as itemsFile:
+    itemNames = commentjson.load(itemsFile)
+    for itemType, itemNames in itemNames.items():
+        for itemName in itemNames:
+            items.append(itemName)
+
+with open(
+    os.path.join(
+        ".",
+        "resources",
         "tests",
         "output",
         "funcNames.json"
@@ -140,22 +179,27 @@ with open(
 print("Reading Locations")
 dirname = os.path.join(".", "locations")
 for r, d, f in os.walk(dirname):
-    if "main.json" in f:
-        f.pop(f.index("main.json"))
-        f.reverse()
-        f.append("main.json")
-        f.reverse()
-    for filename in f:
-        if os.path.isfile(os.path.join(r, filename)):
-            if os.path.splitext(filename)[1].lower() == ".json":
-                print(f"Reading: {os.path.join(r, filename)}")
-                with open(os.path.join(r, filename), "r", encoding="utf-8") as locsFile:
-                    locsManifest = commentjson.load(locsFile)
-                    for loc in locsManifest:
-                        checkImageRefs(loc)
-                        if "access_rules" in loc:
-                            locs.append(loc["name"])
-                        digForChildren(loc)
+    d.sort()
+    f.sort()
+    for firstCheck in ["main.json"]:
+        if firstCheck in f:
+            f.pop(f.index(firstCheck))
+            f.reverse()
+            f.append(firstCheck)
+            f.reverse()
+    quests = "quests.json" in f
+    if not quests:
+        process_file(r, d, f)
+process_file(
+    "./locations/overworld/",
+    [],
+    ["quests.json"]
+)
+process_file(
+    "./locations/overworld/water",
+    [],
+    ["main.json"]
+)
 
 print("")
 

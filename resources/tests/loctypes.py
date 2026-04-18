@@ -10,6 +10,8 @@ with open(typeDefnsPath, "r") as typeDefnsFile:
 print("Reading Location Image Types")
 dirname = os.path.join(".", "locations")
 for r, d, f in os.walk(dirname):
+    d.sort()
+    f.sort()
     if "main.json" in f:
         f.pop(f.index("main.json"))
         f.reverse()

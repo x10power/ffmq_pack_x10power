@@ -4,6 +4,7 @@
     "parent": "Wind",
     "map_locations": [{"map": "restored-world", "x": 690, "y": 460}],
     "sections": [
+      {"name": "Access", "item_count": 0},
       {
         "name": "Otto's Attic Box",
         "visibility_rules": ["setting_shufflebrownbox_yes"],

@@ -45,12 +45,21 @@ def check_files(dirs):
     for resrcDir in dirs:
         # cycle through this dir
         jsonType = ""
-        for jsonTypeCheck in ["items", "layouts", "locations", "maps", "manifest.json", "repository.json"]:
+        for jsonTypeCheck in [
+            "items",
+            "layouts",
+            "locations",
+            "maps",
+            "manifest.json",
+            "repository.json"
+        ]:
             if jsonTypeCheck in resrcDir:
                 jsonType = jsonTypeCheck.replace(".json", "")
         if jsonType != "":
             if os.path.isdir(resrcDir):
-                for r, _, f in os.walk(resrcDir):
+                for r, d, f in os.walk(resrcDir):
+                    d.sort()
+                    f.sort()
                     for filename in f:
                         validate_file(r, filename, jsonType)
             elif os.path.isfile(resrcDir):
@@ -118,11 +127,13 @@ for [gameID, packData] in srcs.items():
     packUID = packData["packUID"]
     if os.path.isdir(os.path.join(".", "variants")):
         srcs[gameID]["variants"] = os.listdir(os.path.join(".", "variants"))
+        srcs[gameID]["variants"].sort()
     elif os.path.isdir(os.path.join(".", packUID)):
         for folder in os.listdir(os.path.join(".")):
             if "var_" in folder:
                 thisDir = folder
                 srcs[gameID]["variants"].append(thisDir)
+        srcs[gameID]["variants"].sort()
 
 for [gameID, packData] in srcs.items():
     packUID = packData["packUID"]

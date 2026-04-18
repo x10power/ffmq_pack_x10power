@@ -39,9 +39,27 @@ with open(
 ) as itemsFile:
     items = commentjson.load(itemsFile)
 
+with open(
+    os.path.join(
+        ".",
+        "resources",
+        "app",
+        "items",
+        "names.json"
+    ),
+    "r",
+    encoding="utf-8"
+) as itemsFile:
+    itemNames = commentjson.load(itemsFile)
+    for itemType, itemNames in itemNames.items():
+        for itemName in itemNames:
+            items.append(itemName)
+
 print("Reading Scripts")
 dirname = os.path.join(".", "scripts")
 for r,d,f in os.walk(dirname):
+    d.sort()
+    f.sort()
     for filename in f:
         if os.path.isfile(os.path.join(r,filename)):
             if os.path.splitext(filename)[1].lower() == ".lua":
@@ -73,17 +91,19 @@ for r,d,f in os.walk(dirname):
                                     if itemName not in itemToFunc:
                                         itemToFunc[itemName] = []
                                     itemToFunc[itemName].append(funcName)
+
                         image = re.search(r"(?:[\"\|\|])(?:images)(?:[\/]?)([^\"]*)(?:[\"])", line.strip())
                         if image:
-                            if image.group(1) and image.group(1).strip() != "":
-                                imageName = os.path.join(
-                                    "images",
-                                    image.group(1).strip()
-                                )
-                                linImg = imageName.replace("\\","/")
-                                winImg = imageName.replace("/","\\")
-                                if linImg not in images and winImg not in images:
-                                    print(f" 🔴Invalid image reference on line '{i+1}'")
+                            if line.strip().find("..") < 0:
+                                if image.group(1) and image.group(1).strip() != "":
+                                    imageName = os.path.join(
+                                        "images",
+                                        image.group(1).strip()
+                                    )
+                                    linImg = imageName.replace("\\","/")
+                                    winImg = imageName.replace("/","\\")
+                                    if linImg not in images and winImg not in images:
+                                        print(f" 🔴Invalid image reference on line '{i+1}'")
 
 print("")
 
