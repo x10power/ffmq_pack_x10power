@@ -52,36 +52,52 @@ function ConsumableItem:init(name, code, maxqty, img, disabledImg, imgMods, disa
     self.code = code
 
     self.MaxCount = maxqty
+    self.imgMods = ""
     if img then
-        if imgMods == nil then
-            imgMods = ""
+        if imgMods and imgMods ~= nil and imgMods ~= "" then
+            self.imgMods = imgMods
         end
-        self.FullIcon = ImageReference:FromPackRelativePath(
-            img,
-            imgMods
-        )
+        self.FullIcon = ImageReference:FromPackRelativePath(img, self.imgMods)
         if disabledImg == nil then
             disabledImg = img
-            if disabledImgMods == nil then
-                disabledImgMods = "@disabled," .. imgMods
-            end
         end
-    end
-    if disabledImg then
-        self.EmptyIcon = ImageReference:FromPackRelativePath(
-            disabledImg,
-            disabledImgMods
-        )
+        if disabledImgMods == nil then
+            disabledImgMods = "@disabled," .. self.ImgMods
+        end
+        self.disabledImgMods = disabledImgMods or "@disabled"
+        self.EmptyIcon = ImageReference:FromPackRelativePath(disabledImg, self.disabledImgMods)
     end
     self:UpdateBadgeAndIcon()
 end
 
 function ConsumableItem:UpdateBadgeAndIcon()
+    -- If there's no more to get
     if self.AvailableCount == 0 then
-        self.ItemInstance.Icon = self.AcquiredCount > 0 and self.FullIcon or self.EmptyIcon
-        self.ItemInstance.BadgeText = nil
+        -- If we've got any, use Full icon
+        -- If we don't have any, use Empty icon
+        if self.AcquiredCount > 0 then
+            self.ItemInstance.Icon = self.FullIcon
+            if myIsPopTracker() then
+                self.ItemInstance.Icon = ImageReference:FromImageReference(
+                    self.FullIcon,
+                    self.imgMods
+                )
+            end
+        else
+            self.ItemInstance.Icon = self.EmptyIcon
+            if myIsPopTracker() then
+                self.ItemInstance.Icon = ImageReference:FromImageReference(
+                    self.EmptyIcon,
+                    self.disabledImgMods
+                )
+            end
+        end
+        self.ItemInstance.BadgeText = myIsPopTracker() and "" or nil
     else
+        -- If there's more to get
+        -- Use Full icon
         self.ItemInstance.Icon = self.FullIcon
+        -- Calculate badge text
         if not self.DisplayAsFractionOfMax then
             if math.floor(self.MaxCount) == 1 then
                 self.ItemInstance.BadgeText = nil
@@ -92,14 +108,24 @@ function ConsumableItem:UpdateBadgeAndIcon()
             self.ItemInstance.BadgeText = tostring(math.floor(self.AvailableCount)) .. "/" .. tostring(math.floor(self.MaxCount))
         end
     end
+    -- If we've got >= max
     if self.AcquiredCount >= self.MaxCount then
+        -- Set color to green
         self.ItemInstance.BadgeTextColor = "#00ff00"
     else
-        self.ItemInstance.BadgeTextColor = "WhiteSmoke"
+        -- Else, set color to white
+        self.ItemInstance.BadgeTextColor = "#f5f5f5"
+        if myIsPopTracker() then
+            self.ItemInstance:SetOverlayBackground("#000000")
+            self.ItemInstance:SetOverlayFontSize(12)
+        end
     end
 end
 
 function ConsumableItem:InvalidateAccessibility()
+    if myIsPopTracker() then
+        return
+    end
     self.ItemInstance:InvalidateAccessibility()
 end
 

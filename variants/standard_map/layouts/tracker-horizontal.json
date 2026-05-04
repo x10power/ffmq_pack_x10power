@@ -18,8 +18,7 @@
           },
           "content": {
             "type": "layout",
-            "key": "shared_item_grid",
-            "width": 200
+            "key": "shared_item_grid"
           }
         },
         {
@@ -34,8 +33,7 @@
     },
     {
       "type": "layout",
-      "key": "game_map",
-      "width": 1000
+      "key": "game_map"
     }
   ]
 }}

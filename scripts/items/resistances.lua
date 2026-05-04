@@ -3,11 +3,9 @@ ResistanceItem = class(CustomItem)
 local resistances = {
     "none",
     "earth","water","fire","air",
-    "zombie",
-    "axe","bomb","projectile",
-    "doom",
-    "stone",
-    "paralysis","sleep","confusion","poison","blind","silence"
+    "zombie","axe","bomb","projectile",
+    "doom","paralysis","sleep","stone",
+    "blind","confusion","poison","silence"
 }
 
 function ResistanceItem:ucfirst(input)
@@ -44,15 +42,10 @@ function ResistanceItem:init(name)
     img = "images/" .. self:getDomain(name) .. "/" .. name .. ".png"
     imgMods = ""
     disabledMods = "@disabled"
-    self.activeImage = ImageReference:FromPackRelativePath(
-        img,
-        imgMods
-    )
-    self.disabledImage = ImageReference:FromPackRelativePath(
-        -- disabledImg or img,
-        img,
-        disabledMods or imgMods
-    )
+    self.ActiveIcon = ImageReference:FromPackRelativePath(img)
+    self.imgMods = imgMods
+    self.InactiveIcon = ImageReference:FromPackRelativePath(img)
+    self.disabledImgMods = disabledMods
 
     self:updateIcon()
 end
@@ -75,16 +68,41 @@ function ResistanceItem:updateIcon()
         "/overlay/" ..
         target ..
         ".png"
+
     if self:getActive() then
-        self.ItemInstance.Icon = ImageReference:FromImageReference(
-            self.activeImage,
-            "overlay|" .. overlay
-        )
+        local imgMods = "overlay|" .. overlay
+        if (
+            self.imgMods and
+            self.imgMods ~= nil and
+            self.imgMods ~= "")
+        then
+            imgMods = imgMods .. "," .. self.imgMods
+        end
+        if myIsPopTracker() then
+            if self.ActiveIcon then
+                self.ItemInstance.Icon = ImageReference:FromImageReference(self.ActiveIcon, "")
+                self.ItemInstance.IconMods = imgMods
+            end
+        else
+            self.ItemInstance.Icon = ImageReference:FromImageReference(self.ActiveIcon, imgMods)
+        end
     else
-        self.ItemInstance.Icon = ImageReference:FromImageReference(
-            self.disabledImage,
-            "overlay|" .. overlay
-        )
+        local disabledMods = "overlay|" .. overlay
+        if (
+            self.disabledImgMods and
+            self.disabledImgMods ~= nil and
+            self.disabledImgMods ~= "")
+        then
+            disabledMods = disabledMods .. "," .. self.disabledImgMods
+        end
+        if myIsPopTracker() then
+            if self.InactiveIcon then
+                self.ItemInstance.Icon = ImageReference:FromImageReference(self.InactiveIcon, "")
+                self.ItemInstance.IconMods = disabledMods
+            end
+        else
+            self.ItemInstance.Icon = ImageReference:FromImageReference(self.InactiveIcon, disabledMods)
+        end
     end
 end
 

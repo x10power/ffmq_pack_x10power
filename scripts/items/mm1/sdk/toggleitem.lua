@@ -36,10 +36,10 @@ function ToggleItem:init(name, codes, img, imgMods, disabledImg, disabledMods, i
     self:setProperty("ignore_user_input", ignoreuserinput or false)
 
     if img then
-        imgMods = imgMods or ""
+        imgMods = (imgMods and imgMods ~= nil and imgMods ~= "") and imgMods or ""
+        self.imgMods = imgMods
         self.ActiveIcon = ImageReference:FromPackRelativePath(
-            img,
-            imgMods
+            img
         )
         if disabledImg == nil then
             disabledImg = img
@@ -47,15 +47,16 @@ function ToggleItem:init(name, codes, img, imgMods, disabledImg, disabledMods, i
     end
     if disabledImg then
         if disabledMods == nil then
-            if imgMods ~= nil then
+            if imgMods and imgMods ~= nil and imgMods ~= "" then
                 disabledMods = imgMods .. ",@disabled"
             else
                 disabledMods = "@disabled"
             end
         end
+
+        self.disabledImgMods = disabledMods
         self.InactiveIcon = ImageReference:FromPackRelativePath(
-            disabledImg or img,
-            disabledMods
+            disabledImg
         )
     end
 
@@ -84,9 +85,15 @@ end
 -- Update Icon
 function ToggleItem:updateIcon()
     if self:getActive() then
-        self.ItemInstance.Icon = ImageReference:FromImageReference(self.ActiveIcon)
+        self.ItemInstance.Icon = ImageReference:FromImageReference(
+            self.ActiveIcon,
+            self.imgMods
+        )
     else
-        self.ItemInstance.Icon = ImageReference:FromImageReference(self.InactiveIcon)
+        self.ItemInstance.Icon = ImageReference:FromImageReference(
+            self.InactiveIcon,
+            self.disabledImgMods
+        )
     end
 end
 

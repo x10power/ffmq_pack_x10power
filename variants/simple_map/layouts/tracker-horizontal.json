@@ -18,8 +18,7 @@
           },
           "content": {
             "type": "layout",
-            "key": "simple_grid",
-            "width": 200
+            "key": "simple_grid"
           }
         },
         {

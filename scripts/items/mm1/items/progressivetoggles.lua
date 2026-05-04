@@ -105,12 +105,15 @@ for _,warp in ipairs({
     }
 }) do
     local stages = {}
+    local codes = {}
+    codes[warp["code"]] = warp["code"]
     for _,crest in pairs({"libra","gemini","mobius"}) do
+        local crestcode = warp["code"] .. "_" .. crest
         table.insert(
             stages,
             {
                 ["name"] = warp["code"]:upper() .. ": " .. ucfirst(crest),
-                ["codes"] = warp["code"] .. "_" .. crest,
+                ["codes"] = crestcode,
                 ["img"] = "images/warps/" ..
                     warp["src"]:gsub(" Temple",""):gsub(" Dock",""):lower() ..
                     "-" ..
@@ -119,10 +122,12 @@ for _,warp in ipairs({
                 ["img_mods"] = "overlay|images/warps/overlay/" .. crest .. ".png"
             }
         )
+        codes[crestcode] = crestcode
     end
+    -- tprint(codes)
     ProgressiveToggleItem(
         warp["src"] .. " -> " .. warp["dest"],
-        warp["code"],
+        codes,
         stages,
         warp["initialStage"] or 0,
         false

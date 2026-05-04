@@ -1,9 +1,5 @@
 {"tracker_horizontal": {
-  "type": "container",
-  "h_alignment": "center",
-  "width": 200,
-  "content": {
-    "type": "layout",
-    "key": "shared_item_grid"
-  }
+  "note": "Horizontal: When width of window is greater than height",
+  "type": "layout",
+  "key": "shared_item_grid"
 }}

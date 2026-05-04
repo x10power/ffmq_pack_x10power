@@ -8,21 +8,30 @@ function CollectableItem:init(name, code, maxqty, img, disabledImg, imgMods, dis
     self.code = code
 
     self.MaxCount = maxqty
+    self.imgMods = ""
+    self.disabledImgMods = ""
     if img then
-        self.FullIcon = ImageReference:FromPackRelativePath(img, imgMods or "")
+        if imgMods and imgMods ~= nil and imgMods ~= "" then
+            self.imgMods = imgMods
+        end
+        self.FullIcon = ImageReference:FromPackRelativePath(img, self.imgMods)
         if disabledImg == nil then
             disabledImg = img
         end
     end
+
     if disabledImgMods == nil then
-        if imgMods ~= nil then
-            disabledImgMods = "@disabled," .. imgMods
+        if self.imgMods ~= "" then
+            disabledImgMods = self.imgMods .. ",@disabled"
         else
             disabledImgMods = "@disabled"
         end
     end
+
+    self.disabledImgMods = disabledImgMods
+
     if disabledImg then
-        self.EmptyIcon = ImageReference:FromPackRelativePath(disabledImg, disabledImgMods or "")
+        self.EmptyIcon = ImageReference:FromPackRelativePath(disabledImg, self.disabledImgMods)
     end
 
     self.SwapActions = true

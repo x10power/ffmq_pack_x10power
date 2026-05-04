@@ -20,6 +20,8 @@ function ProgressiveItem:init(name, codes, stages, initialStage, allowDisabled)
         else
             codes = {codes}
         end
+    else
+        self.code = codes
     end
     for _,code in ipairs(codes) do
         code = trim(code)
@@ -37,6 +39,7 @@ function ProgressiveItem:init(name, codes, stages, initialStage, allowDisabled)
             stage.name          = thisStage["name"]
             stage.code          = {}
             stage.second_code   = {}
+            stage.ImgMods       = ""
             if thisStage["codes"] then
                 for _,code in ipairs(thisStage["codes"]) do
                     code = trim(code)
@@ -49,20 +52,28 @@ function ProgressiveItem:init(name, codes, stages, initialStage, allowDisabled)
                     stage.second_code[code] = code
                 end
             end
+            if thisStage["img_mods"] then
+                stage.ImgMods = thisStage["img_mods"]
+            end
             stage.StageImg = ImageReference:FromPackRelativePath(
                 thisStage["img"],
-                thisStage["img_mods"] or ""
+                stage.ImgMods
             )
             if stageID == 1 then
                 local imgMods = thisStage["img_mods"]
-                if imgMods then
+                if (
+                    imgMods and
+                    imgMods ~= nil and
+                    imgMods ~= ""
+                ) then
                     imgMods = imgMods .. ",@disabled"
                 else
                     imgMods = "@disabled"
                 end
+                self.disabledImgMods = imgMods
                 self.InactiveIcon = ImageReference:FromPackRelativePath(
                     thisStage["img"],
-                    imgMods
+                    self.disabledImgMods
                 )
             end
             table.insert(
@@ -108,13 +119,15 @@ function ProgressiveItem:updateIcon()
     if stageID == -1 then
         self:setActive(false)
         self.ItemInstance.Icon = ImageReference:FromImageReference(
-            self.InactiveIcon
+            self.InactiveIcon,
+            self.disabledImgMods
         )
     else
         local thisStage = self.Stages[stageID]
         self:setActive(true)
         self.ItemInstance.Icon = ImageReference:FromImageReference(
-            self.Stages[stageID].StageImg
+            self.Stages[stageID].StageImg,
+            self.Stages[stageID].ImgMods
         )
     end
 end

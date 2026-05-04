@@ -5,9 +5,16 @@ function ProgressiveToggleItem:updateIcon()
     local stageID = self.CurrentStage
 
     local thisStage = self.Stages[stageID]
+    local theseMods = self.Stages[stageID].ImgMods
+    if not self:getActive() then
+        if theseMods and theseMods ~= nil and theseMods ~= "" then
+            theseMods = theseMods .. ","
+        end
+        theseMods = theseMods .. "@disabled"
+    end
     self.ItemInstance.Icon = ImageReference:FromImageReference(
         self.Stages[stageID].StageImg,
-        self:getActive() and "" or "@disabled"
+        theseMods
     )
 end
 

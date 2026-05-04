@@ -98,11 +98,15 @@ CollectableItem(
 )
 
 -- Skyshards
+local skyshard_overlay = ""
+if QUEST_COUNTERS["quest_skyshards"] > 1 then
+    skyshard_overlay = "overlay|images/coins/coin_sky_shroud.png"
+end
 CollectableItem(
-    "# Skyshards",
+    QUEST_COUNTERS["quest_skyshards"] .. " Skyshards",
     "skyshards",
     QUEST_COUNTERS["quest_skyshards"],
     "images/coins/coin_sky.png",
     "images/coins/coin_sky.png",
-    QUEST_COUNTERS["quest_skyshards"] > 1 and "overlay|images/coins/coin_sky_shroud.png" or ""
+    skyshard_overlay
 )

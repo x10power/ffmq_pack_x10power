@@ -1,3 +1,36 @@
+function myIsPopTracker(version)
+  if PopVersion then
+    version = version or nil
+    
+    if version then
+      return version == PopVersion
+    end
+
+    return true
+  end
+
+  return false
+end
+
+-- Print contents of `tbl`, with indentation.
+-- `indent` sets the initial level of indentation.
+function tprint (tbl, indent)
+  if not indent then indent = 2 end
+  print("{")
+  for k, v in pairs(tbl) do
+    formatting = string.rep(" ", indent) .. "\"" .. k .. "\": "
+    if type(v) == "table" then
+      print(formatting)
+      tprint(v, indent+1)
+    elseif type(v) == 'boolean' then
+      print(formatting .. tostring(v) .. ',')
+    else
+      print(formatting .. v .. ',')
+    end
+  end
+  print("}")
+end
+
 function getAmount(code)
   local amount = Tracker:ProviderCountForCode(code)
   amount = math.floor(amount)

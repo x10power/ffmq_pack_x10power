@@ -1,5 +1,7 @@
 -- Version
+print("")
 ScriptHost:LoadScript("scripts/ver.lua")
+print("")
 
 -- Counters
 ScriptHost:LoadScript("scripts/settings/counters.lua")
@@ -183,35 +185,36 @@ if string.find(variant, "map") then
 
   -- Locations
   locations = {
-    -- Battlefields
-    "battlefields/earth",
-    "battlefields/fire",
-    "battlefields/water",
-    "battlefields/wind",
     -- Center
     "center/main",
     "center/focus-tower",
     "center/doom-castle",
     -- Earth
     "earth/main",
+    "battlefields/earth",
     "earth/foresta",
     "earth/bone-dungeon",
     -- Fire
     "fire/main",
+    "battlefields/fire",
     "fire/fireburg",
     "fire/lava-dome",
     -- Water
+    "water/main",
+    "battlefields/water",
     "water/aquaria",
     "water/wintry-cave",
     "water/ice-pyramid",
     -- Wind
     "wind/main",
+    "battlefields/wind",
     "wind/windia",
     "wind/giant-tree",
     "wind/pazuzu-tower",
     "wind/mac-ship",
+
+    -- Quests
     "quests",
-    "water/main",
   }
   for _, locCat in ipairs(locations) do
     Tracker:AddLocations("locations/overworld/" .. locCat .. ".json")

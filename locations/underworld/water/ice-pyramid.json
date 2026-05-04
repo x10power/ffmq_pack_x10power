@@ -155,7 +155,7 @@
         "#floor": "Ice Pyramid Floor 3F"
       },
       {
-        "name": "Chest",
+        "name": "4F - Chest",
         "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
@@ -246,7 +246,7 @@
         "#floor": "Ice Pyramid Floor 5F"
       },
       {
-        "name": "North Box",
+        "name": "5F - North Box",
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "access_rules": ["@Ice Pyramid Overworld/5F - North Box"],
         "sections": [{"name": "Item", "item_count": 1}],
@@ -270,7 +270,7 @@
         "#floor": "Ice Pyramid Floor 5F"
       },
       {
-        "name": "Chest",
+        "name": "B1 - Chest",
         "#type": "chest",
         "chest_unavailable_img": "images/chests/available.png",
         "chest_unopened_img": "images/chests/available.png",
@@ -289,7 +289,7 @@
         "#floor": "Ice Pyramid Floor B1"
       },
       {
-        "name": "North Box",
+        "name": "B1 - North Box",
         "access_rules": ["@Ice Pyramid Overworld/B1 - Boxes"],
         "visibility_rules": ["setting_shufflebrownbox_yes"],
         "sections": [{"name": "Item", "item_count": 1}],

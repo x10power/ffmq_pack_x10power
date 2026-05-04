@@ -31,7 +31,12 @@ def prepare_manifest():
             manifestJSON["flags"] = sorted(list(flags))
 
         if APPVERSION != "":
-            manifestJSON["package_version"] = APPVERSION
+            if APPVERSION.endswith(".x"):
+                APPVERSION = APPVERSION.replace(".x","")
+            if "package_version" in manifestJSON:
+                manifestJSON["package_version"] = APPVERSION
+            elif "version" in manifestJSON:
+                manifestJSON["version"] = APPVERSION
 
         manifestFile.seek(0)
         manifestFile.truncate()

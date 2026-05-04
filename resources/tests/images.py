@@ -8,6 +8,8 @@ for r,d,f in os.walk(
         "images"
     )
 ):
+    d.sort()
+    f.sort()
     for filename in f:
         image = os.path.join(r, filename)
         image = image[2:]
