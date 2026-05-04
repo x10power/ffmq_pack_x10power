@@ -26,7 +26,7 @@ runs:
         find: '${{ github.repository_owner }}/'
         replace: ''
     - name: 📁Get Parent Directory Path (!Windows)
-      uses: mad9000/actions-find-and-replace-string@5
+      uses: mad9000/actions-find-and-replace-string@6
       id: parentDirNotWin
       with:
         source: ${{ github.workspace }}

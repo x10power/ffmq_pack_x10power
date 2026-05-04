@@ -45,6 +45,7 @@ def prepare_env():
         lines = f.readlines()
         if len(lines) > 0:
           APP_VERSION = lines[0].strip()
+  APP_VERSION = APP_VERSION.replace(".x","")
 
   # ci data
   env["CI_SYSTEM"] = os.getenv("CI_SYSTEM","")
