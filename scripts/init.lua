@@ -35,10 +35,10 @@ ScriptHost:LoadScript("scripts/sdk/base/custom_item.lua")       -- Extends Class
 ScriptHost:LoadScript("scripts/sdk/base/consumableitem.lua")    -- Extends CustomItem
 
 --  MM1 LUA Classes & SDK
+ScriptHost:LoadScript("scripts/items/mm1/sdk/progressivetoggleitem.lua")    -- MM1 ProgressiveToggle Objects
 ScriptHost:LoadScript("scripts/items/mm1/sdk/toggleitem.lua")               -- MM1 Toggle Objects
 ScriptHost:LoadScript("scripts/items/mm1/sdk/collectableitem.lua")          -- Extends ConsumableItem
 ScriptHost:LoadScript("scripts/items/mm1/sdk/progressiveitem.lua")          -- MM1 Progressive Objects
-ScriptHost:LoadScript("scripts/items/mm1/sdk/progressivetoggleitem.lua")    -- MM1 ProgressiveToggle Objects
 
 --  MM1 LUA Items
 ScriptHost:LoadScript("scripts/items/mm1/items/toggles.lua")                -- MM1 Toggles

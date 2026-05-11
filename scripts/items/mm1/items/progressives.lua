@@ -281,11 +281,13 @@ ProgressiveItem(
         {
             ["name"] = "Benjamin",
             ["img"] = "images/party/benjamin.gif",
+            ["img_mods"] = "",
             ["codes"] = "benjamin"
         }
     },
     1,
-    false
+    false,
+    true
 )
 
 -- Magic

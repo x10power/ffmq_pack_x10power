@@ -1,8 +1,38 @@
 ToggleItem = CustomItem:extend()
 
-function trim(s)
-    local n = s:find"%S"
-    return n and s:match(".*%S", n) or ""
+function ToggleItem:init(
+    name,
+    codes,
+    img,
+    imgMods,
+    disabledImg,
+    disabledMods,
+    ignoreUserInput
+)
+
+    local stages = {}
+    local stage = {
+        ["name"] = name,
+        ["code"] = codes,
+        ["img"] = img,
+        ["img_mods"] = imgMods
+    }
+    table.insert(
+        stages,
+        stage
+    )
+
+    -- print("ToggleItem:",name)
+
+    ProgressiveToggleItem.init(
+        self,
+        name,
+        codes,
+        stages, --*
+        1,
+        true,
+        ignoreUserInput
+    )
 end
 
 function mysplit(inputstr, sep)
