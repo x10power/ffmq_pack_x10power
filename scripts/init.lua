@@ -37,7 +37,8 @@ ScriptHost:LoadScript("scripts/sdk/base/consumableitem.lua")    -- Extends Custo
 --  MM1 LUA Classes & SDK
 ScriptHost:LoadScript("scripts/items/mm1/sdk/progressivetoggleitem.lua")    -- MM1 ProgressiveToggle Objects
 ScriptHost:LoadScript("scripts/items/mm1/sdk/toggleitem.lua")               -- MM1 Toggle Objects
-ScriptHost:LoadScript("scripts/items/mm1/sdk/collectableitem.lua")          -- Extends ConsumableItem
+ScriptHost:LoadScript("scripts/items/mm1/sdk/resourceitem.lua")             -- Extends ConsumableItem
+ScriptHost:LoadScript("scripts/items/mm1/sdk/collectableitem.lua")          -- Extends ResourceItem
 ScriptHost:LoadScript("scripts/items/mm1/sdk/progressiveitem.lua")          -- MM1 Progressive Objects
 
 --  MM1 LUA Items

@@ -105,26 +105,27 @@ for _,warp in ipairs({
     }
 }) do
     local stages = {}
-    local codes = {}
-    codes[warp["code"]] = warp["code"]
-    for _,crest in pairs({"libra","gemini","mobius"}) do
+    local codes = warp["code"]
+    for _,crest in pairs({"off","libra","gemini","mobius"}) do
         local crestcode = warp["code"] .. "_" .. crest
-        table.insert(
-            stages,
-            {
-                ["name"] = warp["code"]:upper() .. ": " .. ucfirst(crest),
-                ["codes"] = crestcode,
-                ["img"] = "images/warps/" ..
-                    warp["src"]:gsub(" Temple",""):gsub(" Dock",""):lower() ..
-                    "-" ..
-                    warp["dest"]:gsub(" Temple",""):gsub(" Dock",""):lower() ..
-                    ".png",
-                ["img_mods"] = "overlay|images/warps/overlay/" .. crest .. ".png"
-            }
-        )
-        codes[crestcode] = crestcode
+        local overlay = crest ~= "off"
+        local stage = {
+            ["name"] = warp["code"]:upper() .. ": " .. ucfirst(crest),
+            ["codes"] = crestcode,
+            ["img"] = "images/warps/" ..
+                warp["src"]:gsub(" Temple",""):gsub(" Dock",""):lower() ..
+                "-" ..
+                warp["dest"]:gsub(" Temple",""):gsub(" Dock",""):lower() ..
+                ".png"
+        }
+        if not overlay then
+            stage["img_mods"] = "@disabled"
+        else
+            stage["img_mods"] = "overlay|images/warps/overlay/" .. crest .. ".png"
+        end
+        table.insert(stages, stage)
+        codes = codes .. "," .. crestcode
     end
-    -- tprint(codes)
     ProgressiveToggleItem(
         warp["src"] .. " -> " .. warp["dest"],
         codes,

@@ -1,5 +1,13 @@
 ProgressiveToggleItem = CustomItem:extend()
 
+function setDefault(obj, propName, value, default)
+    if value ~= nil then
+        obj:setProperty(propName, value)
+    else
+        obj:setProperty(propName, default)
+    end
+end
+
 function mysplit(inputstr, sep)
     if sep == nil then
       sep = "%s"
@@ -9,14 +17,6 @@ function mysplit(inputstr, sep)
       table.insert(t, str)
     end
     return t
-end
-
-function ProgressiveToggleItem:setDefault(propName, value, default)
-    if value ~= nil then
-        self:setProperty(propName, value)
-    else
-        self:setProperty(propName, default)
-    end
 end
 
 --[[
@@ -76,7 +76,7 @@ function ProgressiveToggleItem:init(
     allowDisabled,
     ignoreUserInput
 )
-    -- print("ProgressiveToggleItem:",name)
+    print("ProgressiveToggleItem:",name)
 
     -- create base item
     self:createItem(name)
@@ -110,14 +110,14 @@ function ProgressiveToggleItem:init(
     }
 
     -- set allow_disabled; default true
-    self:setDefault("allow_disabled", allowDisabled, true)
+    setDefault(self, "allow_disabled", allowDisabled, true)
     -- set active; default !allow_disabled
     self:setActive(not self:getProperty("allow_disabled"))
     -- set current stage; default 1
-    self:setDefault("current_stage", initialStage, 1)
-    self:setDefault("initial_stage", initialStage, 1)
+    setDefault(self, "current_stage", initialStage, 1)
+    setDefault(self, "initial_stage", initialStage, 1)
     -- ignore user input; default false
-    self:setDefault("ignore_user_input", ignoreUserInput, false)
+    setDefault(self, "ignore_user_input", ignoreUserInput, false)
 
     -- build stages
     if stages ~= nil then
@@ -182,8 +182,9 @@ function ProgressiveToggleItem:init(
         end
     end
 
-    -- set stage
-    self:setStage(self:getStage())
+    self:setProperty("initialized", false)
+
+    self:updateIcon()
 end
 
 -- Set In/Active
@@ -237,6 +238,13 @@ end
 
 -- Update Icon
 function ProgressiveToggleItem:updateIcon()
+    local initVal = self:getProperty("initialized")
+    if initVal ~= true then
+        -- set stage
+        self:setProperty("initialized", true)
+        self:setStage(self:getStage())
+    end
+
     local stageID = self.CurrentStage
     local thisStage = self.stages[stageID]
 
@@ -252,7 +260,7 @@ function ProgressiveToggleItem:updateIcon()
         self:setActive(setActive)
         self:setIcon(
             thisStage.icon.fname,
-            self.icons.base.off.mods
+            thisStage.icon.mods .. "," .. self.icons.base.off.mods
         )
     end
 end
@@ -289,6 +297,7 @@ function ProgressiveToggleItem:toggle()
     self:updateIcon()
 end
 
+-- Progressive
 function ProgressiveToggleItem:prevStage()
     self:setStage(self.CurrentStage - 1)
 end
@@ -297,6 +306,7 @@ function ProgressiveToggleItem:nextStage()
     self:setStage(self.CurrentStage + 1)
 end
 
+-- Mouse Handlers
 function ProgressiveToggleItem:onLeftClick()
     self:toggle()
 end
