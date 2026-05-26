@@ -76,7 +76,7 @@ function ProgressiveToggleItem:init(
     allowDisabled,
     ignoreUserInput
 )
-    print("ProgressiveToggleItem:",name)
+    -- print("ProgressiveToggleItem:",name)
 
     -- create base item
     self:createItem(name)

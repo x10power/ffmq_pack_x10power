@@ -14,7 +14,8 @@ function CollectableItem:init(
     disabledImgMods,
     minqty
 )
-    print("CollectableItem:",name)
+    -- print("CollectableItem:",name)
+
     ResourceItem.init(
         self,
         name,

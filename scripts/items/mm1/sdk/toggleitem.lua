@@ -22,7 +22,7 @@ function ToggleItem:init(
         stage
     )
 
-    print("ToggleItem:",name)
+    -- print("ToggleItem:",name)
 
     ProgressiveToggleItem.init(
         self,

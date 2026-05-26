@@ -35,7 +35,7 @@ def prepare_manifest():
                 APPVERSION = APPVERSION.replace(".x","")
             if "package_version" in manifestJSON:
                 manifestJSON["package_version"] = APPVERSION
-            elif "version" in manifestJSON:
+            if "version" in manifestJSON:
                 manifestJSON["version"] = APPVERSION
 
         manifestFile.seek(0)

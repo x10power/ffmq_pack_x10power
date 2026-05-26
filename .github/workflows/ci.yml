@@ -11,7 +11,7 @@ on: [push, pull_request]
 # actions/download-artifact@v8.0.1
 # actions/create-release@v1.1.4
 # actions/upload-release-asset@v1.0.2
-# benc-uk/workflow-dispatch@v1.3.1
+# benc-uk/workflow-dispatch@v1.3.2
 # ./.github/actions/get-parent-dir
 # ./.github/actions/install
 # ./.github/actions/test
@@ -264,7 +264,7 @@ jobs:
       #   value set to copied token
       - name: Update EmoTracker Pack Repository (MAIN)
         id: update-pack-repo-benc
-        uses: benc-uk/workflow-dispatch@v1.3.1
+        uses: benc-uk/workflow-dispatch@v1.3.2
         with:
           workflow: ci.yml
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}

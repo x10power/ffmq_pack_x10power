@@ -14,7 +14,8 @@ function ResourceItem:init(
     disabledImgMods,
     minqty
 )
-    print("ResourceItem:",name)
+    -- print("ResourceItem:",name)
+
     ConsumableItem.init(
         self,
         name,
